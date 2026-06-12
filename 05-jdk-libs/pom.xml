@@ -41,7 +41,7 @@
         <poi-ooxml.version>4.0.0</poi-ooxml.version>
         <jaxen.version>1.2.0</jaxen.version>
         <hutool-crypto.version>5.8.0</hutool-crypto.version>
-        <guava.version>30.0-jre</guava.version>
+        <guava.version>33.6.0-jre</guava.version>
         <hsqldb.version>2.5.1</hsqldb.version>
         <javassist.version>3.29.2-GA</javassist.version>
         <jnanoid.version>2.0.0</jnanoid.version>

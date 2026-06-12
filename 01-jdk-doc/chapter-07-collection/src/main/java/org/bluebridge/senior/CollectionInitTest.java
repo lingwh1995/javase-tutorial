@@ -52,7 +52,6 @@ public class CollectionInitTest {
     }
 
 
-
     /**
      * java9+
      */
