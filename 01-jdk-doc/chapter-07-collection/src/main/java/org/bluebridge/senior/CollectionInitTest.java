@@ -41,6 +41,18 @@ public class CollectionInitTest {
         MUTABLE_LIST.add(3);
     }
 
+    // 使用静态初始化块初始化不可变集合 ⭐⭐⭐⭐⭐
+    private static final Set<Integer> UNMODIFIABLE_SET_JAVA8;
+    static {
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        UNMODIFIABLE_SET_JAVA8 = Collections.unmodifiableSet(set);
+    }
+
+
+
     /**
      * java9+
      */
