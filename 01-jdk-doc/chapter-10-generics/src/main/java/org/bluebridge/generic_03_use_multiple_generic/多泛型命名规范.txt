@@ -1,4 +1,0 @@
-E    —  Element，常用在java Collection里，如：List<E>,Iterator<E>,Set<E>
-K,V  —  Key，Value，代表Map的键值对
-N    —  Number，数字
-T    —  Type，类型，如String，Integer等等

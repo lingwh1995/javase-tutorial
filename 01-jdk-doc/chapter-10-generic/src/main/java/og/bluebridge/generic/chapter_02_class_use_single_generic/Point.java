@@ -1,0 +1,21 @@
+package og.bluebridge.generic.chapter_02_class_use_single_generic;
+
+import lombok.Data;
+
+/**
+ * 单个泛型
+ */
+@Data
+public class Point<T> {
+
+    /**
+     * 表示X坐标
+     */
+    private T x;
+
+    /**
+     * 表示Y坐标
+     */
+    private T y;
+
+}

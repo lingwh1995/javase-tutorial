@@ -35,7 +35,7 @@
         <module>chapter-07-collection</module>
         <module>chapter-08-jdbc</module>
         <module>chapter-09-thread</module>
-        <module>chapter-10-generics</module>
+        <module>chapter-10-generic</module>
         <module>chapter-11-serialize</module>
         <module>chapter-12-clone</module>
         <module>chapter-13-memory</module>
