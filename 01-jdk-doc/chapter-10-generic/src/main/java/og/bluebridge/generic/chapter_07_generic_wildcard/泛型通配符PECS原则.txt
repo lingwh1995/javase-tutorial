@@ -1,0 +1,13 @@
+PECS 原则（Java 泛型）？
+1. PECS 原则解决什么问题？
+   PECS （Producer Extends, Consumer Super），出自《Effective Java》，是 Java 泛型通配符使用的核心准则，用于在类型安全前提下最大化 API 灵活性。
+2. PECS 原则使用方法？
+   Producer（生产者，只读）：仅从中读取数据 → 用 ? extends T（上界通配符，实现协变，允许子类型集合传入只读方法）。
+     含义：T 或 T 的子类。
+     特点：能读不能写（编译器无法确定具体子类型，禁止写入）。
+   Consumer（消费者，只写）：仅向其写入数据 → 用 ? super T（下界通配符，实现逆变，允许父类型集合传入只写方法）。
+     含义：T 或 T 的父类。
+     特点：能写不能读（读取只能当作 Object，类型不安全）。
+3. 记忆口诀？
+   - 读用 extends，写用 super，读写不用通配符，直接用 <T>。
+   - 需要从集合读取数据时用 ? extends T，需要向集合写入数据时用 ? super T。

@@ -16,7 +16,6 @@ public class ColorEnumTest {
      *  	values()  获得所有枚举对象数组
      */
 
-
     /**
      * 测试枚举对象api：知道枚举的对象,得到枚举对象的名称和下标
      * 		name()：获取枚举对象名称

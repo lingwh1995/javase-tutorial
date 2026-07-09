@@ -29,5 +29,4 @@ public class BitSetTest {
         // 5. 统计存在的数字个数
         System.out.println(bitSet.cardinality()); // 2
     }
-
 }

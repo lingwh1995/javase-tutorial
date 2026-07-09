@@ -5,6 +5,7 @@ import sun.misc.Unsafe;
 import java.lang.reflect.Field;
 
 public class ByteOrderTest2 {
+
     public static void main(String[] args) throws InterruptedException {
         Unsafe unsafe = reflectGetUnsafe();
         long a = unsafe.allocateMemory(4L);

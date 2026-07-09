@@ -16,5 +16,4 @@ public class DefaultCharsetTest {
         String charsetName = System.getProperty("file.encoding");
         log.info("Default Charset: {}", charsetName);
     }
-
 }

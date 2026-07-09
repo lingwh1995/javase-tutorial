@@ -17,11 +17,11 @@ public class AnnoReflectTest {
      */
     @Test
     public void testSingleAnnotationInType(){
-        //1.获取注解的作用目标
+        // 1.获取注解的作用目标
         Class<? extends Object> clazz =  AnnoReflect.class;
-        //2.获取指定的注解类型(得到注解对象)
+        // 2.获取指定的注解类型(得到注解对象)
         MyAnno2 myAnno2 = clazz.getAnnotation(MyAnno2.class);
-        //3.打印注解属性的值
+        // 3.打印注解属性的值
         System.out.println(myAnno2.name()+"---"+myAnno2.age()+"---"+myAnno2.sex());
     }
 
@@ -31,16 +31,15 @@ public class AnnoReflectTest {
      */
     @Test
     public void testSingleAnnotationInField() throws NoSuchFieldException {
-        //1.获取注解的作用目标
+        // 1.获取注解的作用目标
         Class<? extends Object> clazz =  AnnoReflect.class;
         Field field = clazz.getDeclaredField("filed");
         System.out.println(field);
-        //2.获取指定的注解类型(得到注解对象)
+        // 2.获取指定的注解类型(得到注解对象)
         MyAnno2 myAnno2 = field.getAnnotation(MyAnno2.class);
-        //3.打印注解属性的值
+        // 3.打印注解属性的值
         System.out.println(myAnno2.name()+"---"+myAnno2.age()+"---"+myAnno2.sex());
     }
-
 
     /**
      * 使用反射读取方法上的注解(单个注解)
@@ -49,15 +48,14 @@ public class AnnoReflectTest {
      */
     @Test
     public void testSingleAnnotationInMethod() throws NoSuchMethodException {
-        //1.获取注解的作用目标
+        // 1.获取注解的作用目标
         Class<? extends Object> clazz =  AnnoReflect.class;
         Method method = clazz.getMethod("eat");
-        //2.获取指定的注解类型(得到注解对象)
+        // 2.获取指定的注解类型(得到注解对象)
         MyAnno2 myAnno2 = method.getAnnotation(MyAnno2.class);
-        //3.打印注解属性的值
+        // 3.打印注解属性的值
         System.out.println(myAnno2.name()+"---"+myAnno2.age()+"---"+myAnno2.sex());
     }
-
 
     /**
      * 使用反射读取方法上的注解(多个注解)
@@ -65,10 +63,10 @@ public class AnnoReflectTest {
      */
     @Test
     public void testMultiplyAnnotationInMethod() throws NoSuchMethodException {
-        //1.获取注解的作用目标
+        // 1.获取注解的作用目标
         Class<? extends Object> clazz =  AnnoReflect.class;
         Method method = clazz.getMethod("eat");
-        //2.获取指定的注解类型(得到注解对象)
+        // 2.获取指定的注解类型(得到注解对象)
         Annotation[] annotations = method.getAnnotations();
         for(Annotation annotation:annotations){
             Class<? extends Annotation> annotationType = annotation.annotationType();

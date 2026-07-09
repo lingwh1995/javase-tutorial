@@ -16,7 +16,6 @@ public class StaticTest {
         // 调用eat方法，构造方法并未执行，验证被static修饰的方法是和类绑定的，不是和类的实例对象绑定的
         Cat.eat();
     }
-
 }
 
 @Slf4j
@@ -29,5 +28,4 @@ class Cat {
     public static void eat(){
         log.info("Cat eat......");
     }
-
 }

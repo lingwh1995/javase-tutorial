@@ -58,5 +58,4 @@ public class CharacterTest {
         numericValue = Character.getNumericValue(c);
         log.info("字符 {} 的数值为 {}", c, numericValue);
     }
-
 }

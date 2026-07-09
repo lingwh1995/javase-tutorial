@@ -24,7 +24,6 @@ public class ThisIdentifierTest {
 		 */
 		new ThisIdentifier(1,2,3);
 	}
-	
 }
 
 @Slf4j
@@ -65,5 +64,4 @@ class ThisIdentifier {
 		this(a,b);
 		log.info("我是第二个有参构造方法......");
 	}
-	
 }

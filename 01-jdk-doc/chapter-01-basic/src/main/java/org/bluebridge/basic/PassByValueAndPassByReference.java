@@ -30,5 +30,4 @@ public class PassByValueAndPassByReference {
         a = a ^ b;
         log.info("a = {}, b = {}", a, b);
     }
-
 }

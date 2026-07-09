@@ -38,7 +38,6 @@ public class ScannerTest {
         }
         scanner.close();
     }
-
 }
 
 

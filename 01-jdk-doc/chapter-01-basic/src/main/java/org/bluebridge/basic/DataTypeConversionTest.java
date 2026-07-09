@@ -18,5 +18,4 @@ public class DataTypeConversionTest {
         char c = (char) i;
         log.info("c = {}", c);
     }
-
 }

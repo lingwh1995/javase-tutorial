@@ -9,6 +9,15 @@ import org.bluebridge.enumeration.TimeUnitStrategyEnum;
  */
 public class DateTimeUtils {
 
+    public static void main(String[] args) {
+        long duration = 10;
+        String unit = "M";
+        long expiration = calculateExpiration(duration, unit);
+        System.out.println("过期时间点：" + expiration);
+        String formattedDuration = formatDuration(duration, unit);
+        System.out.println("格式化后的时长：" + formattedDuration);
+    }
+
     /**
      * 计算过期时间点（当前时间 + 指定单位长度）
      * 常用于 Redis 缓存过期设置
@@ -26,14 +35,4 @@ public class DateTimeUtils {
         TimeUnitStrategyEnum strategy = TimeUnitStrategyEnum.of(unit);
         return duration + " " + strategy.name().toLowerCase();
     }
-
-    public static void main(String[] args) {
-        long duration = 10;
-        String unit = "M";
-        long expiration = calculateExpiration(duration, unit);
-        System.out.println("过期时间点：" + expiration);
-        String formattedDuration = formatDuration(duration, unit);
-        System.out.println("格式化后的时长：" + formattedDuration);
-    }
-
 }

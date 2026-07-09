@@ -14,6 +14,7 @@ import java.lang.reflect.Type;
  *    
  */
 public class GenericReflectTest1 {
+
 	/**
 	 * 测试继承环境下代码执行顺序
 	 * 		顺序:父类静态代码块儿-->子类静态代码块儿-->父类代码块儿-->父类无参构造
@@ -45,6 +46,7 @@ public class GenericReflectTest1 {
 }
 
 class B<T>{
+
 	private static final String ParameterizedType = null;
 
 	{
@@ -63,7 +65,7 @@ class B<T>{
 	
 	public B(){
 		/**
-		 *  获取子泛型传递的类型变量信息
+		 * 获取子泛型传递的类型变量信息
 		 *  JDK API查询Class的API
 		 *	Class --> Type getGenericSupperclass()
 		 * 	Type --> ParameterizedType，把Type强转成ParameterizedType类型！！！
@@ -132,6 +134,7 @@ class B<T>{
  *
  */
 class BB extends B<String>{
+
 	{
 		System.out.println("我是子类BB的代码块儿！");
 	}
@@ -156,6 +159,7 @@ class BB extends B<String>{
  *
  */
 class BBB extends B<Integer>{
+
 	{
 		System.out.println("我是子类BBB的代码块儿！");
 	}
@@ -163,9 +167,11 @@ class BBB extends B<Integer>{
 	static{
 		System.out.println("我是子类BBB的静态代码块儿！");
 	}
+
 	public BBB(){
 		System.out.println("我是子类BBB的无参构造，我的泛型类型为Integer！");
 	}
+
 	public BBB(String param){
 		System.out.println("我是子类BBB的有参构造！");
 	}

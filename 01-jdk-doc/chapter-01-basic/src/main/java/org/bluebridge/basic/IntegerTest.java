@@ -17,5 +17,4 @@ public class IntegerTest {
         int i = 8;
         System.out.println(Integer.bitCount(i));
     }
-
 }

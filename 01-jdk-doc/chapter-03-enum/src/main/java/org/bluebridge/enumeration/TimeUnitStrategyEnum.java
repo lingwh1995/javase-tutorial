@@ -62,5 +62,4 @@ public enum TimeUnitStrategyEnum {
         }
         throw new IllegalArgumentException("未知的时间单位: " + code);
     }
-
 }

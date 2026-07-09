@@ -15,6 +15,14 @@ import java.util.List;
  */
 public final class Constant {
 
+    public static void main(String[] args) {
+        System.out.println(IP_ADDR);
+        System.out.println(MAX_SIZE);
+
+        System.out.println(FILE_NAME);
+        System.out.println(NUMS);
+    }
+
     /**
      * 定义常量并直接初始化
      */
@@ -34,13 +42,4 @@ public final class Constant {
         NUMS.add(2);
         NUMS.add(3);
     }
-
-    public static void main(String[] args) {
-        System.out.println(IP_ADDR);
-        System.out.println(MAX_SIZE);
-
-        System.out.println(FILE_NAME);
-        System.out.println(NUMS);
-    }
-
 }

@@ -88,5 +88,4 @@ public class BitwiseOperationTest {
 		log.info("bytes[2] & 0xFF = {}", bytes[2] & 0xFF);
 		log.info("bytes[3] & 0xFF = {}", bytes[3] & 0xFF);
 	}
-
 }

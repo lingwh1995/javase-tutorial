@@ -14,6 +14,7 @@ import java.time.format.DateTimeFormatter;
  *      }
  */
 public class DateTimeFormatterTest {
+
     public static void main(String[] args) {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         for (int i = 0; i < 10; i++) {

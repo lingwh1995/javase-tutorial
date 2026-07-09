@@ -30,5 +30,4 @@ public class PPiandiPPTest {
         log.info("x: {}", x);
         log.info("b: {}", b);
 	}
-
 }

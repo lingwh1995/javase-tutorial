@@ -22,5 +22,4 @@ public class OOTest {
         dog.testSuper();
         log.info("------------------");
     }
-
 }

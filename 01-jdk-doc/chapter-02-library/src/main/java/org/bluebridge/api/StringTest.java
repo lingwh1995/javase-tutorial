@@ -231,5 +231,4 @@ public class StringTest {
 		String header = "=".repeat(20) + " 标题 " + "=".repeat(20);
 		log.info(header);
 	}
-
 }

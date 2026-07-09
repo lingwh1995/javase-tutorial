@@ -82,5 +82,4 @@ public class ClassTest {
 		System.out.println("str.getClass().getSimpleName() = " + str.getClass().getSimpleName());
 		System.out.println("str.getClass().getName() = " + str.getClass().getName());
 	}
-
 }

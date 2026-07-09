@@ -85,5 +85,4 @@ public class DataTypeTest {
 		double d3 = d1 + d2;
 		log.info("d3 = {}", d3);
 	}
-
 }

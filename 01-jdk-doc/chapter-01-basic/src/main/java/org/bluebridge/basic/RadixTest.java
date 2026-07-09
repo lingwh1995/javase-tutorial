@@ -62,5 +62,4 @@ public class RadixTest {
         log.info("十进制数字 -> 十六进制字符: {}", Integer.toHexString(170));
         log.info("----------------------------------");
     }
-
 }

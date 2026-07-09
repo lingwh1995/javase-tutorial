@@ -21,5 +21,4 @@ public class RunTimeTest {
         int coreCount = Runtime.getRuntime().availableProcessors();
         log.info("可用处理器核心数: {}", coreCount);
     }
-
 }

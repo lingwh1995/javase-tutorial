@@ -38,5 +38,4 @@ public class Dog extends  Animal {
         super.drink();
         super.sleep();
     }
-
 }

@@ -28,5 +28,4 @@ public abstract class Animal {
     public void sleep() {
         log.info("动物正在睡觉......");
     }
-
 }

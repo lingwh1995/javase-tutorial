@@ -7,6 +7,7 @@ package org.bluebridge.api;
  *    
  */
 public class StringBuilderTest {
+
 	public static void main(String[] args) {
 		StringBuilder stringBuilder = new StringBuilder("aaaa");
 		//stringBuilder.setCharAt(0, '1');

@@ -19,5 +19,4 @@ public class StaticImport {
         double pow = pow(0.2, 0.3);
         log.info("pow = {}", pow);
     }
-
 }

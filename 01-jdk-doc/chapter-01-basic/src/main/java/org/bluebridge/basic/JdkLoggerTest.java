@@ -21,5 +21,4 @@ public class JdkLoggerTest {
         logger.fine("fine......");
         logger.severe("severe......");
     }
-
 }

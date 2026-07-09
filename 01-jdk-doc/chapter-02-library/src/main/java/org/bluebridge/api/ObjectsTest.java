@@ -95,5 +95,4 @@ public class ObjectsTest {
         //log.debug("requireNonNull: {}", Objects.requireNonNull(param, "参数不能为空！"));
         log.debug("requireNonNull: {}", Objects.requireNonNull(param, () -> "参数不能为空！"));
     }
-
 }

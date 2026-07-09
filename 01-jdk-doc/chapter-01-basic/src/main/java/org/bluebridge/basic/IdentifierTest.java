@@ -35,5 +35,4 @@ public class IdentifierTest {
 		//进而，如下的声明中l的值到底是123？还是变量123L对应的取值12呢？ 出现歧义了。
 		//long l = 123L;
 	}
-
 }

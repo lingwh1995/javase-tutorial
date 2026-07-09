@@ -10,6 +10,7 @@ import org.junit.Test;
  *    
  */
 public class ThreadTest {
+
 	/**
 	 * 获取当前类的全限定名(有两种方式):适用于非静态方法
 	 * @param
@@ -51,5 +52,4 @@ public class ThreadTest {
 		System.out.println("当前行号:"+stackTraces[1].getLineNumber());
 		System.out.println("stackTraces的代码所在的行号:"+stackTraces[1].getLineNumber());
 	}
-
 }

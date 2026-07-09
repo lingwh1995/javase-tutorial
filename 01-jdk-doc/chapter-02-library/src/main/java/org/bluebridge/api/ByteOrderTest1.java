@@ -7,6 +7,7 @@ import java.nio.ByteOrder;
  * 字节序列（大小端）测试
  */
 public class ByteOrderTest1 {
+
     public static void main(String[] args) {
         // Define an integer
         int value = 0x12345678;

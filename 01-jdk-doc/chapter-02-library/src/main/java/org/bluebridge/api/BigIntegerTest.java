@@ -3,6 +3,7 @@ package org.bluebridge.api;
 import java.math.BigInteger;
 
 public class BigIntegerTest {
+
     public static void main(String[] args) {
         //通过 字符串类型数据 创建一个BigInteger类型对象
         BigInteger bigInteger = new BigInteger("20");
