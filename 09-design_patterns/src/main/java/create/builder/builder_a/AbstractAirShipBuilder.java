@@ -6,30 +6,31 @@ package create.builder.builder_a;
  * @date 2019年3月23日
  */
 public abstract class AbstractAirShipBuilder {
-  protected AirShip airShip = new AirShip();
 
-  /**
-   * 构建轨道舱
-   *
-   * @return
-   */
-  abstract void buildOrbitalModule();
+    protected AirShip airShip = new AirShip();
 
-  /**
-   * 构建发动机
-   *
-   * @return
-   */
-  abstract void buildEngin();
+    /**
+     * 构建轨道舱
+     *
+     * @return
+     */
+    abstract void buildOrbitalModule();
 
-  /**
-   * 构建逃逸塔
-   *
-   * @return
-   */
-  abstract void buildEscapeTower();
+    /**
+     * 构建发动机
+     *
+     * @return
+     */
+    abstract void buildEngin();
 
-  public AirShip buildAirShip() {
-    return airShip;
-  }
+    /**
+     * 构建逃逸塔
+     *
+     * @return
+     */
+    abstract void buildEscapeTower();
+
+    public AirShip buildAirShip() {
+        return airShip;
+    }
 }

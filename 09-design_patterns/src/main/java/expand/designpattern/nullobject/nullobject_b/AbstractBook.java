@@ -6,7 +6,8 @@ package expand.designpattern.nullobject.nullobject_b;
  * @since 2019/7/29 15:25
  */
 public abstract class AbstractBook {
-  public abstract boolean isNull();
 
-  public abstract void show();
+    public abstract boolean isNull();
+
+    public abstract void show();
 }

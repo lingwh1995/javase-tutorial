@@ -7,10 +7,10 @@ package action.interpreter.interpreter_a;
  */
 public abstract class AbstractExpression {
 
-  /**
-   * 解释的操作
-   *
-   * @param ctx 上下文对象
-   */
-  public abstract void interpret(Context ctx);
+    /**
+     * 解释的操作
+     *
+     * @param ctx 上下文对象
+     */
+    public abstract void interpret(Context ctx);
 }

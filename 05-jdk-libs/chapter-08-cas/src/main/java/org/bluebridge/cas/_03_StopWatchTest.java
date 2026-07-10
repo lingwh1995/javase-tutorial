@@ -43,25 +43,25 @@ public class _03_StopWatchTest {
         // task-1停止计时
         stopWatch.stop();
 
-    // task-2开始计时
-    stopWatch.start("task-2");
-    task2();
-    // task-2停止计时
-    stopWatch.stop();
-    log.info(stopWatch.prettyPrint());
-  }
-
-    /**
-     * 任务一：睡眠1000毫秒
-     */
-    private void task1() throws InterruptedException {
-        TimeUnit.MILLISECONDS.sleep(1000);
+        // task-2开始计时
+        stopWatch.start("task-2");
+        task2();
+        // task-2停止计时
+        stopWatch.stop();
+        log.info(stopWatch.prettyPrint());
     }
 
-    /**
-     * 任务二：睡眠2000毫秒
-     */
-    private void task2() throws InterruptedException {
-        TimeUnit.MILLISECONDS.sleep(2000);
-    }
+        /**
+         * 任务一：睡眠1000毫秒
+         */
+        private void task1() throws InterruptedException {
+                TimeUnit.MILLISECONDS.sleep(1000);
+        }
+
+        /**
+         * 任务二：睡眠2000毫秒
+         */
+        private void task2() throws InterruptedException {
+                TimeUnit.MILLISECONDS.sleep(2000);
+        }
 }

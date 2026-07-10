@@ -13,31 +13,31 @@ import org.springframework.util.StopWatch;
 @Slf4j
 public class _02_ThreadSleepTest {
 
-  /**
-   * 不推荐使用
-   *
-   * @throws InterruptedException
-   */
-  @Test
-  public void testThreadSleep1() throws InterruptedException {
-    StopWatch stopWatch = new StopWatch();
-    stopWatch.start("task-1");
-    Thread.sleep(2000);
-    stopWatch.stop();
-    log.debug(stopWatch.prettyPrint());
-  }
+    /**
+     * 不推荐使用
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testThreadSleep1() throws InterruptedException {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start("task-1");
+        Thread.sleep(2000);
+        stopWatch.stop();
+        log.debug(stopWatch.prettyPrint());
+    }
 
-  /**
-   * 推荐使用
-   *
-   * @throws InterruptedException
-   */
-  @Test
-  public void testThreadSleep2() throws InterruptedException {
-    StopWatch stopWatch = new StopWatch();
-    stopWatch.start("task-1");
-    TimeUnit.MILLISECONDS.sleep(2000);
-    stopWatch.stop();
-    log.debug(stopWatch.prettyPrint());
-  }
+    /**
+     * 推荐使用
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testThreadSleep2() throws InterruptedException {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start("task-1");
+        TimeUnit.MILLISECONDS.sleep(2000);
+        stopWatch.stop();
+        log.debug(stopWatch.prettyPrint());
+    }
 }
