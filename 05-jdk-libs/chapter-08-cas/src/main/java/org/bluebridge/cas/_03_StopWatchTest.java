@@ -1,13 +1,14 @@
 package org.bluebridge.cas;
 
+import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.springframework.util.StopWatch;
 
-import java.util.concurrent.TimeUnit;
-
 /**
- * 统计某段代码执行时间
+ * @author lingwh
+ * @desc 统计某段代码执行时间
+ * @date 2026/7/10 00:00
  */
 @Slf4j
 public class _03_StopWatchTest {
@@ -29,8 +30,8 @@ public class _03_StopWatchTest {
 
     /**
      * 测试StopWatch
-     *  1.多个任务执行时间统计
-     *  2.优雅的打印执行结果
+     *    1. 多个任务执行时间统计
+     *    2. 优雅的打印执行结果
      */
     @Test
     public void testStopWatch() throws InterruptedException {
@@ -42,13 +43,13 @@ public class _03_StopWatchTest {
         // task-1停止计时
         stopWatch.stop();
 
-        // task-2开始计时
-        stopWatch.start("task-2");
-        task2();
-        // task-2停止计时
-        stopWatch.stop();
-        log.info(stopWatch.prettyPrint());
-    }
+    // task-2开始计时
+    stopWatch.start("task-2");
+    task2();
+    // task-2停止计时
+    stopWatch.stop();
+    log.info(stopWatch.prettyPrint());
+  }
 
     /**
      * 任务一：睡眠1000毫秒
@@ -63,5 +64,4 @@ public class _03_StopWatchTest {
     private void task2() throws InterruptedException {
         TimeUnit.MILLISECONDS.sleep(2000);
     }
-
 }
