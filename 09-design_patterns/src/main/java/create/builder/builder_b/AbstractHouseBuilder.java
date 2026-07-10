@@ -6,18 +6,19 @@ package create.builder.builder_b;
  * @date 2026/7/9 00:00
  */
 public abstract class AbstractHouseBuilder {
-  protected House house = new House();
 
-  public abstract void buildBasic();
+    protected House house = new House();
 
-  public abstract void buildWalls();
+    public abstract void buildBasic();
 
-  public abstract void buildRoof();
+    public abstract void buildWalls();
 
-  public House buildHouse() {
-    buildBasic();
-    buildWalls();
-    buildRoof();
-    return house;
-  }
+    public abstract void buildRoof();
+
+    public House buildHouse() {
+        buildBasic();
+        buildWalls();
+        buildRoof();
+        return house;
+    }
 }

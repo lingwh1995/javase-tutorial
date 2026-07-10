@@ -1,15 +1,15 @@
 package create.abstractfactory.abstractfactory_i;
 
-
 /**
- * AMD品牌CPU
- * @author ronin
- * @version V1.0
- * @since 2019/8/7 15:00
+ * @author lingwh
+ * @desc AMD品牌CPU
+ * @date 2019/8/7 15:00
  */
-public class AMDCPU implements CPUApi{
+public class AMDCPU implements CPUApi {
 
-    /**针脚数*/
+    /**
+     * 针脚数
+     */
     private int pins = 0;
 
     public AMDCPU(int pins) {

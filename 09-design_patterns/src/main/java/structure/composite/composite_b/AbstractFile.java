@@ -9,10 +9,11 @@ import java.util.List;
  * @date 2019/3/23 13:54
  */
 public interface AbstractFile {
-  /**
-   * 杀毒
-   */
-  void killViruls();
+
+    /**
+     * 杀毒
+     */
+    void killViruls();
 }
 
 /**
@@ -22,16 +23,16 @@ public interface AbstractFile {
  */
 class imageFiles implements AbstractFile {
 
-  private String name;
+    private String name;
 
-  public imageFiles(String name) {
-    this.name = name;
-  }
+    public imageFiles(String name) {
+        this.name = name;
+    }
 
-  @Override
-  public void killViruls() {
-    System.out.println("图像文件" + name + "，进行查杀......");
-  }
+    @Override
+    public void killViruls() {
+        System.out.println("图像文件" + name + "，进行查杀......");
+    }
 }
 
 /**
@@ -41,16 +42,16 @@ class imageFiles implements AbstractFile {
  */
 class TextFiles implements AbstractFile {
 
-  private String name;
+    private String name;
 
-  public TextFiles(String name) {
-    this.name = name;
-  }
+    public TextFiles(String name) {
+        this.name = name;
+    }
 
-  @Override
-  public void killViruls() {
-    System.out.println("文本文件" + name + "，进行查杀......");
-  }
+    @Override
+    public void killViruls() {
+        System.out.println("文本文件" + name + "，进行查杀......");
+    }
 }
 
 /**
@@ -60,34 +61,34 @@ class TextFiles implements AbstractFile {
  */
 class Folder implements AbstractFile {
 
-  private String name;
+    private String name;
 
-  public Folder(String name) {
-    this.name = name;
-  }
-
-  /**
-   * 定义容器，用来存放本容器构件下的子节点
-   */
-  private List<AbstractFile> list = new ArrayList<AbstractFile>();
-
-  public void add(AbstractFile file) {
-    list.add(file);
-  }
-
-  public void remove(AbstractFile file) {
-    list.remove(file);
-  }
-
-  public AbstractFile getChild(int index) {
-    return list.get(index);
-  }
-
-  @Override
-  public void killViruls() {
-    System.out.println("文件夹" + name + "，进行查杀......");
-    for (AbstractFile file : list) {
-      file.killViruls();
+    public Folder(String name) {
+        this.name = name;
     }
-  }
+
+    /**
+     * 定义容器，用来存放本容器构件下的子节点
+     */
+    private List<AbstractFile> list = new ArrayList<AbstractFile>();
+
+    public void add(AbstractFile file) {
+        list.add(file);
+    }
+
+    public void remove(AbstractFile file) {
+        list.remove(file);
+    }
+
+    public AbstractFile getChild(int index) {
+        return list.get(index);
+    }
+
+    @Override
+    public void killViruls() {
+        System.out.println("文件夹" + name + "，进行查杀......");
+        for (AbstractFile file : list) {
+            file.killViruls();
+        }
+    }
 }

@@ -3,6 +3,11 @@ package org.bluebridge.designpattern_04_sequential_control.alternate_print;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author lingwh
+ * @desc 交替打印(LockCondition版)
+ * @date 2026/7/9 00:00
+ */
 public class AlternatePrintLockConditionEditionTest {
 
     public static void main(String[] args) {
@@ -32,6 +37,7 @@ public class AlternatePrintLockConditionEditionTest {
                 this.unlock();
             }
         }
+
         public void print(String str, Condition current, Condition next) {
             for (int i = 0; i < loopNumber; i++) {
                 this.lock();
@@ -46,8 +52,10 @@ public class AlternatePrintLockConditionEditionTest {
                 }
             }
         }
+
         // 循环次数
         private int loopNumber;
+
         public AwaitSignal(int loopNumber) {
             this.loopNumber = loopNumber;
         }

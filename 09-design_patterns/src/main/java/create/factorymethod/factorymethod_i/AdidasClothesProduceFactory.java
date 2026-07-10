@@ -1,25 +1,29 @@
 package create.factorymethod.factorymethod_i;
 
-public class AdidasClothesProduceFactory implements IClothesProduceFactory{
+/**
+ * @author lingwh
+ * @desc Adidas服装生产工厂
+ * @date 2026/7/9 00:00
+ */
+public class AdidasClothesProduceFactory implements IClothesProduceFactory {
 
-	@Override
-	public IHat produceHat() {
-		return new AdidasHat();
-	}
+    @Override
+    public IHat produceHat() {
+        return new AdidasHat();
+    }
 
-	@Override
-	public IJacket produceJacket() {
-		return new AdidasJacket();
-	}
+    @Override
+    public IJacket produceJacket() {
+        return new AdidasJacket();
+    }
 
-	@Override
-	public ITrousers produceTrousers() {
-		return new AdidasTrousers();
-	}
+    @Override
+    public ITrousers produceTrousers() {
+        return new AdidasTrousers();
+    }
 
-	@Override
-	public IShoes produceShoes() {
-		return new AdidasShoes();
-	}
-
+    @Override
+    public IShoes produceShoes() {
+        return new AdidasShoes();
+    }
 }

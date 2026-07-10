@@ -1,10 +1,14 @@
 package org.bluebridge.thread_pool_07_fork_join;
 
-import lombok.extern.slf4j.Slf4j;
-
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
+import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lingwh
+ * @desc ForkJoin任务拆分
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.AddTask")
 public class AddTask3 extends RecursiveTask<Integer> {
 
@@ -12,16 +16,20 @@ public class AddTask3 extends RecursiveTask<Integer> {
         ForkJoinPool pool = new ForkJoinPool(4);
         System.out.println(pool.invoke(new AddTask3(1, 10)));
     }
+
     int begin;
     int end;
+
     public AddTask3(int begin, int end) {
         this.begin = begin;
         this.end = end;
     }
+
     @Override
     public String toString() {
         return "{" + begin + "," + end + '}';
     }
+
     @Override
     protected Integer compute() {
         // 5, 5

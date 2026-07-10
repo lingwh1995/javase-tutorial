@@ -7,10 +7,10 @@ package create.abstractfactory.abstractfactory_i;
  */
 public interface AbstractFactory {
 
-  /**
-   * 创建硬件
-   *
-   * @return
-   */
-  Object createHardware(int type);
+    /**
+     * 创建硬件
+     *
+     * @return
+     */
+    Object createHardware(int type);
 }

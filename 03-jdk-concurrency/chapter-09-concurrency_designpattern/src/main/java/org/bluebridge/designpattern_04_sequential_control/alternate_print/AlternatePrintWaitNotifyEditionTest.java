@@ -1,5 +1,10 @@
 package org.bluebridge.designpattern_04_sequential_control.alternate_print;
 
+/**
+ * @author lingwh
+ * @desc 交替打印(WaitNotify版)
+ * @date 2026/7/9 00:00
+ */
 public class AlternatePrintWaitNotifyEditionTest {
 
     public static void main(String[] args) {
@@ -16,12 +21,15 @@ public class AlternatePrintWaitNotifyEditionTest {
     }
 
     public static class SyncWaitNotify {
+
         private int flag;
         private int loopNumber;
+
         public SyncWaitNotify(int flag, int loopNumber) {
             this.flag = flag;
             this.loopNumber = loopNumber;
         }
+
         public void print(int waitFlag, int nextFlag, String str) {
             for (int i = 0; i < loopNumber; i++) {
                 synchronized (this) {

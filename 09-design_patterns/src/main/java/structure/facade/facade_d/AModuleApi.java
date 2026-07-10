@@ -1,12 +1,12 @@
 package structure.facade.facade_d;
 
 /**
- * A模块的接口
- * @author ronin
- * @version V1.0
- * @since 2019/9/12 13:15
+ * @author lingwh
+ * @desc A模块的接口
+ * @date 2019/9/12 13:15
  */
 public interface AModuleApi {
+
     /**
      * 对子系统外部
      */

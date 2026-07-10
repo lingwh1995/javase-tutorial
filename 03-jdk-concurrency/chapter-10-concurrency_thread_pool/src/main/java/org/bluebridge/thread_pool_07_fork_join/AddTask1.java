@@ -1,20 +1,29 @@
 package org.bluebridge.thread_pool_07_fork_join;
 
-import lombok.extern.slf4j.Slf4j;
-
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
+import lombok.extern.slf4j.Slf4j;
+
+/**
+ * @author lingwh
+ * @desc ForkJoin任务拆分
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.AddTask")
 public class AddTask1 extends RecursiveTask<Integer> {
+
     int n;
+
     public AddTask1(int n) {
         this.n = n;
     }
+
     @Override
     public String toString() {
         return "{" + n + '}';
     }
+
     @Override
     protected Integer compute() {
         // 如果 n 已经为 1，可以求得结果了

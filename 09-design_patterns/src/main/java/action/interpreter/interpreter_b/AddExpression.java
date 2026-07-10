@@ -3,7 +3,9 @@ package action.interpreter.interpreter_b;
 import java.util.HashMap;
 
 /**
- * 加法解释器
+ * @author lingwh
+ * @desc 加法解释器
+ * @date 2026/7/9 00:00
  */
 public class AddExpression extends SymbolExpression {
 
@@ -13,12 +15,13 @@ public class AddExpression extends SymbolExpression {
 
     /**
      * 处理相加
+     *
      * @param var key:公式 value:变量对应的具体值,如:{a=10,b=20}
      * @return
      */
     @Override
     public int interpret(HashMap<String, Integer> var) {
-        //返回佐表达式对应的值+右表达式对应的值
+        // 返回佐表达式对应的值+右表达式对应的值
         return super.getLeft().interpret(var) + super.getRight().interpret(var);
     }
 }

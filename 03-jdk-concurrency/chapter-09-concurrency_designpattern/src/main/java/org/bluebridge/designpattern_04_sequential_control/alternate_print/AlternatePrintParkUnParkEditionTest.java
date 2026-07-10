@@ -2,6 +2,11 @@ package org.bluebridge.designpattern_04_sequential_control.alternate_print;
 
 import java.util.concurrent.locks.LockSupport;
 
+/**
+ * @author lingwh
+ * @desc 交替打印(ParkUnPark版)
+ * @date 2026/7/9 00:00
+ */
 public class AlternatePrintParkUnParkEditionTest {
 
     public static void main(String[] args) {
@@ -20,14 +25,18 @@ public class AlternatePrintParkUnParkEditionTest {
     }
 
     private static class SyncPark {
+
         private int loopNumber;
         private Thread[] threads;
+
         public SyncPark(int loopNumber) {
             this.loopNumber = loopNumber;
         }
+
         public void setThreads(Thread... threads) {
             this.threads = threads;
         }
+
         public void print(String str) {
             for (int i = 0; i < loopNumber; i++) {
                 LockSupport.park();
@@ -35,21 +44,23 @@ public class AlternatePrintParkUnParkEditionTest {
                 LockSupport.unpark(nextThread());
             }
         }
+
         private Thread nextThread() {
             Thread current = Thread.currentThread();
             int index = 0;
             for (int i = 0; i < threads.length; i++) {
-                if(threads[i] == current) {
+                if (threads[i] == current) {
                     index = i;
                     break;
                 }
             }
-            if(index < threads.length - 1) {
-                return threads[index+1];
+            if (index < threads.length - 1) {
+                return threads[index + 1];
             } else {
                 return threads[0];
             }
         }
+
         public void start() {
             for (Thread thread : threads) {
                 thread.start();
@@ -57,5 +68,4 @@ public class AlternatePrintParkUnParkEditionTest {
             LockSupport.unpark(threads[0]);
         }
     }
-
 }

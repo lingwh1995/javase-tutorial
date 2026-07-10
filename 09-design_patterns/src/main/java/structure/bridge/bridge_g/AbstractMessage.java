@@ -12,22 +12,22 @@ public abstract class AbstractMessage {
      */
     protected MessageEmail messageEmail;
 
-  /**
-   * 构造方法:传入实现部分的对象
-   *
-   * @param messageEmail
-   */
-  public AbstractMessage(MessageEmail messageEmail) {
-    this.messageEmail = messageEmail;
-  }
+    /**
+     * 构造方法:传入实现部分的对象
+     *
+     * @param messageEmail
+     */
+    public AbstractMessage(MessageEmail messageEmail) {
+        this.messageEmail = messageEmail;
+    }
 
-  /**
-   * 发送短信
-   *
-   * @param message
-   * @param toUer
-   */
-  public void sendMessage(String message, String toUer) {
-    messageEmail.send(message, toUer);
-  }
+    /**
+     * 发送短信
+     *
+     * @param message
+     * @param toUer
+     */
+    public void sendMessage(String message, String toUer) {
+        messageEmail.send(message, toUer);
+    }
 }

@@ -9,9 +9,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 两阶段终止模式 - 应用服务端
+ * @date 2026/7/9 00:00
  */
-public class AppServer extends Thread{
+public class AppServer extends Thread {
     private final int port;
     private static final int DEFAULT_PORT = 8080;
     private volatile boolean start = true;
@@ -19,7 +21,7 @@ public class AppServer extends Thread{
     private final ExecutorService executors = Executors.newFixedThreadPool(10);
     private ServerSocket server;
 
-    public AppServer(){
+    public AppServer() {
         this(DEFAULT_PORT);
     }
 
@@ -28,10 +30,10 @@ public class AppServer extends Thread{
     }
 
     @Override
-    public void run(){
+    public void run() {
         try {
             this.server = new ServerSocket(port);
-            while (start){
+            while (start) {
                 Socket client = server.accept();
                 ClientHandler clientHandler = new ClientHandler(client);
                 executors.submit(clientHandler);
@@ -40,7 +42,7 @@ public class AppServer extends Thread{
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             this.dispose();
         }
     }

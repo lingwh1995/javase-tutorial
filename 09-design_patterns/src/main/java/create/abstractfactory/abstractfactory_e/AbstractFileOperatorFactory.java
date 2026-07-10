@@ -7,32 +7,32 @@ package create.abstractfactory.abstractfactory_e;
  */
 public abstract class AbstractFileOperatorFactory {
 
-  /**
-   * 导出文件
-   *
-   * @param data
-   * @return
-   */
-  public boolean exportFile(String data) {
-    FileOperator txtFileOperator = this.createFileOperator();
-    return txtFileOperator.exportFile(data);
-  }
+    /**
+     * 导出文件
+     *
+     * @param data
+     * @return
+     */
+    public boolean exportFile(String data) {
+        FileOperator txtFileOperator = this.createFileOperator();
+        return txtFileOperator.exportFile(data);
+    }
 
-  /**
-   * 导入文件
-   *
-   * @param data
-   * @return
-   */
-  public boolean importFile(String data) {
-    FileOperator txtFileOperator = this.createFileOperator();
-    return txtFileOperator.importFile(data);
-  }
+    /**
+     * 导入文件
+     *
+     * @param data
+     * @return
+     */
+    public boolean importFile(String data) {
+        FileOperator txtFileOperator = this.createFileOperator();
+        return txtFileOperator.importFile(data);
+    }
 
-  /**
-   * 创建具体的文件操作者
-   *
-   * @return
-   */
-  public abstract FileOperator createFileOperator();
+    /**
+     * 创建具体的文件操作者
+     *
+     * @return
+     */
+    public abstract FileOperator createFileOperator();
 }

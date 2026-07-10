@@ -12,22 +12,22 @@ public abstract class AbstractMessage {
      */
     protected MessageImplementor messageImplementor;
 
-  /**
-   * 构造方法:传入实现部分的对象
-   *
-   * @param messageImplementor
-   */
-  public AbstractMessage(MessageImplementor messageImplementor) {
-    this.messageImplementor = messageImplementor;
-  }
+    /**
+     * 构造方法:传入实现部分的对象
+     *
+     * @param messageImplementor
+     */
+    public AbstractMessage(MessageImplementor messageImplementor) {
+        this.messageImplementor = messageImplementor;
+    }
 
-  /**
-   * 发送短信
-   *
-   * @param message
-   * @param toUer
-   */
-  public void sendMessage(String message, String toUer) {
-    messageImplementor.send(message, toUer);
-  }
+    /**
+     * 发送短信
+     *
+     * @param message
+     * @param toUer
+     */
+    public void sendMessage(String message, String toUer) {
+        messageImplementor.send(message, toUer);
+    }
 }

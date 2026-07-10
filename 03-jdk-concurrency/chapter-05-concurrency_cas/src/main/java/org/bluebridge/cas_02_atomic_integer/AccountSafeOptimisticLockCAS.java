@@ -3,9 +3,11 @@ package org.bluebridge.cas_02_atomic_integer;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * 线程安全的实现-乐观锁（CAS）
+ * @author lingwh
+ * @desc 线程安全的实现-乐观锁（CAS）
+ * @date 2026/7/9 00:00
  */
-public class AccountSafeOptimisticLockCAS implements Account{
+public class AccountSafeOptimisticLockCAS implements Account {
 
     private AtomicInteger balance;
 

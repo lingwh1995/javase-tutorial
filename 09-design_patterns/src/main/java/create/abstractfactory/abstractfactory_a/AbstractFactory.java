@@ -7,17 +7,17 @@ package create.abstractfactory.abstractfactory_a;
  */
 public interface AbstractFactory {
 
-  /**
-   * 示例方法，创建抽象产品A的对象
-   *
-   * @return 抽象产品A的对象
-   */
-  public AbstractProductA createProductA();
+    /**
+     * 示例方法，创建抽象产品A的对象
+     *
+     * @return 抽象产品A的对象
+     */
+    public AbstractProductA createProductA();
 
-  /**
-   * 示例方法，创建抽象产品B的对象
-   *
-   * @return 抽象产品B的对象
-   */
-  public AbstractProductB createProductB();
+    /**
+     * 示例方法，创建抽象产品B的对象
+     *
+     * @return 抽象产品B的对象
+     */
+    public AbstractProductB createProductB();
 }

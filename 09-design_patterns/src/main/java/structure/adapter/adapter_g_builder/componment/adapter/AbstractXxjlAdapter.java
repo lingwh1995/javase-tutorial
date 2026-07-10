@@ -5,11 +5,10 @@ import structure.adapter.adapter_g_builder.domain.Tztg;
 import structure.adapter.adapter_g_builder.service.IGatzlService;
 import structure.adapter.adapter_g_builder.service.ITztgService;
 
-public class AbstractXxjlAdapter implements IGatzlService,ITztgService {
-    @Override
-    public void save(Gatzl gatzl) {
+public class AbstractXxjlAdapter implements IGatzlService, ITztgService {
 
-    }
+    @Override
+    public void save(Gatzl gatzl) {}
 
     @Override
     public boolean delete(Gatzl gatzl) {
@@ -22,9 +21,7 @@ public class AbstractXxjlAdapter implements IGatzlService,ITztgService {
     }
 
     @Override
-    public void save(Tztg tztg) {
-
-    }
+    public void save(Tztg tztg) {}
 
     @Override
     public boolean delete(Tztg tztg) {

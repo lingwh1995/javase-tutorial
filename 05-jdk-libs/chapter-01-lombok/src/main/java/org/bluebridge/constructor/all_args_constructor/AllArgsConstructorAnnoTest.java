@@ -19,7 +19,4 @@ public class AllArgsConstructorAnnoTest {
         User user = new User("1", "zhangsan", 18, "zhangsan@qq.com");
         log.info("user: {}", user);
     }
-
 }
-
-

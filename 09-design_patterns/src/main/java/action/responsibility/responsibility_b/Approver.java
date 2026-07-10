@@ -1,10 +1,17 @@
 package action.responsibility.responsibility_b;
 
+/**
+ * @author lingwh
+ * @desc 审批人抽象类
+ * @date 2026/7/9 00:00
+ */
 public abstract class Approver {
+
     /**
      * 下一个处理者
      */
     protected Approver approver;
+
     /**
      * 名字
      */
@@ -16,6 +23,7 @@ public abstract class Approver {
 
     /**
      * 设置下一个处理者
+     *
      * @param approver
      */
     public void setApprover(Approver approver) {

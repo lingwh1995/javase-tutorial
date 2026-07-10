@@ -3,11 +3,23 @@ package org.bluebridge.cas_02_atomic_integer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author lingwh
+ * @desc 账户接口
+ * @date 2026/7/9 00:00
+ */
 interface Account {
-    // 获取余额
+
+    /**
+     * 获取余额
+     * @return
+     */
     Integer getBalance();
 
-    // 取款
+    /**
+     * 取款
+     * @param amount
+     */
     void withdraw(Integer amount);
 
     /**
@@ -31,6 +43,6 @@ interface Account {
             }
         });
         long end = System.nanoTime();
-        System.out.println(account.getBalance() + " cost: " + (end-start)/1000_000 + " ms");
+        System.out.println(account.getBalance() + " cost: " + (end - start) / 1000_000 + " ms");
     }
 }

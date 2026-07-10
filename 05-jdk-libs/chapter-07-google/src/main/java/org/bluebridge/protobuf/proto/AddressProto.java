@@ -93,7 +93,7 @@ public final class AddressProto extends com.google.protobuf.GeneratedFile {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         location_ = s;
@@ -109,7 +109,7 @@ public final class AddressProto extends com.google.protobuf.GeneratedFile {
         getLocationBytes() {
       java.lang.Object ref = location_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         location_ = b;
@@ -438,7 +438,7 @@ public final class AddressProto extends com.google.protobuf.GeneratedFile {
           getLocationBytes() {
         java.lang.Object ref = location_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           location_ = b;
@@ -538,7 +538,7 @@ public final class AddressProto extends com.google.protobuf.GeneratedFile {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_org_bluebridge_protobuf_address_Address_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_org_bluebridge_protobuf_address_Address_fieldAccessorTable;
 

@@ -1,11 +1,11 @@
 package action.command.command_k;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/10 16:15
+ * @author lingwh
+ * @desc 加法命令
+ * @date 2019/9/10 16:15
  */
-public class AddCommand implements Command{
+public class AddCommand implements Command {
 
     /**
      * 持有具体执行计算的类的引用

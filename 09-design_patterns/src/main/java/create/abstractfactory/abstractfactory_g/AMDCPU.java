@@ -1,13 +1,11 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
- * AMD的CPU实现
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 9:45
+ * @author lingwh
+ * @desc AMD的CPU实现
+ * @date 2019/9/4 9:45
  */
-public class AMDCPU implements CPUApi{
-
+public class AMDCPU implements CPUApi {
 
     /**
      * CPU的针脚数目
@@ -16,14 +14,15 @@ public class AMDCPU implements CPUApi{
 
     /**
      * 构造方法，传入CPU的针脚数目
+     *
      * @param pins CPU的针脚数目
      */
-    public AMDCPU(int pins){
+    public AMDCPU(int pins) {
         this.pins = pins;
     }
 
     @Override
     public void calculate() {
-        System.out.println("now in AMD CPU,pins="+pins);
+        System.out.println("now in AMD CPU,pins=" + pins);
     }
 }

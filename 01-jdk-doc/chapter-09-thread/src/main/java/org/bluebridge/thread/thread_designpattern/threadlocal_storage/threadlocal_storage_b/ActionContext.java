@@ -1,7 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadlocal_storage_b;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 动作上下文
+ * @date 2026/7/9 00:00
  */
 public class ActionContext {
 
@@ -13,14 +15,14 @@ public class ActionContext {
     };
 
     public static class ContextHolder {
-        private final static ActionContext context = new ActionContext();
+        private static final ActionContext context = new ActionContext();
     }
 
-    public static ActionContext getInstance(){
+    public static ActionContext getInstance() {
         return ContextHolder.context;
     }
 
-    public Context getContext(){
+    public Context getContext() {
         return threadLocal.get();
     }
 
