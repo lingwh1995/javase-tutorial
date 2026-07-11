@@ -1,9 +1,8 @@
 package org.bluebridge.hsqldb;
 
+import java.sql.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
-import java.sql.*;
 
 /**
  * @author lingwh
@@ -34,7 +33,7 @@ public class HsqldbTest {
             PreparedStatement preparedStatement = conn.prepareStatement(querySql);
             preparedStatement.setInt(1, param);
             ResultSet resultSet = preparedStatement.executeQuery();
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 int id = resultSet.getInt(1);
                 String name = resultSet.getString(2);
                 Date date = resultSet.getDate("createtime");
@@ -53,9 +52,9 @@ public class HsqldbTest {
             querySql = "select * from t_user";
             PreparedStatement preState = conn.prepareStatement(querySql);
             boolean result = preState.execute();
-            if(result) {
+            if (result) {
                 ResultSet resultset = preState.getResultSet();
-                while(resultset.next()) {
+                while (resultset.next()) {
                     int id = resultset.getInt("id");
                     String name = resultset.getString("name");
                     Date date = resultset.getDate("createtime");
@@ -75,5 +74,4 @@ public class HsqldbTest {
             e.printStackTrace();
         }
     }
-
 }

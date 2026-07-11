@@ -3,20 +3,25 @@ package org.bluebridge.thread_09_interrupt;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 获取线程打断状态方式二: 使用try...catch...捕获异常，如果捕获到了异常，则说明打断状态发生了改变(线程被打断了)
+ * 获取线程打断状态方式二
+ *     使用try...catch...捕获异常，如果捕获到了异常，则说明打断状态发生了改变(线程被打断了)
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class ThreadInterruptTest3 {
 
     public static void main(String[] args) throws InterruptedException {
-        //测试打断sleep状态(阻塞状态)的线程
-        //testInterruptSleepThread();
+        // 测试打断sleep状态(阻塞状态)的线程
+        // testInterruptSleepThread();
 
-        //测试打断wait状态(阻塞状态)的线程
+        // 测试打断wait状态(阻塞状态)的线程
         testInterruptWaitThread();
     }
 
     /**
      * 测试打断sleep状态(阻塞状态)的线程
+     *
      * @throws InterruptedException
      */
     private static void testInterruptSleepThread() throws InterruptedException {
@@ -38,14 +43,16 @@ public class ThreadInterruptTest3 {
         TimeUnit.MILLISECONDS.sleep(1000);
         t.interrupt();
         System.out.println("打断标记：" + t.isInterrupted());
-        System.out.println("Thread " + t.getName() + " 存活状态： "+ t.isAlive());
+        System.out.println("Thread " + t.getName() + " 存活状态： " + t.isAlive());
     }
 
     /**
      * 测试打断wait状态(阻塞状态)的线程
+     *
      * @throws InterruptedException
      */
     private static Object lock = new Object();
+
     private static void testInterruptWaitThread() throws InterruptedException {
         Thread t = new Thread(() -> {
             while (true) {
@@ -67,6 +74,6 @@ public class ThreadInterruptTest3 {
         TimeUnit.MILLISECONDS.sleep(1000);
         t.interrupt();
         System.out.println("打断标记：" + t.isInterrupted());
-        System.out.println("Thread " + t.getName() + " 存活状态："+ t.isAlive());
+        System.out.println("Thread " + t.getName() + " 存活状态：" + t.isAlive());
     }
 }

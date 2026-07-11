@@ -4,6 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc 8锁测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test8Locks")
 public class Test8Locks {
     public static void main(String[] args) {
@@ -19,6 +24,7 @@ public class Test8Locks {
         }).start();
     }
 }
+
 @Slf4j(topic = "c.Number")
 class Number{
     public synchronized void a() {

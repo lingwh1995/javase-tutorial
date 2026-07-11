@@ -1,9 +1,8 @@
 package org.bluebridge.basic;
 
+import java.util.Random;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
-import java.util.Random;
 
 /**
  * @author lingwh
@@ -16,8 +15,8 @@ public class GotoTest {
     /**
      * java中没有goto,但是可以使用break和continue实现类似于goto的效果
      */
-	@Test
-	public void testGoto() {
+    @Test
+    public void testGoto() {
         outer:
         for (int i = 0; i < 10; i++) {
             log.info("outer_loop: {}", i);
@@ -35,5 +34,5 @@ public class GotoTest {
             }
         }
         log.info("=>所有循环执行完毕！");
-	}
+    }
 }

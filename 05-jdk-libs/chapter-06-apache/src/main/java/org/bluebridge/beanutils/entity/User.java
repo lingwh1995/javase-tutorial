@@ -5,10 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author ronin
- * @version V1.0
- * @description
- * @class User
+ * @author lingwh
+ * @desc User实体
  * @date 2019/6/20 14:30
  */
 @Data
@@ -20,5 +18,4 @@ public class User {
     private String name;
     private Integer age;
     private String school;
-
 }

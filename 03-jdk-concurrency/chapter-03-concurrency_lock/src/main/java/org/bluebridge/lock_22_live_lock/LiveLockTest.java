@@ -2,8 +2,14 @@ package org.bluebridge.lock_22_live_lock;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc 活锁测试
+ * @date 2026/7/9 00:00
+ */
 public class LiveLockTest {
     static volatile int count = 10;
+
     public static void main(String[] args) {
         new Thread(() -> {
             // 期望减到 0 退出循环

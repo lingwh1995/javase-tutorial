@@ -1,12 +1,11 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
- * Intel的CPU实现
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 9:42
+ * @author lingwh
+ * @desc Intel的CPU实现
+ * @date 2019/9/4 9:42
  */
-public class IntelCPU implements CPUApi{
+public class IntelCPU implements CPUApi {
 
     /**
      * CPU的针脚数目
@@ -15,14 +14,15 @@ public class IntelCPU implements CPUApi{
 
     /**
      * 构造方法，传入CPU的针脚数目
+     *
      * @param pins CPU的针脚数目
      */
-    public IntelCPU(int pins){
+    public IntelCPU(int pins) {
         this.pins = pins;
     }
 
     @Override
     public void calculate() {
-        System.out.println("now in Intel CPU,pins="+pins);
+        System.out.println("now in Intel CPU,pins=" + pins);
     }
 }

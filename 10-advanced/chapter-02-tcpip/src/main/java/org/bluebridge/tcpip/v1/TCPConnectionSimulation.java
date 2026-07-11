@@ -3,22 +3,24 @@ package org.bluebridge.tcpip.v1;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * TCP连接状态模拟测试类
+ * @author lingwh
+ * @desc TCP连接状态模拟测试类
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class TCPConnectionSimulation {
-    
+
     public static void main(String[] args) {
         // 模拟三次握手
         TCPHandshake.threeWayHandshake();
-        
+
         // 模拟四次挥手
         TCPWaveBye.fourWayWaveBye();
-        
+
         // 展示TCP状态机
         showTCPStateMachine();
     }
-    
+
     /**
      * 展示TCP状态机
      */

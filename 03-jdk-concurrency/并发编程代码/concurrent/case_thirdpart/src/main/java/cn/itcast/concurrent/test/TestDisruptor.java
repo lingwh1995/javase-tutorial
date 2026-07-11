@@ -7,6 +7,11 @@ import com.lmax.disruptor.dsl.Disruptor;
 import java.nio.ByteBuffer;
 import java.util.concurrent.Executors;
 
+/**
+ * @author lingwh
+ * @desc Disruptor 测试
+ * @date 2026/7/9 00:00
+ */
 public class TestDisruptor {
     public static void main(String[] args) throws InterruptedException {
         Disruptor<LongEvent> disruptor = new Disruptor<>(
@@ -34,8 +39,7 @@ public class TestDisruptor {
     }
 }
 
-class LongEvent
-{
+class LongEvent {
     private long value;
 
     public void set(long value)

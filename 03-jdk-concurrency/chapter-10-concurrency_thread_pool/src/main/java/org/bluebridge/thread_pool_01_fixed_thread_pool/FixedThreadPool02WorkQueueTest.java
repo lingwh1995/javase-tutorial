@@ -3,12 +3,9 @@ package org.bluebridge.thread_pool_01_fixed_thread_pool;
 import java.util.concurrent.*;
 
 /**
- * 固定大小的线程池FixedThreadPool
- *      1.线程池大小固定，不会随着任务的增长而增长。
- *      2.核心线程数和最大线程数相等，使用无界队列
- *      3.使用的工作队列是LinkedBlockingQueue
- *
- * LinkedBlockingQueue功能测试
+ * @author lingwh
+ * @desc LinkedBlockingQueue工作队列测试
+ * @date 2026/7/9 00:00
  */
 public class FixedThreadPool02WorkQueueTest {
 

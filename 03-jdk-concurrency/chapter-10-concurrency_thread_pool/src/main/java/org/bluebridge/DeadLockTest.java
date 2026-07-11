@@ -8,6 +8,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+/**
+ * @author lingwh
+ * @desc 线程池死锁测试
+ * @date 2026/7/9 00:00
+ */
 public class DeadLockTest {
 
     private static final List<String> MENU = Arrays.asList("地三鲜", "宫保鸡丁", "辣子鸡丁", "烤鸡翅");

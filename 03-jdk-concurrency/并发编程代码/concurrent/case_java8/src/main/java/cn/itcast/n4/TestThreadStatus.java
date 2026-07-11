@@ -2,6 +2,11 @@ package cn.itcast.n4;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc 线程状态测试
+ * @date 2026/7/9 00:00
+ */
 public class TestThreadStatus {
     static final Object obj = new Object();
     public static void main(String[] args) throws InterruptedException {

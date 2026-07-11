@@ -11,6 +11,11 @@ import java.net.Socket;
 import java.util.Collection;
 import java.util.Locale;
 
+/**
+ * @author lingwh
+ * @desc HTTP 响应实现
+ * @date 2026/7/9 00:00
+ */
 public class ResponseImpl implements HttpServletResponse {
 
     private Socket socket;

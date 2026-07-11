@@ -7,6 +7,11 @@ import java.util.concurrent.*;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc 线程池关闭测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestShutDown")
 public class TestShutDown {
 

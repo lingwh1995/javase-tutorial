@@ -1,11 +1,11 @@
 package action.strategy.strategy_e.service;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/5 9:27
+ * @author lingwh
+ * @desc 文件日志服务
+ * @date 2019/8/5 9:27
  */
-public class LogServiceFile implements ILogService{
+public class LogServiceFile implements ILogService {
 
     /**
      * 记录日志的方法

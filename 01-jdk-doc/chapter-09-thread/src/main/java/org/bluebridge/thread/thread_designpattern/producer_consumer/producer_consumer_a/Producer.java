@@ -4,21 +4,23 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 生产者
+ * @date 2026/7/9 00:00
  */
-public class Producer extends Thread{
+public class Producer extends Thread {
     private final MessageQueue messageQueue;
-    private final static Random random = new Random();
-    private final static AtomicInteger counter = new AtomicInteger();
+    private static final Random random = new Random();
+    private static final AtomicInteger counter = new AtomicInteger();
 
-    public Producer(MessageQueue messageQueue,int seq){
+    public Producer(MessageQueue messageQueue, int seq) {
         super("PRODUCER" + seq);
         this.messageQueue = messageQueue;
     }
 
     @Override
     public void run() {
-        while(true){
+        while (true) {
             try {
                 Message message = new Message("Message-" + counter.getAndIncrement());
                 messageQueue.put(message);

@@ -1,10 +1,9 @@
 package org.bluebridge.lang3;
 
+import java.util.stream.IntStream;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.text.RandomStringGenerator;
 import org.junit.Test;
-
-import java.util.stream.IntStream;
 
 /**
  * @author lingwh
@@ -150,5 +149,4 @@ public class RandomStringGeneratorTest {
             log.info("generate-8: {}", phoneNumber);
         });
     }
-
 }

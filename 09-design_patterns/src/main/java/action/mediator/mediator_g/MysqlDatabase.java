@@ -1,14 +1,12 @@
 package action.mediator.mediator_g;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Mysql 数据库（具体同事类）
- * @author ronin
- * @version V1.0
- * @since 2019/8/15 8:35
+ * @author lingwh
+ * @desc Mysql 数据库（具体同事类）
+ * @date 2019/8/15 8:35
  */
 public class MysqlDatabase extends AbstractDatabase {
     private List<String> dataset = new ArrayList<String>();

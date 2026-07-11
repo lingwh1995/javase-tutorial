@@ -1,10 +1,10 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.geom.RoundRectangle2D;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -49,27 +49,27 @@ public class Lesson_20_UndecoratedFrameTest {
         // 设置窗体大小
         frame.setBounds(500, 500, 200, 200);
 
-        //注意，只有窗口在非修饰状态下才能设定形状
-        //这里我们使用圆角矩形，形状最好跟窗口大小一样
+        // 注意，只有窗口在非修饰状态下才能设定形状
+        // 这里我们使用圆角矩形，形状最好跟窗口大小一样
         frame.setShape(new RoundRectangle2D.Double(0, 0, 200, 200, 20, 20));
         frame.setVisible(true);
 
         // 添加鼠标监听器实现窗口拖动功能
-        frame.addMouseMotionListener(new MouseMotionAdapter() {   //只需要写一个监听器就可以搞定了
+        frame.addMouseMotionListener(new MouseMotionAdapter() {
             int oldX, oldY;
-            public void mouseDragged(MouseEvent e) {   //鼠标拖动时如果是标题栏，就将窗口位置修改
+            //鼠标拖动时如果是标题栏，就将窗口位置修改
+            public void mouseDragged(MouseEvent e) {
                 if(e.getY() <= 28)
                     frame.setLocation(e.getXOnScreen() - oldX, e.getYOnScreen() - oldY);
             }
 
-            public void mouseMoved(MouseEvent e) {   //记录上一次的鼠标位置
+            // 记录上一次的鼠标位置
+            public void mouseMoved(MouseEvent e) {
                 oldX = e.getX();
                 oldY = e.getY();
             }
         });
-
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

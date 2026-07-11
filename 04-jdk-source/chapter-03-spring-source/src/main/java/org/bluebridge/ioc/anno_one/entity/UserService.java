@@ -1,25 +1,19 @@
 package org.bluebridge.ioc.anno_one.entity;
 
-
 import org.bluebridge.ioc.anno_one.anno.Service;
 
 /**
- * @author ronin
- * @date 2019年3月20日  
+ * @author lingwh
+ * @desc 用户服务
+ * @date 2019/3/20 00:00
  */
 
 @Service
-public class UserService implements IUserService{
+public class UserService implements IUserService {
 
-	private UserDao userDao;
-	/**
-	 * <p>Title: say</p>  
-	 * <p>Description: </p>    
-	 * @see IUserService#say()
-	 */  
-	
-	public void say() {
-		userDao.say();
-	}
+    private UserDao userDao;
 
+    public void say() {
+        userDao.say();
+    }
 }

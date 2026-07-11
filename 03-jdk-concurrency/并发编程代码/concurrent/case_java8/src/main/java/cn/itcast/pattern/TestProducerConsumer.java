@@ -7,6 +7,11 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * @author lingwh
+ * @desc 生产者消费者模式测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestProducerConsumer")
 public class TestProducerConsumer {
     public static void main(String[] args) {

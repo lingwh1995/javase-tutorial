@@ -1,8 +1,8 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -56,7 +56,7 @@ public class Lesson_04_ComponentsTest {
         /*
         Font[] fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts();
         Arrays.stream(fonts).forEach(font -> {
-            System.out.println(font.getName());
+                System.out.println(font.getName());
         });*/
 
         /**
@@ -71,14 +71,14 @@ public class Lesson_04_ComponentsTest {
             System.out.println("文本框内容：" + textField.getText());
         });
         // 设置文本框内容
-        //textField.setText("我是文本框");
+        // textField.setText("我是文本框");
         textField.setEchoChar('*');
         frame.add(textField);
 
         /**
          * 单选框组
          */
-        //创建勾选框组
+        // 创建勾选框组
         CheckboxGroup group = new CheckboxGroup();
         Checkbox c1 = new Checkbox("basketball");
         c1.setBounds(20, 60, 120, 30);
@@ -87,10 +87,9 @@ public class Lesson_04_ComponentsTest {
         Checkbox c2 = new Checkbox("baseball");
         c2.setBounds(150, 60, 120, 30);
         frame.add(c2);
-        //多个勾选框都可以添加到勾选框组中
+        // 多个勾选框都可以添加到勾选框组中
         c1.setCheckboxGroup(group);
         c2.setCheckboxGroup(group);
-
 
         // 添加选择状态变化事件监听器
         c1.addItemListener(e -> {
@@ -185,5 +184,4 @@ public class Lesson_04_ComponentsTest {
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

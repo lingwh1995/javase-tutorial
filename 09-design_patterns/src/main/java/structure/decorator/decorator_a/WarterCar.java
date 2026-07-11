@@ -1,30 +1,26 @@
 package structure.decorator.decorator_a;
 
-/**  
- * 具体装饰器/具体装饰角色
- * @author ronin  
- * @date 2019年3月23日  
- *    
+/**
+ * @author lingwh
+ * @desc 具体装饰器/具体装饰角色
+ * @date 2019/3/23 00:00
  */
 public class WarterCar extends SuperCar {
 
-	public WarterCar(ICar car) {
-		super(car);
-	}
+    public WarterCar(ICar car) {
+        super(car);
+    }
 
-	@Override
-	public void run() {
-		super.run();
-		swim();
-	}
+    @Override
+    public void run() {
+        super.run();
+        swim();
+    }
 
-	/**  
-	 * 增强的功能
-	 * @param 
-	 * @return void
-	 * @throws  
-	 */
-	private void swim() {
-		System.out.println("水里游......");
-	}
+    /**
+     * 增强的功能
+     */
+    private void swim() {
+        System.out.println("水里游......");
+    }
 }

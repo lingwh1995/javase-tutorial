@@ -2,11 +2,14 @@ package structure.facade.facade_a;
 
 /**
  * 爆米花机，使用饿汉式
+ *
+ * @author lingwh
+ * @date 2019/3/16 00:00
  */
 public class Propcorn {
     private static Propcorn propcorn = new Propcorn();
 
-    public static Propcorn getInstance(){
+    public static Propcorn getInstance() {
         return propcorn;
     }
 

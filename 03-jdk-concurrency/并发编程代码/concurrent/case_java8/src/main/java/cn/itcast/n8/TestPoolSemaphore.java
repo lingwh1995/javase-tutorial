@@ -10,6 +10,11 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
+/**
+ * @author lingwh
+ * @desc 信号量连接池测试
+ * @date 2026/7/9 00:00
+ */
 public class TestPoolSemaphore {
     public static void main(String[] args) {
         Pool pool = new Pool(2);

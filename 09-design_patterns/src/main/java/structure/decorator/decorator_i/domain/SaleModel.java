@@ -1,16 +1,20 @@
 package structure.decorator.decorator_i.domain;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/7 9:42
+ * @author lingwh
+ * @desc 销售模型
+ * @date 2019/8/7 9:42
  */
 public class SaleModel {
 
-    /** 销售的商品*/
+    /**
+     * 销售的商品
+     */
     private String goods;
 
-    /**销售的数量*/
+    /**
+     * 销售的数量
+     */
     private int saleNum;
 
     public String getGoods() {

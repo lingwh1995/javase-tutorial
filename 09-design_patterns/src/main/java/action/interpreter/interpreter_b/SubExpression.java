@@ -3,7 +3,9 @@ package action.interpreter.interpreter_b;
 import java.util.HashMap;
 
 /**
- * 减法解释器
+ * @author lingwh
+ * @desc 减法解释器
+ * @date 2026/7/9 00:00
  */
 public class SubExpression extends SymbolExpression {
 
@@ -11,6 +13,7 @@ public class SubExpression extends SymbolExpression {
      * 左表达式
      */
     private Expression left;
+
     /**
      * 右表达式
      */
@@ -21,7 +24,6 @@ public class SubExpression extends SymbolExpression {
     }
 
     /**
-     *
      * @param var key:公式 value:变量对应的具体值,如:{a=10,b=20}
      * @return
      */

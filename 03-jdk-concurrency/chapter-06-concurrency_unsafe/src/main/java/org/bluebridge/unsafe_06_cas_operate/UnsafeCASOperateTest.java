@@ -1,11 +1,13 @@
 package org.bluebridge.unsafe_06_cas_operate;
 
 /**
- * Unsafe应用五    CAS操作
+ * @author lingwh
+ * @desc Unsafe应用五 CAS操作
+ * @date 2026/7/9 00:00
  */
 public class UnsafeCASOperateTest {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Student student = new Student();
         new Thread(()->{
             for (int i = 1; i < 5; i++) {

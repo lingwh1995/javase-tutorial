@@ -1,17 +1,26 @@
 package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_consumer_b;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/17 11:19
+ * @author lingwh
+ * @desc 桌子(蛋糕缓冲区)
+ * @date 2019/10/17 11:19
  */
 public class Table {
     private final String[] buffer;
-    /**下次put的位置*/
+
+    /**
+     * 下次put的位置
+     */
     private int tail;
-    /**下次take的位置*/
+
+    /**
+     * 下次take的位置
+     */
     private int head;
-    /**buffer中蛋糕的个数*/
+
+    /**
+     * buffer中蛋糕的个数
+     */
     private int count;
 
     public Table(int count) {
@@ -21,28 +30,28 @@ public class Table {
         this.count = 0;
     }
 
-    public synchronized void put(String cake) throws InterruptedException{
-        System.out.println(Thread.currentThread().getName()+" puts " + cake);
-        while(count >= buffer.length){
+    public synchronized void put(String cake) throws InterruptedException {
+        System.out.println(Thread.currentThread().getName() + " puts " + cake);
+        while (count >= buffer.length) {
             wait();
         }
         buffer[tail] = cake;
-        tail = (tail +1) % buffer.length;
+        tail = (tail + 1) % buffer.length;
         count++;
         notify();
-        //notifyAll();
+        // notifyAll();
     }
 
     public synchronized String take() throws InterruptedException {
-        while(count <=0){
+        while (count <= 0) {
             wait();
         }
         String cake = buffer[head];
-        head = (head+1) % buffer.length;
+        head = (head + 1) % buffer.length;
         count--;
         notify();
-        //notifyAll();
-        System.out.println(Thread.currentThread().getName()+" takes " + cake);
+        // notifyAll();
+        System.out.println(Thread.currentThread().getName() + " takes " + cake);
         return cake;
     }
 }

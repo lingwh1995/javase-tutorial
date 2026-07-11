@@ -1,18 +1,17 @@
 package create.abstractfactory.abstractfactory_i;
 
-
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/7 14:57
+ * @author lingwh
+ * @desc Intel牌CPU实现
+ * @date 2019/8/7 14:57
  */
-public class IntelCPU implements CPUApi{
+public class IntelCPU implements CPUApi {
     /**
      * 针脚数
      */
-    private int pins  = 0;
+    private int pins = 0;
 
-    public IntelCPU(int pins){
+    public IntelCPU(int pins) {
         this.pins = pins;
     }
 

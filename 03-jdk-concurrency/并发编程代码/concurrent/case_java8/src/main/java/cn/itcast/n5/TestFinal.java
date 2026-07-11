@@ -1,5 +1,10 @@
 package cn.itcast.n5;
 
+/**
+ * @author lingwh
+ * @desc final关键字测试
+ * @date 2026/7/9 00:00
+ */
 public class TestFinal {
     static int A = 10;
     static int B = Short.MAX_VALUE+1;
@@ -23,7 +28,6 @@ public class TestFinal {
         }
         new Thread(new Task()).start();
     }
-
 }
 
 class UseFinal1 {

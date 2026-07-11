@@ -2,10 +2,15 @@ package org.bluebridge.lock_25_reentrant_read_write_lock;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc ReentrantReadWriteLock读写锁测试
+ * @date 2026/7/9 00:00
+ */
 public class ReentrantReadWriteLockTest {
 
     public static void main(String[] args) {
-        //testReadLockReadLock();
+        // testReadLockReadLock();
 
         testReadLockWriteLock();
     }

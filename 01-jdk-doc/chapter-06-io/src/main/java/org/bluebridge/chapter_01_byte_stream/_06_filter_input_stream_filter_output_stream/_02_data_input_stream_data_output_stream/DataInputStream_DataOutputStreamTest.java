@@ -1,9 +1,8 @@
 package org.bluebridge.chapter_01_byte_stream._06_filter_input_stream_filter_output_stream._02_data_input_stream_data_output_stream;
 
+import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
-import java.io.*;
 
 /**
  * @author lingwh
@@ -20,8 +19,8 @@ public class DataInputStream_DataOutputStreamTest {
             dos.writeUTF("α");
             dos.writeInt(1234567);
             dos.writeBoolean(true);
-            dos.writeShort((short)123);
-            dos.writeLong((long)456);
+            dos.writeShort((short) 123);
+            dos.writeLong((long) 456);
             dos.writeDouble(99.98);
             log.info("dis.readUTF()： {}", dis.readUTF());
             log.info("dis.readInt()： {}", dis.readInt());
@@ -33,5 +32,4 @@ public class DataInputStream_DataOutputStreamTest {
             throw new RuntimeException(e);
         }
     }
-
 }

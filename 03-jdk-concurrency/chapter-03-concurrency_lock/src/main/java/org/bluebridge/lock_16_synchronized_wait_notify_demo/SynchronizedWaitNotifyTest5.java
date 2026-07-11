@@ -3,8 +3,13 @@ package org.bluebridge.lock_16_synchronized_wait_notify_demo;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * while循环解决虚假唤醒
+ *
  * notify 只能随机唤醒一个 WaitSet 中的线程，这时如果有其它线程也在等待，那么就可能唤醒不了正确的线 程，称之为【虚假唤醒】
  * 解决方法，改为 notifyAll
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class SynchronizedWaitNotifyTest5 {
     static final Object room = new Object();

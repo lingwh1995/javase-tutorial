@@ -8,6 +8,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author lingwh
+ * @desc 拒绝策略接口
+ * @date 2026/7/9 00:00
+ */
 @FunctionalInterface
 interface RejectPolicy<T> {
     void reject(BlockingQueue<T> queue, T task);

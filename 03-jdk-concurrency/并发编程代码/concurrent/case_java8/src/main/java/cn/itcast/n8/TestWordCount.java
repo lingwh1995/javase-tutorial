@@ -15,6 +15,11 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * @author lingwh
+ * @desc 单词计数测试
+ * @date 2026/7/9 00:00
+ */
 public class TestWordCount {
     public static void main(String[] args) {
         demo(
@@ -43,7 +48,6 @@ public class TestWordCount {
 
 
     private static void demo2() {
-
         Map<String, Integer> collect = IntStream.range(1, 27).parallel()
                 .mapToObj(idx -> readFromFile(idx))
                 .flatMap(list -> list.stream())

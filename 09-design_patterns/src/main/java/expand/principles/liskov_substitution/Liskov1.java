@@ -2,10 +2,13 @@ package expand.principles.liskov_substitution;
 
 /**
  * 未使用里氏替换原则
- * B1类继承了A1类，在不知道的情况下重下了父类A1的fun1()方法，外部调用子类B1类中中fun1()的时候以为
- *      里面的逻辑还是a-b，其实逻辑已经在不知道的情况下被重写成a+b了，导致计算结果出了问题
  *
- * 缺点：A1和B1的耦合性太高了，修改B很容易对A造成影响
+ * 1. B1类继承了A1类，在不知道的情况下重下了父类A1的fun1()方法，外部调用子类B1类中中fun1()的时候以为
+ *    里面的逻辑还是a-b，其实逻辑已经在不知道的情况下被重写成a+b了，导致计算结果出了问题
+ * 2. 缺点是A1和B1的耦合性太高了，修改B很容易对A造成影响
+ *
+ * @author lingwh
+ * @date 2019/3/10 00:00
  */
 public class Liskov1 {
     public static void main(String[] args) {

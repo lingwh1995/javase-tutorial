@@ -3,6 +3,11 @@ package cn.itcast.n3;
 import cn.itcast.Constants;
 import cn.itcast.n2.util.FileReader;
 
+/**
+ * @author lingwh
+ * @desc 线程状态测试
+ * @date 2026/7/9 00:00
+ */
 public class TestState2 {
     public static void main(String[] args) throws InterruptedException {
         new Thread(() -> {

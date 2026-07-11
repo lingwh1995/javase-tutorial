@@ -1,21 +1,26 @@
 package org.bluebridge.thread_09_interrupt;
 
 /**
- * interrupt()      表示可以中断线程，实际上只是给线程设置一个中断标志，但是线程依旧会执行。
- * interrupted()    Thread类的静态方法。检查当前线程的中断标志，返回一个boolean并清除中断状态，其连续两次调用的返回结果不一样，因为第二次调用的时候线程的中断状态已经被清除，会返回一个false。
- * isInterrupted()  测试线程是否被中断，不会清除中断状态。
+ * 线程打断api测试
  *
- * https://blog.csdn.net/shadow_zed/article/details/131169470
+ * 1. interrupt()      表示可以中断线程，实际上只是给线程设置一个中断标志，但是线程依旧会执行。
+ * 2. interrupted()    Thread类的静态方法。检查当前线程的中断标志，返回一个boolean并清除中断状态，其连续两次调用的返回结果不一样，因为第二次调用的时候线程的中断状态已经被清除，会返回一个false。
+ * 3. isInterrupted()  测试线程是否被中断，不会清除中断状态。
+ *
+ *  https://blog.csdn.net/shadow_zed/article/details/131169470
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class ThreadInterruptTest1 {
     public static void main(String[] args) throws InterruptedException {
-        //测试打断线程的api2
-        //testThreadInterruptApi1();
+        // 测试打断线程的api2
+        // testThreadInterruptApi1();
 
-        //测试打断线程的api2
-        //testThreadInterruptApi2();
+        // 测试打断线程的api2
+        // testThreadInterruptApi2();
 
-        //测试打断线程的api3
+        // 测试打断线程的api3
         testThreadInterruptApi3();
     }
 
@@ -36,7 +41,7 @@ public class ThreadInterruptTest1 {
         System.out.println("第二次调用 t.isInterrupted()：" + t.isInterrupted());
         System.out.println("调用Thread.interrupted()方法，值为：" + Thread.interrupted());
         System.out.println("调用Thread.interrupted()方法，值为：" + Thread.interrupted());
-        System.out.println("Thread " + t.getName() + " 存活状态： "+ t.isAlive());
+        System.out.println("Thread " + t.getName() + " 存活状态： " + t.isAlive());
     }
 
     /**
@@ -71,6 +76,6 @@ public class ThreadInterruptTest1 {
         t.start();
         t.interrupt();
         Thread.sleep(2000);
-        System.out.println("Thread " + t.getName() + " 存活状态： "+ t.isAlive());
+        System.out.println("Thread " + t.getName() + " 存活状态： " + t.isAlive());
     }
 }

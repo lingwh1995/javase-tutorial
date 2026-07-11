@@ -8,8 +8,5 @@ import lombok.NonNull;
  * @date 2025/8/18 13:52
  */
 public class UserDao {
-    public void deleteUserById(@NonNull String id){
-
-    }
-
+    public void deleteUserById(@NonNull String id) {}
 }

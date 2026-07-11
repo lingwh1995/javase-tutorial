@@ -2,6 +2,11 @@ package cn.itcast.n3;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lingwh
+ * @desc 多线程测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestMultiThread")
 public class TestMultiThread {
 

@@ -7,6 +7,11 @@ import java.util.List;
 import java.util.Random;
 import java.util.Vector;
 
+/**
+ * @author lingwh
+ * @desc 售票练习
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.ExerciseSell")
 public class ExerciseSell {
     public static void main(String[] args) throws InterruptedException {

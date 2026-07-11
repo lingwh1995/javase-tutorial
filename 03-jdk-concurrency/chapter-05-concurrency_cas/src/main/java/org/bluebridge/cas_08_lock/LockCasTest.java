@@ -2,6 +2,11 @@ package org.bluebridge.cas_08_lock;
 
 import static java.lang.Thread.sleep;
 
+/**
+ * @author lingwh
+ * @desc CAS锁测试
+ * @date 2026/7/9 00:00
+ */
 public class LockCasTest {
     public static void main(String[] args) {
         LockCas lock = new LockCas();

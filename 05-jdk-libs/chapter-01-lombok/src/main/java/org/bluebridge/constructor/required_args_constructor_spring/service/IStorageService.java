@@ -8,5 +8,4 @@ package org.bluebridge.constructor.required_args_constructor_spring.service;
 public interface IStorageService {
 
     void save();
-
 }

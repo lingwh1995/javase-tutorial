@@ -3,6 +3,11 @@ package org.bluebridge.utils;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * @author lingwh
+ * @desc MAC消息摘要工具类
+ * @date 2026/7/9 00:00
+ */
 public class MacUtil {
 
     /**
@@ -25,5 +30,4 @@ public class MacUtil {
         }
         return byteBuffer;
     }
-
 }

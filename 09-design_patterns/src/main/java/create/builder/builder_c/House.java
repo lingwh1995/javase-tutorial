@@ -1,6 +1,9 @@
 package create.builder.builder_c;
+
 /**
- * Product
+ * @author lingwh
+ * @desc Product
+ * @date 2026/7/9 00:00
  */
 public class House {
     private String basic;
@@ -33,10 +36,16 @@ public class House {
 
     @Override
     public String toString() {
-        return "House{" +
-                "basic='" + basic + '\'' +
-                ", walls='" + walls + '\'' +
-                ", roof='" + roof + '\'' +
-                '}';
+        return "House{"
+                + "basic='"
+                + basic
+                + '\''
+                + ", walls='"
+                + walls
+                + '\''
+                + ", roof='"
+                + roof
+                + '\''
+                + '}';
     }
 }

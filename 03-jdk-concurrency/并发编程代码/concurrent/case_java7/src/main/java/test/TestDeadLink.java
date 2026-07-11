@@ -2,6 +2,11 @@ package test;
 
 import java.util.HashMap;
 
+/**
+ * @author lingwh
+ * @desc HashMap并发死链测试
+ * @date 2026/7/9 00:00
+ */
 public class TestDeadLink {
     public static void main(String[] args) {
         // 测试 java 7 中哪些数字的 hash 结果相等

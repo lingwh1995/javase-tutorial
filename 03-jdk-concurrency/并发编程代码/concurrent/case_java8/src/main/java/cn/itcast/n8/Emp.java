@@ -2,6 +2,11 @@ package cn.itcast.n8;
 
 import java.math.BigDecimal;
 
+/**
+ * @author lingwh
+ * @desc 员工实体类
+ * @date 2026/7/9 00:00
+ */
 class Emp {
     private int empno;
     private String ename;

@@ -15,5 +15,4 @@ public class PostgreSQStorageDao {
     public void save() {
         log.info("执行 postgresql 存储操作......");
     }
-
 }

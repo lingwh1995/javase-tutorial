@@ -1,12 +1,11 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
- * 技嘉的主板
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 9:47
+ * @author lingwh
+ * @desc 技嘉的主板
+ * @date 2019/9/4 9:47
  */
-public class GAMainboard implements MainboardApi{
+public class GAMainboard implements MainboardApi {
 
     /**
      * CPU插槽的孔数
@@ -15,14 +14,15 @@ public class GAMainboard implements MainboardApi{
 
     /**
      * 构造方法，传入CPU插槽的孔数
+     *
      * @param cpuHoles CPU插槽的孔数
      */
-    public GAMainboard(int cpuHoles){
+    public GAMainboard(int cpuHoles) {
         this.cpuHoles = cpuHoles;
     }
 
     @Override
     public void installCPU() {
-        System.out.println("now in GAMainboard,cpuHoles="+cpuHoles);
+        System.out.println("now in GAMainboard,cpuHoles=" + cpuHoles);
     }
 }

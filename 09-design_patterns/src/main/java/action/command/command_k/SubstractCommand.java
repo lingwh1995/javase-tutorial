@@ -1,11 +1,11 @@
 package action.command.command_k;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/10 16:19
+ * @author lingwh
+ * @desc 减法命令
+ * @date 2019/9/10 16:19
  */
-public class SubstractCommand implements Command{
+public class SubstractCommand implements Command {
 
     /**
      * 持有具体进行减法计算的类的引用

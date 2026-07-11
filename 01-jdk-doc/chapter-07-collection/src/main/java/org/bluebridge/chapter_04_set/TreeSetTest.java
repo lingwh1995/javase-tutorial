@@ -1,48 +1,47 @@
 package org.bluebridge.chapter_04_set;
 
+import java.util.Comparator;
+import java.util.TreeSet;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
-import java.util.Comparator;
-import java.util.TreeSet;
-
 /**
- * TreeSet(有序且唯一):能对元素按照某种规则进行排序
- * 排序有两种:
- *      自然排序(元素具备比较性)：
- *          需要实现Comparable<T>并重写compareTo()方法,与hashCode()和equals()
- *          无关,不需要重写这两个方法
- *      比较器排序(集合具备比较性):
- *          在TreeSet的构造方法中传入Comparator的子类
- * 底层数据结构是红黑树
+ * TreeSet有序且唯一排序测试
+ *
+ * 1. TreeSet(有序且唯一)，能对元素按照某种规则进行排序，底层数据结构是红黑树
+ * 2. 排序有两种:
+ *    - 自然排序(元素具备比较性)：需要实现Comparable<T>并重写compareTo()方法，与hashCode()和equals()无关，不需要重写这两个方法
+ *    - 比较器排序(集合具备比较性): 在TreeSet的构造方法中传入Comparator的子类
+ *
  * @author ronin
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class TreeSetTest {
 
     @Test
     public void testTreeSet() {
-        //自然排序:存储Integer
-        //自然排序(Comparator):存储Integer
+        // 自然排序:存储Integer
+        // 自然排序(Comparator):存储Integer
         TreeSet<Integer> integers = new TreeSet<>();
         integers.add(10);
         integers.add(1);
         integers.add(1);
         integers.add(89);
         integers.add(13);
-        log.debug("integers: {}",integers);
+        log.debug("integers: {}", integers);
 
         System.out.println("-------------------------");
-        //比较器排序(Comparable):存储自定义对象
+        // 比较器排序(Comparable):存储自定义对象
         TreeSet<Dog> dogs = new TreeSet<>();
-        dogs.add(new Dog("zs",15));
-        dogs.add(new Dog("ls",16));
-        dogs.add(new Dog("ww",18));
-        dogs.add(new Dog("zl",11));
-        dogs.add(new Dog("zs",15));
-        for(Dog dog:dogs){
+        dogs.add(new Dog("zs", 15));
+        dogs.add(new Dog("ls", 16));
+        dogs.add(new Dog("ww", 18));
+        dogs.add(new Dog("zl", 11));
+        dogs.add(new Dog("zs", 15));
+        for (Dog dog : dogs) {
             log.debug("dog: {}", dog);
         }
 
@@ -68,31 +67,28 @@ public class TreeSetTest {
             log.debug("cat: {}", cat);
         }
     }
-
 }
 
 @Data
 @AllArgsConstructor
-class Dog implements Comparable<Dog>{
+class Dog implements Comparable<Dog> {
 
     private String name;
     private Integer age;
 
     @Override
     public int compareTo(Dog dog) {
-        if(this.name == dog.name && this.age == dog.age){
+        if (this.name == dog.name && this.age == dog.age) {
             return 0;
         }
         return this.age > dog.age ? 1 : -1;
     }
-
 }
 
 @Data
 @AllArgsConstructor
-class Cat{
+class Cat {
 
     protected String name;
     protected Integer age;
-
 }

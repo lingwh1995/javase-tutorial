@@ -22,5 +22,4 @@ public class RandomUtilsTest {
         int randomInt = RandomUtils.nextInt(10, 100);
         log.debug("{}", randomInt);
     }
-
 }

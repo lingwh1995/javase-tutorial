@@ -1,8 +1,8 @@
 package org.bluebridge.thread_17_communication.wait_for_other_worker;
 
-import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author lingwh
@@ -71,5 +71,4 @@ public class ReentrantLockTest {
             }
         }
     }
-
 }

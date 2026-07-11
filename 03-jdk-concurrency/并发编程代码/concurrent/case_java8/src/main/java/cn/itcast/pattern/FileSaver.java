@@ -7,6 +7,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * @author lingwh
+ * @desc 文件保存器
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.FileSaver")
 public class FileSaver {
     private String filename;

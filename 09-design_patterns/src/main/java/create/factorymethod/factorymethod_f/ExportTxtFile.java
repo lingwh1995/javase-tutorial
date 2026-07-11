@@ -1,11 +1,10 @@
 package create.factorymethod.factorymethod_f;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/3 16:45
+ * @author lingwh
+ * @date 2019/9/3 16:45
  */
-public class ExportTxtFile implements ExportFileApi{
+public class ExportTxtFile implements ExportFileApi {
 
     /**
      * 导出内容成为文件
@@ -15,7 +14,7 @@ public class ExportTxtFile implements ExportFileApi{
      */
     @Override
     public boolean export(String data) {
-        System.out.println("导出数据"+data+"到文本文件~");
+        System.out.println("导出数据" + data + "到文本文件~");
         return true;
     }
 }

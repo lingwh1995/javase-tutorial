@@ -1,7 +1,9 @@
 package action.template.template_c;
 
 /**
- * 红豆豆浆
+ * @author lingwh
+ * @desc 红豆豆浆
+ * @date 2026/7/9 00:00
  */
 public class ReadbeanSoyaMilk extends SoyaMilk {
     @Override

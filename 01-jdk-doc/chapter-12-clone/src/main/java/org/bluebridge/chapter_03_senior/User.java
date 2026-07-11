@@ -1,32 +1,40 @@
 package org.bluebridge.chapter_03_senior;
 
-
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @author lingwh
+ * @desc 用户类
+ * @date 2026/7/9 00:00
+ */
 public class User implements Cloneable {
     /**
      * 基本类型
      */
     private int id;
+
     /**
      * String类型
      */
     private String name;
+
     /**
      * 包装类型
      */
     private Integer age;
+
     /**
      * 引用类型
      */
     private String[] hobby;
+
     /**
      * 集合类型
      */
     private List<String> friends;
+
     /**
      * 引用类型
      */
@@ -35,25 +43,26 @@ public class User implements Cloneable {
     @Override
     protected User clone() throws CloneNotSupportedException {
         User user = (User) super.clone();
-        //处理数组类型数据
-            //获取副本中hobby的引用，此引用和原型中hobby指向堆中同一块区域
+        // 处理数组类型数据
+        // 获取副本中hobby的引用，此引用和原型中hobby指向堆中同一块区域
         String[] hobby = user.getHobby();
-            //把原型中的引用指向堆中的数据复制一份
+        // 把原型中的引用指向堆中的数据复制一份
         String[] hobbyCopy = Arrays.copyOf(hobby, hobby.length);
-            //把副本中对应的引用指向这个复制的数据，这样修改副本中的引用指向的数据就不会影响到原型中的数据了
+        // 把副本中对应的引用指向这个复制的数据，这样修改副本中的引用指向的数据就不会影响到原型中的数据了
         user.setHobby(hobbyCopy);
 
-        //处理集合类型的数据
-            //获取副本中List的引用，此引用和原型中hobby指向堆中同一块区域
+        // 处理集合类型的数据
+        // 获取副本中List的引用，此引用和原型中hobby指向堆中同一块区域
         List<String> friends = user.getFriends();
-            //把原型中的引用指向堆中的数据复制一份
+        // 把原型中的引用指向堆中的数据复制一份
         ArrayList<String> friendsCopy = new ArrayList<>(friends);
-        //把副本中对应的引用指向这个复制的数据，这样修改副本中的引用指向的数据就不会影响到原型中的数据了
+        // 把副本中对应的引用指向这个复制的数据，这样修改副本中的引用指向的数据就不会影响到原型中的数据了
         user.setFriends(friendsCopy);
         return user;
     }
 
     public User() {
+
     }
 
     public User(int id, String name, Integer age, String[] hobby, List<String> friends, Mark mark) {

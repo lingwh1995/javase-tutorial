@@ -1,13 +1,16 @@
 package org.bluebridge.designpattern_04_sequential_control.sequential_print;
 
 /**
- * wait notify 版
+ * @author lingwh
+ * @desc 顺序打印(WaitNotify版)
+ * @date 2026/7/9 00:00
  */
 public class SequentialPrintWaitNotifyEditionTest {
     // 用来同步的对象
     static Object obj = new Object();
     // t2 运行标记， 代表 t2 是否执行过
     static boolean t2runed = false;
+
     public static void main(String[] args) {
         Thread t1 = new Thread(() -> {
             synchronized (obj) {

@@ -5,6 +5,11 @@ import structure.adapter.adapter_g_builder.dao.TztgDao;
 import structure.adapter.adapter_g_builder.dao.XxjlOpenfireDao;
 import structure.adapter.adapter_g_builder.domain.Xxjl;
 
+/**
+ * @author lingwh
+ * @desc Xxjl适配器基础具体构建者
+ * @date 2026/7/9 00:00
+ */
 public class XxjlAdapterBaseConcerteBuilder extends XxjlAdapterBaseBuilder {
     private XxjlOpenfireDao xxjlOpenfireDao = new XxjlOpenfireDao();
     private GatzlDao gtzlDao = new GatzlDao();
@@ -27,6 +32,4 @@ public class XxjlAdapterBaseConcerteBuilder extends XxjlAdapterBaseBuilder {
         tztgDao.sendEmail(email);
         return this;
     }
-
-
 }

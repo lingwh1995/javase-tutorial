@@ -1,26 +1,25 @@
 package org.bluebridge.reflect.chapter_05_reflect_introspect;
 
-import org.junit.Test;
-
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
+import org.junit.Test;
 
 /**
  * @author lingwh
  * @desc JavaBean 的内省
- * @date 2019/03/16 10:00
+ * @date 2019/3/16 10:00
  */
 public class JavaBeanIntrospectTest {
 
-	@Test
-	public void testJavaBeanIntrospect() throws IntrospectionException, IllegalArgumentException {
-		// 通过Introspector.getBeanInfo方法获取指定JavaBean类的BeanInfo信息
+    @Test
+    public void testJavaBeanIntrospect() throws IntrospectionException, IllegalArgumentException {
+        // 通过Introspector.getBeanInfo方法获取指定JavaBean类的BeanInfo信息
         BeanInfo beanInfo = Introspector.getBeanInfo(Person.class);
         // 通过Introspector.getBeanInfo方法的重载方法获取指定JavaBean类的BeanInfo信息，并剔除Object类的方法
-        //BeanInfo beanInfo = Introspector.getBeanInfo(Person.class,Object.class);
+        // BeanInfo beanInfo = Introspector.getBeanInfo(Person.class,Object.class);
         /*
          *  通过BeanInfo的getPropertyDescriptors方法获取被操作的JavaBean类的所有属性
          *  	注意：该属性是通过get/set方法推断出来的属性，而不是有几个private String age();之类的
@@ -47,6 +46,5 @@ public class JavaBeanIntrospectTest {
             Method readMethod = pd.getReadMethod();
             System.out.println("readMethod = " + readMethod);
         }
-	}
-
+    }
 }

@@ -6,6 +6,11 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author lingwh
+ * @desc 哲学家就餐问题
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test23")
 public class Test23 {public static void main(String[] args) {
     Chopstick c1 = new Chopstick("1");

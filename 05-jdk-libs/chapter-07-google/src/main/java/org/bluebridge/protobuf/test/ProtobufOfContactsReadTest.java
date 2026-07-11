@@ -1,10 +1,9 @@
 package org.bluebridge.protobuf.test;
 
-import lombok.extern.slf4j.Slf4j;
-import org.bluebridge.protobuf.proto.ContactProto;
-
 import java.io.FileInputStream;
 import java.io.IOException;
+import lombok.extern.slf4j.Slf4j;
+import org.bluebridge.protobuf.proto.ContactProto;
 
 /**
  * @author lingwh
@@ -21,7 +20,7 @@ public class ProtobufOfContactsReadTest {
         ContactProto.Contacts contacts = ContactProto.Contacts.parseFrom(inputStream);
 
         // 打印联系人信息
-        //printContacts(contacts);
+        // printContacts(contacts);
         log.info("通讯录：{}", contacts.toString());
     }
 
@@ -34,5 +33,4 @@ public class ProtobufOfContactsReadTest {
             log.info("--------------------");
         });
     }
-
 }

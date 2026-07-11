@@ -1,9 +1,9 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -26,16 +26,15 @@ public class Lesson_16_PopupMenuTest {
     private void createAndShowGUI() {
         // 创建窗体
         Frame frame = new Frame();
-
         // 设置窗体位置和尺寸
         frame.setBounds(500, 500, 500, 300);
-
         // 创建弹出菜单
         PopupMenu menu = new PopupMenu();
         // 每一个选项依然是使用MenuItem
         menu.add(new MenuItem("Option1"));
         menu.add(new MenuItem("Option2"));
-        frame.add(menu);    //注意，弹出菜单也要作为组件加入到窗口中（但是默认情况下不显示）
+        // 注意，弹出菜单也要作为组件加入到窗口中（但是默认情况下不显示）
+        frame.add(menu);
 
         frame.addMouseListener(new MouseAdapter() {
             @Override
@@ -50,9 +49,7 @@ public class Lesson_16_PopupMenuTest {
                 }
             }
         });
-
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

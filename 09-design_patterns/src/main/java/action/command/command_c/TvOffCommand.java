@@ -1,6 +1,11 @@
 package action.command.command_c;
 
-public class TvOffCommand implements Command{
+/**
+ * @author lingwh
+ * @desc 电视关闭命令
+ * @date 2026/7/9 00:00
+ */
+public class TvOffCommand implements Command {
 
     private TvReceiver tvReceiver;
 

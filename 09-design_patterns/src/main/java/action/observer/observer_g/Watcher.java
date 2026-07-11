@@ -1,12 +1,11 @@
 package action.observer.observer_g;
 
 /**
- * 具体的观察者实现
- * @author ronin
- * @version V1.0
- * @since 2019/8/19 16:13
+ * @author lingwh
+ * @desc 具体的观察者实现
+ * @date 2019/8/19 16:13
  */
-public class Watcher implements WatcherObserver{
+public class Watcher implements WatcherObserver {
 
     /**
      * 职务
@@ -25,7 +24,7 @@ public class Watcher implements WatcherObserver{
 
     @Override
     public void update(WaterQualitySubject subject) {
-        //这里采用的是拉的方式
-        System.out.println(job+"获取到通知，当前污染级别为："+subject.getPolluteLevel());
+        // 这里采用的是拉的方式
+        System.out.println(job + "获取到通知，当前污染级别为：" + subject.getPolluteLevel());
     }
 }

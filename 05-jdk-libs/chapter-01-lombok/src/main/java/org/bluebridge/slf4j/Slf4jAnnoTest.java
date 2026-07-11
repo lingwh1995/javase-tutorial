@@ -19,5 +19,4 @@ public class Slf4jAnnoTest {
         log.info("测试@Slf4j注解......");
         log.debug("测试@Slf4j注解......");
     }
-
 }

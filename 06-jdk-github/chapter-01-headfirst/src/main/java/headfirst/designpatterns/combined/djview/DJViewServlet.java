@@ -1,10 +1,10 @@
 package headfirst.designpatterns.combined.djview;
 
-//import javax.servlet.*;
-//import javax.servlet.http.*;
-//import java.io.*;
+// import javax.servlet.*;
+// import javax.servlet.http.*;
+// import java.io.*;
 
-//public class DJViewServlet extends HttpServlet {
+// public class DJViewServlet extends HttpServlet {
 //
 //	private static final long serialVersionUID = 2L;
 //
@@ -66,4 +66,4 @@ package headfirst.designpatterns.combined.djview;
 //	}
 //
 //
-//}
+// }

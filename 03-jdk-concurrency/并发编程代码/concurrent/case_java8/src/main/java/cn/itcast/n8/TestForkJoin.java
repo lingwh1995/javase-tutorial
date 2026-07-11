@@ -5,6 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
+/**
+ * @author lingwh
+ * @desc ForkJoin测试
+ * @date 2026/7/9 00:00
+ */
 public class TestForkJoin {
 
     public static void main(String[] args) {
@@ -16,7 +21,6 @@ public class TestForkJoin {
 
 @Slf4j(topic = "c.AddTask")
 class AddTask1 extends RecursiveTask<Integer> {
-
     int n;
 
     public AddTask1(int n) {
@@ -46,7 +50,6 @@ class AddTask1 extends RecursiveTask<Integer> {
 
 @Slf4j(topic = "c.AddTask")
 class AddTask2 extends RecursiveTask<Integer> {
-
     int begin;
     int end;
 
@@ -86,7 +89,6 @@ class AddTask2 extends RecursiveTask<Integer> {
 
 @Slf4j(topic = "c.AddTask")
 class AddTask3 extends RecursiveTask<Integer> {
-
     int begin;
     int end;
 

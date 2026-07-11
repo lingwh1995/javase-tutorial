@@ -23,5 +23,4 @@ public class DataAnnoTest {
         user.setEmail("zhangsan@163.com");
         log.info("user: {}", user);
     }
-
 }

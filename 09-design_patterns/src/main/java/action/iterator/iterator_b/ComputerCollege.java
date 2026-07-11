@@ -1,16 +1,23 @@
 package action.iterator.iterator_b;
 
-public class ComputerCollege implements College{
+/**
+ * 计算机学院
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
+ */
+public class ComputerCollege implements College {
 
     private Department[] departments;
-    //保存当前数组对象的个数
+
+    // 保存当前数组对象的个数
     int numOfDepartment = 0;
 
     public ComputerCollege() {
         departments = new Department[5];
-        addDepartment("java","java专业");
-        addDepartment("php","php专业");
-        addDepartment("大数据","大数据专业");
+        addDepartment("java", "java专业");
+        addDepartment("php", "php专业");
+        addDepartment("大数据", "大数据专业");
     }
 
     @Override

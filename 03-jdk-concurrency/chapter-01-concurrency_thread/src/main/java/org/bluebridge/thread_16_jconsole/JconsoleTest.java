@@ -3,12 +3,14 @@ package org.bluebridge.thread_16_jconsole;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 打开cmd -> 输入jconsole -> 连接到JconsoleTest -> 点击线程标签
+ * @author lingwh
+ * @desc 打开cmd -> 输入jconsole -> 连接到JconsoleTest -> 点击线程标签
+ * @date 2026/7/9 00:00
  */
 public class JconsoleTest {
     public static void main(String[] args) {
-        new Thread(() -> read(),"READ-THREAD").start();
-        new Thread(() -> write(),"WRITE-THREAD").start();
+        new Thread(() -> read(), "READ-THREAD").start();
+        new Thread(() -> write(), "WRITE-THREAD").start();
     }
 
     /**

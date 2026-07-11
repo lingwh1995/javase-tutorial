@@ -2,6 +2,11 @@ package org.bluebridge;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author lingwh
+ * @desc CAS慢动作测试
+ * @date 2026/7/9 00:00
+ */
 public class SlowMotionTest {
     public static void main(String[] args) {
         AtomicInteger balance = new AtomicInteger(10000);
@@ -16,12 +21,12 @@ public class SlowMotionTest {
         sleep(2000);
         System.out.println("try set 8000......");
         boolean isSuccess = balance.compareAndSet(mainPrev, 8000);
-        System.out.printf("is success ? %s\n",isSuccess);
-        if(!isSuccess){
+        System.out.printf("is success ? %s\n", isSuccess);
+        if (!isSuccess) {
             mainPrev = balance.get();
             System.out.println("try set 8000......");
             isSuccess = balance.compareAndSet(mainPrev, 8000);
-            System.out.printf("is success ? %s\n",isSuccess);
+            System.out.printf("is success ? %s\n", isSuccess);
         }
     }
 

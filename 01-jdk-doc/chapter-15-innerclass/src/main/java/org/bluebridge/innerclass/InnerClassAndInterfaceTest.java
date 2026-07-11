@@ -1,7 +1,9 @@
 package org.bluebridge.innerclass;
 
 /**
- * 同时内部类实现一个接口
+ * @author lingwh
+ * @desc 同时内部类实现一个接口
+ * @date 2026/7/9 00:00
  */
 public class InnerClassAndInterfaceTest {
     public static void main(String[] args) {
@@ -9,19 +11,21 @@ public class InnerClassAndInterfaceTest {
     }
 }
 
-interface A{
+interface A {
     void eat();
+
     void drink();
 }
-class AA{
-    //接口中只有一个方法
-//    public void test(){
-//        new A(){
-//            public void eat(){
-//                System.out.println("eat...");
-//            }
-//        }.eat();
-//    }
+
+class AA {
+    // 接口中只有一个方法
+    //    public void test(){
+    //        new A(){
+    //            public void eat(){
+    //                System.out.println("eat...");
+    //            }
+    //        }.eat();
+    //    }
 
      //接口中有多个方法
      public void test(){
@@ -36,5 +40,5 @@ class AA{
          };
         a.eat();
         a.drink();
-     }
+    }
 }

@@ -1,13 +1,16 @@
 package structure.facade.facade_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/12 13:19
+ * @author lingwh
+ * @desc 外观接口
+ * @date 2019/9/12 13:19
  */
 public interface FacadeApi {
-    public void a1();
-    public void b1();
-    public void c1();
-    public void test();
+    void a1();
+
+    void b1();
+
+    void c1();
+
+    void test();
 }

@@ -1,6 +1,6 @@
 package create.abstractfactory.abstractfactory_l;
 
-public class OracleUser implements IUser{
+public class OracleUser implements IUser {
     @Override
     public void insert(User user) {
         System.out.println("在Oracle数据库中给User表增加了一条记录");

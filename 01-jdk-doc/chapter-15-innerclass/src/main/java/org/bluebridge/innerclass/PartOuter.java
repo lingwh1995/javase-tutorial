@@ -1,10 +1,9 @@
 package org.bluebridge.innerclass;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc 局部内部类
- * @since 2019/7/3 11:16
+ * @date 2019/7/3 11:16
  */
 public class PartOuter {
 
@@ -20,10 +19,12 @@ public class PartOuter {
      * 外部类定义的属性
      */
     private int outerVariable = 1;
+
     /**
      * 外部类定义的属性
      */
     private int commonVariable = 2;
+
     /**
      * 静态的信息
      */
@@ -59,15 +60,16 @@ public class PartOuter {
 
             private int innerVariable = 10;
             private int commonVariable = 20;
+
             /**
-             *	局部内部类方法
+             * 局部内部类方法
              */
             public void innerShow() {
                 System.out.println("innerVariable:" + innerVariable);
-                //局部变量
+                // 局部变量
                 System.out.println("是否男性:" + sex);
                 System.out.println("参数value:" + value);
-                //调用外部类的信息
+                // 调用外部类的信息
                 System.out.println("outerVariable:" + outerVariable);
                 System.out.println("内部的commonVariable:" + commonVariable);
                 System.out.println("外部的commonVariable:" + PartOuter.this.commonVariable);
@@ -76,7 +78,7 @@ public class PartOuter {
                 outerStaticMethod();
             }
         }
-        //局部内部类只能在方法内使用
+        // 局部内部类只能在方法内使用
         PartInner partInner = new PartInner();
         partInner.innerShow();
     }

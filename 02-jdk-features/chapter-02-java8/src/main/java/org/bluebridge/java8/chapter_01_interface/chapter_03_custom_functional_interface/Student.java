@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author lingwh
- * @desc
+ * @desc 学生实体类
  * @date 2025/12/2 15:38
  */
 @Data
@@ -16,5 +16,4 @@ public class Student {
 
     private String name;
     private int age;
-
 }

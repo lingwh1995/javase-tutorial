@@ -4,9 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
- * 有限状态机，又称有限状态自动机，简称状态机
+ * 有限状态机，又称有限状态自动机，简称状态机 - 使用常量作为状态码实现状态机
  *
- * 使用常量作为状态码实现状态机
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class FSM1Test {
@@ -24,31 +25,31 @@ public class FSM1Test {
         String s = " one  two   three    four     five ";
         int wordCount = 0;
         int state = BEGIN;
-        for(int i=0; i<s.length(); i++){
+        for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             System.out.println("c = " + c + ",state = " + state);
-            switch (state){
+            switch (state) {
                 case BEGIN:
-                    if(Character.isLetter(c)){
+                    if (Character.isLetter(c)) {
                         state = IN_WORD;
-                    }else {
+                    } else {
                         state = OUT_WORD;
                     }
                     break;
                 case IN_WORD:
-                    if(!Character.isLetter(c)){
+                    if (!Character.isLetter(c)) {
                         wordCount++;
                         state = OUT_WORD;
                     }
                     break;
                 case OUT_WORD:
-                    if(Character.isLetter(c)){
+                    if (Character.isLetter(c)) {
                         state = IN_WORD;
                     }
                     break;
             }
         }
-        if(state == IN_WORD) {
+        if (state == IN_WORD) {
             wordCount++;
         }
         state = END;

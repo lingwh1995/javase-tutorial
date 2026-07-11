@@ -2,12 +2,17 @@ package headfirst.designpatterns.iterenum;
 
 import java.util.*;
 
+/**
+ * @author lingwh
+ * @desc 迭代器转枚举测试
+ * @date 2026/7/9 00:00
+ */
 public class IteratorEnumerationTestDrive {
-	public static void main (String args[]) {
-		ArrayList<String> l = new ArrayList<String>(Arrays.asList(args));
-		Enumeration<?> enumeration = new IteratorEnumeration(l.iterator());
-		while (enumeration.hasMoreElements()) {
-			System.out.println(enumeration.nextElement());
-		}
-	}
+    public static void main(String args[]) {
+        ArrayList<String> l = new ArrayList<String>(Arrays.asList(args));
+        Enumeration<?> enumeration = new IteratorEnumeration(l.iterator());
+        while (enumeration.hasMoreElements()) {
+            System.out.println(enumeration.nextElement());
+        }
+    }
 }

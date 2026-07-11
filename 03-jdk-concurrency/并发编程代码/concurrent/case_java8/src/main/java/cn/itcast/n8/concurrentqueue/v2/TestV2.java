@@ -7,6 +7,11 @@ import java.util.Iterator;
 import java.util.Queue;
 import java.util.concurrent.atomic.AtomicReference;
 
+/**
+ * @author lingwh
+ * @desc 并发队列测试v2
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestV2")
 public class TestV2 {
 

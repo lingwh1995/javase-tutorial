@@ -3,25 +3,25 @@ package org.bluebridge.thread.thread_designpattern.guarded_suspension.guarded_su
 import java.util.Random;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/16 9:29
+ * @author lingwh
+ * @desc 服务器线程
+ * @date 2019/10/16 9:29
  */
-public class ServerThread extends Thread{
-    private final Random random ;
+public class ServerThread extends Thread {
+    private final Random random;
     private final RequestQueue requestQueue;
-    public ServerThread(RequestQueue requestQueue, String name,long seed){
+
+    public ServerThread(RequestQueue requestQueue, String name, long seed) {
         super(name);
         this.requestQueue = requestQueue;
         this.random = new Random(seed);
     }
 
     @Override
-    public void run(){
+    public void run() {
         for (int i = 0; i < 10000; i++) {
             Request request = requestQueue.getRequest();
-            System.out.println(Thread.currentThread().getName()+ " handles "
-                + request);
+            System.out.println(Thread.currentThread().getName() + " handles " + request);
             try {
                 Thread.sleep(random.nextInt(1000));
             } catch (InterruptedException e) {

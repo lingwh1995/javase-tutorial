@@ -4,24 +4,29 @@ import java.util.Arrays;
 import java.util.concurrent.FutureTask;
 
 /**
- * 单线程和多线程运行效率对比
+ * @author lingwh
+ * @desc 单线程和多线程运行效率对比
+ * @date 2026/7/9 00:00
  */
 public class SingleThreadAndMultiThreadTest {
 
     public static void main(String[] args) throws Exception {
-        //测试多线程计算
+        // 测试多线程计算
         testMultiThread();
 
-        //测试单线程计算
+        // 测试单线程计算
         testSingleThread();
     }
+
     static int[] ARRAY = new int[1000_000_000];
+
     static {
         Arrays.fill(ARRAY, 10);
     }
 
     /**
      * 多线程计算
+     *
      * @throws Exception
      */
     public static void testMultiThread() throws Exception {
@@ -66,9 +71,9 @@ public class SingleThreadAndMultiThreadTest {
         System.out.println("多线程 - Total time (ms): " + (end - start));
     }
 
-
     /**
      * 单线程计算
+     *
      * @throws Exception
      */
     public static void testSingleThread() throws Exception {

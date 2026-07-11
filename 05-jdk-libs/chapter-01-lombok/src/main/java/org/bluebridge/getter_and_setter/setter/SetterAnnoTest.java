@@ -1,6 +1,5 @@
 package org.bluebridge.getter_and_setter.setter;
 
-
 import org.junit.Test;
 
 /**
@@ -20,7 +19,6 @@ public class SetterAnnoTest {
         user.setName("张三");
         user.setAge(18);
         // 私有的Setter方法外部无法访问
-        //user.setEmail("123@gmail.com");
+        // user.setEmail("123@gmail.com");
     }
-
 }

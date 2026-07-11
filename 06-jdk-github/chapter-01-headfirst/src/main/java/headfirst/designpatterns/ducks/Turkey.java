@@ -1,6 +1,12 @@
 package headfirst.designpatterns.ducks;
 
+/**
+ * @author lingwh
+ * @desc 火鸡接口
+ * @date 2026/7/9 00:00
+ */
 public interface Turkey {
-	public void gobble();
-	public void fly();
+    void gobble();
+
+    void fly();
 }

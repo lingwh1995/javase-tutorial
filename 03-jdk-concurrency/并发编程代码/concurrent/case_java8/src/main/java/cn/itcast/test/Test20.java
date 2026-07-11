@@ -7,6 +7,11 @@ import java.util.Hashtable;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author lingwh
+ * @desc 保护对象邮递测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test20")
 public class Test20 {
     public static void main(String[] args) throws InterruptedException {

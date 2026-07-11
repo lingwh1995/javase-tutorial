@@ -1,11 +1,11 @@
 package expand.compound.duck;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/10 9:43
+ * @author lingwh
+ * @desc 绿头鸭
+ * @date 2019/10/10 9:43
  */
-public class MallardDuck implements Quackable{
+public class MallardDuck implements Quackable {
 
     @Override
     public void quack() {

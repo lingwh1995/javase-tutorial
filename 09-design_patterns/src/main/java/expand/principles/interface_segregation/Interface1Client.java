@@ -4,6 +4,9 @@ import org.junit.Test;
 
 /**
  * 调用Interface1的客户端
+ *
+ * @author lingwh
+ * @date 2019/8/7 14:57
  */
 public class Interface1Client {
     /**
@@ -12,7 +15,7 @@ public class Interface1Client {
     @Test
     public void testA1() {
         A1 a1 = new A1();
-        //本来要传入接口Interface1的，现在根据面向接口编程原则，传入Interface1的实现B1
+        // 本来要传入接口Interface1的，现在根据面向接口编程原则，传入Interface1的实现B1
         a1.depend1(new B1());
         a1.depend2(new B1());
         a1.depend3(new B1());
@@ -24,7 +27,7 @@ public class Interface1Client {
     @Test
     public void testC1() {
         C1 c1 = new C1();
-        //本来要传入接口Interface1的，现在根据面向接口编程原则，传入Interface1的实现D1
+        // 本来要传入接口Interface1的，现在根据面向接口编程原则，传入Interface1的实现D1
         c1.depend1(new D1());
         c1.depend4(new D1());
         c1.depend5(new D1());

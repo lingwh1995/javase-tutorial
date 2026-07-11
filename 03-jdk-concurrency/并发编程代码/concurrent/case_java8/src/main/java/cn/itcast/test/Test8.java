@@ -4,6 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc 线程睡眠测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test8")
 public class Test8 {
 

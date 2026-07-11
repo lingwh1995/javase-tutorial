@@ -1,55 +1,56 @@
 package headfirst.designpatterns.observer.swing;
-	
+
 import java.awt.*;
 import javax.swing.*;
-	
+
+/**
+ * @author lingwh
+ * @desc Swing观察者示例
+ * @date 2026/7/9 00:00
+ */
 public class SwingObserverExample {
-	JFrame frame;
-	
-	public static void main(String[] args) {
-		SwingObserverExample example = new SwingObserverExample();
-		example.go();
-	}
-	
-	public void go() {
-		frame = new JFrame();
+    JFrame frame;
 
-		JButton button = new JButton("Should I do it?");
-		
-		// Without lambdas
-		//button.addActionListener(new AngelListener());
-		//button.addActionListener(new DevilListener());
-		
-		// With lambdas
-		button.addActionListener(event -> 
-			System.out.println("Don't do it, you might regret it!")
-		);
-		button.addActionListener(event ->
-			System.out.println("Come on, do it!")
-		);
-		frame.getContentPane().add(BorderLayout.CENTER, button);
+    public static void main(String[] args) {
+        SwingObserverExample example = new SwingObserverExample();
+        example.go();
+    }
 
-		// Set frame properties 
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().add(BorderLayout.CENTER, button);
-		frame.setSize(300,300);
-		frame.setVisible(true);
-	}
-	
-	/*
-	 * Remove these two inner classes to use lambda expressions instead.
-	 * 
-	class AngelListener implements ActionListener {
-		public void actionPerformed(ActionEvent event) {
-			System.out.println("Don't do it, you might regret it!");
-		}
-	}
+    public void go() {
+        frame = new JFrame();
 
-	class DevilListener implements ActionListener {
-		public void actionPerformed(ActionEvent event) {
-			System.out.println("Come on, do it!");
-		}
-	}
-	*/
+        JButton button = new JButton("Should I do it?");
+
+        // Without lambdas
+        // button.addActionListener(new AngelListener());
+        // button.addActionListener(new DevilListener());
+
+        // With lambdas
+        button.addActionListener(event -> System.out.println("Don't do it, you might regret it!"));
+        button.addActionListener(event -> System.out.println("Come on, do it!"));
+        frame.getContentPane().add(BorderLayout.CENTER, button);
+
+        // Set frame properties
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(BorderLayout.CENTER, button);
+        frame.setSize(300, 300);
+        frame.setVisible(true);
+    }
+
+    /*
+     * Remove these two inner classes to use lambda expressions instead.
+     *
+    class AngelListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            System.out.println("Don't do it, you might regret it!");
+        }
+    }
+
+    class DevilListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            System.out.println("Come on, do it!");
+        }
+    }
+    */
 
 }

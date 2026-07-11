@@ -1,11 +1,11 @@
 package org.bluebridge.thread.thread_designpattern.future.future_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/10 16:54
+ * @author lingwh
+ * @desc Future 数据实现
+ * @date 2019/10/10 16:54
  */
-public class FutureData implements Data{
+public class FutureData implements Data {
 
     private RealData realData;
     private boolean isReady = false;

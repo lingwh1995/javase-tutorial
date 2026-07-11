@@ -3,7 +3,9 @@ package org.bluebridge.designpattern_06_producer_consumer.producer_consumer_01;
 import java.util.LinkedList;
 
 /**
- *  消息队列类，java线程之间通信
+ * @author lingwh
+ * @desc 消息队列类，java线程之间通信
+ * @date 2026/7/9 00:00
  */
 class MessageQueue {
     // 消息的队列集合
@@ -19,7 +21,7 @@ class MessageQueue {
     public Message take() {
         // 检查队列是否为空
         synchronized (list) {
-            while(list.isEmpty()) {
+            while (list.isEmpty()) {
                 try {
                     System.out.println("队列为空, 消费者线程等待......");
                     list.wait();
@@ -29,7 +31,7 @@ class MessageQueue {
             }
             // 从队列头部获取消息并返回
             Message message = list.removeFirst();
-            System.out.printf("已消费消息 %s\n",message);
+            System.out.printf("已消费消息 %s\n", message);
             list.notifyAll();
             return message;
         }
@@ -39,7 +41,7 @@ class MessageQueue {
     public void put(Message message) {
         synchronized (list) {
             // 检查对象是否已满
-            while(list.size() == capcity) {
+            while (list.size() == capcity) {
                 try {
                     System.out.println("队列已满, 生产者线程等待......");
                     list.wait();

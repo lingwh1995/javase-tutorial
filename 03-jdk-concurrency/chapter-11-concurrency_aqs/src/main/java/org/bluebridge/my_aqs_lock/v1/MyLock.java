@@ -4,6 +4,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
+/**
+ * @author lingwh
+ * @desc 自定义锁
+ * @date 2026/7/9 00:00
+ */
 public class MyLock implements Lock {
 
     private static MySync sync = new MySync();

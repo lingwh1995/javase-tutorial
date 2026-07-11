@@ -6,6 +6,11 @@ import java.util.concurrent.*;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc CyclicBarrier测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestCyclicBarrier")
 public class TestCyclicBarrier {
 

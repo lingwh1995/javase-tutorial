@@ -1,12 +1,11 @@
 package action.state.state_b;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc 开始状态
- * @since 2019/8/2 8:50
+ * @date 2019/8/2 8:50
  */
-public class StartState implements State{
+public class StartState implements State {
 
     @Override
     public void doAction(Context context) {
@@ -15,7 +14,7 @@ public class StartState implements State{
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Start State";
     }
 }

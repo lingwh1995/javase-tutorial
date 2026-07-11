@@ -7,6 +7,9 @@ import lombok.Data;
  *
  * 正确标准写法（推荐使用） -> public class PointImpl implements IPoint<Integer> {}
  * 错误 / 不规范写法（禁止使用） -> public class PointImpl<Integer> implements IPoint {}
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 @Data
 public class PointImplPassThrough<T> implements IPoint<T> {
@@ -20,5 +23,4 @@ public class PointImplPassThrough<T> implements IPoint<T> {
      * 表示Y坐标
      */
     private T y;
-
 }

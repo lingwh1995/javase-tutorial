@@ -4,6 +4,11 @@ import cn.itcast.n4.UnsafeAccessor;
 import lombok.extern.slf4j.Slf4j;
 import sun.misc.Unsafe;
 
+/**
+ * @author lingwh
+ * @desc 自定义原子整数测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test42")
 public class Test42 {
     public static void main(String[] args) {

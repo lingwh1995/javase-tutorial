@@ -61,8 +61,5 @@ public class TestCorrectPostureStep3 {
                 room.notifyAll();
             }
         }, "送外卖的").start();
-
-
     }
-
 }

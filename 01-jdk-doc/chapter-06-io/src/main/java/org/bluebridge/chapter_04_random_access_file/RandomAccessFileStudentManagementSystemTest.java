@@ -1,21 +1,21 @@
 package org.bluebridge.chapter_04_random_access_file;
 
+import java.io.IOException;
+import java.io.RandomAccessFile;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
-import java.io.RandomAccessFile;
-import java.io.IOException;
-
 /**
- * 基于RandomAccessFile的学生管理系统
- * 使用固定长度记录存储学生信息
+ * @author lingwh
+ * @desc 基于RandomAccessFile的学生管理系统 使用固定长度记录存储学生信息
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class RandomAccessFileStudentManagementSystemTest {
-    
+
     // 定义学生记录的固定长度
     // ID(4) + 姓名(50字节) + 年龄(4) + 成绩(8) = 66字节
     private static final int RECORD_SIZE = 4 + 50 + 4 + 8;
@@ -106,18 +106,17 @@ public class RandomAccessFileStudentManagementSystemTest {
         }
     }
 
-    
     /**
      * 更新学生信息
      */
     public boolean updateStudent(Student updatedStudent) throws IOException {
         try (RandomAccessFile raf = new RandomAccessFile(FILE_PATH, "rw")) {
             long fileLength = raf.length();
-            
+
             for (long position = 0; position < fileLength; position += RECORD_SIZE) {
                 raf.seek(position);
                 Student student = readStudent(raf);
-                
+
                 if (student.getId() == updatedStudent.getId()) {
                     // 找到匹配的学生，更新记录
                     raf.seek(position); // 回到记录开始位置
@@ -129,18 +128,18 @@ public class RandomAccessFileStudentManagementSystemTest {
             return false;
         }
     }
-    
+
     /**
      * 删除学生记录（标记删除）
      */
     public boolean deleteStudent(int id) throws IOException {
         try (RandomAccessFile raf = new RandomAccessFile(FILE_PATH, "rw")) {
             long fileLength = raf.length();
-            
+
             for (long position = 0; position < fileLength; position += RECORD_SIZE) {
                 raf.seek(position);
                 Student student = readStudent(raf);
-                
+
                 if (student.getId() == id) {
                     // 标记为删除（将ID设为-1）
                     raf.seek(position);
@@ -201,22 +200,20 @@ public class RandomAccessFileStudentManagementSystemTest {
         }
     }
 
-    
     /**
      * 写入学生记录到文件
      */
     private void writeStudent(RandomAccessFile raf, Student student) throws IOException {
         raf.writeInt(student.getId());
-        
+
         // 写入固定长度的姓名
         byte[] nameBytes = new byte[50];
         if (student.getName() != null) {
             byte[] actualName = student.getName().getBytes("UTF-8");
-            System.arraycopy(actualName, 0, nameBytes, 0, 
-                           Math.min(actualName.length, 50));
+            System.arraycopy(actualName, 0, nameBytes, 0, Math.min(actualName.length, 50));
         }
         raf.write(nameBytes);
-        
+
         raf.writeInt(student.getAge());
         raf.writeDouble(student.getScore());
     }
@@ -258,9 +255,8 @@ public class RandomAccessFileStudentManagementSystemTest {
 
         return student;
     }
-
-
 }
+
 /**
  * 学生类
  */
@@ -273,5 +269,4 @@ class Student {
     private String name;
     private int age;
     private double score;
-
 }

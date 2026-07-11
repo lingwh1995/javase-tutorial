@@ -5,11 +5,13 @@ import java.util.concurrent.Executors;
 
 /**
  * 固定大小的线程池FixedThreadPool
- *      1.线程池大小固定，不会随着任务的增长而增长。
- *      2.核心线程数和最大线程数相等，使用无界队列
- *      3.使用的工作队列是LinkedBlockingQueue
  *
- * 线程池基础功能测试
+ * 1. 线程池大小固定，不会随着任务的增长而增长。
+ * 2. 核心线程数和最大线程数相等，使用无界队列
+ * 3. 使用的工作队列是LinkedBlockingQueue
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class FixedThreadPool01HelloWorldTest {
     public static void main(String[] args) {

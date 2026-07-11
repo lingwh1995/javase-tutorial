@@ -4,11 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author lingwh
- * @desc
+ * @desc 狗类
  * @date 2025/11/12 10:04
  */
 @Slf4j
-public class Dog extends  Animal {
+public class Dog extends Animal {
 
     @Override
     void eat() {

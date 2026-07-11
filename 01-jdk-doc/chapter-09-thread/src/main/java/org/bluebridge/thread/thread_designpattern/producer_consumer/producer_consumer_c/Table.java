@@ -3,11 +3,11 @@ package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_co
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/17 11:19
+ * @author lingwh
+ * @desc 桌子(基于ArrayBlockingQueue)
+ * @date 2019/10/17 11:19
  */
-public class Table extends ArrayBlockingQueue<String>{
+public class Table extends ArrayBlockingQueue<String> {
 
     public Table(int count) {
         super(count);
@@ -15,14 +15,14 @@ public class Table extends ArrayBlockingQueue<String>{
 
     @Override
     public void put(String cake) throws InterruptedException {
-        System.out.println(Thread.currentThread().getName()+"puts"+cake);
+        System.out.println(Thread.currentThread().getName() + "puts" + cake);
         super.put(cake);
     }
 
     @Override
     public String take() throws InterruptedException {
         String cake = super.take();
-        System.out.println(Thread.currentThread().getName()+"take"+cake);
+        System.out.println(Thread.currentThread().getName() + "take" + cake);
         return cake;
     }
 }

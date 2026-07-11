@@ -1,13 +1,14 @@
 package action.command.command_c;
 
-public class NoCommand implements Command{
+/**
+ * @author lingwh
+ * @desc 空命令
+ * @date 2026/7/9 00:00
+ */
+public class NoCommand implements Command {
     @Override
-    public void execute() {
-
-    }
+    public void execute() {}
 
     @Override
-    public void undo() {
-
-    }
+    public void undo() {}
 }

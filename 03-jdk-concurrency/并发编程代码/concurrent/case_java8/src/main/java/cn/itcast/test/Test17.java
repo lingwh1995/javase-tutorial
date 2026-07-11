@@ -2,6 +2,11 @@ package cn.itcast.test;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lingwh
+ * @desc synchronized线程安全测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test17")
 public class Test17 {
     public static void main(String[] args) throws InterruptedException {

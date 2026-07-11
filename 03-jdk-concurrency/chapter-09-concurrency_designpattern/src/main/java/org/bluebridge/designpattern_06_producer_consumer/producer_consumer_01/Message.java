@@ -1,7 +1,9 @@
 package org.bluebridge.designpattern_06_producer_consumer.producer_consumer_01;
 
 /**
- * 这里使用final修饰，将这个类设置成不可变类
+ * @author lingwh
+ * @desc 这里使用final修饰，将这个类设置成不可变类
+ * @date 2026/7/9 00:00
  */
 final class Message {
     private int id;
@@ -22,9 +24,6 @@ final class Message {
 
     @Override
     public String toString() {
-        return "Message{" +
-                "id=" + id +
-                ", value=" + value +
-                '}';
+        return "Message{" + "id=" + id + ", value=" + value + '}';
     }
 }

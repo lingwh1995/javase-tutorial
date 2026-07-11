@@ -1,17 +1,20 @@
 package action.observer.observer_i;
 
 /**
- * 英雄类
- * @author ronin
- * @version V1.0
- * @since 2019/8/30 10:53
+ * @author lingwh
+ * @desc 英雄类
+ * @date 2019/8/30 10:53
  */
-public class Hero extends Subject implements Observer{
+public class Hero extends Subject implements Observer {
 
-    /**英雄名称*/
+    /**
+     * 英雄名称
+     */
     private String heroName;
 
-    /**英雄位置*/
+    /**
+     * 英雄位置
+     */
     private Position position;
 
     public String getHeroName() {
@@ -38,10 +41,10 @@ public class Hero extends Subject implements Observer{
     /**
      * 模拟英雄进行移动
      */
-    public void move(){
-        this.position.setX(this.getPosition().getX()+3);
-        this.position.setY(this.getPosition().getY()+3);
-        //通知所有的接受者
+    public void move() {
+        this.position.setX(this.getPosition().getX() + 3);
+        this.position.setY(this.getPosition().getY() + 3);
+        // 通知所有的接受者
         notifyObserver(this);
     }
 

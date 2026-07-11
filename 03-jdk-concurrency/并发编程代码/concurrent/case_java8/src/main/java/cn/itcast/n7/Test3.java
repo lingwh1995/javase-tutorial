@@ -10,6 +10,11 @@ import java.util.Random;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
+/**
+ * @author lingwh
+ * @desc 自定义连接池测试
+ * @date 2026/7/9 00:00
+ */
 public class Test3 {
     public static void main(String[] args) {
         Pool pool = new Pool(2);

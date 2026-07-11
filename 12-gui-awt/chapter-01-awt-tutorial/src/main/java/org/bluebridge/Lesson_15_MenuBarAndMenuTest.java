@@ -1,8 +1,8 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -25,10 +25,8 @@ public class Lesson_15_MenuBarAndMenuTest {
     private void createAndShowGUI() {
         // 创建窗体
         Frame frame = new Frame();
-
         // 设置窗体位置和尺寸
         frame.setBounds(500, 500, 500, 300);
-
         // 创建菜单栏
         MenuBar bar = new MenuBar();
         Menu menu = new Menu("File");
@@ -53,8 +51,8 @@ public class Lesson_15_MenuBarAndMenuTest {
         menu.add(saveItem);
 
         /**
-         * 第三个子菜单栏 - 添加了复选框和点击事件
-         *  对于 CheckboxMenuItem，应使用 ItemListener 来监听选中状态变化，而不是 ActionListener。这是 AWT 框架的设计特性
+         * 第三个子菜单栏 - 添加了复选框和点击事件 对于 CheckboxMenuItem，应使用 ItemListener 来监听选中状态变化，而不是 ActionListener。这是
+         * AWT 框架的设计特性
          */
         CheckboxMenuItem checkButton = new CheckboxMenuItem("Check Button");
         checkButton.addItemListener(e -> {
@@ -71,11 +69,10 @@ public class Lesson_15_MenuBarAndMenuTest {
         // 把菜单添加到菜单栏
         bar.add(menu);
 
-        //为窗口设定刚刚定义好的菜单栏
+        // 为窗口设定刚刚定义好的菜单栏
         frame.setMenuBar(bar);
 
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

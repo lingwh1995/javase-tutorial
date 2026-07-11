@@ -2,6 +2,11 @@ package og.bluebridge.generic.chapter_05_interface_use_multiple_generic;
 
 import org.junit.Test;
 
+/**
+ * @author lingwh
+ * @desc 接口使用多个泛型测试
+ * @date 2026/7/9 00:00
+ */
 public class InterfaceUseMultipleGenericTest {
 
     /**
@@ -43,5 +48,4 @@ public class InterfaceUseMultipleGenericTest {
         integerStringPoint.setDesc("第一个坐标点");
         System.out.println(integerStringPoint);
     }
-
 }

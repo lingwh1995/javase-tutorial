@@ -1,7 +1,9 @@
 package structure.flyweight.flyweight_a;
 
 /**
- * 享元模式的外部状态
+ * @author lingwh
+ * @desc 享元模式的外部状态
+ * @date 2026/7/9 00:00
  */
 public class User {
     private String name;

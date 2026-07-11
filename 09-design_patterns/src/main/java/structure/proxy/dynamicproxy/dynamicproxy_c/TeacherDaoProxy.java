@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-public class TeacherDaoProxy implements InvocationHandler{
+public class TeacherDaoProxy implements InvocationHandler {
     private Object target;
 
     public TeacherDaoProxy(Object target) {
@@ -15,13 +15,13 @@ public class TeacherDaoProxy implements InvocationHandler{
         return (ITeacher)Proxy.newProxyInstance(target.getClass().getClassLoader(),
                 target.getClass().getInterfaces(),this);
     }
+
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object invok = null;
         System.out.println("JDK代理开始......");
-        invok = method.invoke(this.target,args);
+        invok = method.invoke(this.target, args);
         System.out.println("JDK代理结束......");
         return invok;
     }
-
 }

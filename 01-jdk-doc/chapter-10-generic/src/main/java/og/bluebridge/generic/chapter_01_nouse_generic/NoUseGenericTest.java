@@ -3,7 +3,9 @@ package og.bluebridge.generic.chapter_01_nouse_generic;
 import org.junit.Test;
 
 /**
- * 不使用泛型测试
+ * @author lingwh
+ * @desc 不使用泛型测试
+ * @date 2026/7/9 00:00
  */
 public class NoUseGenericTest {
 
@@ -27,5 +29,4 @@ public class NoUseGenericTest {
         objectPoint.setY("30");
         System.out.println(objectPoint);
     }
-
 }

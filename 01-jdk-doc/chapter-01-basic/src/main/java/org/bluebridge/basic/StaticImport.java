@@ -1,10 +1,9 @@
 package org.bluebridge.basic;
 
+import static java.lang.Math.pow;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
-import static java.lang.Math.pow;
 
 /**
  * @author lingwh

@@ -6,6 +6,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author lingwh
+ * @desc 公平锁测试
+ * @date 2026/7/9 00:00
+ */
 public class TestFair {
     public static void main(String[] args) throws InterruptedException {
         ReentrantLock lock = new ReentrantLock(false);
@@ -22,7 +27,7 @@ public class TestFair {
             }, "t" + i).start();
         }
 
-// 1s 之后去争抢锁
+        // 1s 之后去争抢锁
         Thread.sleep(1000);
         for (int i = 0; i < 5; i++) {
             new Thread(() -> {

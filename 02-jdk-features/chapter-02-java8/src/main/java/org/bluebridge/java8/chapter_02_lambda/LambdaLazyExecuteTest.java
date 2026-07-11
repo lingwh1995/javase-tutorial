@@ -41,7 +41,7 @@ public class LambdaLazyExecuteTest {
 
     /**
      * 测试使用lambda表达式 - 条件通过时
-     *      可以观察到：执行时间和不使用lambda表达式的耗时基本一致
+     *     可以观察到：执行时间和不使用lambda表达式的耗时基本一致
      */
     @Test
     public void testPrintLogLambda_1() {
@@ -55,12 +55,12 @@ public class LambdaLazyExecuteTest {
             return msgA + msgB + msgC;
         });
         long end = System.currentTimeMillis();
-        System.out.println("条件通过时 使用lambda表达式花费时间:" + (end-start));
+        System.out.println("条件通过时 使用lambda表达式花费时间:" + (end - start));
     }
 
     /**
      * 测试使用lambda表达式 - 条件不通过时
-     *      可以观察到：执行时间会大大的缩小代码的执行时间，因为这种写法有的逻辑不会执行
+     *     可以观察到：执行时间会大大的缩小代码的执行时间，因为这种写法有的逻辑不会执行
      */
     @Test
     public void testPrintLogLambda_2() {
@@ -74,11 +74,12 @@ public class LambdaLazyExecuteTest {
             return msgA + msgB + msgC;
         });
         long end = System.currentTimeMillis();
-        System.out.println("条件通过时 使用lambda表达式花费时间:" + (end-start));
+        System.out.println("条件通过时 使用lambda表达式花费时间:" + (end - start));
     }
 
     /**
      * 没有使用lambda表达式的方法
+     *
      * @param level
      * @param msg
      */
@@ -90,6 +91,7 @@ public class LambdaLazyExecuteTest {
 
     /**
      * 使用了lambda表达式的方法
+     *
      * @param level
      * @param builder
      */
@@ -106,6 +108,4 @@ public class LambdaLazyExecuteTest {
     interface MessageBuilder {
         String buildMessage();
     }
-
 }
-

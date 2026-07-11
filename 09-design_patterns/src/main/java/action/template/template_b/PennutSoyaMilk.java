@@ -1,5 +1,10 @@
 package action.template.template_b;
 
+/**
+ * @author lingwh
+ * @desc 花生豆浆
+ * @date 2026/7/9 00:00
+ */
 public class PennutSoyaMilk extends SoyaMilk {
     @Override
     void addIngredients() {

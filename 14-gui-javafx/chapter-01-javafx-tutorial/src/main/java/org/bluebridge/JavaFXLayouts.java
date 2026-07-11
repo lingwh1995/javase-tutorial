@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 /**
  * @author lingwh
- * @desc
+ * @desc JavaFX布局示例
  * @date 2025/8/4 18:32
  */
 public class JavaFXLayouts extends Application {
@@ -62,6 +62,4 @@ public class JavaFXLayouts extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
 }
-

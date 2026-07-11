@@ -21,11 +21,11 @@ public class StaticTest {
 @Slf4j
 class Cat {
 
-    public Cat(){
+    public Cat() {
         log.info("Cat Constructors......");
     }
 
-    public static void eat(){
+    public static void eat() {
         log.info("Cat eat......");
     }
 }

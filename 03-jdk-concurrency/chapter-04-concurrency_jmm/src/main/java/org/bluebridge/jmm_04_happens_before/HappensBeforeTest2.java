@@ -1,10 +1,13 @@
 package org.bluebridge.jmm_04_happens_before;
 
 /**
- * 线程对 volatile 变量的写，对接下来其它线程对该变量的读可见(volatile关键字的可见性、volatile规则)
+ * @author lingwh
+ * @desc happens-before volatile规则测试
+ * @date 2026/7/9 00:00
  */
 public class HappensBeforeTest2 {
-    private volatile static int x;
+    private static volatile int x;
+
     public static void main(String[] args) {
         new Thread(()->{
             x = 10;

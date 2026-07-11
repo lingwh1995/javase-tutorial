@@ -2,6 +2,11 @@ package org.bluebridge.lock_08_synchronized_demo_transfer;
 
 import java.util.Random;
 
+/**
+ * @author lingwh
+ * @desc 多线程账户转账测试
+ * @date 2026/7/9 00:00
+ */
 public class TransferAccountTest {
     public static void main(String[] args) throws InterruptedException {
         Account a = new Account(1000);
@@ -23,10 +28,12 @@ public class TransferAccountTest {
         // 查看转账2000次后的总金额
         System.out.println("total:" + (a.getMoney() + b.getMoney()));
     }
+
     // Random 为线程安全
     static Random random = new Random();
+
     // 随机 1~100
     public static int randomAmount() {
-        return random.nextInt(100) +1;
+        return random.nextInt(100) + 1;
     }
 }

@@ -1,9 +1,11 @@
 package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadlocal_storage_a;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 执行任务
+ * @date 2026/7/9 00:00
  */
-public class ExecutionTask implements Runnable{
+public class ExecutionTask implements Runnable {
 
     private QueryFromDBAction queryFromDBAction = new QueryFromDBAction();
 
@@ -16,6 +18,6 @@ public class ExecutionTask implements Runnable{
         System.out.println("The name query successful......");
         queryFromHttpAction.execute(context);
         System.out.println("The idcard query successful......");
-        System.out.println("The name is :" + context.getName()+",idCard is :" + context.getIdCard());
+        System.out.println("The name is :" + context.getName() + ",idCard is :" + context.getIdCard());
     }
 }

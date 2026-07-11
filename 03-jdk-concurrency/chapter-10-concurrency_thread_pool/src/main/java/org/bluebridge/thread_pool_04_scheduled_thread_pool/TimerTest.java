@@ -1,10 +1,14 @@
 package org.bluebridge.thread_pool_04_scheduled_thread_pool;
 
-
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc Timer定时器测试
+ * @date 2026/7/9 00:00
+ */
 public class TimerTest {
     public static void main(String[] args) {
         Timer timer = new Timer();
@@ -30,6 +34,5 @@ public class TimerTest {
         // 但由于 timer 内只有一个线程来顺序执行队列中的任务，因此『任务1』的延时，影响了『任务2』的执行
         timer.schedule(task1, 1000);
         timer.schedule(task2, 1000);
-
     }
 }

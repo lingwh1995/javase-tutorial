@@ -9,6 +9,11 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+/**
+ * @author lingwh
+ * @desc 原子数组测试
+ * @date 2026/7/9 00:00
+ */
 public class Test39 {
 
     public static void main(String[] args) {
@@ -28,19 +33,15 @@ public class Test39 {
     }
 
     /**
-     参数1，提供数组、可以是线程不安全数组或线程安全数组
-     参数2，获取数组长度的方法
-     参数3，自增方法，回传 array, index
-     参数4，打印数组的方法
+     *
+     * @param arraySupplier 提供数组、可以是线程不安全数组或线程安全数组
+     * @param lengthFun 获取数组长度的方法
+     * @param putConsumer 自增方法，回传 array, index
+     * @param printConsumer 打印数组的方法
+     * @param <T>
      */
-    // supplier 提供者 无中生有  ()->结果
-    // function 函数   一个参数一个结果   (参数)->结果  ,  BiFunction (参数1,参数2)->结果
-    // consumer 消费者 一个参数没结果  (参数)->void,      BiConsumer (参数1,参数2)->
-    private static <T> void demo(
-            Supplier<T> arraySupplier,
-            Function<T, Integer> lengthFun,
-            BiConsumer<T, Integer> putConsumer,
-            Consumer<T> printConsumer ) {
+    private static <T> void demo(Supplier<T> arraySupplier, Function<T, Integer> lengthFun,
+            BiConsumer<T, Integer> putConsumer, Consumer<T> printConsumer ) {
         List<Thread> ts = new ArrayList<>();
         T array = arraySupplier.get();
         int length = lengthFun.apply(array);

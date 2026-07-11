@@ -12,6 +12,11 @@ import java.net.Socket;
 import java.security.Principal;
 import java.util.*;
 
+/**
+ * @author lingwh
+ * @desc HTTP 请求实现
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.RequestImpl")
 public class RequestImpl implements HttpServletRequest {
     private Socket socket;
@@ -57,7 +62,6 @@ public class RequestImpl implements HttpServletRequest {
     }
 
     public RequestImpl(BufferedReader reader) throws IOException {
-
         /*log.debug("request headers: {}", headers);
         System.out.println("POST".equals(method));
         System.out.println(headers.containsKey("content-type"));

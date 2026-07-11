@@ -2,7 +2,7 @@ package org.bluebridge.java8.chapter_01_interface.chapter_03_custom_functional_i
 
 /**
  * @author lingwh
- * @desc
+ * @desc 带泛型的函数式接口（输入转输出）
  * @date 2025/12/2 15:57
  */
 @FunctionalInterface

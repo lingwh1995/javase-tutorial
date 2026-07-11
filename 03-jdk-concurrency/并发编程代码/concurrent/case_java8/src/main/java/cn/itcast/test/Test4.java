@@ -4,6 +4,11 @@ import cn.itcast.Constants;
 import cn.itcast.n2.util.FileReader;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lingwh
+ * @desc 线程读取文件测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test4")
 public class Test4 {
 

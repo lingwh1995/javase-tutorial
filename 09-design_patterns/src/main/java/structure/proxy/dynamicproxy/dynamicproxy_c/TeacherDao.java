@@ -1,6 +1,11 @@
 package structure.proxy.dynamicproxy.dynamicproxy_c;
 
-public class TeacherDao implements ITeacher{
+/**
+ * @author lingwh
+ * @desc TeacherDao
+ * @date 2019/3/15 00:00
+ */
+public class TeacherDao implements ITeacher {
     @Override
     public void teach() {
         System.out.println("授课中......");

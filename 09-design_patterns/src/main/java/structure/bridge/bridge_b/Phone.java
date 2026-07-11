@@ -1,10 +1,12 @@
 package structure.bridge.bridge_b;
 
 /**
- * 桥接类
+ * @author lingwh
+ * @desc 桥接类
+ * @date 2026/7/9 00:00
  */
 public abstract class Phone {
-    //组合品牌
+    // 组合品牌
     private Brand brand;
 
     public Brand getBrand() {
@@ -15,8 +17,8 @@ public abstract class Phone {
         this.brand = brand;
     }
 
-    //构造器
-    public Phone(Brand brand){
+    // 构造器
+    public Phone(Brand brand) {
         this.brand = brand;
     }
 

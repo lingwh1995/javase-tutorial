@@ -4,40 +4,45 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * join() 用于实现线程同步
- *      https://blog.csdn.net/csdn_life18/article/details/139520863
- *      1.同步和异步
- *          需要等待结果返回，才能继续运行就是同步
- *          不需要等待结果返回，就能继续运行就是异步
- *      2.Java提供了多种机制来实现线程之间的协调，其中之一就是join()方法。join()方法允许一个线程等待另一个线程完成，这在很多场景中是非常有用的。
- *      3.在A线程中调用了B线程的join()方法时，表示只有当B线程执行完毕时，A线程才能继续执行
+ * 线程join同步
  *
- * join()的使用场景‌
- *      在多线程编程中，当你需要确保某个任务完成后再继续执行下一个任务时，可以使用join()。例如，在一个生产者-消费者模型中，消费者线程可以在生产者
- *      线程之后使用join()方法，以确保生产者线程先完成任务。通过合理使用interrupt和join方法，可以有效地管理多线程程序中的同步和异步操作，避免资
- *      源竞争和死锁等问题。
+ * 1. join() 用于实现线程同步
+ *    https://blog.csdn.net/csdn_life18/article/details/139520863
+ *    - 同步和异步
+ *      需要等待结果返回，才能继续运行就是同步
+ *      不需要等待结果返回，就能继续运行就是异步
+ *    - Java提供了多种机制来实现线程之间的协调，其中之一就是join()方法。join()方法允许一个线程等待另一个线程完成，这在很多场景中是非常有用的。
+ *    - 在A线程中调用了B线程的join()方法时，表示只有当B线程执行完毕时，A线程才能继续执行
+ * 2. join()的使用场景‌
+ *    在多线程编程中，当你需要确保某个任务完成后再继续执行下一个任务时，可以使用join()。例如，在一个生产者-消费者模型中，消费者线程可以在生产者
+ *    线程之后使用join()方法，以确保生产者线程先完成任务。通过合理使用interrupt和join方法，可以有效地管理多线程程序中的同步和异步操作，避免资
+ *    源竞争和死锁等问题。
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class ThreadJoinTest {
 
     public static void main(String[] args) throws InterruptedException {
-        //测试使用 join() 实现线程同步
-        //testThreadJoin1();
+        // 测试使用 join() 实现线程同步
+        // testThreadJoin1();
 
-        //测试使用 join() 实现线程同步
+        // 测试使用 join() 实现线程同步
         testThreadJoin2();
 
-        //测试使用 join() 实现线程同步
-        //testThreadJoin3();
+        // 测试使用 join() 实现线程同步
+        // testThreadJoin3();
 
-        //测试使用 join() 实现线程同步
-        //testThreadJoin4();
+        // 测试使用 join() 实现线程同步
+        // testThreadJoin4();
 
-        //测试使用 join() 实现线程同步
-        //testThreadJoin5();
+        // 测试使用 join() 实现线程同步
+        // testThreadJoin5();
     }
 
     /**
      * 测试使用 join() 实现线程同步
+     *
      * @throws InterruptedException
      */
     public static void testThreadJoin1() throws InterruptedException {
@@ -64,11 +69,11 @@ public class ThreadJoinTest {
         }, "t2");
 
         t1.start();
-        //同步执行线程一
+        // 同步执行线程一
         t1.join();
 
         t2.start();
-        //同步执行线程二
+        // 同步执行线程二
         t2.join();
 
         System.out.println("Thread " + Thread.currentThread().getName() + " is running...");
@@ -76,6 +81,7 @@ public class ThreadJoinTest {
 
     /**
      * 测试使用 join() 实现线程同步
+     *
      * @throws InterruptedException
      */
     public static void testThreadJoin2() throws InterruptedException {
@@ -90,12 +96,13 @@ public class ThreadJoinTest {
             System.out.println("Thread " + Thread.currentThread().getName() + " is end sleeping...");
         });
         t1.start();
-        //t1.join();
+        // t1.join();
         System.out.println("Thread " + Thread.currentThread().getName() + " is end running...");
     }
 
     /**
      * 测试使用 join() 实现线程同步
+     *
      * @throws InterruptedException
      */
     public static void testThreadJoin3() throws InterruptedException {
@@ -109,15 +116,14 @@ public class ThreadJoinTest {
             }
         });
         t1.start();
-        //如果不使用 join() 实现线程同步的话，获取到的i的值是 1，如果使用 join() 实现线程同步，获取到的i的值是 10
+        // 如果不使用 join() 实现线程同步的话，获取到的i的值是 1，如果使用 join() 实现线程同步，获取到的i的值是 10
         t1.join();
         System.out.println("i = " + i.get());
     }
 
     /**
-     * 测试使用 join() 实现线程同步
-     *      第一个 join()：等待时,t2并没有停止,而在运行
-     *      第二个 join()：1s后,执行到此,t2也运行了1s,因此也只需再等待 1s
+     * 测试使用 join() 实现线程同步 第一个 join()：等待时,t2并没有停止,而在运行 第二个 join()：1s后,执行到此,t2也运行了1s,因此也只需再等待 1s
+     *
      * @throws InterruptedException
      */
     public static void testThreadJoin4() throws InterruptedException {
@@ -151,8 +157,8 @@ public class ThreadJoinTest {
     }
 
     /**
-     * 测试使用 join(long millis) 实现线程同步
-     *      限时同步
+     * 测试使用 join(long millis) 实现线程同步 限时同步
+     *
      * @throws InterruptedException
      */
     public static void testThreadJoin5() throws InterruptedException {
@@ -166,7 +172,8 @@ public class ThreadJoinTest {
             }
         });
         t1.start();
-        //如果 不使用join(long millis)实现线程同步 或使用join(long millis)实现线程同步失败 的话，获取到的i的值是 1，如果使用 join() 实现线程同步，获取到的i的值是 10
+        // 如果 不使用join(long millis)实现线程同步 或使用join(long millis)实现线程同步失败 的话，获取到的i的值是 1，如果使用 join()
+        // 实现线程同步，获取到的i的值是 10
 
         /*
          *  1. 注释掉下面一行，演示 不使用join(long millis)实现线程同步

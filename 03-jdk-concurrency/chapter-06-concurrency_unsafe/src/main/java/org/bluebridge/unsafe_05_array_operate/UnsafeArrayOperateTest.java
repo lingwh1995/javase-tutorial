@@ -4,11 +4,13 @@ import org.bluebridge.util.UnsafeAccessor;
 import sun.misc.Unsafe;
 
 /**
- * Unsafe应用四    操作数组
+ * @author lingwh
+ * @desc Unsafe应用四 操作数组
+ * @date 2026/7/9 00:00
  */
 public class UnsafeArrayOperateTest {
     public static void main(String[] args) {
-        String[] array = new String[]{"str1str1str","str2","str3"};
+        String[] array = new String[] {"str1str1str", "str2", "str3"};
         Unsafe unsafe = UnsafeAccessor.getUnsafe();
         int baseOffset = unsafe.arrayBaseOffset(String[].class);
         System.out.println(baseOffset);
@@ -17,7 +19,7 @@ public class UnsafeArrayOperateTest {
 
         for (int i = 0; i < array.length; i++) {
             int offset = baseOffset + scale * i;
-            System.out.println(offset+" : " + unsafe.getObject(array,offset));
+            System.out.println(offset + " : " + unsafe.getObject(array, offset));
         }
     }
 }

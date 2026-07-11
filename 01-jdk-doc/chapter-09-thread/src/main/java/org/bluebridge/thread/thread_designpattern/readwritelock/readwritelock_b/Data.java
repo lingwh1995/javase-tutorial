@@ -1,8 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_b;
 
 /**
- * 已共享的数据
- * @author ronin
+ * @author lingwh
+ * @desc 已共享的数据
+ * @date 2026/7/9 00:00
  */
 public class Data {
     private final char[] buffer;
@@ -10,7 +11,7 @@ public class Data {
 
     public Data(int size) {
         this.buffer = new char[size];
-        for(int i=0; i<size; i++){
+        for (int i = 0; i < size; i++) {
             this.buffer[i] = '*';
         }
     }
@@ -19,22 +20,22 @@ public class Data {
         try {
             lock.readLock();
             return this.doRead();
-        }finally {
+        } finally {
             lock.readUnlock();
         }
     }
 
     public void write(char c) throws InterruptedException {
-        try{
+        try {
             lock.writeLock();
             this.doWrite(c);
-        }finally {
+        } finally {
             lock.writeUnlock();
         }
     }
 
     private void doWrite(char c) {
-        for(int i=0;i<buffer.length; i++){
+        for (int i = 0; i < buffer.length; i++) {
             buffer[i] = c;
             slowly(10);
         }
@@ -42,8 +43,8 @@ public class Data {
 
     private char[] doRead() {
         char[] newBuffer = new char[buffer.length];
-        for(int i=0;i<newBuffer.length; i++){
-            newBuffer [i] = buffer [i];
+        for (int i = 0; i < newBuffer.length; i++) {
+            newBuffer[i] = buffer[i];
         }
         slowly(50);
         return buffer;

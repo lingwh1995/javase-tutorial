@@ -3,7 +3,9 @@ package org.bluebridge.lock_05_synchronized_thread8lock.lock_5;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 情况5：2 1s 后 1
+ * @author lingwh
+ * @desc 情况5：2 1s 后 1
+ * @date 2026/7/9 00:00
  */
 public class Number {
     public static synchronized void a() {
@@ -19,10 +21,13 @@ public class Number {
         System.out.println("2......");
     }
 
-
     public static void main(String[] args) {
         Number n1 = new Number();
-        new Thread(() -> { n1.a(); }).start();
-        new Thread(() -> { n1.b(); }).start();
+        new Thread(() -> {
+            n1.a();
+        }).start();
+        new Thread(() -> {
+            n1.b();
+        }).start();
     }
 }

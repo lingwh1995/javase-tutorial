@@ -1,13 +1,14 @@
 package action.command.command_j;
 
 /**
- * 宏命令
- * @author ronin
- * @version V1.0
- * @since 2019/9/5 8:47
+ * @author lingwh
+ * @desc 宏命令
+ * @date 2019/9/5 8:47
  */
-public class MacroCommand implements Command{
-    /**在宏命令模式中,使用命令数组存储一大推命令*/
+public class MacroCommand implements Command {
+    /**
+     * 在宏命令模式中,使用命令数组存储一大推命令
+     */
     Command[] commands;
 
     public MacroCommand(Command[] commands) {
@@ -15,8 +16,8 @@ public class MacroCommand implements Command{
     }
 
     @Override
-    public void execute(){
-        for(int i=0;i<commands.length;i++){
+    public void execute() {
+        for (int i = 0; i < commands.length; i++) {
             commands[i].execute();
         }
     }
@@ -26,7 +27,7 @@ public class MacroCommand implements Command{
      */
     @Override
     public void undo() {
-        for(int i=0;i<commands.length;i++){
+        for (int i = 0; i < commands.length; i++) {
             commands[i].undo();
         }
     }

@@ -1,6 +1,11 @@
 package structure.adapter.adapter_m;
 
-public class SimpleHandlerAdapter implements HandlerAdapter{
+/**
+ * @author lingwh
+ * @desc 简单处理器适配器
+ * @date 2026/7/9 00:00
+ */
+public class SimpleHandlerAdapter implements HandlerAdapter {
 
     @Override
     public boolean supports(Object handler) {
@@ -9,12 +14,6 @@ public class SimpleHandlerAdapter implements HandlerAdapter{
 
     @Override
     public void handle(Object handler) {
-        ((SimpleController)handler).doSimplerHandler();
+        ((SimpleController) handler).doSimplerHandler();
     }
 }
-
-
-
-
-
-

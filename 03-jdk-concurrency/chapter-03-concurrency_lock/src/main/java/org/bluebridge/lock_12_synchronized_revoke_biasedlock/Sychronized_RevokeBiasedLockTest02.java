@@ -3,11 +3,16 @@ package org.bluebridge.lock_12_synchronized_revoke_biasedlock;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
- * 测试偏向锁准备工作
- *      1.JDK版本设置为1.8
- *      2.VM配置参数设置为 -XX:+UseBiasedLocking -XX:BiasedLockingStartupDelay=0
+ * 撤销偏向锁测试
  *
- *  撤销偏向锁方式二：其他线程使用对象，下面代码实际上是偏向锁升级到轻量级锁，也属于撤消偏向锁的一种情况
+ * 1. 测试偏向锁准备工作
+ *    - JDK版本设置为1.8
+ *    - VM配置参数设置为 -XX:+UseBiasedLocking -XX:BiasedLockingStartupDelay=0
+ * 2. 撤销偏向锁方式二
+ *    其他线程使用对象，下面代码实际上是偏向锁升级到轻量级锁，也属于撤消偏向锁的一种情况
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class Sychronized_RevokeBiasedLockTest02 {
 
@@ -36,5 +41,4 @@ public class Sychronized_RevokeBiasedLockTest02 {
         // 当前线程释放锁后，对象保持偏向锁状态，直到有其他线程尝试获取锁
         System.out.println("解锁：" + ClassLayout.parseInstance(lock).toPrintableSimple());
     }
-
 }

@@ -4,9 +4,13 @@ import lombok.extern.slf4j.Slf4j;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc 线程泡茶案例
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestMakeTea")
 public class TestMakeTea {
-
 
     public static void main(String[] args) {
         S3.makeTea();
@@ -42,6 +46,7 @@ public class TestMakeTea {
 
 @Slf4j(topic = "c.S2")
 class S2 {
+
     static String kettle = "冷水";
     static String tea = null;
     static final Object lock = new Object();
@@ -98,6 +103,7 @@ class S2 {
 
 @Slf4j(topic = "c.S3")
 class S3 {
+
     static String kettle = "冷水";
     static String tea = null;
     static final Object lock = new Object();

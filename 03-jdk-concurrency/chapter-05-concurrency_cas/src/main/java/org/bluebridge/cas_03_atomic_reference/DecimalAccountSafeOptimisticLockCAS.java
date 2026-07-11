@@ -3,6 +3,11 @@ package org.bluebridge.cas_03_atomic_reference;
 import java.math.BigDecimal;
 import java.util.concurrent.atomic.AtomicReference;
 
+/**
+ * @author lingwh
+ * @desc BigDecimal账户乐观锁实现
+ * @date 2026/7/9 00:00
+ */
 public class DecimalAccountSafeOptimisticLockCAS implements DecimalAccount {
 
     AtomicReference<BigDecimal> ref;

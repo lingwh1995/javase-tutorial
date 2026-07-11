@@ -4,16 +4,17 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * Es数据库,维护了Mysql数据库的引用
- * @author ronin
- * @version V1.0
- * @since 2019/8/14 14:00
+ * @author lingwh
+ * @desc Es数据库,维护了Mysql数据库的引用
+ * @date 2019/8/14 14:00
  */
-public class EsDatabase extends AbstractDatabase{
+public class EsDatabase extends AbstractDatabase {
 
     private List<String> dataset = new CopyOnWriteArrayList<String>();
 
-    /**Mysql数据库*/
+    /**
+     * Mysql数据库
+     */
     private MysqlDatabase mysqlDatabase;
 
     public void setMysqlDatabase(MysqlDatabase mysqlDatabase) {
@@ -22,6 +23,7 @@ public class EsDatabase extends AbstractDatabase{
 
     /**
      * 给ES数据库添加数据
+     *
      * @param data
      */
     @Override
@@ -32,6 +34,7 @@ public class EsDatabase extends AbstractDatabase{
 
     /**
      * 把刚才添加的数据同步维护到Mysql数据库中
+     *
      * @param data
      */
     @Override

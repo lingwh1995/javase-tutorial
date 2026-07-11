@@ -11,6 +11,7 @@ public class LambdaIsObjectTest {
 
     /**
      * 普通的方法
+     *
      * @param a
      * @param b
      * @return
@@ -28,20 +29,19 @@ public class LambdaIsObjectTest {
     }
 
     // 使用对象来表示函数
-    static LambdaCalculator add = (a,b) -> a + b;
-    static LambdaCalculator sub = (a,b) -> a - b;
-    static LambdaCalculator mul = (a,b) -> a * b;
-    static LambdaCalculator div = (a,b) -> a / b;
+    static LambdaCalculator add = (a, b) -> a + b;
+    static LambdaCalculator sub = (a, b) -> a - b;
+    static LambdaCalculator mul = (a, b) -> a * b;
+    static LambdaCalculator div = (a, b) -> a / b;
 
     public static void main(String[] args) {
         // 调用普通的方法
         System.out.println(LambdaIsObjectTest.add(1, 2));
 
-        //调用Lambda对象
-        System.out.println(add.calc(100,10));
-        System.out.println(sub.calc(100,10));
-        System.out.println(mul.calc(100,10));
-        System.out.println(div.calc(100,10));
+        // 调用Lambda对象
+        System.out.println(add.calc(100, 10));
+        System.out.println(sub.calc(100, 10));
+        System.out.println(mul.calc(100, 10));
+        System.out.println(div.calc(100, 10));
     }
-
 }

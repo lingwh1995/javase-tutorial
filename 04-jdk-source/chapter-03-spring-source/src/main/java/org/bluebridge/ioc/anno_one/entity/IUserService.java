@@ -1,10 +1,10 @@
 package org.bluebridge.ioc.anno_one.entity;
 
-/**  
- * @author ronin
- * @date 2019年3月20日  
- *    
+/**
+ * @author lingwh
+ * @desc 用户服务接口
+ * @date 2019/3/20 00:00
  */
 public interface IUserService {
-	void say();
+    void say();
 }

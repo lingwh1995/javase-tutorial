@@ -2,19 +2,25 @@ package create.builder.builder_j;
 
 /**
  * 描述输出数据的对象
+ *
  * @author ronin
- * @version V1.0
- * @since 2019/8/8 14:12
+ * @date 2019/8/8 14:12
  */
 public class ExportDataModel {
 
-    /**产品编号*/
+    /**
+     * 产品编号
+     */
     private String productId;
 
-    /**销售价格*/
+    /**
+     * 销售价格
+     */
     private double price;
 
-    /**销售数量*/
+    /**
+     * 销售数量
+     */
     private double amount;
 
     public String getProductId() {

@@ -1,10 +1,9 @@
 package org.bluebridge.chapter_01_byte_stream._06_filter_input_stream_filter_output_stream._04_print_stream;
 
-import org.junit.Test;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -15,7 +14,8 @@ public class PrintStreamTest {
 
     /**
      * 测试PrintStream类的使用，当内容输出到文件中时会自动换行
-     * tips: 和c语言中的sprintf()函数类似，sprintf()是格式化输出到字符串，PrintStream是格式化输出到文件
+     * tips:
+     *     和c语言中的sprintf()函数类似，sprintf()是格式化输出到字符串，PrintStream是格式化输出到文件
      */
     @Test
     public void testPrintStream() {
@@ -38,5 +38,4 @@ public class PrintStreamTest {
             e.printStackTrace();
         }
     }
-
 }

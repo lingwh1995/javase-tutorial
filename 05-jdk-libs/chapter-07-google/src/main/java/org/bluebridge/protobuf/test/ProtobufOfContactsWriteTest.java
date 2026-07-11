@@ -1,12 +1,11 @@
 package org.bluebridge.protobuf.test;
 
-import lombok.extern.slf4j.Slf4j;
-import org.bluebridge.protobuf.proto.ContactProto;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
+import lombok.extern.slf4j.Slf4j;
+import org.bluebridge.protobuf.proto.ContactProto;
 
 /**
  * @author lingwh
@@ -29,10 +28,9 @@ public class ProtobufOfContactsWriteTest {
 
             // 方式二：一步处理
             contactsBuilder.mergeFrom(new FileInputStream("d:/contacts.bin"));
-        }catch (Exception e) {
+        } catch (Exception e) {
             log.error("读取文件失败：{}", e.getMessage());
         }
-
 
         // 向通讯录中新增一个联系人
         contactsBuilder.addContacts(addPeppleInfo());
@@ -59,7 +57,7 @@ public class ProtobufOfContactsWriteTest {
         while (true) {
             System.out.println("请输入联系人手机号，只输入回车结束输入：");
             String phoneNumber = scanner.nextLine();
-            if(phoneNumber.isEmpty()) {
+            if (phoneNumber.isEmpty()) {
                 break;
             }
             ContactProto.Phone.Builder phoneBuilder = ContactProto.Phone.newBuilder();
@@ -69,5 +67,4 @@ public class ProtobufOfContactsWriteTest {
         System.out.println("--------------------新增联系人结束--------------------");
         return peopleBuilder.build();
     }
-
 }

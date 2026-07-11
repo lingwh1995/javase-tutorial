@@ -1,12 +1,11 @@
 package structure.bridge.bridge_c;
 
 /**
- * @author ronin
- * @version V1.0
- * @desc    加急使用短信发送消息
- * @since 2019/7/24 11:13
+ * @author lingwh
+ * @desc 加急使用短信发送消息
+ * @date 2019/7/24 11:13
  */
-public class UrgencyMessageSMS implements UrgencyMessage{
+public class UrgencyMessageSMS implements UrgencyMessage {
     /**
      * 监控指定消息的处理过程
      *

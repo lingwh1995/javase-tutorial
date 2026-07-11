@@ -1,10 +1,14 @@
 package org.bluebridge.chapter_06_stack;
 
+import java.util.Stack;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
-import java.util.Stack;
-
+/**
+ * @author lingwh
+ * @desc Stack栈测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j
 public class StackTest {
 
@@ -44,10 +48,9 @@ public class StackTest {
         log.debug("stack: {}", stack);
         log.debug("------------5------------");
 
-        //遍历
-        while(stack.size()>0){
+        // 遍历
+        while (stack.size() > 0) {
             log.debug("stack.pop(): {}", stack.pop());
         }
     }
-
 }

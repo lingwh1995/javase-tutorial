@@ -1,22 +1,21 @@
 package action.iterator.iterator_i;
 
 /**
- * 被客户方收购的那个公司的工资管理类
- * @author ronin
- * @version V1.0
- * @since 2019/8/20 13:28
+ * @author lingwh
+ * @desc 被客户方收购的那个公司的工资管理类
+ * @date 2019/8/20 13:28
  */
 public class SalaryManager {
 
     private PayModel[] pms = null;
 
-    public PayModel[] getPays(){
+    public PayModel[] getPays() {
         return pms;
     }
 
-    public void calcSalary(){
-        //计算工资，并把工资信息填充到工资列表里面
-        //为了测试，做点数据进去
+    public void calcSalary() {
+        // 计算工资，并把工资信息填充到工资列表里面
+        // 为了测试，做点数据进去
         PayModel pm1 = new PayModel();
         pm1.setPay(2200);
         pm1.setUserName("王五");

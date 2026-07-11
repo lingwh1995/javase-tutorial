@@ -7,6 +7,11 @@ import java.util.concurrent.atomic.LongAdder;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
+/**
+ * @author lingwh
+ * @desc 原子累加器性能对比测试
+ * @date 2026/7/9 00:00
+ */
 public class Test41 {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {

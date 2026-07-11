@@ -15,6 +15,4 @@ public class MongoDBStorageDao {
     public void save() {
         log.info("执行 mongodb 存储操作......");
     }
-
-
 }

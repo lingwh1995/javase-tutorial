@@ -3,8 +3,10 @@ package org.bluebridge.lock_16_synchronized_wait_notify_demo;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 解决了其它干活的线程阻塞的问题
- *      但如果有其它线程也在等待条件呢？
+ * 解决其它线程阻塞问题，但如果有其它线程也在等待条件呢？
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class SynchronizedWaitNotifyTest2 {
     static final Object room = new Object();

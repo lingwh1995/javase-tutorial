@@ -2,9 +2,9 @@ package action.visitor.visitor_c;
 
 /**
  * 各种客户的父类
- * @author ronin
- * @version V1.0
- * @since 2019/10/10 17:45
+ *
+ * @author lingwh
+ * @date 2019/10/10 17:45
  */
 public abstract class Customer {
 

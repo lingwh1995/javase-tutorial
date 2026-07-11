@@ -1,7 +1,6 @@
 package org.bluebridge.builder;
 
 import lombok.Builder;
-import lombok.Data;
 import lombok.ToString;
 
 /**

@@ -1,6 +1,10 @@
 package create.abstractfactory.abstractfactory_k;
 
-//华为路由器实现类
+/**
+ * @author lingwh
+ * @desc 华为路由器实现类
+ * @date 2026/7/9 00:00
+ */
 public class HuaweiRouter implements IRouterProduct {
 
     @Override

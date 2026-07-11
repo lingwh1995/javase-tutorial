@@ -2,6 +2,7 @@ package action.template.template_g;
 
 /**
  * 封装进行登录控制所需要的数据
+ *
  * @author ronin
  * @version V1.0
  * @since 2019/8/26 14:20

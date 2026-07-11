@@ -1,6 +1,12 @@
 package create.builder.builder_a;
 
-public class PanadaAirShipBuilder extends AbstractAirShipBuilder{
+/**
+ * 熊猫太空飞船
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
+ */
+public class PanadaAirShipBuilder extends AbstractAirShipBuilder {
 
     @Override
     public void buildOrbitalModule() {
@@ -19,5 +25,4 @@ public class PanadaAirShipBuilder extends AbstractAirShipBuilder{
         System.out.println("构建Panada号逃逸塔......");
         super.airShip.setEscapeTower(new EscapeTower("Panada号逃逸塔"));
     }
-
 }

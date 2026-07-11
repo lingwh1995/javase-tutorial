@@ -2,13 +2,13 @@ package action.template.template_e.worker;
 
 /**
  * 描述工作人员信息的数据模型
- * @author ronin
- * @version V1.0
- * @since 2019/8/26 13:21
+ *
+ * @author lingwh
+ * @date 2019/8/26 13:21
  */
 public class WorkerModel {
 
-    private String uuid,workerId,pwd,name;
+    private String uuid, workerId, pwd, name;
 
     public String getUuid() {
         return uuid;

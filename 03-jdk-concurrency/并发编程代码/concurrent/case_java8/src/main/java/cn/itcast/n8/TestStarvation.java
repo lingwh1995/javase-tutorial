@@ -10,6 +10,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+/**
+ * @author lingwh
+ * @desc 线程饥饿测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestDeadLock")
 public class TestStarvation {
 

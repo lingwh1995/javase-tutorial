@@ -7,6 +7,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicReference;
 
+/**
+ * @author lingwh
+ * @desc ABA问题测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test37")
 public class Test37 {
     public static void main(String[] args) throws ParseException, InterruptedException {

@@ -1,6 +1,5 @@
 package org.bluebridge.constructor.no_args_constructor;
 
-
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -20,5 +19,4 @@ public class NoArgsConstructorAnnoTest {
         User user = new User();
         log.info("user: {}", user);
     }
-
 }

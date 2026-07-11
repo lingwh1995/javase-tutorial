@@ -3,7 +3,9 @@ package cn.itcast.monitor.vo;
 import lombok.Data;
 
 /**
- * @author yihang
+ * @author lingwh
+ * @desc 监控信息
+ * @date 2026/7/9 00:00
  */
 @Data
 public class Info {

@@ -6,6 +6,10 @@ import structure.adapter.adapter_e.dao.TztgDao;
 import structure.adapter.adapter_e.dao.XxjlDao;
 import structure.adapter.adapter_e.domain.Xxjl;
 
+/**
+ * @author lingwh
+ * @date 2026/7/9 00:00
+ */
 public class XxjlAdapterService extends AbstractXxjlAdapter {
     private GatzlDao gatzlDao = new GatzlDao();
     private TztgDao tztgDao = new TztgDao();
@@ -17,5 +21,4 @@ public class XxjlAdapterService extends AbstractXxjlAdapter {
         gatzlDao.sendMsg("123456789");
         tztgDao.sendEmail("123@qq.com");
     }
-
 }

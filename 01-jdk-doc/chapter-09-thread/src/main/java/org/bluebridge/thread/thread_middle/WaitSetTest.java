@@ -4,13 +4,35 @@ import java.util.Optional;
 import java.util.stream.IntStream;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 线程 wait set 测试
+ * @date 2026/7/9 00:00
  */
 public class WaitSetTest {
     private static final Object LOCK = new Object();
 
-    private static void work(){
-        synchronized (LOCK){
+    public static void main(String[] args) {
+        /**
+         * 1. 所有的对象都有一个wait set，用来存放该对象wait()方法之后进入blocked状态的线程
+         * 2. 调用notify()后,wait set中线程被唤醒顺序不是FIFO
+         * 3. 线程被notify()之后,不一定被立即执行
+         */
+        new Thread(()->{
+            work();
+        }).start();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        synchronized (LOCK) {
+            LOCK.notify();
+        }
+        // worksetTest();
+    }
+
+    private static void work() {
+        synchronized (LOCK) {
             System.out.println("Begin......");
 
             try {
@@ -21,26 +43,6 @@ public class WaitSetTest {
             }
             System.out.println("Thread will out......");
         }
-    }
-    /**
-     * 1.所有的对象都有一个wait set,用来存放该对象wait()方法之后进入blocked状态的线程
-     * 2.调用notify()后,wait set中线程被唤醒顺序不是FIFO
-     * 3.线程被notify()之后,不一定被立即执行
-     * @param args
-     */
-    public static void main(String[] args) {
-        new Thread(()->{
-            work();
-        }).start();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        synchronized (LOCK){
-            LOCK.notify();
-        }
-        //worksetTest();
     }
 
     private static void worksetTest() {

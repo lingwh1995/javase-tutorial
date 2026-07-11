@@ -1,19 +1,20 @@
 package action.command.command_e;
 
 /**
- * 具体的命令对象:饺子
- * @author ronin
- * @version V1.0
- * @since 2019/8/5 13:42
+ * @author lingwh
+ * @desc 饺子命令
+ * @date 2019/8/5 13:42
  */
-public class DumplingCommand implements Command{
+public class DumplingCommand implements Command {
 
     /**
      * 持有具体做菜的厨师的对象
      */
     private CookApi cookApi = null;
+
     /**
      * 设置具体做菜的厨师的对象
+     *
      * @param cookApi 具体做菜的厨师的对象
      */
     public void setCookApi(CookApi cookApi) {

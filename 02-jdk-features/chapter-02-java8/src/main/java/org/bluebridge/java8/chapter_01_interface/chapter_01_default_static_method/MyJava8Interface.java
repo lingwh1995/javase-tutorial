@@ -12,7 +12,6 @@ public interface MyJava8Interface {
      */
     void abstractMethod_1();
 
-
     /**
      * 定义一个抽象方法
      */
@@ -31,5 +30,4 @@ public interface MyJava8Interface {
     default void defaultMethod() {
         System.out.println("我是接口中的默认方法......");
     }
-
 }

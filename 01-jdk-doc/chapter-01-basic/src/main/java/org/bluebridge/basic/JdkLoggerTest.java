@@ -1,8 +1,7 @@
 package org.bluebridge.basic;
 
-import org.junit.Test;
-
 import java.util.logging.Logger;
+import org.junit.Test;
 
 /**
  * @author lingwh

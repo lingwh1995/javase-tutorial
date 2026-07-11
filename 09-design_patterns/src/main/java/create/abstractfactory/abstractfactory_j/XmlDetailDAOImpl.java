@@ -1,11 +1,11 @@
 package create.abstractfactory.abstractfactory_j;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 11:39
+ * @author lingwh
+ * @desc Xml订单子记录DAO实现
+ * @date 2019/9/4 11:39
  */
-public class XmlDetailDAOImpl implements OrderDetailDAO{
+public class XmlDetailDAOImpl implements OrderDetailDAO {
 
     @Override
     public void saveOrderDetail() {

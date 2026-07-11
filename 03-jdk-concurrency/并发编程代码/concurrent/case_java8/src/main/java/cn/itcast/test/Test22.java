@@ -8,6 +8,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc ReentrantLock超时测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test22")
 public class Test22 {
     private static ReentrantLock lock = new ReentrantLock();

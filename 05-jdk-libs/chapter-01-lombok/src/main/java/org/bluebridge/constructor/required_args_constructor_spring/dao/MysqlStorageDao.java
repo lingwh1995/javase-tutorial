@@ -15,5 +15,4 @@ public class MysqlStorageDao {
     public void save() {
         log.info("执行 mysql 存储操作......");
     }
-
 }

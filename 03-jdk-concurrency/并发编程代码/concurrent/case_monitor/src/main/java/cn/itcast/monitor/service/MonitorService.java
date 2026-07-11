@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author yihang
+ * @author lingwh
+ * @desc 监控服务
+ * @date 2026/7/9 00:00
  */
 @Service
 @Slf4j
@@ -65,5 +67,4 @@ public class MonitorService {
         // 不加打断需要等到下一次 sleep 结束才能退出循环，这里是为了更快结束
         monitorThread.interrupt();
     }
-
 }

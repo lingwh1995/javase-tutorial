@@ -3,11 +3,14 @@ package org.bluebridge.serializable.chapter_02_externalizable;
 import java.io.*;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc Externalizable工具类
+ * @date 2026/7/9 00:00
  */
 public class ExternalizableUtils {
     /**
      * 序列化方法
+     *
      * @throws IOException
      * @throws FileNotFoundException
      */
@@ -19,11 +22,12 @@ public class ExternalizableUtils {
 
     /**
      * 反序列化的方法
+     *
      * @throws IOException
      * @throws FileNotFoundException
      * @throws ClassNotFoundException
      */
-    public Person deSerializable() throws FileNotFoundException, IOException, ClassNotFoundException{
+    public Person deSerializable() throws FileNotFoundException, IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("d:/data"));
         return (Person) ois.readObject();
     }

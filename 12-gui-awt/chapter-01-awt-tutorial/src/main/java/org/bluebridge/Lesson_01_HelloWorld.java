@@ -1,7 +1,7 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -21,15 +21,11 @@ public class Lesson_01_HelloWorld {
     private void createAndShowGUI() {
         // 创建窗体
         Frame frame = new Frame();
-
         // 设置窗体的标题
         frame.setTitle("HelloWorld");
-
         // 设置窗体的大小
         frame.setSize(300, 200);
-
         // 显示窗体
         frame.setVisible(true);
     }
-
 }

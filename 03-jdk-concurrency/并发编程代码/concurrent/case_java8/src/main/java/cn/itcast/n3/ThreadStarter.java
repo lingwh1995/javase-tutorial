@@ -5,6 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
+/**
+ * @author lingwh
+ * @desc 线程启动方式
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.ThreadStarter")
 public class ThreadStarter {
     public static void main(String[] args) throws ExecutionException, InterruptedException {

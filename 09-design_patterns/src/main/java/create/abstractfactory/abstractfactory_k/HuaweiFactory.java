@@ -1,6 +1,10 @@
 package create.abstractfactory.abstractfactory_k;
 
-//华为工厂实现类
+/**
+ * @author lingwh
+ * @desc 华为工厂实现类
+ * @date 2026/7/9 00:00
+ */
 public class HuaweiFactory implements IProductFactory {
 
     @Override
@@ -13,5 +17,3 @@ public class HuaweiFactory implements IProductFactory {
         return new HuaweiRouter();
     }
 }
-
-

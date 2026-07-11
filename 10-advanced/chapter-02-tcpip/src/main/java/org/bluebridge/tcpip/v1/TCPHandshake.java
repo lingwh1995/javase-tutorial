@@ -3,27 +3,34 @@ package org.bluebridge.tcpip.v1;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * TCP三次握手模拟
+ * @author lingwh
+ * @desc TCP三次握手模拟
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class TCPHandshake {
-    
+
     // 客户端状态枚举
     enum ClientState {
-        CLOSED, SYN_SENT, ESTABLISHED
+        CLOSED,
+        SYN_SENT,
+        ESTABLISHED
     }
-    
+
     // 服务端状态枚举
     enum ServerState {
-        CLOSED, LISTEN, SYN_RECEIVED, ESTABLISHED
+        CLOSED,
+        LISTEN,
+        SYN_RECEIVED,
+        ESTABLISHED
     }
-    
+
     public static void threeWayHandshake() {
         log.info("=== TCP 三次握手模拟 ===");
 
         ClientState clientState = ClientState.CLOSED;
         ServerState serverState = ServerState.CLOSED;
-        
+
         log.info("初始状态: Client={}, Server={}", clientState, serverState);
 
         // 1. 客户端发送SYN

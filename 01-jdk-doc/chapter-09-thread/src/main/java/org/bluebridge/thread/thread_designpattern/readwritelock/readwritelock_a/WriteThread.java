@@ -3,9 +3,9 @@ package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_a
 import java.util.List;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/15 17:38
+ * @author lingwh
+ * @desc 写线程
+ * @date 2019/10/15 17:38
  */
 public class WriteThread extends Thread {
     private final List<Integer> list;
@@ -16,8 +16,8 @@ public class WriteThread extends Thread {
     }
 
     @Override
-    public void run(){
-        for(int i=0;true;i++){
+    public void run() {
+        for (int i = 0; true; i++) {
             list.add(i);
             list.remove(0);
         }

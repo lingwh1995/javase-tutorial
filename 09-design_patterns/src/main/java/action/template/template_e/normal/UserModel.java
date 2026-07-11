@@ -1,14 +1,13 @@
 package action.template.template_e.normal;
 
 /**
- * 描述用户信息的数据模型
- * @author ronin
- * @version V1.0
- * @since 2019/8/26 11:36
+ * @author lingwh
+ * @desc 描述用户信息的数据模型
+ * @date 2019/8/26 11:36
  */
 public class UserModel {
 
-    private String uuid,userId,pwd,name;
+    private String uuid, userId, pwd, name;
 
     public String getUuid() {
         return uuid;

@@ -5,6 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
+/**
+ * @author lingwh
+ * @desc ForkJoin测试2
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestForkJoin2")
 public class TestForkJoin2 {
 

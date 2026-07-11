@@ -6,7 +6,9 @@ import java.io.StreamTokenizer;
 import java.io.StringReader;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 流标记器测试
+ * @date 2026/7/9 00:00
  */
 public class StreamTokenizerTest {
     public static void main(String[] args) {
@@ -22,15 +24,14 @@ public class StreamTokenizerTest {
                 }
             }
             System.out.println("Number of words in filereaderandwriter: " + wordCount);
-        } catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } finally{
-            if(reader != null){
+        } finally {
+            if (reader != null) {
                 reader.close();
             }
         }
     }
-
 }

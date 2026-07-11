@@ -1,12 +1,16 @@
 package structure.flyweight.flyweight_a;
 
-public class ConcreteWebSite implements WebSite{
+/**
+ * @author lingwh
+ * @desc 具体网站实现
+ * @date 2026/7/9 00:00
+ */
+public class ConcreteWebSite implements WebSite {
 
     /**
-     * 网站发布的形式
-     * 共享的内部状态
+     * 网站发布的形式 共享的内部状态
      */
-    private String type= "";
+    private String type = "";
 
     public ConcreteWebSite(String type) {
         this.type = type;
@@ -14,6 +18,6 @@ public class ConcreteWebSite implements WebSite{
 
     @Override
     public void use(User user) {
-        System.out.println("网站发布的形式为:"+type+",使用者是:"+user.getName());
+        System.out.println("网站发布的形式为:" + type + ",使用者是:" + user.getName());
     }
 }

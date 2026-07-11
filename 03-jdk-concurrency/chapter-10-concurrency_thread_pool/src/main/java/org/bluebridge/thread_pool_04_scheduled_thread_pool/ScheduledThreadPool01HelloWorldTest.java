@@ -1,6 +1,5 @@
 package org.bluebridge.thread_pool_04_scheduled_thread_pool;
 
-import java.text.DateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -8,17 +7,22 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc 定时线程池测试
+ * @date 2026/7/9 00:00
+ */
 public class ScheduledThreadPool01HelloWorldTest {
 
     public static void main(String[] args) {
-        //测试 ScheduledExecutorService.schedule()
-        //testScheduled();
+        // 测试 ScheduledExecutorService.schedule()
+        // testScheduled();
 
-        //测试 ScheduledExecutorService.scheduleAtFixedRate()
-        //testScheduleAtFixedRate1();
+        // 测试 ScheduledExecutorService.scheduleAtFixedRate()
+        // testScheduleAtFixedRate1();
 
-        //测试 ScheduledExecutorService.scheduleAtFixedRate()
-        //testScheduleAtFixedRate2();
+        // 测试 ScheduledExecutorService.scheduleAtFixedRate()
+        // testScheduleAtFixedRate2();
 
         testScheduleWithFixedDelay();
     }
@@ -46,7 +50,7 @@ public class ScheduledThreadPool01HelloWorldTest {
 
     /**
      * 测试 ScheduledExecutorService.scheduleAtFixedRate()
-     *      任务执行时间没有超过间隔时间
+     *     任务执行时间没有超过间隔时间
      */
     private static void testScheduleAtFixedRate1() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:MM:ss");
@@ -59,7 +63,7 @@ public class ScheduledThreadPool01HelloWorldTest {
 
     /**
      * 测试 ScheduledExecutorService.scheduleAtFixedRate()
-     *      任务执行时间超过了间隔时间
+     *     任务执行时间超过了间隔时间
      * 输出分析：一开始，延时 1s，接下来，由于任务执行时间 > 间隔时间，间隔被『撑』到了 2s
      */
     private static void testScheduleAtFixedRate2() {
@@ -86,7 +90,7 @@ public class ScheduledThreadPool01HelloWorldTest {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:MM:ss");
         ScheduledExecutorService pool = Executors.newScheduledThreadPool(1);
         System.out.println("start......");
-        pool.scheduleWithFixedDelay(()-> {
+        pool.scheduleWithFixedDelay(() -> {
             System.out.println(dtf.format(LocalDateTime.now()) + " running......");
             try {
                 TimeUnit.MILLISECONDS.sleep(2000);

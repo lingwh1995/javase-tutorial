@@ -1,6 +1,6 @@
 package create.abstractfactory.abstractfactory_l;
 
-public class MysqlUser implements IUser{
+public class MysqlUser implements IUser {
     @Override
     public void insert(User user) {
         System.out.println("在MySQL数据库中给User表增加了一条记录");

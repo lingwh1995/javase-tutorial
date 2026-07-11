@@ -2,6 +2,11 @@ package headfirst.designpatterns.collections.iterator_builtin;
 
 import java.util.Iterator;
 
+/**
+ * @author lingwh
+ * @desc 菜单接口
+ * @date 2026/7/9 00:00
+ */
 public interface Menu {
-	public Iterator<String> createIterator();
+    Iterator<String> createIterator();
 }

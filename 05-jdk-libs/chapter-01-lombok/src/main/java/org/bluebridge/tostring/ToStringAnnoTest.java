@@ -1,6 +1,5 @@
 package org.bluebridge.tostring;
 
-
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -20,5 +19,4 @@ public class ToStringAnnoTest {
         User user = new User();
         log.info("user:{}", user);
     }
-
 }

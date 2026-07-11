@@ -1,8 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.future.future_c;
 
-
 /**
- * @author ronin
+ * @author lingwh
+ * @desc Future 模式客户端
+ * @date 2026/7/9 00:00
  */
 public class FutureClient {
     public static void main(String[] args) throws InterruptedException {
@@ -19,6 +20,6 @@ public class FutureClient {
         System.out.println("do other things......");
         Thread.sleep(1_000L);
         System.out.println("---------------------------");
-        //System.out.println(future.get());
+        // System.out.println(future.get());
     }
 }

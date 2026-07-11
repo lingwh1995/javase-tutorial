@@ -1,10 +1,9 @@
 package create.abstractfactory.abstractfactory_i;
 
 /**
- * 内存条API
- * @author ronin
- * @version V1.0
- * @since 2019/8/7 16:11
+ * @author lingwh
+ * @desc 内存条API
+ * @date 2019/8/7 16:11
  */
 public interface MemoryApi {
     /**

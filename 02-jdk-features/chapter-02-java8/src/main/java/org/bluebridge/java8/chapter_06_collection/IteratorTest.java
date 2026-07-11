@@ -3,9 +3,8 @@ package org.bluebridge.java8.chapter_06_collection;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.Test;
-
 import java.util.*;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -24,7 +23,7 @@ public class IteratorTest {
         // forEachRemaining() 取出所有元素 - lambda表达式版
         iterator.forEachRemaining(item -> System.out.println(item));
         // forEachRemaining() 取出所有元素 - 方法引用版
-        //iterator.forEachRemaining(System.out::println);
+        // iterator.forEachRemaining(System.out::println);
         System.out.println("-----------------------");
 
         /**
@@ -78,5 +77,4 @@ public class IteratorTest {
         });
         System.out.println("大于10的数字：" + bigNum);
     }
-
 }

@@ -1,7 +1,11 @@
 package cn.itcast.n4;
 
 import java.io.IOException;
-// PrintConcurrentLocks
+/**
+ * @author lingwh
+ * @desc PrintConcurrentLocks
+ * @date 2026/7/9 00:00
+ */
 public class Test {
 
     public static void main(String[] args) throws InterruptedException {

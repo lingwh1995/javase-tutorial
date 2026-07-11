@@ -1,7 +1,9 @@
 package action.template.template_c;
 
 /**
- * 花生豆浆
+ * @author lingwh
+ * @desc 花生豆浆
+ * @date 2026/7/9 00:00
  */
 public class PennutSoyaMilk extends SoyaMilk {
     @Override

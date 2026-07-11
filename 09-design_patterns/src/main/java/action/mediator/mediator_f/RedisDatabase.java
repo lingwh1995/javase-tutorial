@@ -4,12 +4,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Redis数据库,不维护其他数据库的引用
- * @author ronin
- * @version V1.0
- * @since 2019/8/14 14:00
+ * @author lingwh
+ * @desc Redis数据库,不维护其他数据库的引用
+ * @date 2019/8/14 14:00
  */
-public class RedisDatabase extends AbstractDatabase{
+public class RedisDatabase extends AbstractDatabase {
     private List<String> dataset = new LinkedList<String>();
 
     @Override

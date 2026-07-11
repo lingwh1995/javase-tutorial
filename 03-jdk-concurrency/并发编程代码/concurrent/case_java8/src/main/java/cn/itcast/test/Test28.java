@@ -7,6 +7,11 @@ import java.util.Map;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author lingwh
+ * @desc AwaitSignal顺序打印测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test28")
 public class Test28 {
     public static void main(String[] args) {

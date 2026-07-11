@@ -3,13 +3,15 @@ package structure.adapter.adapter_e.service;
 import structure.adapter.adapter_e.domain.Gatzl;
 
 /**
- * 公安厅指令:提供三个API
- *      保存
- *      删除
- *      发送短信
+ * 公安厅指令接口
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public interface IGatzlService {
     void save(Gatzl gatzl);
+
     boolean delete(Gatzl gatzl);
+
     boolean sendMsg(String phoneNumber);
 }

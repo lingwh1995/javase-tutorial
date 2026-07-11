@@ -1,7 +1,7 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -29,11 +29,11 @@ public class Lesson_06_FlowLayoutTest {
         frame.setBounds(500, 500, 500, 300);
 
         // 使用流式布局 默认居中
-        //FlowLayout flowLayout = new FlowLayout();
+        // FlowLayout flowLayout = new FlowLayout();
         // 使用流式布局 指定为右对齐
         FlowLayout flowLayout = new FlowLayout(FlowLayout.RIGHT);
-//        flowLayout.setHgap(50);   //Hgap是横向间距
-//        flowLayout.setVgap(50);   //Vgap是纵向间距
+        //        flowLayout.setHgap(50);   //Hgap是横向间距
+        //        flowLayout.setVgap(50);   //Vgap是纵向间距
         frame.setLayout(flowLayout);
         frame.add(new Button("button1"));
         frame.add(new Button("button2"));
@@ -44,5 +44,4 @@ public class Lesson_06_FlowLayoutTest {
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

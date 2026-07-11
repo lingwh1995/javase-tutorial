@@ -1,7 +1,9 @@
 package org.bluebridge.stackframe;
 
 /**
- * 多线程栈帧测试
+ * @author lingwh
+ * @desc 多线程栈帧测试
+ * @date 2026/7/9 00:00
  */
 public class MultiplyThreadStackFrameTest {
 
@@ -14,7 +16,7 @@ public class MultiplyThreadStackFrameTest {
             }
         },"t1").start();
 
-        //在主线程中调用method1()
+        // 在主线程中调用method1()
         method1(10);
     }
 

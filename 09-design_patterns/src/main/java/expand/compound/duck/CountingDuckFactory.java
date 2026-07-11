@@ -1,11 +1,11 @@
 package expand.compound.duck;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/10 11:23
+ * @author lingwh
+ * @desc 计数鸭子工厂
+ * @date 2019/10/10 11:23
  */
-public class CountingDuckFactory extends AbstractDuckFactory{
+public class CountingDuckFactory extends AbstractDuckFactory {
     @Override
     Quackable createMallardDuck() {
         return new QuackCounter(new MallardDuck());

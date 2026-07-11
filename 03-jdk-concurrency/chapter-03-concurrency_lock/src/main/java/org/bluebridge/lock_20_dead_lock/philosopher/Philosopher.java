@@ -3,7 +3,9 @@ package org.bluebridge.lock_20_dead_lock.philosopher;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 哲学家类
+ * @author lingwh
+ * @desc 哲学家类
+ * @date 2026/7/9 00:00
  */
 public class Philosopher extends Thread {
     private Chopstick left;

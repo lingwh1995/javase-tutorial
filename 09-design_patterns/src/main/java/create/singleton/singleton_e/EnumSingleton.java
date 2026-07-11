@@ -1,17 +1,18 @@
 package create.singleton.singleton_e;
 
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * 枚举形式的单例
- * @author ronin
+ * @author lingwh
+ * @desc 枚举形式的单例
+ * @date 2026/7/9 00:00
  */
 public class EnumSingleton {
 
-    public enum Singleton{
+    public enum Singleton {
         INSTANCE;
-        public void doString(){
+
+        public void doString() {
             System.out.println("do something......");
         }
     }
@@ -24,4 +25,3 @@ public class EnumSingleton {
         instance2.doString();
     }
 }
-

@@ -3,23 +3,30 @@ package structure.adapter.adapter_h;
 import java.io.Serializable;
 
 /**
- * 日志数据对象
- * @author ronin
- * @version V1.0
- * @since 2019/8/8 13:28
+ * @author lingwh
+ * @desc 日志数据对象
+ * @date 2019/8/8 13:28
  */
-public class LogModel implements Serializable{
+public class LogModel implements Serializable {
 
-    /**日志编号*/
+    /**
+     * 日志编号
+     */
     private String logId;
 
-    /**操作人员*/
+    /**
+     * 操作人员
+     */
     private String operateUser;
 
-    /**操作时间，以yyyy-MM-dd HH:mm:ss的格式记录*/
+    /**
+     * 操作时间，以yyyy-MM-dd HH:mm:ss的格式记录
+     */
     private String operateTime;
 
-    /**日志内容*/
+    /**
+     * 日志内容
+     */
     private String logContent;
 
     public String getLogId() {

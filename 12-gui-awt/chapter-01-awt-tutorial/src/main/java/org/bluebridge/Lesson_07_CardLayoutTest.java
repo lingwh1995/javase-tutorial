@@ -1,7 +1,7 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -30,8 +30,8 @@ public class Lesson_07_CardLayoutTest {
 
         // 使用卡片布局
         CardLayout cardLayout = new CardLayout();
-//        gridLayout.setHgap(50);   //Hgap是横向间距
-//        gridLayout.setVgap(50);   //Vgap是纵向间距
+        //        gridLayout.setHgap(50);   //Hgap是横向间距
+        //        gridLayout.setVgap(50);   //Vgap是纵向间距
         frame.setLayout(cardLayout);
         frame.add(new Button("button1"));
         frame.add(new Button("button2"));
@@ -51,7 +51,5 @@ public class Lesson_07_CardLayoutTest {
             // 我们需要使用CardLayout对象来进行切换
             cardLayout.next(frame);
         }
-
     }
-
 }

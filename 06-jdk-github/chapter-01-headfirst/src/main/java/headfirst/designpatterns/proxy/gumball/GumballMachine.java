@@ -2,77 +2,79 @@ package headfirst.designpatterns.proxy.gumball;
 
 import java.rmi.*;
 import java.rmi.server.*;
- 
-public class GumballMachine
-		extends UnicastRemoteObject implements GumballMachineRemote 
-{
-	private static final long serialVersionUID = 2L;
-	State soldOutState;
-	State noQuarterState;
-	State hasQuarterState;
-	State soldState;
-	State winnerState;
- 
-	State state = soldOutState;
-	int count = 0;
- 	String location;
 
-	public GumballMachine(String location, int numberGumballs) throws RemoteException {
-		soldOutState = new SoldOutState(this);
-		noQuarterState = new NoQuarterState(this);
-		hasQuarterState = new HasQuarterState(this);
-		soldState = new SoldState(this);
-		winnerState = new WinnerState(this);
+/**
+ * @author lingwh
+ * @desc 糖果机
+ * @date 2026/7/9 00:00
+ */
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
+    private static final long serialVersionUID = 2L;
+    State soldOutState;
+    State noQuarterState;
+    State hasQuarterState;
+    State soldState;
+    State winnerState;
 
-		this.count = numberGumballs;
- 		if (numberGumballs > 0) {
-			state = noQuarterState;
-		} 
-		this.location = location;
-	}
- 
- 
-	public void insertQuarter() {
-		state.insertQuarter();
-	}
- 
-	public void ejectQuarter() {
-		state.ejectQuarter();
-	}
- 
-	public void turnCrank() {
-		state.turnCrank();
-		state.dispense();
-	}
+    State state = soldOutState;
+    int count = 0;
+    String location;
 
-	void setState(State state) {
-		this.state = state;
-	}
- 
-	void releaseBall() {
-		System.out.println("A gumball comes rolling out the slot...");
-		if (count != 0) {
-			count = count - 1;
-		}
-	}
+    public GumballMachine(String location, int numberGumballs) throws RemoteException {
+        soldOutState = new SoldOutState(this);
+        noQuarterState = new NoQuarterState(this);
+        hasQuarterState = new HasQuarterState(this);
+        soldState = new SoldState(this);
+        winnerState = new WinnerState(this);
 
-	public void refill(int count) {
-		this.count = count;
-		state = noQuarterState;
-	}
- 
-	public int getCount() {
-		return count;
-	}
- 
+        this.count = numberGumballs;
+        if (numberGumballs > 0) {
+            state = noQuarterState;
+        }
+        this.location = location;
+    }
+
+    public void insertQuarter() {
+        state.insertQuarter();
+    }
+
+    public void ejectQuarter() {
+        state.ejectQuarter();
+    }
+
+    public void turnCrank() {
+        state.turnCrank();
+        state.dispense();
+    }
+
+    void setState(State state) {
+        this.state = state;
+    }
+
+    void releaseBall() {
+        System.out.println("A gumball comes rolling out the slot...");
+        if (count != 0) {
+            count = count - 1;
+        }
+    }
+
+    public void refill(int count) {
+        this.count = count;
+        state = noQuarterState;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
     public State getState() {
         return state;
     }
- 
+
     public String getLocation() {
         return location;
     }
-  
+
     public State getSoldOutState() {
         return soldOutState;
     }
@@ -92,17 +94,17 @@ public class GumballMachine
     public State getWinnerState() {
         return winnerState;
     }
- 
-	public String toString() {
-		StringBuffer result = new StringBuffer();
-		result.append("\nMighty Gumball, Inc.");
-		result.append("\nJava-enabled Standing Gumball Model #2014");
-		result.append("\nInventory: " + count + " gumball");
-		if (count != 1) {
-			result.append("s");
-		}
-		result.append("\n");
-		result.append("Machine is " + state + "\n");
-		return result.toString();
-	}
+
+    public String toString() {
+        StringBuffer result = new StringBuffer();
+        result.append("\nMighty Gumball, Inc.");
+        result.append("\nJava-enabled Standing Gumball Model #2014");
+        result.append("\nInventory: " + count + " gumball");
+        if (count != 1) {
+            result.append("s");
+        }
+        result.append("\n");
+        result.append("Machine is " + state + "\n");
+        return result.toString();
+    }
 }

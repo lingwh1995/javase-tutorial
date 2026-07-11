@@ -2,8 +2,7 @@ package structure.bridge.bridge_g;
 
 /**
  * @author ronin
- * @version V1.0
- * @since 2019/8/6 9:24
+ * @date 2019/8/6 9:24
  */
 public class SpecialUrgencyMessage extends AbstractMessage {
 
@@ -14,7 +13,7 @@ public class SpecialUrgencyMessage extends AbstractMessage {
     /**
      * 因为是特急消息:所以就催促发送
      */
-    public void hurry(){
+    public void hurry() {
         System.out.println("特急......");
     }
 

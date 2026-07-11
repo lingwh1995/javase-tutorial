@@ -1,16 +1,22 @@
 package org.bluebridge.utils;
 
-import javax.imageio.ImageIO;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import javax.imageio.ImageIO;
 
+/**
+ * @author lingwh
+ * @desc 图片旋转工具类
+ * @date 2026/7/9 00:00
+ */
 public class ImageRotationUtils {
 
     /**
      * 通用的图片旋转方法
+     *
      * @param imageData 图像数据
      * @param width 图像宽度
      * @param height 图像高度
@@ -90,6 +96,7 @@ public class ImageRotationUtils {
 
     /**
      * 旋转JPEG图片，保持原始尺寸
+     *
      * @param jpegData 原始JPEG图片字节数组
      * @param degrees 旋转角度（90, 180, 270）
      * @return 旋转后的JPEG图片字节数组
@@ -102,7 +109,7 @@ public class ImageRotationUtils {
         int height = originalImage.getHeight();
 
         BufferedImage rotatedImage;
-        
+
         switch (degrees) {
             case 90:
             case 270:
@@ -111,7 +118,7 @@ public class ImageRotationUtils {
                 // 创建旋转后的图像（宽高互换）
                 BufferedImage tempRotated = new BufferedImage(height, width, originalImage.getType());
                 Graphics2D g2d = tempRotated.createGraphics();
-                
+
                 if (degrees == 90) {
                     g2d.translate(height / 2.0, width / 2.0);
                     g2d.rotate(Math.PI / 2);
@@ -121,17 +128,17 @@ public class ImageRotationUtils {
                     g2d.rotate(-Math.PI / 2);
                     g2d.translate(-width / 2.0, -height / 2.0);
                 }
-                
+
                 g2d.drawImage(originalImage, 0, 0, null);
                 g2d.dispose();
-                
+
                 // 将旋转后的图像缩放回原始尺寸
                 rotatedImage = new BufferedImage(width, height, originalImage.getType());
                 Graphics2D g2dFinal = rotatedImage.createGraphics();
                 // 计算居中位置
                 int x = (width - height) / 2; // 当原图的高变成新图的宽时
                 int y = (height - width) / 2; // 当原图的宽变成新图的高时
-                
+
                 // 将旋转后的图像居中绘制到原始尺寸的图像中
                 g2dFinal.drawImage(tempRotated, x, y, Math.min(width, height), Math.min(width, height), null);
                 g2dFinal.dispose();
@@ -153,5 +160,4 @@ public class ImageRotationUtils {
         ImageIO.write(rotatedImage, "jpeg", outputStream);
         return outputStream.toByteArray();
     }
-
 }

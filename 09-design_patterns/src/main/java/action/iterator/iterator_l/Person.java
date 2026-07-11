@@ -1,9 +1,9 @@
 package action.iterator.iterator_l;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/23 10:40
+ * @author lingwh
+ * @desc 人员模型
+ * @date 2019/9/23 10:40
  */
 public class Person {
     private String name;
@@ -16,9 +16,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "Person{" + "name='" + name + '\'' + ", age=" + age + '}';
     }
 }

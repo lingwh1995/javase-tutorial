@@ -1,8 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_b;
 
 /**
- * 读线程
- * @author ronin
+ * @author lingwh
+ * @desc 读线程
+ * @date 2026/7/9 00:00
  */
 public class ReaderThread extends Thread {
     private final Data shareData;
@@ -14,13 +15,12 @@ public class ReaderThread extends Thread {
     @Override
     public void run() {
         try {
-            while(true){
+            while (true) {
                 char[] readBuffer = shareData.read();
                 System.out.println(Thread.currentThread().getName()+" reads:"+String.valueOf(readBuffer));
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
     }
 }

@@ -1,7 +1,9 @@
 package org.bluebridge.thread_01_start;
 
 /**
- * 一个简单的多线程案例
+ * @author lingwh
+ * @desc 一个简单的多线程案例
+ * @date 2026/7/9 00:00
  */
 public class ThreadStartTest {
 
@@ -15,7 +17,7 @@ public class ThreadStartTest {
                     throw new RuntimeException(e);
                 }
             }
-        },"t1").start();
+        }, "t1").start();
 
         new Thread(()-> {
             while (true){
@@ -26,6 +28,6 @@ public class ThreadStartTest {
                     throw new RuntimeException(e);
                 }
             }
-        },"t2").start();
+        }, "t2").start();
     }
 }

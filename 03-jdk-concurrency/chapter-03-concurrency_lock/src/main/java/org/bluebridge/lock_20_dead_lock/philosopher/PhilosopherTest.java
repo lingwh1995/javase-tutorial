@@ -1,7 +1,9 @@
 package org.bluebridge.lock_20_dead_lock.philosopher;
 
 /**
- * 哲学家就餐模拟死锁
+ * @author lingwh
+ * @desc 哲学家就餐模拟死锁
+ * @date 2026/7/9 00:00
  */
 public class PhilosopherTest {
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
 package org.bluebridge.thread_17_communication.wait_for_other_worker;
 
-import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author lingwh
@@ -23,12 +23,12 @@ public class ThreadLocalTest {
         Thread worker1 = new Thread(new Worker("工作线程1 => 启动服务A"));
         Thread worker2 = new Thread(new Worker("工作线程2 => 启动服务B"));
         Thread worker3 = new Thread(new Worker("工作线程3 => 启动服务C"));
-        
+
         // 保存线程引用
         WORKER_THREADS.add(worker1);
         WORKER_THREADS.add(worker2);
         WORKER_THREADS.add(worker3);
-        
+
         // 启动所有工作线程
         worker1.start();
         worker2.start();
@@ -58,7 +58,7 @@ public class ThreadLocalTest {
                 // 模拟工作耗时
                 Thread.sleep((long) (Math.random() * 3000));
                 log.info("{} 工作完成......", name);
-                
+
                 // 设置当前线程的工作完成状态
                 WORKER_COMPLETIONSTATUS.set(true);
             } catch (InterruptedException e) {
@@ -69,5 +69,4 @@ public class ThreadLocalTest {
             }
         }
     }
-
 }

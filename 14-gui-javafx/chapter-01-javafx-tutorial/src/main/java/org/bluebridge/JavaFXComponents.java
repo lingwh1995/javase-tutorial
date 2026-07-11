@@ -1,17 +1,17 @@
 package org.bluebridge;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 /**
  * @author lingwh
- * @desc
+ * @desc JavaFX组件示例
  * @date 2025/8/4 18:31
  */
 public class JavaFXComponents extends Application {
@@ -39,23 +39,16 @@ public class JavaFXComponents extends Application {
         radio2.setToggleGroup(toggleGroup);
 
         // 下拉列表
-        ObservableList<String> items = FXCollections.observableArrayList(
-                "选项A", "选项B", "选项C"
-        );
+        ObservableList<String> items = FXCollections.observableArrayList("选项A", "选项B", "选项C");
         ComboBox<String> comboBox = new ComboBox<>(items);
 
         // 列表视图
         ListView<String> listView = new ListView<>();
-        ObservableList<String> listItems = FXCollections.observableArrayList(
-                "项目1", "项目2", "项目3"
-        );
+        ObservableList<String> listItems = FXCollections.observableArrayList("项目1", "项目2", "项目3");
         listView.setItems(listItems);
 
         // 添加组件
-        root.getChildren().addAll(
-                textField, textArea, checkBox,
-                radio1, radio2, comboBox, listView
-        );
+        root.getChildren().addAll(textField, textArea, checkBox, radio1, radio2, comboBox, listView);
 
         Scene scene = new Scene(root, 400, 400);
         primaryStage.setTitle("JavaFX组件示例");
@@ -66,5 +59,4 @@ public class JavaFXComponents extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
 }

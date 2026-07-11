@@ -2,10 +2,9 @@ package org.bluebridge.protobuf.test;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.util.JsonFormat;
+import java.util.Arrays;
 import lombok.extern.slf4j.Slf4j;
 import org.bluebridge.protobuf.proto.UserProto;
-
-import java.util.Arrays;
 
 /**
  * @author lingwh
@@ -34,7 +33,8 @@ public class ProtobufOfUserTest {
                 .build(); // 构建 User 对象（不可变，后续无法修改字段）
 
         log.info("原始 User 对象：{}", user);
-        // 输出示例：id:1001 name:"张三" age:25 tags:"Java开发" tags:"微服务" tags:"Protobuf" tags:"GRPC" address { province:"广东省" city:"深圳市" detail:"南山区科技园" }
+        // 输出示例：id:1001 name:"张三" age:25 tags:"Java开发" tags:"微服务" tags:"Protobuf" tags:"GRPC" address {
+        // province:"广东省" city:"深圳市" detail:"南山区科技园" }
 
         // -------------- 2. 序列化：User 对象 → 二进制字节数组（用于传输/存储）--------------
         byte[] serializedBytes = user.toByteArray();
@@ -70,5 +70,4 @@ public class ProtobufOfUserTest {
             e.printStackTrace();
         }
     }
-
 }

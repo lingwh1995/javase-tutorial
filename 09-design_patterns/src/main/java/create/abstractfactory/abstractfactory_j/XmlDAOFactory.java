@@ -1,9 +1,9 @@
 package create.abstractfactory.abstractfactory_j;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 13:13
+ * @author lingwh
+ * @desc XML方式DAO工厂
+ * @date 2019/9/4 13:13
  */
 public class XmlDAOFactory extends DAOFactory {
 

@@ -1,15 +1,14 @@
 package org.bluebridge.java8.chapter_01_interface.chapter_04_jdk_functional_interface;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.junit.Test;
-
 import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 import java.util.function.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -34,7 +33,7 @@ public class JDKBuiltInFunctionInterfaceTest {
 
         // 匿名内部类方式使用Predicate接口
         runnable = () -> System.out.println("Hello World~");
-        new Thread(runnable,"T2").start();
+        new Thread(runnable, "T2").start();
     }
 
     /**
@@ -54,9 +53,9 @@ public class JDKBuiltInFunctionInterfaceTest {
     @Test
     public void testComparator() {
         List<Person> personList = new ArrayList<>();
-        personList.add(new Person("zhangsan",10));
-        personList.add(new Person("lisi",20));
-        personList.add(new Person("wangwu",30));
+        personList.add(new Person("zhangsan", 10));
+        personList.add(new Person("lisi", 20));
+        personList.add(new Person("wangwu", 30));
         personList.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
         System.out.println("personList = " + personList);
     }
@@ -76,9 +75,9 @@ public class JDKBuiltInFunctionInterfaceTest {
     @Test
     public void testBiConsumer() {
         Map<String, Integer> map = new HashMap<>();
-        map.put("张三",18);
-        map.put("李四",23);
-        map.put("王五",28);
+        map.put("张三", 18);
+        map.put("李四", 23);
+        map.put("王五", 28);
 
         BiConsumer<String,Integer> biConsumer = (name,age) -> System.out.println("name : " + name + ",age : " + age);
 
@@ -118,11 +117,11 @@ public class JDKBuiltInFunctionInterfaceTest {
      */
     @Test
     public void testFunction() {
-        Person person = new Person("张三",25);
-        Function<Person,String> functionString = p -> p.getName();
+        Person person = new Person("张三", 25);
+        Function<Person, String> functionString = p -> p.getName();
         System.out.println("姓名 = " + functionString.apply(person));
 
-        Function<Person,Integer> functionInteger = p -> p.getAge();
+        Function<Person, Integer> functionInteger = p -> p.getAge();
         System.out.println("年龄 = " + functionInteger.apply(person));
     }
 
@@ -135,13 +134,13 @@ public class JDKBuiltInFunctionInterfaceTest {
          * 使用BiFunction实现加、减、乘、除四则运算
          */
         // 加法运算
-        BiFunction<Double, Double, Double> addBiFunction = (a,b) -> a + b;
+        BiFunction<Double, Double, Double> addBiFunction = (a, b) -> a + b;
         // 减法运算
-        BiFunction<Double, Double, Double> subBiFunction = (a,b) -> a - b;
+        BiFunction<Double, Double, Double> subBiFunction = (a, b) -> a - b;
         // 乘法运算
-        BiFunction<Double, Double, Double> mulBiFunction = (a,b) -> a * b;
+        BiFunction<Double, Double, Double> mulBiFunction = (a, b) -> a * b;
         // 除法运算
-        BiFunction<Double, Double, Double> divBiFunction = (a,b) -> a / b;
+        BiFunction<Double, Double, Double> divBiFunction = (a, b) -> a / b;
         System.out.println("加法运算 = " + addBiFunction.apply(100.0, 20.0));
         System.out.println("减法运算 = " + subBiFunction.apply(100.0, 20.0));
         System.out.println("乘法运算 = " + mulBiFunction.apply(100.0, 20.0));
@@ -150,7 +149,7 @@ public class JDKBuiltInFunctionInterfaceTest {
         /**
          * 使用BiFunction实现 通过传入name、age作为构造参数，返回一个Person对象
          */
-        BiFunction<String, Integer, Person> biFunction = (name, age) -> new Person(name,age);
+        BiFunction<String, Integer, Person> biFunction = (name, age) -> new Person(name, age);
         Person person = biFunction.apply("李四", 26);
         System.out.println("person = " + person);
     }
@@ -308,7 +307,7 @@ public class JDKBuiltInFunctionInterfaceTest {
      */
     @Test
     public void testDoubleBinaryOperator() {
-        DoubleBinaryOperator doubleBinaryOperator = (a,b) -> a + b;
+        DoubleBinaryOperator doubleBinaryOperator = (a, b) -> a + b;
         System.out.println(doubleBinaryOperator.applyAsDouble(10, 20));
     }
 
@@ -337,5 +336,4 @@ public class JDKBuiltInFunctionInterfaceTest {
         private String name;
         private int age;
     }
-
 }

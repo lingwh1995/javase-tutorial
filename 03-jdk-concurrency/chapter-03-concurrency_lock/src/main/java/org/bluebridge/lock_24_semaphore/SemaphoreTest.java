@@ -2,11 +2,16 @@ package org.bluebridge.lock_24_semaphore;
 
 import java.util.concurrent.Semaphore;
 
+/**
+ * @author lingwh
+ * @desc Semaphore信号量测试
+ * @date 2026/7/9 00:00
+ */
 public class SemaphoreTest {
     public static void main(String[] args) {
-        //定义semaphore实例，设置许可数为3，即停车位为3个
+        // 定义semaphore实例，设置许可数为3，即停车位为3个
         Semaphore semaphore = new Semaphore(3);
-        //创建五个线程，即有5辆汽车准备进入停车场停车
+        // 创建五个线程，即有5辆汽车准备进入停车场停车
         for (int i = 1; i <= 5; i++) {
             new Thread(() -> {
                 try {

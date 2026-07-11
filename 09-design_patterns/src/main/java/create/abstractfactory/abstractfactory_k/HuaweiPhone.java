@@ -1,6 +1,10 @@
 package create.abstractfactory.abstractfactory_k;
 
-//华为手机实现类
+/**
+ * @author lingwh
+ * @desc 华为手机实现类
+ * @date 2026/7/9 00:00
+ */
 public class HuaweiPhone implements IPhoneProduct {
 
     @Override
@@ -23,4 +27,3 @@ public class HuaweiPhone implements IPhoneProduct {
         System.out.println("华为手机发邮件");
     }
 }
-

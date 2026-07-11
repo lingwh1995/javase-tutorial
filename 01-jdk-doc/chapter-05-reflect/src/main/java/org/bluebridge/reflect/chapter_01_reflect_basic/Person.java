@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * @author lingwh
  * @desc Person 实体
- * @date 2019/03/10 11:00
+ * @date 2019/3/10 11:00
  */
 @Slf4j
 public class Person {
@@ -40,14 +40,12 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age='" + age + '\'' +
-                '}';
+        return "Person{" + "name='" + name + '\'' + ", age='" + age + '\'' + '}';
     }
 
     /**
      * 私有方法
+     *
      * @param drinkName 饮料名称
      */
     private void drink(String drinkName) {
@@ -56,6 +54,7 @@ public class Person {
 
     /**
      * 私有方法
+     *
      * @param bedName 床名称
      */
     private static int sleep(String bedName) {

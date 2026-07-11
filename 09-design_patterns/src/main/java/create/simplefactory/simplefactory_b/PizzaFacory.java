@@ -1,16 +1,19 @@
 package create.simplefactory.simplefactory_b;
 
 /**
- * 方法的提供者:
+ * 披萨工厂
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class PizzaFacory {
     public static Pizza createPizza(String pizzType) {
         Pizza pizza = null;
-        if("greek".equals(pizzType)){
+        if ("greek".equals(pizzType)) {
             pizza = new GreekPizza();
-        }else if("asian".equals(pizzType)){
+        } else if ("asian".equals(pizzType)) {
             pizza = new AsianPizza();
-        }else {
+        } else {
             pizza = null;
         }
         pizza.prepare();

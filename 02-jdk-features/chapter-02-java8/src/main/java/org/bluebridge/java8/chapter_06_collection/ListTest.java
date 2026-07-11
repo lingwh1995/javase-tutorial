@@ -1,17 +1,16 @@
 package org.bluebridge.java8.chapter_06_collection;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author lingwh
- * @desc
+ * @desc List集合removeIf方法测试
  * @date 2025/12/2 11:23
  */
 @Slf4j
@@ -42,17 +41,13 @@ public class ListTest {
         Predicate<String> filter = s -> s.length() > 5;
 
         // 获取被删除的元素
-        List<String> removedElements = list.stream()
-                .filter(filter)
-                .collect(Collectors.toList());
+        List<String> removedElements = list.stream().filter(filter).collect(Collectors.toList());
 
         // 获取保留的元素
-        List<String> remainingElements = list.stream()
-                .filter(filter.negate())
-                .collect(Collectors.toList());
+        List<String> remainingElements =
+                list.stream().filter(filter.negate()).collect(Collectors.toList());
 
         log.info("删除后的集合: {}", remainingElements);
         log.info("被删除的元素: {}", removedElements);
     }
-
 }

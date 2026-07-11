@@ -10,7 +10,6 @@ import com.google.common.cache.LoadingCache;
 import com.google.common.collect.*;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -193,6 +192,4 @@ public class GuavaTest {
         // 发布事件
         eventBus.post("Hello Guava EventBus!");
     }
-    
 }
-

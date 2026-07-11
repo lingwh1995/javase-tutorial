@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 目标对象，被观察对象
- * @author ronin
- * @version V1.0
- * @since 2019/8/19 13:46
+ * @author lingwh
+ * @desc 目标对象，被观察对象
+ * @date 2019/8/19 13:46
  */
 public abstract class Subject {
 
@@ -18,6 +17,7 @@ public abstract class Subject {
 
     /**
      * 报纸的读者需要先向报社订阅，先要注册
+     *
      * @param reader 报纸的读者
      * @return 是否注册成功
      */
@@ -27,6 +27,7 @@ public abstract class Subject {
 
     /**
      * 报纸的读者可以取消订阅
+     *
      * @param reader 报纸的读者
      * @return 是否取消成功
      */
@@ -35,11 +36,10 @@ public abstract class Subject {
     }
 
     /**
-     * 当每期报纸印刷出来后，就要迅速主动的被送到读者的手中，
-     * 相当于通知读者，让他们知道
+     * 当每期报纸印刷出来后，就要迅速主动的被送到读者的手中， 相当于通知读者，让他们知道
      */
     protected void notifyObservers() {
-        for(Observer reader : readers){
+        for (Observer reader : readers) {
             reader.update(this);
         }
     }

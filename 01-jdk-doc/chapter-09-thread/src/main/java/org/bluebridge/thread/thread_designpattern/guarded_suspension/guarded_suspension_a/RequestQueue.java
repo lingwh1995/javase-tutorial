@@ -4,17 +4,17 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/16 9:06
+ * @author lingwh
+ * @desc 请求队列
+ * @date 2019/10/16 9:06
  */
 public class RequestQueue {
-    private final Queue<Request> queue = new LinkedList<> ();
+    private final Queue<Request> queue = new LinkedList<>();
 
-    public synchronized Request getRequest(){
+    public synchronized Request getRequest() {
         try {
-            while (queue.peek() == null){
-                    wait();
+            while (queue.peek() == null) {
+                wait();
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -22,7 +22,7 @@ public class RequestQueue {
         return queue.remove();
     }
 
-    public synchronized void putRequest(Request request){
+    public synchronized void putRequest(Request request) {
         queue.offer(request);
         notifyAll();
     }

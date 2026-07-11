@@ -1,16 +1,20 @@
 package action.observer.observer_i;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/30 11:08
+ * @author lingwh
+ * @desc 坐标位置
+ * @date 2019/8/30 11:08
  */
 public class Position {
 
-    /**x坐标的位置*/
+    /**
+     * x坐标的位置
+     */
     private int x;
 
-    /**y坐标的位置*/
+    /**
+     * y坐标的位置
+     */
     private int y;
 
     public int getX() {
@@ -36,9 +40,6 @@ public class Position {
 
     @Override
     public String toString() {
-        return "Position{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "Position{" + "x=" + x + ", y=" + y + '}';
     }
 }

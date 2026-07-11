@@ -1,8 +1,8 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -112,5 +112,4 @@ public class Lesson_03_EventListenerTest {
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

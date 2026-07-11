@@ -3,8 +3,6 @@ package org.bluebridge.jnanoid;
 import com.aventrix.jnanoid.jnanoid.NanoIdUtils;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.Random;
-
 /**
  * @author lingwh
  * @desc 测试JnanoidUtils工具类
@@ -31,5 +29,4 @@ public class JnanoidTest {
         id = NanoIdUtils.randomNanoId(NanoIdUtils.DEFAULT_NUMBER_GENERATOR, alphabet, 32);
         log.info("指定字母表+长度id: {}, 长度: {}", id, id.length());
     }
-
 }

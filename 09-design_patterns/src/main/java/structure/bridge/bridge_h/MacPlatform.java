@@ -1,6 +1,6 @@
 package structure.bridge.bridge_h;
 
-public class MacPlatform extends SystemPlatform{
+public class MacPlatform extends SystemPlatform {
 
     @Override
     void playVedio() {

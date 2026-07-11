@@ -1,6 +1,11 @@
 package structure.proxy.synchronizedproxy;
 
-public class SynchronizedProxy implements Task{
+/**
+ * @author lingwh
+ * @desc 同步代理
+ * @date 2026/7/9 00:00
+ */
+public class SynchronizedProxy implements Task {
 
     private Task asynchronousTask;
 
@@ -13,17 +18,16 @@ public class SynchronizedProxy implements Task{
      */
     @Override
     public void task() {
-        try{
+        try {
             Thread thread1 = createThread1();
             Thread thread2 = createThread2();
             thread1.start();
-            //调用join,等待线程一的方法执行完毕
+            // 调用join,等待线程一的方法执行完毕
             thread1.join();
             thread2.start();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     @Override
@@ -35,5 +39,4 @@ public class SynchronizedProxy implements Task{
     public Thread createThread2() {
         return asynchronousTask.createThread2();
     }
-
 }

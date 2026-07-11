@@ -4,15 +4,18 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * ReentrantLock可重入测试
- *      可重入锁可以避免因不可重入而导致的死锁问题
+ * @author lingwh
+ * @desc ReentrantLock可重入测试
+ * @date 2026/7/9 00:00
  */
 public class ReentrantLockCanReentrantTest {
 
     private static Lock lock = new ReentrantLock();
+
     public static void main(String[] args) {
         method1();
     }
+
     public static void method1() {
         lock.lock();
         System.out.println("方法1加锁......");
@@ -24,6 +27,7 @@ public class ReentrantLockCanReentrantTest {
             System.out.println("方法1解锁......");
         }
     }
+
     public static void method2() {
         lock.lock();
         System.out.println("方法2加锁......");
@@ -35,6 +39,7 @@ public class ReentrantLockCanReentrantTest {
             System.out.println("方法2解锁......");
         }
     }
+
     public static void method3() {
         lock.lock();
         System.out.println("方法3加锁......");

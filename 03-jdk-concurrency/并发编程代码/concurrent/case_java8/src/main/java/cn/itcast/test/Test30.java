@@ -5,6 +5,11 @@ import sun.rmi.runtime.Log;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author lingwh
+ * @desc Condition顺序打印测试
+ * @date 2026/7/9 00:00
+ */
 public class Test30 {
     public static void main(String[] args) throws InterruptedException {
         AwaitSignal awaitSignal = new AwaitSignal(5);

@@ -1,10 +1,9 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
- * CPU接口
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 9:34
+ * @author lingwh
+ * @desc CPU接口
+ * @date 2019/9/4 9:34
  */
 public interface CPUApi {
     /**

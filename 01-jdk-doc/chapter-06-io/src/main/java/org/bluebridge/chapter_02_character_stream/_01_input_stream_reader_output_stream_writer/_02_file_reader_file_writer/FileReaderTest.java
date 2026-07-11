@@ -1,9 +1,8 @@
 package org.bluebridge.chapter_02_character_stream._01_input_stream_reader_output_stream_writer._02_file_reader_file_writer;
 
+import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
-import java.io.*;
 
 /**
  * @author lingwh
@@ -26,5 +25,4 @@ public class FileReaderTest {
             throw new RuntimeException(e);
         }
     }
-
 }

@@ -4,23 +4,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/18 16:48
+ * @author lingwh
+ * @desc 数据库
+ * @date 2019/10/18 16:48
  */
-public class Database<K,V> {
-    private final Map<K,V> map = new HashMap<K,V>();
+public class Database<K, V> {
+    private final Map<K, V> map = new HashMap<K, V>();
 
     /**
      * 全部清除
      */
-    public synchronized void clear(){
+    public synchronized void clear() {
         verySlowly();
         map.clear();
     }
 
     /**
      * 给key分配value
+     *
      * @param key
      * @param value
      */
@@ -31,6 +32,7 @@ public class Database<K,V> {
 
     /**
      * 获取给key分配的值
+     *
      * @param key
      * @return
      */
@@ -60,5 +62,4 @@ public class Database<K,V> {
             e.printStackTrace();
         }
     }
-
 }

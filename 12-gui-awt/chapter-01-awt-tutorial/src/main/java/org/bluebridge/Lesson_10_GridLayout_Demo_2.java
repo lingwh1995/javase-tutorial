@@ -1,7 +1,7 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -12,7 +12,8 @@ public class Lesson_10_GridLayout_Demo_2 {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
-        // SwingUtilities.invokeLater(() -> new _010_GridLayout_Demo_2().createAndShowGUIUseGridLayout());
+        // SwingUtilities.invokeLater(() -> new
+        // _010_GridLayout_Demo_2().createAndShowGUIUseGridLayout());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
         SwingUtilities.invokeLater(new Lesson_10_GridLayout_Demo_2()::createAndShowGUIUseGridLayout);
@@ -38,7 +39,7 @@ public class Lesson_10_GridLayout_Demo_2 {
         top.setBackground(Color.PINK);
         frame.add(top);
         // 面板就像窗口一样，可以设定布局和添加组件
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             top.add(new Button("FLOW" + i));
         }
         frame.add(top);
@@ -54,5 +55,4 @@ public class Lesson_10_GridLayout_Demo_2 {
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

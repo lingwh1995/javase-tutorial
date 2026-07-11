@@ -1,23 +1,25 @@
 package action.strategy.strategy_e.service;
 
 import action.strategy.strategy_e.dao.UserDao;
-
 import java.io.IOException;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/5 9:07
+ * @author lingwh
+ * @desc 用户服务实现
+ * @date 2019/8/5 9:07
  */
-public class UserService implements IUserService{
+public class UserService implements IUserService {
 
     private UserDao userDo = new UserDao();
 
-    /**注入记录日志的Service:默认数据库*/
+    /**
+     * 注入记录日志的Service:默认数据库
+     */
     private ILogService logger = new LogServiceDb();
 
     /**
      * 保存
+     *
      * @param msg
      */
     @Override
@@ -29,7 +31,7 @@ public class UserService implements IUserService{
             logger = new LogServiceFile();
             logger.log();
             e.printStackTrace();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

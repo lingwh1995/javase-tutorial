@@ -1,10 +1,10 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
- * @author think
+ * @author lingwh
  * @desc 加载文件对话框
  * @date 2026/1/30 17:49
  */
@@ -28,10 +28,8 @@ public class Lesson_18_FileDialogTest {
         frame.setBounds(500, 500, 500, 300);
         // 禁用布局管理器，使用绝对定位
         frame.setLayout(null);
-
         // 选择文件对话框类型，可以是加载文件或是保存文件
         FileDialog dialog = new FileDialog(frame, "Please select a file", FileDialog.LOAD);
-
         // 添加一个按钮
         Button button = new Button("Select File");
         // 设置按钮位置和大小
@@ -40,9 +38,10 @@ public class Lesson_18_FileDialogTest {
         button.addActionListener(e -> {
             dialog.setVisible(true);
 
-            // 获取选择的文件信息
-            String directory = dialog.getDirectory();  // 获取选择的目录路径
-            String filename = dialog.getFile();        // 获取选择的文件名
+            // 获取选择的目录路径
+            String directory = dialog.getDirectory();
+            // 获取选择的文件名
+            String filename = dialog.getFile();
 
             if (filename != null) {
                 System.out.println("选择的目录: " + directory);
@@ -53,9 +52,7 @@ public class Lesson_18_FileDialogTest {
             }
         });
         frame.add(button);
-
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

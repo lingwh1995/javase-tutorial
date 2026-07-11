@@ -1,11 +1,11 @@
 package action.template.template_h;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/26 18:26
+ * @author lingwh
+ * @desc 用户查询数据模型
+ * @date 2019/8/26 18:26
  */
-public class UserQueryModel extends UserModel{
+public class UserQueryModel extends UserModel {
 
     /**
      * 年龄是一个区间查询，也就是年龄查询的条件可以是：

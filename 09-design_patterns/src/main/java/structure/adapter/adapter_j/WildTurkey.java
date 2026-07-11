@@ -1,9 +1,9 @@
 package structure.adapter.adapter_j;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/11 8:57
+ * @author lingwh
+ * @desc 野火鸡
+ * @date 2019/9/11 8:57
  */
 public class WildTurkey implements Turkey {
     /**

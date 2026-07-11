@@ -8,6 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
+/**
+ * @author lingwh
+ * @desc BigDecimal原子引用账户测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test35")
 public class Test35 {
     public static void main(String[] args) {

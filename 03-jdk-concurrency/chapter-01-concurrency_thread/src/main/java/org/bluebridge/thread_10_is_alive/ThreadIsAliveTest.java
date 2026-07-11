@@ -3,7 +3,9 @@ package org.bluebridge.thread_10_is_alive;
 import java.util.concurrent.TimeUnit;
 
 /**
- * isAlive(): 判断线程是否还存活
+ * @author lingwh
+ * @desc isAlive(): 判断线程是否还存活
+ * @date 2026/7/9 00:00
  */
 public class ThreadIsAliveTest {
 

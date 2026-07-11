@@ -6,13 +6,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
- * 正确处理执行任务异常
- *      方式一：使用try...catch...捕获异常
- *      方式二：使用 Future 处理异常
+ * @author lingwh
+ * @desc 线程池异常处理测试
+ * @date 2026/7/9 00:00
  */
 public class ThreadPoolCatchExceptionTest {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        //testTryCatchDealException();
+        // testTryCatchDealException();
 
         testFutureDealException();
     }
@@ -31,7 +31,7 @@ public class ThreadPoolCatchExceptionTest {
             }
         });
 
-        //关闭线程池
+        // 关闭线程池
         pool.shutdown();
     }
 
@@ -48,7 +48,7 @@ public class ThreadPoolCatchExceptionTest {
 
         System.out.println("future" + future.get());
 
-        //关闭线程池
+        // 关闭线程池
         pool.shutdown();
     }
 }

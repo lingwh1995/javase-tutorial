@@ -1,6 +1,5 @@
 package org.bluebridge.getter_and_setter.getter_and_setter;
 
-
 import org.junit.Test;
 
 /**
@@ -21,17 +20,16 @@ public class GetterAndSetterAnnoTest {
         user.setName("张三");
 
         // 被static修饰的属性外部无法使用set方法访问
-        //user.setAge(18);
+        // user.setAge(18);
         // 私有的Setter方法外部无法访问
-        //user.setEmail("123@gmail.com");
+        // user.setEmail("123@gmail.com");
 
         // 测试@Getter注解
         user.getId();
         user.getName();
         // 被static修饰的属性外部无法使用get方法访问
-        //user.getAge();
+        // user.getAge();
         // 私有的Getter方法外部无法访问
-        //user.getEmail();
+        // user.getEmail();
     }
-
 }

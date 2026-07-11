@@ -1,11 +1,12 @@
 package org.bluebridge.designpattern_01_two_phase_termination.two_phase_termination_a;
 
 /**
- * 两阶段终止模式说明
- *     在一个线程t1中优雅地终止另一个线程t2，终止线程t2前，让线程t2有一个料理后事的机会
+ * @author lingwh
+ * @desc 两阶段终止模式
+ * @date 2026/7/9 00:00
  */
 public class TwoPhaseTermination {
-    //监控线程
+    // 监控线程
     private Thread monitor;
 
     /**
@@ -45,8 +46,7 @@ public class TwoPhaseTermination {
     }
 
     /**
-     * 执行释放资源操作
-     *    尤其是释放锁资源，这样可以防止因为暴力终止线程而导致的死锁情况的发生
+     * 执行释放资源操作 尤其是释放锁资源，这样可以防止因为暴力终止线程而导致的死锁情况的发生
      */
     public void releaseResource() {
         System.out.println("释放资源......");

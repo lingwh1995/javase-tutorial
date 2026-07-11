@@ -1,15 +1,15 @@
 package structure.decorator.decorator_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @desc
- * @since 2019/7/25 17:02
+ * @author lingwh
+ * @desc 抽象装饰者
+ * @date 2019/7/25 17:02
  */
+public abstract class Decorator extends Bread {
 
-/**抽象装饰者*/
-public abstract class Decorator extends Bread{
-    /**持有一个抽象组件的引用*/
+    /**
+     * 持有一个抽象组件的引用
+     */
     private Bread bread;
 
     public Decorator(Bread bread) {

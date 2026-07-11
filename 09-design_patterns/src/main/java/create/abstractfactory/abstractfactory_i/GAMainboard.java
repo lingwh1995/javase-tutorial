@@ -1,13 +1,11 @@
 package create.abstractfactory.abstractfactory_i;
 
-
 /**
- * 技嘉主板
- * @author ronin
- * @version V1.0
- * @since 2019/8/7 15:07
+ * @author lingwh
+ * @desc 技嘉主板
+ * @date 2019/8/7 15:07
  */
-public class GAMainboard implements MainboardApi{
+public class GAMainboard implements MainboardApi {
 
     /**
      * CPU插槽的孔数
@@ -16,9 +14,10 @@ public class GAMainboard implements MainboardApi{
 
     /**
      * 构造方法，传入CPU插槽的孔数
+     *
      * @param cpuHoles CPU插槽的孔数
      */
-    public GAMainboard(int cpuHoles){
+    public GAMainboard(int cpuHoles) {
         this.cpuHoles = cpuHoles;
     }
 

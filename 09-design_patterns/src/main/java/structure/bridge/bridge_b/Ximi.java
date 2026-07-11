@@ -1,9 +1,11 @@
 package structure.bridge.bridge_b;
 
 /**
- * 小米手机
+ * @author lingwh
+ * @desc 小米手机
+ * @date 2026/7/9 00:00
  */
-public class Ximi implements Brand{
+public class Ximi implements Brand {
     @Override
     public void open() {
         System.out.println("小米手机开机");

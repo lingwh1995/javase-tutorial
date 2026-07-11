@@ -1,11 +1,13 @@
 package org.bluebridge.designpattern_02_guarded_suspension.guarded_suspension_c;
 
 /**
- * 关联对象-GuardedObject
+ * @author lingwh
+ * @desc 关联对象-GuardedObject
+ * @date 2026/7/9 00:00
  */
 public class GuardedObject {
 
-    //标识 GuardedObject
+    // 标识 GuardedObject
     private int id;
 
     public GuardedObject(int id) {
@@ -16,11 +18,12 @@ public class GuardedObject {
         return id;
     }
 
-    //结果
+    // 结果
     private Object response;
 
     /**
      * 获取结果
+     *
      * @param timeout 等待超时时间
      * @return
      */
@@ -53,6 +56,7 @@ public class GuardedObject {
 
     /**
      * 产生结果
+     *
      * @param response
      */
     public void complete(Object response) {

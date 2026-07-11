@@ -1,5 +1,10 @@
 package org.bluebridge.java9.chapter_01_interface;
 
+/**
+ * @author lingwh
+ * @desc MyInterface的实现类
+ * @date 2026/7/9 00:00
+ */
 public class MyInterfaceImpl implements MyInterface {
     @Override
     public void methodAbstract() {

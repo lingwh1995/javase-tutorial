@@ -1,7 +1,5 @@
 package org.bluebridge.java11;
 
-import org.junit.Test;
-
 import java.io.IOException;
 import java.net.CookieHandler;
 import java.net.CookieManager;
@@ -10,11 +8,18 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
+import org.junit.Test;
 
+/**
+ * @author lingwh
+ * @desc Java11 HttpClient 测试
+ * @date 2026/7/9 00:00
+ */
 public class HttpClientTest {
 
     /**
      * 使用 HttpClient 发送get请求
+     *
      * @throws IOException
      * @throws InterruptedException
      */
@@ -45,16 +50,16 @@ public class HttpClientTest {
         // HttpResponse.BodyHandlers.ofString()指定将服务器响应转化成字符串
         HttpResponse.BodyHandler<String> bh = HttpResponse.BodyHandlers.ofString();
         // ③、发送请求，获取服务器响应
-        HttpResponse<String> response = client.send(request,bh);//3
+        HttpResponse<String> response = client.send(request, bh); // 3
         // 获取服务器响应的状态码
         System.out.println("响应的状态码:" + response.statusCode());
         System.out.println("响应头:\n" + response.headers());
         System.out.println("响应体:" + response.body());
     }
 
-
     /**
      * 使用 HttpClient 发送post请求
+     *
      * @throws IOException
      * @throws InterruptedException
      */

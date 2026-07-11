@@ -3,9 +3,9 @@ package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_e
 import java.util.Random;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/18 13:27
+ * @author lingwh
+ * @desc 写线程
+ * @date 2019/10/18 13:27
  */
 public class WriteThread extends Thread {
     private static final Random random = new Random();
@@ -21,7 +21,7 @@ public class WriteThread extends Thread {
     @Override
     public void run() {
         try {
-            while(true){
+            while (true) {
                 char c = nextchar();
                 data.write(c);
                 Thread.sleep(random.nextInt(3000));
@@ -34,7 +34,7 @@ public class WriteThread extends Thread {
     private char nextchar() {
         char c = filter.charAt(index);
         index++;
-        if(index >=filter.length()){
+        if (index >= filter.length()) {
             index = 0;
         }
         return c;

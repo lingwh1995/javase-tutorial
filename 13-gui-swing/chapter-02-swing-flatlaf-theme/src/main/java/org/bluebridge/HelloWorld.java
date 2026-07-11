@@ -1,13 +1,12 @@
 package org.bluebridge;
 
 import com.formdev.flatlaf.FlatDarkLaf;
-
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
- * @desc
+ * @desc FlatLaf深色主题示例
  * @date 2026/1/22 15:02
  */
 public class HelloWorld {
@@ -17,8 +16,8 @@ public class HelloWorld {
         FlatDarkLaf.setup();
 
         // 建议设置一下 UI 微调，比如圆角
-        UIManager.put( "Button.arc", 10 );
-        UIManager.put( "Component.arc", 10 );
+        UIManager.put("Button.arc", 10);
+        UIManager.put("Component.arc", 10);
 
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("现代 Swing 应用");
@@ -34,5 +33,4 @@ public class HelloWorld {
             frame.setVisible(true);
         });
     }
-
 }

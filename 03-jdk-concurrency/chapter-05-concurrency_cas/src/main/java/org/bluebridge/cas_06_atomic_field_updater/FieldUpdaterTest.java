@@ -3,6 +3,11 @@ package org.bluebridge.cas_06_atomic_field_updater;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
+/**
+ * @author lingwh
+ * @desc 原子字段更新器测试
+ * @date 2026/7/9 00:00
+ */
 public class FieldUpdaterTest {
 
     public static void main(String[] args) {
@@ -14,7 +19,6 @@ public class FieldUpdaterTest {
         // 将 id 的值从 10 修改为 20
         atomicIntegerFieldUpdater.compareAndSet(student, 10, 20);
         System.out.println("student = " + student);
-
 
         AtomicReferenceFieldUpdater<Student, String> atomicReferenceFieldUpdater = AtomicReferenceFieldUpdater.newUpdater(Student.class, String.class, "name");
         // 将 name 的值从 null 修改为 张三

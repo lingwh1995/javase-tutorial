@@ -8,7 +8,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 人员类
+ * @date 2026/7/9 00:00
  */
 public class Person implements Externalizable {
     private static final long serialVersionUID = 1L;
@@ -18,23 +20,23 @@ public class Person implements Externalizable {
 
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
-        //增加一个新的对象
-        Date date=new Date();
+        // 增加一个新的对象
+        Date date = new Date();
         out.writeObject(password);
         out.writeObject(userName);
-        //不序列化age对象
+        // 不序列化age对象
         out.writeObject(date);
     }
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-         //注意这里的接受顺序是有限制的哦，否则的话会出错的
-         // 例如上面先write的是A对象的话，那么下面先接受的也一定是A对象...
-         userName=(String) in.readObject();
-         password=(String) in.readObject();
-         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
-         Date date=(Date)in.readObject();
-         System.out.println("反序列化后的日期为:"+sdf.format(date));
+        // 注意这里的接受顺序是有限制的哦，否则的话会出错的
+        // 例如上面先write的是A对象的话，那么下面先接受的也一定是A对象...
+        userName = (String) in.readObject();
+        password = (String) in.readObject();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = (Date) in.readObject();
+        System.out.println("反序列化后的日期为:" + sdf.format(date));
     }
 
     public Person(String userName, String password, String age) {

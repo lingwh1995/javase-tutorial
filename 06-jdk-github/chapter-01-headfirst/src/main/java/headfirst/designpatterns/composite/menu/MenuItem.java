@@ -1,49 +1,50 @@
 package headfirst.designpatterns.composite.menu;
 
+/**
+ * @author lingwh
+ * @desc 菜单项
+ * @date 2026/7/9 00:00
+ */
 public class MenuItem extends MenuComponent {
-	String name;
-	String description;
-	boolean vegetarian;
-	double price;
-    
-	public MenuItem(String name, 
-	                String description, 
-	                boolean vegetarian, 
-	                double price)
-	{
-		this.name = name;
-		this.description = description;
-		this.vegetarian = vegetarian;
-		this.price = price;
-	}
+    String name;
+    String description;
+    boolean vegetarian;
+    double price;
 
-	@Override
-	public String getName() {
-		return name;
-	}
+    public MenuItem(String name, String description, boolean vegetarian, double price) {
+        this.name = name;
+        this.description = description;
+        this.vegetarian = vegetarian;
+        this.price = price;
+    }
 
-	@Override
-	public String getDescription() {
-		return description;
-	}
+    @Override
+    public String getName() {
+        return name;
+    }
 
-	@Override
-	public double getPrice() {
-		return price;
-	}
+    @Override
+    public String getDescription() {
+        return description;
+    }
 
-	@Override
-	public boolean isVegetarian() {
-		return vegetarian;
-	}
+    @Override
+    public double getPrice() {
+        return price;
+    }
 
-	@Override
-	public void print() {
-		System.out.print("  " + getName());
-		if (isVegetarian()) {
-			System.out.print("(v)");
-		}
-		System.out.println(", " + getPrice());
-		System.out.println("     -- " + getDescription());
-	}
+    @Override
+    public boolean isVegetarian() {
+        return vegetarian;
+    }
+
+    @Override
+    public void print() {
+        System.out.print("  " + getName());
+        if (isVegetarian()) {
+            System.out.print("(v)");
+        }
+        System.out.println(", " + getPrice());
+        System.out.println("     -- " + getDescription());
+    }
 }

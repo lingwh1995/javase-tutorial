@@ -4,7 +4,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 使用线程池创建线程
+ * @author lingwh
+ * @desc 使用线程池创建线程
+ * @date 2026/7/9 00:00
  */
 public class ThreadCreateTest {
     public static void main(String[] args) {

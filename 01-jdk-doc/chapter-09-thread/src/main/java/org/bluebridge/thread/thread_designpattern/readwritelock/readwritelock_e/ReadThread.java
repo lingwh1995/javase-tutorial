@@ -1,11 +1,11 @@
 package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_e;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/18 13:32
+ * @author lingwh
+ * @desc 读线程
+ * @date 2019/10/18 13:32
  */
-public class ReadThread extends Thread{
+public class ReadThread extends Thread {
     private final Data data;
 
     public ReadThread(Data data) {
@@ -15,9 +15,9 @@ public class ReadThread extends Thread{
     @Override
     public void run() {
         try {
-            while(true){
+            while (true) {
                 char[] readBuf = data.read();
-                System.out.println(Thread.currentThread().getName()+"reads:"+String.valueOf(readBuf));
+                System.out.println(Thread.currentThread().getName() + "reads:" + String.valueOf(readBuf));
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

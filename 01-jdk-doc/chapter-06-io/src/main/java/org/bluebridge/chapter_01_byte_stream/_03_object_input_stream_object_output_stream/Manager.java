@@ -5,7 +5,7 @@ package org.bluebridge.chapter_01_byte_stream._03_object_input_stream_object_out
  * @desc ObjectStream 用于实现序列化和饭序列化
  * @date 2025/8/16 13:42
  */
-public class Manager extends Employee{
+public class Manager extends Employee {
     private static final long serialVersionUID = -668252664793507835L;
     private Employee secretary;
 

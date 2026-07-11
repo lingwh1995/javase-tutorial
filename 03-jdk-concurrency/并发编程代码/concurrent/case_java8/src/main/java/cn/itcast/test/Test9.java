@@ -2,6 +2,11 @@ package cn.itcast.test;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lingwh
+ * @desc 线程优先级测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test9")
 public class Test9 {
 

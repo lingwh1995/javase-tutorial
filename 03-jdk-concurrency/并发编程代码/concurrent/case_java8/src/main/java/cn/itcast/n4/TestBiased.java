@@ -7,8 +7,15 @@ import java.io.IOException;
 import java.util.Vector;
 import java.util.concurrent.locks.LockSupport;
 
-// -XX:-UseCompressedOops -XX:-UseCompressedClassPointers -XX:BiasedLockingStartupDelay=0 -XX:+PrintFlagsFinal
-//-XX:-UseBiasedLocking tid=0x000000001f173000  -XX:BiasedLockingStartupDelay=0 -XX:+TraceBiasedLocking
+/**
+ * 偏向锁测试
+ *
+ * XX:-UseCompressedOops -XX:-UseCompressedClassPointers -XX:BiasedLockingStartupDelay=0 -XX:+PrintFlagsFinal
+ * XX:-UseBiasedLocking tid=0x000000001f173000  -XX:BiasedLockingStartupDelay=0 -XX:+TraceBiasedLocking
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestBiased")
 public class TestBiased {
 
@@ -18,7 +25,6 @@ public class TestBiased {
      */
     public static void main(String[] args) throws IOException, InterruptedException {
         test1();
-
     }
 
     private static void test5() throws InterruptedException {
@@ -51,7 +57,7 @@ public class TestBiased {
 
         t2 = new Thread(() -> {
             LockSupport.park();
-            log.debug("===============> ");
+            log.debug("---------------> ");
             for (int i = 0; i < loopNumber; i++) {
                 Dog d = list.get(i);
                 log.debug(i + "\t" + ClassLayout.parseInstance(d).toPrintableSimple(true));
@@ -66,7 +72,7 @@ public class TestBiased {
 
         t3 = new Thread(() -> {
             LockSupport.park();
-            log.debug("===============> ");
+            log.debug("---------------> ");
             for (int i = 0; i < loopNumber; i++) {
                 Dog d = list.get(i);
                 log.debug(i + "\t" + ClassLayout.parseInstance(d).toPrintableSimple(true));
@@ -108,7 +114,7 @@ public class TestBiased {
                     e.printStackTrace();
                 }
             }
-            log.debug("===============> ");
+            log.debug("---------------> ");
             for (int i = 0; i < 30; i++) {
                 Dog d = list.get(i);
                 log.debug(i + "\t" + ClassLayout.parseInstance(d).toPrintableSimple(true));
@@ -159,7 +165,6 @@ public class TestBiased {
     private static void test1() {
         Dog d = new Dog();
         log.debug(ClassLayout.parseInstance(d).toPrintableSimple(true));
-
         try {
             Thread.sleep(4000);
         } catch (InterruptedException e) {

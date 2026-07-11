@@ -1,7 +1,9 @@
 package org.design_pattern.strategy.strategy_a;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 税务计算器
+ * @date 2026/7/9 00:00
  */
 public class TaxCalculator {
     private final double salary;
@@ -13,11 +15,11 @@ public class TaxCalculator {
         this.bonus = bonus;
     }
 
-    protected double calcTax(){
-        return taxCalculatorStrategy.calculate(salary,bonus);
+    protected double calcTax() {
+        return taxCalculatorStrategy.calculate(salary, bonus);
     }
 
-    protected double calculate(){
+    protected double calculate() {
         return this.calcTax();
     }
 

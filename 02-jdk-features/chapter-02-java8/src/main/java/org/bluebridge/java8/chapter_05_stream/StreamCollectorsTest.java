@@ -1,17 +1,18 @@
 package org.bluebridge.java8.chapter_05_stream;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Before;
-import org.junit.Test;
-
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
- * 收集流中元素到各种集合中
+ * @author lingwh
+ * @desc 收集流中元素到各种集合中
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class StreamCollectorsTest {
@@ -22,10 +23,10 @@ public class StreamCollectorsTest {
      */
     @Before
     public void before() {
-        Supplier<List<Employee>> supplier =  ArrayList:: new;
+        Supplier<List<Employee>> supplier = ArrayList::new;
         List<Employee> employees = supplier.get();
         employees.add(new Employee(1l, "张三", 10, new BigDecimal(1000.5)));
-        employees.add(new Employee(2l, "李四四",20, new BigDecimal(1500.5)));
+        employees.add(new Employee(2l, "李四四", 20, new BigDecimal(1500.5)));
         employees.add(new Employee(3l, "王五", 15, new BigDecimal(2000.5)));
         employees.add(new Employee(4l, "赵六", 25, new BigDecimal(2500.5)));
         employees.add(new Employee(5l, "赵六", 25, new BigDecimal(2500.5)));
@@ -37,8 +38,8 @@ public class StreamCollectorsTest {
      * 收集流中元素到List集合中
      */
     @Test
-    public void testCollectToList(){
-        //创建流
+    public void testCollectToList() {
+        // 创建流
         Stream<Employee> stream = employees.stream();
         List<Employee> collectList = stream
                 .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
@@ -51,8 +52,8 @@ public class StreamCollectorsTest {
      * 收集流中元素到ArrayList集合中
      */
     @Test
-    public void testCollectToArrayList(){
-        //创建流
+    public void testCollectToArrayList() {
+        // 创建流
         Stream<Employee> stream = employees.stream();
         ArrayList<Employee> collectArrayList = stream
                 .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
@@ -65,8 +66,8 @@ public class StreamCollectorsTest {
      * 收集流中元素到Set集合中
      */
     @Test
-    public void testCollectToHashSet(){
-        //创建流
+    public void testCollectToHashSet() {
+        // 创建流
         Stream<Employee> stream = employees.stream();
         Set<Employee> collectSet = stream
                 .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
@@ -79,8 +80,8 @@ public class StreamCollectorsTest {
      * 收集流中元素到HashSet集合中
      */
     @Test
-    public void testCollectToSet(){
-        //创建流
+    public void testCollectToSet() {
+        // 创建流
         Stream<Employee> stream = employees.stream();
         HashSet<Employee> collectHashSet = stream
                 .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
@@ -93,8 +94,8 @@ public class StreamCollectorsTest {
      * 收集流中元素到数组中
      */
     @Test
-    public void testCollectToArray(){
-        //创建流
+    public void testCollectToArray() {
+        // 创建流
         Stream<Employee> stream = employees.stream();
         Integer[] collectArray = stream
                 .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
@@ -108,8 +109,8 @@ public class StreamCollectorsTest {
      * 收集流中元素到字符串中
      */
     @Test
-    public void testCollectToString(){
-        //创建流
+    public void testCollectToString() {
+        // 创建流
         Stream<Employee> stream = employees.stream();
         String ageStr = stream
                 .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
@@ -127,7 +128,7 @@ public class StreamCollectorsTest {
     }
 
     @Test
-    public void testCollectToMap(){
+    public void testCollectToMap() {
         Map<String, String> map = new HashMap<>();
         map.put("name", "张三");
         map.put("id", "001");
@@ -143,5 +144,4 @@ public class StreamCollectorsTest {
                 ));
         log.debug("sortedMap: {}", sortedMap);
     }
-
 }

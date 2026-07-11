@@ -1,9 +1,9 @@
 package action.command.command_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/5 10:52
+ * @author lingwh
+ * @desc 主板接口
+ * @date 2019/8/5 10:52
  */
 public interface MainBoardApi {
     /**

@@ -3,11 +3,11 @@ package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_a
 import java.util.List;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/15 17:42
+ * @author lingwh
+ * @desc 读线程
+ * @date 2019/10/15 17:42
  */
-public class ReadThread extends Thread{
+public class ReadThread extends Thread {
     private final List<Integer> list;
 
     public ReadThread(List<Integer> list) {
@@ -17,9 +17,9 @@ public class ReadThread extends Thread{
 
     @Override
     public void run() {
-        while(true){
-            synchronized (this){
-                for(Integer i : list){
+        while (true) {
+            synchronized (this) {
+                for (Integer i : list) {
                     System.out.println(i);
                 }
             }

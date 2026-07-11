@@ -26,5 +26,4 @@ public interface MyFunctionalInterface {
     static void staticMethod() {
         System.out.println("我是接口中的静态方法......");
     }
-
 }

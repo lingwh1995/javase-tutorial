@@ -1,8 +1,7 @@
 package action.visitor.visitor_d;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @since 2019/10/11 9:34
  */
 public abstract class Customer {
@@ -27,6 +26,7 @@ public abstract class Customer {
 
     /**
      * 接收访问者的访问
+     *
      * @param visitor 访问者对象
      */
     abstract void accept(Visitor visitor);

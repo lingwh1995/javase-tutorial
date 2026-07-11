@@ -3,10 +3,9 @@ package structure.decorator.decorator_i.decorator;
 import structure.decorator.decorator_i.service.IGoodsSaleService;
 
 /**
- * 抽象的装饰者
- * @author ronin
- * @version V1.0
- * @since 2019/8/7 9:44
+ * @author lingwh
+ * @desc 抽象的装饰者
+ * @date 2019/8/7 9:44
  */
 public abstract class Decorator implements IGoodsSaleService {
 
@@ -17,9 +16,10 @@ public abstract class Decorator implements IGoodsSaleService {
 
     /**
      * 通过构造方法传入被装饰的对象
+     *
      * @param goodsSaleService 被装饰的对象
      */
-    public Decorator(IGoodsSaleService goodsSaleService){
+    public Decorator(IGoodsSaleService goodsSaleService) {
         this.goodsSaleService = goodsSaleService;
     }
 }

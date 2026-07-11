@@ -5,6 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc join烧水泡茶测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test16")
 public class Test16 {
 

@@ -5,6 +5,11 @@ import static cn.itcast.n2.util.Sleeper.sleep;
 import cn.itcast.n2.util.Sleeper;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lingwh
+ * @desc 多锁测试
+ * @date 2026/7/9 00:00
+ */
 public class TestMultiLock {
     public static void main(String[] args) {
         BigRoom bigRoom = new BigRoom();
@@ -37,5 +42,4 @@ class BigRoom {
             Sleeper.sleep(1);
         }
     }
-
 }

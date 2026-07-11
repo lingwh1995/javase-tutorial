@@ -2,9 +2,9 @@ package structure.facade.facade_b;
 
 /**
  * 示意配置描述的数据Model，真实的配置数据会很多
+ *
  * @author ronin
- * @version V1.0
- * @since 2019/9/11 18:44
+ * @date 2019/9/11 18:44
  */
 public class ConfigModel {
 

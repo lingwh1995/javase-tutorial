@@ -6,25 +6,26 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author ronin
- * @version V1.0
- * @desc 模拟数据库:可以提供权限相关数据
- * @since 2019/7/30 15:04
+ * 模拟数据库:可以提供权限相关数据
+ *
+ * @author lingwh
+ * @date 2019/7/30 15:04
  */
 public class DataFactory {
 
-
-    /**存放权限数据*/
-    public static Collection<String> authorityInfos ;
+    /**
+     * 存放权限数据
+     */
+    public static Collection<String> authorityInfos;
 
     /**
-     * 用来存放组合授权数据的值，
-     * key为组合数据的id，value为该组合包含的多条授权数据的值
+     * 用来存放组合授权数据的值， key为组合数据的id，value为该组合包含的多条授权数据的值
      */
-    public static Map<String,String[]> authorityInfosMap ;
+    public static Map<String, String[]> authorityInfosMap;
 
     /**
      * 返回所有的权限数据
+     *
      * @return
      */
     public static Collection<String> getAuthorityInfos(){

@@ -2,16 +2,20 @@ package create.builder.builder_i;
 
 /**
  * 描述输出到文件头的内容的对象
+ *
  * @author ronin
- * @version V1.0
- * @since 2019/8/8 14:11
+ * @date 2019/8/8 14:11
  */
 public class ExportHeaderModel {
 
-    /**分公司或门市点编号*/
+    /**
+     * 分公司或门市点编号
+     */
     private String depId;
 
-    /**导出数据的日期*/
+    /**
+     * 导出数据的日期
+     */
     private String exportDate;
 
     public String getDepId() {

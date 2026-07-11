@@ -1,10 +1,9 @@
 package action.iterator.iterator_f;
 
 /**
- * 工资描述模型对象
- * @author ronin
- * @version V1.0
- * @since 2019/8/20 9:21
+ * @author lingwh
+ * @desc 工资描述模型对象
+ * @date 2019/8/20 9:21
  */
 public class PayModel {
 
@@ -35,7 +34,7 @@ public class PayModel {
     }
 
     @Override
-    public String toString(){
-        return "userName="+userName+",pay="+pay;
+    public String toString() {
+        return "userName=" + userName + ",pay=" + pay;
     }
 }

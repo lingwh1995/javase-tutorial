@@ -1,10 +1,9 @@
 package org.bluebridge.chapter_01_byte_stream._04_piped_input_stream_piped_output_stream;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.io.*;
 import java.util.Random;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -88,5 +87,4 @@ class Consumer implements Runnable {
             e.printStackTrace();
         }
     }
-
 }

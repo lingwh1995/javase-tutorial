@@ -1,7 +1,7 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -24,14 +24,11 @@ public class Lesson_13_ScrollPaneTest {
     private void createAndShowGUI() {
         // 创建窗体
         Frame frame = new Frame();
-
         // 设置窗体位置和尺寸
         frame.setBounds(500, 500, 500, 300);
-
         // 创建滚动面板
         ScrollPane scrollPane = new ScrollPane();
         frame.add(scrollPane);
-
         // 创建滚动面板内部的要展示的面板
         GridLayout layout = new GridLayout();
         layout.setRows(20);
@@ -44,11 +41,9 @@ public class Lesson_13_ScrollPaneTest {
             // 为面板添加按钮
             panel.add(button);
         }
-
+        // 添加面板
         scrollPane.add(panel);
-
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

@@ -4,6 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.Random;
 
+/**
+ * @author lingwh
+ * @desc 转账练习
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.ExerciseTransfer")
 public class ExerciseTransfer {
     public static void main(String[] args) throws InterruptedException {

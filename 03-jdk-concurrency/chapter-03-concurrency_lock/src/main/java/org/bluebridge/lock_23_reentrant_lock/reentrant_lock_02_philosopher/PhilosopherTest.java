@@ -1,8 +1,9 @@
 package org.bluebridge.lock_23_reentrant_lock.reentrant_lock_02_philosopher;
 
-
 /**
- * 哲学家就餐问题测试类
+ * @author lingwh
+ * @desc 哲学家就餐问题测试类
+ * @date 2026/7/9 00:00
  */
 public class PhilosopherTest {
     public static void main(String[] args) {

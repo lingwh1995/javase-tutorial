@@ -1,9 +1,9 @@
 package action.command.command_j;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 15:25
+ * @author lingwh
+ * @desc 空命令对象
+ * @date 2019/9/4 15:25
  */
 public class NoCommand implements Command {
     /**
@@ -11,7 +11,7 @@ public class NoCommand implements Command {
      */
     @Override
     public void execute() {
-        //空实现,不做任何处理
+        // 空实现,不做任何处理
     }
 
     /**
@@ -19,6 +19,6 @@ public class NoCommand implements Command {
      */
     @Override
     public void undo() {
-        //空实现,不做任何处理
+        // 空实现,不做任何处理
     }
 }

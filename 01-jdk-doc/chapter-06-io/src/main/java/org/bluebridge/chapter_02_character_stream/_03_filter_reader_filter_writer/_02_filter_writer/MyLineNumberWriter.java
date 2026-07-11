@@ -17,6 +17,7 @@ public class MyLineNumberWriter extends FilterWriter {
 
     /**
      * 构造方法
+     *
      * @param out 底层的Writer对象
      */
     public MyLineNumberWriter(Writer out) {
@@ -25,6 +26,7 @@ public class MyLineNumberWriter extends FilterWriter {
 
     /**
      * 设置行号宽度
+     *
      * @param width 行号显示的最小宽度
      */
     public void setNumberWidth(int width) {
@@ -35,6 +37,7 @@ public class MyLineNumberWriter extends FilterWriter {
 
     /**
      * 获取当前行号
+     *
      * @return 当前行号
      */
     public long getLineNumber() {
@@ -43,6 +46,7 @@ public class MyLineNumberWriter extends FilterWriter {
 
     /**
      * 设置行号
+     *
      * @param lineNumber 新的行号
      */
     public void setLineNumber(long lineNumber) {
@@ -51,6 +55,7 @@ public class MyLineNumberWriter extends FilterWriter {
 
     /**
      * 写入单个字符
+     *
      * @param c 要写入的字符
      * @throws IOException IO异常
      */
@@ -74,6 +79,7 @@ public class MyLineNumberWriter extends FilterWriter {
 
     /**
      * 写入字符数组的一部分
+     *
      * @param cbuf 字符数组
      * @param off 起始位置
      * @param len 写入长度
@@ -109,6 +115,7 @@ public class MyLineNumberWriter extends FilterWriter {
 
     /**
      * 写入字符串的一部分
+     *
      * @param str 字符串
      * @param off 起始位置
      * @param len 写入长度
@@ -145,6 +152,7 @@ public class MyLineNumberWriter extends FilterWriter {
 
     /**
      * 写入行号
+     *
      * @throws IOException IO异常
      */
     private void writeLineNumber() throws IOException {
@@ -160,4 +168,3 @@ public class MyLineNumberWriter extends FilterWriter {
         out.write(": ");
     }
 }
-

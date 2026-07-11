@@ -3,12 +3,14 @@ package org.bluebridge.thread.thread_designpattern.workerthread;
 import java.util.Random;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc Worker Thread 模式 - 工作线程
+ * @date 2026/7/9 00:00
  */
-public class WorkerThread extends Thread{
+public class WorkerThread extends Thread {
 
     private final Channel channel;
-    private final static Random random = new Random(System.currentTimeMillis());
+    private static final Random random = new Random(System.currentTimeMillis());
 
     public WorkerThread(String name, Channel channel) {
         super(name);
@@ -17,7 +19,7 @@ public class WorkerThread extends Thread{
 
     @Override
     public void run() {
-        while(true){
+        while (true) {
             channel.take().execute();
             try {
                 Thread.sleep(random.nextInt(1_000));

@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadloc
 import java.util.Random;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc ThreadLocal 复杂测试
+ * @date 2026/7/9 00:00
  */
 public class ThreadLocalComplexTest {
-    private final static ThreadLocal<String> thradlocal = new ThreadLocal<> ();
-    private final static Random random = new Random(System.currentTimeMillis());
+    private static final ThreadLocal<String> thradlocal = new ThreadLocal<>();
+    private static final Random random = new Random(System.currentTimeMillis());
 
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(()->{
@@ -32,9 +34,9 @@ public class ThreadLocalComplexTest {
         });
         t1.start();
         t2.start();
-        //串行化效果,先执行子线程,再执行主线程
+        // 串行化效果,先执行子线程,再执行主线程
         t1.join();
         t2.join();
-        System.out.println(Thread.currentThread().getName()+":"+thradlocal.get());
+        System.out.println(Thread.currentThread().getName() + ":" + thradlocal.get());
     }
 }

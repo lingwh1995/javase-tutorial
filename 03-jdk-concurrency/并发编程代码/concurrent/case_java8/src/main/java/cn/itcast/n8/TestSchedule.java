@@ -7,6 +7,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc 定时任务测试
+ * @date 2026/7/9 00:00
+ */
 public class TestSchedule {
 
     // 如何让每周四 18:00:00 定时执行任务？

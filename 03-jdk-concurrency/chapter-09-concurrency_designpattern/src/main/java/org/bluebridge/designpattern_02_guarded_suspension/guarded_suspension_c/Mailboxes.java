@@ -4,6 +4,11 @@ import java.util.Hashtable;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author lingwh
+ * @desc 信箱管理
+ * @date 2026/7/9 00:00
+ */
 public class Mailboxes {
     private static Map<Integer, GuardedObject> boxes = new Hashtable<>();
     private static int id = 1;
@@ -15,6 +20,7 @@ public class Mailboxes {
 
     /**
      * 根据id得到唯一的GuardedObject,用完给到收信人得移除GuardedObject
+     *
      * @param id
      * @return
      */
@@ -24,6 +30,7 @@ public class Mailboxes {
 
     /**
      * 产生GuardedObject
+     *
      * @return
      */
     public static GuardedObject createGuardedObject() {
@@ -34,6 +41,7 @@ public class Mailboxes {
 
     /**
      * 得到map中的所有键，也就是id
+     *
      * @return
      */
     public static Set<Integer> getIds() {

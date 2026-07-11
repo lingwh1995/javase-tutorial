@@ -2,11 +2,14 @@ package structure.facade.facade_a;
 
 /**
  * 投影仪，使用饿汉式
+ *
+ * @author lingwh
+ * @date 2019/3/19 00:00
  */
 public class Projector {
     private static Projector projector = new Projector();
 
-    public static Projector getInstance(){
+    public static Projector getInstance() {
         return projector;
     }
 

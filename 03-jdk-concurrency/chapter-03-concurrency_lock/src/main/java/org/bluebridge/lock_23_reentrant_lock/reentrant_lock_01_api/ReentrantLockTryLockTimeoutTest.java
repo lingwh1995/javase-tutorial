@@ -5,8 +5,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- *  tryLock(long time, TimeUnit unit)方法
- *      可设置获取锁超时时间的重载方法则可被中断
+ * @author lingwh
+ * @desc tryLock超时方法
+ * @date 2026/7/9 00:00
  */
 public class ReentrantLockTryLockTimeoutTest {
     public static void main(String[] args) throws InterruptedException {
@@ -47,14 +48,14 @@ public class ReentrantLockTryLockTimeoutTest {
         },"t2");
 
         t1.start();
-        //让thread1先执行
+        // 让thread1先执行
         TimeUnit.MILLISECONDS.sleep(50);
         t2.start();
 
-        //主线程阻塞一会让所有子线程启动
+        // 主线程阻塞一会让所有子线程启动
         TimeUnit.MILLISECONDS.sleep(100);
 
-        //中断线程2
+        // 中断线程2
         t2.interrupt();
     }
 }

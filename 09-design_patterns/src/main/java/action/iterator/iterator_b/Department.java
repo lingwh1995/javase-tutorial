@@ -1,7 +1,9 @@
 package action.iterator.iterator_b;
 
 /**
- * 系
+ * @author lingwh
+ * @desc 系
+ * @date 2026/7/9 00:00
  */
 public class Department {
     private String name;

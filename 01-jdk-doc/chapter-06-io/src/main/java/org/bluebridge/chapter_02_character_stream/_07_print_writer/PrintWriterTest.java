@@ -1,25 +1,16 @@
 package org.bluebridge.chapter_02_character_stream._07_print_writer;
 
-/**
- * @author lingwh
- * @desc PrintWriter是Java IO包中的一个类，用于以格式化的方式打印各种数据类型的文本输出。它是 Writer 类的子类，提供了方便的打印方法。
- * @date 2025/9/12 17:02
- */
-
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Date;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
- * PrintWriter 主要特点
- * 格式化输出：提供多种 print() 和 println() 方法
- * 自动刷新：可以选择在每次写操作后自动刷新输出
- * 异常处理：不会抛出 IOException，而是设置内部错误标志
- * 字符流：处理字符数据，适合文本输出
+ * @author lingwh
+ * @desc PrintWriter是Java IO包中的一个类，用于以格式化的方式打印各种数据类型的文本输出。它是 Writer 类的子类，提供了方便的打印方法。
+ * @date 2025/9/12 17:02
  */
 @Slf4j
 public class PrintWriterTest {
@@ -30,7 +21,7 @@ public class PrintWriterTest {
     @Test
     public void testPrintWriterToConsole() {
         // 创建输出到控制台的PrintWriter
-        try (PrintWriter pw = new PrintWriter(System.out, true);){
+        try (PrintWriter pw = new PrintWriter(System.out, true); ) {
             // 打印各种数据类型
             pw.println("Hello, World!");
             pw.println("Integer: " + 42);
@@ -48,7 +39,7 @@ public class PrintWriterTest {
     @Test
     public void testPrintWriterToFile() {
         // 创建输出到文件的PrintWriter
-        try (PrintWriter pw = new PrintWriter("d:/io/print_writer.txt", "UTF-8")){
+        try (PrintWriter pw = new PrintWriter("d:/io/print_writer.txt", "UTF-8")) {
             // 写入数据
             pw.println("=== 系统日志 ===");
             pw.println("时间: " + new Date());
@@ -92,7 +83,7 @@ public class PrintWriterTest {
 
     /**
      * 测试PrintWriter输出到网络套接字
-     *   测试方法： cmd -> telnet 127.0.0.1 8080/telnet localhost 8080 -> 直接输入内容（只能发送单个字符）/按下Ctrl+]后输入 send + 内容（可以发送字符串） -> 查看idea控制台接收到的信息
+     *    测试方法： cmd -> telnet 127.0.0.1 8080/telnet localhost 8080 -> 直接输入内容（只能发送单个字符）/按下Ctrl+]后输入 send + 内容（可以发送字符串） -> 查看idea控制台接收到的信息
      */
     @Test
     public void testPrintWriterToSocket() {
@@ -138,7 +129,7 @@ public class PrintWriterTest {
             //PrintWriter pw = new PrintWriter(new FileWriter("d:/io/print_writer_error_handling.txt", "UTF-8"), true)
             // 正常输出
             pw.println("正常输出内容");
-            log.info("检查错误状态: {}",  pw.checkError());
+            log.info("检查错误状态: {}", pw.checkError());
 
             // 强制关闭底层流来模拟错误
             pw.close();
@@ -156,5 +147,4 @@ public class PrintWriterTest {
             e.printStackTrace();
         }
     }
-
 }

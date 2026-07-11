@@ -2,7 +2,11 @@ package org.bluebridge.lock_14_synchronized_lock_coarsening;
 
 /**
  * 锁粗化
- *      锁粗化是指，将多个连续的加锁、解锁操作连接在一起，扩展成一个范围更大的锁。
+ *
+ * 锁粗化是指，将多个连续的加锁、解锁操作连接在一起，扩展成一个范围更大的锁。
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class SynchronizedLockCoarseningTest {
 
@@ -21,5 +25,4 @@ public class SynchronizedLockCoarseningTest {
             }
         }
     }
-
 }

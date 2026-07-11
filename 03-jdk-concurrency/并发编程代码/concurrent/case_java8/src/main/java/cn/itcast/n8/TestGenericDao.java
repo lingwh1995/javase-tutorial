@@ -3,10 +3,15 @@ package cn.itcast.n8;
 import java.util.*;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+/**
+ * @author lingwh
+ * @desc 通用DAO缓存测试
+ * @date 2026/7/9 00:00
+ */
 public class TestGenericDao {
     public static void main(String[] args) {
         GenericDao dao = new GenericDaoCached();
-        System.out.println("============> 查询");
+        System.out.println("------------> 查询");
         String sql = "select * from emp where empno = ?";
         int empno = 7369;
         Emp emp = dao.queryOne(Emp.class, sql, empno);
@@ -16,7 +21,7 @@ public class TestGenericDao {
         emp = dao.queryOne(Emp.class, sql, empno);
         System.out.println(emp);
 
-        System.out.println("============> 更新");
+        System.out.println("------------> 更新");
         dao.update("update emp set sal = ? where empno = ?", 800, empno);
         emp = dao.queryOne(Emp.class, sql, empno);
         System.out.println(emp);
@@ -50,7 +55,7 @@ class GenericDaoCached extends GenericDao {
         try {
             // 多个线程
             T value = (T) map.get(key);
-            if(value == null) {
+            if(value -- null) {
                 // 缓存中没有，查询数据库
                 value = dao.queryOne(beanClass, sql, args);
                 map.put(key, value);
@@ -86,10 +91,10 @@ class GenericDaoCached extends GenericDao {
 
         @Override
         public boolean equals(Object o) {
-            if (this == o) {
+            if (this -- o) {
                 return true;
             }
-            if (o == null || getClass() != o.getClass()) {
+            if (o -- null || getClass() != o.getClass()) {
                 return false;
             }
             SqlPair sqlPair = (SqlPair) o;
@@ -104,5 +109,4 @@ class GenericDaoCached extends GenericDao {
             return result;
         }
     }
-
 }

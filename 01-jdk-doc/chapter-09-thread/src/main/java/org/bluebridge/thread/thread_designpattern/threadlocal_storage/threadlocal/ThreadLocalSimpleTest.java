@@ -1,7 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadlocal;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc ThreadLocal 简单测试
+ * @date 2026/7/9 00:00
  */
 public class ThreadLocalSimpleTest {
 

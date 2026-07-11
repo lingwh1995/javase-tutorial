@@ -1,6 +1,5 @@
 package org.bluebridge.equals_and_hashcode;
 
-
 import lombok.EqualsAndHashCode;
 
 /**

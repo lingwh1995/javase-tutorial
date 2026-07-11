@@ -1,15 +1,16 @@
 package org.bluebridge.java8.chapter_05_stream;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 人员实体类
+ * @date 2026/7/9 00:00
  */
 public class Person {
     private String firstName;
     private String lastName;
     private Integer age;
 
-    public Person() {
-    }
+    public Person() {}
 
     public Person(String firstName, String lastName, Integer age) {
         this.firstName = firstName;

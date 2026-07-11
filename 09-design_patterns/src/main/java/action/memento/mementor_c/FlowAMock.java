@@ -1,10 +1,9 @@
 package action.memento.mementor_c;
 
 /**
- * 模拟运行流程A，只是一个示意，代指某个具体流程
- * @author ronin
- * @version V1.0
- * @since 2019/8/27 11:00
+ * @author lingwh
+ * @desc 模拟运行流程A，只是一个示意，代指某个具体流程
+ * @date 2019/8/27 11:00
  */
 public class FlowAMock {
 
@@ -25,9 +24,10 @@ public class FlowAMock {
 
     /**
      * 构造方法，传入流程名称
+     *
      * @param flowName 流程名称
      */
-    public FlowAMock(String flowName){
+    public FlowAMock(String flowName) {
         this.flowName = flowName;
     }
 
@@ -50,8 +50,8 @@ public class FlowAMock {
     /**
      * 示意，运行流程的第一个阶段
      */
-    public void runPhaseOne(){
-        //在这个阶段，可能产生了中间结果，示意一下
+    public void runPhaseOne() {
+        // 在这个阶段，可能产生了中间结果，示意一下
         tempResult = 3;
         tempState = "PhaseOne";
     }
@@ -59,20 +59,20 @@ public class FlowAMock {
     /**
      * 示意，按照方案一来运行流程后半部分
      */
-    public void schema1(){
-        //示意，需要使用第一个阶段产生的数据
+    public void schema1() {
+        // 示意，需要使用第一个阶段产生的数据
         this.tempState += ",Schema1";
-        System.out.println(this.tempState + " : now run "+tempResult);
+        System.out.println(this.tempState + " : now run " + tempResult);
         this.tempResult += 11;
     }
 
     /**
      * 示意，按照方案二来运行流程后半部分
      */
-    public void schema2(){
-        //示意，需要使用第一个阶段产生的数据
+    public void schema2() {
+        // 示意，需要使用第一个阶段产生的数据
         this.tempState += ",Schema2";
-        System.out.println(this.tempState + " : now run "+tempResult);
+        System.out.println(this.tempState + " : now run " + tempResult);
         this.tempResult += 22;
     }
 }

@@ -1,27 +1,32 @@
 package headfirst.designpatterns.templatemethod.simplebarista;
 
+/**
+ * @author lingwh
+ * @desc 茶
+ * @date 2026/7/9 00:00
+ */
 public class Tea {
- 
-	void prepareRecipe() {
-		boilWater();
-		steepTeaBag();
-		pourInCup();
-		addLemon();
-	}
- 
-	public void boilWater() {
-		System.out.println("Boiling water");
-	}
- 
-	public void steepTeaBag() {
-		System.out.println("Steeping the tea");
-	}
- 
-	public void addLemon() {
-		System.out.println("Adding Lemon");
-	}
- 
-	public void pourInCup() {
-		System.out.println("Pouring into cup");
-	}
+
+    void prepareRecipe() {
+        boilWater();
+        steepTeaBag();
+        pourInCup();
+        addLemon();
+    }
+
+    public void boilWater() {
+        System.out.println("Boiling water");
+    }
+
+    public void steepTeaBag() {
+        System.out.println("Steeping the tea");
+    }
+
+    public void addLemon() {
+        System.out.println("Adding Lemon");
+    }
+
+    public void pourInCup() {
+        System.out.println("Pouring into cup");
+    }
 }

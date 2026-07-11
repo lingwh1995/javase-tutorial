@@ -5,13 +5,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/**  
- * @author ronin
- * @date 2019年3月21日  
+/**
+ * @author lingwh
+ * @desc Service 注解
+ * @date 2019/3/21 00:00
  */
-
 @Retention(RetentionPolicy.RUNTIME)
-@Target(value={ElementType.TYPE})
+@Target(value = {ElementType.TYPE})
 public @interface Service {
 
 }

@@ -3,23 +3,23 @@ package structure.proxy.staticproxy.staticproxy_c;
 import java.sql.*;
 
 /**
- * 代理对象,代理用户数据对象
- * @author ronin
- * @version V1.0
- * @since 2019/8/15 9:11
+ * @author lingwh
+ * @desc 代理对象,代理用户数据对象
+ * @date 2019/8/15 9:11
  */
-public class Proxy  implements UserModelApi{
+public class Proxy implements UserModelApi {
 
     /**
      * 持有被代理的具体的目标对象
      */
-    private UserModel realSubject=null;
+    private UserModel realSubject = null;
 
     /**
      * 构造方法，传入被代理的具体的目标对象
+     *
      * @param realSubject 被代理的具体的目标对象
      */
-    public Proxy(UserModel realSubject){
+    public Proxy(UserModel realSubject) {
         this.realSubject = realSubject;
     }
 
@@ -60,11 +60,11 @@ public class Proxy  implements UserModelApi{
 
     @Override
     public String getDepId() {
-        //需要判断是否已经装载过了
-        if(!this.loaded){
-            //从数据库中重新装载
+        // 需要判断是否已经装载过了
+        if (!this.loaded) {
+            // 从数据库中重新装载
             reload();
-            //设置重新装载的标志为true
+            // 设置重新装载的标志为true
             this.loaded = true;
         }
         return realSubject.getDepId();
@@ -72,7 +72,7 @@ public class Proxy  implements UserModelApi{
 
     @Override
     public String getSex() {
-        if(!this.loaded){
+        if (!this.loaded) {
             reload();
             this.loaded = true;
         }
@@ -82,40 +82,36 @@ public class Proxy  implements UserModelApi{
     /**
      * 重新查询数据库以获取完整的用户数据
      */
-    private void reload(){
+    private void reload() {
         System.out.println("重新查询数据库获取完整的用户数据，userId==" + realSubject.getUserId());
         Connection conn = null;
-        try{
+        try {
             conn = this.getConnection();
             String sql = "select * from tbl_user where userId=?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, realSubject.getUserId());
             ResultSet rs = pstmt.executeQuery();
-            if(rs.next()){
-                //只需要重新获取除了userId和name外的数据
+            if (rs.next()) {
+                // 只需要重新获取除了userId和name外的数据
                 realSubject.setDepId(rs.getString("depId"));
                 realSubject.setSex(rs.getString("sex"));
             }
             rs.close();
             pstmt.close();
-        }catch(Exception err){
+        } catch (Exception err) {
             err.printStackTrace();
-        }finally{
+        } finally {
             try {
                 conn.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-
     }
 
     @Override
     public String toString() {
-        return "Proxy{" +
-                "realSubject=" + realSubject +
-                ", loaded=" + loaded +
-                '}';
+        return "Proxy{" + "realSubject=" + realSubject + ", loaded=" + loaded + '}';
     }
 
     private Connection getConnection() throws Exception {

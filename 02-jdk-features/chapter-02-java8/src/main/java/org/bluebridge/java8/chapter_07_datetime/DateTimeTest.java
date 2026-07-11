@@ -1,11 +1,10 @@
 package org.bluebridge.java8.chapter_07_datetime;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -42,5 +41,4 @@ public class DateTimeTest {
         DateTimeFormatter formatterOfDateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         LocalDateTime dateTime = LocalDateTime.parse("2023-10-01 14:30:00", formatterOfDateTime);
     }
-
 }

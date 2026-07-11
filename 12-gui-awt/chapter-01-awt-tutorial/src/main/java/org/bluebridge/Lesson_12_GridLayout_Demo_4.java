@@ -1,7 +1,7 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -12,7 +12,8 @@ public class Lesson_12_GridLayout_Demo_4 {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
-        // SwingUtilities.invokeLater(() -> new _012_GridLayout_Demo_4().createAndShowGUIUseGridLayout());
+        // SwingUtilities.invokeLater(() -> new
+        // _012_GridLayout_Demo_4().createAndShowGUIUseGridLayout());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
         SwingUtilities.invokeLater(new Lesson_12_GridLayout_Demo_4()::createAndShowGUIUseGridLayout);
@@ -53,5 +54,4 @@ public class Lesson_12_GridLayout_Demo_4 {
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

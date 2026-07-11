@@ -3,7 +3,9 @@ package org.bluebridge.java12;
 import org.junit.Test;
 
 /**
- * java12提供了更强的 switch 使用语法
+ * @author lingwh
+ * @desc java12提供了更强的 switch 使用语法
+ * @date 2026/7/9 00:00
  */
 public class SwitchTest {
 
@@ -15,8 +17,8 @@ public class SwitchTest {
         Food food = Food.RICE;
         switch (food) {
             case RICE -> System.out.println("主食...");
-            case APPLE,PEAR,BANANA -> System.out.println("水果...");
-            case MILK,WATER -> System.out.println("饮料...");
+            case APPLE, PEAR, BANANA -> System.out.println("水果...");
+            case MILK, WATER -> System.out.println("饮料...");
             default -> new IllegalStateException("没有该食物...");
         }
     }
@@ -39,5 +41,10 @@ public class SwitchTest {
 }
 
 enum Food {
-    RICE,APPLE,PEAR,BANANA,MILK,WATER
+    RICE,
+    APPLE,
+    PEAR,
+    BANANA,
+    MILK,
+    WATER
 }

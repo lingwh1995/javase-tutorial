@@ -1,5 +1,6 @@
 package org.bluebridge.httpclient;
 
+import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -7,8 +8,6 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
-
-import java.io.IOException;
 
 /**
  * @author lingwh
@@ -20,6 +19,7 @@ public class HttpClientTest {
 
     /**
      * 测试HttpClient发送不带有参数的GET请求
+     *
      * @throws IOException
      */
     @Test
@@ -46,5 +46,4 @@ public class HttpClientTest {
             httpclient.close();
         }
     }
-
 }

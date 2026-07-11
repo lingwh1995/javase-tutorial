@@ -2,9 +2,9 @@ package action.strategy.strategy_f;
 
 /**
  * 支付工资的上下文，每个人的工资不同，支付方式也不同
- * @author ronin
- * @version V1.0
- * @since 2019/8/28 17:18
+ *
+ * @author lingwh
+ * @date 2019/8/28 17:18
  */
 public class PaymentContext {
 
@@ -25,11 +25,12 @@ public class PaymentContext {
 
     /**
      * 构造方法，传入被支付工资的人员，应支付的金额和具体的支付策略
+     *
      * @param userName 被支付工资的人员
      * @param money 应支付的金额
      * @param strategy 具体的支付策略
      */
-    public PaymentContext(String userName,double money,PaymentStrategy strategy){
+    public PaymentContext(String userName, double money, PaymentStrategy strategy) {
         this.userName = userName;
         this.money = money;
         this.strategy = strategy;
@@ -46,8 +47,8 @@ public class PaymentContext {
     /**
      * 立即支付工资
      */
-    public void payNow(){
-        //使用客户希望的支付策略来支付工资
+    public void payNow() {
+        // 使用客户希望的支付策略来支付工资
         this.strategy.pay(this);
     }
 }

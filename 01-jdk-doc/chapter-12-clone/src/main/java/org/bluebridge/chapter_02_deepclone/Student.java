@@ -1,23 +1,19 @@
 package org.bluebridge.chapter_02_deepclone;
 
-
 import java.io.*;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc 使用序列化实现深克隆
- * @since 2019/7/12 16:21
+ * @date 2019/7/12 16:21
  */
-public class Student implements Serializable{
+public class Student implements Serializable {
     private int id;
     private String name;
     private Integer age;
     private Teacher teacher;
 
-
-    public Student() {
-    }
+    public Student() {}
 
     public Student(int id, String name, Integer age, Teacher teacher) {
         this.id = id;
@@ -60,11 +56,16 @@ public class Student implements Serializable{
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", teacher=" + teacher +
-                '}';
+        return "Student{"
+                + "id="
+                + id
+                + ", name='"
+                + name
+                + '\''
+                + ", age="
+                + age
+                + ", teacher="
+                + teacher
+                + '}';
     }
 }

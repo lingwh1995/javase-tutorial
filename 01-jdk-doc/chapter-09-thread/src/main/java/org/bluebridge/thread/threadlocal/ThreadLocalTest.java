@@ -1,10 +1,9 @@
 package org.bluebridge.thread.threadlocal;
 
 /**
- * @author ronin
- * @version V1.0
- * @desc
- * @since 2019/7/25 9:37
+ * @author lingwh
+ * @desc ThreadLocal 测试
+ * @date 2019/7/25 9:37
  */
 public class ThreadLocalTest {
     private static ThreadLocal<String> localThreadVariable = new ThreadLocal<String>();
@@ -29,7 +28,7 @@ public class ThreadLocalTest {
             }
         });
 
-        //启动线程
+        // 启动线程
         thread1.start();
         thread2.start();
     }

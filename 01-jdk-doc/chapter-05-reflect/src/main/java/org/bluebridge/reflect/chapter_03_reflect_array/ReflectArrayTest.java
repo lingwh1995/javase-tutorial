@@ -5,27 +5,29 @@ import java.util.Arrays;
 import org.junit.Test;
 
 /**
- * 反射操作数组
- * @author ronin
- * @date 2019年3月28日
+ * @author lingwh
+ * @desc 反射操作数组
+ * @date 2019/3/28 00:00
  */
 public class ReflectArrayTest {
 
     /**
-     * 数组增强:
-     *      1.数组对象并不是从某个类实例化而来的，而是JVM动态创建的.
-     *      2.实例化数组:
-     *          方法1: Integer[] integers = new Integer[4];
-     *          方法2: Integer[] integers = {1,2,4,5};
-     *          方法3: 使用反射 Integer[] integers = (Integer[])Array.newInstance(Integer.class,4);
-     *          方法4(componentType是数组类型):
-     *              //Object array = Array.newInstance(componentType,lenght);
-     *              Integer nums = new Integer[4];
-     *              Object array = Array.newInstance(nums.getClass().getComponentType(),lenght);
+     * 数组增强
+     *
+     * 1. 数组对象并不是从某个类实例化而来的，而是JVM动态创建的.
+     * 2. 实例化数组:
+     *    方法1: Integer[] integers = new Integer[4];
+     *    方法2: Integer[] integers = {1,2,4,5};
+     *    方法3: 使用反射 Integer[] integers = (Integer[])Array.newInstance(Integer.class,4);
+     *    方法4(componentType是数组类型):
+     *        //Object array = Array.newInstance(componentType,lenght);
+     *        Integer nums = new Integer[4];
+     *        Object array = Array.newInstance(nums.getClass().getComponentType(),lenght);
      */
 
     /**
      * 使用反射创建数组，并未数组元素赋值/获取数组中元素
+     *
      * @throws ClassNotFoundException
      */
     @Test
@@ -90,13 +92,9 @@ public class ReflectArrayTest {
         // System.out.println(Integer.TYPE);
         Integer[] integers = (Integer[]) Array.newInstance(Integer.class, 10);
         for (int i = 0; i < integers.length; i++) {
-            /**
-             * 通过反射为数组元素赋值
-             */
+            // 通过反射为数组元素赋值
             // Array.set(integers, i, i);
-            /**
-             * 通过原始方法为数组元素赋值
-             */
+            // 通过原始方法为数组元素赋值
             integers[i] = i;
         }
         System.out.println(Arrays.toString(integers));

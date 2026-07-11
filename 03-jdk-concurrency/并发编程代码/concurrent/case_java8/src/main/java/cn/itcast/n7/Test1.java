@@ -6,6 +6,11 @@ import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
 
+/**
+ * @author lingwh
+ * @desc 日期格式化线程安全测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test1")
 public class Test1 {
     public static void main(String[] args) {

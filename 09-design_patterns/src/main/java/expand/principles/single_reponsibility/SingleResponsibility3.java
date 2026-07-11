@@ -3,11 +3,13 @@ package expand.principles.single_reponsibility;
 import org.junit.Test;
 
 /**
- * 方法级别的单一职能原则，会导致类中方法大爆炸
+ * @author lingwh
+ * @desc 方法级别的单一职能原则，会导致类中方法大爆炸
+ * @date 2026/7/9 00:00
  */
 public class SingleResponsibility3 {
     @Test
-    public void run(){
+    public void run() {
         Veicle3 veicle3 = new Veicle3();
         veicle3.runRoad("汽车");
         veicle3.runAir("飞机");
@@ -16,13 +18,15 @@ public class SingleResponsibility3 {
 }
 
 class Veicle3 {
-    public void runRoad(String vehicle){
-        System.out.println(vehicle+"在路上跑...");
+    public void runRoad(String vehicle) {
+        System.out.println(vehicle + "在路上跑...");
     }
-    public void runAir(String vehicle){
-        System.out.println(vehicle+"在天上飞...");
+
+    public void runAir(String vehicle) {
+        System.out.println(vehicle + "在天上飞...");
     }
-    public void runWater(String vehicle){
-        System.out.println(vehicle+"在水里跑...");
+
+    public void runWater(String vehicle) {
+        System.out.println(vehicle + "在水里跑...");
     }
 }

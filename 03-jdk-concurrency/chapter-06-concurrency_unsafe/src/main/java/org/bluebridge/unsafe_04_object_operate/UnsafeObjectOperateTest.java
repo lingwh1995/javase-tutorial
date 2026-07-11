@@ -1,13 +1,14 @@
 package org.bluebridge.unsafe_04_object_operate;
 
+import java.lang.reflect.Field;
 import org.bluebridge.util.UnsafeAccessor;
 import org.junit.Test;
 import sun.misc.Unsafe;
 
-import java.lang.reflect.Field;
-
 /**
- * Unsafe应用三    操作对象
+ * @author lingwh
+ * @desc Unsafe应用三 操作对象
+ * @date 2026/7/9 00:00
  */
 public class UnsafeObjectOperateTest {
     @Test
@@ -22,7 +23,7 @@ public class UnsafeObjectOperateTest {
 
         // 使用 Unsafe 创建对象
         Unsafe unsafe = UnsafeAccessor.getUnsafe();
-        student = (Student)unsafe.allocateInstance(Student.class);
+        student = (Student) unsafe.allocateInstance(Student.class);
         System.out.println("student.getName() = " + student.getName());
     }
 

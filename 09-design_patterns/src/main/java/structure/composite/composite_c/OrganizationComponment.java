@@ -1,15 +1,21 @@
 package structure.composite.composite_c;
 
+/**
+ * @author lingwh
+ * @desc 组织组件
+ * @date 2026/7/9 00:00
+ */
 public abstract class OrganizationComponment {
     private String name;
     private String desc;
 
-    protected void add(OrganizationComponment organizationComponment){
-        //默认实现
+    protected void add(OrganizationComponment organizationComponment) {
+        // 默认实现
         throw new UnsupportedOperationException();
     }
-    protected void remove(OrganizationComponment organizationComponment){
-        //默认实现
+
+    protected void remove(OrganizationComponment organizationComponment) {
+        // 默认实现
         throw new UnsupportedOperationException();
     }
 

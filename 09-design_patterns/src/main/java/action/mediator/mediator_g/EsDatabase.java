@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/15 8:38
+ * @author lingwh
+ * @desc ES数据库
+ * @date 2019/8/15 8:38
  */
-public class EsDatabase extends AbstractDatabase{
+public class EsDatabase extends AbstractDatabase {
     private List<String> dataset = new CopyOnWriteArrayList<String>();
 
     public EsDatabase(AbstractMediator mediator) {
@@ -24,7 +24,7 @@ public class EsDatabase extends AbstractDatabase{
     @Override
     public void add(String data) {
         addData(data);
-        this.mediator.sync(AbstractDatabase.ELASTICSEARCH, data);    // 数据同步作业交给中介者管理
+        this.mediator.sync(AbstractDatabase.ELASTICSEARCH, data); // 数据同步作业交给中介者管理
     }
 
     public void count() {

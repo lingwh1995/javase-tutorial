@@ -36,8 +36,7 @@ public class GenericWildcardTest {
     }
 
     /**
-     * 1. 无界通配符 <?>
-     * 适用场景：只读，不关心具体类型，或者使用 Object 类方法。
+     * 1. 无界通配符 <?> 适用场景：只读，不关心具体类型，或者使用 Object 类方法。
      */
     public static void printList(List<?> list) {
         System.out.print("List Content: ");
@@ -48,9 +47,7 @@ public class GenericWildcardTest {
     }
 
     /**
-     * 2. 上界通配符 <? extends Number>
-     * 适用场景：只读（Producer）。
-     * 可以安全地读取为 Number，但不能写入（除了 null）。
+     * 2. 上界通配符 <? extends Number> 适用场景：只读（Producer）。 可以安全地读取为 Number，但不能写入（除了 null）。
      */
     public static double calculateSum(List<? extends Number> list) {
         double sum = 0;
@@ -62,16 +59,13 @@ public class GenericWildcardTest {
     }
 
     /**
-     * 3. 下界通配符 <? super Integer>
-     * 适用场景：只写（Consumer）。
-     * 可以安全地写入 Integer 及其子类，读取时只能当做 Object。
+     * 3. 下界通配符 <? super Integer> 适用场景：只写（Consumer）。 可以安全地写入 Integer 及其子类，读取时只能当做 Object。
      */
     public static void fillList(List<? super Integer> list) {
-        list.add(10);       // OK
-        list.add(999);      // OK
+        list.add(10); // OK
+        list.add(999); // OK
 
         // Integer i = list.get(0); // 编译错误！不确定取出来的是 Integer 还是 Number/Object
         // Object obj = list.get(0); // OK
     }
-
 }

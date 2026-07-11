@@ -1,11 +1,12 @@
 package org.bluebridge.designpattern_07_flyweighty.connection_pool_01_my_thread_pool;
 
-
 import java.sql.Connection;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
- * 自定义线程池
+ * @author lingwh
+ * @desc 自定义线程池
+ * @date 2026/7/9 00:00
  */
 public class ConnectionPool {
     // 1. 连接池大小
@@ -23,19 +24,20 @@ public class ConnectionPool {
         this.connections = new Connection[poolSize];
         this.states = new AtomicIntegerArray(new int[poolSize]);
         for (int i = 0; i < poolSize; i++) {
-            connections[i] = new MyConnection("连接" + (i+1));
+            connections[i] = new MyConnection("连接" + (i + 1));
         }
     }
 
     // 5. 借连接
     public Connection borrow() {
         synchronized (this) {
-            while(true) {
+            while (true) {
                 for (int i = 0; i < poolSize; i++) {
                     // 获取空闲连接
-                    if(states.get(i) == 0) {
+                    if (states.get(i) == 0) {
                         if (states.compareAndSet(i, 0, 1)) {
-                            System.out.println(Thread.currentThread().getName() + " borrow " + connections[i] + "......");
+                            System.out.println(
+                                    Thread.currentThread().getName() + " borrow " + connections[i] + "......");
                             return connections[i];
                         }
                     }
@@ -64,6 +66,4 @@ public class ConnectionPool {
             this.notifyAll();
         }
     }
-
 }
-

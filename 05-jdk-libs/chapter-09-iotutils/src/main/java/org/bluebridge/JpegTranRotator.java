@@ -7,19 +7,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author think
- * @desc
+ * @author lingwh
+ * @desc JPEG无损旋转工具类
  * @date 2026/2/3 10:13
  */
 public class JpegTranRotator {
 
     /**
      * 物理无损旋转 JPEG
-     * @param inputPath  源文件路径
+     *
+     * @param inputPath 源文件路径
      * @param outputPath 输出文件路径
-     * @param angle      角度 (只能是 90, 180, 270)
+     * @param angle 角度 (只能是 90, 180, 270)
      */
-    public static void rotateLossless(String inputPath, String outputPath, int angle) throws Exception {
+    public static void rotateLossless(String inputPath, String outputPath, int angle)
+            throws Exception {
         // 1. 检查输入文件是否存在
         File inputFile = new File(inputPath);
         if (!inputFile.exists()) {

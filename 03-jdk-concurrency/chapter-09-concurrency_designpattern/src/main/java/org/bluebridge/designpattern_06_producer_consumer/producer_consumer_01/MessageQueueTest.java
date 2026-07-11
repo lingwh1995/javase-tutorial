@@ -3,7 +3,9 @@ package org.bluebridge.designpattern_06_producer_consumer.producer_consumer_01;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 测试消息队列
+ * @author lingwh
+ * @desc 测试消息队列
+ * @date 2026/7/9 00:00
  */
 public class MessageQueueTest {
 
@@ -29,5 +31,4 @@ public class MessageQueueTest {
             }
         }, "消费者").start();
     }
-
 }

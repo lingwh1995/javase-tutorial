@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 /**
  * @author lingwh
- * @desc
+ * @desc JavaFX入门示例
  * @date 2025/8/4 18:28
  */
 public class HelloWorld extends Application {
@@ -41,5 +41,4 @@ public class HelloWorld extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
 }

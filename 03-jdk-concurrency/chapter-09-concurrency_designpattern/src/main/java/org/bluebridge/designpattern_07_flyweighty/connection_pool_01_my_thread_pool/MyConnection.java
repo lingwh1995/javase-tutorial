@@ -5,6 +5,11 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
 
+/**
+ * @author lingwh
+ * @desc 自定义Connection实现
+ * @date 2026/7/9 00:00
+ */
 public class MyConnection implements Connection {
 
     private String name;
@@ -15,9 +20,7 @@ public class MyConnection implements Connection {
 
     @Override
     public String toString() {
-        return "MyConnection{" +
-                "name='" + name + '\'' +
-                '}';
+        return "MyConnection{" + "name='" + name + '\'' + '}';
     }
 
     @Override
@@ -166,9 +169,7 @@ public class MyConnection implements Connection {
     }
 
     @Override
-    public void releaseSavepoint(Savepoint savepoint) throws SQLException {
-
-    }
+    public void releaseSavepoint(Savepoint savepoint) throws SQLException {}
 
     @Override
     public Statement createStatement(int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException {
@@ -290,4 +291,3 @@ public class MyConnection implements Connection {
         return false;
     }
 }
-

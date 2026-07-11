@@ -3,7 +3,9 @@ package org.bluebridge.utils;
 import cn.hutool.core.io.checksum.crc16.*;
 
 /**
- * HuTools提供了常见的CRC实现 根据需要调用即可
+ * @author lingwh
+ * @desc HuTools提供了常见的CRC实现 根据需要调用即可
+ * @date 2026/7/9 00:00
  */
 public class CRCUtil {
 

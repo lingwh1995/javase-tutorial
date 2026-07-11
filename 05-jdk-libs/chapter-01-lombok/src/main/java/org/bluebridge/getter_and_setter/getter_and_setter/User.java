@@ -15,6 +15,7 @@ public class User {
     private String id;
     private String name;
     private static int age;
+
     // 设置不为email这个属性生成的Getter()方法和Setter()方法
     @Getter(AccessLevel.NONE)
     private String email;

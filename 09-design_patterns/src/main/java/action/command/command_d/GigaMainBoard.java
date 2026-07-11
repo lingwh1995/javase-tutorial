@@ -1,18 +1,17 @@
 package action.command.command_d;
 
 /**
- * 技嘉主板类，开机命令的真正实现者，在Command模式中充当Receiver
- * @author ronin
- * @version V1.0
- * @since 2019/8/5 10:52
+ * @author lingwh
+ * @desc 技嘉主板类，开机命令的真正实现者，在Command模式中充当Receiver
+ * @date 2019/8/5 10:52
  */
-public class GigaMainBoard implements MainBoardApi{
+public class GigaMainBoard implements MainBoardApi {
 
     /**
      * 真正的开机命令的实现
      */
     @Override
-    public void open(){
+    public void open() {
         System.out.println("技嘉主板现在正在开机，请等候");
         System.out.println("接通电源......");
         System.out.println("设备检查......");
@@ -25,7 +24,7 @@ public class GigaMainBoard implements MainBoardApi{
      * 真正的重新启动机器命令的实现
      */
     @Override
-    public void restart(){
+    public void restart() {
         System.out.println("技嘉主板现在正在重新启动机器，请等候");
         System.out.println("机器已经正常打开，请操作");
     }

@@ -8,26 +8,28 @@ import java.util.concurrent.*;
 
 /**
  * 固定大小的线程池FixedThreadPool
- *      1.线程池大小固定，不会随着任务的增长而增长。
- *      2.核心线程数和最大线程数相等，使用无界队列
- *      3.使用的工作队列是LinkedBlockingQueue
  *
- * 其他API测试
+ * 1. 线程池大小固定，不会随着任务的增长而增长。
+ * 2. 核心线程数和最大线程数相等，使用无界队列
+ * 3. 使用的工作队列是LinkedBlockingQueue
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class FixedThreadPool03APITest {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        //testSubmit();
+        // testSubmit();
 
-        //testInvokeAll();
+        // testInvokeAll();
 
-        //testInvokeAny();
+        // testInvokeAny();
 
         testShutdownShutdownNowAndAwaitTermination();
     }
 
-
     /**
      * 测试submit()
+     *
      * @throws ExecutionException
      * @throws InterruptedException
      */
@@ -47,6 +49,7 @@ public class FixedThreadPool03APITest {
 
     /**
      * 测试invokeAll()
+     *
      * @throws InterruptedException
      */
     private static void testInvokeAll() throws InterruptedException {
@@ -84,6 +87,7 @@ public class FixedThreadPool03APITest {
 
     /**
      * 测试invokeAny()
+     *
      * @throws ExecutionException
      * @throws InterruptedException
      */
@@ -150,14 +154,13 @@ public class FixedThreadPool03APITest {
         System.out.println("shutdown......");
         executor.shutdown();
 
-        //List<Runnable> runnables = executor.shutdownNow();
-        //System.out.println("other.... = " + runnables);
-
+        // List<Runnable> runnables = executor.shutdownNow();
+        // System.out.println("other.... = " + runnables);
 
         // 调用 shutdown() 3000 ms 后判断线程池中所有任务是否执行完成，如果执行完成则返回 true，否则返回 false
         boolean allTaskExecuteSuccess = executor.awaitTermination(3000, TimeUnit.MILLISECONDS);
         System.out.println("调用 shutdown() 3000ms 后判断线程池中所有任务是否执行完成: " + allTaskExecuteSuccess);
-        if(! allTaskExecuteSuccess) {
+        if (!allTaskExecuteSuccess) {
             // 立即关闭线程池
             executor.shutdownNow();
         }

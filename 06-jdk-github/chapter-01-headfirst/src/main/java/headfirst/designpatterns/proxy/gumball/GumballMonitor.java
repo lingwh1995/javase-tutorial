@@ -1,21 +1,26 @@
 package headfirst.designpatterns.proxy.gumball;
 
 import java.rmi.*;
- 
+
+/**
+ * @author lingwh
+ * @desc 糖果机监控器
+ * @date 2026/7/9 00:00
+ */
 public class GumballMonitor {
-	GumballMachineRemote machine;
- 
-	public GumballMonitor(GumballMachineRemote machine) {
-		this.machine = machine;
-	}
- 
-	public void report() {
-		try {
-			System.out.println("Gumball Machine: " + machine.getLocation());
-			System.out.println("Current inventory: " + machine.getCount() + " gumballs");
-			System.out.println("Current state: " + machine.getState());
-		} catch (RemoteException e) {
-			e.printStackTrace();
-		}
-	}
+    GumballMachineRemote machine;
+
+    public GumballMonitor(GumballMachineRemote machine) {
+        this.machine = machine;
+    }
+
+    public void report() {
+        try {
+            System.out.println("Gumball Machine: " + machine.getLocation());
+            System.out.println("Current inventory: " + machine.getCount() + " gumballs");
+            System.out.println("Current state: " + machine.getState());
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
 }

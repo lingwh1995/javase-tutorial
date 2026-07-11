@@ -14,5 +14,4 @@ public class NonNullAnnoTest {
         UserDao userDao = new UserDao();
         userDao.deleteUserById(null);
     }
-
 }

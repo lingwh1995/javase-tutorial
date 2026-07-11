@@ -3,15 +3,20 @@ package action.iterator.iterator_b;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author lingwh
+ * @desc 信息工程学院
+ * @date 2026/7/9 00:00
+ */
 public class InformationCollege implements College {
 
     private List<Department> departments;
 
     public InformationCollege() {
         departments = new ArrayList<Department>();
-        addDepartment("信息安全","信息安全专业");
-        addDepartment("服务器","服务器安全专业");
-        addDepartment("网络安全","网络安全专业");
+        addDepartment("信息安全", "信息安全专业");
+        addDepartment("服务器", "服务器安全专业");
+        addDepartment("网络安全", "网络安全专业");
     }
 
     @Override
@@ -21,7 +26,7 @@ public class InformationCollege implements College {
 
     @Override
     public void addDepartment(String name, String desc) {
-        departments.add(new Department(name,desc));
+        departments.add(new Department(name, desc));
     }
 
     @Override

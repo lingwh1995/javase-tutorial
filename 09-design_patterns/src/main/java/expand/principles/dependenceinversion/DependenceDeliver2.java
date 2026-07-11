@@ -1,8 +1,9 @@
 package expand.principles.dependenceinversion;
 
 /**
- * 依赖关系传递的三种方式
- *  第二种方式：通过构造方法传递依赖
+ * @author lingwh
+ * @desc 依赖关系传递的三种方式 第二种方式：通过构造方法传递依赖
+ * @date 2026/7/9 00:00
  */
 public class DependenceDeliver2 {
     public static void main(String[] args) {
@@ -16,17 +17,18 @@ public class DependenceDeliver2 {
     }
 }
 
-interface ITV2{
+interface ITV2 {
     public void play();
 }
 
-interface IOpenAndClose2{
+interface IOpenAndClose2 {
     public void open();
 }
 
-class OpenAndClose2 implements IOpenAndClose2{
+class OpenAndClose2 implements IOpenAndClose2 {
 
     public ITV2 iTv2;
+
     public OpenAndClose2(ITV2 iTv2) {
         this.iTv2 = iTv2;
     }

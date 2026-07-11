@@ -1,11 +1,10 @@
 package org.bluebridge.chapter_01_byte_stream._04_piped_input_stream_piped_output_stream;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.io.IOException;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -63,5 +62,4 @@ public class PipedInputStream_PipedOutStreamTest {
             e.printStackTrace();
         }
     }
-
 }

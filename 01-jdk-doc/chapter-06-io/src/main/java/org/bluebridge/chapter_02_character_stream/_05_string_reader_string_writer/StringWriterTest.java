@@ -1,10 +1,9 @@
 package org.bluebridge.chapter_02_character_stream._05_string_reader_string_writer;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.io.IOException;
 import java.io.StringWriter;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -34,5 +33,4 @@ public class StringWriterTest {
             e.printStackTrace();
         }
     }
-
 }

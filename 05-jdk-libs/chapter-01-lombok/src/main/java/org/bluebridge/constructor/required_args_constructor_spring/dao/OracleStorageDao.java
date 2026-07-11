@@ -15,5 +15,4 @@ public class OracleStorageDao {
     public void save() {
         log.info("执行 oracle 存储操作......");
     }
-
 }

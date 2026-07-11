@@ -2,13 +2,15 @@ package org.bluebridge;
 
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
-import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
 import java.util.Map;
+import javax.swing.*;
 
 /**
- * 优化建议：使用组合而非继承，引入图标缓存，减少类内存占用
+ * @author lingwh
+ * @desc IntelliJ风格界面示例
+ * @date 2026/7/9 00:00
  */
 public class FlatJetbrainsStyle {
 
@@ -63,6 +65,7 @@ public class FlatJetbrainsStyle {
 
     /**
      * 4. 辅助方法：统一创建菜单项，减少冗余代码
+     *
      * @param text
      * @param iconPath
      * @param mnemonic
@@ -77,5 +80,4 @@ public class FlatJetbrainsStyle {
         }
         return item;
     }
-
 }

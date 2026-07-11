@@ -3,10 +3,14 @@ package org.bluebridge.lock_16_synchronized_wait_notify_demo;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * wait-notify机制演示
+ *
  * 其它干活的线程，都要一直阻塞，效率太低
- *      小南线程必须睡足 2s 后才能醒来，就算烟提前送到，也无法立刻醒来
- *      加了 synchronized (room) 后，就好比小南在里面反锁了门睡觉，烟根本没法送进门，main 没加 synchronized 就好像 main 线程是翻窗户进来的
- *      解决方法，使用 wait - notify 机制
+ * 小南线程必须睡足 2s 后才能醒来，就算烟提前送到，也无法立刻醒来加了 synchronized (room) 后，就好比小南在里面反锁了门睡觉，烟根本没法
+ * 送进门，main 没加 synchronized 就好像 main 线程是翻窗户进来的解决方法，使用 wait - notify 机制
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class SynchronizedWaitNotifyTest1 {
     static final Object room = new Object();

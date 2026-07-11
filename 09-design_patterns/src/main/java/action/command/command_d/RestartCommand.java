@@ -1,14 +1,15 @@
 package action.command.command_d;
 
 /**
- * 重启命令对象
- * @author ronin
- * @version V1.0
- * @since 2019/8/5 13:20
+ * @author lingwh
+ * @desc 重启命令对象
+ * @date 2019/8/5 13:20
  */
-public class RestartCommand implements Command{
+public class RestartCommand implements Command {
 
-    /**持有可以真正完成命令的对象的引用:即技嘉主板*/
+    /**
+     * 持有可以真正完成命令的对象的引用:即技嘉主板
+     */
     private MainBoardApi mainBoard;
 
     public RestartCommand(MainBoardApi mainBoard) {

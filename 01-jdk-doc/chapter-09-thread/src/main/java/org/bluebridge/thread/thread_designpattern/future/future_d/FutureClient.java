@@ -1,10 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.future.future_d;
 
-
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/10 16:56
+ * @author lingwh
+ * @desc Future 模式客户端
+ * @date 2019/10/10 16:56
  */
 public class FutureClient {
     public static void main(String[] args) {

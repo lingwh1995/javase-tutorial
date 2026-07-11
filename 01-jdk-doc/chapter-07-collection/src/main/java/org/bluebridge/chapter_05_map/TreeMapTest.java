@@ -5,21 +5,22 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * TreeMap存储对象类型数据,并实现排序
- * @author ronin
+ * @author lingwh
+ * @desc TreeMap存储对象并排序测试
+ * @date 2026/7/9 00:00
  */
 public class TreeMapTest {
     public static void main(String[] args) {
-        //自然排序
-        Map<Student,String> treeMapComparable = new TreeMap<>();
-        treeMapComparable.put(new Student("zs",18),"张三");
-        treeMapComparable.put(new Student("ww",38),"王五");
-        treeMapComparable.put(new Student("ls",28),"李四");
-        treeMapComparable.put(new Student("zs",18),"张三");
+        // 自然排序
+        Map<Student, String> treeMapComparable = new TreeMap<>();
+        treeMapComparable.put(new Student("zs", 18), "张三");
+        treeMapComparable.put(new Student("ww", 38), "王五");
+        treeMapComparable.put(new Student("ls", 28), "李四");
+        treeMapComparable.put(new Student("zs", 18), "张三");
         System.out.println(treeMapComparable);
 
         System.out.println("--------------------------------------------");
-        //比较器排序
+        // 比较器排序
         Map<Student,String> treeMapCmparor = new TreeMap<>(new Comparator<Student>() {
             @Override
             public int compare(Student s1, Student s2) {
@@ -37,15 +38,14 @@ public class TreeMapTest {
         System.out.println(treeMapCmparor);
 
         System.out.println("-------------------------------------");
-        //测试TreeMap.put();
+        // 测试TreeMap.put();
         Map<String, String> tree = new TreeMap<>();
         System.out.println(tree.put("first", "zs"));
         System.out.println(tree.put("first", "zs"));
-
-
     }
 }
-class Student implements Comparable<Student>{
+
+class Student implements Comparable<Student> {
     protected String name;
     protected Integer age;
 
@@ -56,22 +56,19 @@ class Student implements Comparable<Student>{
 
     @Override
     public int compareTo(Student student) {
-        if(this.name.equals(student.name) && this.age == student.age){
+        if (this.name.equals(student.name) && this.age == student.age) {
             return 0;
-        } 
+        }
         return student.age - this.age;
     }
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", age='" + age + '\'' +
-                '}';
+        return "Student{" + "name='" + name + '\'' + ", age='" + age + '\'' + '}';
     }
 }
 
-class Dog{
+class Dog {
     private String name;
     private Integer age;
 
@@ -82,9 +79,6 @@ class Dog{
 
     @Override
     public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "Dog{" + "name='" + name + '\'' + ", age=" + age + '}';
     }
 }

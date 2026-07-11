@@ -7,6 +7,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc ReentrantLock条件变量测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test24")
 public class Test24 {
     static final Object room = new Object();
@@ -19,8 +24,6 @@ public class Test24 {
     static Condition waitTakeoutSet = ROOM.newCondition();
 
     public static void main(String[] args) {
-
-
         new Thread(() -> {
             ROOM.lock();
             try {
@@ -80,5 +83,4 @@ public class Test24 {
             }
         }, "送烟的").start();
     }
-
 }

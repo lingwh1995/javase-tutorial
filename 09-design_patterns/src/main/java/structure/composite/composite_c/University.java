@@ -3,6 +3,11 @@ package structure.composite.composite_c;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author lingwh
+ * @desc 大学
+ * @date 2026/7/9 00:00
+ */
 public class University extends OrganizationComponment {
 
     /**
@@ -34,12 +39,14 @@ public class University extends OrganizationComponment {
         return super.getDesc();
     }
 
-    /**输出University中所包含的学院*/
+    /**
+     * 输出University中所包含的学院
+     */
     @Override
     public void print() {
-        System.out.println("-------------"+getName()+":"+getDesc()+"-------------");
-        //遍历
-        for(OrganizationComponment collge:collegeList){
+        System.out.println("-------------" + getName() + ":" + getDesc() + "-------------");
+        // 遍历
+        for (OrganizationComponment collge : collegeList) {
             collge.print();
         }
     }

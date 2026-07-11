@@ -1,10 +1,8 @@
 package org.bluebridge.utils;
 
-
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.ByteUtil;
 import cn.hutool.core.util.HexUtil;
-
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.nio.ByteOrder;
@@ -13,8 +11,9 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
- * 常用协议解析工具类
- * 依赖 hutools部分工具类
+ * @author lingwh
+ * @desc 常用协议解析工具类 依赖 hutools部分工具类
+ * @date 2026/7/9 00:00
  */
 public class ParseUtil {
 
@@ -57,13 +56,12 @@ public class ParseUtil {
         return bytesToHexString(bytes, startIndex, bytes.length - startIndex);
     }
 
-
     /**
      * 字节数组转为字符串
      *
      * @param source ASCII字节数组
-     * @param start  数组起始位置
-     * @param len    读取长度
+     * @param start 数组起始位置
+     * @param len 读取长度
      * @return 字符串
      */
     public static String bytesToString(byte[] source, int start, int len) {
@@ -84,23 +82,22 @@ public class ParseUtil {
      * 获取单个bit值
      *
      * @param data 数值
-     * @param pos  第几个bit位
+     * @param pos 第几个bit位
      * @return 该bit位的值
      */
     public static int getBitNumber(int data, int pos) {
         return (data >> pos) & 0x1;
     }
 
-
     /**
      * 将字节数组转换为数值
      *
-     * @param data      字节数组
+     * @param data 字节数组
      * @param byteOrder 大小端模式
-     * @param start     数组起始下标
-     * @param length    长度
-     * @param scale     小数位数
-     * @param unsigned  是否为无符号数
+     * @param start 数组起始下标
+     * @param length 长度
+     * @param scale 小数位数
+     * @param unsigned 是否为无符号数
      * @return 数值
      */
     public static BigDecimal bytesToNumber(byte[] data, ByteOrder byteOrder, int start, int length, int scale, boolean unsigned) {
@@ -186,8 +183,8 @@ public class ParseUtil {
     /**
      * 字节数组转浮点数
      *
-     * @param bytes      字节数组
-     * @param byteOrder  大小端模式
+     * @param bytes 字节数组
+     * @param byteOrder 大小端模式
      * @param startIndex 数组起始下标
      * @return 浮点数
      */
@@ -205,7 +202,7 @@ public class ParseUtil {
     /**
      * 字节数组转浮点数
      *
-     * @param bytes     字节数组
+     * @param bytes 字节数组
      * @param byteOrder 大小端模式
      * @return 浮点数
      */
@@ -223,7 +220,7 @@ public class ParseUtil {
      * 浮点数转字节数组
      *
      * @param floatValue 浮点数
-     * @param byteOrder  大小端模式
+     * @param byteOrder 大小端模式
      * @return 字节数组
      */
     public static byte[] floatToBytes(float floatValue, ByteOrder byteOrder) {
@@ -233,8 +230,8 @@ public class ParseUtil {
     /**
      * 字节数组转双精度浮点数
      *
-     * @param bytes      字节数组
-     * @param byteOrder  大小端模式
+     * @param bytes 字节数组
+     * @param byteOrder 大小端模式
      * @param startIndex 起始下标 从数组中该下标开始取8字节转换为double
      * @return 双精度浮点数
      */
@@ -252,7 +249,7 @@ public class ParseUtil {
     /**
      * 字节数组转双精度浮点数
      *
-     * @param bytes     字节数组
+     * @param bytes 字节数组
      * @param byteOrder 大小端模式
      * @return 双精度浮点数
      */
@@ -270,7 +267,7 @@ public class ParseUtil {
      * 双精度浮点数转字节数组
      *
      * @param doubleValue 双精度浮点数
-     * @param byteOrder   大小端模式
+     * @param byteOrder 大小端模式
      * @return 字节数组
      */
     public static byte[] doubleToBytes(double doubleValue, ByteOrder byteOrder) {
@@ -364,8 +361,8 @@ public class ParseUtil {
     public static void main(String[] args) {
 //        byte[] frameLengthBytes = ParseUtil.numberToHexBytes(2, ByteOrder.BIG_ENDIAN, 0, 2);
 //        System.out.println(Arrays.toString(frameLengthBytes));
-         byte[] bytes = new byte[2];
-         bytes[0] = (byte)0x68;
+        byte[] bytes = new byte[2];
+        bytes[0] = (byte) 0x68;
         String s = HexUtil.encodeHexStr(bytes);
         System.out.println(s);
 //        byte[] bytes = doubleToBytes(2.0, ByteOrder.BIG_ENDIAN);
@@ -375,7 +372,7 @@ public class ParseUtil {
 
     public static String hexStringToBinaryString(String hexString) {
         String binary = new BigInteger(hexString, 16).toString(2);
-        int completionZeroLength = hexString.length()/2 * 8 - binary.length();
+        int completionZeroLength = hexString.length() / 2 * 8 - binary.length();
         StringBuilder builder = new StringBuilder();
         IntStream.range(0,completionZeroLength).forEach(i -> {
             builder.append(0);

@@ -2,66 +2,62 @@ package create.prototype.prototype_a;
 
 import java.util.Date;
 
-/**  
- * 深克隆/深复制实体
- * @author ronin  
- * @date 2019年3月23日  
- *    
+/**
+ * @author lingwh
+ * @desc 深克隆/深复制实体
+ * @date 2019/3/23 00:00
  */
-public class Person implements Cloneable{
+public class Person implements Cloneable {
 
-	private String name;
-	private Date birthday;
-	
-	/**  
-	 * 创建一个新的实例 Person.  
-	 *    
-	 */ 
-	public Person() {
-		super();
-	}
-	
-	/**  
-	 * 创建一个新的实例 Person.  
-	 *  
-	 * @param name
-	 * @param birthday  
-	 */ 
-	public Person(String name, Date birthday) {
-		super();
-		this.name = name;
-		this.birthday = birthday;
-	}
-	
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		Person personClone = (Person)super.clone();
-		//克隆属性
-		Date birthClone = (Date)this.birthday.clone();
-		personClone.setBirthday(birthClone);
-		return personClone;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public Date getBirthday() {
-		return birthday;
-	}
-	
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
-	}
+    private String name;
+    private Date birthday;
 
-	
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", birthday=" + birthday + "]";
-	}
-	
+    /**
+     * 创建一个新的实例 Person.
+     */
+    public Person() {
+        super();
+    }
+
+    /**
+     * 创建一个新的实例 Person.
+     *
+     * @param name
+     * @param birthday
+     */
+    public Person(String name, Date birthday) {
+        super();
+        this.name = name;
+        this.birthday = birthday;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        Person personClone = (Person) super.clone();
+        // 克隆属性
+        Date birthClone = (Date) this.birthday.clone();
+        personClone.setBirthday(birthClone);
+        return personClone;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", birthday=" + birthday + "]";
+    }
 }

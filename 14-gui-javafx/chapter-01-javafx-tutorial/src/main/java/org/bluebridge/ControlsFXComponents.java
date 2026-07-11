@@ -12,7 +12,7 @@ import org.controlsfx.control.Rating;
 
 /**
  * @author lingwh
- * @desc
+ * @desc ControlsFX组件示例
  * @date 2026/1/22 13:45
  */
 public class ControlsFXComponents extends Application {
@@ -33,12 +33,13 @@ public class ControlsFXComponents extends Application {
 
         // 3. 浮窗通知 (Notifications)
         Button notifyBtn = new Button("弹出右下角通知");
-        notifyBtn.setOnAction(e -> {
-            Notifications.create()
-                    .title("任务完成")
-                    .text("您选择的语言是: " + checkComboBox.getCheckModel().getCheckedItems())
-                    .showConfirm();
-        });
+        notifyBtn.setOnAction(
+                e -> {
+                    Notifications.create()
+                            .title("任务完成")
+                            .text("您选择的语言是: " + checkComboBox.getCheckModel().getCheckedItems())
+                            .showConfirm();
+                });
 
         root.getChildren().addAll(checkComboBox, rating, notifyBtn);
 
@@ -48,6 +49,7 @@ public class ControlsFXComponents extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) { launch(args); }
-
+    public static void main(String[] args) {
+        launch(args);
+    }
 }

@@ -1,9 +1,12 @@
 package expand.principles.open_close;
 
 /**
- * 不遵循OCP原则，目前只有一个画三角形的需求，当增加一个画圆形的需求的时候，
- * 不仅要对方法的提供者Painter做修改，也要对调用者做修改
+ * 不遵循OCP原则
  *
+ * 目前只有一个画三角形的需求，当增加一个画圆形的需求的时候，不仅要对方法的提供者Painter做修改，也要对调用者做修改
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class OCPTest1 {
     public static void main(String[] args) {
@@ -12,25 +15,28 @@ public class OCPTest1 {
         painter1.drawShape(new Cricle1());
     }
 }
+
 /**
- * 方法的使用方:
- *      不遵守OCP,扩展的时候要对方法的使用方做修改
+ * 方法的使用方: 不遵守OCP,扩展的时候要对方法的使用方做修改
  */
 class Painter1 {
-    public void drawShape(Shape1 shape){
-        if(shape.type == 1) {
+    public void drawShape(Shape1 shape) {
+        if (shape.type == 1) {
             drawTriangle();
-        }else if(shape.type == 2) {
+        } else if (shape.type == 2) {
             drawCircle();
         }
     }
-    private void drawTriangle(){
+
+    private void drawTriangle() {
         System.out.println("画三角形...");
     }
-    private void drawCircle(){
+
+    private void drawCircle() {
         System.out.println("画圆形...");
     }
 }
+
 class Shape1 {
     public int type;
 }
@@ -38,16 +44,17 @@ class Shape1 {
 /**
  * 方法的提供方
  */
-class Triagle1 extends Shape1{
-    public Triagle1(){
+class Triagle1 extends Shape1 {
+    public Triagle1() {
         super.type = 1;
     }
 }
+
 /**
  * 方法的提供方
  */
-class Cricle1 extends Shape1{
-    public Cricle1(){
+class Cricle1 extends Shape1 {
+    public Cricle1() {
         super.type = 2;
     }
 }

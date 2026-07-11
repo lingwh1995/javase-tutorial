@@ -5,9 +5,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * tryLock()方法
- *      1.获取不到锁时不阻塞，返回false，若是成功获取锁则返回true。
- *      2.调用interrupt()无法中断线程
+ * @author lingwh
+ * @desc tryLock()方法
+ * @date 2026/7/9 00:00
  */
 public class ReentrantLockTryLockTest {
     public static void main(String[] args) throws InterruptedException {
@@ -48,14 +48,14 @@ public class ReentrantLockTryLockTest {
         },"t2");
 
         t1.start();
-        //让thread1先执行
+        // 让thread1先执行
         TimeUnit.MILLISECONDS.sleep(50);
         t2.start();
 
-        //主线程阻塞一会让所有子线程启动
+        // 主线程阻塞一会让所有子线程启动
         TimeUnit.MILLISECONDS.sleep(100);
 
-        //中断线程2
+        // 中断线程2
         t2.interrupt();
     }
 }

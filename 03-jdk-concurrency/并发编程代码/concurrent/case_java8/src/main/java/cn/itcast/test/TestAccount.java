@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author lingwh
+ * @desc 账户测试
+ * @date 2026/7/9 00:00
+ */
 public class TestAccount {
     public static void main(String[] args) {
         Account account = new AccountCas(10000);

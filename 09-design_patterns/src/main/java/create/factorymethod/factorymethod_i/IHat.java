@@ -1,5 +1,10 @@
 package create.factorymethod.factorymethod_i;
 
+/**
+ * @author lingwh
+ * @desc 帽子接口
+ * @date 2026/7/9 00:00
+ */
 public interface IHat {
-	void produce();
+    void produce();
 }

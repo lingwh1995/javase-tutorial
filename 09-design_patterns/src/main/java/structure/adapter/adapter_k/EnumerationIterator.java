@@ -5,11 +5,11 @@ import java.util.Iterator;
 import java.util.function.Consumer;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/11 17:11
+ * @author lingwh
+ * @desc 枚举适配迭代器
+ * @date 2019/9/11 17:11
  */
-public class EnumerationIterator implements Iterator{
+public class EnumerationIterator implements Iterator {
     private Enumeration enumeration;
 
     public EnumerationIterator(Enumeration enumeration) {

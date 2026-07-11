@@ -1,10 +1,14 @@
 package action.memento.mementor_b;
 
 /**
- * 原始对象
+ * @author lingwh
+ * @desc 原始对象
+ * @date 2026/7/9 00:00
  */
 public class Originator {
-    /**状态信息*/
+    /**
+     * 状态信息
+     */
     private String state;
 
     public String getState() {
@@ -17,17 +21,19 @@ public class Originator {
 
     /**
      * 保存状态
+     *
      * @return
      */
-    public Memento saveMemento(){
+    public Memento saveMemento() {
         return new Memento(state);
     }
 
     /**
      * 得到状态,并且恢复状态
+     *
      * @return
      */
-    public void getStateFromMemento(Memento memento){
+    public void getStateFromMemento(Memento memento) {
         state = memento.getState();
     }
 }

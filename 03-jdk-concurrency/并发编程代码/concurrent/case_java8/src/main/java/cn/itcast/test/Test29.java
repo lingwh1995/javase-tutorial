@@ -5,6 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author lingwh
+ * @desc synchronized加锁测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test29")
 public class Test29 {
     private static Integer i = 0;

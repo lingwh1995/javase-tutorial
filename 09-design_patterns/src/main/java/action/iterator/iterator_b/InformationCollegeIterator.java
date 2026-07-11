@@ -3,9 +3,11 @@ package action.iterator.iterator_b;
 import java.util.List;
 
 /**
- * 信息工程学院:元素存放在集合中
+ * @author lingwh
+ * @desc 信息工程学院:元素存放在集合中
+ * @date 2026/7/9 00:00
  */
-public class InformationCollegeIterator implements Iterator{
+public class InformationCollegeIterator implements Iterator {
     private List<Department> departments;
     private int index = -1;
 
@@ -15,9 +17,9 @@ public class InformationCollegeIterator implements Iterator{
 
     @Override
     public boolean hasNext() {
-        if(index >= departments.size() -1 ){
+        if (index >= departments.size() - 1) {
             return false;
-        }else {
+        } else {
             index++;
             return true;
         }
@@ -32,5 +34,4 @@ public class InformationCollegeIterator implements Iterator{
     public boolean remove() {
         return false;
     }
-
 }

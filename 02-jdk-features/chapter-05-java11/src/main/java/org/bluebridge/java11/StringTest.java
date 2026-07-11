@@ -2,6 +2,11 @@ package org.bluebridge.java11;
 
 import org.junit.Test;
 
+/**
+ * @author lingwh
+ * @desc Java11 String 测试
+ * @date 2026/7/9 00:00
+ */
 public class StringTest {
 
     /**
@@ -9,23 +14,23 @@ public class StringTest {
      */
     @Test
     public void testString() {
-        //isBlank()
+        // isBlank()
         System.out.println("    ".isBlank());
         System.out.println("\t\t".isBlank());
 
-        //去首尾空格
-        System.out.println("-----" + "  ".strip() + "-----" );
+        // 去首尾空格
+        System.out.println("-----" + "  ".strip() + "-----");
 
-        //去尾部空格
+        // 去尾部空格
         System.out.println("-----    ".stripTrailing());
 
-        //去头部空格
+        // 去头部空格
         System.out.println("    -----".stripLeading());
 
-        //复制字符串
+        // 复制字符串
         System.out.println("abc".repeat(5));
 
-        //统计字符串行数
+        // 统计字符串行数
         System.out.println("abc\ncde\nefg".lines().count());
     }
 }

@@ -7,6 +7,11 @@ import java.util.List;
 
 import static cn.itcast.pattern.Downloader.*;
 
+/**
+ * @author lingwh
+ * @desc 保护对象测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestGuardedObject")
 public class TestGuardedObject {
     public static void main(String[] args) {
@@ -24,10 +29,7 @@ public class TestGuardedObject {
         log.debug("waiting...");
         Object response = guardedObject.get();
         log.debug("get response: [{}] lines", ((List<String>) response).size());
-
     }
-
-
 }
 
 class GuardedObject {

@@ -1,12 +1,17 @@
 package org.bluebridge.java8.chapter_04_optional;
 
+import java.util.Optional;
 import org.junit.Test;
 
-import java.util.Optional;
-
+/**
+ * @author lingwh
+ * @desc Optional使用示例
+ * @date 2026/7/9 00:00
+ */
 public class OptionalDemo {
     /**
      * V1.0 不判断boy和girl是否为空，可能会报空指针异常
+     *
      * @param boy
      * @return
      */
@@ -15,7 +20,7 @@ public class OptionalDemo {
     }
 
     /**
-     * 测试   getGirlNameV1
+     * 测试 getGirlNameV1
      */
     @Test
     public void testGirlNameV1() {
@@ -24,16 +29,16 @@ public class OptionalDemo {
         System.out.println(girlName);
     }
 
-
     /**
      * V2.0 使用传统方法判断boy和girl是否为空，可以避免空指针异常
+     *
      * @param boy
      * @return
      */
     public String getGirlNameV2(Boy boy) {
-        if(null != boy) {
+        if (null != boy) {
             Girl girl = boy.getGirl();
-            if(null != girl) {
+            if (null != girl) {
                 return girl.getName();
             }
         }
@@ -41,7 +46,7 @@ public class OptionalDemo {
     }
 
     /**
-     * 测试   getGirlNameV2
+     * 测试 getGirlNameV2
      */
     @Test
     public void testGirlNameV2() {
@@ -50,26 +55,26 @@ public class OptionalDemo {
         System.out.println(girlName);
     }
 
-
     /**
      * V3.0 使用Optional类处理空指针问题
+     *
      * @param boy
      * @return
      */
     public String getGirlNameV3(Boy boy) {
-        //boy = null;
+        // boy = null;
         Optional<Boy> boyOptional = Optional.ofNullable(boy);
-        //此时的boy一定非空
+        // 此时的boy一定非空
         boy = boyOptional.orElse(new Boy(new Girl("boy为空时-古力娜扎")));
         Girl girl = boy.getGirl();
         Optional<Girl> girlOptional = Optional.ofNullable(girl);
-        //此时的girl一定非空
+        // 此时的girl一定非空
         girl = girlOptional.orElse(new Girl("girl为空时-范冰冰"));
         return girl.getName();
     }
 
     /**
-     * 测试   getGirlNameV2
+     * 测试 getGirlNameV2
      */
     @Test
     public void testGirlNameV3() {
@@ -77,5 +82,4 @@ public class OptionalDemo {
         String girlName = getGirlNameV3(boy);
         System.out.println(girlName);
     }
-
 }

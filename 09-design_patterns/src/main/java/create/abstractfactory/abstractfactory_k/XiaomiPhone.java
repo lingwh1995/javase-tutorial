@@ -1,6 +1,10 @@
 package create.abstractfactory.abstractfactory_k;
 
-//小米手机实现类
+/**
+ * @author lingwh
+ * @desc 小米手机实现类
+ * @date 2019/10/18 13:32
+ */
 public class XiaomiPhone implements IPhoneProduct {
 
     @Override
@@ -23,7 +27,3 @@ public class XiaomiPhone implements IPhoneProduct {
         System.out.println("小米手机发邮件");
     }
 }
-
-
-
-

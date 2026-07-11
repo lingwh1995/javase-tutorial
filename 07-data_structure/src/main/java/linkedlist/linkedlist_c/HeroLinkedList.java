@@ -1,19 +1,16 @@
 package linkedlist.linkedlist_c;
 
-
 import java.util.Stack;
 
 /**
- * 双向链表
- * @author ronin
+ * @author lingwh
+ * @desc 双向链表
+ * @date 2026/7/9 00:00
  */
 public class HeroLinkedList {
-    private Node headNode = new Node(0,"","");
+    private Node headNode = new Node(0, "", "");
 
-
-    public HeroLinkedList() {
-
-    }
+    public HeroLinkedList() {}
 
     public HeroLinkedList(Node headNode) {
         this.headNode = headNode;
@@ -21,17 +18,18 @@ public class HeroLinkedList {
 
     /**
      * 新增加一个节点
+     *
      * @param node 新增加的目标节点
      * @return 当前操作的节点
      */
-    public Node add(Node node){
+    public Node add(Node node) {
         Node tempNode = headNode;
-        while(true){
-            //说明temNode已经是链表中最后一个元素
-            if(null == tempNode.next){
+        while (true) {
+            // 说明temNode已经是链表中最后一个元素
+            if (null == tempNode.next) {
                 break;
             }
-            if(tempNode.next.heroNo > node.heroNo){
+            if (tempNode.next.heroNo > node.heroNo) {
                 Node temp = tempNode.next;
                 tempNode.next = node;
                 node.next = temp;
@@ -47,17 +45,18 @@ public class HeroLinkedList {
 
     /**
      * 更新链表节点
+     *
      * @param node 要删除的目标节点
      * @return 当前操作的节点
      */
-    public Node update(Node node){
+    public Node update(Node node) {
         Node tempNode = headNode;
-        while (true){
-            if(null == tempNode.next){
+        while (true) {
+            if (null == tempNode.next) {
                 System.out.println("链表为空~");
                 break;
             }
-            if(tempNode.heroNo == node.heroNo){
+            if (tempNode.heroNo == node.heroNo) {
                 break;
             }
             tempNode = tempNode.next;
@@ -69,18 +68,19 @@ public class HeroLinkedList {
 
     /**
      * 删除节点:可以实现自我删除
+     *
      * @param node 要删除的目标节点
      * @return 当前操作的节点
      */
-    public Node remove(Node node){
+    public Node remove(Node node) {
         Node tempNode = headNode.next;
-        while(true){
-            if(null == tempNode){
+        while (true) {
+            if (null == tempNode) {
                 break;
             }
-            if(tempNode.heroNo == node.heroNo){
+            if (tempNode.heroNo == node.heroNo) {
                 tempNode.prev.next = tempNode.next;
-                if(null != tempNode.next){
+                if (null != tempNode.next) {
                     tempNode.next.prev = tempNode.prev;
                 }
             }
@@ -91,13 +91,14 @@ public class HeroLinkedList {
 
     /**
      * 获取链表中有效节点的个数
+     *
      * @return
      */
-    public int size(){
+    public int size() {
         Node tempNode = headNode;
         int length = 0;
-        while (true){
-            if(null == tempNode.next){
+        while (true) {
+            if (null == tempNode.next) {
                 break;
             }
             tempNode = tempNode.next;
@@ -108,22 +109,23 @@ public class HeroLinkedList {
 
     /**
      * 获取链表中倒数第n个节点的元素
+     *
      * @param index
      * @return
      */
-    public Node getReverseNode(int index){
+    public Node getReverseNode(int index) {
         int size = this.size();
-        if(index <=0 || index > size){
+        if (index <= 0 || index > size) {
             System.out.println("索引值不合法~");
             return null;
         }
         Node tempNode = headNode;
         int currentIndex = 0;
-        while (true){
-            if(null == tempNode.next){
+        while (true) {
+            if (null == tempNode.next) {
                 break;
             }
-            if(currentIndex == (size - index+1)){
+            if (currentIndex == (size - index + 1)) {
                 break;
             }
             tempNode = tempNode.next;
@@ -135,16 +137,16 @@ public class HeroLinkedList {
     /**
      * 从头到尾遍历链表
      */
-    public void list(){
-        //头指针
+    public void list() {
+        // 头指针
         Node pHead = headNode;
         System.out.println(pHead);
-        if(null == pHead.next){
+        if (null == pHead.next) {
             System.out.println("链表为空......");
             return;
         }
         Node currentNode = pHead.next;
-        while (null != currentNode){
+        while (null != currentNode) {
             System.out.println(currentNode);
             currentNode = currentNode.next;
         }
@@ -153,16 +155,16 @@ public class HeroLinkedList {
     /**
      * 从尾到头遍历链表:不破坏链表的数据结构
      */
-    public void reverseList(){
-        //头指针
+    public void reverseList() {
+        // 头指针
         Node pHead = headNode;
-        if(null == pHead.next){
+        if (null == pHead.next) {
             System.out.println("链表为空......");
             return;
         }
         Node currentNode = pHead.next;
         Stack<Node> nodeStack = new Stack<>();
-        while (null != currentNode){
+        while (null != currentNode) {
             nodeStack.push(currentNode);
             currentNode = currentNode.next;
         }
@@ -173,13 +175,19 @@ public class HeroLinkedList {
     }
 }
 
-class Node{
+class Node {
     protected int heroNo;
     protected String heroName;
     protected String nickName;
-    /**当前节点的下一个节点*/
+
+    /**
+     * 当前节点的下一个节点
+     */
     protected Node next;
-    /**当前节点的上一个节点*/
+
+    /**
+     * 当前节点的上一个节点
+     */
     protected Node prev;
 
     public Node(int heroNo, String heroName, String nickName) {

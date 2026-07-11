@@ -1,10 +1,13 @@
 package org.bluebridge.designpattern_05_singleton.singleton_04;
 
 /**
- * 实现4：DCL+volatile
+ * @author lingwh
+ * @desc 实现4：DCL+volatile
+ * @date 2026/7/9 00:00
  */
 public final class Singleton {
-    private Singleton() { }
+    private Singleton() {}
+
     // 问题1：解释为什么要加 volatile ?(防止putstatic和invokespecial重排导致的异常)
     private static volatile Singleton INSTANCE = null;
 

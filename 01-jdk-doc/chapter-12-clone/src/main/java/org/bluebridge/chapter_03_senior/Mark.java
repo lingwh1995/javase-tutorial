@@ -1,22 +1,20 @@
 package org.bluebridge.chapter_03_senior;
 
- /**
- * @author ronin
- * @version V1.0
+/**
+ * @author lingwh
  * @desc 测试深克隆的用例:
- * @since 2019/7/11 11:13
+ * @date 2019/7/11 11:13
  */
- public class Mark implements Cloneable {
+public class Mark implements Cloneable {
     private double chinese;
     private double math;
 
     @Override
     protected Mark clone() throws CloneNotSupportedException {
-        return (Mark)super.clone();
+        return (Mark) super.clone();
     }
 
-    public Mark() {
-    }
+    public Mark() {}
 
     public Mark(double chinese, double math) {
         this.chinese = chinese;
@@ -41,10 +39,6 @@ package org.bluebridge.chapter_03_senior;
 
     @Override
     public String toString() {
-        return "Mark{" +
-                "chinese=" + chinese +
-                ", math=" + math +
-                '}';
+        return "Mark{" + "chinese=" + chinese + ", math=" + math + '}';
     }
 }
-

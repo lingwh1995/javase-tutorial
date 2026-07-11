@@ -8,6 +8,11 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+/**
+ * @author lingwh
+ * @desc Cglib代理测试
+ * @date 2026/7/9 00:00
+ */
 public class TestCglib {
     public static void main(String[] args) throws IOException {
         Enhancer enhancer = new Enhancer();
@@ -40,6 +45,7 @@ public class TestCglib {
         System.in.read();
     }
 }
+
 class MyService {
     public void save() {
         System.out.println("save...");

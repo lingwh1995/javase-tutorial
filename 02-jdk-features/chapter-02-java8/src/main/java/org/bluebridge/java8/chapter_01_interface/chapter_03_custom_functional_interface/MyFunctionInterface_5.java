@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * @author lingwh
- * @desc
+ * @desc 无参返回列表的函数式接口
  * @date 2025/12/2 15:49
  */
 @FunctionalInterface

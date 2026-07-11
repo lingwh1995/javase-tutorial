@@ -4,6 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
+/**
+ * @author lingwh
+ * @desc AtomicReferenceFieldUpdater测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test40")
 public class Test40 {
 

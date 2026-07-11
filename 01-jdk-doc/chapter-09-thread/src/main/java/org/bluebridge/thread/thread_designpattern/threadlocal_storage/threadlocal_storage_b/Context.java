@@ -1,7 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadlocal_storage_b;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 上下文
+ * @date 2026/7/9 00:00
  */
 public class Context {
     private String name;

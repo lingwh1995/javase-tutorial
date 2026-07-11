@@ -1,14 +1,18 @@
 package action.responsibility.responsibility_b;
 
 /**
- * 采购请求
+ * @author lingwh
+ * @desc 采购请求
+ * @date 2026/7/9 00:00
  */
 public class PurchaseRequest {
     private int type;
+
     /**
      * 请求金额
      */
     private double price;
+
     private int id = 0;
 
     public PurchaseRequest(int type, double price, int id) {

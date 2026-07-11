@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.bluebridge.fsm.STATE.*;
 
-enum STATE{
+enum STATE {
     BEGIN,
     IN_WORD,
     OUT_WORD,
@@ -13,9 +13,9 @@ enum STATE{
 }
 
 /**
- * 有限状态机，又称有限状态自动机，简称状态机
- *
- * 使用枚举作为状态码实现状态机
+ * @author lingwh
+ * @desc 有限状态机测试
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class FSM2Test {
@@ -28,31 +28,31 @@ public class FSM2Test {
         String s = " one  two   three    four     five ";
         STATE state = BEGIN;
         int wordCount = 0;
-        for (int i=0; i<s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             System.out.println("c = " + c + ",state = " + state);
-            switch (state){
+            switch (state) {
                 case BEGIN:
-                    if(Character.isLetter(c)) {
+                    if (Character.isLetter(c)) {
                         state = IN_WORD;
-                    }else {
+                    } else {
                         state = OUT_WORD;
                     }
                     break;
                 case IN_WORD:
-                    if(!Character.isLetter(c)) {
+                    if (!Character.isLetter(c)) {
                         wordCount++;
                         state = OUT_WORD;
                     }
                     break;
                 case OUT_WORD:
-                    if(Character.isLetter(c)) {
+                    if (Character.isLetter(c)) {
                         state = IN_WORD;
                     }
                     break;
             }
         }
-        if(state == IN_WORD) {
+        if (state == IN_WORD) {
             wordCount++;
         }
         state = END;

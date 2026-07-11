@@ -7,6 +7,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static cn.itcast.n4.deadlock.v3.TestDeadLock.STATE;
 
+/**
+ * @author lingwh
+ * @desc 死锁测试v3
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestDeadLock")
 public class TestDeadLock {
     public static AtomicInteger STATE = new AtomicInteger(0b00000);

@@ -2,13 +2,17 @@ package org.bluebridge.chapter_02_deepclone;
 
 import java.io.Serializable;
 
+/**
+ * @author lingwh
+ * @desc 教师类
+ * @date 2026/7/9 00:00
+ */
 public class Teacher implements Serializable {
     private int id;
     private Integer age;
     private String name;
 
-    public Teacher() {
-    }
+    public Teacher() {}
 
     public Teacher(int id, Integer age, String name) {
         this.id = id;

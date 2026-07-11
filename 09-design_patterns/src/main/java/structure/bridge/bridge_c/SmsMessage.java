@@ -1,12 +1,11 @@
 package structure.bridge.bridge_c;
 
 /**
- * @author ronin
- * @version V1.0
- * @desc    发送短信类型的消息
- * @since 2019/7/24 11:04
+ * @author lingwh
+ * @desc 发送短信类型的消息
+ * @date 2019/7/24 11:04
  */
-public class SmsMessage implements MessageInterface{
+public class SmsMessage implements MessageInterface {
 
     @Override
     public boolean sendMssage(String message, String receiver) {

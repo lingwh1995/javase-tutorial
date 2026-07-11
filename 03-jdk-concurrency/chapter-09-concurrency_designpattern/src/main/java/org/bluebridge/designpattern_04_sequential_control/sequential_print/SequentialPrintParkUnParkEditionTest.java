@@ -3,7 +3,9 @@ package org.bluebridge.designpattern_04_sequential_control.sequential_print;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * Park Unpark 版
+ * @author lingwh
+ * @desc 顺序打印(ParkUnpark版)
+ * @date 2026/7/9 00:00
  */
 public class SequentialPrintParkUnParkEditionTest {
     public static void main(String[] args) {

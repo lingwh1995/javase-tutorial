@@ -4,7 +4,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 使用可重入锁解决卖票数量大于500的情况
+ * @author lingwh
+ * @desc 使用可重入锁解决卖票数量大于500的情况
+ * @date 2026/7/9 00:00
  */
 public class SellTicketReentrantLockTest {
 

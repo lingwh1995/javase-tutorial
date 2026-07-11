@@ -6,6 +6,11 @@ import java.util.LinkedList;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc 消息队列生产者消费者测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test21")
 public class Test21 {
 

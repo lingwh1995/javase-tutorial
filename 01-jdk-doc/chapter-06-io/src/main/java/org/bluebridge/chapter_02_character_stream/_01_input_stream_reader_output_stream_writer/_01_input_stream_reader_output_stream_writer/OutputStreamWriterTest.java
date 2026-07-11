@@ -1,9 +1,8 @@
 package org.bluebridge.chapter_02_character_stream._01_input_stream_reader_output_stream_writer._01_input_stream_reader_output_stream_writer;
 
+import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
-import java.io.*;
 
 /**
  * @author lingwh
@@ -14,20 +13,19 @@ import java.io.*;
 public class OutputStreamWriterTest {
 
     @Test
-    public void testInputStreamReader() throws FileNotFoundException {
+    public void testInputStreamReader() {
         try(InputStreamReader isr = new InputStreamReader(new FileInputStream("d:/io/input_stream_reader.txt"));
             OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("d:/io/output_stream_writer.txt"))
         ) {
             // 10 + 2 = 每一行字节个数 + 2字节换行符 = 12
             char[] buffer = new char[12];
             int length = 0;
-            while((length = isr.read(buffer)) != -1){
-                log.info("本次读取到的长度：{}，读取到的内容： {}", length, new String(buffer,0, length));
-                osw.write(buffer,0,length);
+            while ((length = isr.read(buffer)) != -1) {
+                log.info("本次读取到的长度：{}，读取到的内容： {}", length, new String(buffer, 0, length));
+                osw.write(buffer, 0, length);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
 }

@@ -1,9 +1,9 @@
 package org.bluebridge.thread_17_communication.wait_for_other_worker;
 
-import lombok.extern.slf4j.Slf4j;
+import java.io.IOException;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
-import java.io.IOException;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author lingwh
@@ -17,7 +17,7 @@ public class PipedStreamTest {
     // 创建管道输出流和输入流
     private static final PipedOutputStream[] pipedOutputStreams = new PipedOutputStream[TOTAL_WORKERS];
     private static final PipedInputStream pipedInputStream = new PipedInputStream();
-    
+
     static {
         try {
             // 连接管道
@@ -50,7 +50,7 @@ public class PipedStreamTest {
         }
 
         log.info("所有工作已完成，主线程继续执行......");
-        
+
         // 关闭流
         try {
             pipedInputStream.close();
@@ -82,7 +82,7 @@ public class PipedStreamTest {
                 // 模拟工作耗时
                 Thread.sleep((long) (Math.random() * 3000));
                 log.info("{} 工作完成......", name);
-                
+
                 // 向管道写入完成信号
                 outputStream.write(1); // 写入一个字节作为完成信号
                 outputStream.flush();
@@ -97,5 +97,4 @@ public class PipedStreamTest {
             }
         }
     }
-
 }

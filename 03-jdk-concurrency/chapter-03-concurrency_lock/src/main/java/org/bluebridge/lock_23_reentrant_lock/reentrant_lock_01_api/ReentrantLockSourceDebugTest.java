@@ -5,8 +5,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 调试lock()方法源码，注意：请将JDK版本设置为1.8
- *      等待锁时不能被打断
+ * @author lingwh
+ * @desc 调试lock()方法源码
+ * @date 2026/7/9 00:00
  */
 public class ReentrantLockSourceDebugTest {
     public static void main(String[] args) throws InterruptedException {
@@ -37,15 +38,15 @@ public class ReentrantLockSourceDebugTest {
             }
         },"t2");
 
-        //让thread1先执行
+        // 让thread1先执行
         t1.start();
         TimeUnit.MILLISECONDS.sleep(50);
 
         t2.start();
-        //主线程阻塞一会让所有子线程启动
+        // 主线程阻塞一会让所有子线程启动
         TimeUnit.MILLISECONDS.sleep(100);
 
-        //中断线程2
+        // 中断线程2
         t2.interrupt();
     }
 }

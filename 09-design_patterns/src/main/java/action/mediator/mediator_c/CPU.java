@@ -1,12 +1,11 @@
 package action.mediator.mediator_c;
 
 /**
- * CPU
- * @author ronin
- * @version V1.0
- * @since 2019/8/14 11:43
+ * @author lingwh
+ * @desc CPU
+ * @date 2019/8/14 11:43
  */
-public class CPU extends Colleague{
+public class CPU extends Colleague {
 
     public CPU(Mediator mediator) {
         super(mediator);
@@ -24,6 +23,7 @@ public class CPU extends Colleague{
 
     /**
      * 获取分解出来的视频数据
+     *
      * @return 分解出来的视频数据
      */
     public String getVideoData() {
@@ -32,6 +32,7 @@ public class CPU extends Colleague{
 
     /**
      * 获取分解出来的声音数据
+     *
      * @return 分解出来的声音数据
      */
     public String getSoundData() {
@@ -40,15 +41,15 @@ public class CPU extends Colleague{
 
     /**
      * 处理数据，把数据分成音频和视频的数据
+     *
      * @param data 被处理的数据
      */
-
-    public void executeData(String data){
-        //把数据分解开，前面的是视频数据，后面的是音频数据
-        String [] ss = data.split(",");
+    public void executeData(String data) {
+        // 把数据分解开，前面的是视频数据，后面的是音频数据
+        String[] ss = data.split(",");
         this.videoData = ss[0];
         this.soundData = ss[1];
-        //通知主板，CPU的工作完成
+        // 通知主板，CPU的工作完成
         this.getMediator().changed(this);
     }
 }

@@ -1,18 +1,18 @@
 package org.bluebridge.thread_05_yield;
 
-
 /**
- * yield()  提示线程调度器让出当前线程对CPU的使用
- *      1. 调用yield会暂停当前正在执行的线程，并执行其他同等优先级的线程(实际上是让出了自己的CPU时间片)
- *      2. yield和设置线程优先级都不能真正的做到设置优先，这个仅仅是对操作系统的任务调度器的一个提示
+ * 线程礼让，yield()  提示线程调度器让出当前线程对CPU的使用
+ *
+ * 1. 调用yield会暂停当前正在执行的线程，并执行其他同等优先级的线程(实际上是让出了自己的CPU时间片)
+ * 2. yield和设置线程优先级都不能真正的做到设置优先，这个仅仅是对操作系统的任务调度器的一个提示
  */
 public class ThreadYieldTest {
 
     public static void main(String[] args) {
-        //线程礼让测试1
-        //threadYieldTest1();
+        // 线程礼让测试1
+        // threadYieldTest1();
 
-        //线程礼让测试2
+        // 线程礼让测试2
         threadYieldTest2();
     }
 

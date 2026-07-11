@@ -1,10 +1,9 @@
 package structure.proxy.staticproxy.staticproxy_e;
 
 /**
- * 订单对象
- * @author ronin
- * @version V1.0
- * @since 2019/8/19 10:46
+ * @author lingwh
+ * @desc 订单对象
+ * @date 2019/8/19 10:46
  */
 public class Order implements OrderApi {
 
@@ -25,11 +24,12 @@ public class Order implements OrderApi {
 
     /**
      * 构造方法，传入构建需要的数据
+     *
      * @param productName 订单订购的产品名称
      * @param orderNum 订单订购的数量
      * @param orderUser 创建订单的人员
      */
-    public Order(String productName,int orderNum,String orderUser){
+    public Order(String productName, int orderNum, String orderUser) {
         this.productName = productName;
         this.orderNum = orderNum;
         this.orderUser = orderUser;
@@ -41,7 +41,7 @@ public class Order implements OrderApi {
     }
 
     @Override
-    public void setProductName(String productName,String user) {
+    public void setProductName(String productName, String user) {
         this.productName = productName;
     }
 
@@ -51,7 +51,7 @@ public class Order implements OrderApi {
     }
 
     @Override
-    public void setOrderNum(int orderNum,String user) {
+    public void setOrderNum(int orderNum, String user) {
         this.orderNum = orderNum;
     }
 
@@ -61,7 +61,7 @@ public class Order implements OrderApi {
     }
 
     @Override
-    public void setOrderUser(String orderUser,String user) {
+    public void setOrderUser(String orderUser, String user) {
         this.orderUser = orderUser;
     }
 }

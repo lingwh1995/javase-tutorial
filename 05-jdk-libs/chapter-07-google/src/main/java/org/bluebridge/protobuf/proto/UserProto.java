@@ -215,7 +215,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         name_ = s;
@@ -235,7 +235,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
         getNameBytes() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         name_ = b;
@@ -856,7 +856,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
           getNameBytes() {
         java.lang.Object ref = name_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           name_ = b;
@@ -1250,7 +1250,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
        * <code>.org.bluebridge.protobuf.protobuf.color.Address address = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          org.bluebridge.protobuf.proto.UserProto.Address, org.bluebridge.protobuf.proto.UserProto.Address.Builder, org.bluebridge.protobuf.proto.UserProto.AddressOrBuilder> 
+          org.bluebridge.protobuf.proto.UserProto.Address, org.bluebridge.protobuf.proto.UserProto.Address.Builder, org.bluebridge.protobuf.proto.UserProto.AddressOrBuilder>
           internalGetAddressFieldBuilder() {
         if (addressBuilder_ == null) {
           addressBuilder_ = new com.google.protobuf.SingleFieldBuilder<
@@ -1439,7 +1439,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         province_ = s;
@@ -1459,7 +1459,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
         getProvinceBytes() {
       java.lang.Object ref = province_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         province_ = b;
@@ -1486,7 +1486,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         city_ = s;
@@ -1506,7 +1506,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
         getCityBytes() {
       java.lang.Object ref = city_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         city_ = b;
@@ -1533,7 +1533,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         detail_ = s;
@@ -1553,7 +1553,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
         getDetailBytes() {
       java.lang.Object ref = detail_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         detail_ = b;
@@ -1942,7 +1942,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
           getProvinceBytes() {
         java.lang.Object ref = province_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           province_ = b;
@@ -2034,7 +2034,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
           getCityBytes() {
         java.lang.Object ref = city_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           city_ = b;
@@ -2126,7 +2126,7 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
           getDetailBytes() {
         java.lang.Object ref = detail_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           detail_ = b;
@@ -2238,12 +2238,12 @@ public final class UserProto extends com.google.protobuf.GeneratedFile {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_org_bluebridge_protobuf_protobuf_color_User_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_org_bluebridge_protobuf_protobuf_color_User_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_org_bluebridge_protobuf_protobuf_color_Address_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_org_bluebridge_protobuf_protobuf_color_Address_fieldAccessorTable;
 

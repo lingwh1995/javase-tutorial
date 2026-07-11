@@ -7,6 +7,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author lingwh
+ * @desc Executors线程池测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestExecutors")
 public class TestExecutors {
     public static void main(String[] args) throws InterruptedException {

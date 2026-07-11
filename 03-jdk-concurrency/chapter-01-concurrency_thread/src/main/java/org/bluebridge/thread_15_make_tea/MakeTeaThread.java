@@ -1,10 +1,14 @@
 package org.bluebridge.thread_15_make_tea;
 
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc 泡茶线程
+ * @date 2026/7/9 00:00
+ */
 public class MakeTeaThread {
 
     public static void main(String[] args) {

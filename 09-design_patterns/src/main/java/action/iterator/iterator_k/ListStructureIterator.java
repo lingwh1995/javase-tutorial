@@ -3,14 +3,15 @@ package action.iterator.iterator_k;
 import java.util.Iterator;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/23 10:40
+ * @author lingwh
+ * @desc 列表结构迭代器
+ * @date 2019/9/23 10:40
  */
-public class ListStructureIterator implements Iterator{
+public class ListStructureIterator implements Iterator {
 
     private ListStructure listStructure;
     private int index;
+
     public ListStructureIterator(ListStructure listStructure) {
         this.listStructure = listStructure;
     }
@@ -18,8 +19,8 @@ public class ListStructureIterator implements Iterator{
     @Override
     public boolean hasNext() {
         boolean flag = false;
-        if(index < listStructure.size()){
-            index = index+1;
+        if (index < listStructure.size()) {
+            index = index + 1;
             flag = true;
         }
         return flag;
@@ -27,12 +28,9 @@ public class ListStructureIterator implements Iterator{
 
     @Override
     public Object next() {
-        return listStructure.getElement(index-1);
+        return listStructure.getElement(index - 1);
     }
 
     @Override
-    public void remove() {
-
-    }
-
+    public void remove() {}
 }

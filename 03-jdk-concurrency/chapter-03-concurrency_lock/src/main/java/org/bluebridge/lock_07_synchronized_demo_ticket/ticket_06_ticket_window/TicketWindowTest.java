@@ -5,6 +5,11 @@ import java.util.List;
 import java.util.Random;
 import java.util.Vector;
 
+/**
+ * @author lingwh
+ * @desc 多线程售票窗口测试
+ * @date 2026/7/9 00:00
+ */
 public class TicketWindowTest {
     public static void main(String[] args) {
         TicketWindow ticketWindow = new TicketWindow(1000);

@@ -1,9 +1,9 @@
 package recursion.recursion_a;
 
-
 /**
- * 斐波那契数列:1 1 2 3 5 8 13
- * @author ronin
+ * @author lingwh
+ * @desc 斐波那契数列:1 1 2 3 5 8 13
+ * @date 2026/7/9 00:00
  */
 public class FibonacciTest {
     public static void main(String[] args) {
@@ -12,13 +12,13 @@ public class FibonacciTest {
         System.out.println(fibonacci(3));
         System.out.println(fibonacci(4));
         System.out.println(fibonacci(5));
-
     }
-    public static int fibonacci(int n){
-        if(n == 1 || n == 2){
+
+    public static int fibonacci(int n) {
+        if (n == 1 || n == 2) {
             return n;
-        }else {
-            return fibonacci(n-2) + fibonacci(n-1);
+        } else {
+            return fibonacci(n - 2) + fibonacci(n - 1);
         }
     }
 }

@@ -6,20 +6,19 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Map子类(HashMap、Hashtable、ConcurrentHashMap) 线程安全问题
+ * @author lingwh
+ * @desc Map子类(HashMap、Hashtable、ConcurrentHashMap) 线程安全问题
+ * @date 2026/7/9 00:00
  */
 public class MapSubClassThreadSafeTest {
     public static void main(String[] args) {
-        //多线程环境下测试HashMap
+        // 多线程环境下测试HashMap
         multiThreadHashMapTest();
-
-        //多线程环境下测试HashMap + synchronized
+        // 多线程环境下测试HashMap + synchronized
         multiThreadHashMapAndSynchronizedTest();
-
-        //多线程环境下测试HashTable
+        // 多线程环境下测试HashTable
         multiThreadHashtableTest();
-
-        //多线程环境下测试ConcurrentHashMapTest
+        // 多线程环境下测试ConcurrentHashMapTest
         multiThreadConcurrentHashMapTest();
     }
 
@@ -85,7 +84,6 @@ public class MapSubClassThreadSafeTest {
 
         System.out.println("map.size() : " + map.size());
     }
-
 
     /**
      * 多线程环境下测试HashTable，因为HashTable是线程安全的，所以 table.size() 的值 一定是 1000

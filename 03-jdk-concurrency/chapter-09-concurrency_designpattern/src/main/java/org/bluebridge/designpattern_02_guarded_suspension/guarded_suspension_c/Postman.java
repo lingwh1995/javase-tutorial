@@ -1,5 +1,10 @@
 package org.bluebridge.designpattern_02_guarded_suspension.guarded_suspension_c;
 
+/**
+ * @author lingwh
+ * @desc 送信人
+ * @date 2026/7/9 00:00
+ */
 public class Postman extends Thread {
 
     private int id;

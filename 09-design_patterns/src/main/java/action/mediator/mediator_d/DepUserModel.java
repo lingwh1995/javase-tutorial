@@ -1,20 +1,25 @@
 package action.mediator.mediator_d;
 
 /**
- * 描述部门和人员关系的类
- * @author ronin
- * @version V1.0
- * @since 2019/8/14 13:40
+ * @author lingwh
+ * @desc 描述部门和人员关系的类
+ * @date 2019/8/14 13:40
  */
 public class DepUserModel {
 
-    /**用于部门和人员关系的编号，用做主键*/
+    /**
+     * 用于部门和人员关系的编号，用做主键
+     */
     private String depUserId;
 
-    /**部门的编号*/
+    /**
+     * 部门的编号
+     */
     private String depId;
 
-    /**人员的编号*/
+    /**
+     * 人员的编号
+     */
     private String userId;
 
     public String getDepUserId() {

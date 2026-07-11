@@ -3,19 +3,30 @@ package queue.queue_a;
 import java.util.Arrays;
 
 /**
- * 使用数组模拟队列
- *
- * @author ronin
+ * @author lingwh
+ * @desc 使用数组模拟队列
+ * @date 2026/7/9 00:00
  */
 public class Queue {
 
-    /**队列的最大容量*/
+    /**
+     * 队列的最大容量
+     */
     private int maxCapacity;
-    /**队列头指针:指向队列中第一个元素的前一个元素*/
+
+    /**
+     * 队列头指针:指向队列中第一个元素的前一个元素
+     */
     private int front;
-    /**列尾指针:指向队列中的最后一个元素*/
+
+    /**
+     * 列尾指针:指向队列中的最后一个元素
+     */
     private int rear;
-    /**用于存放队列中的元素*/
+
+    /**
+     * 用于存放队列中的元素
+     */
     private int[] elements;
 
     /**
@@ -36,7 +47,7 @@ public class Queue {
      *
      * @return
      */
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return front == rear;
     }
 
@@ -45,7 +56,7 @@ public class Queue {
      *
      * @return
      */
-    public boolean isFull(){
+    public boolean isFull() {
         return rear == maxCapacity - 1;
     }
 
@@ -54,8 +65,8 @@ public class Queue {
      *
      * @param n
      */
-    public void add(int n){
-        if(isFull()){
+    public void add(int n) {
+        if (isFull()) {
             throw new IllegalStateException("当前队列已满,无法继续执行入队列操作~");
         }
         elements[++rear] = n;
@@ -63,13 +74,13 @@ public class Queue {
     }
 
     /**
-     *  出对列:队列的头指针移动上移
+     * 出对列:队列的头指针移动上移
      *
      * @return
      */
-    public int pool(){
+    public int pool() {
         show();
-        if(isEmpty()){
+        if (isEmpty()) {
             throw new IllegalStateException("当前队列中没有元素,无法继续执行出队列操作~");
         }
         return elements[++front];
@@ -80,8 +91,8 @@ public class Queue {
      *
      * @return
      */
-    public int peek(){
-        if(isEmpty()){
+    public int peek() {
+        if (isEmpty()) {
             throw new IllegalStateException();
         }
         return elements[0];
@@ -90,15 +101,15 @@ public class Queue {
     /**
      * 显示队列存储数据
      */
-    public void show(){
-        if(isEmpty()){
-            System.out.println("当前队列中没有元素~"+"\telements:"+Arrays.toString(elements));
+    public void show() {
+        if (isEmpty()) {
+            System.out.println("当前队列中没有元素~" + "\telements:" + Arrays.toString(elements));
             return;
         }
-        System.out.print("[队列头指针位置:"+front+"\t队列尾指针位置:"+rear+",elements:"+Arrays.toString(elements)+"]");
+        System.out.print("[队列头指针位置:" + front + "\t队列尾指针位置:" + rear + ",elements:" + Arrays.toString(elements) + "]");
         System.out.printf("当前队列中元素:");
-        for (int i = front+1; i < rear+1; i++) {
-            System.out.printf("%d\t",elements[i]);
+        for (int i = front + 1; i < rear + 1; i++) {
+            System.out.printf("%d\t", elements[i]);
         }
         System.out.printf("\n");
     }

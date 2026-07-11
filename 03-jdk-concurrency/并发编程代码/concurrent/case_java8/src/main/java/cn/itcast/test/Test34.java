@@ -3,6 +3,11 @@ package cn.itcast.test;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntUnaryOperator;
 
+/**
+ * @author lingwh
+ * @desc AtomicInteger自定义更新测试
+ * @date 2026/7/9 00:00
+ */
 public class Test34 {
     public static void main(String[] args) {
 

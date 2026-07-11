@@ -14,13 +14,14 @@ public class PassByValueAndPassByReference {
     @Test
     public void testSwapNumber() {
         int a = 10, b = 20;
-        swapNumber(a,b);
+        swapNumber(a, b);
         // a和b的值没有改变的原因是java是值传递，在swapNumber()方法中，操作的是实参a和b的副本，而不是a和b本身
         log.info("a = {}, b = {}", a, b);
     }
 
     /**
      * 交换两个数
+     *
      * @param a
      * @param b
      */

@@ -1,46 +1,47 @@
 package action.state.state_i;
 
 /**
- * @author by lingwh
+ * 抽奖活动
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
-
-//抽奖活动;
 public class RaffleActivity {
-    //抽奖状态;
-    State state=null;
-    //奖品数量;
-    int count=0;
+    // 抽奖状态;
+    State state = null;
+    // 奖品数量;
+    int count = 0;
 
-    //初始化;定义奖品数量;不能抽奖;
+    // 初始化;定义奖品数量;不能抽奖;
     public RaffleActivity(int count) {
         System.out.println("快来玩啊,抽奖活动开始啦");
         this.state = getNotRaffleState();
         this.count = count;
     }
 
-    //不能抽奖状态;
+    // 不能抽奖状态;
     State notRaffleState = new NotRaffleState(this);
-    //可抽奖状态;
+    // 可抽奖状态;
     State raffleState = new RaffleState(this);
-    //发放奖品状态;
+    // 发放奖品状态;
     State offerPrizesState = new OfferPrizesState(this);
-    //奖品发放结束状态;
+    // 奖品发放结束状态;
     State noPrizesState = new NoPrizesState(this);
 
-    //扣除积分;
-    public void deductIntegral(){
+    // 扣除积分;
+    public void deductIntegral() {
         state.deductIntegral();
     }
 
-    //抽奖;
-    public void raffle(){
-        if(state.raffle()){
-            //抽奖了就做好发奖品的准备吧,
+    // 抽奖;
+    public void raffle() {
+        if (state.raffle()) {
+            // 抽奖了就做好发奖品的准备吧,
             state.offeringPrizes();
         }
     }
 
-    //getter ,setter方法;
+    // getter ,setter方法;
     public State getState() {
         return state;
     }
@@ -89,4 +90,3 @@ public class RaffleActivity {
         this.noPrizesState = noPrizesState;
     }
 }
-

@@ -1,14 +1,13 @@
 package org.bluebridge.io;
 
+import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 import org.junit.Test;
 
-import java.io.*;
-
 /**
  * @author lingwh
- * @desc
+ * @desc IOUtils工具类测试
  * @date 2025/9/15 11:34
  */
 @Slf4j
@@ -28,6 +27,7 @@ public class IOUtilsTest {
 
     /**
      * 安全的关闭流
+     *
      * @throws FileNotFoundException
      */
     @Test
@@ -41,5 +41,4 @@ public class IOUtilsTest {
             IOUtils.closeQuietly(inputStream);
         }
     }
-
 }

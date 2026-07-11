@@ -4,14 +4,15 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 /**
- * SimpleDateFormat.parse()线程安全问题以及解决
- *      方式一：使用同步锁解决线程安全问题
+ * @author lingwh
+ * @desc SimpleDateFormat.parse()线程安全问题以及解决 方式一：使用同步锁解决线程安全问题
+ * @date 2026/7/9 00:00
  */
 public class SimpleDateFormatTest {
     public static void main(String[] args) throws ParseException {
         testSimpleDateFormatThreadUnSafe();
 
-        //testSimpleDateFormatThreadSafe();
+        // testSimpleDateFormatThreadSafe();
     }
 
     /**

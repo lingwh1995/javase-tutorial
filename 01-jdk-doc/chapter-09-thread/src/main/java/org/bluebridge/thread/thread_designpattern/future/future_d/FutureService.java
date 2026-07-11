@@ -1,9 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.future.future_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/10 16:55
+ * @author lingwh
+ * @desc Future 模式服务
+ * @date 2019/10/10 16:55
  */
 public class FutureService {
     public Data request(final String request) {

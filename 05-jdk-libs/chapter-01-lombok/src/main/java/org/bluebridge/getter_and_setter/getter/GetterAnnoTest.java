@@ -1,6 +1,5 @@
 package org.bluebridge.getter_and_setter.getter;
 
-
 import org.junit.Test;
 
 /**
@@ -20,7 +19,6 @@ public class GetterAnnoTest {
         user.getName();
         user.getAge();
         // 私有的Getter方法外部无法访问
-        //user.getEmail();
+        // user.getEmail();
     }
-
 }

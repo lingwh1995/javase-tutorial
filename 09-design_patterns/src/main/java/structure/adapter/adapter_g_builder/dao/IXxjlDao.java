@@ -7,5 +7,6 @@ import structure.adapter.adapter_g_builder.domain.Xxjl;
  */
 public interface IXxjlDao {
     boolean save(Xxjl xxjl);
+
     boolean delete(Xxjl xxjl);
 }

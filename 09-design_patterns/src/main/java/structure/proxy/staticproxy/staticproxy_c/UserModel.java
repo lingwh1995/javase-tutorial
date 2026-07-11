@@ -1,10 +1,9 @@
 package structure.proxy.staticproxy.staticproxy_c;
 
 /**
- * 描述用户数据的对象
- * @author ronin
- * @version V1.0
- * @since 2019/8/15 9:12
+ * @author lingwh
+ * @desc 描述用户数据的对象
+ * @date 2019/8/15 9:12
  */
 public class UserModel {
 

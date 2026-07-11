@@ -1,7 +1,9 @@
 package org.bluebridge.thread_11_get_id;
 
 /**
- * getId() 获取线程id
+ * @author lingwh
+ * @desc getId() 获取线程id
+ * @date 2026/7/9 00:00
  */
 public class ThreadGetIdTest {
 

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * PECS原则实际应用：订单处理系统
- * 
- * 场景：电商平台需要处理不同类型的订单，并进行数据统计和导出
+ * @author lingwh
+ * @desc PECS原则测试
+ * @date 2026/7/9 00:00
  */
 public class PecsTest {
 
@@ -18,7 +18,7 @@ public class PecsTest {
             new Order("ORD-001", 100.0),
             new Order("ORD-002", 200.0)
         );
-        
+
         List<VipOrder> vipOrders = List.of(
             new VipOrder("VIP-001", 500.0, "张三"),
             new VipOrder("VIP-002", 800.0, "李四")
@@ -52,8 +52,7 @@ public class PecsTest {
     }
 
     /**
-     * Producer场景：统计订单总金额
-     * 使用 ? extends Order 可以接收 Order 及其子类（VipOrder等）
+     * Producer场景：统计订单总金额 使用 ? extends Order 可以接收 Order 及其子类（VipOrder等）
      */
     public static double calculateTotal(List<? extends Order> orders) {
         double total = 0;
@@ -64,8 +63,7 @@ public class PecsTest {
     }
 
     /**
-     * Consumer场景：收集订单到统一列表
-     * 使用 ? super Order 可以写入 Order 及其子类到父类列表
+     * Consumer场景：收集订单到统一列表 使用 ? super Order 可以写入 Order 及其子类到父类列表
      */
     public static void collectOrders(List<? super Order> target, List<? extends Order> source) {
         for (Order order : source) {
@@ -74,8 +72,7 @@ public class PecsTest {
     }
 
     /**
-     * Producer场景：导出订单到CSV
-     * 使用 ? extends Order 支持导出不同类型的订单
+     * Producer场景：导出订单到CSV 使用 ? extends Order 支持导出不同类型的订单
      */
     public static void exportToCsv(List<? extends Order> orders, String filename) {
         System.out.println("导出 " + orders.size() + " 条订单到 " + filename);
@@ -85,8 +82,7 @@ public class PecsTest {
     }
 
     /**
-     * Consumer场景：批量添加订单
-     * 使用 ? super Order 可以向任意父类容器添加订单
+     * Consumer场景：批量添加订单 使用 ? super Order 可以向任意父类容器添加订单
      */
     public static void batchAddOrders(List<? super Order> orderList) {
         orderList.add(new Order("BATCH-001", 999.0));

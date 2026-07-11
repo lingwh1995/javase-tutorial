@@ -1,5 +1,10 @@
 package org.bluebridge.designpattern_06_producer_consumer.producer_consumer_02;
 
+/**
+ * @author lingwh
+ * @desc 生产者消费者模式
+ * @date 2026/7/9 00:00
+ */
 public class ProducerConsumerTest {
     private boolean flag = false;
 
@@ -34,7 +39,7 @@ public class ProducerConsumerTest {
      * 生产者
      */
     public void consumer() {
-        synchronized(this) {
+        synchronized (this) {
             while (!flag) {
                 try {
                     this.wait(); // 如果 flag 为 false，则等待
@@ -78,4 +83,3 @@ public class ProducerConsumerTest {
         consumerThread.start();
     }
 }
-

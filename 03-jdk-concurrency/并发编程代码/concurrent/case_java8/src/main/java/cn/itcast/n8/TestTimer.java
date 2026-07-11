@@ -8,6 +8,11 @@ import java.util.concurrent.*;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc Timer定时器测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestTimer")
 public class TestTimer {
     public static void main(String[] args) throws ExecutionException, InterruptedException {

@@ -1,10 +1,9 @@
 package action.strategy.strategy_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @desc    常规客户:不打折
- * @since 2019/8/2 15:07
+ * @author lingwh
+ * @desc 常规客户:不打折
+ * @date 2019/8/2 15:07
  */
 public class NormalCustomerPriceStrategy implements PriceStragegy {
 

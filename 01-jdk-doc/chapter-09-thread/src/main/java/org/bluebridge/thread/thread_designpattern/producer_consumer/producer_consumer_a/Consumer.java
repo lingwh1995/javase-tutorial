@@ -3,20 +3,22 @@ package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_co
 import java.util.Random;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 消费者
+ * @date 2026/7/9 00:00
  */
-public class Consumer extends Thread{
+public class Consumer extends Thread {
     private final MessageQueue messageQueue;
-    private final static Random random = new Random();
+    private static final Random random = new Random();
 
-    public Consumer(MessageQueue messageQueue,int seq){
+    public Consumer(MessageQueue messageQueue, int seq) {
         super("CONSUMER" + seq);
         this.messageQueue = messageQueue;
     }
 
     @Override
     public void run() {
-        while(true){
+        while (true) {
             try {
                 Message message = messageQueue.take();
                 messageQueue.put(message);

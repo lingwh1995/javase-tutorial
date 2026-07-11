@@ -1,13 +1,11 @@
 package action.strategy.strategy_e.service;
 
-import java.io.IOException;
-
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/5 9:26
+ * @author lingwh
+ * @desc 数据库日志服务
+ * @date 2019/8/5 9:26
  */
-public class LogServiceDb implements ILogService{
+public class LogServiceDb implements ILogService {
 
     /**
      * 记录日志的方法

@@ -5,6 +5,11 @@ import java.util.Iterator;
 import java.util.Queue;
 import java.util.concurrent.atomic.AtomicReference;
 
+/**
+ * @author lingwh
+ * @desc 并发队列测试v1
+ * @date 2026/7/9 00:00
+ */
 public class TestV1 {
 
     public static void main(String[] args) {

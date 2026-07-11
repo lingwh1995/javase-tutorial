@@ -46,5 +46,4 @@ public class TestCorrectPostureStep2 {
             }
         }, "送烟的").start();
     }
-
 }

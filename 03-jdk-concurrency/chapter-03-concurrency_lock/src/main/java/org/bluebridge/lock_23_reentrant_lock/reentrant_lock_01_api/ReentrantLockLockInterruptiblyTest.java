@@ -4,8 +4,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * lockInterruptibly()方法
- *      等待锁时可以被打断
+ * @author lingwh
+ * @desc lockInterruptibly()方法
+ * @date 2026/7/9 00:00
  */
 public class ReentrantLockLockInterruptiblyTest {
     public static void main(String[] args) throws InterruptedException {
@@ -45,11 +46,11 @@ public class ReentrantLockLockInterruptiblyTest {
         },"t2");
 
         t1.start();
-        //让thread1先执行
+        // 让thread1先执行
         Thread.sleep(100);
         t2.start();
 
-        //主线程组合一会让子线程启动
+        // 主线程组合一会让子线程启动
         Thread.sleep(100);
 
         t2.interrupt();

@@ -25,6 +25,7 @@ public class FileUtilsTest {
 
     /**
      * 读取文件内容到字符串
+     *
      * @throws IOException
      */
     @Test
@@ -36,6 +37,7 @@ public class FileUtilsTest {
 
     /**
      * 读取文件内容到字符串
+     *
      * @throws IOException
      */
     @Test
@@ -46,6 +48,7 @@ public class FileUtilsTest {
 
     /**
      * 复制文件
+     *
      * @throws IOException
      */
     @Test
@@ -55,6 +58,7 @@ public class FileUtilsTest {
 
     /**
      * 删除文件
+     *
      * @throws IOException
      */
     @Test
@@ -113,5 +117,4 @@ public class FileUtilsTest {
         String readableSize = FileUtils.byteCountToDisplaySize(sizeInBytes);
         log.info("readableSize: {}", readableSize);
     }
-
 }

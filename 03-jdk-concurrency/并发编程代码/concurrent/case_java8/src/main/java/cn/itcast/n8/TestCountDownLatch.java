@@ -11,6 +11,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc CountDownLatch测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestCountDownLatch")
 public class TestCountDownLatch {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -51,7 +56,6 @@ public class TestCountDownLatch {
 
     private static void test4() throws InterruptedException {
         CountDownLatch latch = new CountDownLatch(3);
-
         new Thread(() -> {
             log.debug("begin...");
             sleep(1);

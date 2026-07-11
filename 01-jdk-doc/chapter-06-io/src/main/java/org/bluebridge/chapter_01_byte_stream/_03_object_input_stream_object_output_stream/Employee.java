@@ -9,12 +9,14 @@ import java.util.GregorianCalendar;
  * @desc ObjectStream 用于实现序列化和饭序列化
  * @date 2025/8/16 13:41
  */
-public class Employee implements Serializable{
+public class Employee implements Serializable {
     private static final long serialVersionUID = -167978670073609475L;
+
     /**
      * 被transient修饰的属性不会被序列化
      */
-    transient private String name;
+    private transient String name;
+
     private double salary;
     private Date hireDay;
 
@@ -46,6 +48,4 @@ public class Employee implements Serializable{
     public String toString() {
         return getClass().getName() + " [name=" + name + ", salary=" + salary + ", hireDay=" + hireDay + "]";
     }
-
 }
-

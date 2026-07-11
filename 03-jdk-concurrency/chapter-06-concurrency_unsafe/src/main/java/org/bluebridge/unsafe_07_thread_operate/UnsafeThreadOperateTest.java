@@ -1,12 +1,13 @@
 package org.bluebridge.unsafe_07_thread_operate;
 
+import java.util.concurrent.TimeUnit;
 import org.bluebridge.util.UnsafeAccessor;
 import sun.misc.Unsafe;
 
-import java.util.concurrent.TimeUnit;
-
 /**
- * Unsafe应用六    操作线程
+ * @author lingwh
+ * @desc Unsafe应用六 操作线程
+ * @date 2026/7/9 00:00
  */
 public class UnsafeThreadOperateTest {
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class UnsafeThreadOperateTest {
         }).start();
 
         System.out.println("park main mainThread......");
-        unsafe.park(false,0L);
+        unsafe.park(false, 0L);
         System.out.println("unpark mainThread success......");
     }
 }

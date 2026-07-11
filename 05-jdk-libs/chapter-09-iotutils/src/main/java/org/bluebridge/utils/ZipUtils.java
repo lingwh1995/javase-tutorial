@@ -5,9 +5,15 @@ import java.io.ByteArrayOutputStream;
 import java.util.stream.IntStream;
 import java.util.zip.GZIPInputStream;
 
+/**
+ * @author lingwh
+ * @desc 压缩解压工具类
+ * @date 2026/7/9 00:00
+ */
 public class ZipUtils {
     /**
      * GZip解压
+     *
      * @param data
      * @return
      */
@@ -35,12 +41,13 @@ public class ZipUtils {
 
     /**
      * 将 int[] 转换为 byte[]
+     *
      * @param intArray
      * @return
      */
     public static byte[] intArrToByteArr(int[] intArray) {
         byte[] bytes = new byte[intArray.length];
-        IntStream.range(0,intArray.length).forEach(i -> bytes[i] = (byte) intArray[i]);
+        IntStream.range(0, intArray.length).forEach(i -> bytes[i] = (byte) intArray[i]);
         return bytes;
     }
 }

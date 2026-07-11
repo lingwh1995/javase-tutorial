@@ -3,22 +3,30 @@ package org.bluebridge.tcpip.v1;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * TCP四次挥手模拟
+ * @author lingwh
+ * @desc TCP四次挥手模拟
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class TCPWaveBye {
-    
+
     // 连接状态枚举
     enum ConnectionState {
-        ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, TIME_WAIT, CLOSE_WAIT, LAST_ACK, CLOSED
+        ESTABLISHED,
+        FIN_WAIT_1,
+        FIN_WAIT_2,
+        TIME_WAIT,
+        CLOSE_WAIT,
+        LAST_ACK,
+        CLOSED
     }
-    
+
     public static void fourWayWaveBye() {
         log.info("\n=== TCP 四次挥手模拟 ===");
 
         ConnectionState clientState = ConnectionState.ESTABLISHED;
         ConnectionState serverState = ConnectionState.ESTABLISHED;
-        
+
         log.info("初始状态: Client={}, Server={}", clientState, serverState);
 
         // 1. 客户端发送FIN

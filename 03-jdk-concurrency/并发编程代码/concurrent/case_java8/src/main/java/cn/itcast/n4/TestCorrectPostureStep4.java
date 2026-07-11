@@ -4,6 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc 正确姿势步骤4
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestCorrectPosture")
 public class TestCorrectPostureStep4 {
     static final Object room = new Object();
@@ -62,8 +67,5 @@ public class TestCorrectPostureStep4 {
                 room.notifyAll();
             }
         }, "送外卖的").start();
-
-
     }
-
 }

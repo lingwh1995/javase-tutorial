@@ -5,7 +5,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.stream.IntStream;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 使用 JDK CountDownLatch 实现倒计时
+ * @date 2026/7/9 00:00
  */
 public class JDKCountDown {
     private static final Random random = new Random(System.currentTimeMillis());

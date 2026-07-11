@@ -1,7 +1,9 @@
 package create.simplefactory.simplefactory_b;
 
 /**
- * 客户端:
+ * @author lingwh
+ * @desc 客户端:
+ * @date 2026/7/9 00:00
  */
 public class SimpleFactoryTest {
     public static void main(String[] args) {
@@ -10,5 +12,4 @@ public class SimpleFactoryTest {
         OrderPizza asianPizza = new OrderPizza("asian");
         Pizza asian = asianPizza.order();
     }
-
 }

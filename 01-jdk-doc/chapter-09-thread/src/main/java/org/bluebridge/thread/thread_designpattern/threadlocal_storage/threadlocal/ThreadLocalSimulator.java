@@ -4,23 +4,25 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc ThreadLocal 模拟器
+ * @date 2026/7/9 00:00
  */
 public class ThreadLocalSimulator<T> {
-    private final Map<Thread,T> storage = new HashMap<>();
+    private final Map<Thread, T> storage = new HashMap<>();
 
-    public void set(T t){
+    public void set(T t) {
         synchronized (this) {
             Thread key = Thread.currentThread();
             storage.put(key, t);
         }
     }
 
-    public T get(){
-        synchronized (this){
+    public T get() {
+        synchronized (this) {
             Thread key = Thread.currentThread();
             T value = storage.get(key);
-            if(value == null){
+            if (value == null) {
                 return initValue();
             }
             return value;

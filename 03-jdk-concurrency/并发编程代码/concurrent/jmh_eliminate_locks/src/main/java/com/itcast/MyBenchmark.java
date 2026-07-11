@@ -31,6 +31,11 @@ import java.util.Arrays;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc 锁消除基准测试
+ * @date 2026/7/9 00:00
+ */
 @Fork(1)
 @BenchmarkMode(Mode.AverageTime)
 @Warmup(iterations=3)

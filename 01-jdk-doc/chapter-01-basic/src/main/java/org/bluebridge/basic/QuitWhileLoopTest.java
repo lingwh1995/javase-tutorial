@@ -10,20 +10,20 @@ import org.junit.Test;
  */
 @Slf4j
 public class QuitWhileLoopTest {
-    
-	/**
-	 * 测试推出while循环
-	 */
-	@Test
-	public void testQuitWhileLoop() {
+
+    /**
+     * 测试推出while循环
+     */
+    @Test
+    public void testQuitWhileLoop() {
         boolean loop = true;
         int i = 0;
-        while(loop){
+        while (loop) {
             log.info("i: {}", i);
             i++;
-            if(i == 20){
+            if (i == 20) {
                 loop = false;
             }
         }
-	}
+    }
 }

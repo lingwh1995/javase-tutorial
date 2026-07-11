@@ -15,5 +15,4 @@ public class RedisStorageDao {
     public void save() {
         log.info("执行 redis 存储操作......");
     }
-
 }

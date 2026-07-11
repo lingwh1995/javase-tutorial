@@ -4,38 +4,40 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/16 15:32
+ * @author lingwh
+ * @desc Balking 模式数据类
+ * @date 2019/10/16 15:32
  */
 public class Data {
     private final String filename;
     private String content;
-    /**修改后的内容若未保存，则为true*/
+
+    /**
+     * 修改后的内容若未保存，则为true
+     */
     private boolean changed;
 
-    public Data(String filename,String content){
+    public Data(String filename, String content) {
         this.filename = filename;
         this.content = content;
         this.changed = true;
     }
 
-    public synchronized void change(String content){
+    public synchronized void change(String content) {
         this.content = content;
         this.changed = true;
     }
 
     public synchronized void save() throws IOException {
-        if(!changed){
-           return;
+        if (!changed) {
+            return;
         }
         doSave();
         this.changed = false;
     }
 
     private void doSave() throws IOException {
-        System.out.println(Thread.currentThread().getName()+
-                "calls doSave,content = " + content);
+        System.out.println(Thread.currentThread().getName() + "calls doSave,content = " + content);
         FileWriter writer = new FileWriter(filename);
         writer.write(content);
         writer.close();

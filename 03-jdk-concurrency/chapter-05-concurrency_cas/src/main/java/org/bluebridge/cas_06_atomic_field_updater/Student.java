@@ -1,5 +1,10 @@
 package org.bluebridge.cas_06_atomic_field_updater;
 
+/**
+ * @author lingwh
+ * @desc 学生实体类
+ * @date 2026/7/9 00:00
+ */
 public class Student {
     volatile int id;
     volatile String name;
@@ -22,9 +27,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+        return "Student{" + "id=" + id + ", name='" + name + '\'' + '}';
     }
 }

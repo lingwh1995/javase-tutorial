@@ -5,7 +5,13 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author lingwh
+ * @desc 同步等待通知打印
+ * @date 2026/7/9 00:00
+ */
 class SyncWaitNotify {
+
     private int flag;
     private int loopNumber;
 
@@ -64,6 +70,7 @@ class SyncLock extends ReentrantLock {
 }
 
 class SyncPark {
+
     private int loopNumber;
     private Thread[] threads;
 
@@ -106,8 +113,6 @@ class SyncPark {
         LockSupport.unpark(threads[0]);
     }
 }
-
-
 
 public class TestOrder {
 
@@ -155,5 +160,4 @@ public class TestOrder {
             syncWaitNotify.print(3, 1, "c\n");
         }).start();
     }
-
 }

@@ -2,6 +2,11 @@ package org.bluebridge.java9.chapter_01_interface;
 
 import org.junit.Test;
 
+/**
+ * @author lingwh
+ * @desc 测试调用接口中的方法
+ * @date 2026/7/9 00:00
+ */
 public class TestInvokeInterfaceMethod {
 
     /**
@@ -18,7 +23,7 @@ public class TestInvokeInterfaceMethod {
      */
     @Test
     public void testInvokeMethodStatic() {
-        //接口中的静态方法只能直接由接口调用，接口的实现类是不能调用这个方法的
+        // 接口中的静态方法只能直接由接口调用，接口的实现类是不能调用这个方法的
         MyInterface.methodStatic();
     }
 

@@ -9,6 +9,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static cn.itcast.pattern.Downloader.download;
 
+/**
+ * @author lingwh
+ * @desc 保护对象V3测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestGuardedObjectV3")
 public class TestGuardedObjectV3 {
     public static void main(String[] args) {

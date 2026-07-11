@@ -6,6 +6,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc 自旋锁CAS实现
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Test42")
 public class LockCas {
     // 0 没加锁

@@ -6,7 +6,6 @@ package org.bluebridge.enumeration;
  * @date 2026/1/10 11:23
  */
 public enum TimeUnitStrategyEnum {
-
     SECONDS("S", "秒") {
         @Override
         public long toMillis(long duration) {
@@ -42,15 +41,19 @@ public enum TimeUnitStrategyEnum {
 
     /**
      * 抽象方法：将当前单位数值转换为毫秒
+     *
      * @param duration
      * @return
      */
     public abstract long toMillis(long duration);
 
-    public String getCode() { return code; }
+    public String getCode() {
+        return code;
+    }
 
     /**
      * 静态查找方法
+     *
      * @param code
      * @return
      */

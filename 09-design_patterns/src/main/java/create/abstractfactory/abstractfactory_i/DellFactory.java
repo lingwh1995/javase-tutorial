@@ -1,12 +1,11 @@
 package create.abstractfactory.abstractfactory_i;
 
-
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/7 16:13
+ * @author lingwh
+ * @desc 戴尔电脑工厂
+ * @date 2019/8/7 16:13
  */
-public class DellFactory implements AbstractFactory{
+public class DellFactory implements AbstractFactory {
 
     /**
      * 构造方法在此处无意义,只是标识一个这个类是戴尔
@@ -24,12 +23,12 @@ public class DellFactory implements AbstractFactory{
     @Override
     public Object createHardware(int type) {
         Object obejct = null;
-        //type为1表示创建CPU，type为2表示创建主板 3表示创建内存
-        if(type==1){
+        // type为1表示创建CPU，type为2表示创建主板 3表示创建内存
+        if (type == 1) {
             obejct = new IntelCPU(1156);
-        }else if(type==2){
+        } else if (type == 2) {
             obejct = new GAMainboard(1156);
-        }else if(type == 3) {
+        } else if (type == 3) {
             obejct = new SonyMemory();
         }
         return obejct;

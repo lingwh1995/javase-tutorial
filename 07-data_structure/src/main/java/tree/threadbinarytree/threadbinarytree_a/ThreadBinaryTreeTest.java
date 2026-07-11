@@ -1,7 +1,9 @@
 package tree.threadbinarytree.threadbinarytree_a;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 线索二叉树测试
+ * @date 2026/7/9 00:00
  */
 public class ThreadBinaryTreeTest {
     public static void main(String[] args) {
@@ -20,14 +22,14 @@ public class ThreadBinaryTreeTest {
 
         node3.setLeft(node6);
 
-        //测试线索化
+        // 测试线索化
         ThreadBinaryTree threadBinaryTree = new ThreadBinaryTree(root);
         threadBinaryTree.threadNodes();
 
-        //以10号节点为例
+        // 以10号节点为例
         Node leftNode = node5.getLeft();
         Node rightNode = node5.getRight();
-        System.out.println("10号节点的前驱节点:"+leftNode);
-        System.out.println("10号节点的后继节点:"+rightNode);
+        System.out.println("10号节点的前驱节点:" + leftNode);
+        System.out.println("10号节点的后继节点:" + rightNode);
     }
 }

@@ -3,7 +3,9 @@ package org.bluebridge.chapter_03_list;
 import java.util.LinkedList;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc LinkedList常用方法测试
+ * @date 2026/7/9 00:00
  */
 public class LinkedListTest {
     public static void main(String[] args) {
@@ -19,9 +21,9 @@ public class LinkedListTest {
         System.out.println(list.getLast());
 
         System.out.println("-----------------");
-        System.out.println("removeFirst:"+list.removeFirst());
+        System.out.println("removeFirst:" + list.removeFirst());
         System.out.println(list);
-        System.out.println("removeLast:"+list.removeLast());
+        System.out.println("removeLast:" + list.removeLast());
         System.out.println(list);
     }
 }

@@ -1,6 +1,6 @@
 package create.abstractfactory.abstractfactory_l;
 
-public class OracleFactory implements IFactory{
+public class OracleFactory implements IFactory {
     @Override
     public IUser createUserInterface() {
         return new OracleUser();

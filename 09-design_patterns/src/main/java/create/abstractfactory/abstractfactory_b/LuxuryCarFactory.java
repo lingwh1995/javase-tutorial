@@ -1,25 +1,24 @@
 package create.abstractfactory.abstractfactory_b;
 
-/**  
- * @author ronin
- * @date 2019年3月11日  
- *    
+/**
+ * @author lingwh
+ * @desc 豪华汽车工厂
+ * @date 2019/3/11 00:00
  */
-public class LuxuryCarFactory implements CarFactory{
+public class LuxuryCarFactory implements CarFactory {
 
-	@Override
-	public Engine createEngine() {
-		return new LuxuryEngine();
-	}
+    @Override
+    public Engine createEngine() {
+        return new LuxuryEngine();
+    }
 
-	@Override
-	public Seat createSeat() {
-		return new LuxurySeat();
-	}
+    @Override
+    public Seat createSeat() {
+        return new LuxurySeat();
+    }
 
-	@Override
-	public Tyre createTyre() {
-		return new LuxuryTyre();
-	}
-
+    @Override
+    public Tyre createTyre() {
+        return new LuxuryTyre();
+    }
 }

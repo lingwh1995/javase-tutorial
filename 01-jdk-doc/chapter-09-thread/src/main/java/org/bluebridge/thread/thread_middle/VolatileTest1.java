@@ -1,14 +1,17 @@
 package org.bluebridge.thread.thread_middle;
 
 /**
- * volatile关键字:
- *  1.保证重排序的时候不会把后面的指令放在屏障的前面，也不会把前面的放到后面
- *  2.强制对外缓存的修改操作立即写入到主存
- *  3.如果是写操作，会导致其他CPU中的缓存失效
- * 使用场景:
- *  1.状态量的标记
- *  2.屏障前后的一致性
- * @author ronin
+ * volatile关键字
+ *
+ * 1. 保证重排序的时候不会把后面的指令放在屏障的前面，也不会把前面的放到后面
+ * 2. 强制对外缓存的修改操作立即写入到主存
+ * 3. 如果是写操作，会导致其他CPU中的缓存失效
+ * 4. 使用场景:
+ *    - 状态量的标记
+ *    - 屏障前后的一致性
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class VolatileTest1 {
     private volatile static int INIT_VALUE = 0;

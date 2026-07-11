@@ -1,8 +1,8 @@
 package org.bluebridge.thread_17_communication.wait_for_other_worker;
 
-import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author lingwh
@@ -20,7 +20,7 @@ public class CyclicBarrierTest {
 
     public static void main(String[] args) {
         log.info("主线程等待所有工作线程完成......");
-        
+
         // 启动3个工作线程
         new Thread(new Worker("工作线程1 => 启动服务A")).start();
         new Thread(new Worker("工作线程2 => 启动服务B")).start();
@@ -41,7 +41,7 @@ public class CyclicBarrierTest {
                 // 模拟工作耗时
                 Thread.sleep((long) (Math.random() * 3000));
                 log.info("{} 工作完成......", name);
-                
+
                 // 等待其他线程，当所有线程都到达屏障点时执行回调
                 BARRIER.await();
             } catch (InterruptedException | BrokenBarrierException e) {
@@ -50,5 +50,4 @@ public class CyclicBarrierTest {
             }
         }
     }
-
 }

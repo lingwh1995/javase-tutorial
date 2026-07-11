@@ -5,15 +5,18 @@ package create.builder.builder_h;
  */
 public abstract class HouseBuilder {
     protected House house = new House();
-    //地基
+
+    // 地基
     public abstract void buildBasic();
-    //墙面
+
+    // 墙面
     public abstract void buildWalls();
-    //屋顶
+
+    // 屋顶
     public abstract void buildRoof();
 
-    //建造好房子后，返回房子
-    public House buildHouse(){
+    // 建造好房子后，返回房子
+    public House buildHouse() {
         return house;
     }
 }

@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc 筛选赠送10G移动流量的目标用户过滤器
- * @since 2019/7/29 15:55
+ * @date 2019/7/29 15:55
  */
 public class FreeFlowFilter implements Filter {
     /**

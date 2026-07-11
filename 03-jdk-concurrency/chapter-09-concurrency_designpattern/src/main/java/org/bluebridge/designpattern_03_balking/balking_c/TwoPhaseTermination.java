@@ -1,17 +1,22 @@
 package org.bluebridge.designpattern_03_balking.balking_c;
 
 /**
- * Balking （犹豫）模式用在一个线程发现另一个线程或本线程已经做了某一件相同的事，那么本线程就无需再做 了，直接结束返回
+ * 两阶段终止 + 犹豫模式
  *
- * 两阶段终止模式 + 犹豫模式
- *     在一个线程t1中优雅地终止另一个线程t2，终止线程t2前，让线程t2有一个料理后事的机会
+ * 1. Balking（犹豫）模式
+ *    用在一个线程发现另一个线程或本线程已经做了某一件相同的事，那么本线程就无需再做了，直接结束返回
+ * 2. 两阶段终止模式 + 犹豫模式
+ *    在一个线程t1中优雅地终止另一个线程t2，终止线程t2前，让线程t2有一个料理后事的机会
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class TwoPhaseTermination {
-    //监控线程
+    // 监控线程
     private Thread monitor;
     private volatile boolean stop = false;
 
-    //判断是否执行过start()
+    // 判断是否执行过start()
     private boolean starting = false;
 
     /**
@@ -19,7 +24,7 @@ public class TwoPhaseTermination {
      */
     public void start() {
         synchronized (this) {
-            if(starting) {
+            if (starting) {
                 return;
             }
             starting = true;
@@ -58,7 +63,7 @@ public class TwoPhaseTermination {
 
     /**
      * 执行释放资源操作
-     *    尤其是释放锁资源，这样可以防止因为暴力终止线程而导致的死锁情况的发生
+     *     尤其是释放锁资源，这样可以防止因为暴力终止线程而导致的死锁情况的发生
      */
     public void releaseResource() {
         System.out.println("释放资源......");

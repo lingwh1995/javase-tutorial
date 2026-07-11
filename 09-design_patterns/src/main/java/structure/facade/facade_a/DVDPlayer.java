@@ -6,7 +6,7 @@ package structure.facade.facade_a;
 public class DVDPlayer {
     private static DVDPlayer dVDPlayer = new DVDPlayer();
 
-    public  static DVDPlayer getInstance(){
+    public static DVDPlayer getInstance() {
         return dVDPlayer;
     }
 

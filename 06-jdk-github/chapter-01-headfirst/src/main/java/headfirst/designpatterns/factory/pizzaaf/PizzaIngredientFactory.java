@@ -1,12 +1,21 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
+/**
+ * @author lingwh
+ * @desc 披萨原料工厂接口
+ * @date 2026/7/9 00:00
+ */
 public interface PizzaIngredientFactory {
- 
-	public Dough createDough();
-	public Sauce createSauce();
-	public Cheese createCheese();
-	public Veggies[] createVeggies();
-	public Pepperoni createPepperoni();
-	public Clams createClam();
- 
+
+    Dough createDough();
+
+    Sauce createSauce();
+
+    Cheese createCheese();
+
+    Veggies[] createVeggies();
+
+    Pepperoni createPepperoni();
+
+    Clams createClam();
 }

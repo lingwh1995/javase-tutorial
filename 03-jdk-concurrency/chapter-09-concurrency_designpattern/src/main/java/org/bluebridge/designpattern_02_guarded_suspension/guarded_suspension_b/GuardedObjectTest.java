@@ -2,10 +2,15 @@ package org.bluebridge.designpattern_02_guarded_suspension.guarded_suspension_b;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author lingwh
+ * @desc 测试保护性暂停模式
+ * @date 2026/7/9 00:00
+ */
 public class GuardedObjectTest {
 
     public static void main(String[] args) {
-        //线程1等待线程2的下载结果
+        // 线程1等待线程2的下载结果
         GuardedObject guardeObject = new GuardedObject();
         new Thread(() -> {
             System.out.println("等待结果......");
@@ -27,5 +32,4 @@ public class GuardedObjectTest {
         }, "t2").start();
 
     }
-
 }

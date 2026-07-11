@@ -6,6 +6,11 @@ import org.openjdk.jol.info.ClassLayout;
 import java.util.Vector;
 import java.util.concurrent.locks.LockSupport;
 
+/**
+ * @author lingwh
+ * @desc 偏向锁测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestBiased")
 public class TestBiased {
 
@@ -32,7 +37,7 @@ public class TestBiased {
 
         t2 = new Thread(() -> {
             LockSupport.park();
-            log.debug("===============> ");
+            log.debug("---------------> ");
             for (int i = 0; i < loopNumber; i++) {
                 Dog d = list.get(i);
                 log.debug(i + "\t" + ClassLayout.parseInstance(d).toPrintableSimple(true));
@@ -47,7 +52,7 @@ public class TestBiased {
 
         t3 = new Thread(() -> {
             LockSupport.park();
-            log.debug("===============> ");
+            log.debug("---------------> ");
             for (int i = 0; i < loopNumber; i++) {
                 Dog d = list.get(i);
                 log.debug(i + "\t" + ClassLayout.parseInstance(d).toPrintableSimple(true));

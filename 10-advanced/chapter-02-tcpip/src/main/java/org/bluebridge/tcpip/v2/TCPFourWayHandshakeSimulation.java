@@ -6,7 +6,9 @@ import java.util.concurrent.*;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * TCP 四次挥手模拟
+ * @author lingwh
+ * @desc TCP 四次挥手模拟
+ * @date 2026/7/9 00:00
  */
 @Slf4j
 public class TCPFourWayHandshakeSimulation {
@@ -103,8 +105,7 @@ public class TCPFourWayHandshakeSimulation {
         public void initiateFourWayHandshake() throws IOException {
             if (socket != null && !socket.isClosed()) {
                 PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-                BufferedReader in = new BufferedReader(
-                        new InputStreamReader(socket.getInputStream()));
+                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
                 log.info("[客户端] 发送FIN请求断开连接");
                 out.println("FIN");
@@ -130,8 +131,7 @@ public class TCPFourWayHandshakeSimulation {
                 PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
                 out.println(data);
 
-                BufferedReader in = new BufferedReader(
-                        new InputStreamReader(socket.getInputStream()));
+                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 String response = in.readLine();
                 log.info("[客户端] 收到回复: {}", response);
             }

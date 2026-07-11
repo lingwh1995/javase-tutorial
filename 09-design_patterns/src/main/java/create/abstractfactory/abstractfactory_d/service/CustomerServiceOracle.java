@@ -2,6 +2,11 @@ package create.abstractfactory.abstractfactory_d.service;
 
 import create.abstractfactory.abstractfactory_d.domain.Cusomer;
 
+/**
+ * @author lingwh
+ * @desc Oracle客户服务实现
+ * @date 2026/7/9 00:00
+ */
 public class CustomerServiceOracle implements ICustomerService {
 
     @Override

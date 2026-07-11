@@ -1,6 +1,10 @@
 package create.builder.builder_e;
 
-
+/**
+ * @author lingwh
+ * @desc 客户实体类
+ * @date 2026/7/9 00:00
+ */
 public class Customer {
     private String id;
     private String name;
@@ -13,6 +17,7 @@ public class Customer {
 
     /**
      * 外部构造方法需要私有化
+     *
      * @param builder
      */
     private Customer(Builder builder) {
@@ -32,52 +37,63 @@ public class Customer {
         private String hobby;
         private String addess;
 
-        public Builder() {
-        }
-        public Builder id(String param){
+        public Builder() {}
+
+        public Builder id(String param) {
             this.id = param;
             return this;
         }
 
-        public Builder name(String param){
+        public Builder name(String param) {
             this.name = param;
             return this;
         }
 
-        public Builder email(String param){
+        public Builder email(String param) {
             this.email = param;
             return this;
         }
 
-        public Builder age(Integer param){
+        public Builder age(Integer param) {
             this.age = param;
             return this;
         }
 
-        public Builder hobby(String param){
+        public Builder hobby(String param) {
             this.hobby = param;
             return this;
         }
 
-        public Builder addess(String param){
+        public Builder addess(String param) {
             this.addess = param;
             return this;
         }
-        public Customer build(){
+
+        public Customer build() {
             return new Customer(this);
         }
     }
 
-
     @Override
     public String toString() {
-        return "Customer{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", age=" + age +
-                ", hobby='" + hobby + '\'' +
-                ", addess='" + addess + '\'' +
-                '}';
+        return "Customer{"
+                + "id='"
+                + id
+                + '\''
+                + ", name='"
+                + name
+                + '\''
+                + ", email='"
+                + email
+                + '\''
+                + ", age="
+                + age
+                + ", hobby='"
+                + hobby
+                + '\''
+                + ", addess='"
+                + addess
+                + '\''
+                + '}';
     }
 }

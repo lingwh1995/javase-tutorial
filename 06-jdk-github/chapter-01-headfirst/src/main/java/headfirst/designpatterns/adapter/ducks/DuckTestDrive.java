@@ -4,31 +4,36 @@ import headfirst.designpatterns.adapter.ducks.challenge.Drone;
 import headfirst.designpatterns.adapter.ducks.challenge.DroneAdapter;
 import headfirst.designpatterns.adapter.ducks.challenge.SuperDrone;
 
+/**
+ * @author lingwh
+ * @desc 鸭子测试驱动类
+ * @date 2026/7/9 00:00
+ */
 public class DuckTestDrive {
-	public static void main(String[] args) {
-		MallardDuck duck = new MallardDuck();
+    public static void main(String[] args) {
+        MallardDuck duck = new MallardDuck();
 
-		WildTurkey turkey = new WildTurkey();
-		Duck turkeyAdapter = new TurkeyAdapter(turkey);
+        WildTurkey turkey = new WildTurkey();
+        Duck turkeyAdapter = new TurkeyAdapter(turkey);
 
-		System.out.println("The Turkey says...");
-		turkey.gobble();
-		turkey.fly();
+        System.out.println("The Turkey says...");
+        turkey.gobble();
+        turkey.fly();
 
-		System.out.println("\nThe Duck says...");
-		testDuck(duck);
+        System.out.println("\nThe Duck says...");
+        testDuck(duck);
 
-		System.out.println("\nThe TurkeyAdapter says...");
-		testDuck(turkeyAdapter);
-		
-		// Challenge
-		Drone drone = new SuperDrone();
-		Duck droneAdapter = new DroneAdapter(drone);
-		testDuck(droneAdapter);
-	}
+        System.out.println("\nThe TurkeyAdapter says...");
+        testDuck(turkeyAdapter);
 
-	static void testDuck(Duck duck) {
-		duck.quack();
-		duck.fly();
-	}
+        // Challenge
+        Drone drone = new SuperDrone();
+        Duck droneAdapter = new DroneAdapter(drone);
+        testDuck(droneAdapter);
+    }
+
+    static void testDuck(Duck duck) {
+        duck.quack();
+        duck.fly();
+    }
 }

@@ -4,6 +4,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author lingwh
+ * @desc ReentrantLock的Condition条件变量测试
+ * @date 2026/7/9 00:00
+ */
 public class ReentrantLockConditionTest {
 
     private static ReentrantLock lock = new ReentrantLock();

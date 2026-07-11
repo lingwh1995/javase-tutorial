@@ -2,6 +2,11 @@ package cn.itcast.n4;
 
 import java.util.ArrayList;
 
+/**
+ * @author lingwh
+ * @desc 线程安全测试
+ * @date 2026/7/9 00:00
+ */
 public class TestThreadSafe {
 
     static final int THREAD_NUMBER = 2;

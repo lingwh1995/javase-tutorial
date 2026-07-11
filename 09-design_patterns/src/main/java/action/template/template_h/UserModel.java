@@ -1,10 +1,9 @@
 package action.template.template_h;
 
 /**
- * 描述用户信息的数据模型
- * @author ronin
- * @version V1.0
- * @since 2019/8/26 11:36
+ * @author lingwh
+ * @desc 描述用户信息的数据模型
+ * @date 2019/8/26 11:36
  */
 public class UserModel {
 
@@ -45,5 +44,3 @@ public class UserModel {
         this.age = age;
     }
 }
-
-

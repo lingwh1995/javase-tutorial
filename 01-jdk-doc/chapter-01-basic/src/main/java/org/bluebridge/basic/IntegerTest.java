@@ -4,7 +4,7 @@ import org.junit.Test;
 
 /**
  * @author lingwh
- * @desc
+ * @desc Integer测试
  * @date 2026/3/14 14:19
  */
 public class IntegerTest {

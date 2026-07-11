@@ -1,9 +1,8 @@
 package org.bluebridge.chapter_01_byte_stream._03_object_input_stream_object_output_stream;
 
+import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
-import java.io.*;
 
 /**
  * @author lingwh
@@ -23,7 +22,7 @@ public class ObjectInputStream_ObjectOutputStreamTest {
             oos.writeBoolean(true);
             oos.writeDouble(0.5);
             oos.writeUTF("&");
-            //如果输出流不关闭,则会抛出:java.io.EOFException
+            // 如果输出流不关闭,则会抛出:java.io.EOFException
             oos.close();
 
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream("d:/io/object_stream.txt"));
@@ -66,5 +65,4 @@ public class ObjectInputStream_ObjectOutputStreamTest {
             e.printStackTrace();
         }
     }
-
 }

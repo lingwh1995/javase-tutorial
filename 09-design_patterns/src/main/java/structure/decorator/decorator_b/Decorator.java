@@ -1,6 +1,11 @@
 package structure.decorator.decorator_b;
 
-public class Decorator extends Drink{
+/**
+ * @author lingwh
+ * @desc 装饰器
+ * @date 2026/7/9 00:00
+ */
+public class Decorator extends Drink {
 
     private Drink drink;
 

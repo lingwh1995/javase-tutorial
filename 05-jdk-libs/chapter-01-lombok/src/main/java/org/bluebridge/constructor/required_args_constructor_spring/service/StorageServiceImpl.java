@@ -29,5 +29,4 @@ public class StorageServiceImpl implements IStorageService {
         redisStorageDao.save();
         sqlServerStorageDao.save();
     }
-
 }

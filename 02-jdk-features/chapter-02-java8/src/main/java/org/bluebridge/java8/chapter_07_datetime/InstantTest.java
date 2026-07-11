@@ -1,11 +1,10 @@
 package org.bluebridge.java8.chapter_07_datetime;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -27,5 +26,4 @@ public class InstantTest {
         ZonedDateTime time3 = ZonedDateTime.now();
         log.info("当前时间：{}", time3);
     }
-
 }

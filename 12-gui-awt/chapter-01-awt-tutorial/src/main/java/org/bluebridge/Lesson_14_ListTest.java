@@ -1,7 +1,7 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -47,5 +47,4 @@ public class Lesson_14_ListTest {
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

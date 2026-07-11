@@ -3,6 +3,11 @@ package org.bluebridge;
 import cn.hutool.core.util.HexUtil;
 import org.bluebridge.utils.PaddingUtil;
 
+/**
+ * @author lingwh
+ * @desc 填充工具测试类
+ * @date 2026/7/9 00:00
+ */
 public class PaddingUtilTest {
 
     public static void main(String[] args) {
@@ -12,5 +17,4 @@ public class PaddingUtilTest {
         String dataArea = HexUtil.encodeHexStr(dataAreaBytesPadding);
         System.out.println(dataArea);
     }
-
 }

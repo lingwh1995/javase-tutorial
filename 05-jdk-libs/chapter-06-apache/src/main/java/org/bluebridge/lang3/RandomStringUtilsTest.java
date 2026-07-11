@@ -20,5 +20,4 @@ public class RandomStringUtilsTest {
         String randomCode = RandomStringUtils.randomNumeric(6);
         log.debug("{}", randomCode);
     }
-
 }

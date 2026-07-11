@@ -1,7 +1,9 @@
 package org.bluebridge.lock_05_synchronized_thread8lock.lock_1;
 
 /**
- * 情况1：12 或 21
+ * @author lingwh
+ * @desc 情况1：12 或 21
+ * @date 2026/7/9 00:00
  */
 public class Number {
     public synchronized void a() {
@@ -12,16 +14,15 @@ public class Number {
         System.out.println("2......");
     }
 
-
     public static void main(String[] args) {
-        //写法一
+        // 写法一
 //        Number n1 = new Number();
 //        new Thread(() -> { n1.a(); }).start();
 //        new Thread(() -> { n1.b(); }).start();
 
-        //写法二
+        // 写法二
         Number number = new Number();
-        new Thread(number :: a).start();
-        new Thread(number :: b).start();
+        new Thread(number::a).start();
+        new Thread(number::b).start();
     }
 }

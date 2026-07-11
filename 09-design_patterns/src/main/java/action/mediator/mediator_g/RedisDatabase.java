@@ -4,10 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Redis 数据库（具体同事类）
- * @author ronin
- * @version V1.0
- * @since 2019/8/15 8:36
+ * @author lingwh
+ * @desc Redis 数据库（具体同事类）
+ * @date 2019/8/15 8:36
  */
 public class RedisDatabase extends AbstractDatabase {
     private List<String> dataset = new LinkedList<String>();

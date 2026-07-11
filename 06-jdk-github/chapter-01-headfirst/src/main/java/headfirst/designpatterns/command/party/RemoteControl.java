@@ -1,44 +1,46 @@
 package headfirst.designpatterns.command.party;
 
-//
-// This is the invoker
-//
+/**
+ * @author lingwh
+ * @desc 遥控器(调用者)
+ * @date 2026/7/9 00:00
+ */
 public class RemoteControl {
-	Command[] onCommands;
-	Command[] offCommands;
-	Command undoCommand;
- 
-	public RemoteControl() {
-		onCommands = new Command[7];
-		offCommands = new Command[7];
- 
-		Command noCommand = new NoCommand();
-		for(int i=0;i<7;i++) {
-			onCommands[i] = noCommand;
-			offCommands[i] = noCommand;
-		}
-		undoCommand = noCommand;
-	}
-  
-	public void setCommand(int slot, Command onCommand, Command offCommand) {
-		onCommands[slot] = onCommand;
-		offCommands[slot] = offCommand;
-	}
- 
-	public void onButtonWasPushed(int slot) {
-		onCommands[slot].execute();
-		undoCommand = onCommands[slot];
-	}
- 
-	public void offButtonWasPushed(int slot) {
-		offCommands[slot].execute();
-		undoCommand = offCommands[slot];
-	}
+    Command[] onCommands;
+    Command[] offCommands;
+    Command undoCommand;
+
+    public RemoteControl() {
+        onCommands = new Command[7];
+        offCommands = new Command[7];
+
+        Command noCommand = new NoCommand();
+        for (int i = 0; i < 7; i++) {
+            onCommands[i] = noCommand;
+            offCommands[i] = noCommand;
+        }
+        undoCommand = noCommand;
+    }
+
+    public void setCommand(int slot, Command onCommand, Command offCommand) {
+        onCommands[slot] = onCommand;
+        offCommands[slot] = offCommand;
+    }
+
+    public void onButtonWasPushed(int slot) {
+        onCommands[slot].execute();
+        undoCommand = onCommands[slot];
+    }
+
+    public void offButtonWasPushed(int slot) {
+        offCommands[slot].execute();
+        undoCommand = offCommands[slot];
+    }
 
 	public void undoButtonWasPushed() {
 		undoCommand.undo();
 	}
- 
+
 	public String toString() {
 		StringBuffer stringBuff = new StringBuffer();
 		stringBuff.append("\n------ Remote Control -------\n");

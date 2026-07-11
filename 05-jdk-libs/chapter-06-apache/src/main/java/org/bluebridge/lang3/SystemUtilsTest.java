@@ -1,10 +1,9 @@
 package org.bluebridge.lang3;
 
+import java.io.File;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.SystemUtils;
 import org.junit.Test;
-
-import java.io.File;
 
 /**
  * @author lingwh
@@ -39,5 +38,4 @@ public class SystemUtilsTest {
         String userName = SystemUtils.USER_NAME;
         log.info("userName: {}", userName);
     }
-
 }

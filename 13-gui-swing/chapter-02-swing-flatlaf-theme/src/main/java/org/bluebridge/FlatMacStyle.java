@@ -18,7 +18,7 @@ public class FlatMacStyle {
             // 亮色mac主题
             UIManager.setLookAndFeel(new FlatMacLightLaf());
             // 暗色mac主题
-            //UIManager.setLookAndFeel(new FlatMacDarkLaf());
+            // UIManager.setLookAndFeel(new FlatMacDarkLaf());
             // 可选：设置一些 macOS 特有的微调
             UIManager.put("Button.arc", 10); // 按钮圆角
             UIManager.put("Component.arc", 10); // 组件圆角
@@ -57,7 +57,7 @@ public class FlatMacStyle {
             toolBar.add(new JLabel("过滤: "));
             toolBar.add(searchField);
 
-            // --- 3. 左侧导航栏 (树形结构或列表) ---
+            // 3. 左侧导航栏 (树形结构或列表)
             String[] treeData = {"我的文件", "最近使用", "下载", "文稿", "图片"};
             JList<String> navList = new JList<>(treeData);
             navList.setFixedCellHeight(35);
@@ -69,7 +69,7 @@ public class FlatMacStyle {
             scrollNav.setPreferredSize(new Dimension(160, 0));
             scrollNav.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.LIGHT_GRAY));
 
-            // --- 4. 中央主要内容区域 ---
+            // 4. 中央主要内容区域
             JPanel contentPanel = new JPanel(new GridBagLayout());
             contentPanel.setBackground(Color.WHITE);
             GridBagConstraints gbc = new GridBagConstraints();

@@ -10,6 +10,11 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.*;
 
+/**
+ * @author lingwh
+ * @desc 自定义 Tomcat 服务器
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.Jerrymouse")
 public class Jerrymouse {
     private final ExecutorService executorService = new ThreadPoolExecutor(

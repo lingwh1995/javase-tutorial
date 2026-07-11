@@ -2,9 +2,14 @@ package org.bluebridge;
 
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
+/**
+ * @author lingwh
+ * @desc FlatLaf Mac风格SVG图标展示
+ * @date 2026/7/9 00:00
+ */
 public class FlatMacSvg {
 
     public static void main(String[] args) {

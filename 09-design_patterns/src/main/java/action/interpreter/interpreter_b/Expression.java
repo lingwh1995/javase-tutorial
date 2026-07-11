@@ -3,7 +3,9 @@ package action.interpreter.interpreter_b;
 import java.util.HashMap;
 
 /**
- * 表达式抽象类
+ * @author lingwh
+ * @desc 表达式抽象类
+ * @date 2026/7/9 00:00
  */
 public abstract class Expression {
     /**
@@ -12,5 +14,5 @@ public abstract class Expression {
      * @param var key:公式 value:变量对应的具体值,如:{a=10,b=20}
      * @return
      */
-    public abstract int interpret(HashMap<String,Integer> var);
+    public abstract int interpret(HashMap<String, Integer> var);
 }

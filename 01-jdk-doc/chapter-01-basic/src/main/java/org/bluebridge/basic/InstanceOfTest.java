@@ -10,40 +10,32 @@ import org.junit.Test;
  */
 @Slf4j
 public class InstanceOfTest {
-	
-	/**
-	 * 测试继承时子类是不是父类
-	 */
-	@Test
-	public void testClassExtend(){
-	    A aa = new AA();
-		log.info("aa instanceof AA: {}", aa instanceof AA); // true
-		log.info("aa instanceof  A: {}", aa instanceof  A); // true
-	}
 
-	/**
-	 * 测试实现时实现类是不是instanceof父接口
-	 */
-	@Test
-	public void testImplementInterface(){
-	    B bb = new BB();
-		log.info("bb instanceof BB: {}", bb instanceof BB); // true
-		log.info("bb instanceof  B: {}", bb instanceof  B); // true
-	}
+    /**
+     * 测试继承时子类是不是父类
+     */
+    @Test
+    public void testClassExtend() {
+        A aa = new AA();
+        log.info("aa instanceof AA: {}", aa instanceof AA); // true
+        log.info("aa instanceof  A: {}", aa instanceof A); // true
+    }
+
+    /**
+     * 测试实现时实现类是不是instanceof父接口
+     */
+    @Test
+    public void testImplementInterface() {
+        B bb = new BB();
+        log.info("bb instanceof BB: {}", bb instanceof BB); // true
+        log.info("bb instanceof  B: {}", bb instanceof B); // true
+    }
 }
 
+class A {}
 
-class A{
+class AA extends A {}
 
-}
-class AA extends A{
+interface B {}
 
-}
-
-interface B{
-
-}
-
-class BB implements B{
-
-}
+class BB implements B {}

@@ -1,10 +1,9 @@
 package action.interpreter.interpreter_d;
 
 /**
- * 用来封装每一个解析出来的元素对应的属性
- * @author ronin
- * @version V1.0
- * @since 2019/8/27 16:33
+ * @author lingwh
+ * @desc 用来封装每一个解析出来的元素对应的属性
+ * @date 2019/8/27 16:33
  */
 public class ParserModel {
 

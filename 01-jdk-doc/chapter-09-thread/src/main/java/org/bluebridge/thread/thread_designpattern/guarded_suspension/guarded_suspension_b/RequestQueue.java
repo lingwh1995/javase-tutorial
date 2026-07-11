@@ -4,14 +4,14 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/16 10:32
+ * @author lingwh
+ * @desc 请求队列
+ * @date 2019/10/16 10:32
  */
 public class RequestQueue {
     private final BlockingQueue<Request> queue = new LinkedBlockingQueue<>();
 
-    public Request getRequest(){
+    public Request getRequest() {
         Request request = null;
         try {
             request = queue.take();
@@ -21,7 +21,7 @@ public class RequestQueue {
         return request;
     }
 
-    public void putRequest(Request request){
+    public void putRequest(Request request) {
         try {
             queue.put(request);
         } catch (InterruptedException e) {

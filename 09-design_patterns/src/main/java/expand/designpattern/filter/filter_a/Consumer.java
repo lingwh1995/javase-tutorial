@@ -1,10 +1,9 @@
 package expand.designpattern.filter.filter_a;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc 用户
- * @since 2019/7/29 15:52
+ * @date 2019/7/29 15:52
  */
 public class Consumer {
     /**
@@ -27,7 +26,7 @@ public class Consumer {
      */
     private Integer star;
 
-    public Consumer(String name,Integer combos, Integer existsYears, Integer star) {
+    public Consumer(String name, Integer combos, Integer existsYears, Integer star) {
         this.name = name;
         this.combos = combos;
         this.existsYears = existsYears;

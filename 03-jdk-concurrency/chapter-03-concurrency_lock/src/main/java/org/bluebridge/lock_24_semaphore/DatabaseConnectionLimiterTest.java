@@ -1,12 +1,13 @@
 package org.bluebridge.lock_24_semaphore;
 
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 /**
- * 限制数据库连接数
+ * @author lingwh
+ * @desc 限制数据库连接数
+ * @date 2026/7/9 00:00
  */
 public class DatabaseConnectionLimiterTest {
     private static final int MAX_CONNECTIONS = 2;
@@ -16,16 +17,17 @@ public class DatabaseConnectionLimiterTest {
         ExecutorService executor = Executors.newFixedThreadPool(10);
 
         for (int i = 0; i < 10; i++) {
-            executor.submit(() -> {
-                try {
-                    semaphore.acquire();
-                    accessDatabase();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } finally {
-                    semaphore.release();
-                }
-            });
+            executor.submit(
+                    () -> {
+                        try {
+                            semaphore.acquire();
+                            accessDatabase();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        } finally {
+                            semaphore.release();
+                        }
+                    });
         }
 
         executor.shutdown();

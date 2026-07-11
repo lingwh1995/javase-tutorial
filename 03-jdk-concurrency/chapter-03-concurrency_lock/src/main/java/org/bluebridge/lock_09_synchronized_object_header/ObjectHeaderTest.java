@@ -6,10 +6,11 @@ import org.openjdk.jol.info.GraphLayout;
 import org.openjdk.jol.vm.VM;
 
 /**
- * 参考博客     https://www.cnblogs.com/kuangdaoyizhimei/p/18422634
- *
+ * 注意：运行前要关闭指针压缩，添加如下vm参数即可：-XX:-UseCompressedOops
  *
  * 64位虚拟机中Object Header中markword结构
+ * 参考博客     https://www.cnblogs.com/kuangdaoyizhimei/p/18422634
+ *
  * |-----------------------------------------------------------------------------------------------------------------|
  * |                                             Object Header(128bits)                                              |
  * |-----------------------------------------------------------------------------------------------------------------|
@@ -25,10 +26,9 @@ import org.openjdk.jol.vm.VM;
  * |-----------------------------------------------------------------------------------------------------------------|
  * |                                                           |lock:2 | OOP to metadata object |    Marked for GC   |
  * |-----------------------------------------------------------------------------------------------------------------|
- */
-
-/**
- * 注意：运行前要关闭指针压缩，添加如下vm参数即可：-XX:-UseCompressedOops
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class ObjectHeaderTest {
 
@@ -37,10 +37,10 @@ public class ObjectHeaderTest {
      */
     @Test
     public void testPrintObjectHeaderHelloWorld() {
-        //对象
+        // 对象
         Object obj = new Object();
-        //数组
-        String[] array = new String[]{};
+        // 数组
+        String[] array = new String[] {};
         // 打印jvm的具体参数
         System.out.println(VM.current().details());
         System.out.println("---------------------------------------------------------------");
@@ -54,20 +54,19 @@ public class ObjectHeaderTest {
         System.out.println("---------------------------------------------------------------");
     }
 
-
     /**
      * 查看计算hashcode前后 object header: mark 的值
      */
     @Test
     public void testPrintObjectHeaderBeforeAndAfterCalcHashcode() {
-        //对象
+        // 对象
         Object obj = new Object();
 
         // 计算hashcode前打印普通对象头信息
         System.out.println(ClassLayout.parseInstance(obj).toPrintable());
         System.out.println("---------------------------------------------------------------");
 
-        //计算hashcode
+        // 计算hashcode
         System.out.printf("十进制hashCode: %s，十六进制hashCode: %s%n", obj.hashCode(), Integer.toHexString(obj.hashCode()));
         System.out.println("---------------------------------------------------------------");
 
@@ -80,7 +79,7 @@ public class ObjectHeaderTest {
      */
     @Test
     public void testPrintObjectTotalSize() {
-        //对象
+        // 对象
         Object object = new Object();
         System.out.println("Object total size: " + GraphLayout.parseInstance(object).totalSize() + " bytes");
     }

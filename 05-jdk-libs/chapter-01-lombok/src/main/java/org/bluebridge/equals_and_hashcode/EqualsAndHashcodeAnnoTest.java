@@ -1,6 +1,5 @@
 package org.bluebridge.equals_and_hashcode;
 
-
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -17,5 +16,4 @@ public class EqualsAndHashcodeAnnoTest {
         User user = new User();
         log.info("user.hashCode(): {}", user.hashCode());
     }
-
 }

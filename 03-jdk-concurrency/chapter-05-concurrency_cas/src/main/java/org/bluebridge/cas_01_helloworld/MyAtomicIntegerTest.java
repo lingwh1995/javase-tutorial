@@ -3,6 +3,11 @@ package org.bluebridge.cas_01_helloworld;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntUnaryOperator;
 
+/**
+ * @author lingwh
+ * @desc 自定义AtomicInteger测试
+ * @date 2026/7/9 00:00
+ */
 public class MyAtomicIntegerTest {
     public static void main(String[] args) {
         AtomicInteger atomicInteger = new AtomicInteger(2);
@@ -11,6 +16,7 @@ public class MyAtomicIntegerTest {
 
     /**
      * 模拟AtomicInteger中的updateAndGet()
+     *
      * @param i
      * @param operator
      * @return
@@ -18,7 +24,7 @@ public class MyAtomicIntegerTest {
     public static int updateAndGet(AtomicInteger i, IntUnaryOperator operator) {
         while (true) {
             int prev = i.get();
-            //使用函数式接口封装更新之的逻辑
+            // 使用函数式接口封装更新之的逻辑
             int next = operator.applyAsInt(prev);
             if (i.compareAndSet(prev, next)) {
                 return next;

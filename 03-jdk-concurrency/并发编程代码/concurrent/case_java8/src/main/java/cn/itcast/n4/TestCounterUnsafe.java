@@ -2,6 +2,11 @@ package cn.itcast.n4;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lingwh
+ * @desc 不安全计数器测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestCounterUnsafe")
 public class TestCounterUnsafe {
     static int counter = 0;

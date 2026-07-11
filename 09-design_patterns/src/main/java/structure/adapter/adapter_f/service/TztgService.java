@@ -3,6 +3,11 @@ package structure.adapter.adapter_f.service;
 import structure.adapter.adapter_f.dao.TztgDao;
 import structure.adapter.adapter_f.domain.Tztg;
 
+/**
+ * @author lingwh
+ * @desc TztgService
+ * @date 2019/3/11 00:00
+ */
 public class TztgService implements ITztgService {
     private TztgDao tztgDao = new TztgDao();
 
@@ -18,7 +23,6 @@ public class TztgService implements ITztgService {
 
     @Override
     public boolean sendEmail(String email) {
-        return  tztgDao.sendEmail(email);
+        return tztgDao.sendEmail(email);
     }
-
 }

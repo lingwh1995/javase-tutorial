@@ -1,9 +1,9 @@
 package action.command.command_k;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/10 16:11
+ * @author lingwh
+ * @desc 操作接口实现类
+ * @date 2019/9/10 16:11
  */
 public class ConcreteOperationApi implements OperationApi {
 

@@ -1,11 +1,11 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * @author lingwh
- * @desc
+ * @desc Swing应用
  * @date 2025/8/4 18:24
  */
 public class SwingApp {

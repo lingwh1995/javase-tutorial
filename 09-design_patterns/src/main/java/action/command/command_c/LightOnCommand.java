@@ -1,5 +1,10 @@
 package action.command.command_c;
 
+/**
+ * @author lingwh
+ * @desc 灯光打开命令
+ * @date 2026/7/9 00:00
+ */
 public class LightOnCommand implements Command {
 
     private LightReceeiver lightReceeiver;

@@ -6,6 +6,11 @@ import java.util.concurrent.SynchronousQueue;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * @author lingwh
+ * @desc SynchronousQueue测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestSynchronousQueue")
 public class TestSynchronousQueue {
     public static void main(String[] args) {

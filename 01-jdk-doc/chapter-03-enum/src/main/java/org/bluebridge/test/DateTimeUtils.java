@@ -4,7 +4,7 @@ import org.bluebridge.enumeration.TimeUnitStrategyEnum;
 
 /**
  * @author lingwh
- * @desc
+ * @desc 日期时间工具类
  * @date 2026/1/10 11:28
  */
 public class DateTimeUtils {
@@ -19,8 +19,7 @@ public class DateTimeUtils {
     }
 
     /**
-     * 计算过期时间点（当前时间 + 指定单位长度）
-     * 常用于 Redis 缓存过期设置
+     * 计算过期时间点（当前时间 + 指定单位长度） 常用于 Redis 缓存过期设置
      */
     public static long calculateExpiration(long duration, String unit) {
         TimeUnitStrategyEnum strategy = TimeUnitStrategyEnum.of(unit);

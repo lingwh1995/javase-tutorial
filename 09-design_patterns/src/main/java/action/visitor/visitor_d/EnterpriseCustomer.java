@@ -1,11 +1,10 @@
 package action.visitor.visitor_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/11 9:35
+ * @author lingwh
+ * @date 2019/10/11 9:35
  */
-public class EnterpriseCustomer extends Customer{
+public class EnterpriseCustomer extends Customer {
 
     private String linkman;
     private String linkTelephone;
@@ -18,7 +17,7 @@ public class EnterpriseCustomer extends Customer{
      */
     @Override
     void accept(Visitor visitor) {
-        //回调访问者对象的相应方法
+        // 回调访问者对象的相应方法
         visitor.visitEnterpriseCustomer(this);
     }
 }

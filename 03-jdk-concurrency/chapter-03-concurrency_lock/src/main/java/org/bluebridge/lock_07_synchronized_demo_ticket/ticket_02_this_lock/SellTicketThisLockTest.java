@@ -3,7 +3,9 @@ package org.bluebridge.lock_07_synchronized_demo_ticket.ticket_02_this_lock;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
- * 使用this锁解决卖票数量大于500的情况
+ * @author lingwh
+ * @desc 使用this锁解决卖票数量大于500的情况
+ * @date 2026/7/9 00:00
  */
 public class SellTicketThisLockTest {
 

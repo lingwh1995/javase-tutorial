@@ -4,12 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 客户方已有的工资管理对象
- * @author ronin
- * @version V1.0
- * @since 2019/8/20 9:17
+ * @author lingwh
+ * @desc 客户方已有的工资管理对象
+ * @date 2019/8/20 9:17
  */
-public class PayManager extends Aggregate{
+public class PayManager extends Aggregate {
 
     /**
      * 聚合对象，这里是Java的集合对象
@@ -18,18 +17,19 @@ public class PayManager extends Aggregate{
 
     /**
      * 获取工资列表
+     *
      * @return 工资列表
      */
-    public List getPayList(){
+    public List getPayList() {
         return list;
     }
 
     /**
      * 计算工资，其实应该有很多参数，为了演示从简
      */
-    public void calcPay(){
-        //计算工资，并把工资信息填充到工资列表里面
-        //为了测试，做点数据进去
+    public void calcPay() {
+        // 计算工资，并把工资信息填充到工资列表里面
+        // 为了测试，做点数据进去
         PayModel pm1 = new PayModel();
         pm1.setPay(3800);
         pm1.setUserName("张三");
@@ -43,19 +43,19 @@ public class PayManager extends Aggregate{
     }
 
     @Override
-    public Iterator createIterator(){
+    public Iterator createIterator() {
         return new CollectionIteratorImpl(this);
     }
 
-    public Object get(int index){
+    public Object get(int index) {
         Object retObj = null;
-        if(index < this.list.size()){
+        if (index < this.list.size()) {
             retObj = this.list.get(index);
         }
         return retObj;
     }
 
-    public int size(){
+    public int size() {
         return this.list.size();
     }
 }

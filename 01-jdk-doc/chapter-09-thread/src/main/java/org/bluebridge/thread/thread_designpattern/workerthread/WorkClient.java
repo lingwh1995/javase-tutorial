@@ -1,15 +1,17 @@
 package org.bluebridge.thread.thread_designpattern.workerthread;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc Worker Thread 模式 - 客户端
+ * @date 2026/7/9 00:00
  */
 public class WorkClient {
     public static void main(String[] args) {
         final Channel channel = new Channel(5);
         channel.startWorker();
 
-        new TransportThread("Alex",channel).start();
-        new TransportThread("Jack",channel).start();
-        new TransportThread("William",channel).start();
+        new TransportThread("Alex", channel).start();
+        new TransportThread("Jack", channel).start();
+        new TransportThread("William", channel).start();
     }
 }

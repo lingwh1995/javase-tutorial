@@ -1,7 +1,13 @@
 package cn.itcast.n5;
 
+/**
+ * @author lingwh
+ * @desc 单例模式
+ * @date 2026/7/9 00:00
+ */
 public final class Singleton {
     private Singleton() {
+
     }
 
     private static volatile Singleton INSTANCE = null;

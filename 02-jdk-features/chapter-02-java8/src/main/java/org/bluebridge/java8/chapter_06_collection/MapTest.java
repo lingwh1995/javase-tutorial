@@ -1,28 +1,14 @@
 package org.bluebridge.java8.chapter_06_collection;
 
+import java.util.*;
+import java.util.function.Function;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
-import java.util.*;
-import java.util.function.Function;
-
 /**
  * @author lingwh
- * @desc
+ * @desc Map的computeIfAbsent和computeIfPresent方法测试
  * @date 2025/12/2 11:18
- */
-
-/**
- * Map.computeIfAbsent() 工作机制
- *    触发条件：当指定的 key 在 map 中不存在或者对应的值为 null 时执行
- *    核心功能：用于初始化键值对，如果键不存在则计算并添加新值
- *    参数传递：将 key 作为参数传递给映射函数 Function<? super K, ? extends V>
- *    典型应用：集合初始化、缓存场景
- * Map.computeIfPresent() 工作机制
- *    触发条件：当指定的 key 在 map 中存在且对应的值不为 null 时执行
- *    核心功能：用于更新已存在的键值对
- *    参数传递：将 key 和当前值作为参数传递给重映射函数 BiFunction<? super K, ? super V, ? extends V>
- *    典型应用：条件更新、计数器操作
  */
 @Slf4j
 public class MapTest {
@@ -38,10 +24,10 @@ public class MapTest {
         // 传统方式
         /*
         if(userMap.containsKey("admin")) {
-            userMap.put("employee", new ArrayList<>());
+                userMap.put("employee", new ArrayList<>());
         }
         if(userMap.containsKey("employee")) {
-            userMap.put("employee", new ArrayList<>());
+                userMap.put("employee", new ArrayList<>());
         }
         userMap.put("admin", Arrays.asList("超级管理员1", "超级管理员2"));
         userMap.put("employee", Arrays.asList("雇员1", "雇员2"));
@@ -146,5 +132,4 @@ public class MapTest {
 
         log.info("最终库存: {}", inventory);
     }
-
 }

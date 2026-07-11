@@ -1,6 +1,11 @@
 package action.visitor.visitor_b;
 
-public class Success extends Action{
+/**
+ * @author lingwh
+ * @desc 成功评价
+ * @date 2026/7/9 00:00
+ */
+public class Success extends Action {
     @Override
     public void getManResult(Man man) {
         System.out.println("男人给的评价是该歌手很成功......");

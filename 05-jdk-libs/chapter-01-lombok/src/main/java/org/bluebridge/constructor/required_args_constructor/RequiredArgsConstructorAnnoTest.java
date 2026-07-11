@@ -16,8 +16,7 @@ public class RequiredArgsConstructorAnnoTest {
      */
     @Test
     public void testRequiredArgsConstructorAnno() {
-        User user = new User("001","张三");
+        User user = new User("001", "张三");
         log.info("user: {}", user);
     }
-
 }

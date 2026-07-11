@@ -1,17 +1,19 @@
 package create.builder.builder_h;
 
 /**
- * 指挥者
+ * @author lingwh
+ * @desc 指挥者
+ * @date 2026/7/9 00:00
  */
 public class HouseDirector3 {
     private HouseBuilder houseBuilder;
 
-    //通过构造器传入HouseBuilder
+    // 通过构造器传入HouseBuilder
     public HouseDirector3(HouseBuilder houseBuilder) {
         this.houseBuilder = houseBuilder;
     }
 
-    //用于重置建造者
+    // 用于重置建造者
     public void setHouseBuilder(HouseBuilder houseBuilder) {
         this.houseBuilder = houseBuilder;
     }
@@ -19,7 +21,7 @@ public class HouseDirector3 {
     /**
      * 如何建造房子交给指挥者
      */
-    public House buildeHouse(){
+    public House buildeHouse() {
         houseBuilder.buildWalls();
         houseBuilder.buildRoof();
         houseBuilder.buildBasic();

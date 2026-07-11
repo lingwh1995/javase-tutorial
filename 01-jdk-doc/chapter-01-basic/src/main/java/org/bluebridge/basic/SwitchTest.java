@@ -8,11 +8,6 @@ import org.junit.Test;
  * @desc switch测试
  * @date 2019/7/10 13:39
  */
-
-/**
- * 1.switch可以进行嵌套
- * 2.switch中的case:后面的代码，可以使用{}括起来
- */
 @Slf4j
 public class SwitchTest {
 
@@ -97,5 +92,7 @@ public class SwitchTest {
 }
 
 enum Color {
-    RED,GREEN,BLUE
+    RED,
+    GREEN,
+    BLUE
 }

@@ -2,6 +2,11 @@ package cn.itcast.pattern;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author lingwh
+ * @desc 两阶段终止模式测试
+ * @date 2026/7/9 00:00
+ */
 @Slf4j(topic = "c.TestTwoPhaseTermination")
 public class TestTwoPhaseTermination {
     public static void main(String[] args) throws InterruptedException {
