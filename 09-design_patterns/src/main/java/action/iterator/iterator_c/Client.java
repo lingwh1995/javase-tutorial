@@ -1,7 +1,9 @@
 package action.iterator.iterator_c;
 
 /**
- * 对于List和Array两种不同的结构,可以使用相同的方式来遍历
+ * @author lingwh
+ * @desc 对于List和Array两种不同的结构,可以使用相同的方式来遍历
+ * @date 2026/7/9 00:00
  */
 public class Client {
     public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class Client {
          */
         Structure listStructure = new ListStructure();
         Iterator listiIterator = listStructure.iterator();
-        while (listiIterator.hasNext()){
+        while (listiIterator.hasNext()) {
             System.out.println(listiIterator.next());
         }
 
@@ -20,7 +22,7 @@ public class Client {
          */
         Structure arrayStructure = new ArrayStructure();
         Iterator arrayIterator = arrayStructure.iterator();
-        while (arrayIterator.hasNext()){
+        while (arrayIterator.hasNext()) {
             System.out.println(arrayIterator.next());
         }
     }

@@ -4,26 +4,26 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/10 17:57
+ * @author lingwh
+ * @desc
+ * @date 2019/10/10 17:57
  */
 public class Client {
     public static void main(String[] args) {
-        //准备点测试数据
+        // 准备点测试数据
         Collection<Customer> colCustomer = preparedTestData();
-        //循环对客户进行操作
-        for(Customer cm : colCustomer){
-            //进行偏好分析
+        // 循环对客户进行操作
+        for (Customer cm : colCustomer) {
+            // 进行偏好分析
             cm.predilectionAnalyze();
-            //进行价值分析
+            // 进行价值分析
             cm.worthAnalyze();
         }
     }
 
-    private static Collection<Customer> preparedTestData(){
+    private static Collection<Customer> preparedTestData() {
         Collection<Customer> colCustomer = new ArrayList<Customer>();
-        //为了测试方便，准备点数据
+        // 为了测试方便，准备点数据
         Customer cm1 = new EnterpriseCustomer();
 
         cm1.setName("ABC集团");

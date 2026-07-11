@@ -1,15 +1,15 @@
 package action.visitor.visitor_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/10/11 9:42
+ * @author lingwh
+ * @desc
+ * @date 2019/10/11 9:42
  */
 public class Client {
     public static void main(String[] args) {
-        //创建ObjectStructure
+        // 创建ObjectStructure
         ObjectStructure os = new ObjectStructure();
-        //准备点测试数据，创建客户对象，并加入ObjectStructure
+        // 准备点测试数据，创建客户对象，并加入ObjectStructure
         Customer cm1 = new EnterpriseCustomer();
         cm1.setName("ABC集团");
         os.addElement(cm1);
@@ -22,15 +22,15 @@ public class Client {
         cm3.setName("张三");
         os.addElement(cm3);
 
-        //客户提出服务请求，传入服务请求的Visitor
+        // 客户提出服务请求，传入服务请求的Visitor
         ServiceRequestVisitor srVisitor = new ServiceRequestVisitor();
         os.handleRequest(srVisitor);
 
-        //要对客户进行偏好分析，传入偏好分析的Visitor
+        // 要对客户进行偏好分析，传入偏好分析的Visitor
         PredilectionAnalyzeVisitor paVisitor = new PredilectionAnalyzeVisitor();
         os.handleRequest(paVisitor);
 
-        //要对客户进行价值分析，传入价值分析的Visitor
+        // 要对客户进行价值分析，传入价值分析的Visitor
         WorthAnalyzeVisitor waVisitor = new WorthAnalyzeVisitor();
         os.handleRequest(waVisitor);
     }

@@ -1,15 +1,15 @@
 package create.abstractfactory.abstractfactory_a;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 10:31
+ * @author lingwh
+ * @desc 客户端
+ * @date 2019/9/4 10:31
  */
 public class Client {
     public static void main(String[] args) {
-        //创建抽象工厂对象
+        // 创建抽象工厂对象
         AbstractFactory af = new ConcreteFactory1();
-        //通过抽象工厂来获取一系列的对象，如产品A和产品B
+        // 通过抽象工厂来获取一系列的对象，如产品A和产品B
         af.createProductA();
         af.createProductB();
     }

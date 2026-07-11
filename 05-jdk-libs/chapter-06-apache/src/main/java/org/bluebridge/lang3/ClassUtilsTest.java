@@ -1,10 +1,9 @@
 package org.bluebridge.lang3;
 
+import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ClassUtils;
 import org.junit.Test;
-
-import java.util.Map;
 
 /**
  * @author lingwh
@@ -57,5 +56,4 @@ public class ClassUtilsTest {
         isPrimitiveOrWrapper = ClassUtils.isPrimitiveOrWrapper(String.class);
         log.info("String.class isPrimitiveOrWrapper: {}", isPrimitiveOrWrapper);
     }
-
 }

@@ -2,7 +2,7 @@ package create.abstractfactory.abstractfactory_l;
 
 public class Client {
     public static void main(String[] args) {
-        //不使用设计模式直接获取用于操作的接口对象
+        // 不使用设计模式直接获取用于操作的接口对象
         IUser mysqlUser = new MysqlUser();
         mysqlUser.insert(new User());
         mysqlUser.getUser(1);
@@ -18,7 +18,7 @@ public class Client {
         oracleOrder.getOrder(1);
 
         System.out.println("--------------------------------------");
-        //使用了抽象工厂模式后，把创建操作接口的细节隐藏了起来，不用new了，直接从工厂中获取
+        // 使用了抽象工厂模式后，把创建操作接口的细节隐藏了起来，不用new了，直接从工厂中获取
         IFactory mysqlFactory = new MysqlFactory();
         IUser userInterfaceMysql = mysqlFactory.createUserInterface();
         userInterfaceMysql.insert(new User());
@@ -34,6 +34,5 @@ public class Client {
         IOrder orderInterfaceOracle = oracleFactory.createOrderInterface();
         orderInterfaceOracle.insert(new Order());
         orderInterfaceOracle.getOrder(1);
-
     }
 }

@@ -3,7 +3,9 @@ package og.bluebridge.generic.chapter_02_class_use_single_generic;
 import org.junit.Test;
 
 /**
- * 使用单个泛型测试
+ * @author lingwh
+ * @desc 使用单个泛型测试
+ * @date 2026/7/9 00:00
  */
 public class ClassUseSingleGenericTest {
 
@@ -27,5 +29,4 @@ public class ClassUseSingleGenericTest {
         objectPoint.setY("30");
         System.out.println(objectPoint);
     }
-
 }

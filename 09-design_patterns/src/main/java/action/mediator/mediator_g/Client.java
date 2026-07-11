@@ -1,9 +1,9 @@
 package action.mediator.mediator_g;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/15 8:40
+ * @author lingwh
+ * @desc 客户端
+ * @date 2019/8/15 8:40
  */
 public class Client {
     public static void main(String[] args) {

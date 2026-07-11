@@ -1,16 +1,16 @@
 package action.observer.observer_f;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/19 15:19
+ * @author lingwh
+ * @desc 客户端
+ * @date 2019/8/19 15:19
  */
 public class Client {
     public static void main(String[] args) {
 
-        //创建一个报纸，作为被观察者
+        // 创建一个报纸，作为被观察者
         NewsPaper subject = new NewsPaper();
-        //创建阅读者，也就是观察者
+        // 创建阅读者，也就是观察者
         Reader reader1 = new Reader();
         reader1.setName("张三");
 
@@ -20,12 +20,12 @@ public class Client {
         Reader reader3 = new Reader();
         reader3.setName("王五");
 
-        //注册阅读者
+        // 注册阅读者
         subject.addObserver(reader1);
         subject.addObserver(reader2);
         subject.addObserver(reader3);
 
-        //要出报纸啦
+        // 要出报纸啦
         subject.setContent("本期内容是观察者模式");
     }
 }

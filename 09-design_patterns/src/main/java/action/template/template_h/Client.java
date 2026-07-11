@@ -3,14 +3,14 @@ package action.template.template_h;
 import java.util.Collection;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/26 18:27
+ * @author lingwh
+ * @desc 客户端
+ * @date 2019/8/26 18:27
  */
 public class Client {
     public static void main(String[] args) {
         MysqlJDBCTemplate uj = new MysqlJDBCTemplate();
-        //先新增几条
+        // 先新增几条
 
         UserModel um1 = new UserModel();
         um1.setUuid("u1");
@@ -30,17 +30,17 @@ public class Client {
         um3.setAge(32);
         uj.create(um3);
 
-        //测试修改
+        // 测试修改
         um3.setName("王五被改了");
         um3.setAge(35);
         uj.update(um3);
 
-        //测试查询
+        // 测试查询
         UserQueryModel uqm = new UserQueryModel();
         uqm.setAge(20);
         uqm.setAge2(36);
         Collection<UserModel> col = uj.getByCondition(uqm);
-        for(UserModel tempUm : col){
+        for (UserModel tempUm : col) {
             System.out.println(tempUm);
         }
     }

@@ -1,5 +1,10 @@
 package action.strategy.strategy_b;
 
+/**
+ * @author lingwh
+ * @desc 客户端测试
+ * @date 2026/7/9 00:00
+ */
 public class Client {
     public static void main(String[] args) {
         System.out.println("--------------------测试野鸭各项技能--------------------");
@@ -20,11 +25,10 @@ public class Client {
         toyDuck.swim();
         toyDuck.drink();
 
-
-        //对玩具鸭进行升级，升级完成后玩具鸭具有了飞行行为
+        // 对玩具鸭进行升级，升级完成后玩具鸭具有了飞行行为
         System.out.println("--------------------测试最新版玩具鸭各项技能--------------------");
         Duck newToyDuck = new ToyDuck();
-            //升级飞翔行为
+        // 升级飞翔行为
         newToyDuck.setFlyBehavior(new GoodFlyBehavior());
         newToyDuck.fly();
         newToyDuck.swim();

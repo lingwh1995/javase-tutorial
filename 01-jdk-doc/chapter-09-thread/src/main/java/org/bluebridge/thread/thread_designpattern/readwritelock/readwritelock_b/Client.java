@@ -1,7 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_b;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 客户端
+ * @date 2026/7/9 00:00
  */
 public class Client {
     public static void main(String[] args) {

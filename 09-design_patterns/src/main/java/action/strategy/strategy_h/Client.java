@@ -1,9 +1,9 @@
 package action.strategy.strategy_h;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/29 9:08
+ * @author lingwh
+ * @desc 客户端
+ * @date 2019/8/29 9:08
  */
 public class Client {
     public static void main(String[] args) {

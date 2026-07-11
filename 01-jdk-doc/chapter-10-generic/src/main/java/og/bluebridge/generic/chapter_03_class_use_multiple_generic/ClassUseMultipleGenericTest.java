@@ -2,6 +2,11 @@ package og.bluebridge.generic.chapter_03_class_use_multiple_generic;
 
 import org.junit.Test;
 
+/**
+ * @author lingwh
+ * @desc 类使用多个泛型测试
+ * @date 2026/7/9 00:00
+ */
 public class ClassUseMultipleGenericTest {
 
     @Test
@@ -27,5 +32,4 @@ public class ClassUseMultipleGenericTest {
         objectStringPoint.setDesc("第三个坐标点");
         System.out.println(objectStringPoint);
     }
-
 }
