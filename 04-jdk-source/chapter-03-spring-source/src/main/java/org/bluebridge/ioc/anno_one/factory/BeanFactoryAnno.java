@@ -1,10 +1,10 @@
 package org.bluebridge.ioc.anno_one.factory;
 
-/**  
- * @author ronin
- * @date 2019年3月20日  
- *    
+/**
+ * @author lingwh
+ * @desc Bean 工厂注解接口
+ * @date 2019/3/20 00:00
  */
 public interface BeanFactoryAnno {
-	
+
 }

@@ -3,6 +3,11 @@ package org.bluebridge;
 import org.bluebridge.utils.Base64Util;
 import org.junit.Test;
 
+/**
+ * @author lingwh
+ * @desc Base64工具测试类
+ * @date 2026/7/9 00:00
+ */
 public class Base64UtilTest {
 
     @Test
@@ -16,5 +21,4 @@ public class Base64UtilTest {
         stringMessage = Base64Util.base64ToString(base64Message);
         System.out.println("stringMessage = " + stringMessage);
     }
-
 }

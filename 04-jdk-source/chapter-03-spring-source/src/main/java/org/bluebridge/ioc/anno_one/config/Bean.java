@@ -1,9 +1,9 @@
 package org.bluebridge.ioc.anno_one.config;
 
-/**  
- * @author ronin
- * @date 2019年3月20日  
- *    
+/**
+ * @author lingwh
+ * @desc Bean 定义
+ * @date 2019/3/20 00:00
  */
 public class Bean {
 

@@ -1,11 +1,12 @@
 package org.bluebridge.ioc.xml_two.factory;
 
-/**  
- * @author ronin
- * @date 2019年3月15日  
- *    
+/**
+ * @author lingwh
+ * @desc Bean工厂
+ * @date 2019/3/15 00:00
  */
 public interface BeanFactory {
+
     /**
      * 获取bean
      *

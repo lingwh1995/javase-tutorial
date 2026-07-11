@@ -3,9 +3,12 @@ package org.bluebridge.lock_19_multi_lock;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 多把锁
+ * @author lingwh
+ * @desc 多把锁
+ * @date 2026/7/9 00:00
  */
 public class BigRoomMultiLock {
+
     private final Object studyRoom = new Object();
     private final Object bedRoom = new Object();
 
@@ -19,6 +22,7 @@ public class BigRoomMultiLock {
             }
         }
     }
+
     public void study() {
         synchronized (studyRoom) {
             System.out.println("Thread " + Thread.currentThread().getName() + " 学习一个小时......");

@@ -1,12 +1,12 @@
 package structure.facade.facade_d;
 
 /**
- * B模块的接口
- * @author ronin
- * @version V1.0
- * @since 2019/9/12 13:16
+ * @author lingwh
+ * @desc B模块的接口
+ * @date 2019/9/12 13:16
  */
 public interface BModuleApi {
+
     /**
      * 对子系统外部
      */

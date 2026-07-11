@@ -1,8 +1,8 @@
 package org.bluebridge.thread_17_communication.wait_for_other_worker;
 
-import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author lingwh
@@ -47,7 +47,7 @@ public class BlockingQueueTest {
                 // 模拟工作耗时
                 Thread.sleep((long) (Math.random() * 3000));
                 log.info("{} 工作完成......", name);
-                
+
                 // 向队列中放入完成信号
                 COMPLETION_QUEUE.offer(name);
             } catch (Exception e) {
@@ -55,5 +55,4 @@ public class BlockingQueueTest {
             }
         }
     }
-
 }

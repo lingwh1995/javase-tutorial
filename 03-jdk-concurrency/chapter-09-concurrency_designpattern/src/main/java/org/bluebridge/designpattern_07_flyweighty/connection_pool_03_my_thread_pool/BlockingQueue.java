@@ -6,20 +6,26 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class BlockingQueue<T>{
-    //阻塞队列，存放任务
+/**
+ * @author lingwh
+ * @desc 阻塞队列
+ * @date 2026/7/9 00:00
+ */
+public class BlockingQueue<T> {
+    // 阻塞队列，存放任务
     private Deque<T> queue = new ArrayDeque<>();
-    //队列的最大容量
+    // 队列的最大容量
     private int capacity;
-    //锁
+    // 锁
     private ReentrantLock lock = new ReentrantLock();
-    //生产者条件变量
+    // 生产者条件变量
     private Condition fullWaitSet = lock.newCondition();
-    //消费者条件变量
+    // 消费者条件变量
     private Condition emptyWaitSet = lock.newCondition();
 
     /**
      * 构造方法
+     *
      * @param capacity
      */
     public BlockingQueue(int capacity) {
@@ -28,22 +34,23 @@ public class BlockingQueue<T>{
 
     /**
      * 超时阻塞获取
+     *
      * @param timeout
      * @param unit
      * @return
      */
-    public T poll(long timeout, TimeUnit unit){
+    public T poll(long timeout, TimeUnit unit) {
         lock.lock();
-        //将时间转换为纳秒
+        // 将时间转换为纳秒
         long nanoTime = unit.toNanos(timeout);
-        try{
-            while(queue.size() == 0){
+        try {
+            while (queue.size() == 0) {
                 try {
-                    //等待超时依旧没有获取，返回null
-                    if(nanoTime <= 0){
+                    // 等待超时依旧没有获取，返回null
+                    if (nanoTime <= 0) {
                         return null;
                     }
-                    //该方法返回的是剩余时间
+                    // 该方法返回的是剩余时间
                     nanoTime = emptyWaitSet.awaitNanos(nanoTime);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -52,19 +59,20 @@ public class BlockingQueue<T>{
             T t = queue.pollFirst();
             fullWaitSet.signal();
             return t;
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
 
     /**
      * 阻塞获取
+     *
      * @return
      */
-    public T take(){
+    public T take() {
         lock.lock();
-        try{
-            while(queue.size() == 0){
+        try {
+            while (queue.size() == 0) {
                 try {
                     emptyWaitSet.await();
                 } catch (InterruptedException e) {
@@ -74,19 +82,20 @@ public class BlockingQueue<T>{
             T t = queue.pollFirst();
             fullWaitSet.signal();
             return t;
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
 
     /**
      * 阻塞添加
+     *
      * @param t
      */
-    public void put(T t){
+    public void put(T t) {
         lock.lock();
-        try{
-            while (queue.size() == capacity){
+        try {
+            while (queue.size() == capacity) {
                 try {
                     System.out.println(Thread.currentThread().toString() + "等待加入任务队列:" + t.toString());
                     fullWaitSet.await();
@@ -97,25 +106,26 @@ public class BlockingQueue<T>{
             System.out.println(Thread.currentThread().toString() + "加入任务队列:" + t.toString());
             queue.addLast(t);
             emptyWaitSet.signal();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
 
     /**
      * 超时阻塞添加
+     *
      * @param t
      * @param timeout
      * @param timeUnit
      * @return
      */
-    public boolean offer(T t,long timeout,TimeUnit timeUnit){
+    public boolean offer(T t, long timeout, TimeUnit timeUnit) {
         lock.lock();
-        try{
+        try {
             long nanoTime = timeUnit.toNanos(timeout);
-            while (queue.size() == capacity){
+            while (queue.size() == capacity) {
                 try {
-                    if(nanoTime <= 0){
+                    if (nanoTime <= 0) {
                         System.out.println("等待超时，加入失败：" + t);
                         return false;
                     }
@@ -129,16 +139,16 @@ public class BlockingQueue<T>{
             queue.addLast(t);
             emptyWaitSet.signal();
             return true;
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
 
-    public int size(){
+    public int size() {
         lock.lock();
-        try{
+        try {
             return queue.size();
-        }finally{
+        } finally {
             lock.unlock();
         }
     }

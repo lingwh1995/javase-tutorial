@@ -1,19 +1,22 @@
 package action.observer.observer_c;
 
 /**
- * 观察者
+ * @author lingwh
+ * @desc 观察者
+ * @date 2026/7/9 00:00
  */
-public class BaiduWebsit implements Observer{
+public class BaiduWebsit implements Observer {
 
-    //温度
+    // 温度
     private String temperature;
-    //气压
+    // 气压
     private String pressure;
-    //湿度
+    // 湿度
     private String humidity;
 
     /**
      * 更新
+     *
      * @param temperature
      * @param pressure
      * @param humidity
@@ -27,9 +30,9 @@ public class BaiduWebsit implements Observer{
     }
 
     public void display() {
-        System.out.println("=========第二个观察者:百度=============");
-        System.out.println("今日温度:"+temperature);
-        System.out.println("今日气压:"+pressure);
-        System.out.println("今日湿度:"+humidity);
+        System.out.println("--------- 第二个观察者:百度 ---------");
+        System.out.println("今日温度:" + temperature);
+        System.out.println("今日气压:" + pressure);
+        System.out.println("今日湿度:" + humidity);
     }
 }

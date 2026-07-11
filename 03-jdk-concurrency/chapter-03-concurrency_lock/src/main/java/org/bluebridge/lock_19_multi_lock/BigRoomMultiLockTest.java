@@ -1,9 +1,12 @@
 package org.bluebridge.lock_19_multi_lock;
 
 /**
- * 多把锁测试
+ * @author lingwh
+ * @desc 多把锁测试
+ * @date 2026/7/9 00:00
  */
 public class BigRoomMultiLockTest {
+
     public static void main(String[] args) {
         BigRoomMultiLock bigRoomMultiLock = new BigRoomMultiLock();
         new Thread(() -> {

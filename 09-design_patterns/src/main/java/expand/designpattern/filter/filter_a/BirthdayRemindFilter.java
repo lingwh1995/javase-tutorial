@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc 筛选赠送免费生日提醒的目标用户过滤器
- * @since 2019/7/29 15:56
+ * @date 2019/7/29 15:56
  */
 public class BirthdayRemindFilter implements Filter {
+
     /**
      * @param consumers 消费者
      * @return
@@ -17,7 +17,7 @@ public class BirthdayRemindFilter implements Filter {
     @Override
     public List<Consumer> filter(List<Consumer> consumers) {
         List<Consumer> cs = new ArrayList<Consumer>();
-        //星级为5星级以上 赠送生日提醒
+        // 星级为5星级以上 赠送生日提醒
         for (Consumer c : consumers) {
             if (c.getStar() >= 5) {
                 cs.add(c);
