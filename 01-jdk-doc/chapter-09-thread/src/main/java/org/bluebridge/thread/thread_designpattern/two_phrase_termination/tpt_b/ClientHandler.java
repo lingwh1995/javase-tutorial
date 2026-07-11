@@ -4,9 +4,12 @@ import java.io.*;
 import java.net.Socket;
 
 /**
- * @author ronin
+ * 两阶段终止模式 - 客户端处理器
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
-public class ClientHandler implements Runnable{
+public class ClientHandler implements Runnable {
     private final Socket socket;
     private volatile boolean running = true;
 
@@ -16,14 +19,13 @@ public class ClientHandler implements Runnable{
 
     @Override
     public void run() {
-        try(InputStream inputStream = socket.getInputStream();
-            OutputStream outputStream = socket.getOutputStream();
-            BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
-            PrintWriter printWriter = new PrintWriter(outputStream))
-        {
-            while(running){
+        try (InputStream inputStream = socket.getInputStream();
+                OutputStream outputStream = socket.getOutputStream();
+                BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+                PrintWriter printWriter = new PrintWriter(outputStream)) {
+            while (running) {
                 String message = br.readLine();
-                if(message == null){
+                if (message == null) {
                     break;
                 }
                 System.out.println("Come from client:" + message);
@@ -32,13 +34,13 @@ public class ClientHandler implements Runnable{
             }
         } catch (IOException e) {
             this.running = false;
-        }finally {
+        } finally {
             this.stop();
         }
     }
 
     public void stop() {
-        if(running){
+        if (running) {
             return;
         }
         this.running = false;

@@ -1,12 +1,13 @@
 package structure.bridge.bridge_f;
 
 /**
- * 普通消息,什么也不干
- * @author ronin
- * @version V1.0
- * @since 2019/8/6 9:16
+ * 普通消息，什么也不干
+ *
+ * @author lingwh
+ * @date 2019/8/6 9:16
  */
 public class CommonMessage extends AbstractMessage {
+
     /**
      * 构造方法:传入实现部分的对象
      *

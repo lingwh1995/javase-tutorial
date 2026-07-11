@@ -3,10 +3,16 @@ package org.bluebridge;
 import org.bluebridge.utils.CommandUtil;
 import org.junit.Test;
 
+/**
+ * @author lingwh
+ * @desc 命令工具测试类
+ * @date 2026/7/9 00:00
+ */
 public class CommandUtilTest {
 
     /**
      * 测试构建报文数据区
+     *
      * @throws Exception
      */
     @Test
@@ -28,6 +34,7 @@ public class CommandUtilTest {
 
     /**
      * 测试解析报文数据区
+     *
      * @throws Exception
      */
     @Test
@@ -49,5 +56,4 @@ public class CommandUtilTest {
         String originalDataAreaHex = commandUtil.parseDataArea();
         System.out.println("originalDataAreaHex = " + originalDataAreaHex);
     }
-
 }

@@ -6,6 +6,11 @@ import lombok.Data;
 
 import java.util.Arrays;
 
+/**
+ * @author lingwh
+ * @desc 命令工具类
+ * @date 2026/7/9 00:00
+ */
 @Data
 @AllArgsConstructor
 public class CommandUtil {
@@ -31,27 +36,27 @@ public class CommandUtil {
 
     /**
      * 是否计算mac并添加mac到数据区尾部
-      */
+     */
     private boolean withMac;
-
 
     /**
      * 构建数据区
+     *
      * @return
      * @throws Exception
      */
     public final String buildFinalDataArea() throws Exception {
         byte[] dataAreaBytes = buildDataArea();
         // 如果需要补全数据区则进行以下处理
-        if(isPaddingDataArea()) {
+        if (isPaddingDataArea()) {
             dataAreaBytes = paddingDataArea(dataAreaBytes);
         }
         // 如果需要加密数据区则进行以下处理
-        if(isEncryp()) {
+        if (isEncryp()) {
             dataAreaBytes = encryptDataArea(dataAreaBytes);
         }
         // 如果计算mac并将计算结果拼接到数据区尾部
-        if(withMac()) {
+        if (withMac()) {
             dataAreaBytes = calcMacAndAppendMacToDataAreaTail(dataAreaBytes);
         }
         return HexUtil.encodeHexStr(dataAreaBytes);
@@ -59,6 +64,7 @@ public class CommandUtil {
 
     /**
      * 构建命令明文数据区
+     *
      * @return 数据区
      */
     protected byte[] buildDataArea() {
@@ -66,9 +72,8 @@ public class CommandUtil {
     }
 
     /**
-     * 补齐数据区
-     *      需要16字节补齐，报文长度少于16个字节，需要补满16个字节，补(16-len)个(16-len)。
-     *      如果报文长度正好时N字节的整数倍，则需要补16个十进制16。
+     * 补齐数据区 需要16字节补齐，报文长度少于16个字节，需要补满16个字节，补(16-len)个(16-len)。 如果报文长度正好时N字节的整数倍，则需要补16个十进制16。
+     *
      * @param dataArea 没有补齐的数据区
      * @return 补齐后的数据区
      */
@@ -95,6 +100,7 @@ public class CommandUtil {
 
     /**
      * 加密数据区
+     *
      * @param paddingDataArea 补齐后的数据区
      * @return 加密后的数据区
      * @throws Exception
@@ -106,6 +112,7 @@ public class CommandUtil {
 
     /**
      * 计算mac并且把计算后的mac值拼接到数据区尾部
+     *
      * @param encryptDataArea 加密后的数据区
      * @return 可以直接用于组包的数据区
      * @throws Exception
@@ -130,9 +137,9 @@ public class CommandUtil {
         return finalDataArea;
     }
 
-
     /**
      * 是否补全数据区
+     *
      * @return
      */
     protected boolean isPaddingDataArea() {
@@ -141,6 +148,7 @@ public class CommandUtil {
 
     /**
      * 是否加密数据区
+     *
      * @return
      */
     protected boolean isEncryp() {
@@ -149,6 +157,7 @@ public class CommandUtil {
 
     /**
      * 是否计算mac并将计算结果拼接到数据区尾部
+     *
      * @return
      */
     protected boolean withMac() {
@@ -157,18 +166,19 @@ public class CommandUtil {
 
     /**
      * 解析命令的方法（把加密报文中的数据区以名文形式解析处理）
+     *
      * @return
      * @throws Exception
      */
     public String parseDataArea() throws Exception {
         byte[] dataAreaBytes = HexUtil.decodeHex(this.dataAreaHex);
-        if(withMac()) {
-            //移除数据区中的mac部分
+        if (withMac()) {
+            // 移除数据区中的mac部分
             dataAreaBytes = Arrays.copyOfRange(dataAreaBytes, 0, dataAreaBytes.length - 32);
         }
         byte[] mainSecretBytes = ParseUtil.hexStringToByte(mainSecret);
-        //解密数据区
-        if(isEncryp()) {
+        // 解密数据区
+        if (isEncryp()) {
             dataAreaBytes = AESUtil.decrypt(dataAreaBytes, mainSecretBytes);
         }
         return HexUtil.encodeHexStr(dataAreaBytes);

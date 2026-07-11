@@ -3,6 +3,11 @@ package structure.composite.composite_c;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author lingwh
+ * @desc 学院
+ * @date 2026/7/9 00:00
+ */
 public class College extends OrganizationComponment {
 
     /**
@@ -39,9 +44,9 @@ public class College extends OrganizationComponment {
      */
     @Override
     public void print() {
-        System.out.println("-------------"+getName()+":"+getDesc()+"-------------");
-        //遍历
-        for(OrganizationComponment department:deparmentList){
+        System.out.println("-------------" + getName() + ":" + getDesc() + "-------------");
+        // 遍历
+        for (OrganizationComponment department : deparmentList) {
             department.print();
         }
     }

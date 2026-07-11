@@ -1,9 +1,9 @@
 package structure.proxy.virtualproxy.vritualproxy_a;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/24 18:13
+ * @author lingwh
+ * @desc 虚拟代理客户端
+ * @date 2019/9/24 18:13
  */
 public class Client {
     public static void main(String[] args) {

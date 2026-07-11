@@ -1,10 +1,9 @@
 package action.command.command_d;
 
 /**
- * 命令接口
- * @author ronin
- * @version V1.0
- * @since 2019/8/5 10:54
+ * @author lingwh
+ * @desc 命令接口
+ * @date 2019/8/5 10:54
  */
 public interface Command {
     /**

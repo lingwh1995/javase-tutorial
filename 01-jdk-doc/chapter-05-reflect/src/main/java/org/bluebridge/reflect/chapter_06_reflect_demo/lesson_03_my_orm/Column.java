@@ -6,12 +6,16 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 加在字段上的注解
+ * @author lingwh
+ * @desc 加在字段上的注解
+ * @date 2026/7/9 00:00
  */
-@Target(value=ElementType.FIELD)
-@Retention(value=RetentionPolicy.RUNTIME)
+@Target(value = ElementType.FIELD)
+@Retention(value = RetentionPolicy.RUNTIME)
 public @interface Column {
-	String cloumnName();
-	String dataType();
-	int length();
+    String cloumnName();
+
+    String dataType();
+
+    int length();
 }

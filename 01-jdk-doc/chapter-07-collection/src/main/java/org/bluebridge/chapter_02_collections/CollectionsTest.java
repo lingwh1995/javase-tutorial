@@ -1,13 +1,14 @@
 package org.bluebridge.chapter_02_collections;
 
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import org.junit.Test;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc Collections工具类常用方法测试
+ * @date 2026/7/9 00:00
  */
 public class CollectionsTest {
 

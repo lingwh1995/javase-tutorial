@@ -4,19 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 组合对象，可以包含其它组合对象或者叶子对象，
- * 相当于访问者模式的具体Element实现对象
- * @author ronin
- * @version V1.0
- * @since 2019/10/11 13:50
+ * 组合对象，可以包含其它组合对象或者叶子对象， 相当于访问者模式的具体Element实现对象
+ *
+ * @author lingwh
+ * @date 2019/10/11 13:50
  */
 public class Composite extends Component {
 
     @Override
     public void accept(Visitor visitor) {
-        //回调访问者对象的相应方法
+        // 回调访问者对象的相应方法
         visitor.visitComposite(this);
-        //循环子元素，让子元素也接受访问
+        // 循环子元素，让子元素也接受访问
 //        for(Component c : childComponents){
 //            //调用子对象接受访问，变相实现递归
 //            c.accept(visitor);
@@ -35,9 +34,10 @@ public class Composite extends Component {
 
     /**
      * 构造方法，传入组合对象的名字
+     *
      * @param name 组合对象的名字
      */
-    public Composite(String name){
+    public Composite(String name) {
         this.name = name;
     }
 

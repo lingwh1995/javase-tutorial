@@ -1,5 +1,10 @@
 package structure.flyweight.flyweight_a;
 
+/**
+ * @author lingwh
+ * @desc 客户端测试
+ * @date 2019/6/27 12:53
+ */
 public class Client {
     public static void b(String[] args) {
         User tom = new User("tom");
@@ -15,6 +20,6 @@ public class Client {
         User smith = new User("jerry");
         blog.use(cart);
         blog.use(smith);
-        System.out.println("网站种类:"+webSiteFactory.getWbSiteCount());
+        System.out.println("网站种类:" + webSiteFactory.getWbSiteCount());
     }
 }

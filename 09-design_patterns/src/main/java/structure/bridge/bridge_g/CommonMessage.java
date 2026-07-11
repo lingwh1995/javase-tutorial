@@ -2,9 +2,9 @@ package structure.bridge.bridge_g;
 
 /**
  * 普通消息,什么也不干
- * @author ronin
- * @version V1.0
- * @since 2019/8/6 9:16
+ *
+ * @author lingwh
+ * @date 2019/8/6 9:16
  */
 public class CommonMessage extends AbstractMessage {
 
