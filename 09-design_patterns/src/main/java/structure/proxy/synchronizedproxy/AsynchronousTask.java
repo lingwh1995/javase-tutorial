@@ -1,9 +1,14 @@
 package structure.proxy.synchronizedproxy;
 
-public class AsynchronousTask implements Task{
+/**
+ * @author lingwh
+ * @desc 异步任务
+ * @date 2026/7/9 00:00
+ */
+public class AsynchronousTask implements Task {
 
     @Override
-    public void task(){
+    public void task() {
         Thread thread1 = createThread1();
         Thread thread2 = createThread2();
         thread1.start();
@@ -12,6 +17,7 @@ public class AsynchronousTask implements Task{
 
     /**
      * 创建第一个线程
+     *
      * @return
      */
     @Override
@@ -32,6 +38,7 @@ public class AsynchronousTask implements Task{
 
     /**
      * 创建第一个线程
+     *
      * @return
      */
     @Override

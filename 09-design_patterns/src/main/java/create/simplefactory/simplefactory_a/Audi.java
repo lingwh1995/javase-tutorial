@@ -1,19 +1,13 @@
 package create.simplefactory.simplefactory_a;
 
-/**  
- * @author ronin
- * @date 2019年3月10日  
- *    
+/**
+ * @author lingwh
+ * @desc 奥迪汽车
+ * @date 2019/3/10 00:00
  */
 public class Audi implements Car {
 
-	/**
-	 * <p>Title: run</p>  
-	 * <p>Description: </p>    
-	 * @see Car#run()
-	 */
-
-	public void run() {
-		System.out.println("奥迪在跑...");
-	}
+    public void run() {
+        System.out.println("奥迪在跑...");
+    }
 }

@@ -1,7 +1,12 @@
 package action.iterator.iterator_c;
 
-
+/**
+ * @author lingwh
+ * @desc 数组结构
+ * @date 2026/7/9 00:00
+ */
 public class ArrayStructure implements Structure {
+
     private String[] strings;
     private int position;
 
@@ -29,13 +34,15 @@ public class ArrayStructure implements Structure {
         return new ArrayIterator();
     }
 
-    private class ArrayIterator implements Iterator{
+    private class ArrayIterator implements Iterator {
+
         private int innerPosition = -1;
+
         @Override
         public boolean hasNext() {
-            if(innerPosition >= strings.length - 1){
+            if (innerPosition >= strings.length - 1) {
                 return false;
-            }else {
+            } else {
                 innerPosition++;
                 return true;
             }

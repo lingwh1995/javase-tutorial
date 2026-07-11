@@ -1,12 +1,13 @@
 package org.bluebridge.chapter_03_list;
 
+import java.util.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.*;
-
 /**
- * @author ronin
+ * @author lingwh
+ * @desc ArrayList常用方法测试
+ * @date 2026/7/9 00:00
  */
 public class ArrayListTest {
 
@@ -27,8 +28,8 @@ public class ArrayListTest {
      */
     @Test
     public void testListSet() {
-        //使用set()
-        nums.set(0,100);
+        // 使用set()
+        nums.set(0, 100);
         System.out.println("nums = " + nums);
     }
 
@@ -55,9 +56,9 @@ public class ArrayListTest {
      */
     @Test
     public void testListListIterator() {
-        //从索引为0的元素开始遍历
-        //ListIterator<Integer> iterator = nums.listIterator();
-        //从索引为1的元素开始遍历
+        // 从索引为0的元素开始遍历
+        // ListIterator<Integer> iterator = nums.listIterator();
+        // 从索引为1的元素开始遍历
         ListIterator<Integer> iterator = nums.listIterator(1);
         while (iterator.hasNext()) {
             Integer i = iterator.next();
@@ -65,5 +66,3 @@ public class ArrayListTest {
         }
     }
 }
-
-

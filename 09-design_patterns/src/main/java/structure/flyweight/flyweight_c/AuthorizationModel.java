@@ -1,17 +1,25 @@
 package structure.flyweight.flyweight_c;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc 描述授权数据的Model
  * @since 2019/7/30 15:00
  */
 public class AuthorizationModel {
-    /**人员*/
+
+    /**
+     * 人员
+     */
     private String user;
-    /**安全实体*/
+
+    /**
+     * 安全实体
+     */
     private String securityEntity;
-    /**权限*/
+
+    /**
+     * 权限
+     */
     private String authority;
 
     public String getUser() {

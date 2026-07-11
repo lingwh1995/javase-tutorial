@@ -1,14 +1,14 @@
 package org.bluebridge.thread_17_communication.wait_for_compare_input;
 
-import lombok.extern.slf4j.Slf4j;
-
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author lingwh
- * @desc
+ * @desc 演示原子变量的使用场景：输入内容，比较输入内容是否为 hello
  * @date 2025/10/28 18:20
  */
 @Slf4j
@@ -46,5 +46,4 @@ public class AtomicTest {
             COMPARISON_READY_FLAG.set(true);
         },"thread-compare").start();
     }
-
 }

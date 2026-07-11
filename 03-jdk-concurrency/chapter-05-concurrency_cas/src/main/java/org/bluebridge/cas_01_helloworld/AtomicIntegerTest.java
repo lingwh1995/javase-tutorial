@@ -3,11 +3,12 @@ package org.bluebridge.cas_01_helloworld;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * 1.CAS是基于乐观锁的思想，不怕别的线程来修改共享变量，是非阻塞同步（Non-blocking Synchronization)
- * 2.synchronized是基于悲观锁的思想，使用锁来防止其他线程修改共享变量
- *      CAS 体现的是无锁并发、无阻塞并发
+ * @author lingwh
+ * @desc AtomicInteger用法测试
+ * @date 2026/7/9 00:00
  */
 public class AtomicIntegerTest {
+
     public static void main(String[] args) {
         AtomicInteger atomicInteger = new AtomicInteger(0);
 
@@ -44,10 +45,13 @@ public class AtomicIntegerTest {
         System.out.println("先获取当前值然后设置新值 (25): " + atomicInteger.getAndSet(25));
 
         // updateAndGet(IntUnaryOperator updateFunction)：用给定的函数更新值并返回
-        System.out.println("使用updateAndGet更新后的值 (x -> x * 2): " + atomicInteger.updateAndGet(x -> x * 2));
+        System.out.println(
+                "使用updateAndGet更新后的值 (x -> x * 2): " + atomicInteger.updateAndGet(x -> x * 2));
 
         // accumulateAndGet(int x, BinaryOperator< Integer > accumulatorFunction)：将给定值与当前值合并，然后返回
-        System.out.println("accumulateAndGet合并后的值 (10, (x, y) -> x + y): " + atomicInteger.accumulateAndGet(10, (x, y) -> x + y));
+        System.out.println(
+                "accumulateAndGet合并后的值 (10, (x, y) -> x + y): "
+                        + atomicInteger.accumulateAndGet(10, (x, y) -> x + y));
 
         // getAndUpdate(IntUnaryOperator updateFunction)：用给定的函数更新值但不返回新值
         atomicInteger.getAndUpdate(x -> x * 3);

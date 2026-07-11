@@ -4,22 +4,22 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 数组工具类测试
- * @author ronin
+ * @author lingwh
+ * @desc 数组工具类测试
+ * @date 2026/7/9 00:00
  */
 public class ArraysTest {
 
     public static void main(String[] args) {
         /**
-         * public static <T> List<T> asList(T... a) {}
-         * 把数组转换为集合,本质上还是数组，所以只要长度不发生改变,任何操作都可以
+         * public static <T> List<T> asList(T... a) {} 把数组转换为集合,本质上还是数组，所以只要长度不发生改变,任何操作都可以
          */
-        String[] s = {"a","b","c"};
+        String[] s = {"a", "b", "c"};
         List<String> l1 = Arrays.asList(s);
         List<String> l2 = Arrays.asList("a,b,c");
         System.out.println(l2);
         System.out.println(l2);
-        System.out.println(l2.size()+"---"+l2.get(0));
+        System.out.println(l2.size() + "---" + l2.get(0));
 
         Person zs = new Person("zs", "18");
         Person ls = new Person("ls", "19");
@@ -27,10 +27,9 @@ public class ArraysTest {
         List<Person> pers = Arrays.asList(zs, ls, ww);
         System.out.println(pers);
     }
-
 }
 
-class Person{
+class Person {
 
     private String name;
     private String age;
@@ -42,10 +41,6 @@ class Person{
 
     @Override
     public String toString() {
-        return "Per{" +
-                "name='" + name + '\'' +
-                ", age='" + age + '\'' +
-                '}';
+        return "Per{" + "name='" + name + '\'' + ", age='" + age + '\'' + '}';
     }
-
 }

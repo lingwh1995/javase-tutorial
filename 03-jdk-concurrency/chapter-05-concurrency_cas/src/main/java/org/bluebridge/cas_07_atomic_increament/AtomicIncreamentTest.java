@@ -1,6 +1,5 @@
 package org.bluebridge.cas_07_atomic_increament;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
@@ -9,8 +8,9 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 /**
- * LongAdder比AtomicLong性能提升的原因：
- *  在有竞争时，设置多个累加单元，Therad-0 累加 Cell[0]，而 Thread-1 累加 Cell[1]... 最后将结果汇总。这样它们在累加时操作的不同的Cell变量，因此减少了CAS重试失败，从而提高性能。
+ * @author lingwh
+ * @desc 原子累加器测试
+ * @date 2026/7/9 00:00
  */
 public class AtomicIncreamentTest {
 
@@ -25,8 +25,8 @@ public class AtomicIncreamentTest {
     }
 
     /**
-     * @param adderSupplier     提供累加器对象
-     * @param action            执行累加操作
+     * @param adderSupplier 提供累加器对象
+     * @param action 执行累加操作
      * @param <T>
      */
     private static <T> void demo(Supplier<T> adderSupplier, Consumer<T> action) {
@@ -50,6 +50,6 @@ public class AtomicIncreamentTest {
             }
         });
         long end = System.nanoTime();
-        System.out.println(adder + " cost:" + (end - start)/1000_000);
+        System.out.println(adder + " cost:" + (end - start) / 1000_000);
     }
 }

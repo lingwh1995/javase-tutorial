@@ -1,22 +1,14 @@
 package create.factorymethod.factorymethod_a;
 
-/**  
- * @author ronin
- * @date 2019年3月11日  
- *    
+/**
+ * @author lingwh
+ * @desc 奥迪工厂
+ * @date 2019/3/11 00:00
  */
 public class AudiFactory extends CarFactory {
 
-	/**
-	 * <p>Title: createCar</p>  
-	 * <p>Description: </p>  
-	 * @return  
-	 * @see CarFactory#createCar()
-	 */
-
-	@Override
-	protected Car createCar() {
-		return new Audi();
-	}
-
+    @Override
+    protected Car createCar() {
+        return new Audi();
+    }
 }

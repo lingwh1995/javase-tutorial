@@ -1,8 +1,9 @@
 package org.bluebridge;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+
+import javax.swing.*;
 
 /**
  * @author lingwh
@@ -67,18 +68,19 @@ public class AwtApp {
         // 设置文本框位置和尺寸
         textField.setBounds(120, 30, 100, 30);
         // 给文本框绑定事件
-        textField.addActionListener(e -> {
-            System.out.println("文本框内容：" + textField.getText());
-        });
+        textField.addActionListener(
+            e -> {
+                System.out.println("文本框内容：" + textField.getText());
+            });
         // 设置文本框内容
-        //textField.setText("我是文本框");
+        // textField.setText("我是文本框");
         textField.setEchoChar('*');
         frame.add(textField);
 
         /**
          * 单选框组
          */
-        //创建勾选框组
+        // 创建勾选框组
         CheckboxGroup group = new CheckboxGroup();
         Checkbox c1 = new Checkbox("basketball");
         c1.setBounds(20, 60, 120, 30);
@@ -87,23 +89,24 @@ public class AwtApp {
         Checkbox c2 = new Checkbox("baseball");
         c2.setBounds(150, 60, 120, 30);
         frame.add(c2);
-        //多个勾选框都可以添加到勾选框组中
+        // 多个勾选框都可以添加到勾选框组中
         c1.setCheckboxGroup(group);
         c2.setCheckboxGroup(group);
 
-
         // 添加选择状态变化事件监听器
-        c1.addItemListener(e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                System.out.println("选择了: " + c1.getLabel());
-            }
-        });
+        c1.addItemListener(
+            e -> {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    System.out.println("选择了: " + c1.getLabel());
+                }
+            });
 
-        c2.addItemListener(e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                System.out.println("选择了: " + c2.getLabel());
-            }
-        });
+        c2.addItemListener(
+            e -> {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    System.out.println("选择了: " + c2.getLabel());
+                }
+            });
 
         /**
          * 文本区域组件
@@ -114,29 +117,31 @@ public class AwtApp {
         textArea.setBounds(20, 90, 300, 100);
         // 给文本区域绑定事件
         // 给文本区域绑定焦点事件
-        textArea.addFocusListener(new FocusAdapter() {
-            @Override
-            public void focusGained(FocusEvent e) {
-                System.out.println("文本区域获得焦点");
-            }
+        textArea.addFocusListener(
+            new FocusAdapter() {
+                @Override
+                public void focusGained(FocusEvent e) {
+                    System.out.println("文本区域获得焦点");
+                }
 
-            @Override
-            public void focusLost(FocusEvent e) {
-                System.out.println("文本区域失去焦点");
-            }
-        });
+                @Override
+                public void focusLost(FocusEvent e) {
+                    System.out.println("文本区域失去焦点");
+                }
+            });
         // 给文本区域绑定键盘事件
-        textArea.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                System.out.println("按键按下：" + e.getKeyChar());
-            }
+        textArea.addKeyListener(
+            new KeyAdapter() {
+                @Override
+                public void keyPressed(KeyEvent e) {
+                    System.out.println("按键按下：" + e.getKeyChar());
+                }
 
-            @Override
-            public void keyReleased(KeyEvent e) {
-                System.out.println("按键释放：" + e.getKeyCode());
-            }
-        });
+                @Override
+                public void keyReleased(KeyEvent e) {
+                    System.out.println("按键释放：" + e.getKeyCode());
+                }
+            });
         frame.add(textArea);
 
         /**
@@ -147,13 +152,14 @@ public class AwtApp {
         // 设置复选框位置和尺寸
         checkbox.setBounds(130, 200, 100, 30);
         // 添加状态改变事件监听
-        checkbox.addItemListener(e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                System.out.println("复选框被选中了！");
-            } else {
-                System.out.println("复选框被取消选中了！");
-            }
-        });
+        checkbox.addItemListener(
+            e -> {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    System.out.println("复选框被选中了！");
+                } else {
+                    System.out.println("复选框被取消选中了！");
+                }
+            });
         frame.add(checkbox);
 
         /**
@@ -164,26 +170,27 @@ public class AwtApp {
         // 设置按钮位置和尺寸
         button.setBounds(20, 200, 100, 30);
         // 给按钮绑定事件
-        button.addActionListener(e -> {
-            System.out.println("按钮被点击了!");
-            String text = textArea.getText();
-            System.out.println("文本区域内容：" + text);
-        });
+        button.addActionListener(
+            e -> {
+                System.out.println("按钮被点击了!");
+                String text = textArea.getText();
+                System.out.println("文本区域内容：" + text);
+            });
         frame.add(button);
 
-        frame.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                System.out.println("收到关闭请求，正在退出程序......");
-                // 释放窗体资源
-                frame.dispose();
-                // 退出虚拟机（如果是主程序）
-                //System.exit(0);
-            }
-        });
+        frame.addWindowListener(
+            new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    System.out.println("收到关闭请求，正在退出程序......");
+                    // 释放窗体资源
+                    frame.dispose();
+                    // 退出虚拟机（如果是主程序）
+                    // System.exit(0);
+                }
+            });
 
         // 设置窗体可见
         frame.setVisible(true);
     }
-
 }

@@ -1,13 +1,11 @@
 package create.abstractfactory.abstractfactory_i;
 
-
 /**
- * 华硕工厂:组装华硕电脑,华硕电脑搭载Intel CPU和技嘉主板
- * @author ronin
- * @version V1.0
- * @since 2019/8/7 14:50
+ * @author lingwh
+ * @desc 华硕工厂: 组装华硕电脑，华硕电脑搭载Intel CPU和技嘉主板
+ * @date 2019/8/7 14:50
  */
-public class AsusFactory implements AbstractFactory{
+public class AsusFactory implements AbstractFactory {
 
     /**
      * 构造方法在此处无意义,只是标识一个这个类是华硕
@@ -25,10 +23,10 @@ public class AsusFactory implements AbstractFactory{
     @Override
     public Object createHardware(int type) {
         Object obejct = null;
-        //type为1表示创建CPU，type为2表示创建主板
-        if(type==1){
+        // type为1表示创建CPU，type为2表示创建主板
+        if (type == 1) {
             obejct = new IntelCPU(1156);
-        }else if(type==2){
+        } else if (type == 2) {
             obejct = new GAMainboard(1156);
         }
         return obejct;

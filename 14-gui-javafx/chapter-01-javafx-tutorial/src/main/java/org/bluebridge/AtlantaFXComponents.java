@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  * @author lingwh
- * @desc
+ * @desc AtlantaFX组件示例
  * @date 2026/1/22 13:43
  */
 public class AtlantaFXComponents extends Application {
@@ -37,10 +37,10 @@ public class AtlantaFXComponents extends Application {
         successBtn.getStyleClass().add(Styles.SUCCESS); // 变成绿色
 
         Button dangerBtn = new Button("危险操作按钮");
-        dangerBtn.getStyleClass().add(Styles.DANGER);   // 变成红色
+        dangerBtn.getStyleClass().add(Styles.DANGER); // 变成红色
 
         Button accentBtn = new Button("强调按钮");
-        accentBtn.getStyleClass().add(Styles.ACCENT);   // 变成主题强调色（蓝色）
+        accentBtn.getStyleClass().add(Styles.ACCENT); // 变成主题强调色（蓝色）
 
         root.getChildren().addAll(textField, accentBtn, successBtn, dangerBtn);
 
@@ -50,6 +50,7 @@ public class AtlantaFXComponents extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) { launch(args); }
-
+    public static void main(String[] args) {
+        launch(args);
+    }
 }

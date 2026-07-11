@@ -3,7 +3,9 @@ package org.bluebridge.cas_04_atomic_aba;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * 原子引用
+ * @author lingwh
+ * @desc 原子引用
+ * @date 2026/7/9 00:00
  */
 public class AtomicReferenceABATest {
 
@@ -11,6 +13,7 @@ public class AtomicReferenceABATest {
 
     /**
      * AtomicReference无法判断是否发生过ABA问题
+     *
      * @param args
      * @throws InterruptedException
      */
@@ -22,8 +25,9 @@ public class AtomicReferenceABATest {
         change();
         sleep(1000);
         // 尝试改为 C
-        System.out.printf("change A->C %s\n",atomicReference.compareAndSet(prev, "C"));
+        System.out.printf("change A->C %s\n", atomicReference.compareAndSet(prev, "C"));
     }
+
     private static void change() {
         new Thread(() -> {
             System.out.printf("change A->B %s\n",atomicReference.compareAndSet(atomicReference.get(), "B"));

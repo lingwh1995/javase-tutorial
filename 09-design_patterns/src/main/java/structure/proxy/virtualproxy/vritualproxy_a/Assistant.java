@@ -4,11 +4,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/24 18:13
+ * @author lingwh
+ * @desc 助手
+ * @date 2019/9/24 18:13
  */
-public class Assistant implements Approvable{
+public class Assistant implements Approvable {
+
     List<String> orders;
     volatile Boss boss;
 

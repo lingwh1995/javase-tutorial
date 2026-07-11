@@ -3,15 +3,18 @@ package org.bluebridge.cas_04_atomic_aba;
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 /**
- * 带版本号的原子引用
- *      AtomicStampedReference是通过int类型的版本号，而AtomicMarkableReference是通过boolean型的标识来判断数据是否有更改过
+ * @author lingwh
+ * @desc AtomicStampedReference测试
+ * @date 2026/7/9 00:00
  */
 public class AtomicStampedReferenceTest {
 
-    private static AtomicStampedReference<String> atomicStampedReference = new AtomicStampedReference<>("A", 0);
+    private static AtomicStampedReference<String> atomicStampedReference =
+            new AtomicStampedReference<>("A", 0);
 
     /**
      * AtomicStampedReference可以通过添加版本号来确定有没有发生过ABA问题
+     *
      * @param args
      * @throws InterruptedException
      */

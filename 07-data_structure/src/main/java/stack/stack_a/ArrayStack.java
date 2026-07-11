@@ -1,5 +1,10 @@
 package stack.stack_a;
 
+/**
+ * @author lingwh
+ * @desc 数组模拟栈
+ * @date 2026/7/9 00:00
+ */
 public class ArrayStack {
     private int maxSize;
     private int[] stack;
@@ -12,26 +17,29 @@ public class ArrayStack {
 
     /**
      * 判断栈是否为空
+     *
      * @return
      */
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return top == -1;
     }
 
     /**
      * 判断栈是否已满
+     *
      * @return
      */
-    public boolean isFull(){
+    public boolean isFull() {
         return top == maxSize - 1;
     }
 
     /**
      * 压栈
+     *
      * @param element
      */
-    public void push(int element){
-        if(isFull()){
+    public void push(int element) {
+        if (isFull()) {
             System.out.println("栈已满......");
             return;
         }
@@ -41,10 +49,11 @@ public class ArrayStack {
 
     /**
      * 弹栈
+     *
      * @return
      */
-    public int pop(){
-        if(isEmpty()){
+    public int pop() {
+        if (isEmpty()) {
             throw new RuntimeException("栈为空......");
         }
         int value = stack[top];
@@ -54,16 +63,18 @@ public class ArrayStack {
 
     /**
      * 获取栈中真实元素的个数
+     *
      * @return
      */
-    public int size(){
-        return top+1;
+    public int size() {
+        return top + 1;
     }
+
     /**
      * 遍历栈
      */
-    public void show(){
-        for (int i = top; i >=0 ; i--) {
+    public void show() {
+        for (int i = top; i >= 0; i--) {
             System.out.print(stack[i] + "\t");
         }
         System.out.println();
