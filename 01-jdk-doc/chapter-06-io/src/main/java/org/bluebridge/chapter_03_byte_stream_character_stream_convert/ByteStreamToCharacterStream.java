@@ -1,10 +1,9 @@
 package org.bluebridge.chapter_03_byte_stream_character_stream_convert;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -54,11 +53,11 @@ public class ByteStreamToCharacterStream {
         /**
          * 使用BufferedReader包装转换
          */
-        try(InputStream is = new FileInputStream("d:/io/input_byte_stream_to_character_stream.txt");
-            InputStreamReader isr = new InputStreamReader(is, StandardCharsets.UTF_8);
-            BufferedReader br = new BufferedReader(isr)){
+        try (InputStream is = new FileInputStream("d:/io/input_byte_stream_to_character_stream.txt");
+                InputStreamReader isr = new InputStreamReader(is, StandardCharsets.UTF_8);
+                BufferedReader br = new BufferedReader(isr)) {
             String line = null;
-            while((line = br.readLine()) != null) {
+            while ((line = br.readLine()) != null) {
                 log.info("本次读取到的内容：{}", line);
             }
         } catch (IOException e) {
@@ -111,5 +110,4 @@ public class ByteStreamToCharacterStream {
             throw new RuntimeException(e);
         }
     }
-
 }

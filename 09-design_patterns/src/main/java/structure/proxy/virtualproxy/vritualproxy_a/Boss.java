@@ -4,16 +4,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/9/24 18:12
+ * @author lingwh
+ * @desc 老板
+ * @date 2019/9/24 18:12
  */
-public class Boss implements Approvable{
+public class Boss implements Approvable {
+
     List<String> orders;
 
     {
         System.out.println("\nBoss出现...\n");
-
     }
 
     public Boss() {
@@ -34,7 +34,7 @@ public class Boss implements Approvable{
 
     @Override
     public void approve() {
-        while(orders.size()>0){
+        while (orders.size() > 0) {
             String order = orders.remove(0);
             System.out.println("Boss处理了任务<" + order + ">");
         }

@@ -4,7 +4,9 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
 /**
- * 字节序列（大小端）测试
+ * @author lingwh
+ * @desc 字节序列（大小端）测试
+ * @date 2026/7/9 00:00
  */
 public class ByteOrderTest1 {
 
@@ -30,7 +32,6 @@ public class ByteOrderTest1 {
         System.out.println("小端展示: " + bytesToHex(buffer.array()));
     }
 
-    // Helper method to convert byte array to hex string
     private static String bytesToHex(byte[] bytes) {
         StringBuilder sb = new StringBuilder();
         for (byte b : bytes) {

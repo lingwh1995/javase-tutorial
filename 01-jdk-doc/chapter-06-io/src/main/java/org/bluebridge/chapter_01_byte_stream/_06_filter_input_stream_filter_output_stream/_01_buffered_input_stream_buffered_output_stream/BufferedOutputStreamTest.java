@@ -1,9 +1,8 @@
 package org.bluebridge.chapter_01_byte_stream._06_filter_input_stream_filter_output_stream._01_buffered_input_stream_buffered_output_stream;
 
+import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
-import java.io.*;
 
 /**
  * @author lingwh
@@ -15,9 +14,9 @@ public class BufferedOutputStreamTest {
 
     @Test
     public void testBufferedOutputStreamWrite() {
-        try(OutputStream os = new FileOutputStream(new File("d:/io/buffered_output_stream.txt"));
-            // 设置缓冲区大小为2个字节
-            OutputStream bos = new BufferedOutputStream(os, 2)) {
+        try (OutputStream os = new FileOutputStream(new File("d:/io/buffered_output_stream.txt"));
+                // 设置缓冲区大小为2个字节
+                OutputStream bos = new BufferedOutputStream(os, 2)) {
             String data = "helloworld!";
             bos.write(data.getBytes());
             // 刷新缓冲区，确保数据写入文件
@@ -28,5 +27,4 @@ public class BufferedOutputStreamTest {
             log.info("写入文件完成......");
         }
     }
-
 }

@@ -1,15 +1,17 @@
 package org.bluebridge.thread.thread_customerlock;
 
-
 import java.util.Optional;
 import java.util.stream.Stream;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc 布尔锁测试
+ * @date 2026/7/9 00:00
  */
 public class BooleanLockTest {
+
     public static void main(String[] args) {
-        //testLock();
+        // testLock();
         testTimeOutLock();
     }
 
@@ -52,7 +54,8 @@ public class BooleanLockTest {
     }
 
     private static void work() throws InterruptedException {
-        Optional.of(Thread.currentThread().getName()+":is working......").ifPresent(System.out::println);
+        Optional.of(Thread.currentThread().getName() + ":is working......")
+                .ifPresent(System.out::println);
         Thread.sleep(1000);
     }
 }

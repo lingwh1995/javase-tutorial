@@ -1,12 +1,12 @@
 package expand.designpattern.nullobject.nullobject_a;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc
- * @since 2019/7/29 15:02
+ * @date 2019/7/29 15:02
  */
 public class Book {
+
     private Integer id;
     private String name;
     private Double price;
@@ -29,7 +29,7 @@ public class Book {
     /**
      * 打印图书信息
      */
-    public void show(){
+    public void show() {
         System.out.println(toString());
     }
 }

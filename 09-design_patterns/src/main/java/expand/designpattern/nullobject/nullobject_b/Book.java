@@ -1,12 +1,12 @@
 package expand.designpattern.nullobject.nullobject_b;
 
 /**
- * @author ronin
- * @version V1.0
+ * @author lingwh
  * @desc
- * @since 2019/7/29 15:02
+ * @date 2019/7/29 15:02
  */
 public class Book extends AbstractBook {
+
     private Integer id;
     private String name;
     private Double price;
@@ -17,25 +17,25 @@ public class Book extends AbstractBook {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                '}';
-    }
-
     /**
      * 打印图书信息
      */
     @Override
-    public void show(){
+    public void show() {
         System.out.println(toString());
     }
 
     @Override
     public boolean isNull() {
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", price=" + price +
+            '}';
     }
 }

@@ -8,24 +8,27 @@ import java.util.concurrent.*;
 
 /**
  * 可缓存的线程池CahcedThreadPool
- *      1.核心线程数是 0， 最大线程数是 Integer.MAX_VALUE，救急线程的空闲生存时间是 60s，
- *      2.意味着全部都是救急线程（60s 后可以回收）
- *      3.救急线程可以无限创建
- *      4.队列采用了 SynchronousQueue 实现特点是，它没有容量，没有线程来取是放不进去的（一手交钱、一手交货）
  *
- *  其他API测试
+ * 1. 核心线程数是 0， 最大线程数是 Integer.MAX_VALUE，救急线程的空闲生存时间是 60s，
+ * 2. 意味着全部都是救急线程（60s 后可以回收）
+ * 3. 救急线程可以无限创建
+ * 4. 队列采用了 SynchronousQueue 实现特点是，它没有容量，没有线程来取是放不进去的（一手交钱、一手交货）
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
  */
 public class CachedThreadPool03APITest {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        //testSubmit();
+        // testSubmit();
 
-        //testInvokeAll();
+        // testInvokeAll();
 
         testInvokeAny();
     }
 
     /**
      * 测试submit()
+     *
      * @throws ExecutionException
      * @throws InterruptedException
      */
@@ -45,6 +48,7 @@ public class CachedThreadPool03APITest {
 
     /**
      * 测试invokeAll()
+     *
      * @throws InterruptedException
      */
     private static void testInvokeAll() throws InterruptedException {
@@ -82,6 +86,7 @@ public class CachedThreadPool03APITest {
 
     /**
      * 测试invokeAny()
+     *
      * @throws ExecutionException
      * @throws InterruptedException
      */

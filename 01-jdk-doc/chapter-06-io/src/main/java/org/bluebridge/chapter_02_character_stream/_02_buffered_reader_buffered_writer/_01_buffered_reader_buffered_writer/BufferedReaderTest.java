@@ -1,40 +1,23 @@
 package org.bluebridge.chapter_02_character_stream._02_buffered_reader_buffered_writer._01_buffered_reader_buffered_writer;
 
-/**
- * @author lingwh
- * @desc 带有缓冲区的输入流（通过缓冲字符来提高字符读取效率，特别适合读取大量文本数据）
- * @date 2025/8/21 18:45
- */
-
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.io.*;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+
 /**
- * BufferedReader主要特点
- *    缓冲机制: 内部使用缓冲区减少实际的读取操作次数
- *    行读取支持: 提供高效的按行读取方法
- *    性能优化: 比直接读取字符流更高效
- *    字符流操作: 专门用于处理字符数据而非字节数据
- * 最佳实践
- *    始终关闭资源: 使用 try-with-resources 或确保在 finally 块中关闭 BufferedReader
- *    合适的缓冲区大小: 根据数据特征选择合适的缓冲区大小，默认通常是8192字符
- *    优先使用 readLine(): 处理文本行时优先使用 readLine() 而非逐字符读取
- *    处理 null 值: readLine() 返回 null 表示到达文件末尾
- *    异常处理: 妥善处理 IOException 异常、
- *
- * BufferedReader 是处理文本数据时非常重要的类，通过缓冲机制显著提高了文本读取的性能，特别是在处理大量文本数据时效果明显。
+ * @author lingwh
+ * @desc 带有缓冲区的输入流（通过缓冲字符来提高字符读取效率，特别适合读取大量文本数据）
+ * @date 2025/8/21 18:45
  */
 @Slf4j
 public class BufferedReaderTest {
 
     /**
-     * 测试BufferedReader的readLine()方法
-     * 该方法一次读取一行文本，返回包含该行内容的字符串，不包括任何行终止符
+     * 测试BufferedReader的readLine()方法 该方法一次读取一行文本，返回包含该行内容的字符串，不包括任何行终止符
      */
     @Test
     public void testBufferedReaderReadLine() {
@@ -53,7 +36,8 @@ public class BufferedReaderTest {
      */
     @Test
     public void testBufferedReaderReadByBuffer() {
-        try (BufferedReader br = new BufferedReader(new FileReader("d:/io/buffered_reader.txt"), 1024)) {
+        try (BufferedReader br =
+                new BufferedReader(new FileReader("d:/io/buffered_reader.txt"), 1024)) {
             int character;
             while ((character = br.read()) != -1) {
                 log.info("本次读取到的内容： {}", (char) character);
@@ -107,7 +91,7 @@ public class BufferedReaderTest {
 
         // 测试逐行读取性能
         long startTime = Instant.now().toEpochMilli();
-        try(BufferedReader bufferedReader = new BufferedReader(stringReader)) {
+        try (BufferedReader bufferedReader = new BufferedReader(stringReader)) {
             String line;
             int lineCount = 0;
             while ((line = bufferedReader.readLine()) != null) {
@@ -166,6 +150,7 @@ public class BufferedReaderTest {
 
     /**
      * 创建一个大文件用于测试
+     *
      * @param filename
      * @param lines
      * @throws IOException
@@ -177,5 +162,4 @@ public class BufferedReaderTest {
         }
         writer.close();
     }
-
 }

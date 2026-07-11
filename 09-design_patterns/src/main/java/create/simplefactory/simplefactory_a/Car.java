@@ -1,11 +1,11 @@
 package create.simplefactory.simplefactory_a;
 
-/**  
- * 接口
- * @author ronin  
- * @date 2019年3月10日  
+/**
+ * @author lingwh
+ * @desc 接口
+ * @date 2019/3/10 00:00
  */
 public interface Car {
 
-	void run();
+    void run();
 }

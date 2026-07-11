@@ -40,10 +40,10 @@ public class CharUtilsTest {
         log.info("字符 {} 是否为字母字符：{}", number, CharUtils.isAsciiAlpha(number));
 
         // 测试字符比较（忽略大小写）
-        log.info("字符 {} 和 {} 是否相等：{}", alpha, symbol,CharUtils.compare('A', 'a'));
+        log.info("字符 {} 和 {} 是否相等：{}", alpha, symbol, CharUtils.compare('A', 'a'));
 
         // 测试toCharacterObject方法
-        Character convertedToCharacterObject= CharUtils.toCharacterObject("A");
+        Character convertedToCharacterObject = CharUtils.toCharacterObject("A");
         log.info("字符 {} 转换结果：{}", "A", convertedToCharacterObject);
 
         // 测试toChar方法
@@ -54,5 +54,4 @@ public class CharUtilsTest {
         String unicodeEscaped = CharUtils.unicodeEscaped('\'');
         log.info("字符 {} 转换结果：{}", "'", unicodeEscaped);
     }
-
 }

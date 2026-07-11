@@ -1,11 +1,11 @@
 package create.factorymethod.factorymethod_a;
 
-/**  
- * 汽车类
- * @author ronin  
- * @date 2019年3月11日  
- *    
+/**
+ * @author lingwh
+ * @desc 汽车类
+ * @date 2019/3/11 00:00
  */
 public interface Car {
-	void run();
+
+    void run();
 }

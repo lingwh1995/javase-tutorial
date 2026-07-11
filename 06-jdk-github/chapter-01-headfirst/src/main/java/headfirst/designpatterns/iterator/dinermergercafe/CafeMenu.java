@@ -2,9 +2,14 @@ package headfirst.designpatterns.iterator.dinermergercafe;
 
 import java.util.*;
 
+/**
+ * @author lingwh
+ * @desc 咖啡馆菜单
+ * @date 2026/7/9 00:00
+ */
 public class CafeMenu implements Menu {
 	HashMap<String, MenuItem> menuItems = new HashMap<String, MenuItem>();
-  
+
 	public CafeMenu() {
 		addItem("Veggie Burger and Air Fries",
 			"Veggie burger on a whole wheat bun, lettuce, tomato, and fries",
@@ -16,18 +21,17 @@ public class CafeMenu implements Menu {
 			"A large burrito, with whole pinto beans, salsa, guacamole",
 			true, 4.29);
 	}
- 
-	public void addItem(String name, String description, 
-	                     boolean vegetarian, double price) 
-	{
+
+	public void addItem(String name, String description,
+	                     boolean vegetarian, double price) {
 		MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
 		menuItems.put(menuItem.getName(), menuItem);
 	}
- 
+
 	public Map<String, MenuItem> getItems() {
 		return menuItems;
 	}
-  
+
 	public Iterator<MenuItem> createIterator() {
 		return menuItems.values().iterator();
 	}

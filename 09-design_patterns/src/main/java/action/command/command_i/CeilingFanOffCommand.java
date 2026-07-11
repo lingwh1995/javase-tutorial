@@ -3,16 +3,20 @@ package action.command.command_i;
 import action.command.command_h.Command;
 
 /**
- * 高档位对象
- * @author ronin
- * @version V1.0
- * @since 2019/9/4 16:59
+ * @author lingwh
+ * @desc 吊扇关闭命令
+ * @date 2019/9/4 16:59
  */
-public class CeilingFanOffCommand implements Command{
-    /**持有吊扇的引用*/
+public class CeilingFanOffCommand implements Command {
+
+    /**
+     * 持有吊扇的引用
+     */
     CeilingFan ceilingFan;
 
-    /**吊扇之前的速度*/
+    /**
+     * 吊扇之前的速度
+     */
     int preSpeed;
 
     public CeilingFanOffCommand(CeilingFan ceilingFan) {
@@ -23,7 +27,7 @@ public class CeilingFanOffCommand implements Command{
      * 执行命令
      */
     @Override
-    public void execute(){
+    public void execute() {
         preSpeed = ceilingFan.getSpeed();
         ceilingFan.off();
     }
@@ -32,14 +36,14 @@ public class CeilingFanOffCommand implements Command{
      * 撤销命令:将吊扇的速度设置会之前的值,达到撤销的目的
      */
     @Override
-    public void undo(){
-        if(preSpeed == CeilingFan.HIGH){
+    public void undo() {
+        if (preSpeed == CeilingFan.HIGH) {
             ceilingFan.high();
-        }else if(preSpeed == CeilingFan.MEDIUM){
+        } else if (preSpeed == CeilingFan.MEDIUM) {
             ceilingFan.medium();
-        }else if(preSpeed == CeilingFan.LOW){
+        } else if (preSpeed == CeilingFan.LOW) {
             ceilingFan.low();
-        }else if(preSpeed == CeilingFan.OFF){
+        } else if (preSpeed == CeilingFan.OFF) {
             ceilingFan.off();
         }
     }

@@ -1,11 +1,11 @@
 package org.bluebridge.chapter_02_character_stream._04_chararray_reader_chararray_writer;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 import java.io.CharArrayReader;
 import java.io.CharArrayWriter;
 import java.io.IOException;
+
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
 
 /**
  * @author lingwh
@@ -40,6 +40,4 @@ public class CharArrayReaderAndCharArrayWriterTest {
             e.printStackTrace();
         }
     }
-
-
 }

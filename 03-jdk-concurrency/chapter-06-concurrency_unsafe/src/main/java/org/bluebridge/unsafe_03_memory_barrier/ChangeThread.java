@@ -2,9 +2,16 @@ package org.bluebridge.unsafe_03_memory_barrier;
 
 import lombok.Getter;
 
+/**
+ * @author lingwh
+ * @desc 修改标志线程
+ * @date 2026/7/9 00:00
+ */
 @Getter
-class ChangeThread implements Runnable{
+class ChangeThread implements Runnable {
+
     boolean flag = false;
+
     @Override
     public void run() {
         try {

@@ -3,10 +3,13 @@ package org.bluebridge.thread.thread_designpattern.workerthread;
 import java.util.Arrays;
 
 /**
- * @author ronin
+ * @author lingwh
+ * @desc Worker Thread 模式 - 通道
+ * @date 2026/7/9 00:00
  */
 public class Channel {
-    private final static int MAX_REQUEST= 100;
+
+    private static final int MAX_REQUEST = 100;
     private final Request[] requestQueue;
     private int head;
     private int tail;
@@ -24,23 +27,23 @@ public class Channel {
     }
 
     private void init() {
-        for(int i=0;i<workerPool.length; i++){
-            workerPool[i] = new WorkerThread("Worker-"+i,this);
+        for (int i = 0; i < workerPool.length; i++) {
+            workerPool[i] = new WorkerThread("Worker-" + i, this);
         }
     }
 
     /**
      * push switch to start all of worker to work.
      */
-    public void startWorker(){
+    public void startWorker() {
         Arrays.asList(workerPool).forEach(WorkerThread::start);
     }
 
-    public synchronized void put(Request request){
-        while(count >= requestQueue.length){
-            try{
+    public synchronized void put(Request request) {
+        while (count >= requestQueue.length) {
+            try {
                 this.wait();
-            }catch (Exception e){
+            } catch (Exception e) {
 
             }
         }
@@ -50,16 +53,16 @@ public class Channel {
         this.notifyAll();
     }
 
-    public synchronized Request take(){
-        while(count<=0){
-            try{
+    public synchronized Request take() {
+        while (count <= 0) {
+            try {
                 this.wait();
-            }catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
         Request request = this.requestQueue[head];
-        this.head = (this.head +1) % this.requestQueue.length;
+        this.head = (this.head + 1) % this.requestQueue.length;
         this.count--;
         this.notifyAll();
         return request;
