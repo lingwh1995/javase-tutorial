@@ -1,13 +1,14 @@
 package org.bluebridge.cas;
 
-import java.util.Arrays;
-
 import org.junit.Test;
 
+import java.util.Arrays;
+
 /**
+ * 多条件判断简化写法
+ *
  * @author lingwh
- * @desc 多条件判断简化写法
- * @date 2026/7/10 00:00
+ * @date 2026/4/21 19:02
  */
 public class _06_MultiConditionJudgeTest {
 

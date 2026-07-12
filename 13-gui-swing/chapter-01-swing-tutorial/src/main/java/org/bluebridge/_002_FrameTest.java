@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * JFrame 测试程序
+ *
  * @author lingwh
- * @desc JFrame 测试程序
  * @date 2025/8/4 18:17
  */
 public class _002_FrameTest {

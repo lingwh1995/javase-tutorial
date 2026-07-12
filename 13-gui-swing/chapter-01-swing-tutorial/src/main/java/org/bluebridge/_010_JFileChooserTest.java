@@ -3,8 +3,9 @@ package org.bluebridge;
 import javax.swing.*;
 
 /**
+ * 文件选择器测试
+ *
  * @author lingwh
- * @desc 文件选择器测试
  * @date 2026/1/31 19:17
  */
 public class _010_JFileChooserTest {

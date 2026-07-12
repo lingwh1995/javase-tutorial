@@ -3,8 +3,9 @@ package org.bluebridge;
 import javax.swing.*;
 
 /**
+ * 进度条
+ *
  * @author lingwh
- * @desc 进度条
  * @date 2026/1/31 17:33
  */
 public class _004_JProgressBarTest {

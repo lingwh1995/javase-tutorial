@@ -3,8 +3,9 @@ package org.bluebridge;
 import javax.swing.*;
 
 /**
+ * JComponent工具提示文本
+ *
  * @author lingwh
- * @desc JComponent工具提示文本
  * @date 2026/1/31 18:42
  */
 public class _008_JComponent_ToolTipText_Test {

@@ -1,16 +1,17 @@
 package org.bluebridge.cas;
 
+import org.apache.commons.lang3.text.StrSubstitutor;
+import org.junit.Test;
+
 import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.commons.lang3.text.StrSubstitutor;
-import org.junit.Test;
-
 /**
+ * 模板字符串
+ *
  * @author lingwh
- * @desc 模板字符串
- * @date 2026/7/10 00:00
+ * @date 2026/4/21 19:02
  */
 public class _04_TemplateLiteralsTest {
 
@@ -55,9 +56,9 @@ public class _04_TemplateLiteralsTest {
         int age = 30;
         // 注意：这种方式需要JDK 15及以上支持formatted方法在字符串字面量上。在Java 11到14中，需要先定义变量然后使用String.format
         String greeting = """
-                  Hello, %s! You are %d years old.
-                  """
-            .formatted(name, age);
-    System.out.println(greeting);
-  }
+                Hello, %s! You are %d years old.
+                """
+                .formatted(name, age);
+        System.out.println(greeting);
+    }
 }

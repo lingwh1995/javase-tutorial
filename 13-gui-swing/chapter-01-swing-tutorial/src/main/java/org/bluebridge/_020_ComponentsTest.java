@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * Swing 组件示例
+ *
  * @author lingwh
- * @desc Swing 组件示例
  * @date 2025/8/4 18:17
  */
 public class _020_ComponentsTest {

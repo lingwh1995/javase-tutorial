@@ -5,8 +5,9 @@ import java.awt.event.WindowEvent;
 import javax.swing.*;
 
 /**
+ * 使用 JOptionPane 进行对话框展示窗口关闭行为
+ *
  * @author lingwh
- * @desc 使用 JOptionPane 进行对话框展示窗口关闭行为
  * @date 2026/1/31 20:31
  */
 public class _015_JOptionPaneTest {

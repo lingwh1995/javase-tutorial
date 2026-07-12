@@ -1,14 +1,16 @@
 package org.bluebridge.cas;
 
-import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.springframework.util.StopWatch;
 
+import java.util.concurrent.TimeUnit;
+
 /**
+ * 线程睡眠
+ *
  * @author lingwh
- * @desc 线程睡眠
- * @date 2026/7/10 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j
 public class _02_ThreadSleepTest {

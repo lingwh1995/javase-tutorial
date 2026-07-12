@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 布局管理器示例
+ *
  * @author lingwh
- * @desc 布局管理器示例
  * @date 2025/8/4 18:24
  */
 public class _018_LayoutTest {

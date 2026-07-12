@@ -3,8 +3,9 @@ package org.bluebridge;
 import javax.swing.*;
 
 /**
+ * 颜色选择器
+ *
  * @author lingwh
- * @desc 颜色选择器
  * @date 2026/1/31 18:30
  */
 public class _007_JColorChooserTest {

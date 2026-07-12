@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 分割面板组件
+ *
  * @author lingwh
- * @desc 分割面板组件
  * @date 2026/1/31 19:23
  */
 public class _013_JSplitPaneTest {

@@ -7,8 +7,9 @@ import java.io.IOException;
 import javax.swing.*;
 
 /**
+ * 进度条案例 - 拷贝文件
+ *
  * @author lingwh
- * @desc 进度条案例 - 拷贝文件
  * @date 2026/1/31 17:33
  */
 public class _005_JProgressBarDemo {

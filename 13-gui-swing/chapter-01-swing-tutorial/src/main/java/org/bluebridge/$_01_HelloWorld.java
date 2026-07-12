@@ -5,8 +5,9 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 /**
+ * Swing HelloWorld程序
+ *
  * @author lingwh
- * @desc Swing HelloWorld程序
  * @date 2025/8/4 18:17
  */
 public class $_01_HelloWorld {

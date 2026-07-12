@@ -5,8 +5,9 @@ import javax.swing.*;
 import javax.swing.plaf.basic.BasicButtonUI;
 
 /**
+ * 自定义按钮UI样式
+ *
  * @author lingwh
- * @desc 自定义按钮UI样式
  * @date 2026/1/31 20:31
  */
 public class _017_CustomButtonUITest {

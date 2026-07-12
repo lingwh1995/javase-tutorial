@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 标签页组件
+ *
  * @author lingwh
- * @desc 标签页组件
  * @date 2026/1/31 19:05
  */
 public class _011_JTabbedPaneTest {

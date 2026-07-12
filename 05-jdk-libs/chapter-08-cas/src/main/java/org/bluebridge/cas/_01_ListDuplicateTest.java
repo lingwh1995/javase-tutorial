@@ -1,16 +1,18 @@
 package org.bluebridge.cas;
 
 import com.google.common.collect.Sets;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
+ * 使用多种方式判断list中元素是否重复
+ *
  * @author lingwh
- * @desc 使用多种方式判断list中元素是否重复
- * @date 2026/7/10 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j
 public class _01_ListDuplicateTest {

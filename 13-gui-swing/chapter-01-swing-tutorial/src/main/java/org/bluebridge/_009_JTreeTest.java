@@ -6,8 +6,9 @@ import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 /**
+ * 树形组件
+ *
  * @author lingwh
- * @desc 树形组件
  * @date 2026/1/31 18:56
  */
 public class _009_JTreeTest {

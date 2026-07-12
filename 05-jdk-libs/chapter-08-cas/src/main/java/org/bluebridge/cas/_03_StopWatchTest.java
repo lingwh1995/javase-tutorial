@@ -1,14 +1,16 @@
 package org.bluebridge.cas;
 
-import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.springframework.util.StopWatch;
 
+import java.util.concurrent.TimeUnit;
+
 /**
+ * 统计某段代码执行时间
+ *
  * @author lingwh
- * @desc 统计某段代码执行时间
- * @date 2026/7/10 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j
 public class _03_StopWatchTest {
@@ -25,13 +27,14 @@ public class _03_StopWatchTest {
         task1();
         // 停止计时
         stopWatch.stop();
-        log.info("任务名称：{}，执行时间：{}，花费总时间：{}，任务总数：{}", stopWatch.getLastTaskName(), stopWatch.getLastTaskTimeMillis(), stopWatch.getTotalTimeMillis(), stopWatch.getTaskCount());
+        log.info("任务名称：{}，执行时间：{}，花费总时间：{}，任务总数：{}", stopWatch.getLastTaskName(), stopWatch.getLastTaskTimeMillis(),
+                stopWatch.getTotalTimeMillis(), stopWatch.getTaskCount());
     }
 
     /**
      * 测试StopWatch
-     *    1. 多个任务执行时间统计
-     *    2. 优雅的打印执行结果
+     * 1. 多个任务执行时间统计
+     * 2. 优雅的打印执行结果
      */
     @Test
     public void testStopWatch() throws InterruptedException {
@@ -51,17 +54,17 @@ public class _03_StopWatchTest {
         log.info(stopWatch.prettyPrint());
     }
 
-        /**
-         * 任务一：睡眠1000毫秒
-         */
-        private void task1() throws InterruptedException {
-                TimeUnit.MILLISECONDS.sleep(1000);
-        }
+    /**
+     * 任务一：睡眠1000毫秒
+     */
+    private void task1() throws InterruptedException {
+        TimeUnit.MILLISECONDS.sleep(1000);
+    }
 
-        /**
-         * 任务二：睡眠2000毫秒
-         */
-        private void task2() throws InterruptedException {
-                TimeUnit.MILLISECONDS.sleep(2000);
-        }
+    /**
+     * 任务二：睡眠2000毫秒
+     */
+    private void task2() throws InterruptedException {
+        TimeUnit.MILLISECONDS.sleep(2000);
+    }
 }

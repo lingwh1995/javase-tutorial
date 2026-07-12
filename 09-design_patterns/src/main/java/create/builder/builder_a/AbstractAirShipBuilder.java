@@ -1,8 +1,9 @@
 package create.builder.builder_a;
 
 /**
+ * AirShip构建者接口
+ *
  * @author lingwh
- * @desc AirShip构建者接口
  * @date 2019年3月23日
  */
 public abstract class AbstractAirShipBuilder {

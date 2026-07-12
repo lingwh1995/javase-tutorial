@@ -3,8 +3,9 @@ package org.bluebridge;
 import javax.swing.*;
 
 /**
+ * 创建一个JMenu
+ *
  * @author lingwh
- * @desc 创建一个JMenu
  * @date 2026/1/31 17:25
  */
 public class _003_JMenuTest {

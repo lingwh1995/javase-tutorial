@@ -4,13 +4,15 @@ import javax.swing.*;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 
 /**
+ * 自定义皮肤
+ *
+ * MetalLookAndFeel - 官方默认皮肤
+ * WindowsLookAndFeel - Windows操作系统限定皮肤，其他平台无法使用
+ * MotifLookAndFeel - 官方皮肤
+ * NimbusLookAndFeel - 官方皮肤
+ * AquaLookAndFeel - MacOS操作系统限定皮肤，其他平台无法使用
+ *
  * @author lingwh
- * @desc 自定义皮肤
- *       MetalLookAndFeel - 官方默认皮肤
- *       WindowsLookAndFeel - Windows操作系统限定皮肤，其他平台无法使用
- *       MotifLookAndFeel - 官方皮肤
- *       NimbusLookAndFeel - 官方皮肤
- *       AquaLookAndFeel - MacOS操作系统限定皮肤，其他平台无法使用
  * @date 2026/1/31 20:31
  */
 public class _016_CustomSwingUITest {

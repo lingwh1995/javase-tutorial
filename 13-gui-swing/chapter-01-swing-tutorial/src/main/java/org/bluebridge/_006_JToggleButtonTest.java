@@ -3,8 +3,9 @@ package org.bluebridge;
 import javax.swing.*;
 
 /**
+ * JToggleButton 切换按钮
+ *
  * @author lingwh
- * @desc JToggleButton 切换按钮
  * @date 2026/1/31 18:12
  */
 public class _006_JToggleButtonTest {

@@ -7,8 +7,9 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 
 /**
+ * 自定义组件（需要自己绘制自定义组件的样式）
+ *
  * @author lingwh
- * @desc 自定义组件（需要自己绘制自定义组件的样式）
  * @date 2026/1/30 18:10
  */
 public class _019_CustomComponentTest {

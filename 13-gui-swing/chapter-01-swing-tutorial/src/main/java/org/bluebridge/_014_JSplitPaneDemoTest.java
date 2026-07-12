@@ -8,8 +8,9 @@ import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 /**
+ * 分割面板组件示例
+ *
  * @author lingwh
- * @desc 分割面板组件示例
  * @date 2026/1/31 19:23
  */
 public class _014_JSplitPaneDemoTest {

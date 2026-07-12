@@ -4,9 +4,10 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 高级布局管理器演示程序 演示多种常用的布局管理器及其特点，包含更多教学示例
+ *
  * @author lingwh
- * @desc 高级布局管理器演示程序 演示多种常用的布局管理器及其特点，包含更多教学示例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class _019_AdvancedLayoutTest extends JFrame {
 
@@ -151,13 +152,12 @@ public class _019_AdvancedLayoutTest extends JFrame {
 
         // 添加中央组件 - 使用滚动面板展示大量内容
         JTextArea centerText = new JTextArea(
-            "BorderLayout.CENTER\n" +
-            "这是中央区域，占据剩余空间\n" +
-            "中央区域通常用来放置主要内容\n" +
-            "可以是文本区域、表格或其他组件\n" +
-            "当其他区域有组件时，中央区域会自动调整大小\n" +
-            "这是中央区域的更多内容..."
-        );
+                "BorderLayout.CENTER\n" +
+                        "这是中央区域，占据剩余空间\n" +
+                        "中央区域通常用来放置主要内容\n" +
+                        "可以是文本区域、表格或其他组件\n" +
+                        "当其他区域有组件时，中央区域会自动调整大小\n" +
+                        "这是中央区域的更多内容...");
         centerText.setEditable(false);
         centerText.setLineWrap(true);
         centerText.setWrapStyleWord(true);
@@ -214,9 +214,9 @@ public class _019_AdvancedLayoutTest extends JFrame {
 
         // 添加9个不同内容的按钮形成3x3的网格
         String[] labels = {
-            "登录", "注册", "退出",
-            "保存", "取消", "重置",
-            "查询", "导出", "打印"
+                "登录", "注册", "退出",
+                "保存", "取消", "重置",
+                "查询", "导出", "打印"
         };
 
         for (int i = 0; i < 9; i++) {
@@ -224,11 +224,18 @@ public class _019_AdvancedLayoutTest extends JFrame {
             button.setPreferredSize(new Dimension(100, 50));
 
             // 根据位置设置不同颜色以更好地区分
-            switch(i) {
-                case 0: button.setBackground(Color.CYAN); break;
-                case 1: button.setBackground(Color.YELLOW); break;
-                case 2: button.setBackground(Color.PINK); break;
-                default: button.setBackground(null); // 默认颜色
+            switch (i) {
+                case 0:
+                    button.setBackground(Color.CYAN);
+                    break;
+                case 1:
+                    button.setBackground(Color.YELLOW);
+                    break;
+                case 2:
+                    button.setBackground(Color.PINK);
+                    break;
+                default:
+                    button.setBackground(null); // 默认颜色
             }
 
             panel.add(button);
@@ -253,7 +260,8 @@ public class _019_AdvancedLayoutTest extends JFrame {
         GridBagConstraints gbc = new GridBagConstraints();
 
         // 添加标题标签
-        gbc.gridx = 0; gbc.gridy = 0;
+        gbc.gridx = 0;
+        gbc.gridy = 0;
         gbc.gridwidth = 3;
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.weightx = 1.0;
@@ -264,7 +272,8 @@ public class _019_AdvancedLayoutTest extends JFrame {
         panel.add(titleLabel, gbc);
 
         // 添加姓名标签
-        gbc.gridx = 0; gbc.gridy = 1;
+        gbc.gridx = 0;
+        gbc.gridy = 1;
         gbc.gridwidth = 1;
         gbc.fill = GridBagConstraints.NONE;
         gbc.weightx = 0.0;
@@ -455,7 +464,7 @@ public class _019_AdvancedLayoutTest extends JFrame {
         rightBox.add(innerHBox);
 
         rightBox.add(Box.createVerticalStrut(10));
-        rightBox.add(new JScrollPane(new JList<>(new String[]{"项目1", "项目2", "项目3", "项目4"})));
+        rightBox.add(new JScrollPane(new JList<>(new String[] { "项目1", "项目2", "项目3", "项目4" })));
         rightBox.add(Box.createVerticalGlue());
         complexPanel.add(rightBox);
 
@@ -506,7 +515,8 @@ public class _019_AdvancedLayoutTest extends JFrame {
         GridBagConstraints gbc = new GridBagConstraints();
 
         // 添加搜索栏
-        gbc.gridx = 0; gbc.gridy = 0;
+        gbc.gridx = 0;
+        gbc.gridy = 0;
         gbc.gridwidth = 4;
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.weightx = 1.0;
@@ -518,17 +528,18 @@ public class _019_AdvancedLayoutTest extends JFrame {
         centerContent.add(searchPanel, gbc);
 
         // 添加表格
-        gbc.gridx = 0; gbc.gridy = 1;
+        gbc.gridx = 0;
+        gbc.gridy = 1;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.weighty = 1.0;
         gbc.insets = new Insets(0, 5, 5, 5);
 
-        String[] columnNames = {"ID", "名称", "价格", "库存"};
+        String[] columnNames = { "ID", "名称", "价格", "库存" };
         Object[][] data = {
-            {"1", "笔记本电脑", "5999", "10"},
-            {"2", "鼠标", "99", "100"},
-            {"3", "键盘", "299", "50"},
-            {"4", "显示器", "1999", "20"}
+                { "1", "笔记本电脑", "5999", "10" },
+                { "2", "鼠标", "99", "100" },
+                { "3", "键盘", "299", "50" },
+                { "4", "显示器", "1999", "20" }
         };
 
         JTable table = new JTable(data, columnNames);
@@ -536,7 +547,8 @@ public class _019_AdvancedLayoutTest extends JFrame {
         centerContent.add(tableScrollPane, gbc);
 
         // 添加底部按钮
-        gbc.gridx = 0; gbc.gridy = 2;
+        gbc.gridx = 0;
+        gbc.gridy = 2;
         gbc.fill = GridBagConstraints.NONE;
         gbc.weighty = 0.0;
         gbc.anchor = GridBagConstraints.LINE_END;
@@ -600,13 +612,12 @@ public class _019_AdvancedLayoutTest extends JFrame {
 
         // 添加说明文本
         JTextArea explanation = new JTextArea(
-            "对比说明：\n" +
-            "1. FlowLayout: 组件按顺序排列，空间不足时换行\n" +
-            "2. BorderLayout: 组件分布在五个区域\n" +
-            "3. GridLayout: 组件平均分配网格空间\n" +
-            "4. BoxLayout: 组件垂直堆叠\n" +
-            "\n调整窗口大小可观察各布局的响应行为差异。"
-        );
+                "对比说明：\n" +
+                        "1. FlowLayout: 组件按顺序排列，空间不足时换行\n" +
+                        "2. BorderLayout: 组件分布在五个区域\n" +
+                        "3. GridLayout: 组件平均分配网格空间\n" +
+                        "4. BoxLayout: 组件垂直堆叠\n" +
+                        "\n调整窗口大小可观察各布局的响应行为差异。");
         explanation.setEditable(false);
         explanation.setOpaque(false);
         explanation.setFont(new Font("微软雅黑", Font.PLAIN, 11));
@@ -667,5 +678,5 @@ public class _019_AdvancedLayoutTest extends JFrame {
                 e.printStackTrace();
             }
         });
-  }
+    }
 }
