@@ -3,9 +3,10 @@ package org.bluebridge.unsafe_10_unsafe_atomic_integer;
 import java.util.ArrayList;
 
 /**
+ * 账户接口
+ *
  * @author lingwh
- * @desc 账户接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 interface Account {
 
@@ -36,7 +37,7 @@ interface Account {
         for (Thread t : ts) {
             t.start();
         }
-        for (Thread t:ts) {
+        for (Thread t : ts) {
             try {
                 t.join();
             } catch (InterruptedException e) {

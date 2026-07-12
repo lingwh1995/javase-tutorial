@@ -1,13 +1,14 @@
 package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadlocal_storage_b;
 
 /**
+ * 动作上下文
+ *
  * @author lingwh
- * @desc 动作上下文
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class ActionContext {
 
-    private static final ThreadLocal<Context> threadLocal = new ThreadLocal<Context> (){
+    private static final ThreadLocal<Context> threadLocal = new ThreadLocal<Context>() {
         @Override
         protected Context initialValue() {
             return new Context();

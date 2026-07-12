@@ -1,9 +1,10 @@
 package org.bluebridge.annotation;
 
 /**
+ * 注解的属性和属性的默认值
+ *
  * @author lingwh
- * @desc 注解的属性和属性的默认值
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public @interface Anno2 {
 

@@ -1,9 +1,10 @@
 package org.bluebridge.annotation;
 
 /**
+ * 注解属性类型示例
+ *
  * @author lingwh
- * @desc 注解属性类型示例
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public @interface Anno4 {
 

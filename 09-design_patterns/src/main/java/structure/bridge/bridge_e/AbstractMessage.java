@@ -1,8 +1,9 @@
 package structure.bridge.bridge_e;
 
 /**
+ * 抽象消息类
+ *
  * @author lingwh
- * @desc 消息的抽象
  * @date 2019/7/24 13:30
  */
 public abstract class AbstractMessage {
@@ -25,7 +26,7 @@ public abstract class AbstractMessage {
      * 发送消息，委派给实现部分的方法
      *
      * @param message 要发送消息的内容
-     * @param toUser 消息的接受者
+     * @param toUser  消息的接受者
      */
     public void sendMessage(String message, String toUser) {
         this.messageImplementor.send(message, toUser);

@@ -6,14 +6,16 @@ import structure.adapter.adapter_f.service.IGatzlService;
 import structure.adapter.adapter_f.service.ITztgService;
 
 /**
+ * 信息交流适配器抽象类
+ *
  * @author lingwh
- * @desc 信息交流适配器抽象类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AbstractXxjlAdapter implements IGatzlService, ITztgService {
 
     @Override
-    public void save(Gatzl gatzl) {}
+    public void save(Gatzl gatzl) {
+    }
 
     @Override
     public boolean delete(Gatzl gatzl) {
@@ -26,7 +28,8 @@ public class AbstractXxjlAdapter implements IGatzlService, ITztgService {
     }
 
     @Override
-    public void save(Tztg tztg) {}
+    public void save(Tztg tztg) {
+    }
 
     @Override
     public boolean delete(Tztg tztg) {

@@ -1,9 +1,10 @@
 package create.simplefactory.simplefactory_c;
 
 /**
+ * 加法运算
+ *
  * @author lingwh
- * @desc 加法运算
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Add implements Operation {
 

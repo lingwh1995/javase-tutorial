@@ -1,8 +1,10 @@
 package structure.bridge.bridge_f;
 
 /**
+ * 抽象消息接口
+ *    抽象接口中的操作是基于实现接口中的操作的， 在另一个维度上增强了第一个接口中发送短信的操作
+ *
  * @author lingwh
- * @desc 定义抽象部分接口:这个抽象接口中的操作是基于实现接口中的操作的， 在另一个维度上增强了第一个接口中发送短信的操作
  * @date 2019/8/6 9:07
  */
 public abstract class AbstractMessage {

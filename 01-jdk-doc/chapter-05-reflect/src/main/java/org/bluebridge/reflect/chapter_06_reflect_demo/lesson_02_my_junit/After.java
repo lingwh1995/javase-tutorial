@@ -4,9 +4,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /**
+ * @After注解
+ *
  * @author lingwh
- * @desc @After注解
- * @date 2019/3/14 00:00
+ * @date 2026/6/22 18:04
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface After {

@@ -1,9 +1,10 @@
 package create.factorymethod.factorymethod_i;
 
 /**
+ * Adidas服装生产工厂
+ *
  * @author lingwh
- * @desc Adidas服装生产工厂
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AdidasClothesProduceFactory implements IClothesProduceFactory {
 

@@ -5,8 +5,9 @@ import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 /**
+ * 模仿IntelliJ IDEA界面布局的简单实现 仅实现布局结构，无具体功能逻辑
+ *
  * @author lingwh
- * @desc 模仿IntelliJ IDEA界面布局的简单实现 仅实现布局结构，无具体功能逻辑
  * @date 2026/2/6 10:24
  */
 public class Application {
@@ -36,7 +37,7 @@ public class Application {
         JMenuBar menuBar = new JMenuBar();
         // 创建基础菜单
         JMenu[] menus = {
-            new JMenu("File"), new JMenu("Edit"), new JMenu("View"), new JMenu("Run"), new JMenu("Help")
+                new JMenu("File"), new JMenu("Edit"), new JMenu("View"), new JMenu("Run"), new JMenu("Help")
         };
         // 添加所有菜单到菜单栏
         for (JMenu menu : menus) {
@@ -59,14 +60,12 @@ public class Application {
 
         // 4. 组装拆分面板
         // 第一步：拆分编辑区和右侧工具窗口
-        JSplitPane rightSplit =
-                new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, editorPanel, toolWindowPanel);
+        JSplitPane rightSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, editorPanel, toolWindowPanel);
         rightSplit.setDividerLocation(800);
         rightSplit.setOneTouchExpandable(true);
 
         // 第二步：拆分左侧项目树和（编辑区+工具窗口）
-        JSplitPane mainSplit =
-                new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, projectTreePanel, rightSplit);
+        JSplitPane mainSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, projectTreePanel, rightSplit);
         mainSplit.setDividerLocation(250);
         mainSplit.setOneTouchExpandable(true);
 
@@ -141,11 +140,11 @@ public class Application {
 
         // 状态栏元素
         JLabel[] statusLabels = {
-            new JLabel(" Line: 1, Column: 1 "),
-            new JLabel(" UTF-8 "),
-            new JLabel(" Main Branch "),
-            new JLabel(" No errors "),
-            new JLabel(" 12:00 PM ")
+                new JLabel(" Line: 1, Column: 1 "),
+                new JLabel(" UTF-8 "),
+                new JLabel(" Main Branch "),
+                new JLabel(" No errors "),
+                new JLabel(" 12:00 PM ")
         };
 
         // 添加元素（中间用水平胶水右对齐最后一个元素）

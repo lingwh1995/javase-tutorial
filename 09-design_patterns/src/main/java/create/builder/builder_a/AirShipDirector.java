@@ -1,10 +1,9 @@
 package create.builder.builder_a;
 
 /**
- *
+ * 装配AirShip
  *
  * @author ronin
- * @desc 装配AirShip
  * @date 2019/3/23 7:53
  */
 public class AirShipDirector {

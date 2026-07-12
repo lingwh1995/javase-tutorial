@@ -1,9 +1,10 @@
 package org.bluebridge.cas_02_atomic_integer;
 
 /**
+ * 线程不安全的实现
+ *
  * @author lingwh
- * @desc 线程不安全的实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AccountUnsafe implements Account {
 

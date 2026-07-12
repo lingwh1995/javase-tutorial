@@ -1,13 +1,12 @@
 package org.bluebridge;
 
 /**
- * @author lingwh
- * @desc 启动类
- * @date 2026/1/21 14:28
- */
-
-/**
+ * 启动类
+ *
  * wix3下载地址 https://github.com/wixtoolset/wix3/releases/tag/wix3112rtm
+ *
+ * @author lingwh
+ * @date 2026/1/21 14:28
  */
 public class AppLauncher {
 

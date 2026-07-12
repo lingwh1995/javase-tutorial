@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_a;
 
 /**
+ * 抽象产品B的接口
+ *
  * @author lingwh
- * @desc 抽象产品B的接口
  * @date 2019/9/4 10:26
  */
 public interface AbstractProductB {

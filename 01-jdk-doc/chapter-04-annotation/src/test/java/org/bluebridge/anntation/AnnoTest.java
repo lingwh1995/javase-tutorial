@@ -1,18 +1,12 @@
-/**
- * @Title: AnnoTester.java @Package com.dragonsoft.anno
- *
- * @author ronin
- * @date 2019年3月12日
- * @version V1.0
- */
 package org.bluebridge.anntation;
 
 import org.bluebridge.annotation.*;
 
 /**
+ * 一个简单的注解
+ *
  * @author lingwh
- * @desc 一个简单的注解
- * @date 2019/3/12 00:00
+ * @date 2019//12 16:29
  */
 @Anno1
 @Anno2(name = "zhangsan", age = 100)
@@ -25,4 +19,6 @@ import org.bluebridge.annotation.*;
         e = @Anno2(name = "zhangsan", age = 100),
         // f=100
         f = {100, 500, 1000})
-public class AnnoTest {}
+public class AnnoTest {
+
+}

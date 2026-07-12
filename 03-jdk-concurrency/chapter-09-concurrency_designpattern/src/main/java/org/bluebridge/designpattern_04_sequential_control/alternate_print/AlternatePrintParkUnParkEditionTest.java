@@ -3,9 +3,10 @@ package org.bluebridge.designpattern_04_sequential_control.alternate_print;
 import java.util.concurrent.locks.LockSupport;
 
 /**
+ * 交替打印(ParkUnPark版)
+ *
  * @author lingwh
- * @desc 交替打印(ParkUnPark版)
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AlternatePrintParkUnParkEditionTest {
 

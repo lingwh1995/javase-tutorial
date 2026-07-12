@@ -1,9 +1,10 @@
 package org.bluebridge.cas_02_atomic_integer;
 
 /**
+ * 线程安全的实现-悲观锁（synchronized）
+ *
  * @author lingwh
- * @desc 线程安全的实现-悲观锁（synchronized）
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AccountSafePessimisticLockSynchronized implements Account {
 

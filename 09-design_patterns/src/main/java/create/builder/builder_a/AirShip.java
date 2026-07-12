@@ -1,8 +1,9 @@
 package create.builder.builder_a;
 
 /**
+ * 太空飞船
+ *
  * @author lingwh
- * @desc 太空飞船
  * @date 2019/3/23 7:25
  */
 public class AirShip {
@@ -70,10 +71,10 @@ public class AirShip {
 }
 
 /**
- * @author lingwh
- * @desc 轨道舱
- * @date 2019/3/23 7:34
+ * 轨道舱
  *
+ * @author lingwh
+ * @date 2019/3/23 7:34
  */
 class OrbitalModule {
     private String name;
@@ -103,8 +104,9 @@ class OrbitalModule {
 }
 
 /**
+ * 发动机
+ *
  * @author lingwh
- * @desc 发动机
  * @date 2019/3/23 7:40
  */
 class Engin {
@@ -135,8 +137,9 @@ class Engin {
 }
 
 /**
- * @author ronin
- * @desc 逃逸塔
+ * 逃逸塔
+ *
+ * @author lingwh
  * @date 2019/3/23 7:50
  */
 class EscapeTower {

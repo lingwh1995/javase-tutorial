@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_h;
 
 /**
+ * AMD品牌CPU
+ *
  * @author lingwh
- * @desc AMD品牌CPU
  * @date 2019/8/7 15:00
  */
 public class AMDCPU implements CPUApi {

@@ -1,8 +1,9 @@
 package expand.compound.duck;
 
 /**
+ * 抽象工厂模式
+ *
  * @author lingwh
- * @desc 抽象工厂模式
  * @date 2019/10/10 11:15
  */
 public abstract class AbstractDuckFactory {

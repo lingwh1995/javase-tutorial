@@ -1,9 +1,10 @@
 package structure.adapter.adapter_m;
 
 /**
+ * 注解处理器适配器
+ *
  * @author lingwh
- * @desc 注解处理器适配器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AnnotationHandlerAdapter implements HandlerAdapter {
 

@@ -4,20 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 账户接口
+ *
  * @author lingwh
- * @desc 账户接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 interface Account {
 
     /**
      * 获取余额
+     * 
      * @return
      */
     Integer getBalance();
 
     /**
      * 取款
+     * 
      * @param amount
      */
     void withdraw(Integer amount);

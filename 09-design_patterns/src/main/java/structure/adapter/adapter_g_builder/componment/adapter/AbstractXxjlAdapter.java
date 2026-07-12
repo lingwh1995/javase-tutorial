@@ -5,6 +5,12 @@ import structure.adapter.adapter_g_builder.domain.Tztg;
 import structure.adapter.adapter_g_builder.service.IGatzlService;
 import structure.adapter.adapter_g_builder.service.ITztgService;
 
+/**
+ * 抽象信息交流适配器
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
+ */
 public class AbstractXxjlAdapter implements IGatzlService, ITztgService {
 
     @Override

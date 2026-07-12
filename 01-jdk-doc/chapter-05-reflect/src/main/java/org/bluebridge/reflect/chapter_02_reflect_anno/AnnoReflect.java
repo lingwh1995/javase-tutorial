@@ -4,9 +4,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /**
+ * 反射读取注解示例
+ *
  * @author lingwh
- * @desc 反射读取注解示例
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 18:04
  */
 @MyAnno2(name = "zhangsan", age = 20, sex = "nv")
 public class AnnoReflect {
@@ -16,7 +17,8 @@ public class AnnoReflect {
 
     @MyAnno2(name = "wangwu", age = 40, sex = "nan")
     @MyAnno3(name = "zhaoliu", age = 50)
-    public void eat() {}
+    public void eat() {
+    }
 }
 
 @Retention(RetentionPolicy.RUNTIME)

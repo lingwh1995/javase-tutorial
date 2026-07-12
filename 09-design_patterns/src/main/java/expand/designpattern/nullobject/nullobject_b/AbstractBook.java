@@ -1,8 +1,9 @@
 package expand.designpattern.nullobject.nullobject_b;
 
 /**
+ * 抽象图书
+ *
  * @author lingwh
- * @desc
  * @since 2019/7/29 15:25
  */
 public abstract class AbstractBook {

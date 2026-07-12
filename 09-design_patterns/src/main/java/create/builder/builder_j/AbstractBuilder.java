@@ -4,8 +4,9 @@ import java.util.Collection;
 import java.util.Map;
 
 /**
+ * 生成器接口，定义创建一个输出文件对象所需的各个部件的操作
+ *
  * @author lingwh
- * @desc 生成器接口，定义创建一个输出文件对象所需的各个部件的操作
  * @date 2019/8/8 14:20
  */
 public abstract class AbstractBuilder {

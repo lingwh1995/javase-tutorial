@@ -9,11 +9,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * 两阶段终止模式 - 应用服务端
+ *
  * @author lingwh
- * @desc 两阶段终止模式 - 应用服务端
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class AppServer extends Thread {
+
     private final int port;
     private static final int DEFAULT_PORT = 8080;
     private volatile boolean start = true;

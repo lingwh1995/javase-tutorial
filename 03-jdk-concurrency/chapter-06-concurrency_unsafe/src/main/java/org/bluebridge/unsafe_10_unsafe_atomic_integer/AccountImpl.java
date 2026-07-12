@@ -1,9 +1,10 @@
 package org.bluebridge.unsafe_10_unsafe_atomic_integer;
 
 /**
+ * 实现账户类，使用手动实现的原子整数作为余额类型
+ *
  * @author lingwh
- * @desc 实现账户类，使用手动实现的原子整数作为余额类型
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AccountImpl implements Account {
 

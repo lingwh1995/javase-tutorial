@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_f;
 
 /**
+ * 生产操作操作文件API的的类工厂，并且同时执行了具体的操作
+ *
  * @author lingwh
- * @desc 生产操作操作文件API的的类工厂，并且同时执行了具体的操作
  * @date 2019/8/2 11:34
  */
 public abstract class AbstractFileOperatorFactory {

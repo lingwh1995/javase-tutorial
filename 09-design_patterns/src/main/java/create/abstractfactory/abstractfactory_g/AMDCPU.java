@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
+ * AMD的CPU实现
+ *
  * @author lingwh
- * @desc AMD的CPU实现
  * @date 2019/9/4 9:45
  */
 public class AMDCPU implements CPUApi {
