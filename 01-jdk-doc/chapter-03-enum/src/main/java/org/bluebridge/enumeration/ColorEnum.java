@@ -1,11 +1,13 @@
 package org.bluebridge.enumeration;
 
 /**
+ * 颜色枚举
+ *
  * @author lingwh
- * @desc 颜色枚举
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public enum ColorEnum {
+
     RED,
     GREEN,
     YELLOW;

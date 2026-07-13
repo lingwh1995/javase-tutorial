@@ -3,9 +3,8 @@ package action.visitor.visitor_f;
 /**
  * 抽象的组件对象，相当于访问者模式中的元素对象
  *
- * @author ronin
- * @version V1.0
- * @since 2019/10/11 13:49
+ * @author lingwh
+ * @date 2019/10/11 13:49
  */
 public abstract class Component {
 

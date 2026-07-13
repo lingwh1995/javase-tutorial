@@ -1,8 +1,9 @@
 package action.mediator.mediator_b;
 
 /**
+ * 抽象同事类
+ *
  * @author lingwh
- * @desc 抽象同事类
  * @date 2019/8/14 11:31
  */
 public class Colleague {

@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_h;
 
 /**
+ * 装机工程师类
+ *
  * @author lingwh
- * @desc 装机工程师类
  * @date 2019/8/7 15:24
  */
 public class ComputerEngineer {

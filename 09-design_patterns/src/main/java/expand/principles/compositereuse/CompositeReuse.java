@@ -4,7 +4,7 @@ package expand.principles.compositereuse;
  * 合成复用原则
  *
  * @author lingwh
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class CompositeReuse {
 

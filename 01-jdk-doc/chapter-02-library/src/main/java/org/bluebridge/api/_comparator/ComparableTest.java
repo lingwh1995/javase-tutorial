@@ -1,15 +1,16 @@
 package org.bluebridge.api._comparator;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import org.junit.Test;
 
 /**
  * Comparable内部比较器测试
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class ComparableTest {
 

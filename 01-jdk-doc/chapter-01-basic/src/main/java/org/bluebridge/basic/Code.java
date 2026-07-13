@@ -8,8 +8,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ * 原码、反码、补码
+ *
  * @author lingwh
- * @desc 原码、反码、补码
  * @date 2025/5/3 16:58
  */
 @Slf4j

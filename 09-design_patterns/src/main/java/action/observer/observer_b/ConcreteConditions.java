@@ -7,6 +7,7 @@ package action.observer.observer_b;
  * @date 2019/7/25 17:01
  */
 public class ConcreteConditions {
+
     // 温度
     private String temperature;
     // 气压

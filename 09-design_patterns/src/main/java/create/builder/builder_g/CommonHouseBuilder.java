@@ -1,9 +1,10 @@
 package create.builder.builder_g;
 
 /**
+ * 具体的建造者
+ *
  * @author lingwh
- * @desc 具体的建造者
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CommonHouseBuilder extends HouseBuilder {
 

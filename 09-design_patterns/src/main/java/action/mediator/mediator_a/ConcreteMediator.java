@@ -1,8 +1,9 @@
 package action.mediator.mediator_a;
 
 /**
+ * 具体中介者
+ *
  * @author lingwh
- * @desc 具体中介者
  * @date 2019/7/29 9:28
  */
 public class ConcreteMediator extends SmartMediator {

@@ -1,8 +1,9 @@
 package structure.decorator.decorator_d;
 
 /**
+ * 具体的装饰者:给面包加上曲奇
+ *
  * @author lingwh
- * @desc 具体的装饰者:给面包加上曲奇
  * @date 2019/7/25 17:05
  */
 public class ConcreteDecorator extends Decorator {

@@ -3,11 +3,13 @@ package headfirst.designpatterns.collections;
 import java.util.*;
 
 /**
+ * 集合枚举迭代器示例
+ *
  * @author lingwh
- * @desc 集合枚举迭代器示例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Collections {
+
     public static void main(String args[]) {
         Vector<String> v = new Vector<String>(Arrays.asList(args));
 

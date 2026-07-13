@@ -1,8 +1,9 @@
 package action.responsibility.responsibility_a;
 
 /**
+ * 具体的职责对象，用来处理请求
+ *
  * @author lingwh
- * @desc 具体的职责对象，用来处理请求
  * @date 2019/8/27 17:59
  */
 public class ConcreteHandler1 extends Handler {

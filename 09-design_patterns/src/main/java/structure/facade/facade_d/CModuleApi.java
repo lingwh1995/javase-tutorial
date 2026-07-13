@@ -1,11 +1,13 @@
 package structure.facade.facade_d;
 
 /**
+ * C模块的接口
+ *
  * @author lingwh
- * @desc C模块的接口
  * @date 2019/9/12 13:17
  */
 public interface CModuleApi {
+
     /**
      * 对子系统外部
      */

@@ -3,8 +3,9 @@ package structure.composite.composite_g;
 import java.util.List;
 
 /**
+ * 抽象组件
+ *
  * @author lingwh
- * @desc 抽象组件
  * @date 2019/8/26 10:03
  */
 public abstract class Component {

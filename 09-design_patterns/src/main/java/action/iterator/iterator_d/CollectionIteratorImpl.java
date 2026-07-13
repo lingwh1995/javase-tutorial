@@ -1,8 +1,9 @@
 package action.iterator.iterator_d;
 
 /**
+ * 用来实现访问Collection集合的迭代接口，为了外部统一访问方式
+ *
  * @author lingwh
- * @desc 用来实现访问Collection集合的迭代接口，为了外部统一访问方式
  * @date 2019/8/20 9:14
  */
 public class CollectionIteratorImpl implements Iterator {

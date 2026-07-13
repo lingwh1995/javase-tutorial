@@ -1,13 +1,14 @@
 package org.bluebridge.api._comparator;
 
-import java.util.*;
 import org.junit.Test;
+
+import java.util.*;
 
 /**
  * Comparator外部比较器测试
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class ComparatorTest {
 
@@ -24,22 +25,22 @@ public class ComparatorTest {
         // 打印list的原始序列
         System.out.printf("原始序列：%s\n", personList);
 
-        //使用外部比较器接口Comparator进行排序
-        Collections.sort(personList,new Comparator<Person>() {
+        // 使用外部比较器接口Comparator进行排序
+        Collections.sort(personList, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
                 return o1.getAge() - o2.getAge();
             }
         });
-        System.out.printf("按年龄升序排序(使用外部比较器接口Comparator进行排序)： %s\n",personList);
+        System.out.printf("按年龄升序排序(使用外部比较器接口Comparator进行排序)： %s\n", personList);
 
-        Collections.sort(personList,new Comparator<Person>() {
+        Collections.sort(personList, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
                 return o2.getAge() - o1.getAge();
             }
         });
-        System.out.printf("按年龄降序排序(使用外部比较器接口Comparator进行排序)： %s\n",personList);
+        System.out.printf("按年龄降序排序(使用外部比较器接口Comparator进行排序)： %s\n", personList);
     }
 
     /**
@@ -62,7 +63,7 @@ public class ComparatorTest {
                 return o1.getAge() - o2.getAge();
             }
         });
-        System.out.printf("按年龄升序排序(使用外部比较器接口Comparator进行排序)： %s\n",Arrays.toString(personArr));
+        System.out.printf("按年龄升序排序(使用外部比较器接口Comparator进行排序)： %s\n", Arrays.toString(personArr));
 
         Arrays.sort(personArr, new Comparator<Person>() {
             @Override
@@ -70,6 +71,6 @@ public class ComparatorTest {
                 return o2.getAge() - o1.getAge();
             }
         });
-        System.out.printf("按年龄降序排序(使用外部比较器接口Comparator进行排序)： %s\n",Arrays.toString(personArr));
+        System.out.printf("按年龄降序排序(使用外部比较器接口Comparator进行排序)： %s\n", Arrays.toString(personArr));
     }
 }

@@ -1,8 +1,9 @@
 package action.visitor.visitor_a;
 
 /**
+ * 具体元素A
+ *
  * @author lingwh
- * @desc 具体元素A
  * @date 2019/10/11 9:21
  */
 public class ConcreteElementA extends Element {

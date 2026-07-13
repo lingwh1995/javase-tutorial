@@ -4,9 +4,10 @@ import org.bluebridge.enumeration.ColorEnum;
 import org.junit.Test;
 
 /**
+ * ColorEnum测试
+ *
  * @author lingwh
- * @desc ColorEnum测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class ColorEnumTest {
 

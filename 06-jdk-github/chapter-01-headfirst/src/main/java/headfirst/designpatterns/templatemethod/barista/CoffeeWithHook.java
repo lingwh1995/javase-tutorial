@@ -3,9 +3,10 @@ package headfirst.designpatterns.templatemethod.barista;
 import java.io.*;
 
 /**
+ * 咖啡(带钩子)
+ *
  * @author lingwh
- * @desc 咖啡(带钩子)
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CoffeeWithHook extends CaffeineBeverageWithHook {
 

@@ -1,12 +1,14 @@
 package org.bluebridge.java9.chapter_03_collection;
 
-import java.util.*;
 import org.junit.Test;
 
+import java.util.*;
+
 /**
+ * Java9只读集合创建测试
+ *
  * @author lingwh
- * @desc Java9只读集合创建测试
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class CollectionTest {
 
@@ -51,7 +53,7 @@ public class CollectionTest {
 
     /**
      * Java9之后创建只读集合
-     *     java9提供了更方便的方式来创建只读集合
+     * java9提供了更方便的方式来创建只读集合
      */
     @Test
     public void testCreateUnmodifiableCollectionAfterJava9() {

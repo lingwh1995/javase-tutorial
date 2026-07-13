@@ -1,13 +1,15 @@
 package org.bluebridge.java10;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
+ * java10新增创建不可变集合方式
+ *
  * @author lingwh
- * @desc java10新增创建不可变集合方式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CollectionTest {
 

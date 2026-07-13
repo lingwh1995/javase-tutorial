@@ -1,8 +1,9 @@
 package structure.composite.composite_e;
 
 /**
+ * 抽象的组件对象
+ *
  * @author lingwh
- * @desc 抽象的组件对象
  * @date 2019/8/22 11:12
  */
 public abstract class Component {

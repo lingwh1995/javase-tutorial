@@ -1,11 +1,13 @@
 package structure.decorator.decorator_c;
 
 /**
+ * 具体装饰器
+ *
  * @author lingwh
- * @desc 具体装饰器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ConcreteDecorator extends Decorator {
+
     public ConcreteDecorator(Component component) {
         this.component = component;
     }

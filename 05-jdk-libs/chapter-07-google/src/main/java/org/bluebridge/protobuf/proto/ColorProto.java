@@ -33,8 +33,7 @@ public final class ColorProto extends com.google.protobuf.GeneratedFile {
      *
      * Protobuf enum {@code org.bluebridge.protobuf.color.Color}
      */
-    public enum Color
-            implements com.google.protobuf.ProtocolMessageEnum {
+    public enum Color implements com.google.protobuf.ProtocolMessageEnum {
         /**
          * <pre>
          * 枚举值必须从 0 开始，通常用作默认值
@@ -54,136 +53,136 @@ public final class ColorProto extends com.google.protobuf.GeneratedFile {
         UNRECOGNIZED(-1),
         ;
 
-        static {
-            com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
-                com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
-                /* major= */ 4,
-                /* minor= */ 34,
-                /* patch= */ 1,
-                /* suffix= */ "",
-                "Color");
-        }
-        /**
-         * <pre>
-         * 枚举值必须从 0 开始，通常用作默认值
-         * </pre>
-         *
-         * <code>COLOR_RED = 0;</code>
-         */
-        public static final int COLOR_RED_VALUE = 0;
-        /**
-         * <code>COLOR_GREEN = 1;</code>
-         */
-        public static final int COLOR_GREEN_VALUE = 1;
-        /**
-         * <code>COLOR_BLUE = 2;</code>
-         */
-        public static final int COLOR_BLUE_VALUE = 2;
-
-
-        public final int getNumber() {
-            if (this == UNRECOGNIZED) {
-                throw new java.lang.IllegalArgumentException(
-                        "Can't get the number of an unknown enum value.");
-            }
-            return value;
-        }
-
-        /**
-         * @param value The numeric wire value of the corresponding enum entry.
-         * @return The enum associated with the given numeric wire value.
-         * @deprecated Use {@link #forNumber(int)} instead.
-         */
-        @java.lang.Deprecated
-        public static Color valueOf(int value) {
-            return forNumber(value);
-        }
-
-        /**
-         * @param value The numeric wire value of the corresponding enum entry.
-         * @return The enum associated with the given numeric wire value.
-         */
-        public static Color forNumber(int value) {
-            switch (value) {
-                case 0: return COLOR_RED;
-                case 1: return COLOR_GREEN;
-                case 2: return COLOR_BLUE;
-                default: return null;
-            }
-        }
-
-        public static com.google.protobuf.Internal.EnumLiteMap<Color>
-                internalGetValueMap() {
-            return internalValueMap;
-        }
-        private static final com.google.protobuf.Internal.EnumLiteMap<
-                Color> internalValueMap =
-                    new com.google.protobuf.Internal.EnumLiteMap<Color>() {
-                        public Color findValueByNumber(int number) {
-                            return Color.forNumber(number);
-                        }
-                    };
-
-        public final com.google.protobuf.Descriptors.EnumValueDescriptor
-                getValueDescriptor() {
-            if (this == UNRECOGNIZED) {
-                throw new java.lang.IllegalStateException(
-                        "Can't get the descriptor of an unrecognized enum value.");
-            }
-            return getDescriptor().getValue(ordinal());
-        }
-        public final com.google.protobuf.Descriptors.EnumDescriptor
-                getDescriptorForType() {
-            return getDescriptor();
-        }
-        public static com.google.protobuf.Descriptors.EnumDescriptor
-                getDescriptor() {
-            return org.bluebridge.protobuf.proto.ColorProto.getDescriptor().getEnumType(0);
-        }
-
-        private static final Color[] VALUES = values();
-
-        public static Color valueOf(
-                com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-            if (desc.getType() != getDescriptor()) {
-                throw new java.lang.IllegalArgumentException(
-                    "EnumValueDescriptor is not for this type.");
-            }
-            if (desc.getIndex() == -1) {
-                return UNRECOGNIZED;
-            }
-            return VALUES[desc.getIndex()];
-        }
-
-        private final int value;
-
-        private Color(int value) {
-            this.value = value;
-        }
-
-        // @@protoc_insertion_point(enum_scope:org.bluebridge.protobuf.color.Color)
-    }
-
-
-    public static com.google.protobuf.Descriptors.FileDescriptor
-            getDescriptor() {
-        return descriptor;
-    }
-    private static final com.google.protobuf.Descriptors.FileDescriptor
-            descriptor;
     static {
-        java.lang.String[] descriptorData = {
-            "\n\013color.proto\022\035org.bluebridge.protobuf.c" +
-            "olor*7\n\005Color\022\r\n\tCOLOR_RED\020\000\022\017\n\013COLOR_GR" +
-            "EEN\020\001\022\016\n\nCOLOR_BLUE\020\002B-\n\035org.bluebridge." +
-            "protobuf.protoB\nColorProtoP\000b\006proto3"
-        };
-        descriptor = com.google.protobuf.Descriptors.FileDescriptor
-            .internalBuildGeneratedFileFrom(descriptorData,
-                new com.google.protobuf.Descriptors.FileDescriptor[] {
-                });
-        descriptor.resolveAllFeaturesImmutable();
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 34,
+        /* patch= */ 1,
+        /* suffix= */ "",
+        "Color");
+    }
+    /**
+     * <pre>
+     * 枚举值必须从 0 开始，通常用作默认值
+     * </pre>
+     *
+     * <code>COLOR_RED = 0;</code>
+     */
+    public static final int COLOR_RED_VALUE = 0;
+    /**
+     * <code>COLOR_GREEN = 1;</code>
+     */
+    public static final int COLOR_GREEN_VALUE = 1;
+    /**
+     * <code>COLOR_BLUE = 2;</code>
+     */
+    public static final int COLOR_BLUE_VALUE = 2;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
     }
 
-    // @@protoc_insertion_point(outer_class_scope)
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static Color valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static Color forNumber(int value) {
+      switch (value) {
+        case 0: return COLOR_RED;
+        case 1: return COLOR_GREEN;
+        case 2: return COLOR_BLUE;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<Color>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        Color> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Color>() {
+            public Color findValueByNumber(int number) {
+              return Color.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
+      return getDescriptor().getValue(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return org.bluebridge.protobuf.proto.ColorProto.getDescriptor().getEnumType(0);
+    }
+
+    private static final Color[] VALUES = values();
+
+    public static Color valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private Color(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:org.bluebridge.protobuf.color.Color)
+  }
+
+
+  public static com.google.protobuf.Descriptors.FileDescriptor
+      getDescriptor() {
+    return descriptor;
+  }
+  private static final com.google.protobuf.Descriptors.FileDescriptor
+      descriptor;
+  static {
+    java.lang.String[] descriptorData = {
+      "\n\013color.proto\022\035org.bluebridge.protobuf.c" +
+      "olor*7\n\005Color\022\r\n\tCOLOR_RED\020\000\022\017\n\013COLOR_GR" +
+      "EEN\020\001\022\016\n\nCOLOR_BLUE\020\002B-\n\035org.bluebridge." +
+      "protobuf.protoB\nColorProtoP\000b\006proto3"
+    };
+    descriptor = com.google.protobuf.Descriptors.FileDescriptor
+      .internalBuildGeneratedFileFrom(descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+        });
+    descriptor.resolveAllFeaturesImmutable();
+  }
+
+  // @@protoc_insertion_point(outer_class_scope)
 }

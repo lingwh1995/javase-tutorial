@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * 组合对象，可以包含其它组合对象或者叶子对象
+ *
  * @author lingwh
- * @desc 组合对象，可以包含其它组合对象或者叶子对象
  * @date 2019/8/22 10:05
  */
 public class Composite {

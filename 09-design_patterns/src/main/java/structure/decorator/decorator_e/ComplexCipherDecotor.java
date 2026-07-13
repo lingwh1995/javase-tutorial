@@ -1,11 +1,13 @@
 package structure.decorator.decorator_e;
 
 /**
+ * 复杂加密装饰者
+ *
  * @author lingwh
- * @desc 复杂加密装饰者
  * @date 2019/7/25 18:42
  */
 public class ComplexCipherDecotor extends Decotor {
+
     public ComplexCipherDecotor(Cipher cipher) {
         super(cipher);
     }

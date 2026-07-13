@@ -1,8 +1,9 @@
 package action.observer.observer_a;
 
 /**
+ * 具体观察者
+ *
  * @author lingwh
- * @desc 具体观察者
  * @date 2019/8/19 13:44
  */
 public class ConcreteObserver implements Observer {

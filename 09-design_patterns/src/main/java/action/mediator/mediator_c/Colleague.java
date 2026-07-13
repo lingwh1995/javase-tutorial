@@ -7,6 +7,7 @@ package action.mediator.mediator_c;
  * @date 2019/8/14 11:38
  */
 public abstract class Colleague {
+
     /**
      * 持有具体中介者的引用
      */

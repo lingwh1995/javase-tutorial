@@ -1,8 +1,9 @@
 package structure.decorator.decorator_d;
 
 /**
+ * 具体组件
+ *
  * @author lingwh
- * @desc 具体组件
  * @date 2019/7/25 17:01
  */
 public class ConcreteComponment extends Bread {

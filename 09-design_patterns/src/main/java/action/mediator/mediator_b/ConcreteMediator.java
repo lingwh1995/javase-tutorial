@@ -1,8 +1,9 @@
 package action.mediator.mediator_b;
 
 /**
+ * 具体中介者
+ *
  * @author lingwh
- * @desc 具体中介者
  * @date 2019/8/14 11:34
  */
 public class ConcreteMediator implements Mediator {

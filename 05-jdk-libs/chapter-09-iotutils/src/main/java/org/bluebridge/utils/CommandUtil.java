@@ -7,13 +7,15 @@ import lombok.Data;
 import java.util.Arrays;
 
 /**
+ * 命令工具类
+ *
  * @author lingwh
- * @desc 命令工具类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Data
 @AllArgsConstructor
 public class CommandUtil {
+
     /**
      * 主密钥
      */
@@ -72,7 +74,8 @@ public class CommandUtil {
     }
 
     /**
-     * 补齐数据区 需要16字节补齐，报文长度少于16个字节，需要补满16个字节，补(16-len)个(16-len)。 如果报文长度正好时N字节的整数倍，则需要补16个十进制16。
+     * 补齐数据区 需要16字节补齐，报文长度少于16个字节，需要补满16个字节，补(16-len)个(16-len)。
+     * 如果报文长度正好时N字节的整数倍，则需要补16个十进制16。
      *
      * @param dataArea 没有补齐的数据区
      * @return 补齐后的数据区
@@ -127,7 +130,8 @@ public class CommandUtil {
         // 1.在数据对象前面添加随机通信码
         byte[] calcDataAreaBytes = new byte[randomCommunicationCodeBytes.length + encryptDataArea.length];
         System.arraycopy(randomCommunicationCodeBytes, 0, calcDataAreaBytes, 0, randomCommunicationCodeBytes.length);
-        System.arraycopy(encryptDataArea, 0, calcDataAreaBytes, randomCommunicationCodeBytes.length, encryptDataArea.length);
+        System.arraycopy(encryptDataArea, 0, calcDataAreaBytes, randomCommunicationCodeBytes.length,
+                encryptDataArea.length);
         // 2.经过MAC算法计算出MAC值
         byte[] mac = HmacUtil.hmacsha256Encrypt(calcDataAreaBytes, secretKeyBytes);
         // 3.最后将MAC追加在数据对象内容后作为数据域。

@@ -1,11 +1,13 @@
 package action.responsibility.responsibility_b;
 
 /**
+ * 学院主任 处理大于等于5000小于等于10000的采购请求
+ *
  * @author lingwh
- * @desc 学院主任 处理大于等于5000小于等于10000的采购请求
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CollegeApprover extends Approver {
+
     public CollegeApprover(String name) {
         super(name);
     }

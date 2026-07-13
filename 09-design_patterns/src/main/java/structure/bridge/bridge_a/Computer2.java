@@ -4,7 +4,7 @@ package structure.bridge.bridge_a;
  * 电脑类型的维度
  *
  * @author lingwh
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public abstract class Computer2 {
 

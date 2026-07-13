@@ -1,11 +1,13 @@
 package headfirst.designpatterns.templatemethod.barista;
 
 /**
+ * 咖啡
+ *
  * @author lingwh
- * @desc 咖啡
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Coffee extends CaffeineBeverage {
+
     public void brew() {
         System.out.println("Dripping Coffee through filter");
     }
