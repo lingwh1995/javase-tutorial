@@ -1,11 +1,13 @@
 package structure.bridge.bridge_c;
 
 /**
+ * 桥接模式客户端
+ *
  * @author lingwh
- * @desc 桥接模式客户端
  * @date 2019/7/24 11:07
  */
 public class Client {
+
     public static void main(String[] args) {
         /**
          * 测试发送普通消息

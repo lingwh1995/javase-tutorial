@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_consumer_b;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/10/17 11:26
  */
 public class Client {
+
     public static void main(String[] args) {
         Table table = new Table(3);
         new MarkerThread("MarkerThread-1", table, 31415).start();

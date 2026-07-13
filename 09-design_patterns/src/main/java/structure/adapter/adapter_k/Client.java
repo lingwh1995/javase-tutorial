@@ -4,11 +4,13 @@ import java.util.Enumeration;
 import java.util.Stack;
 
 /**
+ * 适配器模式客户端
+ *
  * @author lingwh
- * @desc 适配器模式客户端
  * @date 2019/9/11 17:16
  */
 public class Client {
+
     public static void main(String[] args) {
         Stack<String> stack = new Stack<String>();
         stack.add("1");

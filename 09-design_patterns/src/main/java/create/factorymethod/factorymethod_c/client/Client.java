@@ -9,11 +9,13 @@ import create.factorymethod.factorymethod_c.service.UserServiceMysql;
 import create.factorymethod.factorymethod_c.service.UserServiceOracle;
 
 /**
+ * 工厂方法模式客户端
+ *
  * @author lingwh
- * @desc 工厂方法模式客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
         // 不使用工厂方法模式
         IUserService userServiceOracle = new UserServiceOracle();

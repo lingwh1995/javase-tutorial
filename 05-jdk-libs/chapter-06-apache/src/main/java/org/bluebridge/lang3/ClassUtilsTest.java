@@ -1,13 +1,15 @@
 package org.bluebridge.lang3;
 
-import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ClassUtils;
 import org.junit.Test;
 
+import java.util.Map;
+
 /**
+ * 类工具类测试类
+ *
  * @author lingwh
- * @desc 类工具类测试类
  * @date 2025/11/7 12:48
  */
 @Slf4j

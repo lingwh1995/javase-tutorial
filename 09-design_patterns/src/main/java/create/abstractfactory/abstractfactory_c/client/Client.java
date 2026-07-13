@@ -14,9 +14,10 @@ import create.abstractfactory.abstractfactory_c.service.UserServiceOracle;
  * 测试抽象工厂模式与工厂方法模式区别：抽象工厂模式可以产生多个对象，工厂方法模式只能产生一个对象
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
         // 不使用工厂方法模式
         UserServiceOracle userServiceOracle = new UserServiceOracle();

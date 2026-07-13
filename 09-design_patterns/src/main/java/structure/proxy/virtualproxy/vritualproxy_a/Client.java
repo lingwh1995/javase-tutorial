@@ -1,11 +1,13 @@
 package structure.proxy.virtualproxy.vritualproxy_a;
 
 /**
+ * 虚拟代理客户端
+ *
  * @author lingwh
- * @desc 虚拟代理客户端
  * @date 2019/9/24 18:13
  */
 public class Client {
+
     public static void main(String[] args) {
         // 有很多人来找老板, 老板在忙, 助手先把所有事情安置好
         Assistant assistant = new Assistant();

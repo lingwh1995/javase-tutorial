@@ -7,6 +7,7 @@ package structure.proxy.dynamicproxy.dynamicproxy_b;
  * @date 2019/8/19 10:52
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建目标对象
         TeacherDao teacherDao = new TeacherDao();

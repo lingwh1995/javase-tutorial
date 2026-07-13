@@ -1,11 +1,13 @@
 package action.mediator.mediator_d;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/8/14 13:41
  */
 public class Client {
+
     public static void main(String[] args) {
         DepUserMediatorImpl mediator = DepUserMediatorImpl.getInstance();
         // 准备要撤销的部门，仅仅需要一个部门编号

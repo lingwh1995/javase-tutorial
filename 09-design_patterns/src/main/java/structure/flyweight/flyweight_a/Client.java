@@ -1,11 +1,13 @@
 package structure.flyweight.flyweight_a;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/6/27 12:53
  */
 public class Client {
+
     public static void b(String[] args) {
         User tom = new User("tom");
         User jerry = new User("jerry");

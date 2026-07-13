@@ -1,8 +1,9 @@
 package action.strategy.strategy_f;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc
  * @date 2019/8/28 17:21
  */
 public class Client {

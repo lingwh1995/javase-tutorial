@@ -1,11 +1,13 @@
 package action.observer.observer_g;
 
 /**
+ * 观察者模式客户端测试
+ *
  * @author lingwh
- * @desc 观察者模式客户端测试
  * @date 2019/8/19 16:18
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建水质主题对象
         WaterQuality subject = new WaterQuality();

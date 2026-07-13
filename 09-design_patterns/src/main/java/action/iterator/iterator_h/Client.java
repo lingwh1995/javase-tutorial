@@ -1,8 +1,9 @@
 package action.iterator.iterator_h;
 
 /**
+ * 迭代器模式客户端
+ *
  * @author lingwh
- * @desc 迭代器模式客户端
  * @date 2019/8/20 13:21
  */
 public class Client {

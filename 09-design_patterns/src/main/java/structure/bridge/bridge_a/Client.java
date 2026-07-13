@@ -1,11 +1,13 @@
 package structure.bridge.bridge_a;
 
 /**
+ * 测试桥接模式
+ *
  * @author lingwh
- * @desc 测试桥接模式
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         // 销售联想笔记本
         Computer2 lenovolLaptop = new Laptop2(new Lenovol());

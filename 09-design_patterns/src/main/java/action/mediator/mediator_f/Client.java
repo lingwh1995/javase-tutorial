@@ -1,11 +1,13 @@
 package action.mediator.mediator_f;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/8/14 16:30
  */
 public class Client {
+
     public static void main(String[] args) {
         MysqlDatabase mysqlDatabase = new MysqlDatabase();
         RedisDatabase redisDatabase = new RedisDatabase();

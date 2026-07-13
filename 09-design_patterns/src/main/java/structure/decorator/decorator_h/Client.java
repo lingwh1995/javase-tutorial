@@ -1,11 +1,13 @@
 package structure.decorator.decorator_h;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/6 15:45
  */
 public class Client {
+
     public static void main(String[] args) {
         // 先创建计算基本奖金的类，这也是被装饰的对象
         Component c1 = new ConcreteComponent();

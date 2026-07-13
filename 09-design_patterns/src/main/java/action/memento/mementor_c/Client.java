@@ -1,8 +1,9 @@
 package action.memento.mementor_c;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/27 11:02
  */
 public class Client {

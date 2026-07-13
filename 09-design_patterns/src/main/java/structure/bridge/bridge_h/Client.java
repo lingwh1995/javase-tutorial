@@ -7,6 +7,7 @@ package structure.bridge.bridge_h;
  * @date 2019/7/28 15:07
  */
 public class Client {
+
     public static void main(String[] args) {
         // 使用Mac播放AVI
         VideoFomat aviFormat = new AVIFormat();

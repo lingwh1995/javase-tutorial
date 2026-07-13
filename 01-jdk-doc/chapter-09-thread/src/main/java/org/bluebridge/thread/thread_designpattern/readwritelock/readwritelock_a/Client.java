@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/10/15 17:44
  */
 public class Client {
+
     public static void main(String[] args) {
         // final List<Integer> list = Collections.synchronizedList(new ArrayList<>());
         final List<Integer> list = new CopyOnWriteArrayList<>();

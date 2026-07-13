@@ -7,6 +7,7 @@ package action.strategy.strategy_g;
  * @date 2019/8/29 8:56
  */
 public class Client_card2 {
+
     public static void main(String[] args) {
         // 测试新添加的支付方式
         PaymentStrategy strategyCard2 = new Card2("010998877656");

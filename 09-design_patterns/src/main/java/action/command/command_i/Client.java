@@ -1,11 +1,13 @@
 package action.command.command_i;
 
 /**
+ * 吊扇命令模式客户端
+ *
  * @author lingwh
- * @desc 吊扇命令模式客户端
  * @date 2019/9/4 18:19
  */
 public class Client {
+
     public static void main(String[] args) {
         // 遥控器对象
         RemoteControl remoteControl = new RemoteControl();

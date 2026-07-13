@@ -1,11 +1,13 @@
 package action.observer.observer_h;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/8/30 10:32
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建目标对象
         ProductSubject product = new ProductSubject();

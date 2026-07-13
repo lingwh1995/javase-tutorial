@@ -7,6 +7,7 @@ package action.strategy.strategy_g;
  * @date 2019/8/29 8:52
  */
 public class Client_card {
+
     public static void main(String[] args) {
         // 创建相应的支付策略
         PaymentStrategy strategyRMB = new RMBCash();

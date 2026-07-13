@@ -1,11 +1,13 @@
 package structure.flyweight.flyweight_b;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc
- * @since 2019/7/30 13:34
+ * @date 2019/7/30 13:34
  */
 public class Client {
+
     public static void main(String[] args) {
         // 第一次创建X、Y、Z时，都是先创建再从池中取出，而第二次创建X时，因为池中已经存 在了，所以直接从池中取出，这就是享元模式。
         int extrinsic = 22;

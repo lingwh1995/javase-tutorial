@@ -7,10 +7,10 @@ package action.command.command_j;
  * 2. 一个按钮实现关闭电灯、关闭音响设备
  *
  * @author lingwh
- * @desc 宏命令模式客户端
  * @date 2019/9/4 15:21
  */
 public class Client {
+
     public static void main(String[] args) {
         RemoteControl remoteControl = new RemoteControl();
         // 创建电灯对象

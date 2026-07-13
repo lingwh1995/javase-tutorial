@@ -9,6 +9,7 @@ import java.lang.reflect.Proxy;
  * @date 2019/8/19 10:52
  */
 public class Client {
+
     public static void main(String[] args) {
         RealStar realStar = new RealStar();
         StarHandler starHandler = new StarHandler(realStar);

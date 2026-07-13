@@ -1,11 +1,13 @@
 package action.mediator.mediator_a;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/7/29 9:32
  */
 public class Client {
+
     public static void main(String[] args) {
         SmartDevice bathDevice = new BathDevice();
         SmartDevice curtainDevice = new CurtainDevice();

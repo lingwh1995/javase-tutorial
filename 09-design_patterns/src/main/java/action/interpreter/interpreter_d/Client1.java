@@ -1,8 +1,9 @@
 package action.interpreter.interpreter_d;
 
 /**
+ * 测试获取多个元素的值
+ *
  * @author lingwh
- * @desc 测试获取多个元素的值
  * @date 2019/8/27 16:29
  */
 public class Client1 {

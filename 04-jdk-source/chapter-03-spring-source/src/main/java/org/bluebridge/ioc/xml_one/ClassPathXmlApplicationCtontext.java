@@ -1,5 +1,11 @@
 package org.bluebridge.ioc.xml_one;
 
+import org.apache.commons.lang3.StringUtils;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -9,16 +15,11 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.logging.Logger;
 
-import org.apache.commons.lang3.StringUtils;
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
-
 /**
+ * 模拟spring框架ClassPathXmlApplicationContext
+ *
  * @author lingwh
- * @desc 模拟spring框架ClassPathXmlApplicationContext
- * @date 2019/3/13 00:00
+ * @date 2019/3/13 19:02
  */
 public class ClassPathXmlApplicationCtontext {
 
@@ -29,10 +30,16 @@ public class ClassPathXmlApplicationCtontext {
     private static Logger logger = Logger.getLogger("ClassPathXmlApplicationCtontext.class");
 
     /**
-     * SpringIOC示例代码: ApplicationContext applicationContext = new
-     * ClassPathXmlApplicationContext("applicationContext.xml"); UserService userService =
-     * (UserService) applicationContext.getBean("userService"); IOC步骤: 1.解析xml
-     * 2.查找根据<bean/>标签配置的id值找到class属性的配置的值 3.使用反射初始化bean
+     * SpringIOC示例代码
+     *
+     * ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+     * UserService userService = (UserService) applicationContext.getBean("userService");
+     *
+     * IOC步骤
+     *
+     * 1. 解析xml
+     * 2. 查找根据<bean/>标签配置的id值找到class属性的配置的值
+     * 3. 使用反射初始化bean
      */
     private String xmlPath;
 
@@ -47,14 +54,14 @@ public class ClassPathXmlApplicationCtontext {
             throw new RuntimeException("文件路径为空！");
         }
         /**
-         * 1.获取所有xml节点信息
+         * 1. 获取所有xml节点信息
          */
         List<Element> xmlElements = parseXml(xmlPath);
         if (xmlElements.isEmpty()) {
             throw new RuntimeException("该xml文件没有子节点！");
         }
         /**
-         * 2.查找是否有和该beanId对应的节点，如果有，返回该节点class属性值和该beanId对应的节点的字节点的属性名和属性值(即JavaBean中属性名和属性值)
+         * 2. 查找是否有和该beanId对应的节点，如果有，返回该节点class属性值和该beanId对应的节点的字节点的属性名和属性值(即JavaBean中属性名和属性值)
          */
         BeanMatch beanMatch = findBeanClassByBeanId(xmlElements, beanId);
         try {
@@ -62,14 +69,14 @@ public class ClassPathXmlApplicationCtontext {
                     beanMatch.getClassMatchChildAttributeAndAttributeValueMap().entrySet();
             Iterator<Entry<String, String>> beanMatchEntrySetIterator = beanMatchEntrySet.iterator();
             /**
-             * 3.根据该值创建bean
+             * 3. 根据该值创建bean
              */
             Class<?> objectClass = Class.forName(beanMatch.getClassValue());
             Object instance = objectClass.newInstance();
             while (beanMatchEntrySetIterator.hasNext()) {
                 Entry<String, String> beanMatchEntry = beanMatchEntrySetIterator.next();
                 /**
-                 * 4.给bean的属性进行赋值
+                 * 4. 给bean的属性进行赋值
                  */
                 Field beanField = objectClass.getDeclaredField(beanMatchEntry.getKey());
                 beanField.setAccessible(true);
@@ -102,15 +109,15 @@ public class ClassPathXmlApplicationCtontext {
      * @throws
      */
     private BeanMatch findBeanClassByBeanId(List<Element> xmlElements, String beanId) {
-        // 1.遍历xml节点，根据beanId查找对应的节点
+        // 1. 遍历xml节点，根据beanId查找对应的节点
         Iterator<Element> iterator = xmlElements.iterator();
         while (iterator.hasNext()) {
             Element element = iterator.next();
-            // 2.查找该节点上是否有对应的id
+            // 2. 查找该节点上是否有对应的id
             String beanIdValue = element.attributeValue("id");
             if (beanIdValue.equals(beanId)) {
                 String attributeClassValue = element.attributeValue("class");
-                // 3.判断带节点下有没有子元素，有元素就是属性值和属性名
+                // 3. 判断带节点下有没有子元素，有元素就是属性值和属性名
                 List<Element> childNode = element.elements();
                 Iterator<Element> childNodeElements = childNode.iterator();
                 // 把属性值和属性名封装到这个map中去
@@ -137,10 +144,10 @@ public class ClassPathXmlApplicationCtontext {
      * @throws
      */
     public List<Element> parseXml(String xmlPath) throws DocumentException {
-        // 1.获取资源文件(applicationContext.xml)
+        // 1. 获取资源文件(applicationContext.xml)
         ClassLoader classLoader = this.getClass().getClassLoader();
         InputStream resourceAsStream = classLoader.getResourceAsStream(xmlPath);
-        // 2.解析该xml文件，获取所有节点信息
+        // 2. 解析该xml文件，获取所有节点信息
         SAXReader saxReader = new SAXReader();
         Document document = saxReader.read(resourceAsStream);
         Element rootElement = document.getRootElement();

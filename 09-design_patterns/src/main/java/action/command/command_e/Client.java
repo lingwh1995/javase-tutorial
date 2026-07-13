@@ -1,11 +1,13 @@
 package action.command.command_e;
 
 /**
+ * 宏命令模式客户端
+ *
  * @author lingwh
- * @desc 宏命令模式客户端
  * @date 2019/8/5 14:03
  */
 public class Client {
+
     public static void main(String[] args) {
         // 冰镇绿豆排骨汤命令
         ChopCommand chopCommand = new ChopCommand();

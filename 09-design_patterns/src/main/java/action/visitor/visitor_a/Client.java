@@ -1,11 +1,13 @@
 package action.visitor.visitor_a;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/10/11 9:28
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建ObjectStructure
         ObjectStructure os = new ObjectStructure();

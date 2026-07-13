@@ -1,11 +1,13 @@
 package action.command.command_h;
 
 /**
+ * 撤销命令模式客户端
+ *
  * @author lingwh
- * @desc 撤销命令模式客户端
  * @date 2019/9/4 15:21
  */
 public class Client {
+
     public static void main(String[] args) {
         // 遥控器对象
         RemoteControl remoteControl = new RemoteControl();

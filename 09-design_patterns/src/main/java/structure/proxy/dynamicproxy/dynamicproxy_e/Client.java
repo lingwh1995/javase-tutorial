@@ -9,6 +9,7 @@ package structure.proxy.dynamicproxy.dynamicproxy_e;
  * @date 2019/8/19 12:22
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建被代理对象
         TeacherDao teacherDao = new TeacherDao();

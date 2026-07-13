@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_a;
 
 /**
+ * 调用者
+ *
  * @author lingwh
- * @desc 调用者
- * @date 2019/3/11 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         CarFactory audiFactory = new AudiFactory();
         audiFactory.run();

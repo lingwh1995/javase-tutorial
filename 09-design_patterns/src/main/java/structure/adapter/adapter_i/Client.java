@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 客户端测试类
+ *
  * @author lingwh
- * @desc 客户端测试类
  * @date 2019/8/8 13:47
  */
 public class Client {
+
     public static void main(String[] args) {
         // 准备日志内容，也就是测试的数据
         LogModel lm1 = new LogModel();

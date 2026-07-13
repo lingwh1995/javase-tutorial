@@ -11,13 +11,14 @@ import create.abstractfactory.abstractfactory_d.service.UserServiceOracle;
  * 测试抽象工厂模式
  *
  * 测试抽象工厂模式与工厂方法模式区别
- *    抽象工厂模式可以产生多个对象，工厂方法模式只能产生一个对象。
- *    测试抽象工厂 + 简单工厂(不保留该产品的抽象工厂和具体抽象工厂的实现类，只有一个简单工厂)
+ * 1. 抽象工厂模式可以产生多个对象，工厂方法模式只能产生一个对象。
+ * 2. 测试抽象工厂 + 简单工厂(不保留该产品的抽象工厂和具体抽象工厂的实现类，只有一个简单工厂)
  *
  * @author lingwh
- * @date 2019/3/10 00:00
+ * @date 2019/3/10 19:02
  */
 public class Client {
+
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
         // 不使用工厂方法模式
         UserServiceOracle userServiceOracle = new UserServiceOracle();

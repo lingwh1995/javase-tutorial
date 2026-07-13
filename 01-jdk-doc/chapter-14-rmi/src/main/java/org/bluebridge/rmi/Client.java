@@ -6,11 +6,13 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/9/24 16:54
  */
 public class Client {
+
     public static void main(String[] args)
             throws RemoteException, NotBoundException, MalformedURLException {
         MyRemote service = (MyRemote) Naming.lookup("rmi://127.0.0.1:8888/RemoteHello");

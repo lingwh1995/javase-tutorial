@@ -6,11 +6,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author ronin
- * @desc
+ * 客户端
+ *
+ * @author lingwh
  * @date 2019/8/8 14:18
  */
 public class Client {
+
     public static void main(String[] args) {
         // 准备测试数据
         ExportHeaderModel ehm = new ExportHeaderModel();

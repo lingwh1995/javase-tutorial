@@ -6,8 +6,9 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
+ * 模板方法客户端
+ *
  * @author lingwh
- * @desc 模板方法客户端
  * @date 2019/8/26 15:33
  */
 public class Client {
@@ -30,23 +31,22 @@ public class Client {
         printList(list);
 
         // 实现比较器，也可以单独用一个类来实现
-        Comparator c =
-                new Comparator() {
-                    @Override
-                    public int compare(Object obj1, Object obj2) {
-                        // 假如实现按照年龄升序排序
-                        UserModel tempUm1 = (UserModel) obj1;
-                        UserModel tempUm2 = (UserModel) obj2;
-                        if (tempUm1.getAge() > tempUm2.getAge()) {
-                            return 1;
-                        } else if (tempUm1.getAge() == tempUm2.getAge()) {
-                            return 0;
-                        } else if (tempUm1.getAge() < tempUm2.getAge()) {
-                            return -1;
-                        }
-                        return 0;
-                    }
-                };
+        Comparator c = new Comparator() {
+            @Override
+            public int compare(Object obj1, Object obj2) {
+                // 假如实现按照年龄升序排序
+                UserModel tempUm1 = (UserModel) obj1;
+                UserModel tempUm2 = (UserModel) obj2;
+                if (tempUm1.getAge() > tempUm2.getAge()) {
+                    return 1;
+                } else if (tempUm1.getAge() == tempUm2.getAge()) {
+                    return 0;
+                } else if (tempUm1.getAge() < tempUm2.getAge()) {
+                    return -1;
+                }
+                return 0;
+            }
+        };
 
         // 排序
         Collections.sort(list, c);

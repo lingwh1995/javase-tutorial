@@ -1,11 +1,13 @@
 package action.command.command_g;
 
 /**
+ * 遥控器命令模式客户端
+ *
  * @author lingwh
- * @desc 遥控器命令模式客户端
  * @date 2019/9/4 14:10
  */
 public class Client {
+
     public static void main(String[] args) {
         // 遥控器对象
         SimpleRemoteControl remote = new SimpleRemoteControl();

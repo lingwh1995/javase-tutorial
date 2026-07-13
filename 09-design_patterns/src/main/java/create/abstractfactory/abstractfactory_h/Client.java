@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_h;
 
 /**
+ * 抽象工厂装机客户端
+ *
  * @author lingwh
- * @desc 抽象工厂装机客户端
  * @date 2019/8/7 15:30
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建装机工程师对象
         ComputerEngineer engineer = new ComputerEngineer();

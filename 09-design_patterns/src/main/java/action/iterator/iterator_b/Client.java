@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 迭代器模式客户端
+ *
  * @author lingwh
- * @desc 迭代器模式客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建学院
         List<College> collegeList = new ArrayList<>();

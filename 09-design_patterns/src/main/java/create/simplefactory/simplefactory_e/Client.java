@@ -4,9 +4,10 @@ package create.simplefactory.simplefactory_e;
  * 客户端 - 简单工厂模式
  *
  * @author lingwh
- * @date 2019/3/10 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         HumanCreator humanCreator = new HumanCreator();
         Human yellowHumanSkinColor = humanCreator.createHuman("yellow");

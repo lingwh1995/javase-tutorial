@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_a;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/9/4 10:31
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建抽象工厂对象
         AbstractFactory af = new ConcreteFactory1();

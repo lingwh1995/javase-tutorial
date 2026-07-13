@@ -1,11 +1,13 @@
 package structure.decorator.decorator_g;
 
 /**
+ * 计算每个人的奖金
+ *
  * @author lingwh
- * @desc 计算每个人的奖金
  * @date 2019/8/6 15:24
  */
 public class Client {
+
     public static void main(String[] args) {
         // 先创建计算奖金的对象
         PriceCalcator p = new PriceCalcator();

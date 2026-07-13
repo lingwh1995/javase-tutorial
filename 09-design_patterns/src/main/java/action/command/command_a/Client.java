@@ -1,8 +1,9 @@
 package action.command.command_a;
 
 /**
+ * 这个客户端并方法不是具体的调用者，只是完成创建命令对象并设置接收者 通常这个客户端和调用者可以合为一体
+ *
  * @author lingwh
- * @desc 这个客户端并方法不是具体的调用者，只是完成创建命令对象并设置接收者 通常这个客户端和调用者可以合为一体
  * @date 2019/8/5 11:37
  */
 public class Client {

@@ -1,11 +1,13 @@
 package structure.adapter.adapter_b;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         Voltage220V voltage220V = new Voltage220V();
         // 获取到适配器

@@ -1,11 +1,13 @@
 package structure.decorator.decorator_d;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/7/25 17:13
  */
 public class Client {
+
     public static void main(String[] args) {
         // 买一个普通面包
         Bread bread = new ConcreteComponment();

@@ -1,8 +1,9 @@
 package action.template.template_g;
 
 /**
- * @author ronin
- * @desc
+ * 客户端
+ *
+ * @author lingwh
  * @date 2019/8/26 14:45
  */
 public class Client {

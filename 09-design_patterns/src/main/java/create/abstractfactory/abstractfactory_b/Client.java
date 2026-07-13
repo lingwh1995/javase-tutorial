@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_b;
 
 /**
+ * 调用者
+ *
  * @author lingwh
- * @desc 调用者
- * @date 2019/3/11 00:00
+ * @date 2019/3/11 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         Engine luxuryCarEngine = new LuxuryCarFactory().createEngine();
         Seat luxurySeat = new LuxuryCarFactory().createSeat();

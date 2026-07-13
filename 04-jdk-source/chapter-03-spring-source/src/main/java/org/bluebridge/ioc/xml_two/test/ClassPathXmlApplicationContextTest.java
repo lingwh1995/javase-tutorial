@@ -5,11 +5,13 @@ import org.bluebridge.ioc.xml_two.factory.BeanFactory;
 import org.bluebridge.ioc.xml_two.factory.ClassPathXmlApplicationContext;
 
 /**
+ * 测试ClassPathXmlApplicationContext
+ *
  * @author lingwh
- * @desc 测试ClassPathXmlApplicationContext
- * @date 2019/3/15 00:00
+ * @date 2019/3/15 19:02
  */
 public class ClassPathXmlApplicationContextTest {
+
     public static void main(String[] args) {
         /**
          * 验证单例Bean思路:实例化对象/创建对象必走无参，单例的话无参构造函数只调用一次
@@ -23,11 +25,11 @@ public class ClassPathXmlApplicationContextTest {
         Object s1 = context.getBean("student");
         Object s2 = context.getBean("student");
         System.out.println(s1 == s2);
-//        Object t1 = context.getBean("teacher");
-//        Object t2 = context.getBean("teacher");
-//        System.out.println(t1 == t2);
-//        Object p1 = context.getBean("person");
-//        Object p2 = context.getBean("person");
-//        System.out.println(p1 == p2);
+        // Object t1 = context.getBean("teacher");
+        // Object t2 = context.getBean("teacher");
+        // System.out.println(t1 == t2);
+        // Object p1 = context.getBean("person");
+        // Object p2 = context.getBean("person");
+        // System.out.println(p1 == p2);
     }
 }

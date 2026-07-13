@@ -1,8 +1,9 @@
 package action.interpreter.interpreter_d;
 
 /**
+ * 获取多个属性值
+ *
  * @author lingwh
- * @desc 获取多个属性值
  * @date 2019/8/27 16:30
  */
 public class Client2 {

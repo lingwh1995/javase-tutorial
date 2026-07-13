@@ -1,11 +1,13 @@
 package structure.flyweight.flyweight_d;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc
  * @date 2019/7/30 15:06
  */
 public class Client {
+
     public static void main(String[] args) {
         // 需要先登录，然后再判断是否有权限
         SecurityMgr securityMgr = SecurityMgr.getInstance();

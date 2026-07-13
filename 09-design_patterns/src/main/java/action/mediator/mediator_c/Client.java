@@ -1,8 +1,9 @@
 package action.mediator.mediator_c;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/8/14 13:15
  */
 public class Client {

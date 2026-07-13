@@ -1,11 +1,13 @@
 package structure.composite.composite_a;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc
  * @date 2019/8/22 11:09
  */
 public class Client {
+
     public static void main(String[] args) {
         // 定义多个Composite对象
         Component root = new Composite();

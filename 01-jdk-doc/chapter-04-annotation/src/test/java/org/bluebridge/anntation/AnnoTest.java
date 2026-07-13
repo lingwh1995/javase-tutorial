@@ -6,7 +6,7 @@ import org.bluebridge.annotation.*;
  * 一个简单的注解
  *
  * @author lingwh
- * @date 2019//12 16:29
+ * @date 2019/3/12 16:29
  */
 @Anno1
 @Anno2(name = "zhangsan", age = 100)

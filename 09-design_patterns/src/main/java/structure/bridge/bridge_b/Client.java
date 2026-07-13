@@ -1,11 +1,13 @@
 package structure.bridge.bridge_b;
 
 /**
+ * 获取手机
+ *
  * @author lingwh
- * @desc 获取手机
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 17:50
  */
 public class Client {
+
     public static void main(String[] args) {
         // 获取折叠式小米手机：样式+品牌
         FoldedPhone ximiFolded = new FoldedPhone(new Ximi());

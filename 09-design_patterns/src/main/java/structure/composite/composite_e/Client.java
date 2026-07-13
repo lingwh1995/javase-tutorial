@@ -1,8 +1,9 @@
 package structure.composite.composite_e;
 
 /**
+ * 客户端调用的时候可以统一对象父子组件，不需要再区分父子组件了
+ *
  * @author lingwh
- * @desc 客户端调用的时候可以统一对象父子组件，不需要再区分父子组件了
  * @date 2019/8/22 11:17
  */
 public class Client {

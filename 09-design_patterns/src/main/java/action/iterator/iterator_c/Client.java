@@ -1,11 +1,13 @@
 package action.iterator.iterator_c;
 
 /**
+ * 对于List和Array两种不同的结构,可以使用相同的方式来遍历
+ *
  * @author lingwh
- * @desc 对于List和Array两种不同的结构,可以使用相同的方式来遍历
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         /**
          * 遍历list结构

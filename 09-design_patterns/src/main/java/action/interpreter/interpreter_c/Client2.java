@@ -1,11 +1,13 @@
 package action.interpreter.interpreter_c;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/27 14:59
  */
 public class Client2 {
+
     public static void main(String[] args) throws Exception {
         // 准备上下文
         Context c =

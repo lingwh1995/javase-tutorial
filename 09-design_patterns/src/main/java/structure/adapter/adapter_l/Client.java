@@ -1,11 +1,13 @@
 package structure.adapter.adapter_l;
 
 /**
+ * 适配器模式客户端
+ *
  * @author lingwh
- * @desc 适配器模式客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         // 返回的的数据是int[]类型数据
         int[] result = DataCenter.getResult();

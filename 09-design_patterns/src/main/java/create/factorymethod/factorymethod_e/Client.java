@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_e;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc
  * @date 2019/8/2 10:32
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建提供导出文件到文本文档的API 的对象
         AbstractExportOperatorFactory exportTxtFileOperatorFactory = new ExportTxtFileOperatorFactory();

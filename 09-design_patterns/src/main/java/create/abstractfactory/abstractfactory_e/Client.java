@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_e;
 
 /**
+ * 客户端测试类
+ *
  * @author lingwh
- * @desc 客户端测试类
  * @date 2019/8/2 10:32
  */
 public class Client {
+
     public static void main(String[] args) {
         // 操作文本文件的类的工厂
         TxtFileOperatorFactory txtFileOperatorFactory = new TxtFileOperatorFactory();

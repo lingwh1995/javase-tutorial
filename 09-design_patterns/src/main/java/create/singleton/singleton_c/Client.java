@@ -1,11 +1,13 @@
 package create.singleton.singleton_c;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/5 16:49
  */
 public class Client {
+
     public static void main(String[] args) {
         // 获取单例的PropertiesUtils
         PropertiesUtils propertiesUtils = PropertiesUtils.getInstance();

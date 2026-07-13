@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_g;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/9/3 16:50
  */
 public class Client {
+
     public static void main(String[] args) {
         // 这里创建的对象不是原来的ExportOperate对象了，而是扩展了ExportOperate的ExportOperate2这个对象
         ExportOperate2 operate2 = new ExportOperate2();

@@ -1,11 +1,13 @@
 package action.observer.observer_i;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/8/30 13:23
  */
 public class Client {
+
     public static void main(String[] args) {
         // 打野
         Hero jungle = new Hero("jungle", new Position(0, 0));

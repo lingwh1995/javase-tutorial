@@ -3,9 +3,10 @@ package og.bluebridge.generic.chapter_02_class_use_single_generic;
 import org.junit.Test;
 
 /**
+ * 使用单个泛型测试
+ *
  * @author lingwh
- * @desc 使用单个泛型测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class ClassUseSingleGenericTest {
 

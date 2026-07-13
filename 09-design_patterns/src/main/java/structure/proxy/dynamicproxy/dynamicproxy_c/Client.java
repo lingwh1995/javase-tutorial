@@ -7,6 +7,7 @@ package structure.proxy.dynamicproxy.dynamicproxy_c;
  * @date 2019/8/19 11:52
  */
 public class Client {
+
     public static void main(String[] args) throws Exception {
         // 创建被代理对象
         TeacherDao teacherDao = new TeacherDao();

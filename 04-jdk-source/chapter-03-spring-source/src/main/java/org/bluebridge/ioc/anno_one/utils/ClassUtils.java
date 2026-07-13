@@ -13,9 +13,10 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
 /**
+ * 反射工具类
+ *
  * @author lingwh
- * @desc 反射工具类
- * @date 2019/3/20 00:00
+ * @date 2019/3/20 19:02
  */
 public class ClassUtils {
 
@@ -168,14 +169,13 @@ public class ClassUtils {
             return;
         }
         // 如果存在 就获取包下的所有文件 包括目录
-        File[] dirfiles =
-                dir.listFiles(
-                        new FileFilter() {
-                            // 自定义过滤规则 如果可以循环(包含子目录) 或则是以.class结尾的文件(编译好的java类文件)
-                            public boolean accept(File file) {
-                                return (recursive && file.isDirectory()) || (file.getName().endsWith(".class"));
-                            }
-                        });
+        File[] dirfiles = dir.listFiles(
+                new FileFilter() {
+                    // 自定义过滤规则 如果可以循环(包含子目录) 或则是以.class结尾的文件(编译好的java类文件)
+                    public boolean accept(File file) {
+                        return (recursive && file.isDirectory()) || (file.getName().endsWith(".class"));
+                    }
+                });
         // 循环所有文件
         for (File file : dirfiles) {
             // 如果是目录 则继续扫描

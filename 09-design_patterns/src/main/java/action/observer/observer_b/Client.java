@@ -1,6 +1,13 @@
 package action.observer.observer_b;
 
+/**
+ * 客户端
+ *
+ * @author lingwh
+ * @date 2019/8/27 11:07
+ */
 public class Client {
+
     public static void main(String[] args) {
         // 创建接入方
         ConcreteConditions concreteConditions = new ConcreteConditions();

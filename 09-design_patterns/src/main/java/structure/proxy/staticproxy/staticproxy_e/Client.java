@@ -1,11 +1,13 @@
 package structure.proxy.staticproxy.staticproxy_e;
 
 /**
+ * 静态代理客户端
+ *
  * @author lingwh
- * @desc 静态代理客户端
  * @date 2019/8/19 10:52
  */
 public class Client {
+
     public static void main(String[] args) {
         // 张三先登录系统创建了一个订单
         Order order = new OrderProxy("设计模式", 100, "张三");

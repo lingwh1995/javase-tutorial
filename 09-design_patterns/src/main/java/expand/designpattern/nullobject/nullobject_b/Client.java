@@ -1,11 +1,13 @@
 package expand.designpattern.nullobject.nullobject_b;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc
  * @date 2019/7/29 15:07
  */
 public class Client {
+
     public static void main(String[] args) {
         // 查询Id=1的图书,代码执行正常
         BookFactory.getBookById(1).show();

@@ -1,11 +1,13 @@
 package structure.adapter.adapter_c;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         /**
          * 直接对接口中的方法进行适配
@@ -20,13 +22,12 @@ public class Client {
          * 加入了一个缓冲层AbstractAnimateListenerAdpater，对AbstractAnimateListenerAdpater中的方法进行适配
          */
         animateListener.onAnimateStart();
-        AbstractAnimateListenerAdpater listener =
-                new AbstractAnimateListenerAdpater() {
-                    @Override
-                    public void onAnimateStart() {
-                        System.out.println("动画开始了....");
-                    }
-                };
+        AbstractAnimateListenerAdpater listener = new AbstractAnimateListenerAdpater() {
+            @Override
+            public void onAnimateStart() {
+                System.out.println("动画开始了....");
+            }
+        };
         listener.onAnimateStart();
     }
 }

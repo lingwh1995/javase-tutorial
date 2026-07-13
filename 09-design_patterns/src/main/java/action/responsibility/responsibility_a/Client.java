@@ -1,11 +1,13 @@
 package action.responsibility.responsibility_a;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/8/27 18:00
  */
 public class Client {
+
     public static void main(String[] args) {
         // 先要组装职责链
         Handler h1 = new ConcreteHandler1();

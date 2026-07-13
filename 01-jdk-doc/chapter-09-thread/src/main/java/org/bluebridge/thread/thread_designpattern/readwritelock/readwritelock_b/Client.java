@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_b;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Client {
+
     public static void main(String[] args) {
         final Data sharedData = new Data(10);
         new ReaderThread(sharedData).start();

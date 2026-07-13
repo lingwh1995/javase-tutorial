@@ -7,6 +7,7 @@ package action.observer.observer_e;
  * @date 2019/8/19 13:53
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建一个报纸，作为被观察者
         NewsPaper subject = new NewsPaper();

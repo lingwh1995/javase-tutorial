@@ -1,8 +1,9 @@
 package action.state.state_c;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/27 10:47
  */
 public class Client {

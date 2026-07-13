@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc
  * @date 2019/10/10 17:57
  */
 public class Client {
+
     public static void main(String[] args) {
         // 准备点测试数据
         Collection<Customer> colCustomer = preparedTestData();

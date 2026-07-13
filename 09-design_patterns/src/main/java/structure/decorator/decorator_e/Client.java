@@ -1,11 +1,13 @@
 package structure.decorator.decorator_e;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/7/25 18:43
  */
 public class Client {
+
     public static void main(String[] args) {
         // 普通加密
         Cipher concreteCipher = new ConcreteCipher();

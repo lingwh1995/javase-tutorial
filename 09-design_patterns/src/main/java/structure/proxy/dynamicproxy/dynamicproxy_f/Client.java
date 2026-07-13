@@ -1,11 +1,13 @@
 package structure.proxy.dynamicproxy.dynamicproxy_f;
 
 /**
+ * 动态代理客户端
+ *
  * @author lingwh
- * @desc 动态代理客户端
  * @date 2019/8/19 11:04
  */
 public class Client {
+
     public static void main(String[] args) {
         // 张三先登录系统创建了一个订单
         Order order = new Order("设计模式", 100, "张三");

@@ -1,11 +1,13 @@
 package action.iterator.iterator_a;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/20 9:09
  */
 public class Client {
+
     /**
      * 示意方法，使用迭代器的功能。 这里示意使用迭代器来迭代聚合对象
      */

@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.balking.guarded_timed;
 import java.util.concurrent.TimeoutException;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/10/17 10:51
  */
 public class Client {
+
     public static void main(String[] args) {
         Host host = new Host(10000);
         try {

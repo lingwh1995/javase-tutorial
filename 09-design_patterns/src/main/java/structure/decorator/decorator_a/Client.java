@@ -1,11 +1,13 @@
 package structure.decorator.decorator_a;
 
 /**
+ * 测试装饰者模式
+ *
  * @author lingwh
- * @desc 测试装饰者模式
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         /**
          * 创建真实角色

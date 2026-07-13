@@ -1,11 +1,13 @@
 package action.observer.observer_f;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/19 15:19
  */
 public class Client {
+
     public static void main(String[] args) {
 
         // 创建一个报纸，作为被观察者

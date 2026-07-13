@@ -1,11 +1,13 @@
 package action.mediator.mediator_g;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/15 8:40
  */
 public class Client {
+
     public static void main(String[] args) {
         AbstractMediator syncMediator = new SyncMediator();
         MysqlDatabase mysqlDatabase = new MysqlDatabase(syncMediator);

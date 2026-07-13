@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.single_thread;
 
 /**
+ * 单线程执行模式 - 客户端
+ *
  * @author lingwh
- * @desc 单线程执行模式 - 客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Client {
+
     public static void main(String[] args) {
         Gate gate = new Gate();
         new UserThread(gate, "Alice", "Alas").start();

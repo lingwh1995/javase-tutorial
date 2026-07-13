@@ -1,11 +1,13 @@
 package action.command.command_c;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         // 使用命令模式，完成使用遥控器操作电灯的操作
         LightReceeiver lightReceeiver = new LightReceeiver();

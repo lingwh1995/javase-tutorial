@@ -1,11 +1,13 @@
 package action.visitor.visitor_e;
 
 /**
+ * 客户端1
+ *
  * @author lingwh
- * @desc
  * @date 2019/10/11 14:02
  */
 public class Client1 {
+
     public static void main(String[] args) {
         // 定义所有的组合对象
         Component root = new Composite("服装");

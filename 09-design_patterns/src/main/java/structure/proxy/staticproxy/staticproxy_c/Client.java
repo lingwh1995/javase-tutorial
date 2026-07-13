@@ -3,11 +3,13 @@ package structure.proxy.staticproxy.staticproxy_c;
 import java.util.Collection;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/15 9:23
  */
 public class Client {
+
     public static void main(String[] args) throws Exception {
         UserManager userManager = new UserManager();
         Collection<UserModelApi> col = userManager.getUserByDepId("0101");

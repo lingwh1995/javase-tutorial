@@ -1,10 +1,13 @@
 package structure.composite.composite_b;
 
 /**
- * @author ronin
+ * 客户端
+ *
+ * @author lingwh
  * @date 2019/3/23 10:47
  */
 public class Client {
+
     public static void main(String[] args) {
         Folder f1 = new Folder("文件夹");
         imageFiles f2 = new imageFiles("头像文件");

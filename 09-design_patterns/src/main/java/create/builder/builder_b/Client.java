@@ -1,11 +1,13 @@
 package create.builder.builder_b;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         // 建造普通房子
         CommonHouseBuilder CommonHouseBuilder = new CommonHouseBuilder();

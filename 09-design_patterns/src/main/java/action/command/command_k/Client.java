@@ -1,11 +1,13 @@
 package action.command.command_k;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/9/10 16:33
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建一个计算器对象
         Calculator calculator = new Calculator();

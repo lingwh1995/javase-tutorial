@@ -10,6 +10,7 @@ import structure.adapter.adapter_e.domain.Xxjl;
  * @date 2019/7/29 15:04
  */
 public class Client {
+
     private static XxjlController xxjlController = new XxjlController();
 
     public static void main(String[] args) {

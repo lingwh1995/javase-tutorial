@@ -3,7 +3,14 @@ package action.observer.observer_c;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * 客户端
+ *
+ * @author lingwh
+ * @date 2019/8/27 11:07
+ */
 public class Client {
+
     public static void main(String[] args) {
         // 创建具体的发布者
         WeatherData weatherData = new WeatherData();

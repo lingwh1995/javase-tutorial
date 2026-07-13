@@ -1,11 +1,13 @@
 package structure.composite.composite_f;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/26 9:54
  */
 public class Client {
+
     public static void main(String[] args) {
         // 定义所有的组合对象
         Composite root = new Composite("服装");

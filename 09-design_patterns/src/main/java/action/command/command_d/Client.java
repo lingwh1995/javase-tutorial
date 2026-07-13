@@ -1,11 +1,13 @@
 package action.command.command_d;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/5 10:57
  */
 public class Client {
+
     public static void main(String[] args) {
         // 1. 把命令和真正的实现组合起来，相当于在组装机器，
         // 把机箱上按钮的连接线插接到主板上。

@@ -3,11 +3,13 @@ package action.template.template_h;
 import java.util.Collection;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/26 18:27
  */
 public class Client {
+
     public static void main(String[] args) {
         MysqlJDBCTemplate uj = new MysqlJDBCTemplate();
         // 先新增几条

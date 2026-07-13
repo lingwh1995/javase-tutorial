@@ -1,9 +1,10 @@
 package action.memento.mementor_d;
 
 /**
- * @author ronin
- * @version V1.0
- * @since 2019/8/27 11:07
+ * 客户端
+ *
+ * @author lingwh
+ * @date 2019/8/27 11:07
  */
 public class Client {
 

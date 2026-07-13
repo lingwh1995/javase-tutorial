@@ -1,11 +1,13 @@
 package create.builder.builder_h;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Client {
+
     public static void main(String[] args) {
         /**
          * 测试第一个指挥者:地基-->墙面-->屋顶

@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_f;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @date
  * @date 2019/9/3 16:50
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建需要使用的Creator对象
         ExportOperate operate = new ExportOperate();

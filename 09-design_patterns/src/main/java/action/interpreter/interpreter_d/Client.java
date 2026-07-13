@@ -1,8 +1,9 @@
 package action.interpreter.interpreter_d;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/27 16:40
  */
 public class Client {

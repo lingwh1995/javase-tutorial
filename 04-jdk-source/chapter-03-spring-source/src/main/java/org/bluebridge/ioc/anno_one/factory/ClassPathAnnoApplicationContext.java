@@ -1,15 +1,16 @@
 package org.bluebridge.ioc.anno_one.factory;
 
-import java.lang.annotation.Annotation;
-import java.util.List;
-
 import org.bluebridge.ioc.anno_one.parse.ConfigManagerAnno;
 import org.bluebridge.ioc.anno_one.utils.ClassUtils;
 
+import java.lang.annotation.Annotation;
+import java.util.List;
+
 /**
+ * 类路径注解应用上下文
+ *
  * @author lingwh
- * @desc 类路径注解应用上下文
- * @date 2019/3/20 00:00
+ * @date 2019/3/20 19:02
  */
 public class ClassPathAnnoApplicationContext implements BeanFactoryAnno {
 

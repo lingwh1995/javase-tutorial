@@ -1,11 +1,13 @@
 package headfirst.designpatterns.factory.pizzas;
 
 /**
+ * 蛤蜊披萨
+ *
  * @author lingwh
- * @desc 蛤蜊披萨
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ClamPizza extends Pizza {
+
     public ClamPizza() {
         name = "Clam Pizza";
         dough = "Thin crust";

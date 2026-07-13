@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadloc
 import java.util.stream.IntStream;
 
 /**
+ * ThreadLocal 存储模式客户端
+ *
  * @author lingwh
- * @desc ThreadLocal 存储模式客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Client {
+
     public static void main(String[] args) {
         IntStream.range(1, 5)
                 .forEach(

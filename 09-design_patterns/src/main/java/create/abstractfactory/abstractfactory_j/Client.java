@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_j;
 
 /**
+ * 抽象工厂客户端
+ *
  * @author lingwh
- * @desc 抽象工厂客户端
  * @date 2019/9/4 13:25
  */
 public class Client {
+
     public static void main(String[] args) {
         // 创建DAO的抽象工厂
         DAOFactory df = new RdbDAOFactory();

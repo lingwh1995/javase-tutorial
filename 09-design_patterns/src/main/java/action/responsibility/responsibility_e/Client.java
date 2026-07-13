@@ -1,8 +1,9 @@
 package action.responsibility.responsibility_e;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/8/27 18:11
  */
 public class Client {

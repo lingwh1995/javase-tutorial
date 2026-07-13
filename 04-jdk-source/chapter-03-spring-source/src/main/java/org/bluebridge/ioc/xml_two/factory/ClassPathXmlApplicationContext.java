@@ -13,9 +13,10 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * XML方式应用上下文
+ *
  * @author lingwh
- * @desc XML方式应用上下文
- * @date 2019/3/15 00:00
+ * @date 2019/3/15 19:02
  */
 public class ClassPathXmlApplicationContext implements BeanFactory {
 

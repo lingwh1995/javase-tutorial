@@ -1,11 +1,13 @@
 package structure.flyweight.flyweight_f;
 
 /**
+ * 客户端测试
+ *
  * @author lingwh
- * @desc 客户端测试
  * @date 2019/8/1 17:11
  */
 public class Client {
+
     public static void main(String[] args) {
         SecurityMgr mgr = SecurityMgr.getInstance();
         boolean f1 = mgr.hasAuthority("张三", "薪资数据", "查看");

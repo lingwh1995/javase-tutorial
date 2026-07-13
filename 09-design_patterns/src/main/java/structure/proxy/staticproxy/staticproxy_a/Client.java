@@ -7,6 +7,7 @@ package structure.proxy.staticproxy.staticproxy_a;
  * @date 2019/3/23 12:22
  */
 public class Client {
+
     public static void main(String[] args) {
         RealStar realStar = new RealStar();
         ProxyStar proxyStar = new ProxyStar(realStar);

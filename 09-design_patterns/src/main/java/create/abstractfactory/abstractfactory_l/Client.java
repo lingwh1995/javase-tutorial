@@ -1,6 +1,13 @@
 package create.abstractfactory.abstractfactory_l;
 
+/**
+ * 客户端
+ *
+ * @author lingwh
+ * @date 2019/9/4 13:25
+ */
 public class Client {
+
     public static void main(String[] args) {
         // 不使用设计模式直接获取用于操作的接口对象
         IUser mysqlUser = new MysqlUser();

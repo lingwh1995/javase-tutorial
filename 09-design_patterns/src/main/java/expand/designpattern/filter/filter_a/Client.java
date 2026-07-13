@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 过滤器客户端测试
+ *
  * @author lingwh
- * @desc 过滤器客户端测试
  * @date 2019/7/29 15:59
  */
 public class Client {
+
     public static void main(String[] args) {
         Consumer zhangft = new Consumer("张奉天", 138, 5, 5);
         Consumer ruiBo = new Consumer("芮博", 238, 2, 5);

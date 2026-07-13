@@ -3,9 +3,10 @@ package org.bluebridge.api;
 import org.junit.Test;
 
 /**
+ * Class类API测试
+ *
  * @author lingwh
- * @desc
- * @date 2019/3/28 00:00
+ * @date 2019/3/28 16:29
  */
 public class ClassTest {
 
@@ -14,7 +15,7 @@ public class ClassTest {
      */
     @Test
     public void isArrayTest() {
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = { 1, 2, 3, 4, 5 };
         String str = "zhagnsan";
         System.out.println(arr.getClass().isArray());
         System.out.println(str.getClass().isArray());
@@ -25,7 +26,7 @@ public class ClassTest {
      */
     @Test
     public void getSuperClassTest() {
-        int[] nums = {1, 2, 3, 4, 5};
+        int[] nums = { 1, 2, 3, 4, 5 };
         String str = "zhagnsan";
         Class<? extends int[]> numsClass = nums.getClass();
         Class<?> numsSuperclass = numsClass.getSuperclass();

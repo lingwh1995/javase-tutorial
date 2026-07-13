@@ -1,11 +1,13 @@
 package action.command.command_b;
 
 /**
+ * 客户端
+ *
  * @author lingwh
- * @desc 客户端
  * @date 2019/8/2 9:05
  */
 public class Client {
+
     public static void main(String[] args) {
         Request request = new Request();
         BuyRequest buyRequest = new BuyRequest(request);
