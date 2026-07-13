@@ -1,14 +1,15 @@
 package search.binarysearch.binarysearch_a;
 
 /**
+ * 二分查找
+ *
  * @author lingwh
- * @desc 二分查找
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BinarySearch {
 
     public static void main(String[] args) {
-        int[] arr = {1, 5, 8, 9, 15, 36, 45};
+        int[] arr = { 1, 5, 8, 9, 15, 36, 45 };
         int i = binarySearch(arr, 0, arr.length - 1, -2);
         System.out.println(i);
     }

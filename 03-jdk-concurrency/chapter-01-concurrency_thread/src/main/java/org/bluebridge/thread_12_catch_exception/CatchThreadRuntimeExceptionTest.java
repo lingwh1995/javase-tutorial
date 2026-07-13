@@ -1,9 +1,10 @@
 package org.bluebridge.thread_12_catch_exception;
 
 /**
+ * 捕获线程运行时异常
+ *
  * @author lingwh
- * @desc 捕获线程运行时异常
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CatchThreadRuntimeExceptionTest {
 
@@ -18,7 +19,7 @@ public class CatchThreadRuntimeExceptionTest {
             int i = 1 / 0;
         });
 
-        t.setUncaughtExceptionHandler((thread,e) -> {
+        t.setUncaughtExceptionHandler((thread, e) -> {
             System.out.println(thread);
             System.out.println(e);
         });

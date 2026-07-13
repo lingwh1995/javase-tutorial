@@ -4,9 +4,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * 可缓存线程池基础功能测试
+ *
  * @author lingwh
- * @desc 可缓存线程池基础功能测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CachedThreadPool01HelloWorldTest {
 

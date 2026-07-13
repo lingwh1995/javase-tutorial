@@ -15,9 +15,10 @@ import java.util.concurrent.*;
  * 4. 队列采用了 SynchronousQueue 实现特点是，它没有容量，没有线程来取是放不进去的（一手交钱、一手交货）
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CachedThreadPool03APITest {
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // testSubmit();
 
@@ -56,25 +57,28 @@ public class CachedThreadPool03APITest {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:MM:ss");
         List<Future<String>> futures = executor.invokeAll(Arrays.asList(
                 () -> {
-                    System.out.println(dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " begin......");
+                    System.out.println(
+                            dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " begin......");
                     Thread.sleep(1000);
                     return "1";
                 },
                 () -> {
-                    System.out.println(dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " begin......");
+                    System.out.println(
+                            dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " begin......");
                     Thread.sleep(500);
                     return "2";
                 },
                 () -> {
-                    System.out.println(dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " begin......");
+                    System.out.println(
+                            dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " begin......");
                     Thread.sleep(2000);
                     return "3";
-                }
-        ));
+                }));
 
-        futures.forEach( f ->  {
+        futures.forEach(f -> {
             try {
-                System.out.println(dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " " + f.get());
+                System.out.println(
+                        dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " " + f.get());
             } catch (InterruptedException | ExecutionException e) {
                 e.printStackTrace();
             }
@@ -110,8 +114,7 @@ public class CachedThreadPool03APITest {
                     Thread.sleep(2000);
                     System.out.println(Thread.currentThread().getName() + " end......3");
                     return "3";
-                }
-        ));
+                }));
 
         System.out.println("result = " + result);
 

@@ -1,8 +1,11 @@
 package create.abstractfactory.abstractfactory_i;
 
 /**
+ * 华硕工厂
+ *
+ * 组装华硕电脑，华硕电脑搭载Intel CPU和技嘉主板
+ *
  * @author lingwh
- * @desc 华硕工厂: 组装华硕电脑，华硕电脑搭载Intel CPU和技嘉主板
  * @date 2019/8/7 14:50
  */
 public class AsusFactory implements AbstractFactory {

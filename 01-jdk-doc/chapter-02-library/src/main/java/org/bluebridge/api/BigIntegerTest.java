@@ -3,9 +3,10 @@ package org.bluebridge.api;
 import java.math.BigInteger;
 
 /**
+ * BigInteger测试
+ *
  * @author lingwh
- * @desc BigInteger测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class BigIntegerTest {
 

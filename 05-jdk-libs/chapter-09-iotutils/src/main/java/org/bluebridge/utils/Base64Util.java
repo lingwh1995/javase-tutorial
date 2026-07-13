@@ -1,12 +1,14 @@
 package org.bluebridge.utils;
 
 import cn.hutool.core.util.HexUtil;
+
 import java.util.Base64;
 
 /**
+ * Base64工具类
+ *
  * @author lingwh
- * @desc Base64工具类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Base64Util {
 

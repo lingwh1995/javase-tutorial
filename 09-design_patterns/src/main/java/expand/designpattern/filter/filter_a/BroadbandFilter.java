@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 筛选赠送100M移动宽带一年的目标用户的过滤器
+ *
  * @author lingwh
- * @desc 筛选赠送100M移动宽带一年的目标用户的过滤器
  * @date 2019/7/29 15:53
  */
 public class BroadbandFilter implements Filter {
+
     /**
      * @param consumers 消费者
      * @return

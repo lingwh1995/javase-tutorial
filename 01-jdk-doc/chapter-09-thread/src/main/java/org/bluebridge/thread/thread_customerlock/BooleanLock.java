@@ -6,9 +6,10 @@ import java.util.Collections;
 import java.util.Optional;
 
 /**
+ * 布尔锁实现
+ *
  * @author lingwh
- * @desc 布尔锁实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class BooleanLock implements Lock {
 

@@ -1,13 +1,15 @@
 package tree.arraybinarytree.arraybinarytree_a;
 
 /**
+ * 数组存储二叉树
+ *
  * @author lingwh
- * @desc 数组存储二叉树
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ArrayBinaryTree {
+
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
         BinaryTree binaryTree = new BinaryTree(arr);
         binaryTree.peOrder();
         binaryTree.infixOrder();

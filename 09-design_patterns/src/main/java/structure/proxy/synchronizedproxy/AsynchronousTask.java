@@ -1,9 +1,10 @@
 package structure.proxy.synchronizedproxy;
 
 /**
+ * 异步任务
+ *
  * @author lingwh
- * @desc 异步任务
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AsynchronousTask implements Task {
 

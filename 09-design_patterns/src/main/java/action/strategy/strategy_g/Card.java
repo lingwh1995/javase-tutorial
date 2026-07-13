@@ -1,8 +1,9 @@
 package action.strategy.strategy_g;
 
 /**
- * @author ronin
- * @desc 支付到银行卡
+ * 支付到银行卡
+ *
+ * @author lingwh
  * @date 2019/8/29 8:50
  */
 public class Card implements PaymentStrategy {

@@ -1,9 +1,10 @@
 package create.factorymethod.factorymethod_a;
 
 /**
+ * 工厂的接口
+ *
  * @author lingwh
- * @desc 工厂的接口
- * @date 2019/3/11 00:00
+ * @date 2019/3/11 19:02
  */
 public abstract class CarFactory {
 

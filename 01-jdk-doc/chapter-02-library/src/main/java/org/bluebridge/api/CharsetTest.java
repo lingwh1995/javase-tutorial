@@ -1,12 +1,14 @@
 package org.bluebridge.api;
 
-import java.nio.charset.Charset;
 import org.junit.Test;
 
+import java.nio.charset.Charset;
+
 /**
+ * 字符集测试
+ *
  * @author lingwh
- * @desc 字符集测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class CharsetTest {
 

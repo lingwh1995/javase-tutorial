@@ -1,10 +1,5 @@
 package org.bluebridge.beanutils.test;
 
-import java.lang.reflect.InvocationTargetException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
@@ -14,9 +9,15 @@ import org.bluebridge.beanutils.entity.Person;
 import org.bluebridge.beanutils.entity.User;
 import org.junit.Test;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
+ * BeanUtils工具类测试
+ *
  * @author lingwh
- * @desc BeanUtils工具类测试
  * @date 2019/6/20 14:27
  */
 @Slf4j

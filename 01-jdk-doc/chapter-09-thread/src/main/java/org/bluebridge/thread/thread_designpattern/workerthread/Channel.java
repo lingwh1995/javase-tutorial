@@ -3,9 +3,10 @@ package org.bluebridge.thread.thread_designpattern.workerthread;
 import java.util.Arrays;
 
 /**
+ * Worker Thread 模式 - 通道
+ *
  * @author lingwh
- * @desc Worker Thread 模式 - 通道
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Channel {
 

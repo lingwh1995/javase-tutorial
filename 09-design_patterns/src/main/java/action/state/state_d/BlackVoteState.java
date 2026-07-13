@@ -1,8 +1,9 @@
 package action.state.state_d;
 
 /**
- * @author ronin
- * @desc 黑名单状态
+ * 黑名单状态
+ *
+ * @author lingwh
  * @date 2019/8/27 10:35
  */
 public class BlackVoteState implements VoteState {

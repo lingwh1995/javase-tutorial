@@ -3,9 +3,10 @@ package headfirst.designpatterns.combined.djview;
 import javax.swing.*;
 
 /**
+ * 节拍进度条
+ *
  * @author lingwh
- * @desc 节拍进度条
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BeatBar extends JProgressBar implements Runnable {
 
@@ -20,7 +21,7 @@ public class BeatBar extends JProgressBar implements Runnable {
     }
 
     public void run() {
-        for (; ; ) {
+        for (;;) {
             int value = getValue();
             value = (int) (value * .75);
             setValue(value);

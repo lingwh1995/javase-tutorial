@@ -10,9 +10,10 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 /**
+ * 原子数组测试
+ *
  * @author lingwh
- * @desc 原子数组测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AtomicArrayTest {
 

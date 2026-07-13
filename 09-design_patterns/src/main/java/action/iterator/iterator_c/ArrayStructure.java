@@ -1,9 +1,10 @@
 package action.iterator.iterator_c;
 
 /**
+ * 数组结构
+ *
  * @author lingwh
- * @desc 数组结构
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ArrayStructure implements Structure {
 

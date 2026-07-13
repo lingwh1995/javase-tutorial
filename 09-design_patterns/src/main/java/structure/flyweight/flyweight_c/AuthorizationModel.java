@@ -1,9 +1,10 @@
 package structure.flyweight.flyweight_c;
 
 /**
+ * 描述授权数据的Model
+ *
  * @author lingwh
- * @desc 描述授权数据的Model
- * @since 2019/7/30 15:00
+ * @date 2019/7/30 15:00
  */
 public class AuthorizationModel {
 

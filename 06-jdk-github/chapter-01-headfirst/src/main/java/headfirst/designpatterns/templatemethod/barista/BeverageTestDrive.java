@@ -1,9 +1,10 @@
 package headfirst.designpatterns.templatemethod.barista;
 
 /**
+ * 饮料测试类
+ *
  * @author lingwh
- * @desc 饮料测试类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BeverageTestDrive {
 

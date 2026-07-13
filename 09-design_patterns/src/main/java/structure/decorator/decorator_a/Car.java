@@ -1,9 +1,10 @@
 package structure.decorator.decorator_a;
 
 /**
+ * 真实对象
+ *
  * @author lingwh
- * @desc 真实对象
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class Car implements ICar {
 

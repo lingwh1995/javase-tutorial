@@ -4,8 +4,9 @@ import structure.decorator.decorator_i.domain.SaleModel;
 import structure.decorator.decorator_i.service.IGoodsSaleService;
 
 /**
+ * 权限校验装饰者
+ *
  * @author lingwh
- * @desc 权限校验装饰者
  * @date 2019/8/7 9:46
  */
 public class AuthorityDecorator extends Decorator {

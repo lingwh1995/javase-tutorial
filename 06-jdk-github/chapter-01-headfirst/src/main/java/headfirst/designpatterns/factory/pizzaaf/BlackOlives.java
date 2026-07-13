@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 黑橄榄
+ *
  * @author lingwh
- * @desc 黑橄榄
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BlackOlives implements Veggies {
 

@@ -1,12 +1,16 @@
 package org.bluebridge.chapter_01_byte_stream._06_filter_input_stream_filter_output_stream._01_buffered_input_stream_buffered_output_stream;
 
-import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.*;
+
 /**
+ * BufferedOutputStream
+ *
+ * 带有缓冲区的字节输出流，默认大小是8m，可以通过减少访问磁盘的次数来提高文件写入性能
+ *
  * @author lingwh
- * @desc BufferedOutputStream 带有缓冲区的字节输出流，默认大小是8m，可以通过减少访问磁盘的次数来提高文件写入性能
  * @date 2025/8/16 17:16
  */
 @Slf4j

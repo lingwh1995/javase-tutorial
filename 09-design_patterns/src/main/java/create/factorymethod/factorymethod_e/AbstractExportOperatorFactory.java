@@ -3,7 +3,7 @@ package create.factorymethod.factorymethod_e;
 /**
  * 实现导出数据的业务功能对象
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/8/2 10:26
  */
 public abstract class AbstractExportOperatorFactory {

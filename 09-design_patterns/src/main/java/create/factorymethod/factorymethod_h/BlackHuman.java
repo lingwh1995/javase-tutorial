@@ -1,9 +1,10 @@
 package create.factorymethod.factorymethod_h;
 
 /**
+ * 黑色人种
+ *
  * @author lingwh
- * @desc 黑色人种
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BlackHuman extends Human {
 

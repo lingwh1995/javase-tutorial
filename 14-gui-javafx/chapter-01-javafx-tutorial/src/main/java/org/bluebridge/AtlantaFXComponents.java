@@ -2,6 +2,7 @@ package org.bluebridge;
 
 import atlantafx.base.theme.PrimerDark; // 引入深色主题
 import atlantafx.base.theme.Styles;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -12,8 +13,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
+ * AtlantaFX组件示例
+ *
  * @author lingwh
- * @desc AtlantaFX组件示例
  * @date 2026/1/22 13:43
  */
 public class AtlantaFXComponents extends Application {

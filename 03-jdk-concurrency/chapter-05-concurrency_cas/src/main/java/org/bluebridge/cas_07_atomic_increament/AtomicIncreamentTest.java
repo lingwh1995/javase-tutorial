@@ -8,9 +8,10 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 /**
+ * 原子累加器测试
+ *
  * @author lingwh
- * @desc 原子累加器测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AtomicIncreamentTest {
 

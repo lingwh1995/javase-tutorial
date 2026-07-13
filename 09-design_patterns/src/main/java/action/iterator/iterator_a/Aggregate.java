@@ -1,8 +1,9 @@
 package action.iterator.iterator_a;
 
 /**
+ * 聚合对象的接口，定义创建相应迭代器对象的接口
+ *
  * @author lingwh
- * @desc 聚合对象的接口，定义创建相应迭代器对象的接口
  * @date 2019/8/20 9:07
  */
 public abstract class Aggregate {

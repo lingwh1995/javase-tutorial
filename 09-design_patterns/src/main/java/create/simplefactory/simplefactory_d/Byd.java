@@ -1,9 +1,10 @@
 package create.simplefactory.simplefactory_d;
 
 /**
+ * 比亚迪汽车
+ *
  * @author lingwh
- * @desc 比亚迪汽车
- * @date 2019/3/10 00:00
+ * @date 2019/3/10 19:02
  */
 public class Byd implements Car {
 

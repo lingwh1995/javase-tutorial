@@ -1,12 +1,14 @@
 package org.bluebridge.utils;
 
 import cn.hutool.core.io.FileUtil;
+
 import java.io.*;
 import java.util.Arrays;
 
 /**
+ * 修复bmp图片文件的header
+ *
  * @author lingwh
- * @desc 修复bmp图片文件的header
  * @date 2025/9/16 14:06
  */
 public class BMPImageRepairUtil {

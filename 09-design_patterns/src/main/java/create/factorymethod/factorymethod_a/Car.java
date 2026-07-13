@@ -1,9 +1,10 @@
 package create.factorymethod.factorymethod_a;
 
 /**
+ * 汽车类
+ *
  * @author lingwh
- * @desc 汽车类
- * @date 2019/3/11 00:00
+ * @date 2019/3/11 19:02
  */
 public interface Car {
 

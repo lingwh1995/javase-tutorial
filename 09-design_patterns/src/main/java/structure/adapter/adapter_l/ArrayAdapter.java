@@ -3,9 +3,10 @@ package structure.adapter.adapter_l;
 import java.util.ArrayList;
 
 /**
+ * 数组适配器
+ *
  * @author lingwh
- * @desc 数组适配器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ArrayAdapter extends ArrayList {
 

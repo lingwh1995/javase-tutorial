@@ -1,20 +1,21 @@
 package org.bluebridge.chapter_04_set;
 
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.RandomUtils;
+import org.apache.commons.text.RandomStringGenerator;
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.RandomUtils;
-import org.apache.commons.text.RandomStringGenerator;
-import org.junit.Test;
-
 /**
+ * TODO BiSet属于数据结构范围知识 经典应用场景：快速判断所有员工是否打卡了
+ *
  * @author lingwh
- * @desc TODO BiSet属于数据结构范围知识 经典应用场景：快速判断所有员工是否打卡了
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 @Slf4j
 public class BitSetTest {
@@ -24,7 +25,7 @@ public class BitSetTest {
      */
     @Test
     public void testBitSetHelloWorld() {
-        // 创建一个具有10000位的bitset　初始所有位的值为false
+        // 创建一个具有10000位的bitset 初始所有位的值为false
         BitSet bitSet = new BitSet(10000);
         // 将指定位的值设为true
         bitSet.set(9999);
@@ -38,7 +39,7 @@ public class BitSetTest {
      * 使用BitSet统计重复一亿个电话号码中的重复号码
      */
     @Test
-    public void testStatisticsDuplicateNumbers(){
+    public void testStatisticsDuplicateNumbers() {
         RandomStringGenerator generator = new RandomStringGenerator.Builder()
                 .withinRange('1', '9')
                 .build();
@@ -68,7 +69,7 @@ public class BitSetTest {
         BitSet bitSet = new BitSet(100);
         // 把随机数放入到bitset中
         randomList.stream().forEach(random -> bitSet.set(random));
-        // int cardinality()    返回此BitSet中比特设置为true的数目，就是BitSet中存放的有效位的个数，如果有重复运算会进行自动去重
+        // int cardinality() 返回此BitSet中比特设置为true的数目，就是BitSet中存放的有效位的个数，如果有重复运算会进行自动去重
         log.debug("0~100存在BitSet的随机数有: {} 个", bitSet.cardinality());
         StringBuilder bitSetRandomBuilder = new StringBuilder();
         bitSet.stream().forEach(random -> bitSetRandomBuilder.append(random).append(" "));
@@ -78,12 +79,12 @@ public class BitSetTest {
         AtomicInteger count = new AtomicInteger();
         StringBuilder notInBitSetRandomBuilder = new StringBuilder();
         IntStream.range(0, 100)
-            .forEach(i -> {
-                if (!bitSet.get(i)) {
-                    notInBitSetRandomBuilder.append(i).append(" ");
-                    count.getAndIncrement();
-                }
-            });
+                .forEach(i -> {
+                    if (!bitSet.get(i)) {
+                        notInBitSetRandomBuilder.append(i).append(" ");
+                        count.getAndIncrement();
+                    }
+                });
         log.debug("0~100不在上述随机数中有: {}", notInBitSetRandomBuilder);
         log.debug("0~100不在上述随机数中有: {} 个", count.get());
         log.debug("---------------------------------");

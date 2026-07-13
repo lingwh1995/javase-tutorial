@@ -1,11 +1,13 @@
 package stack.stack_a;
 
 /**
+ * 数组模拟栈
+ *
  * @author lingwh
- * @desc 数组模拟栈
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ArrayStack {
+
     private int maxSize;
     private int[] stack;
     private int top = -1;

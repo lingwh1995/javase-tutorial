@@ -12,6 +12,7 @@ package linkedlist.linkedlist_d;
  *
  */
 public class CircleNode<T> {
+
     public static void main(String[] args) {
         // 创建节点
         CircleNode<String> node1 = new CircleNode<String>("1");
@@ -40,9 +41,9 @@ public class CircleNode<T> {
         this.data = data;
     }
 
-    //	public void append(Node<T> node){
-    //		this.next = node;
-    //	}
+    // public void append(Node<T> node){
+    // this.next = node;
+    // }
 
     /**
      * 获取下一个节点

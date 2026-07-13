@@ -2,7 +2,6 @@ package org.bluebridge;
 
 /**
  * 启动类
- *
  * wix3下载地址 https://github.com/wixtoolset/wix3/releases/tag/wix3112rtm
  *
  * @author lingwh

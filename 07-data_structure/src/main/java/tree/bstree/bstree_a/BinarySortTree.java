@@ -1,9 +1,10 @@
 package tree.bstree.bstree_a;
 
 /**
+ * 二叉排序树
+ *
  * @author lingwh
- * @desc 二叉排序树
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BinarySortTree {
 

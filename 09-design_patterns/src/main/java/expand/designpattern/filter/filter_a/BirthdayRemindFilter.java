@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 筛选赠送免费生日提醒的目标用户过滤器
+ *
  * @author lingwh
- * @desc 筛选赠送免费生日提醒的目标用户过滤器
  * @date 2019/7/29 15:56
  */
 public class BirthdayRemindFilter implements Filter {

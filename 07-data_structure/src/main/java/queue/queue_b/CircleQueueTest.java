@@ -1,11 +1,13 @@
 package queue.queue_b;
 
 /**
+ * 环形队列测试
+ *
  * @author lingwh
- * @desc 环形队列测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CircleQueueTest {
+
     public static void main(String[] args) {
         // 队列长度为4，最多添加3个元素，因为有一个空位
         CircleQueue circleQueue = new CircleQueue(4);

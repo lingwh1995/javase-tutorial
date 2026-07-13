@@ -1,9 +1,10 @@
 package tree.binarytree.binarytree_a;
 
 /**
+ * 二叉树
+ *
  * @author lingwh
- * @desc 二叉树
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BinaryTree {
 
@@ -120,7 +121,8 @@ class Node {
     private Node left;
     private Node right;
 
-    public Node() {}
+    public Node() {
+    }
 
     public Node(int id, String name) {
         this.id = id;

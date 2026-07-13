@@ -1,9 +1,10 @@
 package headfirst.designpatterns.combined.djview;
 
 /**
+ * 节拍模型接口
+ *
  * @author lingwh
- * @desc 节拍模型接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface BeatModelInterface {
 

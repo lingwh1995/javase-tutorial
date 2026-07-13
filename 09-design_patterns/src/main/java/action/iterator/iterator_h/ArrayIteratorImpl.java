@@ -1,8 +1,9 @@
 package action.iterator.iterator_h;
 
 /**
+ * 用来实现访问数组的双向迭代接口
+ *
  * @author lingwh
- * @desc 用来实现访问数组的双向迭代接口
  * @date 2019/8/20 13:17
  */
 public class ArrayIteratorImpl implements Iterator {

@@ -12,9 +12,10 @@ import java.util.concurrent.TimeUnit;
  * 4. 队列采用了 SynchronousQueue 实现特点是，它没有容量，没有线程来取是放不进去的（一手交钱、一手交货）
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CachedThreadPool02WorkQueueTest {
+
     public static void main(String[] args) throws InterruptedException {
         SynchronousQueue<Integer> queue = new SynchronousQueue<>();
         new Thread(() -> {
@@ -29,7 +30,7 @@ public class CachedThreadPool02WorkQueueTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        },"t1").start();
+        }, "t1").start();
 
         TimeUnit.MILLISECONDS.sleep(2000);
 
@@ -40,7 +41,7 @@ public class CachedThreadPool02WorkQueueTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        },"t2").start();
+        }, "t2").start();
 
         TimeUnit.MILLISECONDS.sleep(2000);
 
@@ -51,6 +52,6 @@ public class CachedThreadPool02WorkQueueTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        },"t3").start();
+        }, "t3").start();
     }
 }

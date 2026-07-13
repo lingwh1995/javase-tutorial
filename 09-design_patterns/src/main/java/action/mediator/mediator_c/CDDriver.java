@@ -1,8 +1,9 @@
 package action.mediator.mediator_c;
 
 /**
+ * 光驱
+ *
  * @author lingwh
- * @desc 光驱
  * @date 2019/8/14 11:39
  */
 public class CDDriver extends Colleague {

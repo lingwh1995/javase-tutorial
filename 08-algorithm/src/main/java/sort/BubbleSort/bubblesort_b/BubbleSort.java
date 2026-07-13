@@ -3,8 +3,9 @@ package sort.BubbleSort.bubblesort_b;
 import java.util.Arrays;
 
 /**
+ * 经过优化的冒泡排序
+ *
  * @author lingwh
- * @desc 经过优化的冒泡排序
  * @date 2019/8/8 9:04
  */
 public class BubbleSort {

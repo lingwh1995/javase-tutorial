@@ -1,16 +1,17 @@
 package org.bluebridge.chapter_02_character_stream._02_buffered_reader_buffered_writer._01_buffered_reader_buffered_writer;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+
 import java.io.*;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
 /**
+ * 带有缓冲区的输入流（通过缓冲字符来提高字符读取效率，特别适合读取大量文本数据）
+ *
  * @author lingwh
- * @desc 带有缓冲区的输入流（通过缓冲字符来提高字符读取效率，特别适合读取大量文本数据）
  * @date 2025/8/21 18:45
  */
 @Slf4j

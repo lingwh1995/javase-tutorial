@@ -1,8 +1,9 @@
 package create.simplefactory.simplefactory_a;
 
 /**
+ * 奥迪汽车
+ *
  * @author lingwh
- * @desc 奥迪汽车
  * @date 2019/3/10 00:00
  */
 public class Audi implements Car {

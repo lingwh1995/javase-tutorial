@@ -3,8 +3,9 @@ package action.command.command_i;
 import action.command.command_h.Command;
 
 /**
+ * 吊扇关闭命令
+ *
  * @author lingwh
- * @desc 吊扇关闭命令
  * @date 2019/9/4 16:59
  */
 public class CeilingFanOffCommand implements Command {

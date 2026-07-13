@@ -3,9 +3,10 @@ package org.bluebridge.cas_04_atomic_aba;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
+ * 原子引用
+ *
  * @author lingwh
- * @desc 原子引用
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AtomicReferenceABATest {
 
@@ -30,7 +31,7 @@ public class AtomicReferenceABATest {
 
     private static void change() {
         new Thread(() -> {
-            System.out.printf("change A->B %s\n",atomicReference.compareAndSet(atomicReference.get(), "B"));
+            System.out.printf("change A->B %s\n", atomicReference.compareAndSet(atomicReference.get(), "B"));
         }, "t1").start();
         sleep(500);
         new Thread(() -> {

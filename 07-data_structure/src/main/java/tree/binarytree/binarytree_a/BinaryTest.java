@@ -1,16 +1,19 @@
 package tree.binarytree.binarytree_a;
 
 /**
- * @author lingwh
- * @desc 二叉树测试
+ * 二叉树测试
+ *
  * <pre>
  *                          宋江
  *                  吴用               卢俊义
  *                              关胜      林冲
  * <pre/>
- * @date 2026/7/9 00:00
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
  */
 public class BinaryTest {
+
     public static void main(String[] args) {
         // 创建节点
         Node songjiang = new Node(1, "宋江");

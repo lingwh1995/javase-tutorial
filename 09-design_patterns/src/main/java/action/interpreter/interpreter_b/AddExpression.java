@@ -3,9 +3,10 @@ package action.interpreter.interpreter_b;
 import java.util.HashMap;
 
 /**
+ * 加法解释器
+ *
  * @author lingwh
- * @desc 加法解释器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AddExpression extends SymbolExpression {
 

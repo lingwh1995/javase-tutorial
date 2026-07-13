@@ -3,11 +3,13 @@ package fundation.base;
 import org.junit.Test;
 
 /**
+ * 数据结构基础
+ *
  * @author lingwh
- * @desc 数据结构基础
- * @date 2019/3/9 00:00
+ * @date 2019/3/9 19:02
  */
 public class Base {
+
     /**
      * 测试位运算
      *

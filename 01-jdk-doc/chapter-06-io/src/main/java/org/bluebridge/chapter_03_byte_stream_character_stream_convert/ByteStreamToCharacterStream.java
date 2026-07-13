@@ -1,13 +1,17 @@
 package org.bluebridge.chapter_03_byte_stream_character_stream_convert;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+
 /**
+ * 将字节流转换为字符流
+ *
+ * InputStreamReader和OutputStreamWriter是字节流为向字符流的桥梁类
+ *
  * @author lingwh
- * @desc 将字节流转换为字符流 InputStreamReader和OutputStreamWriter是字节流为向字符流的桥梁类
  * @date 2025/9/5 17:23
  */
 @Slf4j

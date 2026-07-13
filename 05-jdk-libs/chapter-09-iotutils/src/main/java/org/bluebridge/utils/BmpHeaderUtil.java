@@ -1,9 +1,10 @@
 package org.bluebridge.utils;
 
 /**
+ * BMP文件头工具类
+ *
  * @author lingwh
- * @desc BMP文件头工具类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BmpHeaderUtil {
 

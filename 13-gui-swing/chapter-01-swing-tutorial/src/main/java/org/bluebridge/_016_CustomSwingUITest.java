@@ -5,7 +5,6 @@ import javax.swing.plaf.metal.MetalLookAndFeel;
 
 /**
  * 自定义皮肤
- *
  * MetalLookAndFeel - 官方默认皮肤
  * WindowsLookAndFeel - Windows操作系统限定皮肤，其他平台无法使用
  * MotifLookAndFeel - 官方皮肤
@@ -28,7 +27,8 @@ public class _016_CustomSwingUITest {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new _016_CustomSwingUITest()::createAndShowGUI);
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT)
-        // SwingUtilities.invokeLater(() -> new _016_CustomSwingUITest().createAndShowGUI());
+        // SwingUtilities.invokeLater(() -> new
+        // _016_CustomSwingUITest().createAndShowGUI());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT)
         SwingUtilities.invokeLater(new _016_CustomSwingUITest()::createAndShowGUI);

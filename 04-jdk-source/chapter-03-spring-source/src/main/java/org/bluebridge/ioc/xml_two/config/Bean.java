@@ -3,9 +3,10 @@ package org.bluebridge.ioc.xml_two.config;
 import java.util.List;
 
 /**
+ * Bean标签配置
+ *
  * @author lingwh
- * @desc Bean标签配置
- * @date 2019/3/16 00:00
+ * @date 2019/3/16 19:02
  */
 public class Bean {
 

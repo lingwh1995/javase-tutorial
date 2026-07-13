@@ -3,8 +3,9 @@ package org.bluebridge.protobuf.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 字符串转换为Ascii和Ascii转换为字符串的案例
+ *
  * @author lingwh
- * @desc 字符串转换为Ascii和Ascii转换为字符串的案例
  * @date 2025/11/3 20:47
  */
 @Slf4j

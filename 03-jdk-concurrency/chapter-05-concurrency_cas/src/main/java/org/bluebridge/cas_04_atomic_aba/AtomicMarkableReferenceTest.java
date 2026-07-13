@@ -3,16 +3,16 @@ package org.bluebridge.cas_04_atomic_aba;
 import java.util.concurrent.atomic.AtomicMarkableReference;
 
 /**
+ * AtomicMarkableReference测试
+ *
  * @author lingwh
- * @desc AtomicMarkableReference测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AtomicMarkableReferenceTest {
 
     public static void main(String[] args) {
         // 创建一个 AtomicMarkableReference 实例，初始值为 "Hello" 和标记 false
-        AtomicMarkableReference<String> atomicMarkableReference =
-                new AtomicMarkableReference<>("Hello", false);
+        AtomicMarkableReference<String> atomicMarkableReference = new AtomicMarkableReference<>("Hello", false);
 
         // 客户端调用：尝试更新引用和标记
         boolean updated = atomicMarkableReference.compareAndSet("Hello", "World", false, true);

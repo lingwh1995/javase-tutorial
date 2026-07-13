@@ -1,9 +1,10 @@
 package org.bluebridge.thread.thread_designpattern.future.future_c;
 
 /**
+ * 异步 Future 实现
+ *
  * @author lingwh
- * @desc 异步 Future 实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class AsynFuture<T> implements Future<T> {
 
@@ -16,8 +17,8 @@ public class AsynFuture<T> implements Future<T> {
 
     @Override
     public T get() throws InterruptedException {
-        synchronized(this) {
-            while(!isDone) {
+        synchronized (this) {
+            while (!isDone) {
                 this.wait();
             }
         }
@@ -25,7 +26,7 @@ public class AsynFuture<T> implements Future<T> {
     }
 
     public void done(T result) {
-        synchronized(this) {
+        synchronized (this) {
             this.result = result;
             this.isDone = true;
             this.notifyAll();

@@ -1,9 +1,10 @@
 package action.strategy.strategy_b;
 
 /**
+ * 糟糕的飞翔行为
+ *
  * @author lingwh
- * @desc 糟糕的飞翔行为
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BadFlyBehavior implements FlyBehavior {
 

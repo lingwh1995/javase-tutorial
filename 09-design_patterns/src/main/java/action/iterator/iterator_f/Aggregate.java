@@ -3,8 +3,9 @@ package action.iterator.iterator_f;
 import java.util.Iterator;
 
 /**
+ * 聚合抽象类
+ *
  * @author lingwh
- * @desc 聚合抽象类
  * @date 2019/8/20 9:16
  */
 public abstract class Aggregate {

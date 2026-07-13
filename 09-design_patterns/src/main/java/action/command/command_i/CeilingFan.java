@@ -1,8 +1,9 @@
 package action.command.command_i;
 
 /**
+ * 吊扇类
+ *
  * @author lingwh
- * @desc 吊扇类
  * @date 2019/9/4 16:51
  */
 public class CeilingFan {

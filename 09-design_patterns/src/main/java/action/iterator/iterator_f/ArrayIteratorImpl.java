@@ -3,8 +3,9 @@ package action.iterator.iterator_f;
 import java.util.Iterator;
 
 /**
+ * 用来实现访问数组的迭代接口
+ *
  * @author lingwh
- * @desc 用来实现访问数组的迭代接口
  * @date 2019/8/20 10:59
  */
 public class ArrayIteratorImpl implements Iterator {

@@ -1,16 +1,18 @@
 package tree.avltree.avltree_a;
 
 /**
+ * 平衡二叉树测试
+ *
  * @author lingwh
- * @desc 平衡二叉树测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AVLTreeTest {
+
     public static void main(String[] args) {
         /**
          * 测试左旋转
          */
-        int[] arrLeft = {4, 3, 6, 5, 7, 8};
+        int[] arrLeft = { 4, 3, 6, 5, 7, 8 };
         // 创建要给AVLTree对象
         AVLTree avlTreeLeft = new AVLTree();
         // 添加节点
@@ -31,7 +33,7 @@ public class AVLTreeTest {
         /**
          * 测试右旋转
          */
-        int[] arrRight = {10, 12, 8, 9, 7, 6};
+        int[] arrRight = { 10, 12, 8, 9, 7, 6 };
         AVLTree avlTreeRight = new AVLTree();
         // 添加节点
         for (int i = 0; i < arrRight.length; i++) {

@@ -1,13 +1,15 @@
 package org.bluebridge.chapter_03_list;
 
-import java.util.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.*;
+
 /**
+ * ArrayList常用方法测试
+ *
  * @author lingwh
- * @desc ArrayList常用方法测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class ArrayListTest {
 

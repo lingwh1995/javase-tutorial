@@ -4,18 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 守护者对象:负责保存多个备忘录对象，使用集合管理吗，提高效率
+ *
  * @author lingwh
- * @desc 守护者对象:负责保存多个备忘录对象，使用集合管理吗，提高效率
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 16:35
  */
 public class CareTaker {
+
     // 保存一次状态
-    //    private Memento Memento;
+    // private Memento Memento;
     // 保存多次状态:使用List
     private List<Memento> mementoList = new ArrayList<Memento>();
 
     // 保存多个角色的多次状态:使用Map
-    //    private Map<String,ArrayList<Memento>> mementoMap= new HashMap<>();
+    // private Map<String,ArrayList<Memento>> mementoMap= new HashMap<>();
     /**
      * 添加备忘录状态对象
      *

@@ -1,9 +1,10 @@
 package headfirst.designpatterns.strategy.challenge;
 
 /**
+ * 增强相机应用
+ *
  * @author lingwh
- * @desc 增强相机应用
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CameraPlusApp extends PhoneCameraApp {
 

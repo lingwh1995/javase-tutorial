@@ -1,17 +1,20 @@
 package structure.bridge.bridge_a;
 
 /**
+ * 品牌接口
+ *
  * @author lingwh
- * @desc 品牌接口
- * @date 2019/3/23 00:00
+ * @date 2026/4/21 19:02
  */
 public interface Brand {
+
     void sale();
 }
 
 /**
+ * 联想电脑
+ *
  * @author lingwh
- * @desc 联想电脑
  * @date 2019/3/23 00:05
  */
 class Lenovol implements Brand {
@@ -23,8 +26,9 @@ class Lenovol implements Brand {
 }
 
 /**
+ * Dell电脑
+ *
  * @author lingwh
- * @desc Dell电脑
  * @date 2019/3/23 00:08
  */
 class Dell implements Brand {

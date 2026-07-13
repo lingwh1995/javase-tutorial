@@ -4,8 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * 助手
+ *
  * @author lingwh
- * @desc 助手
  * @date 2019/9/24 18:13
  */
 public class Assistant implements Approvable {

@@ -3,9 +3,10 @@ package com.dragonsoft.search;
 import org.junit.Test;
 
 /**
+ * 二分查找
+ *
  * @author lingwh
- * @desc 二分查找
- * @date 2019/3/2 00:00
+ * @date 2019/3/2 19:02
  */
 public class BinarySearch {
 
@@ -15,7 +16,7 @@ public class BinarySearch {
          * 二分查找法,要求数组中数据是有序的
          */
         // 目标数组
-        int[] num = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] num = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         // 目标元素
         int target = 5;
         // 记录开始位置

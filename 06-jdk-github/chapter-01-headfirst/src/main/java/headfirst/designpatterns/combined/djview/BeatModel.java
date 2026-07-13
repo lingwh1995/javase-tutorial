@@ -4,9 +4,10 @@ import java.util.*;
 import javax.sound.midi.*;
 
 /**
+ * 节拍模型
+ *
  * @author lingwh
- * @desc 节拍模型
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BeatModel implements BeatModelInterface, MetaEventListener {
 
@@ -106,7 +107,7 @@ public class BeatModel implements BeatModelInterface, MetaEventListener {
     }
 
     public void buildTrackAndStart() {
-        int[] trackList = {35, 0, 46, 0};
+        int[] trackList = { 35, 0, 46, 0 };
 
         sequence.deleteTrack(null);
         track = sequence.createTrack();

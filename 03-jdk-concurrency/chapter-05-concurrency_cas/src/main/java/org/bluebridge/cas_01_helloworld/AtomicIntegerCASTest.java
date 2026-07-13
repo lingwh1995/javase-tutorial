@@ -3,9 +3,10 @@ package org.bluebridge.cas_01_helloworld;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * AtomicInteger的CAS测试
+ *
  * @author lingwh
- * @desc AtomicInteger的CAS测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AtomicIntegerCASTest {
 

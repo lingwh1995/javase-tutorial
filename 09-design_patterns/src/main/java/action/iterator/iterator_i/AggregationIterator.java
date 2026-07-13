@@ -3,8 +3,9 @@ package action.iterator.iterator_i;
 import java.util.Collection;
 
 /**
+ * 定义翻页访问聚合元素的迭代接口
+ *
  * @author lingwh
- * @desc 定义翻页访问聚合元素的迭代接口
  * @date 2019/8/20 13:27
  */
 public interface AggregationIterator {

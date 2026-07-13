@@ -1,12 +1,14 @@
 package org.bluebridge.thread_17_communication.wait_for_other_worker;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
 /**
+ * 演示BlockingQueue机制的使用场景：主线程等待多个工作线程完成
+ *
  * @author lingwh
- * @desc 演示BlockingQueue机制的使用场景：主线程等待多个工作线程完成
  * @date 2025/10/28 9:34
  */
 @Slf4j

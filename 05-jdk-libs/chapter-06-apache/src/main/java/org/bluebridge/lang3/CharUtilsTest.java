@@ -5,8 +5,9 @@ import org.apache.commons.lang3.CharUtils;
 import org.junit.Test;
 
 /**
+ * 字符工具类测试类
+ *
  * @author lingwh
- * @desc 字符工具类测试类
  * @date 2025/11/7 11:49
  */
 @Slf4j

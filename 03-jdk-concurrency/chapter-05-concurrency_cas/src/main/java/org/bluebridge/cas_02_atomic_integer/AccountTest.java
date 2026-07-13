@@ -15,7 +15,7 @@ public class AccountTest {
      */
     @Test
     public void testAccountUnsafe() {
-            Account.demo(new AccountUnsafe(10000));
+        Account.demo(new AccountUnsafe(10000));
     }
 
     /**
@@ -23,7 +23,7 @@ public class AccountTest {
      */
     @Test
     public void testAccountSafePessimisticLockSynchronized() {
-            Account.demo(new AccountSafePessimisticLockSynchronized(10000));
+        Account.demo(new AccountSafePessimisticLockSynchronized(10000));
     }
 
     /**
@@ -31,6 +31,6 @@ public class AccountTest {
      */
     @Test
     public void testAccountSafeOptimisticLockCAS() {
-            Account.demo(new AccountSafeOptimisticLockCAS(10000));
+        Account.demo(new AccountSafeOptimisticLockCAS(10000));
     }
 }

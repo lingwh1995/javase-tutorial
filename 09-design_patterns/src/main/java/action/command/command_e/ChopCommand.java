@@ -1,8 +1,9 @@
 package action.command.command_e;
 
 /**
+ * 绿豆排骨汤命令
+ *
  * @author lingwh
- * @desc 绿豆排骨汤命令
  * @date 2019/8/5 13:40
  */
 public class ChopCommand implements Command {

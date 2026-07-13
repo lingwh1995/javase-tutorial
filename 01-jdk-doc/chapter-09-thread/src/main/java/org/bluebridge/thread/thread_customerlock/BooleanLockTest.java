@@ -4,9 +4,10 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 /**
+ * 布尔锁测试
+ *
  * @author lingwh
- * @desc 布尔锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class BooleanLockTest {
 
@@ -20,17 +21,18 @@ public class BooleanLockTest {
      */
     private static void testLock() {
         final BooleanLock lock = new BooleanLock();
-        Stream.of("T1","T2","T3","T4").forEach(name -> new Thread(()->{
+        Stream.of("T1", "T2", "T3", "T4").forEach(name -> new Thread(() -> {
             try {
                 lock.lock();
-                Optional.of(Thread.currentThread().getName()+":use the monitor to lock......").ifPresent(System.out::println);
+                Optional.of(Thread.currentThread().getName() + ":use the monitor to lock......")
+                        .ifPresent(System.out::println);
                 work();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
                 lock.unlock();
             }
-        },name).start());
+        }, name).start());
     }
 
     /**
@@ -38,10 +40,11 @@ public class BooleanLockTest {
      */
     private static void testTimeOutLock() {
         final BooleanLock lock = new BooleanLock();
-        Stream.of("T1","T2","T3","T4").forEach(name -> new Thread(()->{
+        Stream.of("T1", "T2", "T3", "T4").forEach(name -> new Thread(() -> {
             try {
                 lock.lock(10L);
-                Optional.of(Thread.currentThread().getName()+":use the monitor to lock......").ifPresent(System.out::println);
+                Optional.of(Thread.currentThread().getName() + ":use the monitor to lock......")
+                        .ifPresent(System.out::println);
                 work();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -50,7 +53,7 @@ public class BooleanLockTest {
             } finally {
                 lock.unlock();
             }
-        },name).start());
+        }, name).start());
     }
 
     private static void work() throws InterruptedException {

@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 计算器类，计算器上有加法按钮、减法按钮
+ *
  * @author lingwh
- * @desc 计算器类，计算器上有加法按钮、减法按钮
  * @date 2019/9/10 16:23
  */
 public class Calculator {
+
     /**
      * 加法命令对象
      */

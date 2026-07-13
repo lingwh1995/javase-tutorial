@@ -1,7 +1,7 @@
 package structure.bridge.bridge_e;
 
 /**
- * 抽象消息类
+ * 消息的抽象
  *
  * @author lingwh
  * @date 2019/7/24 13:30

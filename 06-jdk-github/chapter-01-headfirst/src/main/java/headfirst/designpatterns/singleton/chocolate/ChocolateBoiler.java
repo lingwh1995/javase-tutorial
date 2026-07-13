@@ -1,9 +1,10 @@
 package headfirst.designpatterns.singleton.chocolate;
 
 /**
+ * 巧克力锅炉单例
+ *
  * @author lingwh
- * @desc 巧克力锅炉单例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ChocolateBoiler {
 

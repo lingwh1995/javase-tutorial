@@ -1,8 +1,9 @@
 package action.mediator.mediator_f;
 
 /**
+ * 抽象数据库
+ *
  * @author lingwh
- * @desc 抽象数据库
  * @date 2019/8/14 13:59
  */
 public abstract class AbstractDatabase {

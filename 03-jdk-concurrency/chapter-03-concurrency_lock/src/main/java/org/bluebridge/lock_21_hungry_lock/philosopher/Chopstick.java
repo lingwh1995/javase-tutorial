@@ -1,9 +1,10 @@
 package org.bluebridge.lock_21_hungry_lock.philosopher;
 
 /**
+ * 筷子类
+ *
  * @author lingwh
- * @desc 筷子类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Chopstick {
 

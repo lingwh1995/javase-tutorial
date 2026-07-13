@@ -1,8 +1,9 @@
 package structure.flyweight.flyweight_f;
 
 /**
+ * 描述享元对象缓存的配置对象
+ *
  * @author lingwh
- * @desc 描述享元对象缓存的配置对象
  * @date 2019/8/1 17:01
  */
 public class CacheConfModel {

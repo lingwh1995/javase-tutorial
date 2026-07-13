@@ -1,9 +1,10 @@
 package action.strategy.strategy_b;
 
 /**
+ * 北京鸭
+ *
  * @author lingwh
- * @desc 北京鸭
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BeijingDuck extends Duck {
 

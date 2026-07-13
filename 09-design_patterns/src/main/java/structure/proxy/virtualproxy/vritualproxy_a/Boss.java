@@ -4,8 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * 老板
+ *
  * @author lingwh
- * @desc 老板
  * @date 2019/9/24 18:12
  */
 public class Boss implements Approvable {

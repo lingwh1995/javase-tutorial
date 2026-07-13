@@ -1,11 +1,13 @@
 package action.observer.observer_h;
 
 /**
+ * 买家观察者
+ *
  * @author lingwh
- * @desc 买家观察者
  * @date 2019/8/30 10:22
  */
 public class BuyerObserver implements Observer {
+
     /**
      * 买家姓名
      */

@@ -1,8 +1,9 @@
 package structure.flyweight.flyweight_f;
 
 /**
+ * 权限享元对象
+ *
  * @author lingwh
- * @desc 权限享元对象
  * @date 2019/8/1 13:47
  */
 public class AuthorizationFlyweight implements Flyweight {

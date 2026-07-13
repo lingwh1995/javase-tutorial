@@ -1,9 +1,10 @@
 package action.observer.observer_c;
 
 /**
+ * 观察者
+ *
  * @author lingwh
- * @desc 观察者
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BaiduWebsit implements Observer {
 

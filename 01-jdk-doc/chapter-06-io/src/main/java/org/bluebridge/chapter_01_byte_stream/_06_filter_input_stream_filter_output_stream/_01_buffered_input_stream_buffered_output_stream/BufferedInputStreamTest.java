@@ -6,12 +6,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
+ * BufferedInputStream 带有缓冲区的字节输入流，默认大小是8m，可以通过减少访问磁盘的次数来提高文件读取性能
+ *
  * @author lingwh
- * @desc BufferedInputStream 带有缓冲区的字节输入流，默认大小是8m，可以通过减少访问磁盘的次数来提高文件读取性能
  * @date 2025/8/16 17:02
  */
 @Slf4j
 public class BufferedInputStreamTest {
+
     @Test
     public void testBufferedInputStreamRead() {
         try (InputStream is = new FileInputStream("d:/io/buffered_input_stream.txt");

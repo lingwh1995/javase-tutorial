@@ -4,9 +4,10 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
 /**
+ * 字节序列（大小端）测试
+ *
  * @author lingwh
- * @desc 字节序列（大小端）测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class ByteOrderTest1 {
 

@@ -1,8 +1,9 @@
 package action.command.command_k;
 
 /**
+ * 加法命令
+ *
  * @author lingwh
- * @desc 加法命令
  * @date 2019/9/10 16:15
  */
 public class AddCommand implements Command {

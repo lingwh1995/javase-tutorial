@@ -3,9 +3,10 @@ package org.bluebridge.unsafe_03_memory_barrier;
 import lombok.Getter;
 
 /**
+ * 修改标志线程
+ *
  * @author lingwh
- * @desc 修改标志线程
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Getter
 class ChangeThread implements Runnable {

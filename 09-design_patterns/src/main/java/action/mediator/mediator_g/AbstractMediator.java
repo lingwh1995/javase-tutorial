@@ -1,8 +1,9 @@
 package action.mediator.mediator_g;
 
 /**
+ * 抽象中介者
+ *
  * @author lingwh
- * @desc 抽象中介者
  * @date 2019/8/15 8:39
  */
 public abstract class AbstractMediator {

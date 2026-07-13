@@ -1,14 +1,16 @@
 package org.bluebridge.api;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import org.junit.Test;
 
 /**
+ * 数组类的高级API
+ *
  * @author lingwh
- * @desc 数组类的高级API
- * @date 2019/3/11 00:00
+ * @date 2019/3/11 16:29
  */
 public class ArraysTest {
 
@@ -17,7 +19,7 @@ public class ArraysTest {
      */
     @Test
     public void copyOfTest() {
-        String[] strs = {"a", "b", "c", "d", "e"};
+        String[] strs = { "a", "b", "c", "d", "e" };
         String[] newShortThanOldArray = Arrays.copyOf(strs, 1);
         System.out.println("新数组的长度比原数组的长度短:" + Arrays.toString(newShortThanOldArray));
         String[] newShortThanLongArray = Arrays.copyOf(strs, 15);
@@ -29,7 +31,7 @@ public class ArraysTest {
      */
     @Test
     public void copyOfRangeTest() {
-        String[] strs = {"a", "b", "c", "d", "e"};
+        String[] strs = { "a", "b", "c", "d", "e" };
         String[] newShortThanOldArray = Arrays.copyOfRange(strs, 1, 3);
         System.out.println("新数组的长度比原数组的长度短:" + Arrays.toString(newShortThanOldArray));
         String[] newShortThanLongArray = Arrays.copyOfRange(strs, 1, 8);
@@ -41,10 +43,10 @@ public class ArraysTest {
      */
     @Test
     public void sortTest() {
-        Integer[] nums = {8, 2, 5, 9, 6, 3, 1};
+        Integer[] nums = { 8, 2, 5, 9, 6, 3, 1 };
         Arrays.sort(nums);
         System.out.println(Arrays.toString(nums));
-        Character[] chars = {'b', 'g', 'c', 'd'};
+        Character[] chars = { 'b', 'g', 'c', 'd' };
         Arrays.sort(chars);
         System.out.println(Arrays.toString(chars));
     }
@@ -54,7 +56,7 @@ public class ArraysTest {
      */
     @Test
     public void binarySearchTest() {
-        Integer[] nums = {1, 2, 3, 5, 6, 9, 10};
+        Integer[] nums = { 1, 2, 3, 5, 6, 9, 10 };
         int index = Arrays.binarySearch(nums, 3);
         System.out.println(index);
     }
@@ -64,7 +66,7 @@ public class ArraysTest {
      */
     @Test
     public void binarySearchOverloadTest() {
-        Integer[] nums = {1, 2, 3, 5, 6, 9, 10};
+        Integer[] nums = { 1, 2, 3, 5, 6, 9, 10 };
         int index = Arrays.binarySearch(nums, 0, 2, 10);
         System.out.println(index);
     }
@@ -78,7 +80,7 @@ public class ArraysTest {
         Arrays.fill(strs, "H");
         System.out.println(Arrays.toString(strs));
 
-        Integer[] nums = {1, 2, 3, 4, 5};
+        Integer[] nums = { 1, 2, 3, 4, 5 };
         Arrays.fill(nums, 88);
         System.out.println(Arrays.toString(nums));
     }
@@ -88,9 +90,9 @@ public class ArraysTest {
      */
     @Test
     public void equalsTest() {
-        String[] strs1 = {"1", "2", "3", "4", "5"};
-        String[] strs2 = {"1", "2", "3", "4", "5"};
-        String[] strs3 = new String[] {"1", "2", "3", "4", "5"};
+        String[] strs1 = { "1", "2", "3", "4", "5" };
+        String[] strs2 = { "1", "2", "3", "4", "5" };
+        String[] strs3 = new String[] { "1", "2", "3", "4", "5" };
         System.out.println(Arrays.equals(strs1, strs2));
         System.out.println(Arrays.equals(strs1, strs3));
     }

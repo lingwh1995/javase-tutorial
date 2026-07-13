@@ -5,8 +5,9 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
+ * 用来实现访问数组的迭代接口，加入了迭代策略
+ *
  * @author lingwh
- * @desc 用来实现访问数组的迭代接口,加入了迭代策略
  * @date 2019/8/20 10:59
  */
 public class ArrayIteratorImpl implements Iterator {

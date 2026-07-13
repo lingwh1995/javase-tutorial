@@ -1,9 +1,10 @@
 package structure.flyweight.flyweight_e;
 
 /**
+ * 授权享元
+ *
  * @author lingwh
- * @desc
- * @since 2019/8/1 13:47
+ * @date 2019/8/1 13:47
  */
 public class AuthorizationFlyweight implements Flyweight {
 

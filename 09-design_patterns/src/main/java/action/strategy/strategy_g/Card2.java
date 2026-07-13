@@ -1,8 +1,9 @@
 package action.strategy.strategy_g;
 
 /**
+ * 支付到银行卡
+ *
  * @author lingwh
- * @desc 支付到银行卡
  * @date 2019/8/29 8:55
  */
 public class Card2 implements PaymentStrategy {

@@ -1,8 +1,9 @@
 package action.state.state_h;
 
 /**
+ * 黑名单警告投票状态
+ *
  * @author lingwh
- * @desc 黑名单警告投票状态
  * @date 2019/9/23 18:23
  */
 public class BlackWarnVoteState implements VoteState {

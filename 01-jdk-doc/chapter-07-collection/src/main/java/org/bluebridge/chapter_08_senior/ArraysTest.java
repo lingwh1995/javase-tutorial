@@ -4,17 +4,19 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * 数组工具类测试
+ *
  * @author lingwh
- * @desc 数组工具类测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class ArraysTest {
 
     public static void main(String[] args) {
         /**
-         * public static <T> List<T> asList(T... a) {} 把数组转换为集合,本质上还是数组，所以只要长度不发生改变,任何操作都可以
+         * public static <T> List<T> asList(T... a) {}
+         * 把数组转换为集合,本质上还是数组，所以只要长度不发生改变,任何操作都可以
          */
-        String[] s = {"a", "b", "c"};
+        String[] s = { "a", "b", "c" };
         List<String> l1 = Arrays.asList(s);
         List<String> l2 = Arrays.asList("a,b,c");
         System.out.println(l2);

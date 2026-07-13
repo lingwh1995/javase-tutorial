@@ -3,9 +3,10 @@ package org.bluebridge.lock_19_multi_lock;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 多把锁
+ *
  * @author lingwh
- * @desc 多把锁
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BigRoomMultiLock {
 

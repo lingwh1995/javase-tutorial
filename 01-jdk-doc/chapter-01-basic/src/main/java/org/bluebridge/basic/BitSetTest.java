@@ -3,8 +3,9 @@ package org.bluebridge.basic;
 import java.util.BitSet;
 
 /**
+ * jdk自带的位图
+ *
  * @author lingwh
- * @desc jdk自带的位图
  * @date 2026/3/14 15:07
  */
 public class BitSetTest {

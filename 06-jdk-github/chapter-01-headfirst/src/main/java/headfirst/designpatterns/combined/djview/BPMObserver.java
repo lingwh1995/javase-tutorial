@@ -1,10 +1,12 @@
 package headfirst.designpatterns.combined.djview;
 
 /**
+ * BPM观察者
+ *
  * @author lingwh
- * @desc BPM观察者
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface BPMObserver {
+
     void updateBPM();
 }

@@ -3,14 +3,14 @@ package org.bluebridge.cas_04_atomic_aba;
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 /**
+ * AtomicStampedReference测试
+ *
  * @author lingwh
- * @desc AtomicStampedReference测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AtomicStampedReferenceTest {
 
-    private static AtomicStampedReference<String> atomicStampedReference =
-            new AtomicStampedReference<>("A", 0);
+    private static AtomicStampedReference<String> atomicStampedReference = new AtomicStampedReference<>("A", 0);
 
     /**
      * AtomicStampedReference可以通过添加版本号来确定有没有发生过ABA问题

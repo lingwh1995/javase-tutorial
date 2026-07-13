@@ -1,8 +1,9 @@
 package action.memento.mementor_a;
 
 /**
+ * 负责保存备忘录的对象
+ *
  * @author lingwh
- * @desc 负责保存备忘录的对象
  * @date 2019/8/27 11:21
  */
 public class Caretaker {

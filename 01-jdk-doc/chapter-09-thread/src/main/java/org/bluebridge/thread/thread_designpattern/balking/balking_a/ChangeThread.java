@@ -4,8 +4,9 @@ import java.io.IOException;
 import java.util.Random;
 
 /**
+ * 修改数据线程
+ *
  * @author lingwh
- * @desc 修改数据线程
  * @date 2019/10/16 15:44
  */
 public class ChangeThread extends Thread {

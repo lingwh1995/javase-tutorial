@@ -4,9 +4,10 @@ import org.bluebridge.util.UnsafeAccessor;
 import sun.misc.Unsafe;
 
 /**
+ * 原子数据类
+ *
  * @author lingwh
- * @desc 原子数据类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AtomicData {
 

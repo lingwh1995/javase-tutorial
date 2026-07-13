@@ -1,8 +1,9 @@
 package action.template.template_a;
 
 /**
+ * 定义模板方法、原语操作等的抽象类
+ *
  * @author lingwh
- * @desc 定义模板方法、原语操作等的抽象类
  * @date 2019/8/26 11:16
  */
 public abstract class AbstractClass {

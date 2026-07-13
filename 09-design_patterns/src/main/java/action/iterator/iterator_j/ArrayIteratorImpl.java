@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * 用来实现随机翻页访问聚合元素的迭代接口
+ *
  * @author lingwh
- * @desc 用来实现随机翻页访问聚合元素的迭代接口
  * @date 2019/8/20 13:33
  */
 public class ArrayIteratorImpl implements AggregationIterator {

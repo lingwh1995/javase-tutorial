@@ -7,11 +7,13 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 阻塞队列
+ *
  * @author lingwh
- * @desc 阻塞队列
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BlockingQueue<T> {
+
     // 阻塞队列，存放任务
     private Deque<T> queue = new ArrayDeque<>();
     // 队列的最大容量

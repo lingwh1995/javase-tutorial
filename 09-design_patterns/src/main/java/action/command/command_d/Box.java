@@ -1,8 +1,9 @@
 package action.command.command_d;
 
 /**
+ * 机箱对象，本身有按钮，持有按钮对应的命令对象
+ *
  * @author lingwh
- * @desc 机箱对象，本身有按钮，持有按钮对应的命令对象
  * @date 2019/8/5 10:56
  */
 public class Box {

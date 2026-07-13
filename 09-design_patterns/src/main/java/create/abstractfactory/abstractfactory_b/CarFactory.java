@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_b;
 
 /**
+ * 汽车工厂接口
+ *
  * @author lingwh
- * @desc 汽车工厂接口
- * @date 2019/3/11 00:00
+ * @date 2019/3/11 19:02
  */
 public interface CarFactory {
+
     Engine createEngine();
 
     Seat createSeat();

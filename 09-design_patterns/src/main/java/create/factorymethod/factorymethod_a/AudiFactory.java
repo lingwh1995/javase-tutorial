@@ -1,9 +1,10 @@
 package create.factorymethod.factorymethod_a;
 
 /**
+ * 奥迪工厂
+ *
  * @author lingwh
- * @desc 奥迪工厂
- * @date 2019/3/11 00:00
+ * @date 2019/3/11 19:02
  */
 public class AudiFactory extends CarFactory {
 

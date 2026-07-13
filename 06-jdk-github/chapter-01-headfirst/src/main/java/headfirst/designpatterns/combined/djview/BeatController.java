@@ -1,9 +1,10 @@
 package headfirst.designpatterns.combined.djview;
 
 /**
+ * 节拍控制器
+ *
  * @author lingwh
- * @desc 节拍控制器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class BeatController implements ControllerInterface {
 

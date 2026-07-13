@@ -1,17 +1,20 @@
 package com.dragonsoft.sort;
 
-import java.util.Arrays;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 /**
+ * 选择排序
+ *
  * @author lingwh
- * @desc 选择排序
- * @date 2019/3/2 00:00
+ * @date 2019/3/2 19:02
  */
 public class ChoiceSort {
+
     @Test
     public void fun() {
-        int[] num = {4, 8, 6, 3, 1, 9, 2, 5};
+        int[] num = { 4, 8, 6, 3, 1, 9, 2, 5 };
         System.out.println("--------------------------------------------");
         System.out.println("未排序前的数组   :" + Arrays.toString(num));
         // 外层循环控制比较的轮数

@@ -1,8 +1,9 @@
 package action.strategy.strategy_d;
 
 /**
+ * 使用各种不同策略的客户端
+ *
  * @author lingwh
- * @desc 使用各种不同策略的客户端
  * @date 2019/8/2 15:14
  */
 public class CalcPrice {

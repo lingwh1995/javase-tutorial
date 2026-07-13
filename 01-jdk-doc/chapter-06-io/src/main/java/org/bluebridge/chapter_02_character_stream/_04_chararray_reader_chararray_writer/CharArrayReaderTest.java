@@ -7,8 +7,9 @@ import java.io.CharArrayReader;
 import java.io.IOException;
 
 /**
+ * CharArrayReader 是 Reader 的子类，用于从字符数组中读取字符
+ *
  * @author lingwh
- * @desc CharArrayReader 是 Reader 的子类，用于从字符数组中读取字符
  * @date 2025/9/8 17:49
  */
 @Slf4j

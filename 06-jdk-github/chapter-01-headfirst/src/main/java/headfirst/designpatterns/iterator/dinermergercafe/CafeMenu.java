@@ -3,11 +3,13 @@ package headfirst.designpatterns.iterator.dinermergercafe;
 import java.util.*;
 
 /**
+ * 咖啡馆菜单
+ *
  * @author lingwh
- * @desc 咖啡馆菜单
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CafeMenu implements Menu {
+
 	HashMap<String, MenuItem> menuItems = new HashMap<String, MenuItem>();
 
 	public CafeMenu() {

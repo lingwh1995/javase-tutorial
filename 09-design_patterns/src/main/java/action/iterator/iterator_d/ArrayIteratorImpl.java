@@ -1,8 +1,9 @@
 package action.iterator.iterator_d;
 
 /**
+ * 用来实现访问数组的迭代接口
+ *
  * @author lingwh
- * @desc 用来实现访问数组的迭代接口
  * @date 2019/8/20 9:13
  */
 public class ArrayIteratorImpl implements Iterator {

@@ -1,9 +1,10 @@
 package headfirst.designpatterns.decorator.pizza;
 
 /**
+ * 芝士配料
+ *
  * @author lingwh
- * @desc 芝士配料
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Cheese extends ToppingDecorator {
 

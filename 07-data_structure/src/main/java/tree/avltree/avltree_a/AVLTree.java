@@ -1,9 +1,10 @@
 package tree.avltree.avltree_a;
 
 /**
+ * avl是在平衡二叉树的基础上增加一个功能的树
+ *
  * @author lingwh
- * @desc avl是在平衡二叉树的基础上增加一个功能的树
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class AVLTree {
 
@@ -147,6 +148,7 @@ public class AVLTree {
 }
 
 class Node {
+
     int value;
     Node left;
     Node right;

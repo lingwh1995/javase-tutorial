@@ -1,8 +1,9 @@
 package structure.facade.facade_d;
 
 /**
+ * B模块的接口
+ *
  * @author lingwh
- * @desc B模块的接口
  * @date 2019/9/12 13:16
  */
 public interface BModuleApi {
