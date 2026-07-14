@@ -1,11 +1,13 @@
 package org.bluebridge.chapter_01_collection;
 
-import java.util.*;
 import org.junit.Test;
 
+import java.util.*;
+
 /**
+ * 避免抛出空指针异常的
+ *
  * @author lingwh
- * @desc 避免抛出空指针异常的
  * @date 2019/7/9 15:29
  */
 public class EmptyCollectionTest {

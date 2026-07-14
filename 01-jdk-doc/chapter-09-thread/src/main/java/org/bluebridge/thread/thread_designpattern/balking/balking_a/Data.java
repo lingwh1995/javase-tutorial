@@ -4,11 +4,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
+ * Balking 模式数据类
+ *
  * @author lingwh
- * @desc Balking 模式数据类
  * @date 2019/10/16 15:32
  */
 public class Data {
+
     private final String filename;
     private String content;
 

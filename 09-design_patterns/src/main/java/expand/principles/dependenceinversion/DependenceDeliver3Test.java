@@ -1,11 +1,13 @@
 package expand.principles.dependenceinversion;
 
 /**
+ * 依赖反转原则测试
+ *
  * @author lingwh
- * @desc 依赖反转原则测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DependenceDeliver3Test {
+
     public static void main(String[] args) {
         A3 a3 = new A4();
         a3.fun();

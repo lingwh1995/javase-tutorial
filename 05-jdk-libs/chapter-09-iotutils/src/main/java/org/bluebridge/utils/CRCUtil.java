@@ -3,9 +3,10 @@ package org.bluebridge.utils;
 import cn.hutool.core.io.checksum.crc16.*;
 
 /**
+ * HuTools提供了常见的CRC实现 根据需要调用即可
+ *
  * @author lingwh
- * @desc HuTools提供了常见的CRC实现 根据需要调用即可
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CRCUtil {
 
@@ -15,7 +16,7 @@ public class CRCUtil {
         return crc16CCITT.getValue();
     }
 
-    //  可指定数组长度
+    // 可指定数组长度
     public static long CCITT(byte[] bytes, int start, int end) {
         CRC16CCITT crc16CCITT = new CRC16CCITT();
         crc16CCITT.update(bytes, start, end);
@@ -62,7 +63,6 @@ public class CRCUtil {
      * 调用示例
      */
     public static void main(String[] args) {
-
         String hex = "68260030010001999999999999250719000000000d0000009999999999990004a0b598";
         // 测试数据
         byte[] testBytes = ParseUtil.hexStringToByte(hex);

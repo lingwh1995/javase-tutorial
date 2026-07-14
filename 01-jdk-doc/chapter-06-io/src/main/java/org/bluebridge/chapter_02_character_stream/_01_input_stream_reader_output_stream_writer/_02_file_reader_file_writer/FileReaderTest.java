@@ -1,12 +1,14 @@
 package org.bluebridge.chapter_02_character_stream._01_input_stream_reader_output_stream_writer._02_file_reader_file_writer;
 
-import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.*;
+
 /**
+ * 文件字符输入流（只能用于读取文件，使用系统默认字符编码，无法指定编码格式）
+ *
  * @author lingwh
- * @desc 文件字符输入流（只能用于读取文件，使用系统默认字符编码，无法指定编码格式）
  * @date 2025/8/21 17:56
  */
 @Slf4j

@@ -3,8 +3,9 @@ package action.interpreter.interpreter_c;
 import org.w3c.dom.Element;
 
 /**
+ * 元素作为终结符对应的解释器
+ *
  * @author lingwh
- * @desc 元素作为终结符对应的解释器
  * @date 2019/8/27 14:11
  */
 public class ElementTerminalExpression extends ReadXmlExpression {

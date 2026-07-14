@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_f;
 
 /**
+ * 操作文件的接口，本质上是一个,本质上是一个API的提供者的规范接口
+ *
  * @author lingwh
- * @desc 操作文件的接口，本质上是一个,本质上是一个API的提供者的规范接口
  * @date 2019/8/2 9:29
  */
 public interface FileOperator {

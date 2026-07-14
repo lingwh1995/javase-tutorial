@@ -1,15 +1,17 @@
 package org.bluebridge.xml.dom4j;
 
-import java.io.FileOutputStream;
 import org.dom4j.Document;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
 
+import java.io.FileOutputStream;
+
 /**
+ * Dom4j解析xml工具类
+ *
  * @author lingwh
- * @desc Dom4j解析xml工具类
- * @date 2019/3/8 00:00
+ * @date 2019/3/8 19:02
  */
 public class Dom4jUtils {
 

@@ -1,8 +1,9 @@
 package action.responsibility.responsibility_c;
 
 /**
+ * 聚餐费用申请
+ *
  * @author lingwh
- * @desc 聚餐费用申请
  * @date 2019/8/27 17:54
  */
 public class FeeRequest {

@@ -8,12 +8,14 @@ import java.util.Random;
 import java.util.Vector;
 
 /**
+ * 售票练习
+ *
  * @author lingwh
- * @desc 售票练习
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j(topic = "c.ExerciseSell")
 public class ExerciseSell {
+
     public static void main(String[] args) throws InterruptedException {
         // 模拟多人买票
         TicketWindow window = new TicketWindow(1000);

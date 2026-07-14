@@ -5,8 +5,9 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 /**
+ * 上下文，用来包含解释器需要的一些全局信息
+ *
  * @author lingwh
- * @desc 上下文，用来包含解释器需要的一些全局信息
  * @date 2019/8/27 13:58
  */
 public class Context {

@@ -3,7 +3,7 @@ package action.memento.mementor_d;
 /**
  * 负责保存模拟运行流程A的对象的备忘录对象
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/8/27 11:06
  */
 public class FlowAMementoCareTaker {

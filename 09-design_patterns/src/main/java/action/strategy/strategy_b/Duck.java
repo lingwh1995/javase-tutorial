@@ -1,9 +1,10 @@
 package action.strategy.strategy_b;
 
 /**
+ * 鸭子抽象类
+ *
  * @author lingwh
- * @desc 鸭子抽象类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class Duck {
     /**

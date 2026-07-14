@@ -1,11 +1,14 @@
 package structure.adapter.adapter_m;
 
 /**
+ * 控制器接口
+ *
  * @author lingwh
- * @desc 控制器接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
-public interface Controller {}
+public interface Controller {
+
+}
 
 class HttpController implements Controller {
     public void doHttpHandler() {
@@ -20,6 +23,7 @@ class SimpleController implements Controller {
 }
 
 class AnnotationController implements Controller {
+
     public void doAnnotationHandler() {
         System.out.println("annotation...");
     }

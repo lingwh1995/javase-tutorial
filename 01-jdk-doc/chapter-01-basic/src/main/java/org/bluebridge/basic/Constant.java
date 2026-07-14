@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 常量
+ *
  * @author lingwh
- * @desc 常量
- * @date 2026/7/9 00:00
+ * @date 2026/6/12 11:56
  */
 public final class Constant {
 

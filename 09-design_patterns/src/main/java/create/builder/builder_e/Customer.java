@@ -1,11 +1,13 @@
 package create.builder.builder_e;
 
 /**
+ * 客户实体类
+ *
  * @author lingwh
- * @desc 客户实体类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Customer {
+
     private String id;
     private String name;
     private String email;
@@ -13,7 +15,8 @@ public class Customer {
     private String hobby;
     private String addess;
 
-    private Customer() {}
+    private Customer() {
+    }
 
     /**
      * 外部构造方法需要私有化
@@ -37,7 +40,8 @@ public class Customer {
         private String hobby;
         private String addess;
 
-        public Builder() {}
+        public Builder() {
+        }
 
         public Builder id(String param) {
             this.id = param;

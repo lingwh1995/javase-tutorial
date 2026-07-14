@@ -1,9 +1,10 @@
 package headfirst.designpatterns.combining.factory;
 
 /**
+ * 计数鸭子工厂
+ *
  * @author lingwh
- * @desc 计数鸭子工厂
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CountingDuckFactory extends AbstractDuckFactory {
 

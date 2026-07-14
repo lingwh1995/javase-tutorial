@@ -1,9 +1,10 @@
 package structure.decorator.decorator_a;
 
 /**
+ * 具体装饰器/具体装饰角色
+ *
  * @author lingwh
- * @desc 具体装饰器/具体装饰角色
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class FlyCar extends SuperCar {
 

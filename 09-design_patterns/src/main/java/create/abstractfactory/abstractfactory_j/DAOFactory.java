@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_j;
 
 /**
+ * 抽象工厂，创建订单主、子记录对应的DAO对象
+ *
  * @author lingwh
- * @desc 抽象工厂，创建订单主、子记录对应的DAO对象
  * @date 2019/9/4 11:34
  */
 public abstract class DAOFactory {

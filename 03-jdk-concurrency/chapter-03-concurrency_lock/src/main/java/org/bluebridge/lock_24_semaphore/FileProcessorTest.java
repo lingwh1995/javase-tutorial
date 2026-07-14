@@ -5,11 +5,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 /**
+ * 控制并发执行的任务数量
+ *
  * @author lingwh
- * @desc 控制并发执行的任务数量
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class FileProcessorTest {
+
     private static final int MAX_CONCURRENT_TASKS = 3;
     private static final Semaphore semaphore = new Semaphore(MAX_CONCURRENT_TASKS);
 

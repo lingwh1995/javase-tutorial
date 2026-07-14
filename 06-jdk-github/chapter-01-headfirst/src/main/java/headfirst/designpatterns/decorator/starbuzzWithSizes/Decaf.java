@@ -1,11 +1,13 @@
 package headfirst.designpatterns.decorator.starbuzzWithSizes;
 
 /**
+ * 低咖啡因咖啡
+ *
  * @author lingwh
- * @desc 低咖啡因咖啡
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Decaf extends Beverage {
+
     public Decaf() {
         description = "Decaf Coffee";
     }

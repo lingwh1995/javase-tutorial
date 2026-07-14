@@ -1,6 +1,8 @@
 package create.factorymethod.factorymethod_f;
 
 /**
+ * 导出文本文件
+ *
  * @author lingwh
  * @date 2019/9/3 16:45
  */

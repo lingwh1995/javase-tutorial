@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_b;
 
 /**
+ * 已共享的数据
+ *
  * @author lingwh
- * @desc 已共享的数据
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Data {
+
     private final char[] buffer;
     private final ReadWriteLock lock = new ReadWriteLock();
 

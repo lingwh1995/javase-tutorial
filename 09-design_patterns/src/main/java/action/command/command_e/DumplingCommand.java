@@ -1,8 +1,9 @@
 package action.command.command_e;
 
 /**
+ * 饺子命令
+ *
  * @author lingwh
- * @desc 饺子命令
  * @date 2019/8/5 13:42
  */
 public class DumplingCommand implements Command {

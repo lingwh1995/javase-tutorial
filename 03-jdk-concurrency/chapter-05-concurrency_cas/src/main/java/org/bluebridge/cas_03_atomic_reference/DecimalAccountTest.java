@@ -1,12 +1,14 @@
 package org.bluebridge.cas_03_atomic_reference;
 
-import java.math.BigDecimal;
 import org.junit.Test;
 
+import java.math.BigDecimal;
+
 /**
+ * BigDecimal账户测试
+ *
  * @author lingwh
- * @desc BigDecimal账户测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DecimalAccountTest {
 

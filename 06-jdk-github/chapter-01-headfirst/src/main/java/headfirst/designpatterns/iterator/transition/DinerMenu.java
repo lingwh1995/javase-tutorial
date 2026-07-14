@@ -3,11 +3,13 @@ package headfirst.designpatterns.iterator.transition;
 import java.util.Iterator;
 
 /**
+ * 餐厅菜单
+ *
  * @author lingwh
- * @desc 餐厅菜单
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DinerMenu implements Menu {
+
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;

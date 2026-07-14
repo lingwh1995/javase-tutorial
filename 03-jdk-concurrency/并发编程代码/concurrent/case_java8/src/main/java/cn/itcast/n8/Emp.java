@@ -3,11 +3,13 @@ package cn.itcast.n8;
 import java.math.BigDecimal;
 
 /**
+ * 员工实体类
+ *
  * @author lingwh
- * @desc 员工实体类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 class Emp {
+
     private int empno;
     private String ename;
     private String job;

@@ -10,11 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 下载器
+ *
  * @author lingwh
- * @desc 下载器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Downloader {
+
     public static List<String> download() throws IOException {
         HttpURLConnection conn = (HttpURLConnection) new URL("https://www.baidu.com/").openConnection();
         List<String> lines = new ArrayList<>();

@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * 部门和人员中介者实现
+ *
  * @author lingwh
- * @desc 部门和人员中介者实现
  * @date 2019/8/14 13:41
  */
 public class DepUserMediatorImpl {

@@ -4,6 +4,7 @@ package structure.facade.facade_a;
  * DVD播放器，使用饿汉式
  */
 public class DVDPlayer {
+
     private static DVDPlayer dVDPlayer = new DVDPlayer();
 
     public static DVDPlayer getInstance() {

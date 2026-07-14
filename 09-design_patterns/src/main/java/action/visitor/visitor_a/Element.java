@@ -1,8 +1,9 @@
 package action.visitor.visitor_a;
 
 /**
+ * 被访问的元素的接口
+ *
  * @author lingwh
- * @desc 被访问的元素的接口
  * @date 2019/10/11 9:19
  */
 public abstract class Element {

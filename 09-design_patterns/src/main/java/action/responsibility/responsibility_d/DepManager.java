@@ -1,8 +1,9 @@
 package action.responsibility.responsibility_d;
 
 /**
+ * 部门经理
+ *
  * @author lingwh
- * @desc 部门经理
  * @date 2019/8/27 18:03
  */
 public class DepManager extends Handler {

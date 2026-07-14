@@ -18,17 +18,17 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             "ContactProto");
     }
     public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistryLite registry) {
+        com.google.protobuf.ExtensionRegistryLite registry) {
     }
 
     public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistry registry) {
+        com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
-                (com.google.protobuf.ExtensionRegistryLite) registry);
+            (com.google.protobuf.ExtensionRegistryLite) registry);
     }
     public interface PhoneOrBuilder extends
-            // @@protoc_insertion_point(interface_extends:org.bluebridge.protobuf.contacts.Phone)
-            com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:org.bluebridge.protobuf.contacts.Phone)
+        com.google.protobuf.MessageOrBuilder {
 
         /**
          * <code>string number = 1;</code>
@@ -40,16 +40,16 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          * @return The bytes for number.
          */
         com.google.protobuf.ByteString
-                getNumberBytes();
+        getNumberBytes();
     }
     /**
      * Protobuf type {@code org.bluebridge.protobuf.contacts.Phone}
      */
     public static final class Phone extends
-            com.google.protobuf.GeneratedMessage implements
-            // @@protoc_insertion_point(message_implements:org.bluebridge.protobuf.contacts.Phone)
-            PhoneOrBuilder {
-    private static final long serialVersionUID = 0L;
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:org.bluebridge.protobuf.contacts.Phone)
+        PhoneOrBuilder {
+        private static final long serialVersionUID = 0L;
         static {
             com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
                 com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
@@ -68,7 +68,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         public static final com.google.protobuf.Descriptors.Descriptor
-                getDescriptor() {
+        getDescriptor() {
             return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Phone_descriptor;
         }
 
@@ -79,10 +79,10 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-                internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
             return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Phone_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            org.bluebridge.protobuf.proto.ContactProto.Phone.class, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder.class);
+                .ensureFieldAccessorsInitialized(
+                    org.bluebridge.protobuf.proto.ContactProto.Phone.class, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder.class);
         }
 
         public static final int NUMBER_FIELD_NUMBER = 1;
@@ -98,8 +98,8 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             if (ref instanceof java.lang.String) {
                 return (java.lang.String) ref;
             } else {
-                com.google.protobuf.ByteString bs = 
-                        (com.google.protobuf.ByteString) ref;
+                com.google.protobuf.ByteString bs =
+                    (com.google.protobuf.ByteString) ref;
                 java.lang.String s = bs.toStringUtf8();
                 number_ = s;
                 return s;
@@ -111,12 +111,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          */
         @java.lang.Override
         public com.google.protobuf.ByteString
-                getNumberBytes() {
+        getNumberBytes() {
             java.lang.Object ref = number_;
             if (ref instanceof java.lang.String) {
-                com.google.protobuf.ByteString b = 
-                        com.google.protobuf.ByteString.copyFromUtf8(
-                                (java.lang.String) ref);
+                com.google.protobuf.ByteString b =
+                    com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
                 number_ = b;
                 return b;
             } else {
@@ -137,7 +137,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
         @java.lang.Override
         public void writeTo(com.google.protobuf.CodedOutputStream output)
-                                                throws java.io.IOException {
+            throws java.io.IOException {
             if (!com.google.protobuf.GeneratedMessage.isStringEmpty(number_)) {
                 com.google.protobuf.GeneratedMessage.writeString(output, 1, number_);
             }
@@ -161,7 +161,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         @java.lang.Override
         public boolean equals(final java.lang.Object obj) {
             if (obj == this) {
-             return true;
+                return true;
             }
             if (!(obj instanceof org.bluebridge.protobuf.proto.ContactProto.Phone)) {
                 return super.equals(obj);
@@ -169,7 +169,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             org.bluebridge.protobuf.proto.ContactProto.Phone other = (org.bluebridge.protobuf.proto.ContactProto.Phone) obj;
 
             if (!getNumber()
-                    .equals(other.getNumber())) return false;
+                .equals(other.getNumber())) return false;
             if (!getUnknownFields().equals(other.getUnknownFields())) return false;
             return true;
         }
@@ -189,75 +189,75 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(
-                java.nio.ByteBuffer data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(
-                java.nio.ByteBuffer data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(
-                com.google.protobuf.ByteString data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(
-                com.google.protobuf.ByteString data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(byte[] data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(
-                byte[] data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(java.io.InputStream input)
-                throws java.io.IOException {
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input);
+                .parseWithIOException(PARSER, input);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input, extensionRegistry);
+                .parseWithIOException(PARSER, input, extensionRegistry);
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseDelimitedFrom(java.io.InputStream input)
-                throws java.io.IOException {
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseDelimitedWithIOException(PARSER, input);
+                .parseDelimitedWithIOException(PARSER, input);
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseDelimitedFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+                .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(
-                com.google.protobuf.CodedInputStream input)
-                throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input);
+                .parseWithIOException(PARSER, input);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Phone parseFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input, extensionRegistry);
+                .parseWithIOException(PARSER, input, extensionRegistry);
         }
 
         @java.lang.Override
@@ -271,12 +271,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         @java.lang.Override
         public Builder toBuilder() {
             return this == DEFAULT_INSTANCE
-                    ? new Builder() : new Builder().mergeFrom(this);
+                ? new Builder() : new Builder().mergeFrom(this);
         }
 
         @java.lang.Override
         protected Builder newBuilderForType(
-                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
             Builder builder = new Builder(parent);
             return builder;
         }
@@ -284,20 +284,20 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          * Protobuf type {@code org.bluebridge.protobuf.contacts.Phone}
          */
         public static final class Builder extends
-                com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-                // @@protoc_insertion_point(builder_implements:org.bluebridge.protobuf.contacts.Phone)
-                org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder {
+            com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:org.bluebridge.protobuf.contacts.Phone)
+            org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder {
             public static final com.google.protobuf.Descriptors.Descriptor
-                    getDescriptor() {
+            getDescriptor() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Phone_descriptor;
             }
 
             @java.lang.Override
             protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-                    internalGetFieldAccessorTable() {
+            internalGetFieldAccessorTable() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Phone_fieldAccessorTable
-                        .ensureFieldAccessorsInitialized(
-                                org.bluebridge.protobuf.proto.ContactProto.Phone.class, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder.class);
+                    .ensureFieldAccessorsInitialized(
+                        org.bluebridge.protobuf.proto.ContactProto.Phone.class, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder.class);
             }
 
             // Construct using org.bluebridge.protobuf.proto.ContactProto.Phone.newBuilder()
@@ -306,7 +306,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             }
 
             private Builder(
-                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
                 super(parent);
 
             }
@@ -320,7 +320,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
             @java.lang.Override
             public com.google.protobuf.Descriptors.Descriptor
-                    getDescriptorForType() {
+            getDescriptorForType() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Phone_descriptor;
             }
 
@@ -382,9 +382,9 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
             @java.lang.Override
             public Builder mergeFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws java.io.IOException {
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
                 if (extensionRegistry == null) {
                     throw new java.lang.NullPointerException();
                 }
@@ -427,7 +427,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                 java.lang.Object ref = number_;
                 if (!(ref instanceof java.lang.String)) {
                     com.google.protobuf.ByteString bs =
-                            (com.google.protobuf.ByteString) ref;
+                        (com.google.protobuf.ByteString) ref;
                     java.lang.String s = bs.toStringUtf8();
                     number_ = s;
                     return s;
@@ -440,12 +440,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * @return The bytes for number.
              */
             public com.google.protobuf.ByteString
-                    getNumberBytes() {
+            getNumberBytes() {
                 java.lang.Object ref = number_;
                 if (ref instanceof String) {
-                    com.google.protobuf.ByteString b = 
-                            com.google.protobuf.ByteString.copyFromUtf8(
-                                    (java.lang.String) ref);
+                    com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                            (java.lang.String) ref);
                     number_ = b;
                     return b;
                 } else {
@@ -458,7 +458,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * @return This builder for chaining.
              */
             public Builder setNumber(
-                    java.lang.String value) {
+                java.lang.String value) {
                 if (value == null) { throw new NullPointerException(); }
                 number_ = value;
                 bitField0_ |= 0x00000001;
@@ -481,7 +481,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * @return This builder for chaining.
              */
             public Builder setNumberBytes(
-                    com.google.protobuf.ByteString value) {
+                com.google.protobuf.ByteString value) {
                 if (value == null) { throw new NullPointerException(); }
                 checkByteStringIsUtf8(value);
                 number_ = value;
@@ -504,12 +504,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         private static final com.google.protobuf.Parser<Phone>
-                PARSER = new com.google.protobuf.AbstractParser<Phone>() {
+            PARSER = new com.google.protobuf.AbstractParser<Phone>() {
             @java.lang.Override
             public Phone parsePartialFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws com.google.protobuf.InvalidProtocolBufferException {
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
                 Builder builder = newBuilder();
                 try {
                     builder.mergeFrom(input, extensionRegistry);
@@ -519,7 +519,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                     throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
                 } catch (java.io.IOException e) {
                     throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                            .setUnfinishedMessage(builder.buildPartial());
+                        .setUnfinishedMessage(builder.buildPartial());
                 }
                 return builder.buildPartial();
             }
@@ -542,8 +542,8 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
     }
 
     public interface PeopleInfoOrBuilder extends
-            // @@protoc_insertion_point(interface_extends:org.bluebridge.protobuf.contacts.PeopleInfo)
-            com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:org.bluebridge.protobuf.contacts.PeopleInfo)
+        com.google.protobuf.MessageOrBuilder {
 
         /**
          * <code>string name = 1;</code>
@@ -555,7 +555,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          * @return The bytes for name.
          */
         com.google.protobuf.ByteString
-                getNameBytes();
+        getNameBytes();
 
         /**
          * <code>int32 age = 2;</code>
@@ -566,8 +566,8 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         /**
          * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
          */
-        java.util.List<org.bluebridge.protobuf.proto.ContactProto.Phone> 
-                getPhonesList();
+        java.util.List<org.bluebridge.protobuf.proto.ContactProto.Phone>
+        getPhonesList();
         /**
          * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
          */
@@ -579,22 +579,22 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         /**
          * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
          */
-        java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder> 
-                getPhonesOrBuilderList();
+        java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder>
+        getPhonesOrBuilderList();
         /**
          * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
          */
         org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder getPhonesOrBuilder(
-                int index);
+            int index);
     }
     /**
      * Protobuf type {@code org.bluebridge.protobuf.contacts.PeopleInfo}
      */
     public static final class PeopleInfo extends
-            com.google.protobuf.GeneratedMessage implements
-            // @@protoc_insertion_point(message_implements:org.bluebridge.protobuf.contacts.PeopleInfo)
-            PeopleInfoOrBuilder {
-    private static final long serialVersionUID = 0L;
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:org.bluebridge.protobuf.contacts.PeopleInfo)
+        PeopleInfoOrBuilder {
+        private static final long serialVersionUID = 0L;
         static {
             com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
                 com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
@@ -614,7 +614,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         public static final com.google.protobuf.Descriptors.Descriptor
-                getDescriptor() {
+        getDescriptor() {
             return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_descriptor;
         }
 
@@ -625,10 +625,10 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-                internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
             return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.class, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder.class);
+                .ensureFieldAccessorsInitialized(
+                    org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.class, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder.class);
         }
 
         public static final int NAME_FIELD_NUMBER = 1;
@@ -644,8 +644,8 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             if (ref instanceof java.lang.String) {
                 return (java.lang.String) ref;
             } else {
-                com.google.protobuf.ByteString bs = 
-                        (com.google.protobuf.ByteString) ref;
+                com.google.protobuf.ByteString bs =
+                    (com.google.protobuf.ByteString) ref;
                 java.lang.String s = bs.toStringUtf8();
                 name_ = s;
                 return s;
@@ -657,12 +657,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          */
         @java.lang.Override
         public com.google.protobuf.ByteString
-                getNameBytes() {
+        getNameBytes() {
             java.lang.Object ref = name_;
             if (ref instanceof java.lang.String) {
-                com.google.protobuf.ByteString b = 
-                        com.google.protobuf.ByteString.copyFromUtf8(
-                                (java.lang.String) ref);
+                com.google.protobuf.ByteString b =
+                    com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
                 name_ = b;
                 return b;
             } else {
@@ -695,8 +695,8 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
          */
         @java.lang.Override
-        public java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder> 
-                getPhonesOrBuilderList() {
+        public java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder>
+        getPhonesOrBuilderList() {
             return phones_;
         }
         /**
@@ -718,7 +718,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          */
         @java.lang.Override
         public org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder getPhonesOrBuilder(
-                int index) {
+            int index) {
             return phones_.get(index);
         }
 
@@ -735,7 +735,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
         @java.lang.Override
         public void writeTo(com.google.protobuf.CodedOutputStream output)
-                                                throws java.io.IOException {
+            throws java.io.IOException {
             if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
                 com.google.protobuf.GeneratedMessage.writeString(output, 1, name_);
             }
@@ -762,14 +762,14 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                     .computeInt32Size(2, age_);
             }
 
-                    {
-                        final int count = phones_.size();
-                        for (int i = 0; i < count; i++) {
-                            size += com.google.protobuf.CodedOutputStream
-                                .computeMessageSizeNoTag(phones_.get(i));
-                        }
-                        size += 1 * count;
-                    }
+            {
+                final int count = phones_.size();
+                for (int i = 0; i < count; i++) {
+                    size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSizeNoTag(phones_.get(i));
+                }
+                size += 1 * count;
+            }
             size += getUnknownFields().getSerializedSize();
             memoizedSize = size;
             return size;
@@ -778,7 +778,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         @java.lang.Override
         public boolean equals(final java.lang.Object obj) {
             if (obj == this) {
-             return true;
+                return true;
             }
             if (!(obj instanceof org.bluebridge.protobuf.proto.ContactProto.PeopleInfo)) {
                 return super.equals(obj);
@@ -786,11 +786,11 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             org.bluebridge.protobuf.proto.ContactProto.PeopleInfo other = (org.bluebridge.protobuf.proto.ContactProto.PeopleInfo) obj;
 
             if (!getName()
-                    .equals(other.getName())) return false;
+                .equals(other.getName())) return false;
             if (getAge()
-                    != other.getAge()) return false;
+                != other.getAge()) return false;
             if (!getPhonesList()
-                    .equals(other.getPhonesList())) return false;
+                .equals(other.getPhonesList())) return false;
             if (!getUnknownFields().equals(other.getUnknownFields())) return false;
             return true;
         }
@@ -816,75 +816,75 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(
-                java.nio.ByteBuffer data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(
-                java.nio.ByteBuffer data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(
-                com.google.protobuf.ByteString data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(
-                com.google.protobuf.ByteString data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(byte[] data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(
-                byte[] data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(java.io.InputStream input)
-                throws java.io.IOException {
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input);
+                .parseWithIOException(PARSER, input);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input, extensionRegistry);
+                .parseWithIOException(PARSER, input, extensionRegistry);
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseDelimitedFrom(java.io.InputStream input)
-                throws java.io.IOException {
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseDelimitedWithIOException(PARSER, input);
+                .parseDelimitedWithIOException(PARSER, input);
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseDelimitedFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+                .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(
-                com.google.protobuf.CodedInputStream input)
-                throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input);
+                .parseWithIOException(PARSER, input);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.PeopleInfo parseFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input, extensionRegistry);
+                .parseWithIOException(PARSER, input, extensionRegistry);
         }
 
         @java.lang.Override
@@ -898,12 +898,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         @java.lang.Override
         public Builder toBuilder() {
             return this == DEFAULT_INSTANCE
-                    ? new Builder() : new Builder().mergeFrom(this);
+                ? new Builder() : new Builder().mergeFrom(this);
         }
 
         @java.lang.Override
         protected Builder newBuilderForType(
-                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
             Builder builder = new Builder(parent);
             return builder;
         }
@@ -911,20 +911,20 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          * Protobuf type {@code org.bluebridge.protobuf.contacts.PeopleInfo}
          */
         public static final class Builder extends
-                com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-                // @@protoc_insertion_point(builder_implements:org.bluebridge.protobuf.contacts.PeopleInfo)
-                org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder {
+            com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:org.bluebridge.protobuf.contacts.PeopleInfo)
+            org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder {
             public static final com.google.protobuf.Descriptors.Descriptor
-                    getDescriptor() {
+            getDescriptor() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_descriptor;
             }
 
             @java.lang.Override
             protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-                    internalGetFieldAccessorTable() {
+            internalGetFieldAccessorTable() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_fieldAccessorTable
-                        .ensureFieldAccessorsInitialized(
-                                org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.class, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder.class);
+                    .ensureFieldAccessorsInitialized(
+                        org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.class, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder.class);
             }
 
             // Construct using org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.newBuilder()
@@ -933,7 +933,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             }
 
             private Builder(
-                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
                 super(parent);
 
             }
@@ -955,7 +955,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
             @java.lang.Override
             public com.google.protobuf.Descriptors.Descriptor
-                    getDescriptorForType() {
+            getDescriptorForType() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_descriptor;
             }
 
@@ -1042,9 +1042,9 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                             phonesBuilder_ = null;
                             phones_ = other.phones_;
                             bitField0_ = (bitField0_ & ~0x00000004);
-                            phonesBuilder_ = 
+                            phonesBuilder_ =
                                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                                     internalGetPhonesFieldBuilder() : null;
+                                    internalGetPhonesFieldBuilder() : null;
                         } else {
                             phonesBuilder_.addAllMessages(other.phones_);
                         }
@@ -1062,9 +1062,9 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
             @java.lang.Override
             public Builder mergeFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws java.io.IOException {
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
                 if (extensionRegistry == null) {
                     throw new java.lang.NullPointerException();
                 }
@@ -1088,9 +1088,9 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                             } // case 16
                             case 26: {
                                 org.bluebridge.protobuf.proto.ContactProto.Phone m =
-                                        input.readMessage(
-                                                org.bluebridge.protobuf.proto.ContactProto.Phone.parser(),
-                                                extensionRegistry);
+                                    input.readMessage(
+                                        org.bluebridge.protobuf.proto.ContactProto.Phone.parser(),
+                                        extensionRegistry);
                                 if (phonesBuilder_ == null) {
                                     ensurePhonesIsMutable();
                                     phones_.add(m);
@@ -1125,7 +1125,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                 java.lang.Object ref = name_;
                 if (!(ref instanceof java.lang.String)) {
                     com.google.protobuf.ByteString bs =
-                            (com.google.protobuf.ByteString) ref;
+                        (com.google.protobuf.ByteString) ref;
                     java.lang.String s = bs.toStringUtf8();
                     name_ = s;
                     return s;
@@ -1138,12 +1138,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * @return The bytes for name.
              */
             public com.google.protobuf.ByteString
-                    getNameBytes() {
+            getNameBytes() {
                 java.lang.Object ref = name_;
                 if (ref instanceof String) {
-                    com.google.protobuf.ByteString b = 
-                            com.google.protobuf.ByteString.copyFromUtf8(
-                                    (java.lang.String) ref);
+                    com.google.protobuf.ByteString b =
+                        com.google.protobuf.ByteString.copyFromUtf8(
+                            (java.lang.String) ref);
                     name_ = b;
                     return b;
                 } else {
@@ -1156,7 +1156,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * @return This builder for chaining.
              */
             public Builder setName(
-                    java.lang.String value) {
+                java.lang.String value) {
                 if (value == null) { throw new NullPointerException(); }
                 name_ = value;
                 bitField0_ |= 0x00000001;
@@ -1179,7 +1179,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * @return This builder for chaining.
              */
             public Builder setNameBytes(
-                    com.google.protobuf.ByteString value) {
+                com.google.protobuf.ByteString value) {
                 if (value == null) { throw new NullPointerException(); }
                 checkByteStringIsUtf8(value);
                 name_ = value;
@@ -1226,11 +1226,11 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                 if (!((bitField0_ & 0x00000004) != 0)) {
                     phones_ = new java.util.ArrayList<org.bluebridge.protobuf.proto.ContactProto.Phone>(phones_);
                     bitField0_ |= 0x00000004;
-                 }
+                }
             }
 
             private com.google.protobuf.RepeatedFieldBuilder<
-                    org.bluebridge.protobuf.proto.ContactProto.Phone, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder, org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder> phonesBuilder_;
+                org.bluebridge.protobuf.proto.ContactProto.Phone, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder, org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder> phonesBuilder_;
 
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
@@ -1266,7 +1266,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public Builder setPhones(
-                    int index, org.bluebridge.protobuf.proto.ContactProto.Phone value) {
+                int index, org.bluebridge.protobuf.proto.ContactProto.Phone value) {
                 if (phonesBuilder_ == null) {
                     if (value == null) {
                         throw new NullPointerException();
@@ -1283,7 +1283,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public Builder setPhones(
-                    int index, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder builderForValue) {
+                int index, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder builderForValue) {
                 if (phonesBuilder_ == null) {
                     ensurePhonesIsMutable();
                     phones_.set(index, builderForValue.build());
@@ -1313,7 +1313,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public Builder addPhones(
-                    int index, org.bluebridge.protobuf.proto.ContactProto.Phone value) {
+                int index, org.bluebridge.protobuf.proto.ContactProto.Phone value) {
                 if (phonesBuilder_ == null) {
                     if (value == null) {
                         throw new NullPointerException();
@@ -1330,7 +1330,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public Builder addPhones(
-                    org.bluebridge.protobuf.proto.ContactProto.Phone.Builder builderForValue) {
+                org.bluebridge.protobuf.proto.ContactProto.Phone.Builder builderForValue) {
                 if (phonesBuilder_ == null) {
                     ensurePhonesIsMutable();
                     phones_.add(builderForValue.build());
@@ -1344,7 +1344,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public Builder addPhones(
-                    int index, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder builderForValue) {
+                int index, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder builderForValue) {
                 if (phonesBuilder_ == null) {
                     ensurePhonesIsMutable();
                     phones_.add(index, builderForValue.build());
@@ -1358,11 +1358,11 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public Builder addAllPhones(
-                    java.lang.Iterable<? extends org.bluebridge.protobuf.proto.ContactProto.Phone> values) {
+                java.lang.Iterable<? extends org.bluebridge.protobuf.proto.ContactProto.Phone> values) {
                 if (phonesBuilder_ == null) {
                     ensurePhonesIsMutable();
                     com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                            values, phones_);
+                        values, phones_);
                     onChanged();
                 } else {
                     phonesBuilder_.addAllMessages(values);
@@ -1399,14 +1399,14 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public org.bluebridge.protobuf.proto.ContactProto.Phone.Builder getPhonesBuilder(
-                    int index) {
+                int index) {
                 return internalGetPhonesFieldBuilder().getBuilder(index);
             }
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder getPhonesOrBuilder(
-                    int index) {
+                int index) {
                 if (phonesBuilder_ == null) {
                     return phones_.get(index);  } else {
                     return phonesBuilder_.getMessageOrBuilder(index);
@@ -1415,8 +1415,8 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
-            public java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder> 
-                     getPhonesOrBuilderList() {
+            public java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder>
+            getPhonesOrBuilderList() {
                 if (phonesBuilder_ != null) {
                     return phonesBuilder_.getMessageOrBuilderList();
                 } else {
@@ -1428,33 +1428,33 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              */
             public org.bluebridge.protobuf.proto.ContactProto.Phone.Builder addPhonesBuilder() {
                 return internalGetPhonesFieldBuilder().addBuilder(
-                        org.bluebridge.protobuf.proto.ContactProto.Phone.getDefaultInstance());
+                    org.bluebridge.protobuf.proto.ContactProto.Phone.getDefaultInstance());
             }
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
             public org.bluebridge.protobuf.proto.ContactProto.Phone.Builder addPhonesBuilder(
-                    int index) {
+                int index) {
                 return internalGetPhonesFieldBuilder().addBuilder(
-                        index, org.bluebridge.protobuf.proto.ContactProto.Phone.getDefaultInstance());
+                    index, org.bluebridge.protobuf.proto.ContactProto.Phone.getDefaultInstance());
             }
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.Phone phones = 3;</code>
              */
-            public java.util.List<org.bluebridge.protobuf.proto.ContactProto.Phone.Builder> 
-                     getPhonesBuilderList() {
+            public java.util.List<org.bluebridge.protobuf.proto.ContactProto.Phone.Builder>
+            getPhonesBuilderList() {
                 return internalGetPhonesFieldBuilder().getBuilderList();
             }
             private com.google.protobuf.RepeatedFieldBuilder<
-                    org.bluebridge.protobuf.proto.ContactProto.Phone, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder, org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder> 
-                    internalGetPhonesFieldBuilder() {
+                org.bluebridge.protobuf.proto.ContactProto.Phone, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder, org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder>
+            internalGetPhonesFieldBuilder() {
                 if (phonesBuilder_ == null) {
                     phonesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-                            org.bluebridge.protobuf.proto.ContactProto.Phone, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder, org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder>(
-                                    phones_,
-                                    ((bitField0_ & 0x00000004) != 0),
-                                    getParentForChildren(),
-                                    isClean());
+                        org.bluebridge.protobuf.proto.ContactProto.Phone, org.bluebridge.protobuf.proto.ContactProto.Phone.Builder, org.bluebridge.protobuf.proto.ContactProto.PhoneOrBuilder>(
+                        phones_,
+                        ((bitField0_ & 0x00000004) != 0),
+                        getParentForChildren(),
+                        isClean());
                     phones_ = null;
                 }
                 return phonesBuilder_;
@@ -1474,12 +1474,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         private static final com.google.protobuf.Parser<PeopleInfo>
-                PARSER = new com.google.protobuf.AbstractParser<PeopleInfo>() {
+            PARSER = new com.google.protobuf.AbstractParser<PeopleInfo>() {
             @java.lang.Override
             public PeopleInfo parsePartialFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws com.google.protobuf.InvalidProtocolBufferException {
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
                 Builder builder = newBuilder();
                 try {
                     builder.mergeFrom(input, extensionRegistry);
@@ -1489,7 +1489,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                     throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
                 } catch (java.io.IOException e) {
                     throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                            .setUnfinishedMessage(builder.buildPartial());
+                        .setUnfinishedMessage(builder.buildPartial());
                 }
                 return builder.buildPartial();
             }
@@ -1512,14 +1512,14 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
     }
 
     public interface ContactsOrBuilder extends
-            // @@protoc_insertion_point(interface_extends:org.bluebridge.protobuf.contacts.Contacts)
-            com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:org.bluebridge.protobuf.contacts.Contacts)
+        com.google.protobuf.MessageOrBuilder {
 
         /**
          * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
          */
-        java.util.List<org.bluebridge.protobuf.proto.ContactProto.PeopleInfo> 
-                getContactsList();
+        java.util.List<org.bluebridge.protobuf.proto.ContactProto.PeopleInfo>
+        getContactsList();
         /**
          * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
          */
@@ -1531,22 +1531,22 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         /**
          * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
          */
-        java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder> 
-                getContactsOrBuilderList();
+        java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder>
+        getContactsOrBuilderList();
         /**
          * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
          */
         org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder getContactsOrBuilder(
-                int index);
+            int index);
     }
     /**
      * Protobuf type {@code org.bluebridge.protobuf.contacts.Contacts}
      */
     public static final class Contacts extends
-            com.google.protobuf.GeneratedMessage implements
-            // @@protoc_insertion_point(message_implements:org.bluebridge.protobuf.contacts.Contacts)
-            ContactsOrBuilder {
-    private static final long serialVersionUID = 0L;
+        com.google.protobuf.GeneratedMessage implements
+        // @@protoc_insertion_point(message_implements:org.bluebridge.protobuf.contacts.Contacts)
+        ContactsOrBuilder {
+        private static final long serialVersionUID = 0L;
         static {
             com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
                 com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
@@ -1565,7 +1565,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         public static final com.google.protobuf.Descriptors.Descriptor
-                getDescriptor() {
+        getDescriptor() {
             return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Contacts_descriptor;
         }
 
@@ -1576,10 +1576,10 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-                internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
             return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Contacts_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            org.bluebridge.protobuf.proto.ContactProto.Contacts.class, org.bluebridge.protobuf.proto.ContactProto.Contacts.Builder.class);
+                .ensureFieldAccessorsInitialized(
+                    org.bluebridge.protobuf.proto.ContactProto.Contacts.class, org.bluebridge.protobuf.proto.ContactProto.Contacts.Builder.class);
         }
 
         public static final int CONTACTS_FIELD_NUMBER = 1;
@@ -1596,8 +1596,8 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
          */
         @java.lang.Override
-        public java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder> 
-                getContactsOrBuilderList() {
+        public java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder>
+        getContactsOrBuilderList() {
             return contacts_;
         }
         /**
@@ -1619,7 +1619,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          */
         @java.lang.Override
         public org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder getContactsOrBuilder(
-                int index) {
+            int index) {
             return contacts_.get(index);
         }
 
@@ -1636,7 +1636,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
         @java.lang.Override
         public void writeTo(com.google.protobuf.CodedOutputStream output)
-                                                throws java.io.IOException {
+            throws java.io.IOException {
             for (int i = 0; i < contacts_.size(); i++) {
                 output.writeMessage(1, contacts_.get(i));
             }
@@ -1650,14 +1650,14 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
             size = 0;
 
-                    {
-                        final int count = contacts_.size();
-                        for (int i = 0; i < count; i++) {
-                            size += com.google.protobuf.CodedOutputStream
-                                .computeMessageSizeNoTag(contacts_.get(i));
-                        }
-                        size += 1 * count;
-                    }
+            {
+                final int count = contacts_.size();
+                for (int i = 0; i < count; i++) {
+                    size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSizeNoTag(contacts_.get(i));
+                }
+                size += 1 * count;
+            }
             size += getUnknownFields().getSerializedSize();
             memoizedSize = size;
             return size;
@@ -1666,7 +1666,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         @java.lang.Override
         public boolean equals(final java.lang.Object obj) {
             if (obj == this) {
-             return true;
+                return true;
             }
             if (!(obj instanceof org.bluebridge.protobuf.proto.ContactProto.Contacts)) {
                 return super.equals(obj);
@@ -1674,7 +1674,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             org.bluebridge.protobuf.proto.ContactProto.Contacts other = (org.bluebridge.protobuf.proto.ContactProto.Contacts) obj;
 
             if (!getContactsList()
-                    .equals(other.getContactsList())) return false;
+                .equals(other.getContactsList())) return false;
             if (!getUnknownFields().equals(other.getUnknownFields())) return false;
             return true;
         }
@@ -1696,75 +1696,75 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(
-                java.nio.ByteBuffer data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(
-                java.nio.ByteBuffer data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(
-                com.google.protobuf.ByteString data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(
-                com.google.protobuf.ByteString data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(byte[] data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(
-                byte[] data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(java.io.InputStream input)
-                throws java.io.IOException {
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input);
+                .parseWithIOException(PARSER, input);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input, extensionRegistry);
+                .parseWithIOException(PARSER, input, extensionRegistry);
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseDelimitedFrom(java.io.InputStream input)
-                throws java.io.IOException {
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseDelimitedWithIOException(PARSER, input);
+                .parseDelimitedWithIOException(PARSER, input);
         }
 
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseDelimitedFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+                .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(
-                com.google.protobuf.CodedInputStream input)
-                throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input);
+                .parseWithIOException(PARSER, input);
         }
         public static org.bluebridge.protobuf.proto.ContactProto.Contacts parseFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
             return com.google.protobuf.GeneratedMessage
-                    .parseWithIOException(PARSER, input, extensionRegistry);
+                .parseWithIOException(PARSER, input, extensionRegistry);
         }
 
         @java.lang.Override
@@ -1778,12 +1778,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         @java.lang.Override
         public Builder toBuilder() {
             return this == DEFAULT_INSTANCE
-                    ? new Builder() : new Builder().mergeFrom(this);
+                ? new Builder() : new Builder().mergeFrom(this);
         }
 
         @java.lang.Override
         protected Builder newBuilderForType(
-                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
             Builder builder = new Builder(parent);
             return builder;
         }
@@ -1791,20 +1791,20 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
          * Protobuf type {@code org.bluebridge.protobuf.contacts.Contacts}
          */
         public static final class Builder extends
-                com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-                // @@protoc_insertion_point(builder_implements:org.bluebridge.protobuf.contacts.Contacts)
-                org.bluebridge.protobuf.proto.ContactProto.ContactsOrBuilder {
+            com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:org.bluebridge.protobuf.contacts.Contacts)
+            org.bluebridge.protobuf.proto.ContactProto.ContactsOrBuilder {
             public static final com.google.protobuf.Descriptors.Descriptor
-                    getDescriptor() {
+            getDescriptor() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Contacts_descriptor;
             }
 
             @java.lang.Override
             protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-                    internalGetFieldAccessorTable() {
+            internalGetFieldAccessorTable() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Contacts_fieldAccessorTable
-                        .ensureFieldAccessorsInitialized(
-                                org.bluebridge.protobuf.proto.ContactProto.Contacts.class, org.bluebridge.protobuf.proto.ContactProto.Contacts.Builder.class);
+                    .ensureFieldAccessorsInitialized(
+                        org.bluebridge.protobuf.proto.ContactProto.Contacts.class, org.bluebridge.protobuf.proto.ContactProto.Contacts.Builder.class);
             }
 
             // Construct using org.bluebridge.protobuf.proto.ContactProto.Contacts.newBuilder()
@@ -1813,7 +1813,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             }
 
             private Builder(
-                    com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+                com.google.protobuf.GeneratedMessage.BuilderParent parent) {
                 super(parent);
 
             }
@@ -1833,7 +1833,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
             @java.lang.Override
             public com.google.protobuf.Descriptors.Descriptor
-                    getDescriptorForType() {
+            getDescriptorForType() {
                 return org.bluebridge.protobuf.proto.ContactProto.internal_static_org_bluebridge_protobuf_contacts_Contacts_descriptor;
             }
 
@@ -1906,9 +1906,9 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                             contactsBuilder_ = null;
                             contacts_ = other.contacts_;
                             bitField0_ = (bitField0_ & ~0x00000001);
-                            contactsBuilder_ = 
+                            contactsBuilder_ =
                                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                                     internalGetContactsFieldBuilder() : null;
+                                    internalGetContactsFieldBuilder() : null;
                         } else {
                             contactsBuilder_.addAllMessages(other.contacts_);
                         }
@@ -1926,9 +1926,9 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
             @java.lang.Override
             public Builder mergeFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws java.io.IOException {
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
                 if (extensionRegistry == null) {
                     throw new java.lang.NullPointerException();
                 }
@@ -1942,9 +1942,9 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                                 break;
                             case 10: {
                                 org.bluebridge.protobuf.proto.ContactProto.PeopleInfo m =
-                                        input.readMessage(
-                                                org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.parser(),
-                                                extensionRegistry);
+                                    input.readMessage(
+                                        org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.parser(),
+                                        extensionRegistry);
                                 if (contactsBuilder_ == null) {
                                     ensureContactsIsMutable();
                                     contacts_.add(m);
@@ -1976,11 +1976,11 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                 if (!((bitField0_ & 0x00000001) != 0)) {
                     contacts_ = new java.util.ArrayList<org.bluebridge.protobuf.proto.ContactProto.PeopleInfo>(contacts_);
                     bitField0_ |= 0x00000001;
-                 }
+                }
             }
 
             private com.google.protobuf.RepeatedFieldBuilder<
-                    org.bluebridge.protobuf.proto.ContactProto.PeopleInfo, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder, org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder> contactsBuilder_;
+                org.bluebridge.protobuf.proto.ContactProto.PeopleInfo, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder, org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder> contactsBuilder_;
 
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
@@ -2016,7 +2016,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public Builder setContacts(
-                    int index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo value) {
+                int index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo value) {
                 if (contactsBuilder_ == null) {
                     if (value == null) {
                         throw new NullPointerException();
@@ -2033,7 +2033,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public Builder setContacts(
-                    int index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder builderForValue) {
+                int index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder builderForValue) {
                 if (contactsBuilder_ == null) {
                     ensureContactsIsMutable();
                     contacts_.set(index, builderForValue.build());
@@ -2063,7 +2063,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public Builder addContacts(
-                    int index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo value) {
+                int index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo value) {
                 if (contactsBuilder_ == null) {
                     if (value == null) {
                         throw new NullPointerException();
@@ -2080,7 +2080,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public Builder addContacts(
-                    org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder builderForValue) {
+                org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder builderForValue) {
                 if (contactsBuilder_ == null) {
                     ensureContactsIsMutable();
                     contacts_.add(builderForValue.build());
@@ -2094,7 +2094,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public Builder addContacts(
-                    int index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder builderForValue) {
+                int index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder builderForValue) {
                 if (contactsBuilder_ == null) {
                     ensureContactsIsMutable();
                     contacts_.add(index, builderForValue.build());
@@ -2108,11 +2108,11 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public Builder addAllContacts(
-                    java.lang.Iterable<? extends org.bluebridge.protobuf.proto.ContactProto.PeopleInfo> values) {
+                java.lang.Iterable<? extends org.bluebridge.protobuf.proto.ContactProto.PeopleInfo> values) {
                 if (contactsBuilder_ == null) {
                     ensureContactsIsMutable();
                     com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                            values, contacts_);
+                        values, contacts_);
                     onChanged();
                 } else {
                     contactsBuilder_.addAllMessages(values);
@@ -2149,14 +2149,14 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder getContactsBuilder(
-                    int index) {
+                int index) {
                 return internalGetContactsFieldBuilder().getBuilder(index);
             }
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder getContactsOrBuilder(
-                    int index) {
+                int index) {
                 if (contactsBuilder_ == null) {
                     return contacts_.get(index);  } else {
                     return contactsBuilder_.getMessageOrBuilder(index);
@@ -2165,8 +2165,8 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
-            public java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder> 
-                     getContactsOrBuilderList() {
+            public java.util.List<? extends org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder>
+            getContactsOrBuilderList() {
                 if (contactsBuilder_ != null) {
                     return contactsBuilder_.getMessageOrBuilderList();
                 } else {
@@ -2178,33 +2178,33 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
              */
             public org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder addContactsBuilder() {
                 return internalGetContactsFieldBuilder().addBuilder(
-                        org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.getDefaultInstance());
+                    org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.getDefaultInstance());
             }
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
             public org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder addContactsBuilder(
-                    int index) {
+                int index) {
                 return internalGetContactsFieldBuilder().addBuilder(
-                        index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.getDefaultInstance());
+                    index, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.getDefaultInstance());
             }
             /**
              * <code>repeated .org.bluebridge.protobuf.contacts.PeopleInfo contacts = 1;</code>
              */
-            public java.util.List<org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder> 
-                     getContactsBuilderList() {
+            public java.util.List<org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder>
+            getContactsBuilderList() {
                 return internalGetContactsFieldBuilder().getBuilderList();
             }
             private com.google.protobuf.RepeatedFieldBuilder<
-                    org.bluebridge.protobuf.proto.ContactProto.PeopleInfo, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder, org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder> 
-                    internalGetContactsFieldBuilder() {
+                org.bluebridge.protobuf.proto.ContactProto.PeopleInfo, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder, org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder>
+            internalGetContactsFieldBuilder() {
                 if (contactsBuilder_ == null) {
                     contactsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-                            org.bluebridge.protobuf.proto.ContactProto.PeopleInfo, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder, org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder>(
-                                    contacts_,
-                                    ((bitField0_ & 0x00000001) != 0),
-                                    getParentForChildren(),
-                                    isClean());
+                        org.bluebridge.protobuf.proto.ContactProto.PeopleInfo, org.bluebridge.protobuf.proto.ContactProto.PeopleInfo.Builder, org.bluebridge.protobuf.proto.ContactProto.PeopleInfoOrBuilder>(
+                        contacts_,
+                        ((bitField0_ & 0x00000001) != 0),
+                        getParentForChildren(),
+                        isClean());
                     contacts_ = null;
                 }
                 return contactsBuilder_;
@@ -2224,12 +2224,12 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
         }
 
         private static final com.google.protobuf.Parser<Contacts>
-                PARSER = new com.google.protobuf.AbstractParser<Contacts>() {
+            PARSER = new com.google.protobuf.AbstractParser<Contacts>() {
             @java.lang.Override
             public Contacts parsePartialFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws com.google.protobuf.InvalidProtocolBufferException {
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
                 Builder builder = newBuilder();
                 try {
                     builder.mergeFrom(input, extensionRegistry);
@@ -2239,7 +2239,7 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
                     throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
                 } catch (java.io.IOException e) {
                     throw new com.google.protobuf.InvalidProtocolBufferException(e)
-                            .setUnfinishedMessage(builder.buildPartial());
+                        .setUnfinishedMessage(builder.buildPartial());
                 }
                 return builder.buildPartial();
             }
@@ -2263,37 +2263,37 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
 
     private static final com.google.protobuf.Descriptors.Descriptor
         internal_static_org_bluebridge_protobuf_contacts_Phone_descriptor;
-    private static final 
-        com.google.protobuf.GeneratedMessage.FieldAccessorTable
-            internal_static_org_bluebridge_protobuf_contacts_Phone_fieldAccessorTable;
+    private static final
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internal_static_org_bluebridge_protobuf_contacts_Phone_fieldAccessorTable;
     private static final com.google.protobuf.Descriptors.Descriptor
         internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_descriptor;
-    private static final 
-        com.google.protobuf.GeneratedMessage.FieldAccessorTable
-            internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_fieldAccessorTable;
+    private static final
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_fieldAccessorTable;
     private static final com.google.protobuf.Descriptors.Descriptor
         internal_static_org_bluebridge_protobuf_contacts_Contacts_descriptor;
-    private static final 
-        com.google.protobuf.GeneratedMessage.FieldAccessorTable
-            internal_static_org_bluebridge_protobuf_contacts_Contacts_fieldAccessorTable;
+    private static final
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internal_static_org_bluebridge_protobuf_contacts_Contacts_fieldAccessorTable;
 
     public static com.google.protobuf.Descriptors.FileDescriptor
-            getDescriptor() {
+    getDescriptor() {
         return descriptor;
     }
     private static final com.google.protobuf.Descriptors.FileDescriptor
-            descriptor;
+        descriptor;
     static {
         java.lang.String[] descriptorData = {
             "\n\016contacts.proto\022 org.bluebridge.protobu" +
-            "f.contacts\032\raddress.proto\"\027\n\005Phone\022\016\n\006nu" +
-            "mber\030\001 \001(\t\"`\n\nPeopleInfo\022\014\n\004name\030\001 \001(\t\022\013" +
-            "\n\003age\030\002 \001(\005\0227\n\006phones\030\003 \003(\0132\'.org.bluebr" +
-            "idge.protobuf.contacts.Phone\"J\n\010Contacts" +
-            "\022>\n\010contacts\030\001 \003(\0132,.org.bluebridge.prot" +
-            "obuf.contacts.PeopleInfoB/\n\035org.bluebrid" +
-            "ge.protobuf.protoB\014ContactProtoP\000b\006proto" +
-            "3"
+                "f.contacts\032\raddress.proto\"\027\n\005Phone\022\016\n\006nu" +
+                "mber\030\001 \001(\t\"`\n\nPeopleInfo\022\014\n\004name\030\001 \001(\t\022\013" +
+                "\n\003age\030\002 \001(\005\0227\n\006phones\030\003 \003(\0132\'.org.bluebr" +
+                "idge.protobuf.contacts.Phone\"J\n\010Contacts" +
+                "\022>\n\010contacts\030\001 \003(\0132,.org.bluebridge.prot" +
+                "obuf.contacts.PeopleInfoB/\n\035org.bluebrid" +
+                "ge.protobuf.protoB\014ContactProtoP\000b\006proto" +
+                "3"
         };
         descriptor = com.google.protobuf.Descriptors.FileDescriptor
             .internalBuildGeneratedFileFrom(descriptorData,
@@ -2304,20 +2304,20 @@ public final class ContactProto extends com.google.protobuf.GeneratedFile {
             getDescriptor().getMessageType(0);
         internal_static_org_bluebridge_protobuf_contacts_Phone_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-                internal_static_org_bluebridge_protobuf_contacts_Phone_descriptor,
-                new java.lang.String[] { "Number", });
+            internal_static_org_bluebridge_protobuf_contacts_Phone_descriptor,
+            new java.lang.String[] { "Number", });
         internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_descriptor =
             getDescriptor().getMessageType(1);
         internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-                internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_descriptor,
-                new java.lang.String[] { "Name", "Age", "Phones", });
+            internal_static_org_bluebridge_protobuf_contacts_PeopleInfo_descriptor,
+            new java.lang.String[] { "Name", "Age", "Phones", });
         internal_static_org_bluebridge_protobuf_contacts_Contacts_descriptor =
             getDescriptor().getMessageType(2);
         internal_static_org_bluebridge_protobuf_contacts_Contacts_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-                internal_static_org_bluebridge_protobuf_contacts_Contacts_descriptor,
-                new java.lang.String[] { "Contacts", });
+            internal_static_org_bluebridge_protobuf_contacts_Contacts_descriptor,
+            new java.lang.String[] { "Contacts", });
         descriptor.resolveAllFeaturesImmutable();
         org.bluebridge.protobuf.proto.AddressProto.getDescriptor();
     }

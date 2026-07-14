@@ -1,11 +1,13 @@
 package structure.bridge.bridge_c;
 
 /**
+ * 邮件特急消息
+ *
  * @author lingwh
- * @desc 邮件特急消息
  * @date 2019/7/24 11:35
  */
 public class EmailSpecialUrgencyMessage implements SpecialUrgencyMessage {
+
     /**
      * 催促功能，没有发送就催一下
      */

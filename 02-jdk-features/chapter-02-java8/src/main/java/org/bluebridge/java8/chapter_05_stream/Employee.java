@@ -1,19 +1,22 @@
 package org.bluebridge.java8.chapter_05_stream;
 
-import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.math.BigDecimal;
+
 /**
+ * 员工实体类
+ *
  * @author lingwh
- * @desc 员工实体类
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 @EqualsAndHashCode(exclude = "id")
 @AllArgsConstructor
 @Data
 public class Employee {
+
     private Long id;
     private String name;
     private Integer age;

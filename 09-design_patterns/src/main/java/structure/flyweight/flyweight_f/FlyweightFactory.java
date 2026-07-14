@@ -6,8 +6,9 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * 为享元工厂增加引用计数和垃圾回收功能
+ *
  * @author lingwh
- * @desc 为享元工厂增加引用计数和垃圾回收功能
  * @date 2019/8/1 17:03
  */
 public class FlyweightFactory {

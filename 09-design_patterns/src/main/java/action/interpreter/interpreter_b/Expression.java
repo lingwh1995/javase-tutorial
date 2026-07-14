@@ -3,11 +3,13 @@ package action.interpreter.interpreter_b;
 import java.util.HashMap;
 
 /**
+ * 表达式抽象类
+ *
  * @author lingwh
- * @desc 表达式抽象类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class Expression {
+
     /**
      * 解释公式和数值之间的关系
      *

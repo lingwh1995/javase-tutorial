@@ -1,16 +1,20 @@
 package create.abstractfactory.abstractfactory_f;
 
 /**
+ * 使用工厂模式+抽象工厂模式+单例模式 实现操作文件
+ *
  * @author lingwh
- * @desc 使用工厂模式+抽象工厂模式+单例模式 实现操作文件
  * @date 2019/8/2 13:32
  */
 public class FileOperatorManageFactory {
+
     private static final FileOperatorManageFactory fileOperatorManageFactory = new FileOperatorManageFactory();
-    private FileOperatorManageFactory(){
+
+    private FileOperatorManageFactory() {
 
     }
-    public static FileOperatorManageFactory getInstance(){
+
+    public static FileOperatorManageFactory getInstance() {
         return fileOperatorManageFactory;
     }
 
@@ -36,7 +40,7 @@ public class FileOperatorManageFactory {
         return abstractFileOperatorFactory;
     }
 
-    //    public FileOperator getConcreteOperator(){
-    //        return getConcreteFileOperatorFactory().
-    //    }
+    // public FileOperator getConcreteOperator(){
+    // return getConcreteFileOperatorFactory().
+    // }
 }

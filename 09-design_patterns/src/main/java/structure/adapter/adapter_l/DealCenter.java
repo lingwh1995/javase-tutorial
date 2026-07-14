@@ -3,9 +3,10 @@ package structure.adapter.adapter_l;
 import java.util.List;
 
 /**
+ * 数据处理中心
+ *
  * @author lingwh
- * @desc 数据处理中心
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DealCenter {
 

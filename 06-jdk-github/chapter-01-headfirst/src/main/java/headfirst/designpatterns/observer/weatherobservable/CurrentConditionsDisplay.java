@@ -4,11 +4,13 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * 当前状况展示
+ *
  * @author lingwh
- * @desc 当前状况展示
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
+
     Observable observable;
     private float temperature;
     private float humidity;

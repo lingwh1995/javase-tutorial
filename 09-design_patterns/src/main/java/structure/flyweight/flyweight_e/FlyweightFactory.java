@@ -4,8 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author ronin
- * @desc
+ * 享元工厂
+ *
+ * @author lingwh
  * @date 2019/8/1 13:53
  */
 public class FlyweightFactory {

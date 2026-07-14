@@ -5,11 +5,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 /**
+ * 限制数据库连接数
+ *
  * @author lingwh
- * @desc 限制数据库连接数
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DatabaseConnectionLimiterTest {
+
     private static final int MAX_CONNECTIONS = 2;
     private static final Semaphore semaphore = new Semaphore(MAX_CONNECTIONS);
 

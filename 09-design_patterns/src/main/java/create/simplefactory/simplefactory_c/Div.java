@@ -1,11 +1,13 @@
 package create.simplefactory.simplefactory_c;
 
 /**
+ * 除法运算
+ *
  * @author lingwh
- * @desc 除法运算
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Div implements Operation {
+
     @Override
     public Double getReslt(Double param1, Double param2) {
         return param1 / param2;

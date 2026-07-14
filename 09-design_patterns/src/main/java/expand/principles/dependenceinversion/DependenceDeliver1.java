@@ -1,11 +1,13 @@
 package expand.principles.dependenceinversion;
 
 /**
+ * 依赖关系传递的三种方式 第一种方式：通过接口传递依赖
+ *
  * @author lingwh
- * @desc 依赖关系传递的三种方式 第一种方式：通过接口传递依赖
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DependenceDeliver1 {
+
     public static void main(String[] args) {
         OpenAndClose1 openAndClose1 = new OpenAndClose1();
         openAndClose1.open(new ITV1() {

@@ -5,9 +5,10 @@ import org.openjdk.jcstress.infra.results.II_Result;
 import org.openjdk.jcstress.infra.results.I_Result;
 
 /**
+ * 并发重排序测试
+ *
  * @author lingwh
- * @desc 并发重排序测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @JCStressTest
 @Outcome(id = {"1", "4"}, expect = Expect.ACCEPTABLE, desc = "ok")

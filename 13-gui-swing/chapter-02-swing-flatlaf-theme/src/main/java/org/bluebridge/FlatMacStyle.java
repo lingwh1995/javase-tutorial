@@ -6,8 +6,9 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
+ * 使用 FlatLaf 打造现代 macOS 风格界面
+ *
  * @author lingwh
- * @desc 使用 FlatLaf 打造现代 macOS 风格界面
  * @date 2026/1/22 15:02
  */
 public class FlatMacStyle {
@@ -35,7 +36,7 @@ public class FlatMacStyle {
             // 主容器采用 BorderLayout
             JPanel root = new JPanel(new BorderLayout());
 
-            // --- 2. 模拟 macOS 的顶部工具栏 ---
+            // 2. 模拟 macOS 的顶部工具栏
             JToolBar toolBar = new JToolBar();
             toolBar.setFloatable(false);
             toolBar.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
@@ -96,7 +97,7 @@ public class FlatMacStyle {
             gbc.gridx = 1;
             contentPanel.add(segmentPanel, gbc);
 
-            // --- 5. 组合界面 ---
+            // 5. 组合界面
             root.add(toolBar, BorderLayout.NORTH);
             root.add(scrollNav, BorderLayout.WEST);
             root.add(contentPanel, BorderLayout.CENTER);

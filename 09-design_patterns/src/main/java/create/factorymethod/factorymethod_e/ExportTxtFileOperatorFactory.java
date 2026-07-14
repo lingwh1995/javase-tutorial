@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_e;
 
 /**
+ * 导出文本文件操作工厂
+ *
  * @author lingwh
- * @desc
  * @date 2019/8/2 10:28
  */
 public class ExportTxtFileOperatorFactory extends AbstractExportOperatorFactory {

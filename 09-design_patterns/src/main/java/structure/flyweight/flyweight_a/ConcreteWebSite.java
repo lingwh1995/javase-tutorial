@@ -1,9 +1,10 @@
 package structure.flyweight.flyweight_a;
 
 /**
+ * 具体网站实现
+ *
  * @author lingwh
- * @desc 具体网站实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ConcreteWebSite implements WebSite {
 

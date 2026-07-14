@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_h;
 
 /**
+ * CPU的接口
+ *
  * @author lingwh
- * @desc CPU的接口
  * @date 2019/8/7 14:56
  */
 public interface CPUApi {

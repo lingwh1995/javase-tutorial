@@ -4,13 +4,15 @@ import lombok.Data;
 import lombok.ToString;
 
 /**
+ * 设置Float类型的点坐标
+ *
  * @author lingwh
- * @desc 设置Float类型的点坐标
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 @Data
 @ToString
 public class FloatPoint {
+
     // 表示X坐标
     private Float x;
     // 表示Y坐标

@@ -3,11 +3,13 @@ package headfirst.designpatterns.adapter.ducks.challenge;
 import headfirst.designpatterns.adapter.ducks.Duck;
 
 /**
+ * 无人机适配器
+ *
  * @author lingwh
- * @desc 无人机适配器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DroneAdapter implements Duck {
+
     Drone drone;
 
     public DroneAdapter(Drone drone) {

@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_g;
 
 /**
+ * 导出文件接口
+ *
  * @author lingwh
- * @desc 导出文件接口
  * @date 2019/9/3 16:57
  */
 public interface ExportFileApi {

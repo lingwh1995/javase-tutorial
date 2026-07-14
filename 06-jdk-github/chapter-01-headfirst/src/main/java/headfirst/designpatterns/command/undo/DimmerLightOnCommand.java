@@ -1,11 +1,13 @@
 package headfirst.designpatterns.command.undo;
 
 /**
+ * 调光灯开启命令
+ *
  * @author lingwh
- * @desc 调光灯开启命令
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DimmerLightOnCommand implements Command {
+
     Light light;
     int prevLevel;
 

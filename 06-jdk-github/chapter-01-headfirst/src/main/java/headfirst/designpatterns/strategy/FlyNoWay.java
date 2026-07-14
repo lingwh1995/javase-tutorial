@@ -1,11 +1,13 @@
 package headfirst.designpatterns.strategy;
 
 /**
+ * 不会飞
+ *
  * @author lingwh
- * @desc 不会飞
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class FlyNoWay implements FlyBehavior {
+
     public void fly() {
         System.out.println("I can't fly");
     }

@@ -1,8 +1,9 @@
 package structure.decorator.decorator_d;
 
 /**
+ * 抽象装饰者
+ *
  * @author lingwh
- * @desc 抽象装饰者
  * @date 2019/7/25 17:02
  */
 public abstract class Decorator extends Bread {

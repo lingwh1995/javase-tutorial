@@ -6,8 +6,9 @@ import java.util.List;
 import org.w3c.dom.Element;
 
 /**
+ * 单个元素作为非终结符的解释器
+ *
  * @author lingwh
- * @desc 单个元素作为非终结符的解释器
  * @date 2019/8/27 16:17
  */
 public class ElementExpression extends ReadXmlExpression {

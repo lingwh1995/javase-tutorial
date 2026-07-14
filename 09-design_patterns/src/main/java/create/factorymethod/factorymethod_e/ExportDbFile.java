@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_e;
 
 /**
+ * 提供导出文件到数据库脚本API 的对象,本质上是一个API的提供者
+ *
  * @author lingwh
- * @desc 提供导出文件到数据库脚本API 的对象,本质上是一个API的提供者
  * @date 2019/8/2 10:20
  */
 public class ExportDbFile implements ExportFileApi {

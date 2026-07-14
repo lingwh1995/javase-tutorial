@@ -1,8 +1,9 @@
 package action.mediator.mediator_c;
 
 /**
+ * CPU
+ *
  * @author lingwh
- * @desc CPU
  * @date 2019/8/14 11:43
  */
 public class CPU extends Colleague {

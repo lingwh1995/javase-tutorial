@@ -28,15 +28,16 @@ import java.util.concurrent.TimeUnit;
  *    - jconsole -> DeadLockTest -> 选择线程标签页
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DeadLockTest {
+
     public static void main(String[] args) {
         Object A = new Object();
         Object B = new Object();
         Thread t1 = new Thread(() -> {
             synchronized (A) {
-                System.out.println("Thread " + Thread.currentThread().getName() +  " lock A......");
+                System.out.println("Thread " + Thread.currentThread().getName() + " lock A......");
 
                 try {
                     TimeUnit.MILLISECONDS.sleep(1000);
@@ -45,15 +46,15 @@ public class DeadLockTest {
                 }
 
                 synchronized (B) {
-                    System.out.println("Thread " + Thread.currentThread().getName() +  " lock B......");
-                    System.out.println("Thread " + Thread.currentThread().getName() +  " 操作......");
+                    System.out.println("Thread " + Thread.currentThread().getName() + " lock B......");
+                    System.out.println("Thread " + Thread.currentThread().getName() + " 操作......");
                 }
             }
         }, "t1");
 
         Thread t2 = new Thread(() -> {
             synchronized (B) {
-                System.out.println("Thread " + Thread.currentThread().getName() +  " lock B......");
+                System.out.println("Thread " + Thread.currentThread().getName() + " lock B......");
 
                 try {
                     TimeUnit.MILLISECONDS.sleep(500);
@@ -62,8 +63,8 @@ public class DeadLockTest {
                 }
 
                 synchronized (A) {
-                    System.out.println("Thread " + Thread.currentThread().getName() +  " lock A......");
-                    System.out.println("Thread " + Thread.currentThread().getName() +  " 操作......");
+                    System.out.println("Thread " + Thread.currentThread().getName() + " lock A......");
+                    System.out.println("Thread " + Thread.currentThread().getName() + " 操作......");
                 }
             }
         }, "t2");

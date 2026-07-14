@@ -1,8 +1,9 @@
 package action.command.command_e;
 
 /**
+ * 做凉菜的厨师
+ *
  * @author lingwh
- * @desc 做凉菜的厨师
  * @date 2019/8/5 13:38
  */
 public class CoolCook implements CookApi {

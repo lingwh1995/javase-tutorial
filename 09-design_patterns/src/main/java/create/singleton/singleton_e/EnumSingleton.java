@@ -3,9 +3,10 @@ package create.singleton.singleton_e;
 import java.lang.reflect.InvocationTargetException;
 
 /**
+ * 枚举形式的单例
+ *
  * @author lingwh
- * @desc 枚举形式的单例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class EnumSingleton {
 

@@ -4,8 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
+ * Final关键字测试
+ *
  * @author lingwh
- * @desc Final关键字测试
  * @date 2019/3/12 16:58
  */
 @Slf4j
@@ -29,7 +30,7 @@ public class FinalTest {
 	@Test
 	public void testFinal1(){
 		num1 = 120;
-		//如果要改变被final修饰的num2的值，则会报错
+		// 如果要改变被final修饰的num2的值，则会报错
 		//num2 = 200;
 	}
 

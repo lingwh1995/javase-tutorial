@@ -1,18 +1,21 @@
 package org.bluebridge.ioc.anno_one.parse;
 
-import java.io.InputStream;
-import java.util.logging.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
+import java.io.InputStream;
+import java.util.logging.Logger;
+
 /**
+ * 获取base-package配置的路径
+ *
  * @author lingwh
- * @desc 获取base-package配置的路径
- * @date 2019/3/20 00:00
+ * @date 2026/4/21 19:02
  */
 public class ConfigManagerAnno {
+
     private static Logger logger = Logger.getLogger("ConfigManagerAnno.class");
 
     public static String getXmlConfig(String path) {

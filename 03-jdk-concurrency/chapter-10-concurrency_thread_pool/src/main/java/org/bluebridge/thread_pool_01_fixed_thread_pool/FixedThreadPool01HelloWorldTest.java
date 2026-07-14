@@ -11,9 +11,10 @@ import java.util.concurrent.Executors;
  * 3. 使用的工作队列是LinkedBlockingQueue
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class FixedThreadPool01HelloWorldTest {
+
     public static void main(String[] args) {
         // 创建一个固定大小为4的线程池
         ExecutorService executor = Executors.newFixedThreadPool(2);

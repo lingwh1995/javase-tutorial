@@ -1,11 +1,13 @@
 package headfirst.designpatterns.templatemethod.sort;
 
 /**
+ * 鸭子
+ *
  * @author lingwh
- * @desc 鸭子
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Duck implements Comparable<Duck> {
+
     String name;
     int weight;
 

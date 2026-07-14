@@ -3,8 +3,9 @@ package org.bluebridge.oo._01_this_and_super;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 狗类
+ *
  * @author lingwh
- * @desc 狗类
  * @date 2025/11/12 10:04
  */
 @Slf4j

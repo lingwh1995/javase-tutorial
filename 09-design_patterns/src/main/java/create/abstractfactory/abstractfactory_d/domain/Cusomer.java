@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_d.domain;
 
 /**
+ * 客户实体类
+ *
  * @author lingwh
- * @desc 客户实体类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Cusomer {
+
     private int uid;
     private String uname;
 

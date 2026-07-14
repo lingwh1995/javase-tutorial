@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 未遵守迪米特法则
+ *
  * @author lingwh
- * @desc 未遵守迪米特法则
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Demeter1 {
+
     public static void main(String[] args) {
         SchoolManager1 schoolManager1 = new SchoolManager1();
         schoolManager1.printAllEmployee(new CollegeManager1());
@@ -63,8 +65,9 @@ class CollegeManager1 {
 
 /**
  * 学校总部员工管理类
- *    SchoolManager的直接朋友：Employee、CollegeManager
- *    SchoolManager的非直接朋友：CollegeEmployee，这样就 违反了迪米特法则（只与直接的朋友通信，最少知道原则，避免与非直接朋友的耦合）
+ * SchoolManager的直接朋友：Employee、CollegeManager
+ * SchoolManager的非直接朋友：CollegeEmployee，这样就
+ * 违反了迪米特法则（只与直接的朋友通信，最少知道原则，避免与非直接朋友的耦合）
  */
 class SchoolManager1 {
     public List<Employee1> getAllEmployee() {

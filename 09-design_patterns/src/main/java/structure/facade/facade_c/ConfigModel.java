@@ -3,7 +3,7 @@ package structure.facade.facade_c;
 /**
  * 示意配置描述的数据Model，真实的配置数据会很多
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/9/11 18:44
  */
 public class ConfigModel {

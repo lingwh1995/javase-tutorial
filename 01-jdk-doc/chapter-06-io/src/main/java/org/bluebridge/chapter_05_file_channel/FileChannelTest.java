@@ -1,5 +1,8 @@
 package org.bluebridge.chapter_05_file_channel;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -11,8 +14,6 @@ import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
 
 /**
  * FileChannel是Java NIO中处理文件I/O的强大工具，特别适用于需要高性能和复杂文件操作的场景。

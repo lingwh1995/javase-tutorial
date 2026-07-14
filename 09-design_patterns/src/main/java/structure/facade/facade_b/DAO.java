@@ -7,6 +7,7 @@ package structure.facade.facade_b;
  * @date 2019/9/12 8:54
  */
 public class DAO {
+
     public void generate() {
         ConfigModel cm = ConfigManager.getInstance().getConfigData();
         if (cm.isNeedGenDAO()) {

@@ -8,11 +8,13 @@ import java.io.ObjectOutputStream;
 import java.util.Date;
 
 /**
+ * 使用序列化/反序列化实现深克隆
+ *
  * @author lingwh
- * @desc 使用序列化/反序列化实现深克隆
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class DeepCloneSerizlizeClient {
+
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         Date date = new Date(84879894546L);
         Dog dogPrototype = new Dog("多利", date);

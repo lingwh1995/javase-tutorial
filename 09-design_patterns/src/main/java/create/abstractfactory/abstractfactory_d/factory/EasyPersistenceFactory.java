@@ -3,11 +3,13 @@ package create.abstractfactory.abstractfactory_d.factory;
 import create.abstractfactory.abstractfactory_d.service.*;
 
 /**
+ * 简单工厂和抽象工厂模式
+ *
  * @author lingwh
- * @desc 简单工厂和抽象工厂模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class EasyPersistenceFactory {
+
     private static String db = "MySQL";
 
     public static IUserService createUserOperator() {

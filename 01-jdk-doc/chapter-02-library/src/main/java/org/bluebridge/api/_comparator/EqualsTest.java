@@ -3,9 +3,10 @@ package org.bluebridge.api._comparator;
 import org.junit.Test;
 
 /**
+ * equals方法测试
+ *
  * @author lingwh
- * @desc equals方法测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class EqualsTest {
 

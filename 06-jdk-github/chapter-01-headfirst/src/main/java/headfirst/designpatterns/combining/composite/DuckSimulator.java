@@ -1,9 +1,10 @@
 package headfirst.designpatterns.combining.composite;
 
 /**
+ * 鸭子模拟器
+ *
  * @author lingwh
- * @desc 鸭子模拟器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DuckSimulator {
 

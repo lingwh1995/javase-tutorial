@@ -1,8 +1,9 @@
 package action.mediator.mediator_d;
 
 /**
+ * 描述部门和人员关系的类
+ *
  * @author lingwh
- * @desc 描述部门和人员关系的类
  * @date 2019/8/14 13:40
  */
 public class DepUserModel {

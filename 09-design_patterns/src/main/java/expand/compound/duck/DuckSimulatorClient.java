@@ -1,11 +1,13 @@
 package expand.compound.duck;
 
 /**
+ * 鸭子模拟器客户端
+ *
  * @author lingwh
- * @desc 鸭子模拟器客户端
  * @date 2019/10/10 9:49
  */
 public class DuckSimulatorClient {
+
     public static void main(String[] args) {
         MallardDuck mallardDuck = new MallardDuck();
         RedHeadDuck redHeadDuck = new RedHeadDuck();

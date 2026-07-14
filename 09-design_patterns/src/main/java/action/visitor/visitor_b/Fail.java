@@ -1,11 +1,13 @@
 package action.visitor.visitor_b;
 
 /**
+ * 失败评价
+ *
  * @author lingwh
- * @desc 失败评价
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Fail extends Action {
+
     @Override
     public void getManResult(Man man) {
         System.out.println("男人给的评价是该歌手很失败.....");

@@ -2,13 +2,15 @@ package org.bluebridge.utils;
 
 import cn.hutool.core.util.HexUtil;
 import cn.hutool.crypto.symmetric.DESede;
+
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
+ * 3DES加密工具类
+ *
  * @author lingwh
- * @desc 3DES加密工具类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DESedeUtil {
 

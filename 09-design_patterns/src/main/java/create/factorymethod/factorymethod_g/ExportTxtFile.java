@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_g;
 
 /**
+ * 导出数据:文本文件格式
+ *
  * @author lingwh
- * @desc 导出数据:文本文件格式
  * @date 2019/9/3 16:59
  */
 public class ExportTxtFile implements ExportFileApi {

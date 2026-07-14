@@ -1,14 +1,16 @@
 package org.bluebridge.java8.chapter_07_datetime;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 /**
+ * Java8引入了全新的时间处理类库，解决了旧版类库中线程不安全的问题
+ *
  * @author lingwh
- * @desc Java8引入了全新的时间处理类库，解决了旧版类库中线程不安全的问题
  * @date 2025/9/28 14:09
  */
 @Slf4j

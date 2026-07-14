@@ -5,11 +5,13 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
+ * ObjectStream 用于实现序列化和饭序列化
+ *
  * @author lingwh
- * @desc ObjectStream 用于实现序列化和饭序列化
  * @date 2025/8/16 13:41
  */
 public class Employee implements Serializable {
+
     private static final long serialVersionUID = -167978670073609475L;
 
     /**

@@ -1,16 +1,19 @@
 package org.bluebridge.lock_25_reentrant_read_write_lock;
 
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
 /**
+ * 读写锁数据容器
+ *
  * @author lingwh
- * @desc 读写锁数据容器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j
 public class DataContainer {
+
     private Object data;
     private ReentrantReadWriteLock rw = new ReentrantReadWriteLock();
     private ReentrantReadWriteLock.ReadLock r = rw.readLock();

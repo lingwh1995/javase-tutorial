@@ -4,9 +4,10 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 /**
+ * DateTimeFormatter线程安全测试
+ *
  * @author lingwh
- * @desc DateTimeFormatter线程安全测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class DateTimeFormatterTest {
 
@@ -14,11 +15,11 @@ public class DateTimeFormatterTest {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         for (int i = 0; i < 10; i++) {
             new Thread(
-                            () -> {
-                                LocalDate date = dtf.parse("2018-10-01", LocalDate::from);
-                                System.out.println("date = " + date);
-                            })
-                    .start();
+                () -> {
+                    LocalDate date = dtf.parse("2018-10-01", LocalDate::from);
+                    System.out.println("date = " + date);
+                })
+                .start();
         }
     }
 }

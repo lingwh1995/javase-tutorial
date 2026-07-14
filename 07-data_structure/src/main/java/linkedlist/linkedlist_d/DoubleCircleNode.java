@@ -4,8 +4,7 @@ package linkedlist.linkedlist_d;
  * 双向循环链表 - 当只有一个节点的时候，当前节点的下一个节点和上一个节点都是当前节点
  *
  * @author lingwh
- * @desc 双向循环链表
- * @date 2019/3/31 00:00
+ * @date 2019/3/31 19:02
  */
 public class DoubleCircleNode {
 

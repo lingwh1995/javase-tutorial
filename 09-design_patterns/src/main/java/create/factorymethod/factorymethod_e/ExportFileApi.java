@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_e;
 
 /**
+ * 导出文件接口，本质上是一个,本质上是一个API的提供者的规范接口
+ *
  * @author lingwh
- * @desc 导出文件接口，本质上是一个,本质上是一个API的提供者的规范接口
  * @date 2019/8/2 9:29
  */
 public interface ExportFileApi {

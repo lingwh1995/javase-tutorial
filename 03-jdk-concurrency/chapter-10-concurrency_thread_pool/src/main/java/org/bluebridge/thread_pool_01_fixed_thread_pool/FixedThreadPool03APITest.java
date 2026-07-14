@@ -8,15 +8,16 @@ import java.util.concurrent.*;
 
 /**
  * 固定大小的线程池FixedThreadPool
- *
+ * <p>
  * 1. 线程池大小固定，不会随着任务的增长而增长。
  * 2. 核心线程数和最大线程数相等，使用无界队列
  * 3. 使用的工作队列是LinkedBlockingQueue
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class FixedThreadPool03APITest {
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // testSubmit();
 
@@ -73,7 +74,7 @@ public class FixedThreadPool03APITest {
                 }
         ));
 
-        futures.forEach( f ->  {
+        futures.forEach(f -> {
             try {
                 System.out.println(dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " " + f.get());
             } catch (InterruptedException | ExecutionException e) {
@@ -94,25 +95,24 @@ public class FixedThreadPool03APITest {
     private static void testInvokeAny() throws ExecutionException, InterruptedException {
         ExecutorService executor = Executors.newFixedThreadPool(3);
         String result = executor.invokeAny(Arrays.asList(
-                () -> {
-                    System.out.println(Thread.currentThread().getName() + " begin......1");
-                    Thread.sleep(1000);
-                    System.out.println(Thread.currentThread().getName() + " end......1");
-                    return "1";
-                },
-                () -> {
-                    System.out.println(Thread.currentThread().getName() + " begin......2");
-                    Thread.sleep(500);
-                    System.out.println(Thread.currentThread().getName() + " end......2");
-                    return "2";
-                },
-                () -> {
-                    System.out.println(Thread.currentThread().getName() + " begin......3");
-                    Thread.sleep(2000);
-                    System.out.println(Thread.currentThread().getName() + " end......3");
-                    return "3";
-                }
-        ));
+            () -> {
+                System.out.println(Thread.currentThread().getName() + " begin......1");
+                Thread.sleep(1000);
+                System.out.println(Thread.currentThread().getName() + " end......1");
+                return "1";
+            },
+            () -> {
+                System.out.println(Thread.currentThread().getName() + " begin......2");
+                Thread.sleep(500);
+                System.out.println(Thread.currentThread().getName() + " end......2");
+                return "2";
+            },
+            () -> {
+                System.out.println(Thread.currentThread().getName() + " begin......3");
+                Thread.sleep(2000);
+                System.out.println(Thread.currentThread().getName() + " end......3");
+                return "3";
+            }));
 
         System.out.println("result = " + result);
 

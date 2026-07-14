@@ -1,11 +1,13 @@
 package expand.compound.duck;
 
 /**
+ * 鸭子工厂
+ *
  * @author lingwh
- * @desc 鸭子工厂
  * @date 2019/10/10 11:19
  */
 public class DuckFactory extends AbstractDuckFactory {
+
     @Override
     Quackable createMallardDuck() {
         return new MallardDuck();

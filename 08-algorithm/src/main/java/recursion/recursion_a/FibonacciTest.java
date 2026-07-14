@@ -1,11 +1,13 @@
 package recursion.recursion_a;
 
 /**
+ * 斐波那契数列:1 1 2 3 5 8 13
+ *
  * @author lingwh
- * @desc 斐波那契数列:1 1 2 3 5 8 13
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class FibonacciTest {
+
     public static void main(String[] args) {
         System.out.println(fibonacci(1));
         System.out.println(fibonacci(2));

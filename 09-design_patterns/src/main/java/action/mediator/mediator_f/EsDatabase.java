@@ -4,8 +4,9 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
+ * Es数据库,维护了Mysql数据库的引用
+ *
  * @author lingwh
- * @desc Es数据库,维护了Mysql数据库的引用
  * @date 2019/8/14 14:00
  */
 public class EsDatabase extends AbstractDatabase {

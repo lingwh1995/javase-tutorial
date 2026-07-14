@@ -1,8 +1,9 @@
 package action.command.command_k;
 
 /**
+ * 操作接口实现类
+ *
  * @author lingwh
- * @desc 操作接口实现类
  * @date 2019/9/10 16:11
  */
 public class ConcreteOperationApi implements OperationApi {

@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
+ * 鸭群
+ *
  * @author lingwh
- * @desc 鸭群
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Flock implements Quackable {
+
     ArrayList<Quackable> ducks = new ArrayList<Quackable>();
 
     public void add(Quackable duck) {
@@ -31,7 +33,8 @@ public class Flock implements Quackable {
         }
     }
 
-    public void notifyObservers() {}
+    public void notifyObservers() {
+    }
 
     public String toString() {
         return "Flock of Ducks";

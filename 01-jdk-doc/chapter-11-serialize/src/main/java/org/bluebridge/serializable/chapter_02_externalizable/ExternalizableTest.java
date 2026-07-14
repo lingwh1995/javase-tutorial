@@ -1,13 +1,15 @@
 package org.bluebridge.serializable.chapter_02_externalizable;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import org.junit.Test;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 /**
+ * Externalizable测试
+ *
  * @author lingwh
- * @desc Externalizable测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class ExternalizableTest {
 

@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
+ * ES数据库
+ *
  * @author lingwh
- * @desc ES数据库
  * @date 2019/8/15 8:38
  */
 public class EsDatabase extends AbstractDatabase {
+
     private List<String> dataset = new CopyOnWriteArrayList<String>();
 
     public EsDatabase(AbstractMediator mediator) {

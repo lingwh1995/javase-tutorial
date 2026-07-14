@@ -1,11 +1,13 @@
 package structure.bridge.bridge_b;
 
 /**
+ * 折叠式手机
+ *
  * @author lingwh
- * @desc 折叠式手机
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 11:37
  */
 public class FoldedPhone extends Phone {
+
     public FoldedPhone(Brand brand) {
         super(brand);
     }

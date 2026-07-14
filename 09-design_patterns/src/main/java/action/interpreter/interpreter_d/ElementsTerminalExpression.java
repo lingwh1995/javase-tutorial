@@ -5,8 +5,9 @@ import java.util.List;
 import org.w3c.dom.Element;
 
 /**
+ * 以多个元素作为终结符的解释处理对象
+ *
  * @author lingwh
- * @desc 以多个元素作为终结符的解释处理对象
  * @date 2019/8/27 16:26
  */
 public class ElementsTerminalExpression extends ReadXmlExpression {

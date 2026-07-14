@@ -4,11 +4,13 @@ import java.sql.Connection;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
+ * 自定义线程池
+ *
  * @author lingwh
- * @desc 自定义线程池
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ConnectionPool {
+
     // 1. 连接池大小
     private final int poolSize;
 

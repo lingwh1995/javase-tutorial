@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_g;
 
 /**
+ * 导出数据:数据库格式
+ *
  * @author lingwh
- * @desc 导出数据:数据库格式
  * @date 2019/9/3 16:56
  */
 public class ExportDB implements ExportFileApi {

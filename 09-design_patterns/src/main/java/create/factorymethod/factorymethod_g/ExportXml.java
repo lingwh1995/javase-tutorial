@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_g;
 
 /**
+ * 导出Xml
+ *
  * @author lingwh
- * @desc 导出Xml
  * @date 2019/9/3 17:07
  */
 public class ExportXml implements ExportFileApi {

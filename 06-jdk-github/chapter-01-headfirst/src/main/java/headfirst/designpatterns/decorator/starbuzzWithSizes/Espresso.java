@@ -1,9 +1,10 @@
 package headfirst.designpatterns.decorator.starbuzzWithSizes;
 
 /**
+ * 浓缩咖啡
+ *
  * @author lingwh
- * @desc 浓缩咖啡
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Espresso extends Beverage {
 

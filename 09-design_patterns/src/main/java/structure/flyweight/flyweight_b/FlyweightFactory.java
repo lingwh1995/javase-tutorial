@@ -15,6 +15,7 @@ import java.util.HashMap;
  * @date 2019/7/30 13:24
  */
 public class FlyweightFactory {
+
     /**
      * 私有化享元工厂构造方法
      */

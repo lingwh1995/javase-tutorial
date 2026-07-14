@@ -3,7 +3,7 @@ package create.builder.builder_j;
 /**
  * 描述输出到文件尾的内容的对象
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/8/8 14:13
  */
 public class ExportFooterModel {

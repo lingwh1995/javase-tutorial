@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_co
 import java.util.Random;
 
 /**
+ * 吃蛋糕线程
+ *
  * @author lingwh
- * @desc 吃蛋糕线程
  * @date 2019/10/17 11:17
  */
 public class EaterThread extends Thread {
+
     private final Random random;
     private final Table table;
 

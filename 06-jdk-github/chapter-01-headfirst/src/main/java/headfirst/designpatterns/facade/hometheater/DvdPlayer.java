@@ -1,11 +1,13 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
+ * DVD播放器
+ *
  * @author lingwh
- * @desc DVD播放器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DvdPlayer {
+
     String description;
     int currentTrack;
     Amplifier amplifier;

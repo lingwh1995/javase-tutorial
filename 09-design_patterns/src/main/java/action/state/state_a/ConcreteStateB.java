@@ -1,8 +1,9 @@
 package action.state.state_a;
 
 /**
+ * 实现一个与Context的一个特定状态相关的行为
+ *
  * @author lingwh
- * @desc 实现一个与Context的一个特定状态相关的行为
  * @date 2019/8/27 9:12
  */
 public class ConcreteStateB implements State {

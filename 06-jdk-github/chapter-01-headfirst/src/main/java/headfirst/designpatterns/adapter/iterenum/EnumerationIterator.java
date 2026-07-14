@@ -3,11 +3,13 @@ package headfirst.designpatterns.adapter.iterenum;
 import java.util.*;
 
 /**
+ * 枚举转迭代器适配器
+ *
  * @author lingwh
- * @desc 枚举转迭代器适配器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class EnumerationIterator implements Iterator<Object> {
+
     Enumeration<?> enumeration;
 
     public EnumerationIterator(Enumeration<?> enumeration) {

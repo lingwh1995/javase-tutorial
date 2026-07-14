@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_b;
 
 /**
+ * 发动机接口
+ *
  * @author lingwh
- * @desc 发动机接口
- * @date 2019/3/11 00:00
+ * @date 2026/4/21 19:02
  */
 public interface Engine {
+
     void run();
 }
 

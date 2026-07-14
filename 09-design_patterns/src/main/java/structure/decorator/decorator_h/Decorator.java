@@ -3,8 +3,9 @@ package structure.decorator.decorator_h;
 import java.util.Date;
 
 /**
+ * 装饰者接口，需要和被装饰的对象实现同样的接口
+ *
  * @author lingwh
- * @desc 装饰者接口，需要和被装饰的对象实现同样的接口
  * @date 2019/8/6 15:37
  */
 public abstract class Decorator implements Component {

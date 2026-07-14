@@ -7,15 +7,13 @@ import create.abstractfactory.abstractfactory_c.service.ICustomerService;
 import create.abstractfactory.abstractfactory_c.service.IUserService;
 
 /**
- * @author lingwh
- * @desc 测试抽象工厂加简单工厂
- * @date 2026/7/9 00:00
- */
-
-/**
  * 测试抽象工厂+简单工厂(保留该产品的抽象工厂和具体抽象工厂的实现类)
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
  */
 public class EasyPersistenceFactoryClient {
+
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
         // 从简单工厂中创建具体的工厂类
         // Mysql工厂

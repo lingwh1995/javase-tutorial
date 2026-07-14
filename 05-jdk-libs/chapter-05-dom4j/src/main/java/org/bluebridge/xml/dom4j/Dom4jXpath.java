@@ -1,29 +1,32 @@
 package org.bluebridge.xml.dom4j;
 
-import java.io.InputStream;
-import java.util.List;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
+import java.io.InputStream;
+import java.util.List;
+
 /**
+ * 使用dom4j支持Xpath表达式直接获取某一个元素
+ *
  * @author lingwh
- * @desc 使用dom4j支持Xpath表达式直接获取某一个元素
- * @date 2019/3/8 00:00
+ * @date 2019/3/8 19:02
  */
 public class Dom4jXpath {
-	/**
-	 * 使用步骤
-     *
-	 * 1. 引入jar包,jaxen-1.1-beta-6.jar
-	 * 2. 调用相关方法
-	 *    - 获取多个节点:selectNodes("xpath表达式")
-	 *    - 获取一个节点:selectSingleNode("xpath表达式")
-	 */
 
-	private static final String FILE_RELATIVE_PATH = "/dom4j/person.xml";
+    /**
+     * 使用步骤
+     *
+     * 1. 引入jar包,jaxen-1.1-beta-6.jar
+     * 2. 调用相关方法
+     * - 获取多个节点:selectNodes("xpath表达式")
+     * - 获取一个节点:selectSingleNode("xpath表达式")
+     */
+
+    private static final String FILE_RELATIVE_PATH = "/dom4j/person.xml";
 
     public static void main(String[] args) throws DocumentException {
         // 得到xml文档的root节点

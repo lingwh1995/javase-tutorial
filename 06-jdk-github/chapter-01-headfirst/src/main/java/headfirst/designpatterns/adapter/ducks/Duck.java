@@ -1,11 +1,13 @@
 package headfirst.designpatterns.adapter.ducks;
 
 /**
+ * 鸭子接口
+ *
  * @author lingwh
- * @desc 鸭子接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface Duck {
+
     public void quack();
 
     public void fly();

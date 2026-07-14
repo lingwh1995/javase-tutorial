@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Random;
 
 /**
+ * 转账练习
+ *
  * @author lingwh
- * @desc 转账练习
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j(topic = "c.ExerciseTransfer")
 public class ExerciseTransfer {
+
     public static void main(String[] args) throws InterruptedException {
         Account a = new Account(1000);
         Account b = new Account(1000);

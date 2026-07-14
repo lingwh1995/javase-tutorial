@@ -2,15 +2,17 @@ package org.bluebridge;
 
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
+
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.*;
 
 /**
+ * IntelliJ风格界面示例
+ *
  * @author lingwh
- * @desc IntelliJ风格界面示例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class FlatJetbrainsStyle {
 

@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
+ * 鸭群组合模式
+ *
  * @author lingwh
- * @desc 鸭群组合模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Flock implements Quackable {
+
     ArrayList<Quackable> quackers = new ArrayList<Quackable>();
 
     public void add(Quackable quacker) {

@@ -3,10 +3,11 @@ package structure.facade.facade_c;
 /**
  * 示意配置管理，就是负责读取配置文件， 并把配置文件的内容设置到配置Model中去，是个单例
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/9/12 8:51
  */
 public class ConfigManager {
+
     private static ConfigManager manager = null;
 
     private static ConfigModel cm = null;

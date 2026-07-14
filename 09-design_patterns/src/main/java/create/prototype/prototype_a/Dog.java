@@ -8,9 +8,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
+ * 序列化/反序列化实现深克隆
+ *
  * @author lingwh
- * @desc 序列化/反序列化实现深克隆
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class Dog implements Serializable {
 

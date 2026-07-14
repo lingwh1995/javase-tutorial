@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 导出数据到文本文件的对象
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/8/8 14:14
  */
 public class ExportToTxt {

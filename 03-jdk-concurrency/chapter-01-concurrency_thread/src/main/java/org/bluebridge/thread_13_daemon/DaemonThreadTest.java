@@ -9,9 +9,10 @@ package org.bluebridge.thread_13_daemon;
  *    因为Java进程启动后，内部会有多个线程同时工作，主线程只是其中的一个线程
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DaemonThreadTest {
+
     public static void main(String[] args) {
         // 创建一个守护线程
         Thread daemonThread = new Thread(() -> {
@@ -23,7 +24,7 @@ public class DaemonThreadTest {
                     System.out.println("Daemon thread interrupted...");
                 }
             }
-        },"t1");
+        }, "t1");
 
         // 设置为守护线程
         daemonThread.setDaemon(true);

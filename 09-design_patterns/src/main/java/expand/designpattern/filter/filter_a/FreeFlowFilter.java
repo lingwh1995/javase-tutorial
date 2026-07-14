@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 筛选赠送10G移动流量的目标用户过滤器
+ *
  * @author lingwh
- * @desc 筛选赠送10G移动流量的目标用户过滤器
  * @date 2019/7/29 15:55
  */
 public class FreeFlowFilter implements Filter {
+
     /**
      * @param consumers 消费者
      * @return

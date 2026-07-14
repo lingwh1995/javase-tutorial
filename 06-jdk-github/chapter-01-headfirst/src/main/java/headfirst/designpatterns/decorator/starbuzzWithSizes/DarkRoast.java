@@ -1,11 +1,13 @@
 package headfirst.designpatterns.decorator.starbuzzWithSizes;
 
 /**
+ * 深焙咖啡
+ *
  * @author lingwh
- * @desc 深焙咖啡
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DarkRoast extends Beverage {
+
     public DarkRoast() {
         description = "Dark Roast Coffee";
     }

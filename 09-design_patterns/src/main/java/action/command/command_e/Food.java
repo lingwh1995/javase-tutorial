@@ -1,11 +1,13 @@
 package action.command.command_e;
 
 /**
+ * 食品类
+ *
  * @author lingwh
- * @desc 食品类
  * @date 2019/8/5 13:52
  */
 public class Food {
+
     private String type;
     private String name;
 

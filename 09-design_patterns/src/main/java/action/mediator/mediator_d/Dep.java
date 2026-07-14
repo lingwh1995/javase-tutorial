@@ -1,8 +1,9 @@
 package action.mediator.mediator_d;
 
 /**
+ * 部门类
+ *
  * @author lingwh
- * @desc 部门类
  * @date 2019/8/14 13:38
  */
 public class Dep {

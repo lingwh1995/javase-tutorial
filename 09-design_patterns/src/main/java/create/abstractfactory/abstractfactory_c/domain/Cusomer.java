@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_c.domain;
 
 /**
+ * 客户
+ *
  * @author lingwh
- * @desc
  * @date 2019/7/29 9:20
  */
 public class Cusomer {
+
     private int uid;
     private String uname;
 

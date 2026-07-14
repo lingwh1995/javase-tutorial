@@ -5,11 +5,13 @@ import headfirst.designpatterns.adapter.ducks.challenge.DroneAdapter;
 import headfirst.designpatterns.adapter.ducks.challenge.SuperDrone;
 
 /**
+ * 鸭子测试驱动类
+ *
  * @author lingwh
- * @desc 鸭子测试驱动类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DuckTestDrive {
+
     public static void main(String[] args) {
         MallardDuck duck = new MallardDuck();
 

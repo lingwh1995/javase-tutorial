@@ -1,9 +1,10 @@
 package structure.composite.composite_c;
 
 /**
+ * 系
+ *
  * @author lingwh
- * @desc 系
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Department extends OrganizationComponment {
 

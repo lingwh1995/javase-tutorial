@@ -4,9 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
+ * 数据类型转换测试
+ *
  * @author lingwh
- * @desc 数据类型转换测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 @Slf4j
 public class DataTypeConversionTest {

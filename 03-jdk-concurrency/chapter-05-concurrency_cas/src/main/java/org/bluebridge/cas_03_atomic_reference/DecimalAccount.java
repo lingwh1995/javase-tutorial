@@ -5,11 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * BigDecimal账户接口
+ *
  * @author lingwh
- * @desc BigDecimal账户接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface DecimalAccount {
+
     /**
      * 获取余额
      *

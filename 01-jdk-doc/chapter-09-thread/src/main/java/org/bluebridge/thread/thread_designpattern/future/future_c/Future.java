@@ -1,10 +1,12 @@
 package org.bluebridge.thread.thread_designpattern.future.future_c;
 
 /**
+ * Future 接口
+ *
  * @author lingwh
- * @desc Future 接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public interface Future<T> {
+
     T get() throws InterruptedException;
 }

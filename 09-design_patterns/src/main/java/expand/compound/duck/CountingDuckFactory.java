@@ -1,11 +1,13 @@
 package expand.compound.duck;
 
 /**
+ * 计数鸭子工厂
+ *
  * @author lingwh
- * @desc 计数鸭子工厂
  * @date 2019/10/10 11:23
  */
 public class CountingDuckFactory extends AbstractDuckFactory {
+
     @Override
     Quackable createMallardDuck() {
         return new QuackCounter(new MallardDuck());

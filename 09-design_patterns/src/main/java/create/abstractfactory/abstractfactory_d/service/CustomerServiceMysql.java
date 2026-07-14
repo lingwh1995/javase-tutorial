@@ -3,9 +3,10 @@ package create.abstractfactory.abstractfactory_d.service;
 import create.abstractfactory.abstractfactory_d.domain.Cusomer;
 
 /**
+ * Mysql客户服务实现
+ *
  * @author lingwh
- * @desc Mysql客户服务实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CustomerServiceMysql implements ICustomerService {
 

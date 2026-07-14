@@ -3,11 +3,13 @@ package org.bluebridge.serializable.chapter_02_externalizable;
 import java.io.*;
 
 /**
+ * Externalizable工具类
+ *
  * @author lingwh
- * @desc Externalizable工具类
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class ExternalizableUtils {
+
     /**
      * 序列化方法
      *

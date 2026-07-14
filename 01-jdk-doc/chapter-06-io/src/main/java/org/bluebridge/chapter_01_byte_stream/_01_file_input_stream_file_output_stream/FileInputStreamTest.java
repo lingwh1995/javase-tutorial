@@ -7,8 +7,9 @@ import org.junit.Test;
 import java.io.*;
 
 /**
+ * FileInputStream 字节输入流
+ *
  * @author lingwh
- * @desc FileInputStream 字节输入流
  * @date 2025/8/14 17:24
  */
 @Slf4j

@@ -10,10 +10,10 @@ import java.nio.channels.FileChannel;
  * 用于读取、写入文件的通道,只能被RandomAccessFile、FileInputStream、FileOutputStream创建
  *
  * @author lingwh
- * @desc
  * @date 2019/9/25 13:14
  */
 public class FileChannelTest {
+
     public static void main(String[] args) {
         read();
         write();

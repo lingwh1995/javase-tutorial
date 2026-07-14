@@ -3,11 +3,13 @@ package create.prototype.prototype_a;
 import java.util.Date;
 
 /**
+ * 测试深克隆/深复制
+ *
  * @author lingwh
- * @desc 测试深克隆/深复制
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class DeepCloneCilent {
+
     public static void main(String[] args) throws CloneNotSupportedException {
         Date date = new Date(4564654L);
         Person personProtoType = new Person("张三", date);

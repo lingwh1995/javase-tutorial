@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_i;
 
 /**
+ * 戴尔电脑工厂
+ *
  * @author lingwh
- * @desc 戴尔电脑工厂
  * @date 2019/8/7 16:13
  */
 public class DellFactory implements AbstractFactory {

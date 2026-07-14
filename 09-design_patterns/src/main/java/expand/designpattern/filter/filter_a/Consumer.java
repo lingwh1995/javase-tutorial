@@ -1,11 +1,13 @@
 package expand.designpattern.filter.filter_a;
 
 /**
+ * 用户
+ *
  * @author lingwh
- * @desc 用户
  * @date 2019/7/29 15:52
  */
 public class Consumer {
+
     /**
      * 用户姓名
      */

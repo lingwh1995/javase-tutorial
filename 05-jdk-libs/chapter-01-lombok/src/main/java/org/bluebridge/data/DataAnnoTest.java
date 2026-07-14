@@ -4,8 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
+ * 测试@Data注解
+ *
  * @author lingwh
- * @desc 测试@Data注解
  * @date 2025/8/18 11:43
  */
 @Slf4j

@@ -1,8 +1,9 @@
 package action.visitor.visitor_a;
 
 /**
+ * 具体访问者1
+ *
  * @author lingwh
- * @desc 具体访问者1
  * @date 2019/10/11 9:25
  */
 public class ConcreteVisitor1 implements Visitor {

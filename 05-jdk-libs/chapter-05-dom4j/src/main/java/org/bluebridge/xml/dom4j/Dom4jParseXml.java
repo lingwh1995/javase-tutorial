@@ -1,11 +1,5 @@
 package org.bluebridge.xml.dom4j;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Iterator;
-import java.util.List;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
@@ -14,15 +8,22 @@ import org.dom4j.io.OutputFormat;
 import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Iterator;
+import java.util.List;
+
 /**
+ * 使用dom4j解析xml
+ *
  * @author lingwh
- * @desc 使用dom4j解析xml
- * @date 2019/3/7 00:00
+ * @date 2026/4/21 19:02
  */
 public class Dom4jParseXml {
 
-    private static final String BASIC_PATH =
-            "java-standard-edition-05-jdk-libs/chapter-01-dom4j/src/main/resources";
+    private static final String BASIC_PATH = "java-standard-edition-05-jdk-libs/chapter-01-dom4j/src/main/resources";
     private static final String FILE_RELATIVE_PATH = "/dom4j/person.xml";
     private static final String FILE_PATH = BASIC_PATH + FILE_RELATIVE_PATH;
 
@@ -161,9 +162,7 @@ public class Dom4jParseXml {
         Element rootElement = document.getRootElement();
         // 2. 得到第一个p1节点
         Element firstP1Node = rootElement.element("p1");
-        /**
-         * 3. 获取p1下所有元素 elements()方法返回list集合 使用list的方法，在特定的元素下添加元素
-         */
+        // 3. 获取p1下所有元素 elements()方法返回list集合 使用list的方法，在特定的元素下添加元素
         List<Element> p1List = firstP1Node.elements();
         // 创建元素
         Element schoolNode = DocumentHelper.createElement("school");

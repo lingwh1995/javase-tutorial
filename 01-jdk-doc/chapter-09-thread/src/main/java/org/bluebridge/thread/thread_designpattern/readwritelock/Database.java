@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 数据库
+ *
  * @author lingwh
- * @desc 数据库
  * @date 2019/10/18 16:48
  */
 public class Database<K, V> {
+
     private final Map<K, V> map = new HashMap<K, V>();
 
     /**

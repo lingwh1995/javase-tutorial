@@ -1,10 +1,12 @@
 package headfirst.designpatterns.observer.weather;
 
 /**
+ * 展示元素接口
+ *
  * @author lingwh
- * @desc 展示元素接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface DisplayElement {
+
     void display();
 }

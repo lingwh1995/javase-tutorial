@@ -1,11 +1,13 @@
 package headfirst.designpatterns.combined.djview;
 
 /**
+ * 控制器接口
+ *
  * @author lingwh
- * @desc 控制器接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface ControllerInterface {
+
     void start();
 
     void stop();

@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_co
 import java.util.Random;
 
 /**
+ * 消费者
+ *
  * @author lingwh
- * @desc 消费者
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Consumer extends Thread {
+
     private final MessageQueue messageQueue;
     private static final Random random = new Random();
 

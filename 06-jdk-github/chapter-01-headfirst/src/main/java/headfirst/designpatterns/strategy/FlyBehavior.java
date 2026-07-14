@@ -1,10 +1,12 @@
 package headfirst.designpatterns.strategy;
 
 /**
+ * 飞行行为接口
+ *
  * @author lingwh
- * @desc 飞行行为接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface FlyBehavior {
-    public void fly();
+
+    void fly();
 }

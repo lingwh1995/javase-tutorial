@@ -1,11 +1,13 @@
 package headfirst.designpatterns.decorator.starbuzz;
 
 /**
+ * 调料装饰器
+ *
  * @author lingwh
- * @desc 调料装饰器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class CondimentDecorator extends Beverage {
+
     Beverage beverage;
 
     public abstract String getDescription();

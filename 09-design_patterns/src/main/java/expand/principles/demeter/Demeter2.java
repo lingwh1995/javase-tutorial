@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 使用迪米特法则改进
+ *
  * @author lingwh
- * @desc 使用迪米特法则改进
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Demeter2 {
+
     public static void main(String[] args) {
         SchoolManager2 schoolManager2 = new SchoolManager2();
         schoolManager2.printAllEmployee(new CollegeManager2());

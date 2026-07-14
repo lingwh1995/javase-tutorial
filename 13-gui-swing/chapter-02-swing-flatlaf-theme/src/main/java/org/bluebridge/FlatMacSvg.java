@@ -2,13 +2,15 @@ package org.bluebridge;
 
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
+
 import java.awt.*;
 import javax.swing.*;
 
 /**
+ * FlatLaf Mac风格SVG图标展示
+ *
  * @author lingwh
- * @desc FlatLaf Mac风格SVG图标展示
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class FlatMacSvg {
 
@@ -41,12 +43,16 @@ public class FlatMacSvg {
 
                     // 根据索引模拟不同的图标（实际开发中建议封装一个 Icon 对象）
                     String iconName = "home.svg"; // 假设你有这些 svg 文件
-                    if (index == 1) iconName = "app.svg";
-                    if (index == 4) iconName = "download.svg";
+                    if (index == 1) {
+                        iconName = "app.svg";
+                    }
+                    if (index == 4) {
+                        iconName = "download.svg";
+                    }
 
                     // 核心代码：加载 SVG 并指定大小
                     // 这里由于没有真实文件，我用代码逻辑演示
-                     label.setIcon(new FlatSVGIcon("svg/" + iconName, 18, 18));
+                    label.setIcon(new FlatSVGIcon("svg/" + iconName, 18, 18));
 
                     label.setBorder(BorderFactory.createEmptyBorder(8, 15, 8, 10));
                     return label;

@@ -1,8 +1,9 @@
 package action.observer.observer_a;
 
 /**
+ * 具体的目标对象，负责把有关状态存入到相应的观察者对象， 并在自己状态发生改变时，通知各个观察者
+ *
  * @author lingwh
- * @desc 具体的目标对象，负责把有关状态存入到相应的观察者对象， 并在自己状态发生改变时，通知各个观察者
  * @date 2019/8/19 13:42
  */
 public class ConcreteSubject extends Subject {

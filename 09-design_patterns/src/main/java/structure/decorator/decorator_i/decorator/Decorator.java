@@ -3,8 +3,9 @@ package structure.decorator.decorator_i.decorator;
 import structure.decorator.decorator_i.service.IGoodsSaleService;
 
 /**
+ * 抽象的装饰者
+ *
  * @author lingwh
- * @desc 抽象的装饰者
  * @date 2019/8/7 9:44
  */
 public abstract class Decorator implements IGoodsSaleService {

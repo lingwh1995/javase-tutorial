@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_g;
 
 /**
+ * 实现导出数据的业务功能的对象
+ *
  * @author lingwh
- * @desc 实现导出数据的业务功能的对象
  * @date 2019/9/3 17:02
  */
 public class ExportOperate {

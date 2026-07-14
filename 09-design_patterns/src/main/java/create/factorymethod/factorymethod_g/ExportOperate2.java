@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_g;
 
 /**
+ * 扩展的导出操作
+ *
  * @author lingwh
- * @desc 扩展的导出操作
  * @date 2019/9/3 17:10
  */
 public class ExportOperate2 extends ExportOperate {
+
     @Override
     public ExportFileApi factoryMethod(int type) {
         ExportFileApi api = null;

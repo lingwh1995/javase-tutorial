@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_c
 import java.util.Arrays;
 
 /**
+ * 共享数据
+ *
  * @author lingwh
- * @desc 共享数据
  * @date 2019/10/18 11:32
  */
 public class Data {
+
     private final char[] buffer;
     private final ReadWriteLock lock = new ReadWriteLock();
 

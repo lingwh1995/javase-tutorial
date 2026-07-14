@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_b;
 
 /**
+ * 除法工厂
+ *
  * @author lingwh
- * @desc 除法工厂
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DivFactory extends OperationFactory {
+
     @Override
     protected Operation createOperation() {
         System.out.println("除法操作工厂...");

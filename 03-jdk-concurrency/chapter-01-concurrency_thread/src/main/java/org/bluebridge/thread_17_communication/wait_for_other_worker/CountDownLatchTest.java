@@ -1,15 +1,18 @@
 package org.bluebridge.thread_17_communication.wait_for_other_worker;
 
-import java.util.concurrent.CountDownLatch;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.concurrent.CountDownLatch;
+
 /**
+ * 演示CountDownLatch的使用场景：主线程等待多个工作线程完成
+ *
  * @author lingwh
- * @desc 演示CountDownLatch的使用场景：主线程等待多个工作线程完成
  * @date 2025/10/27 18:25
  */
 @Slf4j
 public class CountDownLatchTest {
+
     // 创建一个计数为3的CountDownLatch
     private static final CountDownLatch WAIT_LATCH = new CountDownLatch(3);
 

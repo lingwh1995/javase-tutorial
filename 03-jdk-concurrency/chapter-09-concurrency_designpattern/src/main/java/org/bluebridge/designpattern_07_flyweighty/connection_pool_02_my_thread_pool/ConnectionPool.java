@@ -5,21 +5,23 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
+ * 自定义线程池
+ *
  * @author lingwh
- * @desc 自定义线程池
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ConnectionPool {
-    // 1.连接池大小
+
+    // 1. 连接池大小
     private final int size;
-    // 2.连接对象数组
+    // 2. 连接对象数组
     private Connection[] connections;
-    // 3.连接状态数组 0：空闲 1：忙碌
+    // 3. 连接状态数组 0：空闲 1：忙碌
     private AtomicIntegerArray status;
     // 信号量
     private Semaphore signal;
 
-    // 4.构造器初始化
+    // 4. 构造器初始化
     ConnectionPool(int size) {
         this.size = size;
         connections = new Connection[size];
@@ -30,7 +32,7 @@ public class ConnectionPool {
         }
     }
 
-    // 5.借连接
+    // 5. 借连接
     public Connection borrow() {
         while (true) {
             // 信号量加1
@@ -51,7 +53,7 @@ public class ConnectionPool {
         }
     }
 
-    // 6.归还连接
+    // 6. 归还连接
     public void free(Connection connection) {
         for (int i = 0; i < size; i++) {
             if (connections[i] == connection) {

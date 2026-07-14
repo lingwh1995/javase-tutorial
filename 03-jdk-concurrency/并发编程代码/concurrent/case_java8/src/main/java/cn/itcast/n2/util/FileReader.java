@@ -7,12 +7,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
+ * 文件读取工具
+ *
  * @author lingwh
- * @desc 文件读取工具
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j(topic = "c.FileReader")
 public class FileReader {
+
     public static void read(String filename) {
         int idx = filename.lastIndexOf(File.separator);
         String shortName = filename.substring(idx + 1);

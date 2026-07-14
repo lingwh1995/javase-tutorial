@@ -1,11 +1,13 @@
 package headfirst.designpatterns.combining.adapter;
 
 /**
+ * 鸭子叫声
+ *
  * @author lingwh
- * @desc 鸭子叫声
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class DuckCall implements Quackable {
+
     public void quack() {
         System.out.println("Kwak");
     }

@@ -3,7 +3,7 @@ package action.visitor.visitor_c;
 /**
  * 企业客户
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/10/10 17:45
  */
 public class EnterpriseCustomer extends Customer {

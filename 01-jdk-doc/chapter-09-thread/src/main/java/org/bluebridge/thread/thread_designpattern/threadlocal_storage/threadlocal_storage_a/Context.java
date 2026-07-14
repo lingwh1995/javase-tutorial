@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadlocal_storage_a;
 
 /**
+ * 上下文
+ *
  * @author lingwh
- * @desc 上下文
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Context {
+
     private String name;
     private String idCard;
 

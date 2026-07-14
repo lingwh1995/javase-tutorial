@@ -16,8 +16,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 /**
+ * FileUtils工具类测试
+ *
  * @author lingwh
- * @desc FileUtils工具类测试
  * @date 2025/9/15 10:55
  */
 @Slf4j

@@ -3,7 +3,9 @@ package org.bluebridge;
 import org.junit.Test;
 
 /**
- * 题目列表 001.循环打印 a-g 方式一：不使用取余运算 002.循环打印 a-g 方式二：使用取余运算 003.求最大公约数 方式一：暴力穷举 004.求最大公约数 方式二：辗转相除法
+ * 题目列表
+ *
+ * 001.循环打印 a-g 方式一：不使用取余运算 002.循环打印 a-g 方式二：使用取余运算 003.求最大公约数 方式一：暴力穷举 004.求最大公约数 方式二：辗转相除法
  * 005.求最大公约数 方式三：更相减损术(辗转相减法) 006.求最小公倍数 方式一：暴力穷举 007.求最小公倍数 方式二：利用最大公约数 008.求最小公倍数 方式三：最小i值法
  * 009.输入三个整型数据，求最小值 010.输入三个整型数据，求中间值 011.输入三个整型数据，求最大值 012.统计字符串中一共有多少个单词
  * 013.小球从100米落下,每次落地后跳回原来的高度一半，再落下，求它在第10次落下时共经过多少米?反弹高度是多少?
@@ -17,8 +19,7 @@ import org.junit.Test;
  * 024.多次输入年月日，输出最早的年月日（方式二）
  *
  * @author lingwh
- * @desc 练习题测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:19
  */
 public class ExercisesTest {
 
@@ -57,7 +58,9 @@ public class ExercisesTest {
     }
 
     /**
-     * 003.求最大公约数 方式一：暴力穷举 a.找出a和b中最小的数，把这个数赋值给c b.第一个满足 a%c==0 && b%c==0 的数就是a和b的最大公约数
+     * 003.求最大公约数
+     *
+     * 方式一：暴力穷举 a.找出a和b中最小的数，把这个数赋值给c b.第一个满足 a%c==0 && b%c==0 的数就是a和b的最大公约数
      */
     @Test
     public void testQuestion_003_GreatestCommonDivisor() {
@@ -73,8 +76,9 @@ public class ExercisesTest {
     }
 
     /**
-     * 004.求最大公约数 方式二：辗转相除法 公式：gcd(a,b) = gcd(b, a mod b); gcd(48,18) = gcd(18, 12); gcd(18,12) =
-     * gcd(12, 6);
+     * 004.求最大公约数
+     *
+     * 方式二：辗转相除法 公式：gcd(a,b) = gcd(b, a mod b); gcd(48,18) = gcd(18, 12); gcd(18,12) = gcd(12, 6);
      */
     @Test
     public void testQuestion_004_GreatestCommonDivisor() {
@@ -88,8 +92,10 @@ public class ExercisesTest {
     }
 
     /**
-     * 005.求最大公约数 方式三：更相减损术(辗转相减法) 公式：gcd(a, b) = gcd(b, a - b); 注意：a<b时，要先交换a、b两个数的位置再进行相减 gcd(48,18)
-     * = gcd(18, 30); gcd(30,18) = gcd(18, 12); gcd(18,12) = gcd(12, 6);
+     * 005.求最大公约数
+     *
+     * 方式三：更相减损术(辗转相减法) 公式：gcd(a, b) = gcd(b, a - b);
+     * 注意：a<b时，要先交换a、b两个数的位置再进行相减 gcd(48,18) = gcd(18, 30); gcd(30,18) = gcd(18, 12); gcd(18,12) = gcd(12, 6);
      */
     @Test
     public void testQuestion_005_GreatestCommonDivisor() {

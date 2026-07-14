@@ -1,8 +1,9 @@
 package create.factorymethod.factorymethod_e;
 
 /**
+ * 提供导出文件到文本文档API 的对象,本质上是一个API的提供者
+ *
  * @author lingwh
- * @desc 提供导出文件到文本文档API 的对象,本质上是一个API的提供者
  * @date 2019/8/2 9:30
  */
 public class ExportTxtFile implements ExportFileApi {

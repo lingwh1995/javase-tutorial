@@ -1,8 +1,9 @@
 package action.state.state_a;
 
 /**
+ * 定义客户感兴趣的接口，通常会维护一个State类型的对象实例
+ *
  * @author lingwh
- * @desc 定义客户感兴趣的接口，通常会维护一个State类型的对象实例
  * @date 2019/8/27 9:13
  */
 public class Context {

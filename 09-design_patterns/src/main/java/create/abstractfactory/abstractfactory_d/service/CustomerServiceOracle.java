@@ -3,9 +3,10 @@ package create.abstractfactory.abstractfactory_d.service;
 import create.abstractfactory.abstractfactory_d.domain.Cusomer;
 
 /**
+ * Oracle客户服务实现
+ *
  * @author lingwh
- * @desc Oracle客户服务实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class CustomerServiceOracle implements ICustomerService {
 

@@ -5,8 +5,9 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
+ * 订单动态代理
+ *
  * @author lingwh
- * @desc 订单动态代理
  * @date 2019/8/19 11:00
  */
 public class DynamicProxy implements InvocationHandler {

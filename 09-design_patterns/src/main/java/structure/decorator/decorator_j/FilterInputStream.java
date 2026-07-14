@@ -1,9 +1,10 @@
 package structure.decorator.decorator_j;
 
 /**
+ * 装饰者
+ *
  * @author lingwh
- * @desc 装饰者
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class FilterInputStream extends InputStream {
 

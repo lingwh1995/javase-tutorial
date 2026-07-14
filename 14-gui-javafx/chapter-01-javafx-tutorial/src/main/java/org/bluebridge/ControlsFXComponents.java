@@ -1,18 +1,20 @@
 package org.bluebridge;
 
+import org.controlsfx.control.CheckComboBox;
+import org.controlsfx.control.Notifications;
+import org.controlsfx.control.Rating;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import org.controlsfx.control.CheckComboBox;
-import org.controlsfx.control.Notifications;
-import org.controlsfx.control.Rating;
 
 /**
+ * ControlsFX组件示例
+ *
  * @author lingwh
- * @desc ControlsFX组件示例
  * @date 2026/1/22 13:45
  */
 public class ControlsFXComponents extends Application {

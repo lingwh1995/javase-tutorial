@@ -5,8 +5,9 @@ import java.util.Collection;
 import org.w3c.dom.Element;
 
 /**
+ * 元素作为非终结符对应的解释器，解释并执行中间元素
+ *
  * @author lingwh
- * @desc 元素作为非终结符对应的解释器，解释并执行中间元素
  * @date 2019/8/27 14:10
  */
 public class ElementExpression extends ReadXmlExpression {
