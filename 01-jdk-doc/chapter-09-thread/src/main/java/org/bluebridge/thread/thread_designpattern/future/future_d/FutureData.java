@@ -1,8 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.future.future_d;
 
 /**
+ * Future 数据实现
+ *
  * @author lingwh
- * @desc Future 数据实现
  * @date 2019/10/10 16:54
  */
 public class FutureData implements Data {

@@ -1,12 +1,14 @@
 package org.bluebridge.chapter_02_character_stream._03_filter_reader_filter_writer._02_filter_writer;
 
-import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.*;
+
 /**
+ * 自定义行号写入器测试
+ *
  * @author lingwh
- * @desc 自定义行号写入器测试
  * @date 2025/8/29 13:59
  */
 @Slf4j

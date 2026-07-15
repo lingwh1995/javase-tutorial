@@ -3,9 +3,10 @@ package headfirst.designpatterns.composite.menuiterator;
 import java.util.*;
 
 /**
+ * 菜单组件
+ *
  * @author lingwh
- * @desc 菜单组件
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class MenuComponent {
 

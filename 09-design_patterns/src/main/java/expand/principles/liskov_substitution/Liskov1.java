@@ -8,17 +8,18 @@ package expand.principles.liskov_substitution;
  * 2. 缺点是A1和B1的耦合性太高了，修改B很容易对A造成影响
  *
  * @author lingwh
- * @date 2019/3/10 00:00
+ * @date 2026/4/21 19:02
  */
 public class Liskov1 {
+
     public static void main(String[] args) {
         A1 a1 = new A1();
-        System.out.println("11-3 = "+a1.fun1(11,3));
-        System.out.println("1-8 = "+a1.fun1(1,8));
+        System.out.println("11-3 = " + a1.fun1(11, 3));
+        System.out.println("1-8 = " + a1.fun1(1, 8));
 
         A1 b1 = new B1();
-        System.out.println("11-3 = "+b1.fun1(11,3));
-        System.out.println("1-8 = "+b1.fun1(1,8));
+        System.out.println("11-3 = " + b1.fun1(11, 3));
+        System.out.println("1-8 = " + b1.fun1(1, 8));
 
     }
 }
@@ -26,15 +27,16 @@ public class Liskov1 {
 class A1 {
     /**
      * 返回 a与b的差
+     *
      * @param a
      * @param b
      * @return
      */
-    public int fun1(int a,int b){
-        return a-b;
+    public int fun1(int a, int b) {
+        return a - b;
     }
 
-    public void printHelloWorld(){
+    public void printHelloWorld() {
         System.out.println("Hello World!");
     }
 }
@@ -46,26 +48,28 @@ class B1 extends A1 {
 
     /**
      * 返回 a与b的和
+     *
      * @param a
      * @param b
      * @return
      */
-    public int fun1(int a,int b){
-        return a+b;
+    public int fun1(int a, int b) {
+        return a + b;
     }
 
     /**
      * B1独有方法，非继承自A1
      * 返回 a与b的和加上9
+     *
      * @param a
      * @param b
      * @return
      */
-    public int fun2(int a,int b){
-        return fun1(a,b) + 9;
+    public int fun2(int a, int b) {
+        return fun1(a, b) + 9;
     }
 
-    public void printHelloWorld(){
+    public void printHelloWorld() {
         System.out.println("Hello World!");
     }
 }

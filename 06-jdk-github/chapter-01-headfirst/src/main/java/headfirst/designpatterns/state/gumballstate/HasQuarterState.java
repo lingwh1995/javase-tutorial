@@ -1,11 +1,13 @@
 package headfirst.designpatterns.state.gumballstate;
 
 /**
+ * 已投币状态
+ *
  * @author lingwh
- * @desc 已投币状态
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HasQuarterState implements State {
+
     GumballMachine gumballMachine;
 
     public HasQuarterState(GumballMachine gumballMachine) {
@@ -30,7 +32,8 @@ public class HasQuarterState implements State {
         System.out.println("No gumball dispensed");
     }
 
-    public void refill() {}
+    public void refill() {
+    }
 
     public String toString() {
         return "waiting for turn of crank";

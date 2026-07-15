@@ -7,8 +7,9 @@ import java.awt.geom.RoundRectangle2D;
 import javax.swing.*;
 
 /**
+ * 窗口修饰和自定义形状
+ *
  * @author lingwh
- * @desc 窗口修饰和自定义形状
  * @date 2026/1/30 20:33
  */
 public class Lesson_20_UndecoratedFrameTest {

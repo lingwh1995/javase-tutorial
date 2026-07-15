@@ -1,11 +1,13 @@
 package org.bluebridge.designpattern_03_balking.balking_a;
 
 /**
+ * 监控服务
+ *
  * @author lingwh
- * @desc 监控服务
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MonitorService {
+
     // 用来表示是否已经有线程已经在执行启动了
     private volatile boolean starting;
 

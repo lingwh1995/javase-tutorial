@@ -1,11 +1,13 @@
 package structure.decorator.decorator_h;
 
-import java.util.Date;
 import structure.decorator.decorator_g.TempDB;
 
+import java.util.Date;
+
 /**
+ * 装饰器对象，计算当月团队业务奖金
+ *
  * @author lingwh
- * @desc 装饰器对象，计算当月团队业务奖金
  * @date 2019/8/6 15:44
  */
 public class GroupPrizeDecorator extends Decorator {

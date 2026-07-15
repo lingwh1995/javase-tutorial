@@ -1,16 +1,18 @@
 package org.bluebridge.javassist.test;
 
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
 import javassist.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+
 /**
+ * 测试javassist功能
+ *
  * @author lingwh
- * @desc 测试javassist功能
  * @date 2025/8/18 14:33
  */
 @Slf4j

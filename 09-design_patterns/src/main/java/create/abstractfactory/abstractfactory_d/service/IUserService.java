@@ -3,10 +3,12 @@ package create.abstractfactory.abstractfactory_d.service;
 import create.abstractfactory.abstractfactory_d.domain.User;
 
 /**
+ * 用户服务接口
+ *
  * @author lingwh
- * @desc 用户服务接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface IUserService {
+
     User get(Integer uid);
 }

@@ -1,9 +1,10 @@
 package og.bluebridge.generic.chapter_06_generic_method;
 
 /**
+ * 泛型方法语法测试
+ *
  * @author lingwh
- * @desc 泛型方法语法测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class GenericMethodGrammarTest {
 

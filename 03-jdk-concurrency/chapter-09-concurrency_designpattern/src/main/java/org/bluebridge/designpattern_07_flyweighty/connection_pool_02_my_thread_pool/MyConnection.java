@@ -6,9 +6,10 @@ import java.util.Properties;
 import java.util.concurrent.Executor;
 
 /**
+ * 自定义连接
+ *
  * @author lingwh
- * @desc 自定义连接
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MyConnection implements Connection {
 
@@ -124,7 +125,8 @@ public class MyConnection implements Connection {
     }
 
     @Override
-    public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency) throws SQLException {
+    public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency)
+            throws SQLException {
         return null;
     }
 
@@ -174,17 +176,20 @@ public class MyConnection implements Connection {
     }
 
     @Override
-    public Statement createStatement(int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException {
+    public Statement createStatement(int resultSetType, int resultSetConcurrency, int resultSetHoldability)
+            throws SQLException {
         return null;
     }
 
     @Override
-    public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException {
+    public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency,
+            int resultSetHoldability) throws SQLException {
         return null;
     }
 
     @Override
-    public CallableStatement prepareCall(String sql, int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException {
+    public CallableStatement prepareCall(String sql, int resultSetType, int resultSetConcurrency,
+            int resultSetHoldability) throws SQLException {
         return null;
     }
 

@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_co
 import java.util.Random;
 
 /**
+ * 做蛋糕线程
+ *
  * @author lingwh
- * @desc 做蛋糕线程
  * @date 2019/10/17 11:12
  */
 public class MarkerThread extends Thread {
+
     private final Random random;
     private final Table table;
 

@@ -7,51 +7,52 @@ package org.bluebridge.protobuf.proto;
 
 @com.google.protobuf.Generated
 public final class ColorProto extends com.google.protobuf.GeneratedFile {
-    private ColorProto() {}
-    static {
-        com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
-            com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
-            /* major= */ 4,
-            /* minor= */ 34,
-            /* patch= */ 1,
-            /* suffix= */ "",
-            "ColorProto");
-    }
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistryLite registry) {
-    }
+  private ColorProto() {}
+  static {
+    com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+      com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+      /* major= */ 4,
+      /* minor= */ 34,
+      /* patch= */ 1,
+      /* suffix= */ "",
+      "ColorProto");
+  }
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
 
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistry registry) {
-        registerAllExtensions(
-                (com.google.protobuf.ExtensionRegistryLite) registry);
-    }
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+  /**
+   * <pre>
+   * 颜色枚举定义
+   * </pre>
+   *
+   * Protobuf enum {@code org.bluebridge.protobuf.color.Color}
+   */
+  public enum Color
+      implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <pre>
-     * 颜色枚举定义
+     * 枚举值必须从 0 开始，通常用作默认值
      * </pre>
      *
-     * Protobuf enum {@code org.bluebridge.protobuf.color.Color}
+     * <code>COLOR_RED = 0;</code>
      */
-    public enum Color implements com.google.protobuf.ProtocolMessageEnum {
-        /**
-         * <pre>
-         * 枚举值必须从 0 开始，通常用作默认值
-         * </pre>
-         *
-         * <code>COLOR_RED = 0;</code>
-         */
-        COLOR_RED(0),
-        /**
-         * <code>COLOR_GREEN = 1;</code>
-         */
-        COLOR_GREEN(1),
-        /**
-         * <code>COLOR_BLUE = 2;</code>
-         */
-        COLOR_BLUE(2),
-        UNRECOGNIZED(-1),
-        ;
+    COLOR_RED(0),
+    /**
+     * <code>COLOR_GREEN = 1;</code>
+     */
+    COLOR_GREEN(1),
+    /**
+     * <code>COLOR_BLUE = 2;</code>
+     */
+    COLOR_BLUE(2),
+    UNRECOGNIZED(-1),
+    ;
 
     static {
       com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(

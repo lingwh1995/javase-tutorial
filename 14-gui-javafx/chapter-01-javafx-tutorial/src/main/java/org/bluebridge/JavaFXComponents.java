@@ -10,8 +10,9 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 /**
+ * JavaFX组件示例
+ *
  * @author lingwh
- * @desc JavaFX组件示例
  * @date 2025/8/4 18:31
  */
 public class JavaFXComponents extends Application {

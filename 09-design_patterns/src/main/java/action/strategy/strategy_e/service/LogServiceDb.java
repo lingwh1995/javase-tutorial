@@ -1,8 +1,9 @@
 package action.strategy.strategy_e.service;
 
 /**
+ * 数据库日志服务
+ *
  * @author lingwh
- * @desc 数据库日志服务
  * @date 2019/8/5 9:26
  */
 public class LogServiceDb implements ILogService {

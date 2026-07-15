@@ -1,5 +1,7 @@
 package org.bluebridge.reflect.chapter_04_reflect_gener;
 
+import org.junit.Test;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
@@ -7,12 +9,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import org.junit.Test;
 
 /**
+ * 使用反射获取泛型信息
+ *
  * @author lingwh
- * @desc 使用反射获取泛型信息
- * @date 2019/3/25 00:00
+ * @date 2019/3/25 18:04
  */
 public class GenericReflectTest2 {
 
@@ -67,10 +69,10 @@ public class GenericReflectTest2 {
     @Test
     public void fun3()
             throws NoSuchMethodException,
-                    SecurityException,
-                    IllegalAccessException,
-                    IllegalArgumentException,
-                    InvocationTargetException {
+            SecurityException,
+            IllegalAccessException,
+            IllegalArgumentException,
+            InvocationTargetException {
         ArrayList<String> list = new ArrayList<String>();
         list.add("100");
         list.add("200");

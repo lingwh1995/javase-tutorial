@@ -1,14 +1,16 @@
 package org.bluebridge.chapter_02_character_stream._02_buffered_reader_buffered_writer._02_linenumber_reader;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.LineNumberReader;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.LineNumberReader;
+
 /**
+ * 主要用于读取文本内容并提供行号跟踪功能
+ *
  * @author lingwh
- * @desc 主要用于读取文本内容并提供行号跟踪功能
  * @date 2025/8/29 11:17
  */
 @Slf4j

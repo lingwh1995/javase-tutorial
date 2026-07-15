@@ -1,11 +1,13 @@
 package create.builder.builder_c;
 
 /**
+ * 具体的建造者，只负责产品的创建
+ *
  * @author lingwh
- * @desc 具体的建造者，只负责产品的创建
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HighHouseBuilder extends HouseBuilder {
+
     @Override
     public void buildBasic() {
         super.house.setBasic("高楼大厦地基");

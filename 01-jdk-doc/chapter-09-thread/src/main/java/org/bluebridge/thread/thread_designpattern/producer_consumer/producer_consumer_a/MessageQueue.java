@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_co
 import java.util.LinkedList;
 
 /**
+ * 消息队列
+ *
  * @author lingwh
- * @desc 消息队列
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class MessageQueue {
+
     private final LinkedList<Message> queue;
     private static final int DEFAULT_MAX_LIMIT = 100;
     private final int limit;

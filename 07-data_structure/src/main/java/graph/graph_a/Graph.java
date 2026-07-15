@@ -3,11 +3,13 @@ package graph.graph_a;
 import java.util.*;
 
 /**
+ * 图
+ *
  * @author lingwh
- * @desc 图
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Graph {
+
     /**
      * 存储顶点
      */
@@ -157,8 +159,8 @@ public class Graph {
     }
 
     /**
-     * @param v1 v1表示点的下标,即第几个顶点 “A”-"B" "A"->0 "B"->1
-     * @param v2 v2表示第二个顶点对应的下标
+     * @param v1     v1表示点的下标,即第几个顶点 “A”-"B" "A"->0 "B"->1
+     * @param v2     v2表示第二个顶点对应的下标
      * @param weight
      */
     public void insertEdges(int v1, int v2, int weight) {

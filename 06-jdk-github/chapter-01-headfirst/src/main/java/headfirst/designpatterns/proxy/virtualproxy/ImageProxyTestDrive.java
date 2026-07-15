@@ -5,11 +5,13 @@ import java.util.*;
 import javax.swing.*;
 
 /**
+ * 图片代理测试类
+ *
  * @author lingwh
- * @desc 图片代理测试类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ImageProxyTestDrive {
+
     ImageComponent imageComponent;
     JFrame frame = new JFrame("CD Cover Viewer");
     JMenuBar menuBar;

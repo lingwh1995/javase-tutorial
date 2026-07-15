@@ -1,8 +1,9 @@
 package org.bluebridge.java8.chapter_01_interface.chapter_01_default_static_method;
 
 /**
+ * Java8接口的实现类
+ *
  * @author lingwh
- * @desc Java8接口的实现类
  * @date 2025/12/2 15:10
  */
 public class MyJava8InterfaceImpl implements MyJava8Interface {

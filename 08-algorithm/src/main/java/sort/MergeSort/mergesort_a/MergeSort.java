@@ -3,13 +3,15 @@ package sort.MergeSort.mergesort_a;
 import java.util.Arrays;
 
 /**
+ * 归并排序
+ *
  * @author lingwh
- * @desc 归并排序
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MergeSort {
+
     public static void main(String[] args) {
-        int[] arr = {8, 4, 5, 7, 3, 6, 2, 1};
+        int[] arr = { 8, 4, 5, 7, 3, 6, 2, 1 };
         int[] temp = new int[arr.length];
         parse(arr, 0, arr.length - 1, temp);
         System.out.println(Arrays.toString(arr));
@@ -57,9 +59,10 @@ public class MergeSort {
         }
 
         // 三目运算
-        //        while(l<=mid && r<=right){
-        //            temp[t++] = arr[l]<=arr[r] ? arr[l++] : arr[r++];
-        //        }
+        /*
+         while(l<=mid && r<=right){
+         temp[t++] = arr[l]<=arr[r] ? arr[l++] : arr[r++];
+         }*/
 
         // 如果第一个序列未检测完，直接将后面所有元素加到合并的序列中
         while (l <= mid) {

@@ -3,8 +3,9 @@ package action.iterator.iterator_l;
 import java.util.Iterator;
 
 /**
+ * 列表结构迭代器
+ *
  * @author lingwh
- * @desc 列表结构迭代器
  * @date 2019/9/23 10:40
  */
 public class ListStructureIterator implements Iterator {

@@ -1,8 +1,9 @@
 package org.bluebridge.java8.chapter_01_interface.chapter_02_functional_interface;
 
 /**
+ * 实现函数式接口中的抽象方法
+ *
  * @author lingwh
- * @desc 实现函数式接口中的抽象方法
  * @date 2025/12/2 15:22
  */
 public class MyFunctionalInterfaceImpl implements MyFunctionalInterface {

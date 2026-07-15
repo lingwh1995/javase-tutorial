@@ -1,11 +1,13 @@
 package linkedlist.linkedlist_b;
 
 /**
+ * 英雄节点测试
+ *
  * @author lingwh
- * @desc 英雄节点测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeroNodeTest {
+
     public static void main(String[] args) {
         Node songjiang = new Node(1, "宋江", "及时雨");
         Node chaogai = new Node(2, "晁盖", "托塔天王");
@@ -61,15 +63,15 @@ public class HeroNodeTest {
         // 合并链表
         System.out.println("------------------------合并链表---------------------------");
         // 上面的节点的next已经不为空了，不可以继续使用了
-        //        Node songj = new Node(1, "宋江", "及时雨");
-        //        Node chaog = new Node(2, "晁盖", "托塔天王");
-        //        HeroLinkedList l1 = new HeroLinkedList();
-        //        l1.add(songj);
-        //        HeroLinkedList l2 = new HeroLinkedList();
-        //        l2.add(chaog);
-        //        HeroLinkedList merge = l1.merge(l1, l2);
-        //        System.out.println(l1.size());
-        //        merge.list();
+        // Node songj = new Node(1, "宋江", "及时雨");
+        // Node chaog = new Node(2, "晁盖", "托塔天王");
+        // HeroLinkedList l1 = new HeroLinkedList();
+        // l1.add(songj);
+        // HeroLinkedList l2 = new HeroLinkedList();
+        // l2.add(chaog);
+        // HeroLinkedList merge = l1.merge(l1, l2);
+        // System.out.println(l1.size());
+        // merge.list();
 
     }
 }

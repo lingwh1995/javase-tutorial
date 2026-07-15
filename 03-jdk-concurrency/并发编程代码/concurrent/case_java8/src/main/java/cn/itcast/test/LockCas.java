@@ -2,17 +2,19 @@ package cn.itcast.test;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
+ * 自旋锁CAS实现
+ *
  * @author lingwh
- * @desc 自旋锁CAS实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j(topic = "c.Test42")
 public class LockCas {
+
     // 0 没加锁
     // 1 加锁
     private AtomicInteger state = new AtomicInteger(0);

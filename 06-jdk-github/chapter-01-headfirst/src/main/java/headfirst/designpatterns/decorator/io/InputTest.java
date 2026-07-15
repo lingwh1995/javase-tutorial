@@ -3,11 +3,13 @@ package headfirst.designpatterns.decorator.io;
 import java.io.*;
 
 /**
+ * 输入测试
+ *
  * @author lingwh
- * @desc 输入测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class InputTest {
+
     public static void main(String[] args) throws IOException {
         int c;
         InputStream in = null;

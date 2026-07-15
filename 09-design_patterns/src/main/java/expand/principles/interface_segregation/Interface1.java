@@ -7,6 +7,7 @@ package expand.principles.interface_segregation;
  * @date 2019/8/7 14:57
  */
 public interface Interface1 {
+
     void operator1();
 
     void operator2();

@@ -5,11 +5,13 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * 列表结构
+ *
  * @author lingwh
- * @desc 列表结构
  * @date 2019/9/23 10:41
  */
 public class ListStructure implements Structure {
+
     private List<Person> personList;
 
     public ListStructure() {

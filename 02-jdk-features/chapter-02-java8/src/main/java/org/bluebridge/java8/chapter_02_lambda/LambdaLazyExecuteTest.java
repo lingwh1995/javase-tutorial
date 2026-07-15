@@ -3,8 +3,9 @@ package org.bluebridge.java8.chapter_02_lambda;
 import org.junit.Test;
 
 /**
+ * lambda表达式的延迟执行特性
+ *
  * @author lingwh
- * @desc lambda表达式的延迟执行特性
  * @date 2025/12/2 17:34
  */
 public class LambdaLazyExecuteTest {

@@ -1,17 +1,20 @@
 package structure.decorator.decorator_i.decorator;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import structure.decorator.decorator_i.domain.SaleModel;
 import structure.decorator.decorator_i.service.IGoodsSaleService;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
+ * 实现日志装饰器
+ *
  * @author lingwh
- * @desc 实现日志装饰器
  * @date 2019/8/7 9:48
  */
 public class LogDecorator extends Decorator {
+
     public LogDecorator(IGoodsSaleService goodsSaleService) {
         super(goodsSaleService);
     }

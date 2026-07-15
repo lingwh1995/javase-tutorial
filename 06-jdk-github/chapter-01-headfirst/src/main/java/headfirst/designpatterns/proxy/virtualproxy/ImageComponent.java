@@ -4,11 +4,13 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 图片组件
+ *
  * @author lingwh
- * @desc 图片组件
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 class ImageComponent extends JComponent {
+
     private static final long serialVersionUID = 1L;
     private Icon icon;
 

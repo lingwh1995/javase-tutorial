@@ -5,13 +5,15 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * 赫夫曼树
+ *
  * @author lingwh
- * @desc 赫夫曼树
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HuffmanTree {
+
     public static void main(String[] args) {
-        int arr[] = {13, 7, 8, 3, 29, 6, 1};
+        int arr[] = { 13, 7, 8, 3, 29, 6, 1 };
         Node root = createufmanTree(arr);
         System.out.println("-------------------------");
         preOrder(root);
@@ -68,6 +70,7 @@ public class HuffmanTree {
 }
 
 class Node implements Comparable<Node> {
+
     // 节点权值
     int value;
     Node left;

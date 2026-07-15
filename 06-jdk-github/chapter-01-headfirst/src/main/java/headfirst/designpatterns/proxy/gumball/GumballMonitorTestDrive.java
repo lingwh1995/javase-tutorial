@@ -3,9 +3,10 @@ package headfirst.designpatterns.proxy.gumball;
 import java.rmi.*;
 
 /**
+ * 糖果机监控器测试类
+ *
  * @author lingwh
- * @desc 糖果机监控器测试类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GumballMonitorTestDrive {
 

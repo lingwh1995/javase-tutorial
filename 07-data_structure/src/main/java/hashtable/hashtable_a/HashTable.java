@@ -1,9 +1,10 @@
 package hashtable.hashtable_a;
 
 /**
+ * 哈希表
+ *
  * @author lingwh
- * @desc 哈希表
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HashTable {
 
@@ -110,6 +111,7 @@ class Employee {
 }
 
 class EmployeeLinkedList {
+
     /**
      * 头指针，指向第一个Employee默认为null
      */

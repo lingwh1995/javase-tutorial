@@ -1,8 +1,9 @@
 package action.strategy.strategy_d;
 
 /**
+ * 大客户:打8折
+ *
  * @author lingwh
- * @desc 大客户:打8折
  * @date 2019/8/2 15:12
  */
 public class LargeCustomerPriceStrategy implements PriceStragegy {

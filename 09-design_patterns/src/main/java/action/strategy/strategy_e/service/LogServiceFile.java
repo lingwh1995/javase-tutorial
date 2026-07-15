@@ -1,8 +1,9 @@
 package action.strategy.strategy_e.service;
 
 /**
+ * 文件日志服务
+ *
  * @author lingwh
- * @desc 文件日志服务
  * @date 2019/8/5 9:27
  */
 public class LogServiceFile implements ILogService {

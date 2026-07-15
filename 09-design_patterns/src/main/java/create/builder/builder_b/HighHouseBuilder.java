@@ -1,11 +1,13 @@
 package create.builder.builder_b;
 
 /**
+ * 高楼建造者
+ *
  * @author lingwh
- * @desc 高楼建造者
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HighHouseBuilder extends AbstractHouseBuilder {
+
     @Override
     public void buildBasic() {
         house.setBasic("地基50米");

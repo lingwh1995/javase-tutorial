@@ -1,11 +1,13 @@
 package headfirst.designpatterns.command.remote;
 
 /**
+ * 客厅灯开启命令
+ *
  * @author lingwh
- * @desc 客厅灯开启命令
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class LivingroomLightOnCommand implements Command {
+
     Light light;
 
     public LivingroomLightOnCommand(Light light) {

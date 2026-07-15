@@ -6,15 +6,17 @@ import java.util.Arrays;
 import java.util.concurrent.FutureTask;
 
 /**
+ * 性能基准测试
+ *
  * @author lingwh
- * @desc 性能基准测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Fork(1)
 @BenchmarkMode(Mode.AverageTime)
 @Warmup(iterations=3)
 @Measurement(iterations=5)
 public class MyBenchmark {
+
     static int[] ARRAY = new int[1000_000_00];
     static {
         Arrays.fill(ARRAY, 1);

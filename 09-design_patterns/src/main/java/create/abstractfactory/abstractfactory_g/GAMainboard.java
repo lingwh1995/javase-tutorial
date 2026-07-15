@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
+ * 技嘉的主板
+ *
  * @author lingwh
- * @desc 技嘉的主板
  * @date 2019/9/4 9:47
  */
 public class GAMainboard implements MainboardApi {

@@ -1,11 +1,13 @@
 package headfirst.designpatterns.composite.menu;
 
 /**
+ * 菜单项
+ *
  * @author lingwh
- * @desc 菜单项
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MenuItem extends MenuComponent {
+
     String name;
     String description;
     boolean vegetarian;

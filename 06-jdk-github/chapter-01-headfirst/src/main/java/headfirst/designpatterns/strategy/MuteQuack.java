@@ -1,11 +1,13 @@
 package headfirst.designpatterns.strategy;
 
 /**
+ * 不叫
+ *
  * @author lingwh
- * @desc 不叫
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MuteQuack implements QuackBehavior {
+
     public void quack() {
         System.out.println("<< Silence >>");
     }

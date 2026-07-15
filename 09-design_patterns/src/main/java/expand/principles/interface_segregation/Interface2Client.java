@@ -2,7 +2,14 @@ package expand.principles.interface_segregation;
 
 import org.junit.Test;
 
+/**
+ * 调用Interface2的客户端
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
+ */
 public class Interface2Client {
+
     /**
      * 测试A2通过接口Interface2A,Interface2B依赖B2
      */

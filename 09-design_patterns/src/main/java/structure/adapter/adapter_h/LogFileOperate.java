@@ -4,8 +4,9 @@ import java.io.*;
 import java.util.List;
 
 /**
+ * 日志文件操作实现
+ *
  * @author lingwh
- * @desc 日志文件操作实现
  * @date 2019/8/8 13:32
  */
 public class LogFileOperate implements LogFileOperateApi {

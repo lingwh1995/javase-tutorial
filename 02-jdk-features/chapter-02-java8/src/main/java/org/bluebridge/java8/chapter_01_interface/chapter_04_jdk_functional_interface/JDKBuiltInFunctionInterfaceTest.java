@@ -1,18 +1,20 @@
 package org.bluebridge.java8.chapter_01_interface.chapter_04_jdk_functional_interface;
 
-import java.util.*;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.FutureTask;
-import java.util.function.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.junit.Test;
 
+import java.util.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
+import java.util.function.*;
+
 /**
+ * JDK中内置的函数式接口测试
+ *
  * @author lingwh
- * @desc JDK中内置的函数式接口测试
  * @date 2025/12/2 16:20
  */
 public class JDKBuiltInFunctionInterfaceTest {

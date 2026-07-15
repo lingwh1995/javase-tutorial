@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_b;
 
 /**
+ * 乘法工厂
+ *
  * @author lingwh
- * @desc 乘法工厂
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MulFactory extends OperationFactory {
+
     @Override
     protected Operation createOperation() {
         System.out.println("乘法工厂类...");

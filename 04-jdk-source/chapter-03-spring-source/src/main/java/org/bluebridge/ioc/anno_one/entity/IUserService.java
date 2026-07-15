@@ -1,10 +1,12 @@
 package org.bluebridge.ioc.anno_one.entity;
 
 /**
+ * 用户服务接口
+ *
  * @author lingwh
- * @desc 用户服务接口
- * @date 2019/3/20 00:00
+ * @date 2026/4/21 19:02
  */
 public interface IUserService {
+
     void say();
 }

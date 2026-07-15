@@ -1,8 +1,9 @@
 package action.command.command_d;
 
 /**
+ * 技嘉主板类，开机命令的真正实现者，在Command模式中充当Receiver
+ *
  * @author lingwh
- * @desc 技嘉主板类，开机命令的真正实现者，在Command模式中充当Receiver
  * @date 2019/8/5 10:52
  */
 public class GigaMainBoard implements MainBoardApi {

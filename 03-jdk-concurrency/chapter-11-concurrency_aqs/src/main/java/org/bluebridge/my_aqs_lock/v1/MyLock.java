@@ -5,9 +5,10 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
 /**
+ * 自定义锁
+ *
  * @author lingwh
- * @desc 自定义锁
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MyLock implements Lock {
 

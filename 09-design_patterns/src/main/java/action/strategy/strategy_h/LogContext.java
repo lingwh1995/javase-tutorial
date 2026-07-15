@@ -1,8 +1,9 @@
 package action.strategy.strategy_h;
 
 /**
+ * 日志记录的上下文
+ *
  * @author lingwh
- * @desc 日志记录的上下文
  * @date 2019/8/29 9:07
  */
 public class LogContext {

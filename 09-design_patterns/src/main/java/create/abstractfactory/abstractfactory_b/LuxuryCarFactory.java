@@ -1,9 +1,10 @@
 package create.abstractfactory.abstractfactory_b;
 
 /**
+ * 豪华汽车工厂
+ *
  * @author lingwh
- * @desc 豪华汽车工厂
- * @date 2019/3/11 00:00
+ * @date 2026/4/21 19:02
  */
 public class LuxuryCarFactory implements CarFactory {
 

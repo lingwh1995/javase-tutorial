@@ -1,12 +1,14 @@
 package org.bluebridge;
 
 import com.formdev.flatlaf.FlatDarkLaf;
+
 import java.awt.*;
 import javax.swing.*;
 
 /**
+ * FlatLaf深色主题示例
+ *
  * @author lingwh
- * @desc FlatLaf深色主题示例
  * @date 2026/1/22 15:02
  */
 public class HelloWorld {

@@ -3,8 +3,9 @@ package org.bluebridge.getter_and_setter.getter_and_setter;
 import org.junit.Test;
 
 /**
+ * 测试@Getter注解和@Setter注解
+ *
  * @author lingwh
- * @desc 测试@Getter注解和@Setter注解
  * @date 2025/8/18 11:54
  */
 public class GetterAndSetterAnnoTest {

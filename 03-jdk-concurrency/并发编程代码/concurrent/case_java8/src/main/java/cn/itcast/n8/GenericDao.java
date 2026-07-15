@@ -8,7 +8,14 @@ import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
 import java.util.*;
 
+/**
+ * 通用DAO
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
+ */
 public class GenericDao {
+
     static String URL = "jdbc:mysql://localhost:3306/test";
     static String USERNAME = "root";
     static String PASSWORD = "root";

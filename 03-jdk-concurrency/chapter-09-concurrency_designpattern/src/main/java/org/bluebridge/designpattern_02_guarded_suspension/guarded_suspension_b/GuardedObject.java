@@ -1,11 +1,13 @@
 package org.bluebridge.designpattern_02_guarded_suspension.guarded_suspension_b;
 
 /**
+ * 关联对象-GuardedObject
+ *
  * @author lingwh
- * @desc 关联对象-GuardedObject
- * @date 2025/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GuardedObject {
+
     // 结果
     private Object response;
 

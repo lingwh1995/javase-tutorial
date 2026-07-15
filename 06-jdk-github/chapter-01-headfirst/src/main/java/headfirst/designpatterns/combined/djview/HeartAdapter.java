@@ -1,28 +1,34 @@
 package headfirst.designpatterns.combined.djview;
 
 /**
+ * 心跳适配器
+ *
  * @author lingwh
- * @desc 心跳适配器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeartAdapter implements BeatModelInterface {
+
     HeartModelInterface heart;
 
     public HeartAdapter(HeartModelInterface heart) {
         this.heart = heart;
     }
 
-    public void initialize() {}
+    public void initialize() {
+    }
 
-    public void on() {}
+    public void on() {
+    }
 
-    public void off() {}
+    public void off() {
+    }
 
     public int getBPM() {
         return heart.getHeartRate();
     }
 
-    public void setBPM(int bpm) {}
+    public void setBPM(int bpm) {
+    }
 
     public void registerObserver(BeatObserver o) {
         heart.registerObserver(o);

@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
+ * 微星的主板
+ *
  * @author lingwh
- * @desc 微星的主板
  * @date 2019/9/4 9:47
  */
 public class MSIMainboard implements MainboardApi {

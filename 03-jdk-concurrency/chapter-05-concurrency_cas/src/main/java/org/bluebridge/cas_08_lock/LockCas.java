@@ -3,9 +3,10 @@ package org.bluebridge.cas_08_lock;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 基于CAS实现的锁
+ *
  * @author lingwh
- * @desc 基于CAS实现的锁
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class LockCas {
 

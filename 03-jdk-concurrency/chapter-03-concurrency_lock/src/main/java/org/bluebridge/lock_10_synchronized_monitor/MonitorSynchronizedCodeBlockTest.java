@@ -31,8 +31,7 @@ package org.bluebridge.lock_10_synchronized_monitor;
  * 3. 可以观察到同步代码块中通过 monitorenter 和 monitorexit 实现同步
  *
  * @author lingwh
- * @desc 同步代码块Monitor测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MonitorSynchronizedCodeBlockTest {
 

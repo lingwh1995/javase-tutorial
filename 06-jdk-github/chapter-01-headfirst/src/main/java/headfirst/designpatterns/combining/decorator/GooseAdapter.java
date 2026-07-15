@@ -1,11 +1,13 @@
 package headfirst.designpatterns.combining.decorator;
 
 /**
+ * 鹅适配器
+ *
  * @author lingwh
- * @desc 鹅适配器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GooseAdapter implements Quackable {
+
     Goose goose;
 
     public GooseAdapter(Goose goose) {

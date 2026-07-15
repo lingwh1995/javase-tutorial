@@ -1,14 +1,16 @@
 package structure.bridge.bridge_e;
 
 /**
+ * 邮件类型的消息
+ *
  * @author lingwh
- * @desc 邮件类型的消息
  * @date 2019/7/24 13:45
  */
 public class MessageEmail implements MessageImplementor {
+
     /**
      * @param message 要发送的消息内容
-     * @param toUser 接收消息的用户
+     * @param toUser  接收消息的用户
      */
     @Override
     public void send(String message, String toUser) {

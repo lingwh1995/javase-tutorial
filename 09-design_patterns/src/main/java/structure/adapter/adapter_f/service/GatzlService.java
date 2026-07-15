@@ -3,7 +3,14 @@ package structure.adapter.adapter_f.service;
 import structure.adapter.adapter_f.dao.GatzlDao;
 import structure.adapter.adapter_f.domain.Gatzl;
 
+/**
+ * 公安厅指令服务实现
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
+ */
 public class GatzlService implements IGatzlService {
+
     private GatzlDao gatzlDao = new GatzlDao();
 
     @Override

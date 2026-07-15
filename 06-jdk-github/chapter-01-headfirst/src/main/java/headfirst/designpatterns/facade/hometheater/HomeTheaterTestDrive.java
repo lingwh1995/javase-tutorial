@@ -1,11 +1,13 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
+ * 家庭影院测试
+ *
  * @author lingwh
- * @desc 家庭影院测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HomeTheaterTestDrive {
+
     public static void main(String[] args) {
         Amplifier amp = new Amplifier("Top-O-Line Amplifier");
         Tuner tuner = new Tuner("Top-O-Line AM/FM Tuner", amp);
@@ -16,8 +18,7 @@ public class HomeTheaterTestDrive {
         Screen screen = new Screen("Theater Screen");
         PopcornPopper popper = new PopcornPopper("Popcorn Popper");
 
-        HomeTheaterFacade homeTheater =
-                new HomeTheaterFacade(amp, tuner, dvd, cd, projector, screen, lights, popper);
+        HomeTheaterFacade homeTheater = new HomeTheaterFacade(amp, tuner, dvd, cd, projector, screen, lights, popper);
 
         homeTheater.watchMovie("Raiders of the Lost Ark");
         homeTheater.endMovie();

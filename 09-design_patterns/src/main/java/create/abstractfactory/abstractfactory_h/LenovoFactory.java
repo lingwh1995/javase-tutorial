@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_h;
 
 /**
+ * 装机方案二:组装联想电脑 联想工厂:组装联想电脑，联想电脑搭载 AMD CPU和微星主板
+ *
  * @author lingwh
- * @desc 装机方案二:组装联想电脑 联想工厂:组装联想电脑，联想电脑搭载 AMD CPU和微星主板
  * @date 2019/8/7 14:52
  */
 public class LenovoFactory implements AbstractFactory {

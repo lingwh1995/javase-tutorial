@@ -8,8 +8,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
+ * JavaFX入门示例
+ *
  * @author lingwh
- * @desc JavaFX入门示例
  * @date 2025/8/4 18:28
  */
 public class HelloWorld extends Application {

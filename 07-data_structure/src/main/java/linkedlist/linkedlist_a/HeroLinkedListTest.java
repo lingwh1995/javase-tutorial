@@ -1,11 +1,13 @@
 package linkedlist.linkedlist_a;
 
 /**
+ * 测试英雄链表
+ *
  * @author lingwh
- * @desc 测试英雄链表
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeroLinkedListTest {
+
     public static void main(String[] args) {
         // 宋江
         Node songjiang = new Node(1, "宋江", "及时雨");

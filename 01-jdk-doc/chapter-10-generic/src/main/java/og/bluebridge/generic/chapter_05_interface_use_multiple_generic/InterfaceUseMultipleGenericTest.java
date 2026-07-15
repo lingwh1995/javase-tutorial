@@ -3,9 +3,10 @@ package og.bluebridge.generic.chapter_05_interface_use_multiple_generic;
 import org.junit.Test;
 
 /**
+ * 接口使用多个泛型测试
+ *
  * @author lingwh
- * @desc 接口使用多个泛型测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class InterfaceUseMultipleGenericTest {
 

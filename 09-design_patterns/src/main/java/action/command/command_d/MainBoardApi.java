@@ -1,11 +1,13 @@
 package action.command.command_d;
 
 /**
+ * 主板接口
+ *
  * @author lingwh
- * @desc 主板接口
  * @date 2019/8/5 10:52
  */
 public interface MainBoardApi {
+
     /**
      * 主板具有能开机的功能
      */

@@ -11,12 +11,14 @@ import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
+ * 监控控制器
+ *
  * @author lingwh
- * @desc 监控控制器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @RestController
 public class MonitorController {
+
     public static ArrayBlockingQueue<Info> QUEUE = new ArrayBlockingQueue(30);
 
     @Autowired

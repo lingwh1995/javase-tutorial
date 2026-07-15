@@ -3,8 +3,9 @@ package structure.decorator.decorator_i.service;
 import structure.decorator.decorator_i.domain.SaleModel;
 
 /**
+ * 商品销售类
+ *
  * @author lingwh
- * @desc 商品销售类
  * @date 2019/8/7 9:43
  */
 public class GoodsSaleService implements IGoodsSaleService {

@@ -1,21 +1,18 @@
 package headfirst.designpatterns.composite.menuiterator;
 
 /**
+ * 菜单测试驱动
+ *
  * @author lingwh
- * @desc 菜单测试驱动
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MenuTestDrive {
-	public static void main(String args[]) {
 
-		MenuComponent pancakeHouseMenu =
-			new Menu("PANCAKE HOUSE MENU", "Breakfast");
-		MenuComponent dinerMenu =
-			new Menu("DINER MENU", "Lunch");
-		MenuComponent cafeMenu =
-			new Menu("CAFE MENU", "Dinner");
-		MenuComponent dessertMenu =
-			new Menu("DESSERT MENU", "Dessert of course!");
+	public static void main(String args[]) {
+		MenuComponent pancakeHouseMenu = new Menu("PANCAKE HOUSE MENU", "Breakfast");
+		MenuComponent dinerMenu = new Menu("DINER MENU", "Lunch");
+		MenuComponent cafeMenu = new Menu("CAFE MENU", "Dinner");
+		MenuComponent dessertMenu = new Menu("DESSERT MENU", "Dessert of course!");
 
 		MenuComponent allMenus = new Menu("ALL MENUS", "All menus combined");
 
@@ -113,7 +110,6 @@ public class MenuTestDrive {
 		Waitress waitress = new Waitress(allMenus);
 
 		waitress.printVegetarianMenu();
-		//waitress.printMenu();
-
+		// waitress.printMenu();
 	}
 }

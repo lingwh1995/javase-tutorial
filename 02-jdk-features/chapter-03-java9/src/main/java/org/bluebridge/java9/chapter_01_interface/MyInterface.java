@@ -1,11 +1,13 @@
 package org.bluebridge.java9.chapter_01_interface;
 
 /**
+ * Java9接口方法示例
+ *
  * @author lingwh
- * @desc Java9接口方法示例
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public interface MyInterface {
+
     /**
      * 接口中的抽象方法
      */

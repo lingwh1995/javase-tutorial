@@ -4,11 +4,13 @@ import structure.adapter.adapter_e.dao.GatzlDao;
 import structure.adapter.adapter_e.domain.Gatzl;
 
 /**
+ * 公安厅指令Service
+ *
  * @author lingwh
- * @desc 公安厅指令Service
- * @date 2019/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GatzlService implements IGatzlService {
+
     private GatzlDao gatzlDao = new GatzlDao();
 
     @Override

@@ -1,8 +1,9 @@
 package action.mediator.mediator_c;
 
 /**
+ * 主板类，实现中介者接口
+ *
  * @author lingwh
- * @desc 主板类，实现中介者接口
  * @date 2019/8/14 13:14
  */
 public class MotherBoard implements Mediator {

@@ -1,8 +1,9 @@
 package org.bluebridge.java8.chapter_01_interface.chapter_02_functional_interface;
 
 /**
+ * 函数式接口是指只包含一个抽象方法的接口，注意：这意味着除了一个抽象方法外，接口还可以定义多个静态方法或多个默认方法。
+ *
  * @author lingwh
- * @desc 函数式接口是指只包含一个抽象方法的接口，注意：这意味着除了一个抽象方法外，接口还可以定义多个静态方法或多个默认方法。
  * @date 2025/12/2 15:18
  */
 @FunctionalInterface

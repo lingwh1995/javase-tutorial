@@ -3,11 +3,13 @@ package stack.stack_b;
 import java.util.NoSuchElementException;
 
 /**
+ * 链表模拟栈
+ *
  * @author lingwh
- * @desc 链表模拟栈
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class LinkedListStack {
+
     private SingleLinkedList singleLinkedList = new SingleLinkedList();
     private int elementIndex = 0;
 
@@ -128,11 +130,11 @@ class SingleLinkedList {
             return;
         }
         // 遍历实现方式一
-        //        Node tempNode = head.next;
-        //        while(tempNode != null){
-        //            System.out.println(tempNode);
-        //            tempNode = tempNode.next;
-        //        }
+        // Node tempNode = head.next;
+        // while(tempNode != null){
+        // System.out.println(tempNode);
+        // tempNode = tempNode.next;
+        // }
         // 遍历实现方式二
         Node tempNode = null;
         for (tempNode = head.next; tempNode != null; tempNode = tempNode.next) {
@@ -142,6 +144,7 @@ class SingleLinkedList {
 }
 
 class Node {
+
     protected int id;
     protected String data;
     protected Node next;

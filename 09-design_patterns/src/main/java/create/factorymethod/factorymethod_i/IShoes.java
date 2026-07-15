@@ -1,10 +1,12 @@
 package create.factorymethod.factorymethod_i;
 
 /**
+ * 鞋子接口
+ *
  * @author lingwh
- * @desc 鞋子接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface IShoes {
+
     void produce();
 }

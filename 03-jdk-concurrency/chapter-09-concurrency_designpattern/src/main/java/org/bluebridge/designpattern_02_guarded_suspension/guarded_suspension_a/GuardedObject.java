@@ -3,11 +3,13 @@ package org.bluebridge.designpattern_02_guarded_suspension.guarded_suspension_a;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
+ * 关联对象-GuardedObject
+ *
  * @author lingwh
- * @desc 关联对象-GuardedObject
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GuardedObject {
+
     // 结果
     private Object response;
 
@@ -20,7 +22,8 @@ public class GuardedObject {
      */
     public Object get() {
         synchronized (lock) {
-            System.out.println("Thread " + Thread.currentThread().getName() + " 锁状态 " + ClassLayout.parseInstance(lock).toPrintableSimple());
+            System.out.println("Thread " + Thread.currentThread().getName() + " 锁状态 "
+                    + ClassLayout.parseInstance(lock).toPrintableSimple());
             System.out.printf("进入此代码块说明当前线程%s获取到了锁......\n", Thread.currentThread().getName());
             // 没有结果则一直等待
             // 防止虚假唤醒
@@ -45,7 +48,8 @@ public class GuardedObject {
      */
     public void complete(Object response) {
         synchronized (lock) {
-            System.out.println("Thread " + Thread.currentThread().getName() + " 锁状态 " + ClassLayout.parseInstance(lock).toPrintableSimple());
+            System.out.println("Thread " + Thread.currentThread().getName() + " 锁状态 "
+                    + ClassLayout.parseInstance(lock).toPrintableSimple());
             System.out.printf("进入此代码块说明当前线程%s获取到了锁......\n", Thread.currentThread().getName());
             // 给成员变量赋值
             this.response = response;

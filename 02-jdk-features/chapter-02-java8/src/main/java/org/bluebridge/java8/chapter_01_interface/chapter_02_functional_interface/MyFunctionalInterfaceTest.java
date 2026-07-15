@@ -1,8 +1,9 @@
 package org.bluebridge.java8.chapter_01_interface.chapter_02_functional_interface;
 
 /**
+ * 函数式接口测试
+ *
  * @author lingwh
- * @desc 函数式接口测试
  * @date 2025/12/2 15:25
  */
 public class MyFunctionalInterfaceTest {

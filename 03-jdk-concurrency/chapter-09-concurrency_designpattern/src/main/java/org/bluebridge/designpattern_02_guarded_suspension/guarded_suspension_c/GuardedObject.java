@@ -1,9 +1,10 @@
 package org.bluebridge.designpattern_02_guarded_suspension.guarded_suspension_c;
 
 /**
+ * 关联对象-GuardedObject
+ *
  * @author lingwh
- * @desc 关联对象-GuardedObject
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GuardedObject {
 
@@ -48,7 +49,7 @@ public class GuardedObject {
                 }
 
                 // 求得经历时间
-                passedTime = System.currentTimeMillis() - begin; // 15:00:02  1s
+                passedTime = System.currentTimeMillis() - begin; // 15:00:02 1s
             }
             return response;
         }

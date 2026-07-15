@@ -1,11 +1,13 @@
 package action.command.command_g;
 
 /**
+ * 汽车库门
+ *
  * @author lingwh
- * @desc 汽车库门
  * @date 2019/9/4 14:15
  */
 public class GrageDoor {
+
     public void open() {
         System.out.println("汽车库门打开了......");
     }

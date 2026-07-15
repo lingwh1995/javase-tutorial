@@ -1,9 +1,10 @@
 package linkedlist.linkedlist_a;
 
 /**
+ * 链表模拟梁山108英雄排行榜
+ *
  * @author lingwh
- * @desc 链表模拟梁山108英雄排行榜
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeroLinkedList {
 
@@ -67,6 +68,7 @@ public class HeroLinkedList {
 }
 
 class Node {
+
     /**
      * 英雄编号
      */
@@ -90,7 +92,7 @@ class Node {
     /**
      * 构造方法
      *
-     * @param heroNo 英雄编号
+     * @param heroNo   英雄编号
      * @param heroName 英雄名称
      * @param nickName 英雄名称
      */

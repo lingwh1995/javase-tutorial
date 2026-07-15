@@ -1,13 +1,15 @@
 package search.insertsearch.insertValuesearch_a;
 
 /**
+ * 插值查找 要求数组是有序的
+ *
  * @author lingwh
- * @desc 插值查找 要求数组是有序的
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class InsertValueSearch {
+
     public static void main(String[] args) {
-        int[] arr = {1, 5, 8, 9, 15, 36, 45};
+        int[] arr = { 1, 5, 8, 9, 15, 36, 45 };
         int i = insetValueySearch(arr, 0, arr.length - 1, 99);
         System.out.println(i);
     }

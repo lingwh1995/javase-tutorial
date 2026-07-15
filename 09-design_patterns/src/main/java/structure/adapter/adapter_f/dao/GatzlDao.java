@@ -3,9 +3,10 @@ package structure.adapter.adapter_f.dao;
 import structure.adapter.adapter_f.domain.Gatzl;
 
 /**
+ * 公安厅指令Dao
+ *
  * @author lingwh
- * @desc 公安厅指令Dao
- * @date 2019/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GatzlDao {
 

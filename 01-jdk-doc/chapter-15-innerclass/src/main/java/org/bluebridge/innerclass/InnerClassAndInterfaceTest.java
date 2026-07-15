@@ -1,11 +1,13 @@
 package org.bluebridge.innerclass;
 
 /**
+ * 同时内部类实现一个接口
+ *
  * @author lingwh
- * @desc 同时内部类实现一个接口
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 14:37
  */
 public class InnerClassAndInterfaceTest {
+
     public static void main(String[] args) {
         new AA().test();
     }
@@ -19,25 +21,26 @@ interface A {
 
 class AA {
     // 接口中只有一个方法
-    //    public void test(){
-    //        new A(){
-    //            public void eat(){
-    //                System.out.println("eat...");
-    //            }
-    //        }.eat();
-    //    }
-
-     //接口中有多个方法
+    /*
      public void test(){
-         A a = new A(){
-             public void eat() {
-                 System.out.println("eat...");
-             }
+     new A(){
+     public void eat(){
+     System.out.println("eat...");
+     }
+     }.eat();
+     }*/
 
-             public void drink() {
-                 System.out.println("drink...");
-             }
-         };
+    // 接口中有多个方法
+    public void test() {
+        A a = new A() {
+            public void eat() {
+                System.out.println("eat...");
+            }
+
+            public void drink() {
+                System.out.println("drink...");
+            }
+        };
         a.eat();
         a.drink();
     }

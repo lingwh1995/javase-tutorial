@@ -3,12 +3,14 @@ package cn.itcast.monitor.vo;
 import lombok.Data;
 
 /**
+ * 监控信息
+ *
  * @author lingwh
- * @desc 监控信息
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Data
 public class Info {
+
     private long free;
     private long total;
     private long max;

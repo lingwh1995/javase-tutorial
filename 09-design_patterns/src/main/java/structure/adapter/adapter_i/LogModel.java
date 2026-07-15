@@ -3,8 +3,9 @@ package structure.adapter.adapter_i;
 import java.io.Serializable;
 
 /**
+ * 日志数据对象
+ *
  * @author lingwh
- * @desc 日志数据对象
  * @date 2019/8/8 13:28
  */
 public class LogModel implements Serializable {
@@ -62,8 +63,8 @@ public class LogModel implements Serializable {
     }
 
     @Override
-    public String toString(){
-        return "logId="+logId+",operateUser="+operateUser
-                +",operateTime="+operateTime+",logContent="+logContent;
+    public String toString() {
+        return "logId=" + logId + ",operateUser=" + operateUser
+                + ",operateTime=" + operateTime + ",logContent=" + logContent;
     }
 }

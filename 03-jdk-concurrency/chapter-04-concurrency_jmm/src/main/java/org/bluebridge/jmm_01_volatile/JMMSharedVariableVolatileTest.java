@@ -9,18 +9,18 @@ import java.util.concurrent.TimeUnit;
  * 2. volatile 仅仅保证了共享变量的可见性，让其它线程能够看到最新值，但不能解决指令交错问题（不能保证原 子性）
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class JMMSharedVariableVolatileTest {
 
     private static volatile boolean run = true;
 
     public static void main(String[] args) throws InterruptedException {
-        Thread t = new Thread(()->{
-            while(run){
+        Thread t = new Thread(() -> {
+            while (run) {
 
             }
-        },"t");
+        }, "t");
         t.start();
         TimeUnit.MILLISECONDS.sleep(1000);
         // 线程t不会如预想的停下来

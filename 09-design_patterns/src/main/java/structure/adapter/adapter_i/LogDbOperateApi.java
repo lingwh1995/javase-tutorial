@@ -3,13 +3,12 @@ package structure.adapter.adapter_i;
 import java.util.List;
 
 /**
- * @author lingwh
- * @desc 日志数据库操作接口
- * @date 2019/8/8 13:37
- */
-
-/**
+ * 日志数据库操作接口
+ *
  * 定义操作日志的应用接口，为了示例的简单，只是简单的定义了增删改查的方法
+ *
+ * @author lingwh
+ * @date 2019/8/8 13:37
  */
 public interface LogDbOperateApi {
 

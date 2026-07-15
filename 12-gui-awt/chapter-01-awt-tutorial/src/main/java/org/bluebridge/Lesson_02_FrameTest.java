@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 窗体的创建
+ *
  * @author lingwh
- * @desc 窗体的创建
  * @date 2025/8/4 18:17
  */
 public class Lesson_02_FrameTest {

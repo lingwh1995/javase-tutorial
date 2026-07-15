@@ -1,12 +1,14 @@
 package org.bluebridge.java8.chapter_01_interface.chapter_03_custom_functional_interface;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
+ * 自定义函数式接口测试
+ *
  * @author lingwh
- * @desc 自定义函数式接口测试
  * @date 2025/12/2 16:03
  */
 public class MyFunctionInterfaceTest {
@@ -27,7 +29,7 @@ public class MyFunctionInterfaceTest {
 
         MyFunctionInterface_5 myFunctionInterface5 = () -> {
             List<Student> students = new ArrayList<>();
-            students.add(new Student("李四",25));
+            students.add(new Student("李四", 25));
             return students;
         };
         System.out.println("myFunctionInterface5.op() = " + myFunctionInterface5.op());

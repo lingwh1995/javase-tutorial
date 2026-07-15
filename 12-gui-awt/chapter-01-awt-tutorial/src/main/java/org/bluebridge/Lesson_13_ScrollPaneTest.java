@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 带有滚动条的面板/滚动面板
+ *
  * @author lingwh
- * @desc 带有滚动条的面板/滚动面板
  * @date 2026/1/29 22:01
  */
 public class Lesson_13_ScrollPaneTest {

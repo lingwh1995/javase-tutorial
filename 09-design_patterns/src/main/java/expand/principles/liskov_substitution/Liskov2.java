@@ -10,9 +10,10 @@ package expand.principles.liskov_substitution;
  * 注意：本来B2继承了A2，可以直接调用父类A2中的方法，里氏替换原则修改代码后，B2不再继承A2，B2想要调用A2中的方法则可以通过依赖A2来实现调用
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Liskov2 {
+
     /**
      * 将A2和B2中的公用方法printHelloWorld()抽取到了Base中
      */

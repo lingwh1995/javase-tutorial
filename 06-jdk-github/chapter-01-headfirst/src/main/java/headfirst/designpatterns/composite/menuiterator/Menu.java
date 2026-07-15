@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
+ * 菜单
+ *
  * @author lingwh
- * @desc 菜单
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Menu extends MenuComponent {
+
     Iterator<MenuComponent> iterator = null;
     ArrayList<MenuComponent> menuComponents = new ArrayList<MenuComponent>();
     String name;

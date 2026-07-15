@@ -10,5 +10,6 @@ import java.util.Map;
  * @date 2019/9/24 9:23
  */
 public class MockDb {
+
     protected static Map<String, String> DB = new HashMap<>();
 }

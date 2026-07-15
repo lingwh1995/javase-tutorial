@@ -1,15 +1,17 @@
 package org.bluebridge.chapter_05_map;
 
+import org.junit.Test;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import org.junit.Test;
 
 /**
+ * Map集合常用方法测试
+ *
  * @author lingwh
- * @desc Map集合常用方法测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class MapTest {
 

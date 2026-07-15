@@ -1,12 +1,14 @@
 package org.bluebridge.hsqldb;
 
-import java.sql.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.sql.*;
+
 /**
+ * 测试hsqldb基本功能
+ *
  * @author lingwh
- * @desc 测试hsqldb基本功能
  * @date 2025/8/18 14:20
  */
 @Slf4j

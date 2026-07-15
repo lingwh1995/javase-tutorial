@@ -1,13 +1,15 @@
 package org.bluebridge.java8.chapter_06_collection;
 
-import java.util.*;
-import java.util.function.Function;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.util.*;
+import java.util.function.Function;
+
 /**
+ * Map的computeIfAbsent和computeIfPresent方法测试
+ *
  * @author lingwh
- * @desc Map的computeIfAbsent和computeIfPresent方法测试
  * @date 2025/12/2 11:18
  */
 @Slf4j
@@ -23,15 +25,15 @@ public class MapTest {
 
         // 传统方式
         /*
-        if(userMap.containsKey("admin")) {
-                userMap.put("employee", new ArrayList<>());
-        }
-        if(userMap.containsKey("employee")) {
-                userMap.put("employee", new ArrayList<>());
-        }
-        userMap.put("admin", Arrays.asList("超级管理员1", "超级管理员2"));
-        userMap.put("employee", Arrays.asList("雇员1", "雇员2"));
-        */
+         * if(userMap.containsKey("admin")) {
+         * userMap.put("employee", new ArrayList<>());
+         * }
+         * if(userMap.containsKey("employee")) {
+         * userMap.put("employee", new ArrayList<>());
+         * }
+         * userMap.put("admin", Arrays.asList("超级管理员1", "超级管理员2"));
+         * userMap.put("employee", Arrays.asList("雇员1", "雇员2"));
+         */
 
         // 使用 computeIfAbsent 简化代码
         userMap.computeIfAbsent("admin", k -> Arrays.asList("超级管理员1", "超级管理员2"));

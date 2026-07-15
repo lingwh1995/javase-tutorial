@@ -1,10 +1,12 @@
 package headfirst.designpatterns.collections.iterator;
 
 /**
+ * 菜单接口
+ *
  * @author lingwh
- * @desc 菜单接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface Menu {
+
     public Iterator createIterator();
 }

@@ -1,9 +1,10 @@
 package cn.itcast.n5;
 
 /**
+ * 初始化测试
+ *
  * @author lingwh
- * @desc 初始化测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Initialize {
 

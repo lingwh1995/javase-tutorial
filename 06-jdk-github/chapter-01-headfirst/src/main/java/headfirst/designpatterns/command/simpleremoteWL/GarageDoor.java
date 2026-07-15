@@ -1,13 +1,15 @@
 package headfirst.designpatterns.command.simpleremoteWL;
 
 /**
+ * 车库门
+ *
  * @author lingwh
- * @desc 车库门
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GarageDoor {
 
-    public GarageDoor() {}
+    public GarageDoor() {
+    }
 
     public void up() {
         System.out.println("Garage Door is Open");

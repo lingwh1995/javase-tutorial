@@ -3,11 +3,13 @@ package org.bluebridge.chapter_03_list;
 import java.util.LinkedList;
 
 /**
+ * LinkedList常用方法测试
+ *
  * @author lingwh
- * @desc LinkedList常用方法测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class LinkedListTest {
+
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<>();
         list.add("a");

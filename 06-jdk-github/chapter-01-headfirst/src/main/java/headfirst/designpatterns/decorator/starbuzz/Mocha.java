@@ -1,11 +1,13 @@
 package headfirst.designpatterns.decorator.starbuzz;
 
 /**
+ * 摩卡调料
+ *
  * @author lingwh
- * @desc 摩卡调料
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Mocha extends CondimentDecorator {
+
     public Mocha(Beverage beverage) {
         this.beverage = beverage;
     }

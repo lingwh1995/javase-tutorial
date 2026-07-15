@@ -4,11 +4,13 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
+ * CompareHellper接口的其中一种实现. 用于处理Integer类型.
+ *
  * @author lingwh
- * @desc CompareHellper接口的其中一种实现. 用于处理Integer类型.
  * @date 2019/9/24 17:40
  */
 public class IntegerCompareHelper extends UnicastRemoteObject implements CompareHelper<Integer> {
+
     protected IntegerCompareHelper() throws RemoteException {}
 
     @Override

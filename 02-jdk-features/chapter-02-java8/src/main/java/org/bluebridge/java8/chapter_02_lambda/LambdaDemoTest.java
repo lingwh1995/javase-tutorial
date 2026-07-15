@@ -1,16 +1,18 @@
 package org.bluebridge.java8.chapter_02_lambda;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.IntBinaryOperator;
 import java.util.function.IntPredicate;
-import org.junit.Test;
 
 /**
+ * lambda表达式案例
+ *
  * @author lingwh
- * @desc lambda表达式案例
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class LambdaDemoTest {
 
@@ -36,18 +38,18 @@ public class LambdaDemoTest {
 			System.out.println("Thread2 is running......");
 		}).start();
 
-        /**
-         * 使用lambda函数创建线程(简写形式)
-         */
-        new Thread(() -> System.out.println("Thread2 is running......")).start();
+		/**
+		 * 使用lambda函数创建线程(简写形式)
+		 */
+		new Thread(() -> System.out.println("Thread2 is running......")).start();
 
-        /**
-         * 使用lambda函数创建线程(创建线程和调用分开写)
-         */
-        Runnable t3 = () -> System.out.println("Thread3 is running......");
-        // 注意：这里调用要用run()方法
-        t3.run();
-    }
+		/**
+		 * 使用lambda函数创建线程(创建线程和调用分开写)
+		 */
+		Runnable t3 = () -> System.out.println("Thread3 is running......");
+		// 注意：这里调用要用run()方法
+		t3.run();
+	}
 
 	/**
 	 * 测试使用匿名内部类方式和lambda方式调用参数为 IntBinaryOperator 接口方法
@@ -86,64 +88,64 @@ public class LambdaDemoTest {
 		System.out.println("使用lambda方式调用(简写形式):" + result);
 	}
 
-    /**
-     * 这个方法的参数是一个接口
-     *
-     * @param operator
-     * @return
-     */
-    public static int calculateNum(IntBinaryOperator operator) {
-        return operator.applyAsInt(10, 20);
-    }
+	/**
+	 * 这个方法的参数是一个接口
+	 *
+	 * @param operator
+	 * @return
+	 */
+	public static int calculateNum(IntBinaryOperator operator) {
+		return operator.applyAsInt(10, 20);
+	}
 
-    @Test
-    public void testFilter() {
-        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        // 筛选数组中大于5的数字
-        List<Integer> numsGT5 = filterGT5(nums);
-        System.out.println("numsGT5 = " + numsGT5);
-        // 筛选数组中小于等于5的数字
-        List<Integer> numsLE5 = filterLE5(nums);
-        System.out.println("numsLE5 = " + numsLE5);
+	@Test
+	public void testFilter() {
+		int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		// 筛选数组中大于5的数字
+		List<Integer> numsGT5 = filterGT5(nums);
+		System.out.println("numsGT5 = " + numsGT5);
+		// 筛选数组中小于等于5的数字
+		List<Integer> numsLE5 = filterLE5(nums);
+		System.out.println("numsLE5 = " + numsLE5);
 
-        // 使用lambda实现函数行为参数化
-        filterNum(num -> num > 5 ? true : false);
+		// 使用lambda实现函数行为参数化
+		filterNum(num -> num > 5 ? true : false);
 
-        // 使用lambda实现函数行为参数化
-        filterNum(num -> num <= 5 ? true : false);
-    }
+		// 使用lambda实现函数行为参数化
+		filterNum(num -> num <= 5 ? true : false);
+	}
 
-    /**
-     * 过滤出大于5的值
-     *
-     * @param nums
-     * @return
-     */
-    public List<Integer> filterGT5(int[] nums) {
-        List<Integer> result = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] > 5) {
-                result.add(nums[i]);
-            }
-        }
-        return result;
-    }
+	/**
+	 * 过滤出大于5的值
+	 *
+	 * @param nums
+	 * @return
+	 */
+	public List<Integer> filterGT5(int[] nums) {
+		List<Integer> result = new ArrayList<>();
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] > 5) {
+				result.add(nums[i]);
+			}
+		}
+		return result;
+	}
 
-    /**
-     * 过滤出小于等于5的数
-     *
-     * @param nums
-     * @return
-     */
-    public List<Integer> filterLE5(int[] nums) {
-        List<Integer> result = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] <= 5) {
-                result.add(nums[i]);
-            }
-        }
-        return result;
-    }
+	/**
+	 * 过滤出小于等于5的数
+	 *
+	 * @param nums
+	 * @return
+	 */
+	public List<Integer> filterLE5(int[] nums) {
+		List<Integer> result = new ArrayList<>();
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] <= 5) {
+				result.add(nums[i]);
+			}
+		}
+		return result;
+	}
 
 	/**
 	 * 测试使用匿名内部类方式和lambda方式调用参数为 IntBinaryOperator 接口方法
@@ -167,26 +169,26 @@ public class LambdaDemoTest {
 			return value % 2 == 0;
 		});
 
-        /**
-         * 使用lambda方式调用(最简写形式：省略大括号和return关键字)
-         */
-        filterNum(value -> value % 2 == 0);
-    }
+		/**
+		 * 使用lambda方式调用(最简写形式：省略大括号和return关键字)
+		 */
+		filterNum(value -> value % 2 == 0);
+	}
 
-    /**
-     * 这个方法的参数是一个接口
-     *
-     * @param predicate
-     * @return
-     */
-    public static void filterNum(IntPredicate predicate) {
-        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for (int num : nums) {
-            if (predicate.test(num)) {
-                System.out.println(num);
-            }
-        }
-    }
+	/**
+	 * 这个方法的参数是一个接口
+	 *
+	 * @param predicate
+	 * @return
+	 */
+	public static void filterNum(IntPredicate predicate) {
+		int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		for (int num : nums) {
+			if (predicate.test(num)) {
+				System.out.println(num);
+			}
+		}
+	}
 
 	/**
 	 * 测试Comparator
@@ -222,7 +224,7 @@ public class LambdaDemoTest {
 		/**
 		 * 使用方法引用方式调用(最简写形式)
 		 */
-		comparator = Integer :: compare;
+		comparator = Integer::compare;
 		result = comparator.compare(20, 10);
 		System.out.println(result);
 	}

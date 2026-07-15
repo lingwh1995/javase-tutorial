@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 表格布局案例四 - 上半部分面板设定为流式布局，下半部分面板设定为网格布局
+ *
  * @author lingwh
- * @desc 表格布局案例四 - 上半部分面板设定为流式布局，下半部分面板设定为网格布局
  * @date 2026/1/29 21:06
  */
 public class Lesson_12_GridLayout_Demo_4 {

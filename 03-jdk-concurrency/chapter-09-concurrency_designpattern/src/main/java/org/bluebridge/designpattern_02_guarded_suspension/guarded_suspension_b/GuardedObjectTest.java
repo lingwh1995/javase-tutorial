@@ -3,9 +3,10 @@ package org.bluebridge.designpattern_02_guarded_suspension.guarded_suspension_b;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 测试保护性暂停模式
+ *
  * @author lingwh
- * @desc 测试保护性暂停模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GuardedObjectTest {
 
@@ -21,10 +22,10 @@ public class GuardedObjectTest {
         new Thread(() -> {
             System.out.println("执行下载......");
             try {
-                //在等待时间内
+                // 在等待时间内
                 TimeUnit.MILLISECONDS.sleep(1000);
-                //超时的情况
-                //TimeUnit.MILLISECONDS.sleep(3000);
+                // 超时的情况
+                // TimeUnit.MILLISECONDS.sleep(3000);
                 guardeObject.complete(new Object());
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);

@@ -3,15 +3,17 @@ package org.bluebridge.thread.thread_designpattern.thread_pre_message.thread_pre
 import java.util.Random;
 
 /**
+ * Thread-Per-Message 模式消息处理器
+ *
  * @author lingwh
- * @desc Thread-Per-Message 模式消息处理器
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class MessageHandler {
+
     private static final Random random = new Random(System.currentTimeMillis());
 
-    public void request(Message message){
-        new Thread(()->{
+    public void request(Message message) {
+        new Thread(() -> {
             String value = message.getValue();
             try {
                 Thread.sleep(random.nextInt(1000));

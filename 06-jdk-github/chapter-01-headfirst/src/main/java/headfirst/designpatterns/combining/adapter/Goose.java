@@ -1,11 +1,13 @@
 package headfirst.designpatterns.combining.adapter;
 
 /**
+ * 鹅
+ *
  * @author lingwh
- * @desc 鹅
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Goose {
+
     public void honk() {
         System.out.println("Honk");
     }

@@ -4,9 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
+ * 监控应用启动类
+ *
  * @author lingwh
- * @desc 监控应用启动类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @SpringBootApplication
 public class MonitorApplication {

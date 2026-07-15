@@ -3,13 +3,15 @@ package sort.HeapSort.heapsort_a;
 import java.util.Arrays;
 
 /**
+ * 堆排序
+ *
  * @author lingwh
- * @desc 堆排序
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeapSort {
+
     public static void main(String[] args) {
-        int[] arr = {4, 6, 8, 5, 9};
+        int[] arr = { 4, 6, 8, 5, 9 };
         heapSort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -17,10 +19,10 @@ public class HeapSort {
     public static void heapSort(int[] arr) {
         System.out.println("堆排序~");
         // 分步骤完成
-        //        adjustHeap(arr,1,arr.length);
-        //        System.out.println(Arrays.toString(arr));
-        //        adjustHeap(arr,0,arr.length);
-        //        System.out.println(Arrays.toString(arr));
+        // adjustHeap(arr,1,arr.length);
+        // System.out.println(Arrays.toString(arr));
+        // adjustHeap(arr,0,arr.length);
+        // System.out.println(Arrays.toString(arr));
 
         // 最终代码
         // 将无序数组构造成一个大顶堆
@@ -40,8 +42,8 @@ public class HeapSort {
 
     /**
      *
-     * @param arr 待调整的数组
-     * @param i 表示非叶子节点在数组中的索引
+     * @param arr    待调整的数组
+     * @param i      表示非叶子节点在数组中的索引
      * @param length 表示多少个元素继续调整，length在逐渐减少
      */
     public static void adjustHeap(int[] arr, int i, int length) {

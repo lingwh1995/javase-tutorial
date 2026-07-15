@@ -5,11 +5,13 @@ import java.io.IOException;
 import java.io.Writer;
 
 /**
+ * 自定义FilterWriter的子类LineNumberWriter，用于在写入文本时添加行号
+ *
  * @author lingwh
- * @desc 自定义FilterWriter的子类LineNumberWriter，用于在写入文本时添加行号
  * @date 2025/8/29 13:57
  */
 public class MyLineNumberWriter extends FilterWriter {
+
     private long lineNumber = 0;
     private boolean isFirstChar = true;
     // 行号宽度
@@ -81,8 +83,8 @@ public class MyLineNumberWriter extends FilterWriter {
      * 写入字符数组的一部分
      *
      * @param cbuf 字符数组
-     * @param off 起始位置
-     * @param len 写入长度
+     * @param off  起始位置
+     * @param len  写入长度
      * @throws IOException IO异常
      */
     @Override

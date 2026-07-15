@@ -1,17 +1,18 @@
 package org.bluebridge.chapter_05_map;
 
+import org.junit.Test;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import org.junit.Test;
 
 /**
  * HashMap常用方法测试
  * 哈希表的作用是保证键的唯一性：hash结构底层依赖hashCode()和equals(),去重要重写hashCode()和equals()方法
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class HashMapTest {
 
@@ -81,6 +82,7 @@ public class HashMapTest {
 }
 
 class Pig {
+
     private String name;
     private Integer age;
 

@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 马苏里拉奶酪
+ *
  * @author lingwh
- * @desc 马苏里拉奶酪
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MozzarellaCheese implements Cheese {
 

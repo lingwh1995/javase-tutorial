@@ -3,11 +3,13 @@ package action.iterator.iterator_b;
 import java.util.List;
 
 /**
+ * 信息工程学院:元素存放在集合中
+ *
  * @author lingwh
- * @desc 信息工程学院:元素存放在集合中
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class InformationCollegeIterator implements Iterator {
+
     private List<Department> departments;
     private int index = -1;
 

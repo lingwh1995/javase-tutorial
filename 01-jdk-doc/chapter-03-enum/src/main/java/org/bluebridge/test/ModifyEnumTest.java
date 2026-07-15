@@ -4,9 +4,10 @@ import org.bluebridge.enumeration.ModifyEnum;
 import org.junit.Test;
 
 /**
+ * ModifyEnum测试
+ *
  * @author lingwh
- * @desc ModifyEnum测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class ModifyEnumTest {
 

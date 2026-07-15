@@ -4,8 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
+ * instanceof关键字测试
+ *
  * @author lingwh
- * @desc instanceof关键字测试
  * @date 2019/3/12 16:58
  */
 @Slf4j

@@ -1,8 +1,8 @@
 package org.bluebridge.java8.chapter_01_interface.chapter_04_jdk_functional_interface;
 
-import java.util.function.*;
-
 import org.junit.Test;
+
+import java.util.function.*;
 
 /**
  * Java8四大基本的函数式接口

@@ -1,15 +1,18 @@
 package headfirst.designpatterns.command.remote;
 
 /**
+ * 热水浴缸
+ *
  * @author lingwh
- * @desc 热水浴缸
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Hottub {
+
     boolean on;
     int temperature;
 
-    public Hottub() {}
+    public Hottub() {
+    }
 
     public void on() {
         on = true;

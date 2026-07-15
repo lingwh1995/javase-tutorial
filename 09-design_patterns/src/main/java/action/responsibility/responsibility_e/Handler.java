@@ -1,8 +1,9 @@
 package action.responsibility.responsibility_e;
 
 /**
+ * 定义职责对象的接口
+ *
  * @author lingwh
- * @desc 定义职责对象的接口
  * @date 2019/8/27 18:08
  */
 public abstract class Handler {

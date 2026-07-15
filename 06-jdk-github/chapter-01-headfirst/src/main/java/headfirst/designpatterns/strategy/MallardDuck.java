@@ -1,9 +1,10 @@
 package headfirst.designpatterns.strategy;
 
 /**
+ * 绿头鸭
+ *
  * @author lingwh
- * @desc 绿头鸭
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MallardDuck extends Duck {
 

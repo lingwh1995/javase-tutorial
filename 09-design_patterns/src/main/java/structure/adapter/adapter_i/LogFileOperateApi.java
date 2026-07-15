@@ -3,8 +3,9 @@ package structure.adapter.adapter_i;
 import java.util.List;
 
 /**
+ * 日志文件操作接口
+ *
  * @author lingwh
- * @desc 日志文件操作接口
  * @date 2019/8/8 13:29
  */
 public interface LogFileOperateApi {

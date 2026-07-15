@@ -1,9 +1,10 @@
 package headfirst.designpatterns.strategy;
 
 /**
+ * 迷你鸭子模拟器1
+ *
  * @author lingwh
- * @desc 迷你鸭子模拟器1
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MiniDuckSimulator1 {
 

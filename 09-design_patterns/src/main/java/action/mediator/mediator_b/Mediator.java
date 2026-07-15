@@ -1,8 +1,9 @@
 package action.mediator.mediator_b;
 
 /**
+ * 抽象中介者
+ *
  * @author lingwh
- * @desc 抽象中介者
  * @date 2019/8/14 11:34
  */
 public interface Mediator {

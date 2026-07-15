@@ -1,11 +1,13 @@
 package action.command.command_a;
 
 /**
+ * 调用者
+ *
  * @author lingwh
- * @desc 调用者
  * @date 2019/8/5 11:35
  */
 public class Invoker {
+
     /**
      * 持有命令对象
      */

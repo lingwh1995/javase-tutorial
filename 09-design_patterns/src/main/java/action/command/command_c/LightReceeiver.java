@@ -1,9 +1,10 @@
 package action.command.command_c;
 
 /**
+ * 真正执行命令的操作者
+ *
  * @author lingwh
- * @desc 真正执行命令的操作者
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class LightReceeiver {
 

@@ -1,6 +1,7 @@
 package create.abstractfactory.abstractfactory_k;
 
 public interface IRouterProduct {
+
     // 开机
     void start();
 

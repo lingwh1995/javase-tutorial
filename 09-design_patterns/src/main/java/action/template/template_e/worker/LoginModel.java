@@ -7,6 +7,7 @@ package action.template.template_e.worker;
  * @date 2019/8/26 13:19
  */
 public class LoginModel {
+
     private String workerId, pwd;
 
     public String getWorkerId() {

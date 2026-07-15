@@ -3,9 +3,10 @@ package stack.stack_b;
 import org.junit.Test;
 
 /**
+ * 链表栈测试
+ *
  * @author lingwh
- * @desc 链表栈测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class LinkedListStackTest {
 

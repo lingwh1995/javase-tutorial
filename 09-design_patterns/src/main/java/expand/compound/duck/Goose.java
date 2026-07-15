@@ -7,6 +7,7 @@ package expand.compound.duck;
  * @date 2019/10/10 9:55
  */
 public class Goose {
+
     /**
      * 鹅也会鸣叫,但是不是像鸭子一样Quack，而是honk
      */

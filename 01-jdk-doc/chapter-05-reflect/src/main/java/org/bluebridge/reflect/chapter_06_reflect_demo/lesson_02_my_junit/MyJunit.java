@@ -1,11 +1,13 @@
 package org.bluebridge.reflect.chapter_06_reflect_demo.lesson_02_my_junit;
 
 /**
+ * 自定义Junit测试用例
+ *
  * @author lingwh
- * @desc 自定义Junit测试用例
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 18:04
  */
 public class MyJunit {
+
     @Before
     public void before() {
         System.out.println("before方法执行了...");

@@ -1,8 +1,9 @@
 package action.iterator.iterator_a;
 
 /**
+ * 迭代器接口，定义访问和遍历元素的操作
+ *
  * @author lingwh
- * @desc 迭代器接口，定义访问和遍历元素的操作
  * @date 2019/8/20 9:04
  */
 public interface Iterator {
@@ -10,24 +11,24 @@ public interface Iterator {
     /**
      * 移动到聚合对象的第一个位置
      */
-    public void first();
+    void first();
 
     /**
      * 移动到聚合对象的下一个位置
      */
-    public void next();
+    void next();
 
     /**
      * 判断是否已经移动到聚合对象的最后一个位置
      *
      * @return true表示已经移动到聚合对象的最后一个位置， false表示还没有移动到聚合对象的最后一个位置
      */
-    public boolean isDone();
+    boolean isDone();
 
     /**
      * 获取迭代的当前元素
      *
      * @return 迭代的当前元素
      */
-    public Object currentItem();
+    Object currentItem();
 }

@@ -1,11 +1,13 @@
 package headfirst.designpatterns.command.party;
 
 /**
+ * 宏命令
+ *
  * @author lingwh
- * @desc 宏命令
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MacroCommand implements Command {
+
     Command[] commands;
 
     public MacroCommand(Command[] commands) {
@@ -19,7 +21,7 @@ public class MacroCommand implements Command {
     }
 
     /**
-     * NOTE:  these commands have to be done backwards to ensure
+     * NOTE: these commands have to be done backwards to ensure
      * proper undo functionality
      */
     public void undo() {

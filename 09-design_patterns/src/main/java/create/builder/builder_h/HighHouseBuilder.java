@@ -4,6 +4,7 @@ package create.builder.builder_h;
  * 具体的建造者，只负责产品的创建
  */
 public class HighHouseBuilder extends HouseBuilder {
+
     @Override
     public void buildBasic() {
         super.house.setBasic("高楼大厦地基");

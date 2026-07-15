@@ -1,8 +1,9 @@
 package create.builder.builder_k;
 
 /**
+ * 描述保险的实体
+ *
  * @author lingwh
- * @desc 描述保险的实体
  * @date 2019/8/8 14:57
  */
 public class InsuranceContract {
@@ -41,8 +42,8 @@ public class InsuranceContract {
          * 构造方法，传入必须要有的参数
          *
          * @param contractId 保险合同编号
-         * @param beginDate 保险开始生效的日期
-         * @param endDate 保险失效的日期
+         * @param beginDate  保险开始生效的日期
+         * @param endDate    保险失效的日期
          */
         public ConcreteBuilder(String contractId, long beginDate, long endDate) {
             this.contractId = contractId;

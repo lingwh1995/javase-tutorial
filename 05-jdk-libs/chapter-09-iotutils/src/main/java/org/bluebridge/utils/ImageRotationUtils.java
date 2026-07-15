@@ -8,9 +8,10 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 /**
+ * 图片旋转工具类
+ *
  * @author lingwh
- * @desc 图片旋转工具类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ImageRotationUtils {
 
@@ -98,7 +99,7 @@ public class ImageRotationUtils {
      * 旋转JPEG图片，保持原始尺寸
      *
      * @param jpegData 原始JPEG图片字节数组
-     * @param degrees 旋转角度（90, 180, 270）
+     * @param degrees  旋转角度（90, 180, 270）
      * @return 旋转后的JPEG图片字节数组
      * @throws IOException 如果图片解码或编码失败
      */

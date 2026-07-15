@@ -7,8 +7,9 @@ import structure.decorator.decorator_i.service.GoodsSaleService;
 import structure.decorator.decorator_i.service.IGoodsSaleService;
 
 /**
+ * 商品销售控制器
+ *
  * @author lingwh
- * @desc 商品销售控制器
  * @date 2019/8/7 9:53
  */
 public class GoodsSaleController {

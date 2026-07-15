@@ -1,8 +1,9 @@
 package action.responsibility.responsibility_e;
 
 /**
+ * 总经理
+ *
  * @author lingwh
- * @desc 总经理
  * @date 2019/8/27 18:04
  */
 public class GeneralManager extends Handler {

@@ -1,8 +1,9 @@
 package action.command.command_e;
 
 /**
+ * 做热菜的厨师
+ *
  * @author lingwh
- * @desc 做热菜的厨师
  * @date 2019/8/5 13:38
  */
 public class HotCook implements CookApi {

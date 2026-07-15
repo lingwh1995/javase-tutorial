@@ -7,19 +7,21 @@ package expand.principles.interface_segregation;
  * @date 2019/8/7 14:57
  */
 public interface Interface2 {
+
     void operator1();
 }
 
 /**
  * 遵循接口隔离原则 把接口1差分为3个接口
  */
-// public interface Interface1 {
-//    void operator1();
-//    void operator2();
-//    void operator3();
-//    void operator4();
-//    void operator5();
-// }
+/*
+ public interface Interface1 {
+    void operator1();
+    void operator2();
+    void operator3();
+    void operator4();
+    void operator5();
+ }*/
 interface Interface2A {
     void operator1();
 }

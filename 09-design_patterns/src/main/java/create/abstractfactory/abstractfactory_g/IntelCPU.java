@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
+ * Intel的CPU实现
+ *
  * @author lingwh
- * @desc Intel的CPU实现
  * @date 2019/9/4 9:42
  */
 public class IntelCPU implements CPUApi {

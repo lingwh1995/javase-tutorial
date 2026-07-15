@@ -5,8 +5,9 @@ import java.awt.event.ItemEvent;
 import javax.swing.*;
 
 /**
+ * 菜单栏和菜单栏的子菜单
+ *
  * @author lingwh
- * @desc 菜单栏和菜单栏的子菜单
  * @date 2026/1/29 22:30
  */
 public class Lesson_15_MenuBarAndMenuTest {

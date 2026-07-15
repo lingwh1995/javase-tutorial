@@ -3,8 +3,9 @@ package org.bluebridge.java8.chapter_02_lambda;
 import java.io.Serializable;
 
 /**
+ * lambda表达式实际上是函数式接口的实例对象
+ *
  * @author lingwh
- * @desc lambda表达式实际上是函数式接口的实例对象
  * @date 2025/12/2 17:34
  */
 public class LambdaIsObjectTest {

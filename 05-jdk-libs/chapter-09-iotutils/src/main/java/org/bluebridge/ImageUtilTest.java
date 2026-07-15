@@ -1,14 +1,16 @@
 package org.bluebridge;
 
 import cn.hutool.core.util.HexUtil;
-import java.io.IOException;
 import org.bluebridge.utils.ImageUtil;
 import org.junit.Test;
 
+import java.io.IOException;
+
 /**
+ * 图片工具测试类
+ *
  * @author lingwh
- * @desc 图片工具测试类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ImageUtilTest {
 
@@ -22,7 +24,6 @@ public class ImageUtilTest {
         String imagePrefix = "test.bmp";
         ImageUtil.transferBytesToBmpImages(imageDateBytes, imagePath, imagePrefix);
     }
-
 
     @Test
     public void testImageUtils_3() throws IOException {

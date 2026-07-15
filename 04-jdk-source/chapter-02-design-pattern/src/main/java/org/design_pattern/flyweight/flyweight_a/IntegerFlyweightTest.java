@@ -1,11 +1,13 @@
 package org.design_pattern.flyweight.flyweight_a;
 
 /**
+ * Integer 享元模式测试
+ *
  * @author lingwh
- * @desc Integer 享元模式测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class IntegerFlyweightTest {
+
     public static void main(String[] args) {
         Integer x = Integer.valueOf(127);
         Integer y = new Integer(127);

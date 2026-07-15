@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.thread_pre_message.thread_pre_message_a;
 
 /**
+ * Thread-Per-Message 模式消息
+ *
  * @author lingwh
- * @desc Thread-Per-Message 模式消息
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Message {
+
     private final String value;
 
     public Message(String value) {

@@ -1,15 +1,17 @@
 package org.bluebridge.java9.chapter_04_input_stream;
 
+import org.junit.Test;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import org.junit.Test;
 
 /**
+ * Java9输入流transferTo方法测试
+ *
  * @author lingwh
- * @desc Java9输入流transferTo方法测试
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class InputStreamTest {
 

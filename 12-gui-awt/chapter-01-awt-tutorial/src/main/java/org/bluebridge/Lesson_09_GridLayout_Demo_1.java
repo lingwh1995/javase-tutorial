@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 表格布局案例一 - 把容器分成三行
+ *
  * @author lingwh
- * @desc 表格布局案例一 - 把容器分成三行
  * @date 2026/1/29 21:06
  */
 public class Lesson_09_GridLayout_Demo_1 {

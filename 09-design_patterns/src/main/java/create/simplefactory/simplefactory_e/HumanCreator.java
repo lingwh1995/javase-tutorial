@@ -1,6 +1,13 @@
 package create.simplefactory.simplefactory_e;
 
+/**
+ * 人类创建者
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
+ */
 public class HumanCreator {
+
     Human createHuman(String skinColor) {
         Human human = null;
         if ("white".equals(skinColor)) {

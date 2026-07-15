@@ -8,9 +8,10 @@ import java.nio.channels.ReadableByteChannel;
 import java.util.Properties;
 
 /**
+ * Maven Wrapper 下载器
+ *
  * @author lingwh
- * @desc Maven Wrapper 下载器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MavenWrapperDownloader {
 

@@ -3,11 +3,13 @@ package headfirst.designpatterns.adapter.iterenum;
 import java.util.*;
 
 /**
+ * 迭代器转枚举测试驱动类
+ *
  * @author lingwh
- * @desc 迭代器转枚举测试驱动类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class IteratorEnumerationTestDrive {
+
     public static void main(String args[]) {
         ArrayList<String> l = new ArrayList<String>(Arrays.asList(args));
         Enumeration<?> enumeration = new IteratorEnumeration(l.iterator());

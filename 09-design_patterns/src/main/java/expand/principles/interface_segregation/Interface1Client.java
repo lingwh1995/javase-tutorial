@@ -9,6 +9,7 @@ import org.junit.Test;
  * @date 2019/8/7 14:57
  */
 public class Interface1Client {
+
     /**
      * 测试A1通过Interface1依赖B1，但是只调用1、2、3方法
      */

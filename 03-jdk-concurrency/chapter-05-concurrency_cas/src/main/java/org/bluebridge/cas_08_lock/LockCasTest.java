@@ -3,11 +3,13 @@ package org.bluebridge.cas_08_lock;
 import static java.lang.Thread.sleep;
 
 /**
+ * CAS锁测试
+ *
  * @author lingwh
- * @desc CAS锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class LockCasTest {
+
     public static void main(String[] args) {
         LockCas lock = new LockCas();
         new Thread(() -> {
@@ -21,7 +23,7 @@ public class LockCasTest {
             } finally {
                 lock.unlock();
             }
-        },"t1").start();
+        }, "t1").start();
 
         new Thread(() -> {
             System.out.println("Thread " + Thread.currentThread().getName() + " begin......");
@@ -31,6 +33,6 @@ public class LockCasTest {
             } finally {
                 lock.unlock();
             }
-        },"t2").start();
+        }, "t2").start();
     }
 }

@@ -1,5 +1,13 @@
 package org.bluebridge.xml.jaxp;
 
+import org.bluebridge.xml.dom4j.Dom4jParseXml;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Text;
+import org.xml.sax.SAXException;
+
 import java.io.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -11,89 +19,85 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import org.bluebridge.xml.dom4j.Dom4jParseXml;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Text;
-import org.xml.sax.SAXException;
 
 /**
+ * 使用jaxp的Dom方式解析xml文件,jaxp增、删、改操作对格式化的支持很差
+ *
  * @author lingwh
- * @desc 使用jaxp的Dom方式解析xml文件,jaxp增、删、改操作对格式化的支持很差
- * @date 2019/3/2 00:00
+ * @date 2026/4/21 19:02
  */
 public class JaxpDomParseXml {
 
-	private static final String BASIC_PATH = "java-standard-edition-05-jdk-libs/chapter-01-dom4j/src/main/resources";
-	private static final String FILE_RELATIVE_PATH = "/jaxp/person.xml";
-	private static final String FILE_PATH = BASIC_PATH + FILE_RELATIVE_PATH;
+    private static final String BASIC_PATH = "java-standard-edition-05-jdk-libs/chapter-01-dom4j/src/main/resources";
+    private static final String FILE_RELATIVE_PATH = "/jaxp/person.xml";
+    private static final String FILE_PATH = BASIC_PATH + FILE_RELATIVE_PATH;
 
-	/**
-	 * dom方式解析xml： 根据xml的层级结构在内存中分配一个树，把html的标签、属性、文本都封装成对象
-	 * 缺点:如果xml文档过大，容易造成内存溢出
-	 * 优点：很方便的实现增删改操作
-	 */
-	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, TransformerException {
-		// 使用jaxp的dom方式解析xml,获取document对象
-		Document document = domParseXmlgetDocumentObject();
-		// 获取xml回写工厂对象
-		Transformer transfomer = getTransfomer();
-		// 获取xml中所有的节点
-		//selectAllNodes(document);
+    /**
+     * dom方式解析xml： 根据xml的层级结构在内存中分配一个树，把html的标签、属性、文本都封装成对象
+     * 缺点:如果xml文档过大，容易造成内存溢出
+     * 优点：很方便的实现增删改操作
+     */
+    public static void main(String[] args)
+            throws ParserConfigurationException, SAXException, IOException, TransformerException {
+        // 使用jaxp的dom方式解析xml,获取document对象
+        Document document = domParseXmlgetDocumentObject();
+        // 获取xml回写工厂对象
+        Transformer transfomer = getTransfomer();
+        // 获取xml中所有的节点
+        // selectAllNodes(document);
 
         // 给第一个节点下面增加一个新的节点,不支持格式化插入
-		//addNode(document,transfomer);
+        // addNode(document,transfomer);
 
         // 修改xml节点
-		//editNode(document,transfomer);
+        // editNode(document,transfomer);
 
         // 删除xml节点
-		deleteNode(document,transfomer);
+        deleteNode(document, transfomer);
 
         // 递归遍历xml节点
-		listNode(document);
-	}
+        listNode(document);
+    }
 
-	/**
-	 * 获取xml回写工厂对象
+    /**
+     * 获取xml回写工厂对象
      *
-	 * @return
-	 * @throws TransformerFactoryConfigurationError
-	 * @throws TransformerConfigurationException
-	 */
-	private static Transformer getTransfomer() throws TransformerFactoryConfigurationError, TransformerConfigurationException {
-		// 1.获取xml回写工厂
-		TransformerFactory transformerFactory = TransformerFactory.newInstance();
-		// 2.通过工厂获取xml回写工厂对象
-		return transformerFactory.newTransformer();
-	}
+     * @return
+     * @throws TransformerFactoryConfigurationError
+     * @throws TransformerConfigurationException
+     */
+    private static Transformer getTransfomer()
+            throws TransformerFactoryConfigurationError, TransformerConfigurationException {
+        // 1.获取xml回写工厂
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        // 2.通过工厂获取xml回写工厂对象
+        return transformerFactory.newTransformer();
+    }
 
-	/**
-	 * 遍历xml节点
+    /**
+     * 遍历xml节点
      *
-	 * @param node
-	 */
-	private static void listNode(Node node) {
-		//判断一下,如果是节点类型,就打印该节点名称
-		if (node.getNodeType() == Node.ELEMENT_NODE) {
-			System.out.println("NodeType:"+node.getNodeType()+"---"
-					+"Node.ELEMENT_NODE:"+Node.ELEMENT_NODE+"---"
-					+"NodeName:"+node.getNodeName()+"---"
-					+"NodeValue:"+node.getNodeValue());
-		}
-		// 1.获取一层子节点
-		NodeList childNodes = node.getChildNodes();
-		// 2.遍历该层子节点
-		for(int i=0; i<childNodes.getLength(); i++){
-			Node childNode = childNodes.item(i);
-			System.out.println("Node中的文本值:"+childNode.getTextContent());
-			//如果再有子节点,递归调用
-			listNode(childNode);
-		}
+     * @param node
+     */
+    private static void listNode(Node node) {
+        // 判断一下,如果是节点类型,就打印该节点名称
+        if (node.getNodeType() == Node.ELEMENT_NODE) {
+            System.out.println("NodeType:" + node.getNodeType() + "---"
+                    + "Node.ELEMENT_NODE:" + Node.ELEMENT_NODE + "---"
+                    + "NodeName:" + node.getNodeName() + "---"
+                    + "NodeValue:" + node.getNodeValue());
+        }
+        // 1.获取一层子节点
+        NodeList childNodes = node.getChildNodes();
+        // 2.遍历该层子节点
+        for (int i = 0; i < childNodes.getLength(); i++) {
+            Node childNode = childNodes.item(i);
+            System.out.println("Node中的文本值:" + childNode.getTextContent());
+            // 如果再有子节点,递归调用
+            listNode(childNode);
+        }
 
-	}
+    }
 
     /**
      * 删除xml节点
@@ -103,7 +107,8 @@ public class JaxpDomParseXml {
      * @throws TransformerException
      * @throws FileNotFoundException
      */
-    private static void deleteNode(Document document, Transformer transfomer) throws TransformerException, FileNotFoundException {
+    private static void deleteNode(Document document, Transformer transfomer)
+            throws TransformerException, FileNotFoundException {
         // 1.获取所有的节点,然后获取第一个节点
         Node node = document.getElementsByTagName("name").item(0);
         // 2.获取node节点的父节点
@@ -125,7 +130,8 @@ public class JaxpDomParseXml {
      * @throws TransformerException
      * @throws FileNotFoundException
      */
-    private static void editNode(Document document, Transformer transfomer) throws TransformerException, FileNotFoundException {
+    private static void editNode(Document document, Transformer transfomer)
+            throws TransformerException, FileNotFoundException {
         // 1.获取所有的节点,然后获取第一个节点
         Node node = document.getElementsByTagName("name").item(0);
         // 2.修改节点的值
@@ -144,7 +150,8 @@ public class JaxpDomParseXml {
      * @throws TransformerException
      * @throws FileNotFoundException
      */
-    private static void addNode(Document document, Transformer transfomer) throws TransformerException, FileNotFoundException {
+    private static void addNode(Document document, Transformer transfomer)
+            throws TransformerException, FileNotFoundException {
         // 1.获取所有的节点,然后获取第一个节点
         Node node = document.getElementsByTagName("name").item(0);
         // 2.创建新的节点
@@ -185,7 +192,8 @@ public class JaxpDomParseXml {
      * @throws SAXException
      * @throws IOException
      */
-    private static Document domParseXmlgetDocumentObject() throws ParserConfigurationException, SAXException, IOException {
+    private static Document domParseXmlgetDocumentObject()
+            throws ParserConfigurationException, SAXException, IOException {
         // 1.创建解析器工厂
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         // 2.创建解析器

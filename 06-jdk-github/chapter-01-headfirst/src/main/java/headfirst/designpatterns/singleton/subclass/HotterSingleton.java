@@ -1,11 +1,13 @@
 package headfirst.designpatterns.singleton.subclass;
 
 /**
+ * 加热器单例
+ *
  * @author lingwh
- * @desc 加热器单例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HotterSingleton extends Singleton {
+
     // useful instance variables here
 
     private HotterSingleton() {

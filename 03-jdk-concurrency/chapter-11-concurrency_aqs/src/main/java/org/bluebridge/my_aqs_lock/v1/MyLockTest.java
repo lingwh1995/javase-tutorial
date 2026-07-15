@@ -1,15 +1,18 @@
 package org.bluebridge.my_aqs_lock.v1;
 
-import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.concurrent.TimeUnit;
+
 /**
+ * 自定义锁测试
+ *
  * @author lingwh
- * @desc 自定义锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j
 public class MyLockTest {
+
     public static void main(String[] args) {
         // testMyLockBasic();
 
@@ -32,7 +35,7 @@ public class MyLockTest {
                 log.debug("unlocking......");
                 lock.unlock();
             }
-        },"t1").start();
+        }, "t1").start();
 
         new Thread(() -> {
             lock.lock();
@@ -42,7 +45,7 @@ public class MyLockTest {
                 log.debug("unlocking......");
                 lock.unlock();
             }
-        },"t2").start();
+        }, "t2").start();
     }
 
     /**

@@ -1,8 +1,9 @@
 package action.template.template_e.normal;
 
 /**
+ * 描述登录人员登录时填写的信息的数据模型
+ *
  * @author lingwh
- * @desc 描述登录人员登录时填写的信息的数据模型
  * @date 2019/8/26 11:35
  */
 public class LoginModel {

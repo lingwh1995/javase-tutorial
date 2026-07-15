@@ -32,9 +32,10 @@ import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 锁消除基准测试
+ *
  * @author lingwh
- * @desc 锁消除基准测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Fork(1)
 @BenchmarkMode(Mode.AverageTime)
@@ -42,6 +43,7 @@ import java.util.concurrent.TimeUnit;
 @Measurement(iterations=5)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class MyBenchmark {
+
     static int x = 0;
     @Benchmark
     public void a() throws Exception {

@@ -5,11 +5,13 @@ import java.net.*;
 import javax.swing.*;
 
 /**
+ * 图片代理
+ *
  * @author lingwh
- * @desc 图片代理
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 class ImageProxy implements Icon {
+
 	volatile ImageIcon imageIcon;
 	final URL imageURL;
 	Thread retrievalThread;

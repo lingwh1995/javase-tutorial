@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.balking.guarded_timed;
 import java.util.concurrent.TimeoutException;
 
 /**
+ * Guarded Timed 模式主机
+ *
  * @author lingwh
- * @desc Guarded Timed 模式主机
  * @date 2019/10/17 10:36
  */
 public class Host {
+
     /**
      * 超时时间
      */

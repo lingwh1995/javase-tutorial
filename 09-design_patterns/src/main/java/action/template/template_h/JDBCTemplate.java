@@ -5,8 +5,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * 一个简单的实现JDBC增删改查功能的模板
+ *
  * @author lingwh
- * @desc 一个简单的实现JDBC增删改查功能的模板
  * @date 2019/8/26 16:02
  */
 public abstract class JDBCTemplate {

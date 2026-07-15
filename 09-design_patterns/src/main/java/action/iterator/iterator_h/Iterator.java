@@ -1,11 +1,13 @@
 package action.iterator.iterator_h;
 
 /**
+ * 迭代器接口，定义访问和遍历元素的操作，实现双向迭代
+ *
  * @author lingwh
- * @desc 迭代器接口，定义访问和遍历元素的操作，实现双向迭代
  * @date 2019/8/20 13:16
  */
 public interface Iterator {
+
     public void first();
 
     public void next();

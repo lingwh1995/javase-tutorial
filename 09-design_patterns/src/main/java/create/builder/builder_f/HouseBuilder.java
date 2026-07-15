@@ -1,11 +1,13 @@
 package create.builder.builder_f;
 
 /**
+ * 抽象的建造者
+ *
  * @author lingwh
- * @desc 抽象的建造者
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class HouseBuilder {
+
     protected House house = new House();
 
     // 地基

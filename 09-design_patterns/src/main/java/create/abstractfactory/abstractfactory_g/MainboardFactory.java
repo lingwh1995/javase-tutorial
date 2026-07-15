@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_g;
 
 /**
+ * 创建主板的简单工厂
+ *
  * @author lingwh
- * @desc 创建主板的简单工厂
  * @date 2019/9/4 9:49
  */
 public class MainboardFactory {
+
     /**
      * 创建主板接口对象的方法
      *

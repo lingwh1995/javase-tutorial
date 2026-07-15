@@ -1,8 +1,9 @@
 package org.bluebridge.innerclass;
 
 /**
+ * 成员内部类
+ *
  * @author lingwh
- * @desc 成员内部类
  * @date 2019/7/3 10:26
  */
 public class MemberOuter {
@@ -15,12 +16,12 @@ public class MemberOuter {
         // 创造内部类对象
         MemberInner memberInner = memberOuter.new MemberInner();
         // 通过内部类访问内部类方法
-        //        memberInner.innerShow();
+        // memberInner.innerShow();
 
         /*
          * 可在Outer中定义get方法，获得Inner对象,那么使用时，只需outer.getInnerInstance()即可。
          * public Inner getInnerInstance(Inner类的构造方法参数){
-         *   return new Inner(参数);
+         * return new Inner(参数);
          * }
          */
     }
@@ -54,7 +55,8 @@ public class MemberOuter {
         /**
          * 构造方法
          */
-        public MemberInner() {}
+        public MemberInner() {
+        }
 
         /**
          * 成员方法，访问外部类信息（属性、方法）

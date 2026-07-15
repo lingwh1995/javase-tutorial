@@ -1,11 +1,13 @@
 package algorithm.hanoitowerproblem;
 
 /**
+ * 汉诺塔
+ *
  * @author lingwh
- * @desc 汉诺塔
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Hanoitower {
+
     public static void main(String[] args) {
         // hanoitower(1,'A','B','C');
         // hanoitower(2,'A','B','C');

@@ -3,15 +3,17 @@ package tree.huffmantree.huffmantree_b;
 import java.util.*;
 
 /**
+ * 赫夫曼编码
+ *
  * @author lingwh
- * @desc 赫夫曼编码
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HaffmanCode {
+
     /**
      * 生成赫夫曼树对应的赫夫曼编码
      * 1. 将赫夫曼编码表存放在Map<Byte,String>形式
-     *      32->01 97->100 100->11000等形式
+     *    32->01 97->100 100->11000等形式
      * 2. 在生成赫夫曼编码表时，需要去拼接路径，定义一个StringBuilder，存储某个叶子节点的路径
      */
     static Map<Byte, String> huffmanCodes = new HashMap<Byte, String>();
@@ -75,7 +77,7 @@ public class HaffmanCode {
 
         // 创建集合，存放byte
         ArrayList<Byte> list = new ArrayList<>();
-        for (int i = 0; i < stringBuilder.length(); ) {
+        for (int i = 0; i < stringBuilder.length();) {
             int count = 1;
             boolean flag = true;
             Byte charElement = null;
@@ -152,7 +154,7 @@ public class HaffmanCode {
     /**
      * 使用huffmanCode压缩原始的字节数组
      *
-     * @param bytes 原始的字符串对象的bytes[]
+     * @param bytes       原始的字符串对象的bytes[]
      * @param huffmanCode 保存赫夫曼编码的Map
      */
     public static byte[] zip(byte[] bytes, Map<Byte, String> huffmanCode) {
@@ -165,10 +167,9 @@ public class HaffmanCode {
         System.out.println("赫夫曼字节数组对应的二进制字符串的长度:" + stringBuilder.toString().length());
         // 2.将对应和赫夫曼编码数据抓换为byte[]
         // 统计数据的长度
-        int len =
-                stringBuilder.length() % 8 == 0
-                        ? stringBuilder.length() / 8
-                        : stringBuilder.length() / 8 + 1;
+        int len = stringBuilder.length() % 8 == 0
+                ? stringBuilder.length() / 8
+                : stringBuilder.length() / 8 + 1;
         byte[] huffmanCodeBytes = new byte[len];
         int index = 0;
         for (int i = 0; i < stringBuilder.length(); i += 8) {
@@ -239,8 +240,8 @@ public class HaffmanCode {
     }
 
     /**
-     * @param node 传入的节点
-     * @param code 路径:左子节点时0，右子节点1
+     * @param node          传入的节点
+     * @param code          路径:左子节点时0，右子节点1
      * @param stringBuilder 用于拼接路径
      */
     public static void getHuffmanCodes(Node node, String code, StringBuilder stringBuilder) {
@@ -262,6 +263,7 @@ public class HaffmanCode {
 }
 
 class Node implements Comparable<Node> {
+
     /**
      * 存放数据本身，如:'a'->97 ' '->32
      */

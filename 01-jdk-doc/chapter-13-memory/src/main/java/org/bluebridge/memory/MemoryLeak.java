@@ -5,11 +5,13 @@ import java.util.Set;
 import java.util.Vector;
 
 /**
+ * 内存泄漏
+ *
  * @author lingwh
- * @desc 内存泄漏
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class MemoryLeak {
+
     public static void main(String[] args) {
         testCollectRemove();
     }
@@ -69,10 +71,12 @@ public class MemoryLeak {
 
 /**
  * 4. 各种连接 比如数据库连接（dataSourse.getConnection()），网络连接(socket)和io连接，除非其显式的调用了
- * 其close（）方法将其连接关闭，否则是不会自动被GC 回收的。对于Resultset 和Statement 对象可以不 进行显式回收，但Connection
+ * 其close（）方法将其连接关闭，否则是不会自动被GC 回收的。对于Resultset 和Statement 对象可以不
+ * 进行显式回收，但Connection
  * 一定要显式回收，因为Connection 在任何时候都无法自动回收，而Connection一旦 回收，Resultset 和Statement
  * 对象就会立即为NULL。但是如果使用连接池，情况就不一样了，除了要显式地关闭 连接，还必须显式地关闭Resultset Statement
- * 对象（关闭其中一个，另外一个也会关闭），否则就会造成大量 的Statement 对象无法释放，从而引起内存泄漏。这种情况下一般都会在try里面去的连接，在finally里面释放连接。
+ * 对象（关闭其中一个，另外一个也会关闭），否则就会造成大量 的Statement
+ * 对象无法释放，从而引起内存泄漏。这种情况下一般都会在try里面去的连接，在finally里面释放连接。
  */
 
 /**
@@ -89,7 +93,8 @@ class B {
     private A a;
     private static B instance = new B();
 
-    public B() {}
+    public B() {
+    }
 
     public static B getInstance() {
         return instance;
@@ -138,8 +143,10 @@ class Person {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Person)) return false;
+        if (this == o)
+            return true;
+        if (!(o instanceof Person))
+            return false;
 
         Person person = (Person) o;
 

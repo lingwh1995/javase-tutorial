@@ -1,8 +1,9 @@
 package action.strategy.strategy_h;
 
 /**
+ * 日志记录策略的接口
+ *
  * @author lingwh
- * @desc 日志记录策略的接口
  * @date 2019/8/29 9:02
  */
 public interface LogStrategy {

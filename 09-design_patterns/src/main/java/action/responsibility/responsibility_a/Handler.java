@@ -1,8 +1,9 @@
 package action.responsibility.responsibility_a;
 
 /**
+ * 职责的接口，也就是处理请求的接口
+ *
  * @author lingwh
- * @desc 职责的接口，也就是处理请求的接口
  * @date 2019/8/27 17:58
  */
 public abstract class Handler {

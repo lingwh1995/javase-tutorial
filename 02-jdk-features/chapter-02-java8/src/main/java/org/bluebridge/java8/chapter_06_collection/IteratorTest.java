@@ -3,12 +3,14 @@ package org.bluebridge.java8.chapter_06_collection;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.util.*;
 import org.junit.Test;
 
+import java.util.*;
+
 /**
+ * 迭代器测试
+ *
  * @author lingwh
- * @desc 迭代器测试
  * @date 2026/6/17 10:01
  */
 public class IteratorTest {

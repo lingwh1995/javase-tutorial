@@ -3,11 +3,13 @@ package org.bluebridge.chapter_05_map;
 import java.util.*;
 
 /**
+ * LinkedHashMap和HashMap的排序对比
+ *
  * @author lingwh
- * @desc LinkedHashMap和HashMap的排序对比
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class LinkedHashMapTest {
+
     private static Map<String, String> linkedHashMap = new LinkedHashMap<String, String>();
     private static Map<String, String> map = new HashMap<String, String>();
 
@@ -64,8 +66,8 @@ public class LinkedHashMapTest {
      *
      * @param map
      */
-    public  static void printMap(Map<String,String> map){
-        System.out.println("-----------------打印"+map.getClass().getSimpleName()+"开始-----------------------");
+    public static void printMap(Map<String, String> map) {
+        System.out.println("-----------------打印" + map.getClass().getSimpleName() + "开始-----------------------");
         Set<String> keys = map.keySet();
         Iterator<String> iterator = keys.iterator();
         while (iterator.hasNext()) {
@@ -77,11 +79,11 @@ public class LinkedHashMapTest {
         /**
          * map的另一种遍历方式
          */
-//        for (Iterator iterator = map.values().iterator(); iterator.hasNext();)     {
-//            String name = (String) iterator.next();
-//            System.out.println(name);
-//        }
-        System.out.println("-----------------打印"+map.getClass().getSimpleName()+"结束-----------------------");
+        // for (Iterator iterator = map.values().iterator(); iterator.hasNext();) {
+        // String name = (String) iterator.next();
+        // System.out.println(name);
+        // }
+        System.out.println("-----------------打印" + map.getClass().getSimpleName() + "结束-----------------------");
     }
 
     /**
@@ -89,15 +91,18 @@ public class LinkedHashMapTest {
      *
      * @param map
      */
-    public static void valuesAPI(Map<String, String> map){
-        System.out.println("-----------------测试"+map.getClass().getSimpleName()+"结values()方法开始-----------------------");
+    public static void valuesAPI(Map<String, String> map) {
+        System.out.println(
+                "-----------------测试" + map.getClass().getSimpleName() + "结values()方法开始-----------------------");
         System.out.println(map);
         System.out.println(map.values());
-        System.out.println("-----------------测试"+map.getClass().getSimpleName()+"结values()方法结束-----------------------");
+        System.out.println(
+                "-----------------测试" + map.getClass().getSimpleName() + "结values()方法结束-----------------------");
     }
 }
 
 class Door {
+
     private String name;
     private Integer age;
 

@@ -2,15 +2,17 @@ package org.bluebridge.serializable.chapter_03_hessian;
 
 import com.caucho.hessian.io.HessianInput;
 import com.caucho.hessian.io.HessianOutput;
+import org.junit.Test;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import org.junit.Test;
 
 /**
+ * Hessian序列化测试
+ *
  * @author lingwh
- * @desc Hessian序列化测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class HessianTest {
 

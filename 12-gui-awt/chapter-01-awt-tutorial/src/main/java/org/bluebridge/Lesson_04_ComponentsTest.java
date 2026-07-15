@@ -5,8 +5,9 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
+ * 常用组件 - 标签、文本框、单选框、复选框、按钮、文本区域
+ *
  * @author lingwh
- * @desc 常用组件 - 标签、文本框、单选框、复选框、按钮、文本区域
  * @date 2025/8/4 18:11
  */
 public class Lesson_04_ComponentsTest {

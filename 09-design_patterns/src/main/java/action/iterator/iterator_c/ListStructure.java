@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * List结构
+ *
  * @author lingwh
- * @desc List结构
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ListStructure implements Structure {
+
     private List<String> list;
 
     public ListStructure() {

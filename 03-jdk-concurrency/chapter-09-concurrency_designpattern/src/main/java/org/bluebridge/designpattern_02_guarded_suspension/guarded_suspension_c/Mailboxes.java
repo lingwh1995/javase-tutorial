@@ -5,11 +5,13 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * 信箱管理
+ *
  * @author lingwh
- * @desc 信箱管理
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Mailboxes {
+
     private static Map<Integer, GuardedObject> boxes = new Hashtable<>();
     private static int id = 1;
 

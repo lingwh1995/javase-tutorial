@@ -3,8 +3,9 @@ package structure.decorator.decorator_i.service;
 import structure.decorator.decorator_i.domain.SaleModel;
 
 /**
+ * 销售商品的接口
+ *
  * @author lingwh
- * @desc 销售商品的接口
  * @date 2019/8/7 9:41
  */
 public interface IGoodsSaleService {

@@ -4,8 +4,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 /**
+ * 实现日志策略的抽象模板,给消息添加时间
+ *
  * @author lingwh
- * @desc 实现日志策略的抽象模板,给消息添加时间
  * @date 2019/8/29 9:03
  */
 public abstract class LogStrategyTemplate implements LogStrategy {

@@ -1,11 +1,13 @@
 package expand.principles.liskov_substitution;
 
 /**
+ * 里氏替换原则
+ *
  * @author lingwh
- * @desc 里氏替换原则
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Liskov3 {
+
     public static void main(String[] args) {
         X x = new X();
         Y y = new Y();

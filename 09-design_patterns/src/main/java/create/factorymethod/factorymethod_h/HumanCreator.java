@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_h;
 
 /**
+ * 人类创建者抽象类
+ *
  * @author lingwh
- * @desc 人类创建者抽象类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class HumanCreator {
+
     /**
      * 工厂方法
      *

@@ -1,11 +1,13 @@
 package create.builder.builder_h;
 
 /**
+ * 指挥者
+ *
  * @author lingwh
- * @desc 指挥者
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HouseDirector3 {
+
     private HouseBuilder houseBuilder;
 
     // 通过构造器传入HouseBuilder

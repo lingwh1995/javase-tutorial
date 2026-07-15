@@ -9,8 +9,9 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 /**
+ * JavaFX布局示例
+ *
  * @author lingwh
- * @desc JavaFX布局示例
  * @date 2025/8/4 18:32
  */
 public class JavaFXLayouts extends Application {

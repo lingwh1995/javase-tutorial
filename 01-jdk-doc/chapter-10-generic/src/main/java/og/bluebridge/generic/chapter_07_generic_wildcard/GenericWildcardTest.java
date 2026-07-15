@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 泛型通配符测试
+ *
  * @author lingwh
- * @desc 泛型通配符测试
  * @date 2026/7/8 18:35
  */
 public class GenericWildcardTest {

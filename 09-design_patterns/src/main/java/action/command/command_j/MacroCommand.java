@@ -1,11 +1,13 @@
 package action.command.command_j;
 
 /**
+ * 宏命令
+ *
  * @author lingwh
- * @desc 宏命令
  * @date 2019/9/5 8:47
  */
 public class MacroCommand implements Command {
+
     /**
      * 在宏命令模式中,使用命令数组存储一大推命令
      */

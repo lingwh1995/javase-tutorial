@@ -3,8 +3,9 @@ package structure.adapter.adapter_i;
 import java.util.List;
 
 /**
+ * 日志管理第二版实现
+ *
  * @author lingwh
- * @desc 日志管理第二版实现
  * @date 2019/8/8 13:56
  */
 public class LogDbOperate implements LogDbOperateApi {

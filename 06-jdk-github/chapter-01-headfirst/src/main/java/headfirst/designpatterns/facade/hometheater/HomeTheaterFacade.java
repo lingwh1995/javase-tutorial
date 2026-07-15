@@ -1,11 +1,13 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
+ * 家庭影院外观模式
+ *
  * @author lingwh
- * @desc 家庭影院外观模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HomeTheaterFacade {
+
     Amplifier amp;
     Tuner tuner;
     DvdPlayer dvd;

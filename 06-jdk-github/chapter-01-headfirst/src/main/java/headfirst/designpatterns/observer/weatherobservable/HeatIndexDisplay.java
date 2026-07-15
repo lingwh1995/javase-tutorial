@@ -4,11 +4,13 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * 热量指数展示
+ *
  * @author lingwh
- * @desc 热量指数展示
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeatIndexDisplay implements Observer, DisplayElement {
+
     float heatIndex = 0.0f;
 
     public HeatIndexDisplay(Observable observable) {

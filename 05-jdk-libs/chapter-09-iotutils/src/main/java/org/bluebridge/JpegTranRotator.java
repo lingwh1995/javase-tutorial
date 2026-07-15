@@ -7,8 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * JPEG无损旋转工具类
+ *
  * @author lingwh
- * @desc JPEG无损旋转工具类
  * @date 2026/2/3 10:13
  */
 public class JpegTranRotator {
@@ -16,9 +17,9 @@ public class JpegTranRotator {
     /**
      * 物理无损旋转 JPEG
      *
-     * @param inputPath 源文件路径
+     * @param inputPath  源文件路径
      * @param outputPath 输出文件路径
-     * @param angle 角度 (只能是 90, 180, 270)
+     * @param angle      角度 (只能是 90, 180, 270)
      */
     public static void rotateLossless(String inputPath, String outputPath, int angle)
             throws Exception {
@@ -31,7 +32,9 @@ public class JpegTranRotator {
         // 2. 构造命令
         List<String> command = new ArrayList<>();
         // 根据系统选择命令名称
-        String cmdName = System.getProperty("os.name").toLowerCase().contains("win") ? "D:\\software\\develop\\libjpeg-turbo-gcc64\\bin\\jpegtran.exe" : "jpegtran";
+        String cmdName = System.getProperty("os.name").toLowerCase().contains("win")
+                ? "D:\\software\\develop\\libjpeg-turbo-gcc64\\bin\\jpegtran.exe"
+                : "jpegtran";
 
         command.add(cmdName);
         command.add("-rotate");

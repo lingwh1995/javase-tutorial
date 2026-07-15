@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 卡片布局
+ *
  * @author lingwh
- * @desc 卡片布局
  * @date 2025/1/26 16:32
  */
 public class Lesson_07_CardLayoutTest {

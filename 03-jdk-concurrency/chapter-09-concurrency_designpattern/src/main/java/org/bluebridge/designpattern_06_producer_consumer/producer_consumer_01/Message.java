@@ -1,11 +1,13 @@
 package org.bluebridge.designpattern_06_producer_consumer.producer_consumer_01;
 
 /**
+ * 这里使用final修饰，将这个类设置成不可变类
+ *
  * @author lingwh
- * @desc 这里使用final修饰，将这个类设置成不可变类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 final class Message {
+
     private int id;
     private Object value;
 

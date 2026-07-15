@@ -1,8 +1,9 @@
 package action.observer.observer_i;
 
 /**
+ * 英雄类
+ *
  * @author lingwh
- * @desc 英雄类
  * @date 2019/8/30 10:53
  */
 public class Hero extends Subject implements Observer {

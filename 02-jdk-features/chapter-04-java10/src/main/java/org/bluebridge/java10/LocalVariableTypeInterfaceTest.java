@@ -1,12 +1,14 @@
 package org.bluebridge.java10;
 
-import java.util.ArrayList;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 /**
+ * 局部变量类型推断
+ *
  * @author lingwh
- * @desc 局部变量类型推断
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class LocalVariableTypeInterfaceTest {
 
@@ -66,11 +68,11 @@ public class LocalVariableTypeInterfaceTest {
         // 9.类的属性
 
         // 10.catch块
-        //        try {
+        // try {
         //
-        //        }catch (var e) {
-        //            var x = 0;
-        //            e.printStackTrace();
-        //        }
+        // }catch (var e) {
+        // var x = 0;
+        // e.printStackTrace();
+        // }
     }
 }

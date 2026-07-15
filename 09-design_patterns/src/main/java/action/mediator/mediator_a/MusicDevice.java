@@ -1,8 +1,9 @@
 package action.mediator.mediator_a;
 
 /**
+ * 具体同事类2:音响设备
+ *
  * @author lingwh
- * @desc 具体同事类2:音响设备
  * @date 2019/7/29 9:22
  */
 public class MusicDevice extends SmartDevice {

@@ -1,10 +1,12 @@
 package structure.decorator.decorator_j;
 
 /**
+ * 输入流
+ *
  * @author lingwh
- * @desc 输入流
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class InputStream {
+
     public abstract int read();
 }

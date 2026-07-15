@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 创建命令调用程序类
+ *
  * @author lingwh
- * @desc 创建命令调用程序类
  * @date 2019/8/2 9:04
  */
 public class Handler {

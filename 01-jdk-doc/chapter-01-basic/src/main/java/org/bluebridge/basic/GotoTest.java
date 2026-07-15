@@ -1,12 +1,14 @@
 package org.bluebridge.basic;
 
-import java.util.Random;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.util.Random;
+
 /**
+ * goto测试
+ *
  * @author lingwh
- * @desc goto测试
  * @date 2019/3/12 16:58
  */
 @Slf4j
@@ -17,8 +19,7 @@ public class GotoTest {
      */
     @Test
     public void testGoto() {
-        outer:
-        for (int i = 0; i < 10; i++) {
+        outer: for (int i = 0; i < 10; i++) {
             log.info("outer_loop: {}", i);
             for (int k = 0; i < 10; k++) {
                 log.info("k: {}", k);

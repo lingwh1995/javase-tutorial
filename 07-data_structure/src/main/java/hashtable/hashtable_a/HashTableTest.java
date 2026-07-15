@@ -1,11 +1,13 @@
 package hashtable.hashtable_a;
 
 /**
+ * 哈希表测试
+ *
  * @author lingwh
- * @desc 哈希表测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HashTableTest {
+
     public static void main(String[] args) {
         HashTable hashTable = new HashTable(10);
         Employee employee01 = new Employee(1, "张三");

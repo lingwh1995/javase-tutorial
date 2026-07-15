@@ -1,11 +1,13 @@
 package linkedlist.linkedlist_c;
 
 /**
+ * 双向链表测试
+ *
  * @author lingwh
- * @desc 双向链表测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeroNodeTest {
+
     public static void main(String[] args) {
         Node songjiang = new Node(1, "宋江", "及时雨");
         Node chaogai = new Node(2, "晁盖", "托塔天王");

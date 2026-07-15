@@ -1,13 +1,16 @@
 package org.bluebridge.thread.threadlocal;
 
 /**
+ * InheritableThreadLocal 测试
+ *
  * @author lingwh
- * @desc InheritableThreadLocal 测试
  * @date 2019/7/25 9:19
  */
 public class InheritableThreadLocalTest {
+
     /***
      * 测试子线程获取子线程中的设置的值
+     * 
      * @param args
      * @throws InterruptedException
      */
@@ -22,6 +25,7 @@ public class InheritableThreadLocalTest {
      * 主线程
      */
     public static class MainThread extends Thread {
+
         @Override
         public void run() {
             try {
@@ -66,6 +70,7 @@ public class InheritableThreadLocalTest {
      * 子线程
      */
     public static class ChildThread extends Thread {
+
         @Override
         public void run() {
             try {

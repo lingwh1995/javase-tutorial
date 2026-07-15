@@ -1,11 +1,13 @@
 package org.bluebridge.java9.chapter_01_interface;
 
 /**
+ * MyInterface的实现类
+ *
  * @author lingwh
- * @desc MyInterface的实现类
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class MyInterfaceImpl implements MyInterface {
+
     @Override
     public void methodAbstract() {
         System.out.println("我是实现类中的抽象方法...");

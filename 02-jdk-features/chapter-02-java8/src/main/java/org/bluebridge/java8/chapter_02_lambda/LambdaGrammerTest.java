@@ -1,10 +1,11 @@
 package org.bluebridge.java8.chapter_02_lambda;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
-import org.junit.Test;
 
 /**
  * Lambda表达式语法(有六种语法格式:包括完整写法和简化写法)

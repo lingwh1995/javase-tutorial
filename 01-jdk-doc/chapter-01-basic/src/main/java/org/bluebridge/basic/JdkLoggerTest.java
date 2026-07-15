@@ -1,11 +1,13 @@
 package org.bluebridge.basic;
 
-import java.util.logging.Logger;
 import org.junit.Test;
 
+import java.util.logging.Logger;
+
 /**
+ * jdk自带日志框架测试
+ *
  * @author lingwh
- * @desc jdk自带日志框架测试
  * @date 2019/3/12 16:58
  */
 public class JdkLoggerTest {

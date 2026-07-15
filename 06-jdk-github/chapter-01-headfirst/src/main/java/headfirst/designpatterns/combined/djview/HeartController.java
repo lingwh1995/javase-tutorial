@@ -1,11 +1,13 @@
 package headfirst.designpatterns.combined.djview;
 
 /**
+ * 心跳控制器
+ *
  * @author lingwh
- * @desc 心跳控制器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeartController implements ControllerInterface {
+
     HeartModelInterface model;
     DJView view;
 
@@ -18,13 +20,18 @@ public class HeartController implements ControllerInterface {
         view.disableStartMenuItem();
     }
 
-    public void start() {}
+    public void start() {
+    }
 
-    public void stop() {}
+    public void stop() {
+    }
 
-    public void increaseBPM() {}
+    public void increaseBPM() {
+    }
 
-    public void decreaseBPM() {}
+    public void decreaseBPM() {
+    }
 
-    public void setBPM(int bpm) {}
+    public void setBPM(int bpm) {
+    }
 }

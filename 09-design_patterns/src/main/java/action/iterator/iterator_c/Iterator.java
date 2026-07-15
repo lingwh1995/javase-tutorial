@@ -1,11 +1,13 @@
 package action.iterator.iterator_c;
 
 /**
+ * 迭代器接口
+ *
  * @author lingwh
- * @desc 迭代器接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface Iterator {
+
     boolean hasNext();
 
     Object next();

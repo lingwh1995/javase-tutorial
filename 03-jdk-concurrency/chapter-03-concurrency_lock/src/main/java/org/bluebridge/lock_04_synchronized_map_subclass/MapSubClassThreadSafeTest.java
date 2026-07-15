@@ -6,11 +6,13 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * Map子类(HashMap、Hashtable、ConcurrentHashMap) 线程安全问题
+ *
  * @author lingwh
- * @desc Map子类(HashMap、Hashtable、ConcurrentHashMap) 线程安全问题
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MapSubClassThreadSafeTest {
+
     public static void main(String[] args) {
         // 多线程环境下测试HashMap
         multiThreadHashMapTest();

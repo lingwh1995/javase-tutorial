@@ -5,8 +5,9 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
+ * 事件监听器
+ *
  * @author lingwh
- * @desc 事件监听器
  * @date 2025/8/4 18:17
  */
 public class Lesson_03_EventListenerTest {

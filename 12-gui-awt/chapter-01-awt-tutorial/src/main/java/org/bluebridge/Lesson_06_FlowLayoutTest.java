@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 流式布局
+ *
  * @author lingwh
- * @desc 流式布局
  * @date 2025/1/26 16:32
  */
 public class Lesson_06_FlowLayoutTest {

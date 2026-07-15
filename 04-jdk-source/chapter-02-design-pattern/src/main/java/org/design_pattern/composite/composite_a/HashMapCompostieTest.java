@@ -3,11 +3,13 @@ package org.design_pattern.composite.composite_a;
 import java.util.HashMap;
 
 /**
+ * HashMap中的组合模式
+ *
  * @author lingwh
- * @desc HashMap中的组合模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HashMapCompostieTest {
+
     public static void main(String[] args) {
         HashMap<String, String> sons = new HashMap<>();
         sons.put("儿子", "张三");

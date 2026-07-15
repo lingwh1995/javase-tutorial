@@ -4,8 +4,9 @@ import com.aventrix.jnanoid.jnanoid.NanoIdUtils;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 测试JnanoidUtils工具类
+ *
  * @author lingwh
- * @desc 测试JnanoidUtils工具类
  * @date 2025/11/7 10:55
  */
 @Slf4j

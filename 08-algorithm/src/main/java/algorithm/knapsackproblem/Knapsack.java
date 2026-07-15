@@ -1,27 +1,21 @@
 package algorithm.knapsackproblem;
 
 /**
+ * 背包问题
+ *
  * @author lingwh
- * @desc 背包问题
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Knapsack {
+
     public static void main(String[] args) {
-        /**
-         * 物品的重量
-         */
-        int[] w = {1, 4, 3};
-        /**
-         * 物品的价值
-         */
-        int[] value = {1500, 3000, 2000};
-        /**
-         * 背包的容量
-         */
+        // 物品的重量
+        int[] w = { 1, 4, 3 };
+        // 物品的价值
+        int[] value = { 1500, 3000, 2000 };
+        // 背包的容量
         int m = 4;
-        /**
-         * 物品的个数
-         */
+        // 物品的个数
         int n = value.length;
         // 创建二维数组
         // v[i][j]:表示在前i个物品中能装入容量为j的背包中的最大价值
@@ -73,13 +67,13 @@ public class Knapsack {
          * 会输出冗余数据
          */
         // 输出最后放入的是那些商品
-        //        for(int i=0;i<path.length;i++){
-        //            for(int j=0;j<path[i].length;j++){
-        //                if(path[i][j] == 1){
-        //                    System.out.printf("第%d个商品放入到背包\n",i);
-        //                }
-        //            }
-        //        }
+        // for(int i=0;i<path.length;i++){
+        // for(int j=0;j<path[i].length;j++){
+        // if(path[i][j] == 1){
+        // System.out.printf("第%d个商品放入到背包\n",i);
+        // }
+        // }
+        // }
 
         // 行的最大下标
         int i = path.length - 1;

@@ -1,11 +1,13 @@
 package org.bluebridge.xml.jaxp;
 
 /**
+ * Sax方式解析xml
+ *
  * @author lingwh
- * @desc Sax方式解析xml
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class JaxpSaxParseXml {
+
     /**
      * Sax方式解析xml:事件驱动,边读便解析
      */

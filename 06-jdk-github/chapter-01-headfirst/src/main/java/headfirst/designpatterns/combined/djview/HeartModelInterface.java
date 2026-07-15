@@ -1,11 +1,13 @@
 package headfirst.designpatterns.combined.djview;
 
 /**
+ * 心跳模型接口
+ *
  * @author lingwh
- * @desc 心跳模型接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface HeartModelInterface {
+
     int getHeartRate();
 
     void registerObserver(BeatObserver o);

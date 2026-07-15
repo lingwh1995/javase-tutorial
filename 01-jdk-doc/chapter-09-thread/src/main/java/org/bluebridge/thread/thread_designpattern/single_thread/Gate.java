@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.single_thread;
 
 /**
+ * 单线程执行模式 - 门
+ *
  * @author lingwh
- * @desc 单线程执行模式 - 门
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Gate {
+
     private int counter = 0;
     private String name = "Nobody";
     private String address = "NoWhere";
@@ -31,11 +33,11 @@ public class Gate {
     /**
      * 注意:加上下面两个方法,Gate类就不安全了 因为String name,String address必须合在一起赋值才能有保护意义
      */
-    //    public synchronized void setName(String name) {
-    //        this.name = name;
-    //    }
+    // public synchronized void setName(String name) {
+    // this.name = name;
+    // }
 
-    //    public synchronized void setAddress(String address) {
-    //        this.address = address;
-    //    }
+    // public synchronized void setAddress(String address) {
+    // this.address = address;
+    // }
 }

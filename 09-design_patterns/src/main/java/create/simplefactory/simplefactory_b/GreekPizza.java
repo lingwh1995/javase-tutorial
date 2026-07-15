@@ -1,11 +1,13 @@
 package create.simplefactory.simplefactory_b;
 
 /**
+ * 希腊披萨
+ *
  * @author lingwh
- * @desc 希腊披萨
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class GreekPizza extends Pizza {
+
     @Override
     public void prepare() {
         System.out.println("希腊披萨订购......");

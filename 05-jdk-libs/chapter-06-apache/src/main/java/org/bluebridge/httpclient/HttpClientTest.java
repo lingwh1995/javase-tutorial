@@ -1,6 +1,5 @@
 package org.bluebridge.httpclient;
 
-import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -9,9 +8,12 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 
+import java.io.IOException;
+
 /**
+ * HttpClient工具类测试
+ *
  * @author lingwh
- * @desc HttpClient工具类测试
  * @date 2019/6/20 15:48
  */
 @Slf4j

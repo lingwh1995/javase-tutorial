@@ -3,11 +3,13 @@ package org.bluebridge.designpattern_07_flyweighty.connection_pool_02_my_thread_
 import java.sql.Connection;
 
 /**
+ * 自定义连接池测试
+ *
  * @author lingwh
- * @desc 自定义连接池测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MyConnectionTest {
+
     public static void main(String[] args) {
         // 初始化连接池
         ConnectionPool connectionPool = new ConnectionPool(2);

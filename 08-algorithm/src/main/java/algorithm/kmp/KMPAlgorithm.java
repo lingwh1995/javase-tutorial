@@ -1,11 +1,13 @@
 package algorithm.kmp;
 
 /**
+ * KMP算法
+ *
  * @author lingwh
- * @desc KMP算法
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class KMPAlgorithm {
+
     public static void main(String[] args) {
         String str1 = "BBC ABCDAB ABCDABCDABDE";
         String str2 = "ABCDABD";

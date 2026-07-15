@@ -6,8 +6,9 @@ import java.awt.event.WindowEvent;
 import javax.swing.*;
 
 /**
+ * 对话框
+ *
  * @author lingwh
- * @desc 对话框
  * @date 2026/1/30 17:49
  */
 public class Lesson_17_DialogTest {

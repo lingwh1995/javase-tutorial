@@ -7,9 +7,10 @@ import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
 
 /**
+ * 内省工具类
+ *
  * @author lingwh
- * @desc 内省工具类
- * @date 2019/3/17 00:00
+ * @date 2019/3/17 19:02
  */
 public class IntrospectUtils {
 

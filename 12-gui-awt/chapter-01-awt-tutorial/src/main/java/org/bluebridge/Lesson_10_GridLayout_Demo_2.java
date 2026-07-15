@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * 表格布局案例二 - 把容器分成两行，每一行里面都有几个按钮
+ *
  * @author lingwh
- * @desc 表格布局案例二 - 把容器分成两行，每一行里面都有几个按钮
  * @date 2026/1/29 21:06
  */
 public class Lesson_10_GridLayout_Demo_2 {

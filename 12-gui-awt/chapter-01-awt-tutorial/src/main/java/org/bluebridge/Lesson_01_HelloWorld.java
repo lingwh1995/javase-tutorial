@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * AWT HelloWorld程序
+ *
  * @author lingwh
- * @desc AWT HelloWorld程序
  * @date 2025/8/4 18:11
  */
 public class Lesson_01_HelloWorld {

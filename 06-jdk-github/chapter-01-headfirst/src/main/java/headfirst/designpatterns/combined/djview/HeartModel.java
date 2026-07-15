@@ -3,11 +3,13 @@ package headfirst.designpatterns.combined.djview;
 import java.util.*;
 
 /**
+ * 心跳模型
+ *
  * @author lingwh
- * @desc 心跳模型
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeartModel implements HeartModelInterface, Runnable {
+
     ArrayList<BeatObserver> beatObservers = new ArrayList<BeatObserver>();
     ArrayList<BPMObserver> bpmObservers = new ArrayList<BPMObserver>();
     int time = 1000;
@@ -23,8 +25,8 @@ public class HeartModel implements HeartModelInterface, Runnable {
     public void run() {
         int lastrate = -1;
 
-        for (; ; ) {
-			int change = random.nextInt(10);
+        for (;;) {
+            int change = random.nextInt(10);
             if (random.nextInt(2) == 0) {
                 change = 0 - change;
             }

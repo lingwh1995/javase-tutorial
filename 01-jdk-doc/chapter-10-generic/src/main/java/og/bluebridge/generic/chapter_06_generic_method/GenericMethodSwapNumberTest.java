@@ -3,9 +3,10 @@ package og.bluebridge.generic.chapter_06_generic_method;
 import java.util.Arrays;
 
 /**
+ * 泛型方法交换两个数测试
+ *
  * @author lingwh
- * @desc 泛型方法交换两个数测试
- * @date 2019/3/10 00:00
+ * @date 2019/3/10 18:39
  */
 public class GenericMethodSwapNumberTest {
 
@@ -13,14 +14,14 @@ public class GenericMethodSwapNumberTest {
         /**
          * 交换两个整数
          */
-        int[] nums = new int[] {1, 2, 3, 4, 5};
+        int[] nums = new int[] { 1, 2, 3, 4, 5 };
         int[] swapNums = swap(nums, 0, 1);
         System.out.println(Arrays.toString(swapNums));
 
         /**
          * 交换两个字符串
          */
-        String[] strs = new String[] {"a", "b", "c", "d", "e"};
+        String[] strs = new String[] { "a", "b", "c", "d", "e" };
         String[] swapStrs = swap(strs, 0, 1);
         System.out.println(Arrays.toString(swapStrs));
 
@@ -72,7 +73,7 @@ public class GenericMethodSwapNumberTest {
      *
      * @param nums
      * @param i
-     * @param j 参数
+     * @param j    参数
      * @return int[]
      * @throws
      */

@@ -3,14 +3,17 @@ package linkedlist.linkedlist_c;
 import java.util.Stack;
 
 /**
+ * 双向链表
+ *
  * @author lingwh
- * @desc 双向链表
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class HeroLinkedList {
+
     private Node headNode = new Node(0, "", "");
 
-    public HeroLinkedList() {}
+    public HeroLinkedList() {
+    }
 
     public HeroLinkedList(Node headNode) {
         this.headNode = headNode;
@@ -176,6 +179,7 @@ public class HeroLinkedList {
 }
 
 class Node {
+
     protected int heroNo;
     protected String heroName;
     protected String nickName;

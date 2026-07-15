@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_h;
 
 /**
+ * Intel牌CPU实现
+ *
  * @author lingwh
- * @desc Intel牌CPU实现
  * @date 2019/8/7 14:57
  */
 public class IntelCPU implements CPUApi {
+
     /**
      * 针脚数
      */

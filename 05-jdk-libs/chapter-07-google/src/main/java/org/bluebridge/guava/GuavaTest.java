@@ -10,12 +10,14 @@ import com.google.common.cache.LoadingCache;
 import com.google.common.collect.*;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * Guava 渐进式教学指南
+ *
  * @author lingwh
- * @desc Guava 渐进式教学指南
  * @date 2026/6/12 13:47
  */
 public class GuavaTest {

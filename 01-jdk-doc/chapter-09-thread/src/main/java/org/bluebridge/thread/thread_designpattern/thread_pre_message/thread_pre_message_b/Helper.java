@@ -1,8 +1,9 @@
 package org.bluebridge.thread.thread_designpattern.thread_pre_message.thread_pre_message_b;
 
 /**
+ * Thread-Per-Message 模式助手
+ *
  * @author lingwh
- * @desc Thread-Per-Message 模式助手
  * @date 2019/10/18 17:20
  */
 public class Helper {

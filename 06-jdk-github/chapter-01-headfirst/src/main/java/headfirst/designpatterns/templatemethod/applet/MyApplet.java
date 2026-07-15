@@ -4,11 +4,13 @@ import java.applet.Applet;
 import java.awt.Graphics;
 
 /**
+ * 小程序示例
+ *
  * @author lingwh
- * @desc 小程序示例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MyApplet extends Applet {
+
     private static final long serialVersionUID = 2L;
     String message;
 

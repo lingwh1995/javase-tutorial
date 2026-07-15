@@ -3,11 +3,13 @@ package org.bluebridge.designpattern_06_producer_consumer.producer_consumer_01;
 import java.util.LinkedList;
 
 /**
+ * 消息队列类，java线程之间通信
+ *
  * @author lingwh
- * @desc 消息队列类，java线程之间通信
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 class MessageQueue {
+
     // 消息的队列集合
     private LinkedList<Message> list = new LinkedList<>();
     // 队列容量

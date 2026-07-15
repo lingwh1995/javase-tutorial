@@ -3,8 +3,9 @@ package org.bluebridge.basic;
 import org.junit.Test;
 
 /**
+ * Integer测试
+ *
  * @author lingwh
- * @desc Integer测试
  * @date 2026/3/14 14:19
  */
 public class IntegerTest {

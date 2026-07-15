@@ -1,13 +1,15 @@
 package org.bluebridge.reflect.chapter_04_reflect_gener;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import org.junit.Test;
 
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
 /*
+ * 反射获取继承时的类型参数
+ *
  * @author lingwh
- * @desc 反射获取继承时的类型参数
- * @date 2019/3/14 00:00
+ * @date 2019/3/14 18:04
  */
 public class GenericReflectTest1 {
 
@@ -101,10 +103,8 @@ class B<T> {
         System.out.println("我是父类B的无参构造，我的泛型类型为在创建对象时由子类传递的类型参数决定！");
 
         System.out.println("-----------------------------");
-        Class c =
-                (Class)
-                        (((ParameterizedType) this.getClass().getGenericSuperclass())
-                                .getActualTypeArguments()[0]);
+        Class c = (Class) (((ParameterizedType) this.getClass().getGenericSuperclass())
+                .getActualTypeArguments()[0]);
         System.out.println(c.getName());
         System.out.println("-----------------------------");
     }
@@ -117,7 +117,7 @@ class B<T> {
 /**
  * 类型参数为常量:Stirng
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/3/14 17:58
  */
 class BB extends B<String> {
@@ -142,7 +142,8 @@ class BB extends B<String> {
 /*
  * 类型参数为常量:Integer
  *
- * @author ronin
+ * @author lingwh
+ *
  * @date 2019/3/14 18:01
  */
 class BBB extends B<Integer> {

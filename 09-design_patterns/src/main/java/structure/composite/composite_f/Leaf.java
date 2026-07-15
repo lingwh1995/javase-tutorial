@@ -1,8 +1,9 @@
 package structure.composite.composite_f;
 
 /**
+ * 叶子对象
+ *
  * @author lingwh
- * @desc 叶子对象
  * @date 2019/8/22 11:13
  */
 public class Leaf extends Component {

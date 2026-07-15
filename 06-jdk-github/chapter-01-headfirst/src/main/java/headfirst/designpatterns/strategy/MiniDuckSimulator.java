@@ -1,11 +1,13 @@
 package headfirst.designpatterns.strategy;
 
 /**
+ * 迷你鸭子模拟器
+ *
  * @author lingwh
- * @desc 迷你鸭子模拟器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MiniDuckSimulator {
+
     public static void main(String[] args) {
         MallardDuck mallard = new MallardDuck();
         FlyBehavior cantFly = () -> System.out.println("I can't fly");
