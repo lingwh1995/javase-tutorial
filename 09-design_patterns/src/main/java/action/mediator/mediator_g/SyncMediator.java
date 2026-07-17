@@ -1,11 +1,13 @@
 package action.mediator.mediator_g;
 
 /**
+ * 同步中介者
+ *
  * @author lingwh
- * @desc 同步中介者
  * @date 2019/8/15 8:39
  */
 public class SyncMediator extends AbstractMediator {
+
     @Override
     public void sync(String databaseName, String data) {
         if (AbstractDatabase.MYSQL.equals(databaseName)) {

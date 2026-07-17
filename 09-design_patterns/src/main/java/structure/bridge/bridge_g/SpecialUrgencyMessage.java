@@ -1,7 +1,9 @@
 package structure.bridge.bridge_g;
 
 /**
- * @author ronin
+ * 特急消息
+ *
+ * @author lingwh
  * @date 2019/8/6 9:24
  */
 public class SpecialUrgencyMessage extends AbstractMessage {

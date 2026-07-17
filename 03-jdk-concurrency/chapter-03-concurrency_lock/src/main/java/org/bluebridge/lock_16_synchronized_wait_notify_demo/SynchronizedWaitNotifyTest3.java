@@ -9,9 +9,10 @@ import java.util.concurrent.TimeUnit;
  * 解决方法，改为 notifyAll
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SynchronizedWaitNotifyTest3 {
+
     static final Object room = new Object();
     static boolean hasCigarette = false;
     static boolean hasTakeout = false;

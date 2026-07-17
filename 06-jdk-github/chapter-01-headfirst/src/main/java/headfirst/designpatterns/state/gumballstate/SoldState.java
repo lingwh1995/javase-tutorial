@@ -1,9 +1,10 @@
 package headfirst.designpatterns.state.gumballstate;
 
 /**
+ * 售出状态
+ *
  * @author lingwh
- * @desc 售出状态
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SoldState implements State {
 
@@ -35,7 +36,8 @@ public class SoldState implements State {
         }
     }
 
-    public void refill() {}
+    public void refill() {
+    }
 
     public String toString() {
         return "dispensing a gumball";

@@ -3,7 +3,7 @@ package structure.proxy.dynamicproxy.dynamicproxy_a;
 /**
  * 抽象角色:定义代理角色和真实角色的公共对外方法
  *
- * @author ronin
+ * @author lingwh
  * @date 20193/23 23:22
  */
 public interface Star {

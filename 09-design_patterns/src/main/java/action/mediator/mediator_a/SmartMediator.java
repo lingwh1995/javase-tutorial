@@ -1,8 +1,9 @@
 package action.mediator.mediator_a;
 
 /**
+ * 抽象中介类
+ *
  * @author lingwh
- * @desc 抽象中介类
  * @date 2019/7/29 9:24
  */
 public abstract class SmartMediator {

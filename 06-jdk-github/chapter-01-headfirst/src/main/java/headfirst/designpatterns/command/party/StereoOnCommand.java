@@ -1,11 +1,13 @@
 package headfirst.designpatterns.command.party;
 
 /**
+ * 音响打开命令
+ *
  * @author lingwh
- * @desc 音响打开命令
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class StereoOnCommand implements Command {
+
     Stereo stereo;
 
     public StereoOnCommand(Stereo stereo) {

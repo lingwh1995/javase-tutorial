@@ -6,11 +6,13 @@ import java.io.StreamTokenizer;
 import java.io.StringReader;
 
 /**
+ * 流标记器测试
+ *
  * @author lingwh
- * @desc 流标记器测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class StreamTokenizerTest {
+
     public static void main(String[] args) {
         StreamTokenizer streamTokenizer = null;
         String src = "The quick brown fox jumped over the lazy dog";

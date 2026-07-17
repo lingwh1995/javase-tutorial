@@ -1,16 +1,18 @@
 package org.bluebridge.java8.chapter_05_stream;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.junit.Test;
 
 /**
+ * 将Stream转换为数组或者集合
+ *
  * @author lingwh
- * @desc 将Stream转换为数组或者集合
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class StreamTransferTest {
 

@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 切片意大利辣香肠
+ *
  * @author lingwh
- * @desc 切片意大利辣香肠
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SlicedPepperoni implements Pepperoni {
 

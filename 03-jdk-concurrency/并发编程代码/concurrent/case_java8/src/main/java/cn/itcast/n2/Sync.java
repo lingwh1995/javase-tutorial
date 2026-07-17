@@ -5,9 +5,10 @@ import cn.itcast.n2.util.FileReader;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 同步读取文件
+ *
  * @author lingwh
- * @desc 同步读取文件
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 @Slf4j(topic = "c.Sync")
 public class Sync {

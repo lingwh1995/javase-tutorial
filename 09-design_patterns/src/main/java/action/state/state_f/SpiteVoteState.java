@@ -1,10 +1,13 @@
 package action.state.state_f;
 
 /**
+ * 恶意投票状态
+ *
  * @author lingwh
  * @date 2019/9/23 18:06
  */
 public class SpiteVoteState implements VoteState {
+
     @Override
     public void vote(String user, String voteItem, VoteManager voteManager) {
         // 恶意投票，取消用户的投票资格，并取消投票记录

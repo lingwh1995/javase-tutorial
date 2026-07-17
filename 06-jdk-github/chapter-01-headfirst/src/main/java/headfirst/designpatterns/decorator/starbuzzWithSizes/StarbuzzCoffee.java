@@ -3,9 +3,10 @@ package headfirst.designpatterns.decorator.starbuzzWithSizes;
 import headfirst.designpatterns.decorator.starbuzzWithSizes.Beverage.Size;
 
 /**
+ * 星巴克咖啡测试
+ *
  * @author lingwh
- * @desc 星巴克咖啡测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class StarbuzzCoffee {
 

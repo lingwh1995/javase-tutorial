@@ -13,6 +13,7 @@ package create.singleton.singleton_a;
  * @date 2019/3/23 22:10
  */
 public class SingletonTest5 {
+
     public static void main(String[] args) {
         Singleton5 instace1 = Singleton5.INSTACE;
         Singleton5 instace2 = Singleton5.INSTACE;
@@ -23,5 +24,6 @@ public class SingletonTest5 {
 }
 
 enum Singleton5{
+
     INSTACE;
 }

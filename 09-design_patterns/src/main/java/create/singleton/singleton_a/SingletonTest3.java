@@ -3,10 +3,11 @@ package create.singleton.singleton_a;
 /**
  * 饿汉式:线程安全+线程不安全
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/3/23 22:10
  */
 public class SingletonTest3 {
+
     public static void main(String[] args) {
         Singeton3 insance1 = Singeton3.getInsance();
         Singeton3 insance2 = Singeton3.getInsance();

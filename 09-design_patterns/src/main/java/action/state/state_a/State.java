@@ -1,8 +1,9 @@
 package action.state.state_a;
 
 /**
+ * 封装与Context的一个特定状态相关的行为
+ *
  * @author lingwh
- * @desc 封装与Context的一个特定状态相关的行为
  * @date 2019/8/27 9:10
  */
 public interface State {

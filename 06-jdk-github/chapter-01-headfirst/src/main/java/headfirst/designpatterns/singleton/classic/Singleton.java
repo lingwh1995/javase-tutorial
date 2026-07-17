@@ -6,13 +6,14 @@ package headfirst.designpatterns.singleton.classic;
  * NOTE: This is not thread safe!
  *
  * @author lingwh
- * @desc 经典单例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Singleton {
+
     private static Singleton uniqueInstance;
 
-    private Singleton() {}
+    private Singleton() {
+    }
 
     public static Singleton getInstance() {
         if (uniqueInstance == null) {

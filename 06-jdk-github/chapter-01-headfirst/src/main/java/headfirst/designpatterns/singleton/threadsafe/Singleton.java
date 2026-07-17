@@ -1,16 +1,19 @@
 package headfirst.designpatterns.singleton.threadsafe;
 
 /**
+ * 线程安全单例
+ *
  * @author lingwh
- * @desc 线程安全单例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Singleton {
+
     private static Singleton uniqueInstance;
 
     // other useful instance variables here
 
-    private Singleton() {}
+    private Singleton() {
+    }
 
     public static synchronized Singleton getInstance() {
         if (uniqueInstance == null) {

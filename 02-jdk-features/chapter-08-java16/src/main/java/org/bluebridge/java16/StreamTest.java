@@ -1,14 +1,16 @@
 package org.bluebridge.java16;
 
+import org.junit.Test;
+
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.junit.Test;
 
 /**
+ * Java16 Stream 测试
+ *
  * @author lingwh
- * @desc Java16 Stream 测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class StreamTest {
 
@@ -17,7 +19,7 @@ public class StreamTest {
      */
     @Test
     public void testStreamToList() {
-        String[] fruits = {"apple","pear","orange"};
+        String[] fruits = { "apple", "pear", "orange" };
         // java16之前
         List<String> collect = Stream.of(fruits).filter(fruit -> fruit.length() >= 5).collect(Collectors.toList());
         System.out.println(collect);

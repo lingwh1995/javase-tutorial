@@ -3,8 +3,9 @@ package structure.decorator.decorator_h;
 import java.util.Date;
 
 /**
+ * 装饰器对象，计算累计奖金
+ *
  * @author lingwh
- * @desc 装饰器对象，计算累计奖金
  * @date 2019/8/6 15:43
  */
 public class SumPrizeDecorator extends Decorator {

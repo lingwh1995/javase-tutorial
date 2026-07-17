@@ -3,9 +3,10 @@ package action.interpreter.interpreter_b;
 import java.util.HashMap;
 
 /**
+ * 减法解释器
+ *
  * @author lingwh
- * @desc 减法解释器
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SubExpression extends SymbolExpression {
 

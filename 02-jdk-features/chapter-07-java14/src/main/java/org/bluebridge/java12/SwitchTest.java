@@ -3,9 +3,10 @@ package org.bluebridge.java12;
 import org.junit.Test;
 
 /**
+ * java12提供了更强的 switch 使用语法
+ *
  * @author lingwh
- * @desc java12提供了更强的 switch 使用语法
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SwitchTest {
 
@@ -32,8 +33,8 @@ public class SwitchTest {
         String desc = null;
         desc = switch (food) {
             case RICE -> "主食...";
-            case APPLE,PEAR,BANANA -> "水果...";
-            case MILK,WATER -> "饮料...";
+            case APPLE, PEAR, BANANA -> "水果...";
+            case MILK, WATER -> "饮料...";
             default -> throw new IllegalStateException("没有该食物...");
         };
         System.out.println(desc);

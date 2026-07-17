@@ -1,9 +1,10 @@
 package org.design_pattern.strategy.strategy_a;
 
 /**
+ * 简单税务计算策略
+ *
  * @author lingwh
- * @desc 简单税务计算策略
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SimpleTaxCalculateStrategy implements TaxCalculatorStrategy {
 

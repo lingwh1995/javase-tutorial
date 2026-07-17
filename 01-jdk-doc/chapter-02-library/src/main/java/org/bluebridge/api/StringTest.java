@@ -1,23 +1,25 @@
 package org.bluebridge.api;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
 
 /**
+ * String类高级API
+ *
  * @author lingwh
- * @desc String类高级API
- * @date 2019/3/11 00:00
+ * @date 2026/4/23 16:29
  */
 @Slf4j
 public class StringTest {
 
     /**
      * 测试String的split()方法
-     *     把字符串根据分隔符转换成数组
+     * 把字符串根据分隔符转换成数组
      */
     @Test
     public void testSplit() {
@@ -32,7 +34,8 @@ public class StringTest {
 
     /**
      * 测试String的indexOf()方法
-     *    返回指定字符或字符串在当前字符串中第一次出现的索引位置 如果当前字符串中不包含指定的字符或字符串，则返回-1
+     *
+     * 返回指定字符或字符串在当前字符串中第一次出现的索引位置 如果当前字符串中不包含指定的字符或字符串，则返回-1
      */
     @Test
     public void testIndexOf() {
@@ -48,12 +51,13 @@ public class StringTest {
 
     /**
      * String的Join方法
-     *     使用指定的拼接符号把数组/集合中每一个元素拼接起来,拼成一个字符串
+     *
+     * 使用指定的拼接符号把数组/集合中每一个元素拼接起来,拼成一个字符串
      */
     @Test
     public void testJoin() {
         // 拼接数组
-        String[] nums = {"123", "456", "789"};
+        String[] nums = { "123", "456", "789" };
         String arrayJoinToString = String.join("-", nums);
         log.debug("arrayJoinToString: {}", arrayJoinToString);
 
@@ -70,7 +74,8 @@ public class StringTest {
 
     /**
      * 测试String的StringTokenizer对象
-     *     把字符串根据分隔符转换成数组，和split()的区别：当分隔符是.等特殊字符时，split()无法分割，使用StringTokenizer对象可以分割该对象
+     *
+     * 把字符串根据分隔符转换成数组，和split()的区别：当分隔符是.等特殊字符时，split()无法分割，使用StringTokenizer对象可以分割该对象
      */
     @Test
     public void testStringTokenizer() {
@@ -122,21 +127,21 @@ public class StringTest {
         log.debug("str.codePointCount(1, str.length()): {}", str.codePointCount(1, str.length()));
     }
 
-	/**
-	 * valueOf和toString()
+    /**
+     * valueOf和toString()
      *
-	 * valueOf()源码:
-	 * public static String valueOf(Object obj) {
-	 *		return (obj == null) ? "null" : obj.toString();
-	 * }
-	 */
-	@Test
-	public void testValueOfAndToString(){
-		//valueOf():不会抛空指针异常
-		Integer num = null;
-		log.debug("String.valueOf(num): {}", String.valueOf(num));
-		//toString():会跑出空指针异常
-	}
+     * valueOf()源码:
+     * public static String valueOf(Object obj) {
+     * return (obj == null) ? "null" : obj.toString();
+     * }
+     */
+    @Test
+    public void testValueOfAndToString() {
+        // valueOf():不会抛空指针异常
+        Integer num = null;
+        log.debug("String.valueOf(num): {}", String.valueOf(num));
+        // toString():会跑出空指针异常
+    }
 
     @Test
     public void testConcat() {

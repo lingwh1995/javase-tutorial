@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 发布者抽象类
+ *
  * @author lingwh
- * @desc 发布者抽象类
  * @date 2019/8/30 10:54
  */
 public abstract class Subject {

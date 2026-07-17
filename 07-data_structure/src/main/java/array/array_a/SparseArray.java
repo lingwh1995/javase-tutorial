@@ -1,15 +1,17 @@
 package array.array_a;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.junit.Test;
 
 /**
+ * 稀疏数组
+ *
  * @author lingwh
- * @desc 稀疏数组
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SparseArray {
 
@@ -25,7 +27,7 @@ public class SparseArray {
         // 打印数组
         print(chessArray);
         System.out.println("--------------原始的二维数组--------------");
-        // 二维数组转稀疏数组 1.先遍历二维数组，得到有效值的个数
+        // 二维数组转稀疏数组 1. 先遍历二维数组，得到有效值的个数
         int sum = 0;
         List<Map<String, Integer>> list = new ArrayList<>();
         for (int row = 0; row < chessArray.length; row++) {
@@ -43,7 +45,7 @@ public class SparseArray {
         }
         System.out.println("有效值的个数:" + sum);
         System.out.println("原始数组中有效值:" + list.toString());
-        // 2.根据有效值的个数创建稀疏数组
+        // 2. 根据有效值的个数创建稀疏数组
         int[][] parseChessArray = new int[sum + 1][3];
         parseChessArray[0][0] = 11;
         parseChessArray[0][1] = 11;
@@ -58,7 +60,7 @@ public class SparseArray {
         print(parseChessArray);
         System.out.println("--------------稀疏数组--------------");
 
-        // 3.根据稀疏数组parseChessArray中存放的值还原数组
+        // 3. 根据稀疏数组parseChessArray中存放的值还原数组
         int[][] source = parseChessArray;
         // 创建数组
         int[][] target = new int[source[0][0]][source[0][1]];

@@ -8,9 +8,10 @@ import org.junit.Test;
  * 严格遵守了单一职责原则，遵守了单一职责原则:但是会导致类大爆炸
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SingleResponsibility2 {
+
     @Test
     public void run() {
         RoadVehicle roadVehicle = new RoadVehicle();

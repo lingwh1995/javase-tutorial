@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 目标对象，被观察对象
+ *
  * @author lingwh
- * @desc 目标对象，被观察对象
  * @date 2019/8/19 13:46
  */
 public abstract class Subject {

@@ -10,9 +10,10 @@ import java.util.concurrent.Executors;
  * 2. 使用的工作队列是LinkedBlockingQueue
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SingleThreadExecutor01HelloWorldTest {
+
     public static void main(String[] args) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
 

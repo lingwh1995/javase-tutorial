@@ -1,8 +1,9 @@
 package action.command.command_k;
 
 /**
+ * 减法命令
+ *
  * @author lingwh
- * @desc 减法命令
  * @date 2019/9/10 16:19
  */
 public class SubstractCommand implements Command {

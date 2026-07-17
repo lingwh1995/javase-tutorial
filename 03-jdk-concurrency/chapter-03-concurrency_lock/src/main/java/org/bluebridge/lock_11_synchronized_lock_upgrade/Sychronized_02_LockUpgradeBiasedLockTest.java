@@ -13,7 +13,7 @@ import org.openjdk.jol.info.ClassLayout;
  *    2. VM配置参数设置为 -XX:+UseBiasedLocking -XX:BiasedLockingStartupDelay=0
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class Sychronized_02_LockUpgradeBiasedLockTest {
 

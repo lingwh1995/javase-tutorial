@@ -1,11 +1,13 @@
 package org.bluebridge.lock_23_reentrant_lock.reentrant_lock_06_sychronized;
 
 /**
+ * Sychronized锁的可重入性
+ *
  * @author lingwh
- * @desc Sychronized锁的可重入性
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SychronizedReentrantLock {
+
     public static void main(String[] args) {
         SychronizedReentrantLock sychronizedReentrantLock = new SychronizedReentrantLock();
         sychronizedReentrantLock.method1();

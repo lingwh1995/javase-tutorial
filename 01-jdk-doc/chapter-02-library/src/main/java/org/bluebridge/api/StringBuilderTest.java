@@ -1,9 +1,10 @@
 package org.bluebridge.api;
 
 /**
+ * String、StringBuffer、StringBuilder区别
+ *
  * @author lingwh
- * @desc String、StringBuffer、StringBuilder区别
- * @date 2019/4/14 00:00
+ * @date 2019/4/14 16:29
  */
 public class StringBuilderTest {
 

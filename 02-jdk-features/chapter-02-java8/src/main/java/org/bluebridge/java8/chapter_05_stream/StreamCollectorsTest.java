@@ -1,21 +1,24 @@
 package org.bluebridge.java8.chapter_05_stream;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Before;
+import org.junit.Test;
+
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Before;
-import org.junit.Test;
 
 /**
+ * 收集流中元素到各种集合中
+ *
  * @author lingwh
- * @desc 收集流中元素到各种集合中
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 @Slf4j
 public class StreamCollectorsTest {
+
     private List<Employee> employees;
 
     /**
@@ -44,7 +47,7 @@ public class StreamCollectorsTest {
         List<Employee> collectList = stream
                 .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
                 .filter(employee -> employee.getAge() > 15)
-                        .collect(Collectors.toList());
+                .collect(Collectors.toList());
         log.debug("collectList: {}", collectList);
     }
 
@@ -100,7 +103,7 @@ public class StreamCollectorsTest {
         Integer[] collectArray = stream
                 .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
                 .map(employee -> employee.getAge())
-                //.toArray(value -> new Integer[value]); // 此处的参数 value 就是 流中元素的个数
+                // .toArray(value -> new Integer[value]); // 此处的参数 value 就是 流中元素的个数
                 .toArray(Integer[]::new);
         log.debug("collectArray: {}", Arrays.toString(collectArray));
     }
@@ -135,7 +138,7 @@ public class StreamCollectorsTest {
         map.put("age", "25");
         Map<String, String> sortedMap = map.entrySet().stream()
                 .sorted(Map.Entry.comparingByKey()) // 根据key排序
-                //.sorted(Map.Entry.comparingByValue()) // 根据值排序
+                // .sorted(Map.Entry.comparingByValue()) // 根据值排序
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         Map.Entry::getValue,

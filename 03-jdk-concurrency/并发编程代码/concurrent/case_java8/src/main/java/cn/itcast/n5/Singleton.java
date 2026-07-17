@@ -1,11 +1,13 @@
 package cn.itcast.n5;
 
 /**
+ * 单例模式
+ *
  * @author lingwh
- * @desc 单例模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public final class Singleton {
+
     private Singleton() {
 
     }

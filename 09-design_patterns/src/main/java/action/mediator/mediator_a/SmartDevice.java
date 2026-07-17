@@ -1,8 +1,9 @@
 package action.mediator.mediator_a;
 
 /**
+ * 抽象同事类:智能设备
+ *
  * @author lingwh
- * @desc 抽象同事类:智能设备
  * @date 2019/7/29 9:19
  */
 public abstract class SmartDevice {

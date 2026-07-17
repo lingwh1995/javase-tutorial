@@ -1,9 +1,10 @@
 package org.bluebridge.lock_03_synchronized_oop;
 
 /**
+ * 使用面向对象方式改造 synchronized 避免临界区中发生竞态条件
+ *
  * @author lingwh
- * @desc 使用面向对象方式改造 synchronized 避免临界区中发生竞态条件
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SynchronizedOOPTest {
 

@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.balking.balking_b;
 
 /**
+ * Balking 模式初始化示例
+ *
  * @author lingwh
- * @desc Balking 模式初始化示例
  * @date 2019/10/17 9:48
  */
 public class Something {
+
     private boolean initialized = false;
 
     public synchronized void init() {

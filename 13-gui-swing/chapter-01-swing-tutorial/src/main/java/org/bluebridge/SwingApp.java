@@ -4,8 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * Swing应用
+ *
  * @author lingwh
- * @desc Swing应用
  * @date 2025/8/4 18:24
  */
 public class SwingApp {

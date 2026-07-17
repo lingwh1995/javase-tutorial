@@ -4,11 +4,13 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
+ * Swing观察者示例
+ *
  * @author lingwh
- * @desc Swing观察者示例
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SwingObserverExample {
+
     JFrame frame;
 
     public static void main(String[] args) {

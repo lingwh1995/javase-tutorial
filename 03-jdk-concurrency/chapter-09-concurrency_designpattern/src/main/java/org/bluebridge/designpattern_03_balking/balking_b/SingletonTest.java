@@ -1,11 +1,13 @@
 package org.bluebridge.designpattern_03_balking.balking_b;
 
 /**
+ * 测试单例模式
+ *
  * @author lingwh
- * @desc 测试单例模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SingletonTest {
+
     public static void main(String[] args) {
         Singleton instance1 = Singleton.getInstance();
         Singleton instance2 = Singleton.getInstance();

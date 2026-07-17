@@ -1,18 +1,21 @@
 package org.bluebridge.java8.chapter_05_stream;
 
+import org.junit.Before;
+import org.junit.Test;
+
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
-import org.junit.Before;
-import org.junit.Test;
 
 /**
+ * Stream流中止操作
+ *
  * @author lingwh
- * @desc Stream流中止操作
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class StreamEndTest {
+
     private List<Employee> employees;
 
     /**
@@ -132,8 +135,7 @@ public class StreamEndTest {
         Stream<Employee> stream = employees.stream();
         // Optional<Employee> maxEmployee = stream.max((e1, e2) ->
         // Double.compare(e1.getSalary().doubleValue(), e2.getSalary().doubleValue()));
-        Optional<Employee> maxEmployee =
-                stream.max(Comparator.comparingDouble(e -> e.getSalary().doubleValue()));
+        Optional<Employee> maxEmployee = stream.max(Comparator.comparingDouble(e -> e.getSalary().doubleValue()));
         System.out.println(maxEmployee.get());
 
         Optional<Integer> maxInteger = Arrays.asList(1, 2, 3, 4, 5, 6).stream().max(Integer::compareTo);
@@ -149,8 +151,7 @@ public class StreamEndTest {
         Stream<Employee> stream = employees.stream();
         // Optional<Employee> minEmployee = stream.min((e1, e2) ->
         // Double.compare(e1.getSalary().doubleValue(), e2.getSalary().doubleValue()));
-        Optional<Employee> minEmployee =
-                stream.min(Comparator.comparingDouble(e -> e.getSalary().doubleValue()));
+        Optional<Employee> minEmployee = stream.min(Comparator.comparingDouble(e -> e.getSalary().doubleValue()));
         System.out.println(minEmployee.get());
 
         Optional<Integer> minInteger = Arrays.asList(1, 2, 3, 4, 5, 6).stream().min(Integer::compareTo);

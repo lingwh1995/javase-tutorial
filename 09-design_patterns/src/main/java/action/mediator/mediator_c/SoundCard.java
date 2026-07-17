@@ -1,11 +1,13 @@
 package action.mediator.mediator_c;
 
 /**
+ * 声卡
+ *
  * @author lingwh
- * @desc 声卡
  * @date 2019/8/14 13:13
  */
 public class SoundCard extends Colleague {
+
     public SoundCard(Mediator mediator) {
         super(mediator);
     }

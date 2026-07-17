@@ -17,8 +17,9 @@ package org.bluebridge.designpattern_05_singleton.singleton_02;
  *    写构造方法
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 enum Singleton {
+
     INSTANCE;
 }

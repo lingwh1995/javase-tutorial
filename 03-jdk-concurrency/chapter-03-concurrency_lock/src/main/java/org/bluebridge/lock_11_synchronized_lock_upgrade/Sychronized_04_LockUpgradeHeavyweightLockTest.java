@@ -12,7 +12,7 @@ import org.openjdk.jol.info.ClassLayout;
  *    重量级锁竞争的时候，还可以使用自旋来进行优化，如果当前线程自旋成功（即这时候持锁线程已经退出了同步 块，释放了锁），这时当前线程就可以避免阻塞。
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class Sychronized_04_LockUpgradeHeavyweightLockTest {
 

@@ -1,12 +1,14 @@
 package org.bluebridge.chapter_02_character_stream._05_string_reader_string_writer;
 
-import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.*;
+
 /**
+ * StringReader和StringWriter综合应用
+ *
  * @author lingwh
- * @desc StringReader和StringWriter综合应用
  * @date 2025/9/8 18:36
  */
 @Slf4j

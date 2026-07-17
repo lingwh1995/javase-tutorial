@@ -9,10 +9,11 @@ package create.singleton.singleton_a;
  * 3. 兼备了并发调用和延迟加载的优势
  *    并发体现在: 调用的时候可以直接调用
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/3/23 22:10
  */
 public class SingletonTest4 {
+
     public static void main(String[] args) {
         Singleton4 instance1 = Singleton4.getInstance();
         Singleton4 instance2 = Singleton4.getInstance();

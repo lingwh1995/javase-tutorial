@@ -12,7 +12,7 @@ import org.openjdk.jol.info.ClassLayout;
  *    其他线程使用对象，下面代码实际上是偏向锁升级到轻量级锁，也属于撤消偏向锁的一种情况
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class Sychronized_RevokeBiasedLockTest02 {
 

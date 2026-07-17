@@ -1,11 +1,13 @@
 package action.state.state_i;
 
 /**
+ * 状态抽象类
+ *
  * @author lingwh
- * @desc 状态抽象类
  * @date 2019/8/2 8:50
  */
 public abstract class State {
+
     // 扣除积分方法;
     public abstract void deductIntegral();
 

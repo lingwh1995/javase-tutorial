@@ -1,11 +1,13 @@
 package headfirst.designpatterns.proxy.gumball;
 
 /**
+ * 售出状态
+ *
  * @author lingwh
- * @desc 售出状态
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SoldState implements State {
+
     private static final long serialVersionUID = 2L;
     transient GumballMachine gumballMachine;
 

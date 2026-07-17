@@ -5,8 +5,9 @@ import org.bluebridge.constructor.required_args_constructor_spring.dao.*;
 import org.springframework.stereotype.Service;
 
 /**
+ * 存储服务实现类
+ *
  * @author lingwh
- * @desc 存储服务实现类
  * @date 2025/11/10 11:50
  */
 @Service

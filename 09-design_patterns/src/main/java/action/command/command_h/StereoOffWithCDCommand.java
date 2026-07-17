@@ -1,8 +1,9 @@
 package action.command.command_h;
 
 /**
+ * 音响设备关闭命令对象
+ *
  * @author lingwh
- * @desc 音响设备关闭命令对象
  * @date 2019/9/4 15:19
  */
 public class StereoOffWithCDCommand implements Command {

@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_i;
 
 /**
+ * 索尼内存条
+ *
  * @author lingwh
- * @desc 索尼内存条
  * @date 2019/8/7 16:12
  */
 public class SonyMemory implements MemoryApi {

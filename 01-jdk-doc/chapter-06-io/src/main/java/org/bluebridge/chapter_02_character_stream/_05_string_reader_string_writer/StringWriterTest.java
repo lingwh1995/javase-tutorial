@@ -1,13 +1,15 @@
 package org.bluebridge.chapter_02_character_stream._05_string_reader_string_writer;
 
-import java.io.IOException;
-import java.io.StringWriter;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.io.StringWriter;
+
 /**
+ * StringWriter 是 Writer 的子类，用于将字符数据写入字符串缓冲区
+ *
  * @author lingwh
- * @desc StringWriter 是 Writer 的子类，用于将字符数据写入字符串缓冲区
  * @date 2025/9/8 18:29
  */
 @Slf4j

@@ -4,11 +4,13 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * 统计数据展示
+ *
  * @author lingwh
- * @desc 统计数据展示
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class StatisticsDisplay implements Observer, DisplayElement {
+
     private float maxTemp = 0.0f;
     private float minTemp = 200;
     private float tempSum = 0.0f;

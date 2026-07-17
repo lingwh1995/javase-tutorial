@@ -1,13 +1,15 @@
 package org.bluebridge.chapter_02_character_stream._05_string_reader_string_writer;
 
-import java.io.IOException;
-import java.io.StringReader;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.io.StringReader;
+
 /**
+ * StringReader 是 Reader 的子类，用于从字符串中读取字符数据。
+ *
  * @author lingwh
- * @desc StringReader 是 Reader 的子类，用于从字符串中读取字符数据。
  * @date 2025/9/8 18:28
  */
 @Slf4j

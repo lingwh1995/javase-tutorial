@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 目标对象，作为被观察者，使用推模型
+ *
  * @author lingwh
- * @desc 目标对象，作为被观察者，使用推模型
  * @date 2019/8/19 15:03
  */
 public abstract class Subject {

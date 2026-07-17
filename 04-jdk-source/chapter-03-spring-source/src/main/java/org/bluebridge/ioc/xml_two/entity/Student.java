@@ -1,17 +1,19 @@
 package org.bluebridge.ioc.xml_two.entity;
 
 /**
+ * 学生
+ *
  * @author lingwh
- * @desc 学生
- * @date 2019/3/15 00:00
+ * @date 2019/3/15 19:02
  */
 public class Student {
+
     private String name;
     private Integer age;
 
     /**
      * 创建一个新的实例 Student.
-     * 
+     *
      */
     public Student() {
         super();
@@ -20,7 +22,7 @@ public class Student {
 
     /**
      * 创建一个新的实例 Student.
-     * 
+     *
      * @param name
      * @param age
      */
@@ -46,17 +48,6 @@ public class Student {
         this.age = age;
     }
 
-    /**
-     * <p>
-     * Title: toString
-     * </p>
-     * <p>
-     * Description:
-     * </p>
-     * 
-     * @return
-     * @see Object#toString()
-     */
     @Override
     public String toString() {
         return "Student [name=" + name + ", age=" + age + "]";

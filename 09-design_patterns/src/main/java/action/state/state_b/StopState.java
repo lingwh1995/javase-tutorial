@@ -1,8 +1,9 @@
 package action.state.state_b;
 
 /**
+ * 结束状态
+ *
  * @author lingwh
- * @desc 结束状态
  * @date 2019/8/2 8:51
  */
 public class StopState implements State {

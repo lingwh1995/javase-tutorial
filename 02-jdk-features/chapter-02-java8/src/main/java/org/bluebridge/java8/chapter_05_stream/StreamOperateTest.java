@@ -1,19 +1,22 @@
 package org.bluebridge.java8.chapter_05_stream;
 
+import org.junit.Before;
+import org.junit.Test;
+
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.junit.Before;
-import org.junit.Test;
 
 /**
+ * Stream流中间操作
+ *
  * @author lingwh
- * @desc Stream流中间操作
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class StreamOperateTest {
+
     private List<Employee> employees;
 
     /**
@@ -130,11 +133,10 @@ public class StreamOperateTest {
      */
     @Test
     public void testStreamMap2() {
-        Integer[] numbers = {1, 2, 3, 4, 5};
-        String result =
-                Arrays.stream(numbers)
-                        .map(String::valueOf) // 转换为字符串 => stream和lambda表达式结合使用的最经典场景之一
-                        .collect(Collectors.joining(" | "));
+        Integer[] numbers = { 1, 2, 3, 4, 5 };
+        String result = Arrays.stream(numbers)
+                .map(String::valueOf) // 转换为字符串 => stream和lambda表达式结合使用的最经典场景之一
+                .collect(Collectors.joining(" | "));
         System.out.println(result); // 输出：1 | 2 | 3 | 4 | 5
     }
 
@@ -173,9 +175,8 @@ public class StreamOperateTest {
         List<List<String>> nestedList = Arrays.asList(
                 Arrays.asList("1"),
                 Arrays.asList("2", "3"),
-                Arrays.asList("4", "5", "6")
-        );
-        //lambda表达式写法
+                Arrays.asList("4", "5", "6"));
+        // lambda表达式写法
         List<String> collect = nestedList.stream().flatMap(items -> items.stream()).collect(Collectors.toList());
         System.out.println(collect);
 
@@ -187,7 +188,7 @@ public class StreamOperateTest {
     @Test
     public void testStreamFlatMap2() {
         List<String> list1 = Arrays.asList("hi", "hello");
-        List<String> list2 = Arrays.asList("zs", "ls","ww");
+        List<String> list2 = Arrays.asList("zs", "ls", "ww");
         list1.stream().flatMap(item1 -> list2.stream().map(item2 -> item1 + "," + item2)).collect(Collectors.toList())
                 .forEach(System.out::println);
     }
@@ -208,7 +209,7 @@ public class StreamOperateTest {
     @Test
     public void testStreamFlatMap4() {
         // 合并数组到一个列表
-        String[][] twoDimensionalArray = new String[][]{{"a", "b"}, {"c", "d"}, {"e", "f"}, {"g", "h"}};
+        String[][] twoDimensionalArray = new String[][] { { "a", "b" }, { "c", "d" }, { "e", "f" }, { "g", "h" } };
         List list = Arrays.stream(twoDimensionalArray)
                 .flatMap(arr -> Arrays.stream(arr))
                 .collect(Collectors.toList());
@@ -225,7 +226,7 @@ public class StreamOperateTest {
 
         // 创建流
         Stream<Employee> stream = employees.stream();
-        stream.sorted((e1,e2) -> Integer.compare(e1.getAge(),e2.getAge())).forEach(System.out::println);
+        stream.sorted((e1, e2) -> Integer.compare(e1.getAge(), e2.getAge())).forEach(System.out::println);
     }
 
     /**
@@ -257,7 +258,7 @@ public class StreamOperateTest {
 
     /**
      * 根据age进行分区
-     *     根据指定的布尔条件将流中的元素分区到一个Map中，键为true和false。
+     * 根据指定的布尔条件将流中的元素分区到一个Map中，键为true和false。
      */
     @Test
     public void testStreamPartitioningByFirstName() {
@@ -300,7 +301,8 @@ public class StreamOperateTest {
 
     /**
      * peek()方法
-     *     主要用于调试，它允许你在流的每个元素上执行某个操作（例如打印），而不会改变流中的元素。
+     *
+     * 主要用于调试，它允许你在流的每个元素上执行某个操作（例如打印），而不会改变流中的元素。
      */
     @Test
     public void testStreamPeek() {

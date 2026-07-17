@@ -1,11 +1,13 @@
 package structure.proxy.staticproxy.staticproxy_a;
 
 /**
+ * 抽象角色:定义代理角色和真实角色的公共对外方法
+ *
  * @author lingwh
- * @desc 抽象角色:定义代理角色和真实角色的公共对外方法
- * @date 2019/3/23 00:00
+ * @date 2026/4/21 19:02
  */
 public interface Star {
+
     /**
      * 面谈
      */

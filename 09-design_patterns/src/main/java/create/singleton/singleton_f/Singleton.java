@@ -1,11 +1,13 @@
 package create.singleton.singleton_f;
 
 /**
+ * 单例模式
+ *
  * @author lingwh
- * @desc 单例模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Singleton {
+
     /**
      * 注意下面三行代码的顺序决定了Singleton.x和Singleton.y的值
      */

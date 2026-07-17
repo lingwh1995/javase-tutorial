@@ -5,9 +5,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 /**
+ * 字符串工具类
+ *
  * @author lingwh
- * @desc 字符串工具类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j
 public class StringUtilsTest {

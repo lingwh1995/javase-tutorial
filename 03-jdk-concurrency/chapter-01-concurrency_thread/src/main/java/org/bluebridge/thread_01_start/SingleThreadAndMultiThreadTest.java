@@ -4,9 +4,10 @@ import java.util.Arrays;
 import java.util.concurrent.FutureTask;
 
 /**
+ * 单线程和多线程运行效率对比
+ *
  * @author lingwh
- * @desc 单线程和多线程运行效率对比
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SingleThreadAndMultiThreadTest {
 
@@ -32,31 +33,31 @@ public class SingleThreadAndMultiThreadTest {
     public static void testMultiThread() throws Exception {
         long start = System.currentTimeMillis();
         int[] array = ARRAY;
-        FutureTask<Integer> t1 = new FutureTask<>(()->{
+        FutureTask<Integer> t1 = new FutureTask<>(() -> {
             int sum = 0;
-            for(int i = 0; i < 250_000_000;i++) {
-                sum += array[0+i];
+            for (int i = 0; i < 250_000_000; i++) {
+                sum += array[0 + i];
             }
             return sum;
         });
-        FutureTask<Integer> t2 = new FutureTask<>(()->{
+        FutureTask<Integer> t2 = new FutureTask<>(() -> {
             int sum = 0;
-            for(int i = 0; i < 250_000_000;i++) {
-                sum += array[250_000_000+i];
+            for (int i = 0; i < 250_000_000; i++) {
+                sum += array[250_000_000 + i];
             }
             return sum;
         });
-        FutureTask<Integer> t3 = new FutureTask<>(()->{
+        FutureTask<Integer> t3 = new FutureTask<>(() -> {
             int sum = 0;
-            for(int i = 0; i < 250_000_000;i++) {
-                sum += array[500_000_000+i];
+            for (int i = 0; i < 250_000_000; i++) {
+                sum += array[500_000_000 + i];
             }
             return sum;
         });
-        FutureTask<Integer> t4 = new FutureTask<>(()->{
+        FutureTask<Integer> t4 = new FutureTask<>(() -> {
             int sum = 0;
-            for(int i = 0; i < 250_000_000;i++) {
-                sum += array[750_000_000+i];
+            for (int i = 0; i < 250_000_000; i++) {
+                sum += array[750_000_000 + i];
             }
             return sum;
         });
@@ -79,10 +80,10 @@ public class SingleThreadAndMultiThreadTest {
     public static void testSingleThread() throws Exception {
         long start = System.currentTimeMillis();
         int[] array = ARRAY;
-        FutureTask<Integer> t1 = new FutureTask<>(()->{
+        FutureTask<Integer> t1 = new FutureTask<>(() -> {
             int sum = 0;
-            for(int i = 0; i < 1000_000_000;i++) {
-                sum += array[0+i];
+            for (int i = 0; i < 1000_000_000; i++) {
+                sum += array[0 + i];
             }
             return sum;
         });

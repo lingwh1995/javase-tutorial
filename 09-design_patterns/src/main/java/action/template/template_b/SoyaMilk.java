@@ -1,11 +1,13 @@
 package action.template.template_b;
 
 /**
+ * 豆浆
+ *
  * @author lingwh
- * @desc 豆浆
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class SoyaMilk {
+
     /**
      * 模板方法,设置为final,不允许子类覆盖此方法
      */

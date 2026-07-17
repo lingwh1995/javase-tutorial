@@ -3,11 +3,13 @@ package expand.principles.single_reponsibility;
 import org.junit.Test;
 
 /**
+ * 方法级别的单一职能原则，会导致类中方法大爆炸
+ *
  * @author lingwh
- * @desc 方法级别的单一职能原则，会导致类中方法大爆炸
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SingleResponsibility3 {
+
     @Test
     public void run() {
         Veicle3 veicle3 = new Veicle3();

@@ -1,9 +1,10 @@
 package structure.proxy.synchronizedproxy;
 
 /**
+ * 同步代理
+ *
  * @author lingwh
- * @desc 同步代理
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SynchronizedProxy implements Task {
 

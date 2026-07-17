@@ -12,9 +12,10 @@ import java.util.concurrent.TimeUnit;
  *    被唤醒，如果没有没有被唤醒，就放弃了CPU执行权,进入了block()状态
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SynchronizedSleepWaitTest {
+
     static final Object lock = new Object();
 
     public static void main(String[] args) throws InterruptedException {
@@ -22,13 +23,13 @@ public class SynchronizedSleepWaitTest {
             synchronized (lock) {
                 System.out.println(Thread.currentThread().getName() + " 获得锁......");
                 try {
-                    //TimeUnit.MILLISECONDS.sleep(20000);
+                    // TimeUnit.MILLISECONDS.sleep(20000);
                     lock.wait(20000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
             }
-        },"t1");
+        }, "t1");
         t1.start();
 
         TimeUnit.MILLISECONDS.sleep(1000);

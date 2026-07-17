@@ -13,9 +13,10 @@ import java.util.concurrent.*;
  * 2. 使用的工作队列是LinkedBlockingQueue
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SingleThreadExecutor03APITest {
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // testSubmit();
 
@@ -67,10 +68,9 @@ public class SingleThreadExecutor03APITest {
                     System.out.println(dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " begin......");
                     Thread.sleep(2000);
                     return "3";
-                }
-        ));
+                }));
 
-        futures.forEach( f ->  {
+        futures.forEach(f -> {
             try {
                 System.out.println(dtf.format(LocalDateTime.now()) + " " + Thread.currentThread().getName() + " " + f.get());
             } catch (InterruptedException | ExecutionException e) {
@@ -108,8 +108,7 @@ public class SingleThreadExecutor03APITest {
                     Thread.sleep(2000);
                     System.out.println(Thread.currentThread().getName() + " end......3");
                     return "3";
-                }
-        ));
+                }));
 
         System.out.println("result = " + result);
 

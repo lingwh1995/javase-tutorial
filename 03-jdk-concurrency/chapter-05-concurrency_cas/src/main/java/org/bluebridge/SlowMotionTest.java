@@ -3,11 +3,13 @@ package org.bluebridge;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * CAS慢动作测试
+ *
  * @author lingwh
- * @desc CAS慢动作测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SlowMotionTest {
+
     public static void main(String[] args) {
         AtomicInteger balance = new AtomicInteger(10000);
         int mainPrev = balance.get();

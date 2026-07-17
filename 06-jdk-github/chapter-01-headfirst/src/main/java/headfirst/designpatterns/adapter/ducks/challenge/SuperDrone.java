@@ -1,11 +1,13 @@
 package headfirst.designpatterns.adapter.ducks.challenge;
 
 /**
+ * 超级无人机实现类
+ *
  * @author lingwh
- * @desc 超级无人机实现类
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SuperDrone implements Drone {
+
     public void beep() {
         System.out.println("Beep beep beep");
     }

@@ -3,10 +3,11 @@ package create.singleton.singleton_a;
 /**
  * 饿汉式:静态方法
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/3/23 23:10
  */
 public class SingletonTest1 {
+
     public static void main(String[] args) {
         Singleton1 instance1 = Singleton1.getInstance();
         Singleton1 instance2 = Singleton1.getInstance();

@@ -1,8 +1,9 @@
 package action.command.command_j;
 
 /**
+ * 音响设备打开命令对象
+ *
  * @author lingwh
- * @desc 音响设备打开命令对象
  * @date 2019/9/4 15:16
  */
 public class StereoOnWithCDCommand implements Command {

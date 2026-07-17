@@ -1,11 +1,13 @@
 package org.bluebridge.lock_02_synchronized;
 
 /**
+ * 使用 synchronized 避免临界区中发生竞态条件
+ *
  * @author lingwh
- * @desc 使用 synchronized 避免临界区中发生竞态条件
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SynchronizedTest {
+
     private static final Object lock = new Object();
 
     static int counter = 0;

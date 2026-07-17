@@ -1,11 +1,13 @@
 package headfirst.designpatterns.proxy.gumballmonitor;
 
 /**
+ * 售罄状态
+ *
  * @author lingwh
- * @desc 售罄状态
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SoldOutState implements State {
+
     private static final long serialVersionUID = 2L;
     GumballMachine gumballMachine;
 

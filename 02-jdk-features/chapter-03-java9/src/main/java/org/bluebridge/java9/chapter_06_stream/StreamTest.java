@@ -1,14 +1,16 @@
 package org.bluebridge.java9.chapter_06_stream;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import org.junit.Test;
 
 /**
+ * Java9 Stream 测试
+ *
  * @author lingwh
- * @desc Java9 Stream 测试
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class StreamTest {
 
@@ -31,7 +33,9 @@ public class StreamTest {
     }
 
     /**
-     * Java8中Stream不能完全为null，否则会报空指针异常。Java9中 新增加的Stream.ofNullable() 方法允许我们创建一个只包含单个 null 的Stream
+     * Java8中Stream不能完全为null，否则会报空指针异常。Java9中 新增加的Stream.ofNullable()
+     *
+     * 方法允许我们创建一个只包含单个 null 的Stream
      */
     @Test
     public void testStreamOfNullable() {

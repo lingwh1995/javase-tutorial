@@ -1,8 +1,9 @@
 package org.bluebridge.lock_12_synchronized_revoke_biasedlock;
 
+import org.openjdk.jol.info.ClassLayout;
+
 import java.util.Vector;
 import java.util.concurrent.locks.LockSupport;
-import org.openjdk.jol.info.ClassLayout;
 
 /**
  * 批量撤销偏向锁测试
@@ -15,7 +16,7 @@ import org.openjdk.jol.info.ClassLayout;
  *    对象都会变为不可偏向的，新建的对象也是不可偏向的
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class Sychronized_RevokeBiasedLockTest05 {
 

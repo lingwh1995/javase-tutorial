@@ -1,12 +1,15 @@
 package org.bluebridge.designpattern_05_singleton.singleton_03;
 
 /**
+ * 实现3(synchronized方法)
+ *
  * @author lingwh
- * @desc 实现3(synchronized方法)
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public final class Singleton {
-    private Singleton() {}
+
+    private Singleton() {
+    }
 
     private static Singleton INSTANCE = null;
 

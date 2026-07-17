@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 目标对象接口
+ *
  * @author lingwh
- * @desc 目标对象接口
  * @date 2019/8/30 9:56
  */
 public class Subject {

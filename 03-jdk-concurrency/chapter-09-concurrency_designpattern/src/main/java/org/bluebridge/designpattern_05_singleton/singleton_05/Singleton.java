@@ -1,12 +1,15 @@
 package org.bluebridge.designpattern_05_singleton.singleton_05;
 
 /**
+ * 实现5(内部类初始化)
+ *
  * @author lingwh
- * @desc 实现5(内部类初始化)
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public final class Singleton {
-    private Singleton() {}
+
+    private Singleton() {
+    }
 
     // 问题1：属于懒汉式还是饿汉式
     private static class LazyHolder {

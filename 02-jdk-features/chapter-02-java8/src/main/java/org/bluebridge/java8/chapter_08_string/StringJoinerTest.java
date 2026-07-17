@@ -3,11 +3,13 @@ package org.bluebridge.java8.chapter_08_string;
 import java.util.StringJoiner;
 
 /**
+ * StringJoiner使用示例
+ *
  * @author lingwh
- * @desc StringJoiner使用示例
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class StringJoinerTest {
+
     public static void main(String[] args) {
         StringJoiner stringJoiner = new StringJoiner("-", "(", ")");
         stringJoiner.add("1");

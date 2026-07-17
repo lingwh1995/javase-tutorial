@@ -10,7 +10,7 @@ package org.bluebridge.thread_04_sleep;
  * 5. 建议用 TimeUnit 的 sleep 代替 Thread 的 sleep 来获得更好的可读性
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SleepTest {
 
@@ -23,7 +23,7 @@ public class SleepTest {
                 System.out.println("Thread " + Thread.currentThread().getName() + " 被唤醒...");
                 throw new RuntimeException(e);
             }
-        },"t1");
+        }, "t1");
 
         System.out.println("当前线程" + t.getName() + "状态: " + t.getState());
 

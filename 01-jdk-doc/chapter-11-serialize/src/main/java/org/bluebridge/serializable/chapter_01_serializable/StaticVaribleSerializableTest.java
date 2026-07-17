@@ -1,12 +1,14 @@
 package org.bluebridge.serializable.chapter_01_serializable;
 
-import java.io.*;
 import org.junit.Test;
 
+import java.io.*;
+
 /**
+ * 被static修饰的变量(静态变量)不参与序列化过程
+ *
  * @author lingwh
- * @desc 被static修饰的变量(静态变量)不参与序列化过程
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class StaticVaribleSerializableTest implements Serializable {
     private static final long serialVersionUID = 1L;

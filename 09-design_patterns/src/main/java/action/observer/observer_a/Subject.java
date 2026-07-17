@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 目标对象接口(被观察者接口):它知道它的观察者，并提供注册和删除观察者的接口
+ *
  * @author lingwh
- * @desc 目标对象接口(被观察者接口):它知道它的观察者，并提供注册和删除观察者的接口
  * @date 2019/8/19 13:37
  */
 public class Subject {

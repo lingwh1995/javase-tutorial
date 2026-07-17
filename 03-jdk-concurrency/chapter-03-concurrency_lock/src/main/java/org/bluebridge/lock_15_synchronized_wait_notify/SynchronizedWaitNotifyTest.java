@@ -10,9 +10,10 @@ import java.util.concurrent.TimeUnit;
  * 3. obj.notifyAll() 让 object 上正在 waitSet 等待的线程全部唤醒
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SynchronizedWaitNotifyTest {
+
     static final Object lock = new Object();
 
     public static void main(String[] args) throws InterruptedException {
@@ -27,7 +28,7 @@ public class SynchronizedWaitNotifyTest {
                 }
                 System.out.println("Thread " + Thread.currentThread().getName() + " 其它代码......");
             }
-        },"t1");
+        }, "t1");
         t1.start();
 
         Thread t2 = new Thread(() -> {
@@ -41,7 +42,7 @@ public class SynchronizedWaitNotifyTest {
                 }
                 System.out.println("Thread " + Thread.currentThread().getName() + " 其它代码......");
             }
-        },"t2");
+        }, "t2");
         t2.start();
 
         // 主线程两秒后执行

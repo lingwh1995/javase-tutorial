@@ -2,7 +2,6 @@ package org.bluebridge.jmm_03_dcl.dcl_01;
 
 /**
  * 双重检查锁单例模式（dcl）实现单例模式的特点
- *
  * 1. 懒惰实例化
  * 2. 首次使用 getInstance() 才使用 synchronized 加锁，后续使用时无需加锁
  * 3. 有隐含的，但很关键的一点：第一个 if 使用了 INSTANCE 变量，是在同步块之外
@@ -12,10 +11,12 @@ package org.bluebridge.jmm_03_dcl.dcl_01;
  * 2. 在多线程环境下，上面的代码是有问题的
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public final class Singleton {
-    private Singleton() {}
+
+    private Singleton() {
+    }
 
     private static Singleton INSTANCE = null;
 

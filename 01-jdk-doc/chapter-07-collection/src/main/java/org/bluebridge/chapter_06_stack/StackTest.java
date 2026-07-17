@@ -1,13 +1,15 @@
 package org.bluebridge.chapter_06_stack;
 
-import java.util.Stack;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.util.Stack;
+
 /**
+ * Stack栈测试
+ *
  * @author lingwh
- * @desc Stack栈测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 @Slf4j
 public class StackTest {

@@ -1,12 +1,14 @@
 package org.bluebridge.reflect.chapter_06_reflect_demo.lesson_03_my_orm;
 
 /**
+ * 学生实体类
+ *
  * @author lingwh
- * @desc 学生实体类
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 18:04
  */
 @Table(value = "TB_STUDENT")
 public class Student {
+
     @Column(cloumnName = "ID", dataType = "VARCHAR2", length = 32)
     private String id;
 
@@ -16,7 +18,8 @@ public class Student {
     @Column(cloumnName = "AGE", dataType = "NUMBER", length = 5)
     private String age;
 
-    public Student() {}
+    public Student() {
+    }
 
     public Student(String id, String name, String age) {
         this.id = id;

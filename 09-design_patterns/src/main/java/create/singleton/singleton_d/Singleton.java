@@ -9,12 +9,14 @@ package create.singleton.singleton_d;
  * @date 2019/8/5 18:29
  */
 public class Singleton {
+
     /**
      * 对保存实例的变量添加volatile的修饰
      */
     private static volatile Singleton instance = null;
 
-    private Singleton() {}
+    private Singleton() {
+    }
 
     public static Singleton getInstance() {
         // 先检查实例是否存在，如果不存在才进入下面的同步块

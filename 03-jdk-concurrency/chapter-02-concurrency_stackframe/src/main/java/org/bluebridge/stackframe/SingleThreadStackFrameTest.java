@@ -1,9 +1,10 @@
 package org.bluebridge.stackframe;
 
 /**
+ * 单线程栈帧测试
+ *
  * @author lingwh
- * @desc 单线程栈帧测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SingleThreadStackFrameTest {
 

@@ -1,11 +1,13 @@
 package org.bluebridge.cas_06_atomic_field_updater;
 
 /**
+ * 学生实体类
+ *
  * @author lingwh
- * @desc 学生实体类
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class Student {
+
     volatile int id;
     volatile String name;
 

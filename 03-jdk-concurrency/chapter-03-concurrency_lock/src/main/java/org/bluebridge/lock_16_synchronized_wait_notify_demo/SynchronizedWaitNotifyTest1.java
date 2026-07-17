@@ -10,9 +10,10 @@ import java.util.concurrent.TimeUnit;
  * 送进门，main 没加 synchronized 就好像 main 线程是翻窗户进来的解决方法，使用 wait - notify 机制
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public class SynchronizedWaitNotifyTest1 {
+
     static final Object room = new Object();
     static boolean hasCigarette = false;
 

@@ -1,8 +1,9 @@
 package org.bluebridge.innerclass;
 
 /**
+ * 静态内部类
+ *
  * @author lingwh
- * @desc 静态内部类
  * @date 2019/7/3 10:54
  */
 public class StaticOuter {
@@ -36,7 +37,7 @@ public class StaticOuter {
     }
 
     /*
-     *	静态方法
+     * 静态方法
      */
     public static void outerStaticMethod() {
         System.out.println("我是外部类的outerStaticMethod静态方法");

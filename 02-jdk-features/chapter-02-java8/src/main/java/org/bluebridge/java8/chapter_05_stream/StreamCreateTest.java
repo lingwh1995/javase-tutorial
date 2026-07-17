@@ -37,9 +37,10 @@ import java.util.stream.Stream;
  * .parallelStream() : 创建一个并行执行的流
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class StreamCreateTest {
+
     /**
      * 创建Steam的六种方式：第一种 通过集合创建Stream
      */
@@ -228,7 +229,7 @@ public class StreamCreateTest {
         System.out.println("------------------");
     }
 
-	/**
+    /**
      * 构建流
      *
 	 * 1. 使用 Stream.generate 方法生成流

@@ -1,11 +1,13 @@
 package headfirst.designpatterns.observer.simple;
 
 /**
+ * 主题接口
+ *
  * @author lingwh
- * @desc 主题接口
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 19:02
  */
 public interface Subject {
+
     void registerObserver(Observer o);
 
     void removeObserver(Observer o);

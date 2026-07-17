@@ -1,10 +1,12 @@
 package cn.itcast.test;
 
 /**
+ * 单例枚举
+ *
  * @author lingwh
- * @desc 单例枚举
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 enum Singleton {
+
     INSTANCE;
 }
