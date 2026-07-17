@@ -4,8 +4,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 /**
+ * 具体的实现用户管理的增删改查功能
+ *
  * @author lingwh
- * @desc 具体的实现用户管理的增删改查功能
  * @date 2019/8/26 18:14
  */
 public class MysqlJDBCTemplate extends JDBCTemplate {

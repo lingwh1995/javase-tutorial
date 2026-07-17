@@ -4,8 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 /**
+ * Mysql存储Dao
+ *
  * @author lingwh
- * @desc Mysql存储Dao
  * @date 2025/11/10 11:46
  */
 @Slf4j

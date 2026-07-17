@@ -9,26 +9,30 @@ import org.openjdk.jol.vm.VM;
  * 注意：运行前要关闭指针压缩，添加如下vm参数即可：-XX:-UseCompressedOops
  *
  * 64位虚拟机中Object Header中markword结构
- * 参考博客     https://www.cnblogs.com/kuangdaoyizhimei/p/18422634
+ * 参考博客 https://www.cnblogs.com/kuangdaoyizhimei/p/18422634
  *
  * |-----------------------------------------------------------------------------------------------------------------|
- * |                                             Object Header(128bits)                                              |
+ * | Object Header(128bits) |
  * |-----------------------------------------------------------------------------------------------------------------|
- * |                                   Mark Word(64bits)               |  Klass Word(64bits)    |      State         |
+ * | Mark Word(64bits) | Klass Word(64bits) | State |
  * |-----------------------------------------------------------------------------------------------------------------|
- * | unused:25|identity_hashcode:31|unused:1|age:4|biase_lock:1|lock:2 | OOP to metadata object |      Nomal         |
+ * | unused:25|identity_hashcode:31|unused:1|age:4|biase_lock:1|lock:2 | OOP to
+ * metadata object | Nomal |
  * |-----------------------------------------------------------------------------------------------------------------|
- * | thread:54|      epoch:2       |unused:1|age:4|biase_lock:1|lock:2 | OOP to metadata object |      Biased        |
+ * | thread:54| epoch:2 |unused:1|age:4|biase_lock:1|lock:2 | OOP to metadata
+ * object | Biased |
  * |-----------------------------------------------------------------------------------------------------------------|
- * |                     ptr_to_lock_record:62                 |lock:2 | OOP to metadata object | Lightweight Locked |
+ * | ptr_to_lock_record:62 |lock:2 | OOP to metadata object | Lightweight Locked
+ * |
  * |-----------------------------------------------------------------------------------------------------------------|
- * |                    ptr_to_heavyweight_monitor:62          |lock:2 | OOP to metadata object | Heavyweight Locked |
+ * | ptr_to_heavyweight_monitor:62 |lock:2 | OOP to metadata object |
+ * Heavyweight Locked |
  * |-----------------------------------------------------------------------------------------------------------------|
- * |                                                           |lock:2 | OOP to metadata object |    Marked for GC   |
+ * | |lock:2 | OOP to metadata object | Marked for GC |
  * |-----------------------------------------------------------------------------------------------------------------|
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ObjectHeaderTest {
 

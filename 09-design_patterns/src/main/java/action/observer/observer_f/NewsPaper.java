@@ -3,8 +3,9 @@ package action.observer.observer_f;
 import java.util.Observable;
 
 /**
+ * 报纸对象，具体的目标实现
+ *
  * @author lingwh
- * @desc 报纸对象，具体的目标实现
  * @date 2019/8/19 15:15
  */
 public class NewsPaper extends Observable {

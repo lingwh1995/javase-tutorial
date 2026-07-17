@@ -13,7 +13,7 @@ import java.util.Objects;
  * 3. 常用方法：除了equals方法外，Objects类还提供了如isNull、nonNull、toString等方法，这些方法对于日常的对象操作非常有用。比如isNull用于判断对象是否为null，toString可以返回对象的字符串表示形式，类似于调用对象的toString()方法，但在对象为null时会返回字符串"null"而不是抛出异常。
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 @Slf4j
 public class ObjectsTest {

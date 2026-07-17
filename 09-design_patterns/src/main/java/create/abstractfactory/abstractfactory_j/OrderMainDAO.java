@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_j;
 
 /**
+ * 订单主记录对应的DAO操作接口
+ *
  * @author lingwh
- * @desc 订单主记录对应的DAO操作接口
  * @date 2019/9/4 11:35
  */
 public interface OrderMainDAO {

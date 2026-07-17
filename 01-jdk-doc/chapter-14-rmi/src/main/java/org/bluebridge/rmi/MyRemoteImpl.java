@@ -7,13 +7,15 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
+ * 远程接口实现
+ *
  * @author lingwh
- * @desc 远程接口实现
  * @date 2019/9/24 16:46
  */
 public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
 
-    public MyRemoteImpl() throws RemoteException {}
+    public MyRemoteImpl() throws RemoteException {
+    }
 
     @Override
     public String sayHello() throws RemoteException {

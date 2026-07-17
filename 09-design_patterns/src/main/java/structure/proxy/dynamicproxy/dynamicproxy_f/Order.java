@@ -1,8 +1,9 @@
 package structure.proxy.dynamicproxy.dynamicproxy_f;
 
 /**
+ * 订单对象
+ *
  * @author lingwh
- * @desc 订单对象
  * @date 2019/8/19 10:46
  */
 public class Order implements OrderApi {

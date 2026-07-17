@@ -1,9 +1,10 @@
 package linkedlist.linkedlist_d;
 
 /**
+ * 节点
+ *
  * @author lingwh
- * @desc 节点
- * @date 2019/3/30 00:00
+ * @date 2026/4/21 19:02
  */
 public class Node<T> {
 
@@ -86,9 +87,9 @@ public class Node<T> {
         return this;
     }
 
-    //	public void append(Node<T> node){
-    //		this.next = node;
-    //	}
+    // public void append(Node<T> node){
+    // this.next = node;
+    // }
 
     /**
      * 获取下一个节点

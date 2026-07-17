@@ -1,8 +1,9 @@
 package action.memento.mementor_a;
 
 /**
+ * 原发器对象
+ *
  * @author lingwh
- * @desc 原发器对象
  * @date 2019/8/27 11:20
  */
 public class Originator {

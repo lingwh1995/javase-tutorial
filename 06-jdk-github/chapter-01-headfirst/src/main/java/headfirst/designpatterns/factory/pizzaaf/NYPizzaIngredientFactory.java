@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 纽约披萨原料工厂
+ *
  * @author lingwh
- * @desc 纽约披萨原料工厂
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 

@@ -1,14 +1,17 @@
 package org.bluebridge.java8.chapter_04_optional;
 
-import java.util.Optional;
 import org.junit.Test;
 
+import java.util.Optional;
+
 /**
+ * Optional使用示例
+ *
  * @author lingwh
- * @desc Optional使用示例
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class OptionalDemo {
+
     /**
      * V1.0 不判断boy和girl是否为空，可能会报空指针异常
      *

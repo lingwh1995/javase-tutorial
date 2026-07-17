@@ -1,8 +1,9 @@
 package action.interpreter.interpreter_a;
 
 /**
+ * 非终结符表达式
+ *
  * @author lingwh
- * @desc 非终结符表达式
  * @date 2019/8/27 13:51
  */
 public class NonterminalExpression extends AbstractExpression {

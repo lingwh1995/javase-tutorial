@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzafm;
 
 /**
+ * 纽约风格奶酪披萨
+ *
  * @author lingwh
- * @desc 纽约风格奶酪披萨
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class NYStyleCheesePizza extends Pizza {
 

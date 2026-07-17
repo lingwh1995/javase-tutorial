@@ -1,10 +1,13 @@
 package action.state.state_f;
 
 /**
+ * 正常投票状态
+ *
  * @author lingwh
  * @date 2019/9/23 18:02
  */
 public class NormalVoteState implements VoteState {
+
     /**
      * 处理状态对应的行为
      *

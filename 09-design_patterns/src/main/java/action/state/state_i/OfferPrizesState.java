@@ -4,9 +4,10 @@ package action.state.state_i;
  * 发放奖品状态
  *
  * @author lingwh
- * @date
+ * @date 2026/4/21 19:02
  */
 public class OfferPrizesState extends State {
+
     // 关联抽奖活动;
     private RaffleActivity raffleActivity;
 

@@ -1,8 +1,9 @@
 package action.command.command_d;
 
 /**
+ * 开机命令对象 持有开机命令的真正实现，通过调用接收者的方法来实现命令
+ *
  * @author lingwh
- * @desc 开机命令对象 持有开机命令的真正实现，通过调用接收者的方法来实现命令
  * @date 2019/8/5 10:54
  */
 public class OpenCommand implements Command {

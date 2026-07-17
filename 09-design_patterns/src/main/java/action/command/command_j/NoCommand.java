@@ -1,11 +1,13 @@
 package action.command.command_j;
 
 /**
+ * 空命令对象
+ *
  * @author lingwh
- * @desc 空命令对象
  * @date 2019/9/4 15:25
  */
 public class NoCommand implements Command {
+
     /**
      * 执行命令
      */

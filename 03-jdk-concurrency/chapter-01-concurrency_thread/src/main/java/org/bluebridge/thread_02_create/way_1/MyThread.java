@@ -1,9 +1,10 @@
 package org.bluebridge.thread_02_create.way_1;
 
 /**
+ * 继承Thread类的自定义线程
+ *
  * @author lingwh
- * @desc 继承Thread类的自定义线程
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class MyThread extends Thread {
 

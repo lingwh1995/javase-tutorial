@@ -1,8 +1,9 @@
 package action.observer.observer_i;
 
 /**
+ * 观察者接口
+ *
  * @author lingwh
- * @desc 观察者接口
  * @date 2019/8/30 10:55
  */
 public interface Observer {

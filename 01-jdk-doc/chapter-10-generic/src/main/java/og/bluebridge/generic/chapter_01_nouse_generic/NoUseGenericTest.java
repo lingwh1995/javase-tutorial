@@ -3,9 +3,10 @@ package og.bluebridge.generic.chapter_01_nouse_generic;
 import org.junit.Test;
 
 /**
+ * 不使用泛型测试
+ *
  * @author lingwh
- * @desc 不使用泛型测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class NoUseGenericTest {
 

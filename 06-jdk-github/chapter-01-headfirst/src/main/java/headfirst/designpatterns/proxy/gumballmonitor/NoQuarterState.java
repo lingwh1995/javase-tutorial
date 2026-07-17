@@ -7,6 +7,7 @@ package headfirst.designpatterns.proxy.gumballmonitor;
  * @date 2019/8/27 13:54
  */
 public class NoQuarterState implements State {
+
     private static final long serialVersionUID = 2L;
     GumballMachine gumballMachine;
 

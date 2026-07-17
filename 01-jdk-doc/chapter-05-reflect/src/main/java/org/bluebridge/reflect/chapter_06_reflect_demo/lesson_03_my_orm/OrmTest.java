@@ -1,13 +1,15 @@
 package org.bluebridge.reflect.chapter_06_reflect_demo.lesson_03_my_orm;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Field;
 import org.junit.Test;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
+
 /**
+ * ORM注解测试
+ *
  * @author lingwh
- * @desc ORM注解测试
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 18:04
  */
 public class OrmTest {
 
@@ -19,7 +21,7 @@ public class OrmTest {
     @Test
     public void testOrm() throws ClassNotFoundException {
         Class<? extends Object> clazz = Class.forName("org.bluebridge.reflect.chapter_06_reflect_demo.lesson_03_my_orm.Student");
-        //获取该类上所有注解
+        // 获取该类上所有注解
         Annotation[] annotations = clazz.getAnnotations();
         for (Annotation annotation : annotations) {
             System.out.println(annotation);

@@ -3,8 +3,9 @@ package org.bluebridge.oo._01_this_and_super;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 面向对象测试
+ *
  * @author lingwh
- * @desc 面向对象测试
  * @date 2025/11/12 10:05
  */
 @Slf4j

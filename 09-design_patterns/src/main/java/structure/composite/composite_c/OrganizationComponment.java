@@ -1,11 +1,13 @@
 package structure.composite.composite_c;
 
 /**
+ * 组织组件
+ *
  * @author lingwh
- * @desc 组织组件
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class OrganizationComponment {
+
     private String name;
     private String desc;
 

@@ -1,6 +1,13 @@
 package create.abstractfactory.abstractfactory_l;
 
+/**
+ * OracleOrder
+ *
+ * @author lingwh
+ * @date 2026/7/13 19:02
+ */
 public class OracleOrder implements IOrder {
+
     @Override
     public void insert(Order order) {
         System.out.println("在Oracle数据库中给Order表增加了一条记录");

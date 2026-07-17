@@ -1,11 +1,13 @@
 package action.command.command_k;
 
 /**
+ * 操作接口
+ *
  * @author lingwh
- * @desc 操作接口
  * @date 2019/9/10 16:08
  */
 public interface OperationApi {
+
     /**
      * 获取计算完成后的结果
      *

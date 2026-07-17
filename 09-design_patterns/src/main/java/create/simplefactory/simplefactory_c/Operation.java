@@ -1,10 +1,12 @@
 package create.simplefactory.simplefactory_c;
 
 /**
+ * 运算符类
+ *
  * @author lingwh
- * @desc 运算符类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface Operation {
+
     Double getReslt(Double param1, Double param2);
 }

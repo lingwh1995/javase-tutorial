@@ -1,8 +1,9 @@
 package action.observer.observer_e;
 
 /**
+ * 报纸
+ *
  * @author lingwh
- * @desc 报纸
  * @date 2019/8/19 15:04
  */
 public class NewsPaper extends Subject {

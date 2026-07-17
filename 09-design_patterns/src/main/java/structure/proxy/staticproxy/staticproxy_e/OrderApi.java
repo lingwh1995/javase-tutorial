@@ -1,8 +1,9 @@
 package structure.proxy.staticproxy.staticproxy_e;
 
 /**
+ * 订单对象的接口定义
+ *
  * @author lingwh
- * @desc 订单对象的接口定义
  * @date 2019/8/19 10:44
  */
 public interface OrderApi {

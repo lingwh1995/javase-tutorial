@@ -1,11 +1,13 @@
 package create.factorymethod.factorymethod_h;
 
 /**
+ * 女娲造人
+ *
  * @author lingwh
- * @desc 女娲造人
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class NvWa {
+
     public void showSkinColor(String targetSkinColor) {
         Human human = createHuman(targetSkinColor);
         String skinColor = human.skinColor;

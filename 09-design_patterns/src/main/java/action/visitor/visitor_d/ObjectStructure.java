@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * 对象结构
+ *
  * @author lingwh
  * @date 2019/10/11 9:42
  */

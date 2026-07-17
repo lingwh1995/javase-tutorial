@@ -1,11 +1,13 @@
 package action.strategy.strategy_b;
 
 /**
+ * 不会喝水行为
+ *
  * @author lingwh
- * @desc 不会喝水行为
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class NoDrinkBehavior implements DrinkBehavior {
+
     @Override
     public void drink() {
         System.out.println("压根就不会喝水......");

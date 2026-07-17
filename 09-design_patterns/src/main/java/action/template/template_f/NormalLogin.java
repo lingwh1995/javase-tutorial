@@ -3,9 +3,8 @@ package action.template.template_f;
 /**
  * 普通用户登录控制的逻辑处理
  *
- * @author ronin
- * @version V1.0
- * @since 2019/8/26 14:23
+ * @author lingwh
+ * @date 2019/8/26 14:23
  */
 public class NormalLogin extends LoginTemplate {
 

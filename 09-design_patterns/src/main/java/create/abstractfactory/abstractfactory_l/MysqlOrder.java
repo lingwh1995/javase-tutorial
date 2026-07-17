@@ -1,6 +1,13 @@
 package create.abstractfactory.abstractfactory_l;
 
+/**
+ * MysqlOrder
+ *
+ * @author lingwh
+ * @date 2026/7/13 8:35
+ */
 public class MysqlOrder implements IOrder {
+
     @Override
     public void insert(Order order) {
         System.out.println("在MySQL数据库中给Order表增加了一条记录");

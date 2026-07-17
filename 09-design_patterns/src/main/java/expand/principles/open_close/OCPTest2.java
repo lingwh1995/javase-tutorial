@@ -1,11 +1,13 @@
 package expand.principles.open_close;
 
 /**
+ * 遵循OCP原则示例
+ *
  * @author lingwh
- * @desc 遵循OCP原则示例
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class OCPTest2 {
+
     public static void main(String[] args) {
         Painter2 painter2 = new Painter2();
         painter2.drawShape(new Triagle2());

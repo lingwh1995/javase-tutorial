@@ -3,9 +3,8 @@ package action.state.state_d;
 /**
  * 正常投票状态
  *
- * @author ronin
- * @version V1.0
- * @since 2019/8/27 10:32
+ * @author lingwh
+ * @date 2019/8/27 10:32
  */
 public class NormalVoteState implements VoteState {
 

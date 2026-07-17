@@ -4,11 +4,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * 对象结构
+ *
  * @author lingwh
- * @desc 对象结构
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ObjectStructure {
+
     /**
      * 维护了一个集合
      */

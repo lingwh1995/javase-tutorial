@@ -1,6 +1,13 @@
 package create.abstractfactory.abstractfactory_l;
 
+/**
+ * MysqlUser
+ *
+ * @author lingwh
+ * @date 2026/7/13 8:35
+ */
 public class MysqlUser implements IUser {
+
     @Override
     public void insert(User user) {
         System.out.println("在MySQL数据库中给User表增加了一条记录");

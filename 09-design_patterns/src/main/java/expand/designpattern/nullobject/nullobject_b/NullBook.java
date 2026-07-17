@@ -1,10 +1,10 @@
 package expand.designpattern.nullobject.nullobject_b;
 
 /**
- * @author ronin
- * @version V1.0
- * @desc
- * @since 2019/7/29 15:26
+ * 空图书
+ *
+ * @author lingwh
+ * @date 2019/7/29 15:26
  */
 public class NullBook extends AbstractBook {
 

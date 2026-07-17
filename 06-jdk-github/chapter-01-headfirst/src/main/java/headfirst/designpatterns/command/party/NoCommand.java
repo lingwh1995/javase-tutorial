@@ -1,12 +1,16 @@
 package headfirst.designpatterns.command.party;
 
 /**
+ * 空命令
+ *
  * @author lingwh
- * @desc 空命令
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class NoCommand implements Command {
-    public void execute() {}
 
-    public void undo() {}
+    public void execute() {
+    }
+
+    public void undo() {
+    }
 }

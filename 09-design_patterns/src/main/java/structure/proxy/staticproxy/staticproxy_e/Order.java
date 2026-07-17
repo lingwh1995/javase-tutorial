@@ -1,8 +1,9 @@
 package structure.proxy.staticproxy.staticproxy_e;
 
 /**
+ * 订单对象
+ *
  * @author lingwh
- * @desc 订单对象
  * @date 2019/8/19 10:46
  */
 public class Order implements OrderApi {

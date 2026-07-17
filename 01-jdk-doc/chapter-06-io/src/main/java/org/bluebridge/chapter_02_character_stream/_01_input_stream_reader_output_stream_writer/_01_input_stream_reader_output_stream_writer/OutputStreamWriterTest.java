@@ -1,12 +1,14 @@
 package org.bluebridge.chapter_02_character_stream._01_input_stream_reader_output_stream_writer._01_input_stream_reader_output_stream_writer;
 
-import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.*;
+
 /**
+ * 字符输出流（字节流到字符流的桥梁，可以将字节流转换为字符流，可以指定字符编码格式）
+ *
  * @author lingwh
- * @desc 字符输出流（字节流到字符流的桥梁，可以将字节流转换为字符流，可以指定字符编码格式）
  * @date 2025/8/21 16:41
  */
 @Slf4j

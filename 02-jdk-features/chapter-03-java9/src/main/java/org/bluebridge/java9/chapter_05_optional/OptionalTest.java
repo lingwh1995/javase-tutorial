@@ -1,14 +1,16 @@
 package org.bluebridge.java9.chapter_05_optional;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.stream.Stream;
-import org.junit.Test;
 
 /**
+ * Java9 Optional 测试
+ *
  * @author lingwh
- * @desc Java9 Optional 测试
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class OptionalTest {
 

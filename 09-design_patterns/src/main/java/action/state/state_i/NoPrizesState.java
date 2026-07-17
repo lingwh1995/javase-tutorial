@@ -7,15 +7,16 @@ package action.state.state_i;
  * @date 2019/8/27 13:51
  */
 public class NoPrizesState extends State {
-    // 关联抽奖活动;
+
+    // 关联抽奖活动
     private RaffleActivity raffleActivity;
 
-    // 初始化;
+    // 初始化
     public NoPrizesState(RaffleActivity raffleActivity) {
         this.raffleActivity = raffleActivity;
     }
 
-    // 扣除积分发放;
+    // 扣除积分发放
     @Override
     public void deductIntegral() {
         System.out.println("奖品没了,就不扣您的积分了");

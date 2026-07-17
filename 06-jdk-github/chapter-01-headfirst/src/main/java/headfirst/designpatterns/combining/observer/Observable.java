@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
+ * 可观察者实现
+ *
  * @author lingwh
- * @desc 可观察者实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Observable implements QuackObservable {
+
     ArrayList<Observer> observers = new ArrayList<Observer>();
     QuackObservable duck;
 

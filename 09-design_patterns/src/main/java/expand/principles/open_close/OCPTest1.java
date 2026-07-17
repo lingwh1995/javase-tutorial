@@ -6,9 +6,10 @@ package expand.principles.open_close;
  * 目前只有一个画三角形的需求，当增加一个画圆形的需求的时候，不仅要对方法的提供者Painter做修改，也要对调用者做修改
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class OCPTest1 {
+
     public static void main(String[] args) {
         Painter1 painter1 = new Painter1();
         painter1.drawShape(new Triagle1());

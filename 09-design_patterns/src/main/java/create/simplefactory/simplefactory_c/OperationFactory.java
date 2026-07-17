@@ -1,6 +1,8 @@
 package create.simplefactory.simplefactory_c;
 
 /**
+ * 运算工厂
+ *
  * 工厂模式优点
  * 1. 隐藏创建类的操作
  *
@@ -10,10 +12,10 @@ package create.simplefactory.simplefactory_c;
  * 3. 删除新增某个子类的时候要对工厂类进行操作，违反了开闭原则
  *
  * @author lingwh
- * @desc 运算工厂
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class OperationFactory {
+
     public static Operation createOperation(String operteionType) {
         Operation operation = null;
         switch (operteionType) {

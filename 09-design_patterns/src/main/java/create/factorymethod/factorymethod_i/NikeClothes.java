@@ -1,9 +1,10 @@
 package create.factorymethod.factorymethod_i;
 
 /**
+ * Nike服装
+ *
  * @author lingwh
- * @desc Nike服装
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class NikeClothes extends Clothes {
 

@@ -1,8 +1,9 @@
 package action.state.state_h;
 
 /**
+ * 正常投票状态
+ *
  * @author lingwh
- * @desc 正常投票状态
  * @date 2019/9/23 18:02
  */
 public class NormalVoteState implements VoteState {

@@ -1,8 +1,9 @@
 package action.observer.observer_e;
 
 /**
+ * 推模型的观察者，比如报纸的读者
+ *
  * @author lingwh
- * @desc 推模型的观察者，比如报纸的读者
  * @date 2019/8/19 15:00
  */
 public interface Observer {

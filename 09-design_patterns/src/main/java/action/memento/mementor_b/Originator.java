@@ -1,11 +1,13 @@
 package action.memento.mementor_b;
 
 /**
+ * 原始对象
+ *
  * @author lingwh
- * @desc 原始对象
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Originator {
+
     /**
      * 状态信息
      */

@@ -1,8 +1,9 @@
 package action.template.template_e.normal;
 
 /**
+ * 普通用户登录控制的逻辑处理
+ *
  * @author lingwh
- * @desc 普通用户登录控制的逻辑处理
  * @date 2019/8/26 11:34
  */
 public class NormalLogin {

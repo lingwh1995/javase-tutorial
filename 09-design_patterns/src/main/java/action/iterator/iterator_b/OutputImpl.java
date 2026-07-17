@@ -3,11 +3,13 @@ package action.iterator.iterator_b;
 import java.util.List;
 
 /**
+ * 输出实现类
+ *
  * @author lingwh
- * @desc 输出实现类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class OutputImpl {
+
     // 学院集合
     List<College> collegeList;
 

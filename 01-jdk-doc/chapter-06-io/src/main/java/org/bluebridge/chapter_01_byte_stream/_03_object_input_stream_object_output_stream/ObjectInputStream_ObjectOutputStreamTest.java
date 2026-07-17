@@ -1,12 +1,14 @@
 package org.bluebridge.chapter_01_byte_stream._03_object_input_stream_object_output_stream;
 
-import java.io.*;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.*;
+
 /**
+ * ObjectStream 用于实现序列化和反序列化
+ *
  * @author lingwh
- * @desc ObjectStream 用于实现序列化和反序列化
  * @date 2025/8/16 13:39
  */
 @Slf4j

@@ -1,8 +1,9 @@
 package action.strategy.strategy_d;
 
 /**
+ * 常规客户:不打折
+ *
  * @author lingwh
- * @desc 常规客户:不打折
  * @date 2019/8/2 15:07
  */
 public class NormalCustomerPriceStrategy implements PriceStragegy {

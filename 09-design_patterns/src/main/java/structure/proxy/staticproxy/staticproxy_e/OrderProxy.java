@@ -1,8 +1,9 @@
 package structure.proxy.staticproxy.staticproxy_e;
 
 /**
+ * 订单代理对象
+ *
  * @author lingwh
- * @desc 订单代理对象
  * @date 2019/8/19 10:50
  */
 public class OrderProxy extends Order {

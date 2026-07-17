@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Mysql数据库,维护了Redis和Es数据库的引用
+ *
  * @author lingwh
- * @desc Mysql数据库,维护了Redis和Es数据库的引用
  * @date 2019/8/14 13:59
  */
 public class MysqlDatabase extends AbstractDatabase {

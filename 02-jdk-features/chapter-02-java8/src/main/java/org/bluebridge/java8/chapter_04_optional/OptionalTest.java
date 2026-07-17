@@ -1,9 +1,10 @@
 package org.bluebridge.java8.chapter_04_optional;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import org.junit.Test;
 
 /**
  * Optional容器测试
@@ -25,7 +26,7 @@ import org.junit.Test;
  *      T orElseThrow(Supplier<? extends X> exceptionSupplier)   如果Optional容器中有值将其返回，否则抛出由 Supplier 接口实现提供的异常
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 15:10
  */
 public class OptionalTest {
 
@@ -97,7 +98,8 @@ public class OptionalTest {
     }
 
     /**
-     * 直接调用时如果Optional容器中包含对象，则返回该值，否则抛出异常，一般配合 Optional.isPresent() 或 ifPresent(Consumer<? super T>
+     * 直接调用时如果Optional容器中包含对象，则返回该值，否则抛出异常，一般配合 Optional.isPresent() 或
+     * ifPresent(Consumer<? super T>
      * action) 使用
      */
     @Test
@@ -114,9 +116,9 @@ public class OptionalTest {
         // System.out.println(emptyOptional.get());
 
         // 配合 Optional.isPresent() 使用
-        //        if(emptyOptional.isPresent()) {
-        //            System.out.println(emptyOptional.get());
-        //        }
+        // if(emptyOptional.isPresent()) {
+        // System.out.println(emptyOptional.get());
+        // }
 
         // 配合 Optional.ifPresent(Consumer<? super T> action) 使用
         emptyOptional.ifPresent(System.out::println);

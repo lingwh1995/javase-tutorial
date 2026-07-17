@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.future.future_a;
 
 /**
+ * 不使用 Future 模式会出现阻塞的情况
+ *
  * @author lingwh
- * @desc 不使用 Future 模式会出现阻塞的情况
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class NoFutureTest {
+
     public static void main(String[] args) throws InterruptedException {
         String result = get();
         System.out.println(result);

@@ -3,11 +3,13 @@ package headfirst.designpatterns.proxy.javaproxy;
 import java.lang.reflect.*;
 
 /**
+ * 拥有者调用处理器
+ *
  * @author lingwh
- * @desc 拥有者调用处理器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class OwnerInvocationHandler implements InvocationHandler {
+
     PersonBean person;
 
     public OwnerInvocationHandler(PersonBean person) {
