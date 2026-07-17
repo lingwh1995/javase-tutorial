@@ -8,9 +8,10 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 定时线程池测试
+ *
  * @author lingwh
- * @desc 定时线程池测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ScheduledThreadPool01HelloWorldTest {
 
@@ -50,7 +51,8 @@ public class ScheduledThreadPool01HelloWorldTest {
 
     /**
      * 测试 ScheduledExecutorService.scheduleAtFixedRate()
-     *     任务执行时间没有超过间隔时间
+     *
+     * 任务执行时间没有超过间隔时间
      */
     private static void testScheduleAtFixedRate1() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:MM:ss");
@@ -63,7 +65,8 @@ public class ScheduledThreadPool01HelloWorldTest {
 
     /**
      * 测试 ScheduledExecutorService.scheduleAtFixedRate()
-     *     任务执行时间超过了间隔时间
+     *
+     * 任务执行时间超过了间隔时间
      * 输出分析：一开始，延时 1s，接下来，由于任务执行时间 > 间隔时间，间隔被『撑』到了 2s
      */
     private static void testScheduleAtFixedRate2() {

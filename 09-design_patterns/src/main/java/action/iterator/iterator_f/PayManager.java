@@ -5,11 +5,13 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * 集团工资
+ *
  * @author lingwh
- * @desc 集团工资
  * @date 2019/8/20 11:01
  */
 public class PayManager extends Aggregate {
+
     private List<PayModel> list = new ArrayList<PayModel>();
 
     public List<PayModel> getPayList() {

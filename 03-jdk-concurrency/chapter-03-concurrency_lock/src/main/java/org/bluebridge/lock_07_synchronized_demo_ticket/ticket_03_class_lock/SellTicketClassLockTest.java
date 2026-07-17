@@ -3,9 +3,10 @@ package org.bluebridge.lock_07_synchronized_demo_ticket.ticket_03_class_lock;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
+ * 使用class锁解决卖票数量大于500的情况
+ *
  * @author lingwh
- * @desc 使用class锁解决卖票数量大于500的情况
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SellTicketClassLockTest {
 
@@ -32,8 +33,8 @@ public class SellTicketClassLockTest {
                 }
             }
         };
-        new Thread(runnable,"窗口1").start();
-        new Thread(runnable,"窗口2").start();
-        new Thread(runnable,"窗口3").start();
+        new Thread(runnable, "窗口1").start();
+        new Thread(runnable, "窗口2").start();
+        new Thread(runnable, "窗口3").start();
     }
 }

@@ -1,13 +1,15 @@
 package org.bluebridge.chapter_04_random_access_file;
 
-import java.io.IOException;
-import java.io.RandomAccessFile;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.io.RandomAccessFile;
+
 /**
+ * RandomAccessFile主要完成随机读取的功能，可以读取指定位置的内容。不属于InputStream和OutputStream类系的，本质上属于字节流。
+ *
  * @author lingwh
- * @desc RandomAccessFile主要完成随机读取的功能，可以读取指定位置的内容。不属于InputStream和OutputStream类系的，本质上属于字节流。
  * @date 2025/9/22 11:46
  */
 @Slf4j

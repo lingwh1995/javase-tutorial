@@ -7,6 +7,7 @@ package structure.facade.facade_b;
  * @date 2019/9/12 8:53
  */
 public class Presentation {
+
     public void generate() {
         // 1. 从配置管理里面获取相应的配置信息
         ConfigModel cm = ConfigManager.getInstance().getConfigData();

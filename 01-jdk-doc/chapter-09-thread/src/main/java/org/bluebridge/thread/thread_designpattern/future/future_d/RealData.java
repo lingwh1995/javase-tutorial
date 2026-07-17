@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.future.future_d;
 
 /**
+ * 真实数据实现
+ *
  * @author lingwh
- * @desc 真实数据实现
  * @date 2019/10/10 16:53
  */
 public class RealData implements Data {
+
     private String result;
 
     public RealData(String request) {

@@ -4,8 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 /**
+ * Redis存储Dao
+ *
  * @author lingwh
- * @desc Redis存储Dao
  * @date 2025/11/10 11:41
  */
 @Slf4j

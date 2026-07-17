@@ -1,9 +1,10 @@
 package headfirst.designpatterns.command.remoteWL;
 
 /**
+ * 遥控器加载器
+ *
  * @author lingwh
- * @desc 遥控器加载器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RemoteLoader {
 
@@ -20,12 +21,11 @@ public class RemoteLoader {
         remoteControl.setCommand(1, kitchenLight::on, kitchenLight::off);
         remoteControl.setCommand(2, ceilingFan::high, ceilingFan::off);
 
-        Command stereoOnWithCD =
-                () -> {
-                    stereo.on();
-                    stereo.setCD();
-                    stereo.setVolume(11);
-                };
+        Command stereoOnWithCD = () -> {
+            stereo.on();
+            stereo.setCD();
+            stereo.setVolume(11);
+        };
         remoteControl.setCommand(3, stereoOnWithCD, stereo::off);
         remoteControl.setCommand(4, garageDoor::up, garageDoor::down);
 

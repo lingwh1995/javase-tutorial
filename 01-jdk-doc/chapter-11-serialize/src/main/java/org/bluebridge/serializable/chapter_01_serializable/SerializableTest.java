@@ -1,12 +1,14 @@
 package org.bluebridge.serializable.chapter_01_serializable;
 
-import java.io.*;
 import org.junit.Test;
 
+import java.io.*;
+
 /**
+ * 使用对象序列化流实现序列化和反序列化 对象序列化流:把对象像流一样存入文本文件或者在网络中传输
+ *
  * @author lingwh
- * @desc 使用对象序列化流实现序列化和反序列化 对象序列化流:把对象像流一样存入文本文件或者在网络中传输
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class SerializableTest {
 

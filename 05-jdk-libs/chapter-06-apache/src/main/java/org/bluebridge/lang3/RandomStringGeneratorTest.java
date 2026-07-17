@@ -1,13 +1,15 @@
 package org.bluebridge.lang3;
 
-import java.util.stream.IntStream;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.text.RandomStringGenerator;
 import org.junit.Test;
 
+import java.util.stream.IntStream;
+
 /**
+ * RandomStringGenerator工具类测试
+ *
  * @author lingwh
- * @desc RandomStringGenerator工具类测试
  * @date 2025/9/15 11:08
  */
 @Slf4j

@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * PECS原则测试
+ *
  * @author lingwh
- * @desc PECS原则测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 11:04
  */
 public class PecsTest {
 
@@ -15,14 +16,12 @@ public class PecsTest {
 
         // 准备不同类型的订单数据
         List<Order> normalOrders = List.of(
-            new Order("ORD-001", 100.0),
-            new Order("ORD-002", 200.0)
-        );
+                new Order("ORD-001", 100.0),
+                new Order("ORD-002", 200.0));
 
         List<VipOrder> vipOrders = List.of(
-            new VipOrder("VIP-001", 500.0, "张三"),
-            new VipOrder("VIP-002", 800.0, "李四")
-        );
+                new VipOrder("VIP-001", 500.0, "张三"),
+                new VipOrder("VIP-002", 800.0, "李四"));
 
         // ---------- 场景1：订单金额统计（Producer - extends） ----------
         System.out.println("--- 场景1：订单金额统计 ---");

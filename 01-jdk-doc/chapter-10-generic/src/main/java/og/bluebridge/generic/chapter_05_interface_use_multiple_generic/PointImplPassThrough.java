@@ -3,9 +3,10 @@ package og.bluebridge.generic.chapter_05_interface_use_multiple_generic;
 import lombok.Data;
 
 /**
+ * 多个泛型透传实现
+ *
  * @author lingwh
- * @desc 多个泛型透传实现
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 @Data
 public class PointImplPassThrough<T, U> implements IPoint<T, U> {

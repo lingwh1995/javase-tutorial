@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 披萨原料工厂接口
+ *
  * @author lingwh
- * @desc 披萨原料工厂接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface PizzaIngredientFactory {
 

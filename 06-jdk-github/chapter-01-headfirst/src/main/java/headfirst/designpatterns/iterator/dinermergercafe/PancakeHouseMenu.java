@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
+ * 煎饼屋菜单
+ *
  * @author lingwh
- * @desc 煎饼屋菜单
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PancakeHouseMenu implements Menu {
+
 	ArrayList<MenuItem> menuItems;
 
 	public PancakeHouseMenu() {

@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 客户方已有的工资管理对象
+ *
  * @author lingwh
- * @desc 客户方已有的工资管理对象
  * @date 2019/8/20 9:17
  */
 public class PayManager extends Aggregate {

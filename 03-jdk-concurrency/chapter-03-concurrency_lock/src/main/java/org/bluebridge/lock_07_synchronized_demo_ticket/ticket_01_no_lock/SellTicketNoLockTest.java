@@ -1,9 +1,10 @@
 package org.bluebridge.lock_07_synchronized_demo_ticket.ticket_01_no_lock;
 
 /**
+ * 由于线程安全问题，可能会出现卖票数量大于500的情况
+ *
  * @author lingwh
- * @desc 由于线程安全问题，可能会出现卖票数量大于500的情况
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SellTicketNoLockTest {
 
@@ -27,8 +28,8 @@ public class SellTicketNoLockTest {
                 }
             }
         };
-        new Thread(runnable,"窗口1").start();
-        new Thread(runnable,"窗口2").start();
-        new Thread(runnable,"窗口3").start();
+        new Thread(runnable, "窗口1").start();
+        new Thread(runnable, "窗口2").start();
+        new Thread(runnable, "窗口3").start();
     }
 }

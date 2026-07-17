@@ -8,10 +8,10 @@ package action.visitor.visitor_b;
  * 2. 都二次分派: Woman调类用作为参数的"具体方法"，调用getWomanResult()，同时将自己(this)w作为参数传入，完成第二次分派
  *
  * @author lingwh
- * @desc 人员抽象类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class Person {
+
     // 提供一个方法,让访问者可以访问
     public abstract void accept(Action action);
 }

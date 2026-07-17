@@ -3,7 +3,7 @@ package action.state.state_e;
 /**
  * 重复投票状态
  *
- * @author ronin
+ * @author lingwh
  * @date 2019/8/27 10:32
  */
 public class RepeatVoteState implements VoteState {

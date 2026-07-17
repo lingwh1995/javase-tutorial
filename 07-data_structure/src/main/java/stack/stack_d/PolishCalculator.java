@@ -9,10 +9,10 @@ import java.util.Stack;
  * 2*(8+16)/4 ==> 2 8 16 + * 4
  *
  * @author lingwh
- * @desc 将中缀表达式转为后缀表达式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PolishCalculator {
+
     public static void main(String[] args) {
         // 初始化两个栈，一个数栈一个符号栈
         Transformation numstack = new Transformation(20);

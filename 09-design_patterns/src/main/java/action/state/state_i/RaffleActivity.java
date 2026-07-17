@@ -4,9 +4,10 @@ package action.state.state_i;
  * 抽奖活动
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RaffleActivity {
+
     // 抽奖状态;
     State state = null;
     // 奖品数量;

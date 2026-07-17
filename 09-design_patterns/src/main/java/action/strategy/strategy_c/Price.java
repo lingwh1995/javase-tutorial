@@ -1,11 +1,13 @@
 package action.strategy.strategy_c;
 
 /**
+ * 价格管理类
+ *
  * @author lingwh
- * @desc 价格管理类
  * @date 2019/8/2 15:00
  */
 public class Price {
+
     /**
      * 报价，对不同类型的，计算不同的价格
      *

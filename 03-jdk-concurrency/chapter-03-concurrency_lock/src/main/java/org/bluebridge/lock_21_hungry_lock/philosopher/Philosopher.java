@@ -4,11 +4,13 @@ import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 哲学家类
+ *
  * @author lingwh
- * @desc 哲学家类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Philosopher extends Thread {
+
     private Chopstick left;
     private Chopstick right;
 

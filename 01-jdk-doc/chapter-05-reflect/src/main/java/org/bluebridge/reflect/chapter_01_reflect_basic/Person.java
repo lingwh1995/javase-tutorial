@@ -3,8 +3,9 @@ package org.bluebridge.reflect.chapter_01_reflect_basic;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * Person 实体
+ *
  * @author lingwh
- * @desc Person 实体
  * @date 2019/3/10 11:00
  */
 @Slf4j

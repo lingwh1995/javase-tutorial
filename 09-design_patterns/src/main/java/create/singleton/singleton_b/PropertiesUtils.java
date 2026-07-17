@@ -10,6 +10,7 @@ import java.util.Properties;
  * @date 2019/8/5 16:46
  */
 public class PropertiesUtils {
+
     public static void read() {
         Properties properties = new Properties();
         try {

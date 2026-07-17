@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_a
 import java.util.List;
 
 /**
+ * 读线程
+ *
  * @author lingwh
- * @desc 读线程
  * @date 2019/10/15 17:42
  */
 public class ReadThread extends Thread {
+
     private final List<Integer> list;
 
     public ReadThread(List<Integer> list) {

@@ -1,11 +1,13 @@
 package org.bluebridge.java9.module02;
 
 /**
+ * 人员实体类
+ *
  * @author lingwh
- * @desc 人员实体类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Person {
+
     private String name;
     private int age;
 

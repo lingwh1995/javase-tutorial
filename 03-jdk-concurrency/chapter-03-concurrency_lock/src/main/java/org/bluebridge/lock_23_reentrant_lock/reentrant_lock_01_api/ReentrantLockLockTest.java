@@ -5,18 +5,20 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * lock()方法
+ *
  * @author lingwh
- * @desc lock()方法
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ReentrantLockLockTest {
+
     public static void main(String[] args) throws InterruptedException {
         Lock lock = new ReentrantLock();
         Thread t1 = new Thread(() -> {
             try {
                 lock.lock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 得到锁......");
-                //死循环
+                // 死循环
                 for (int i = 0; i < 3; i++) {
                     System.out.println(i);
                     try {
@@ -25,21 +27,21 @@ public class ReentrantLockLockTest {
                         e.printStackTrace();
                     }
                 }
-            }finally {
+            } finally {
                 lock.unlock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 释放锁......");
             }
-        },"t1");
+        }, "t1");
 
         Thread t2 = new Thread(() -> {
             try {
                 lock.lock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 得到锁......");
-            }finally {
+            } finally {
                 lock.unlock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 释放锁......");
             }
-        },"t2");
+        }, "t2");
 
         // 让thread1先执行
         t1.start();

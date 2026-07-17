@@ -3,11 +3,13 @@ package structure.flyweight.flyweight_e;
 import java.util.*;
 
 /**
+ * 安全管理
+ *
  * @author lingwh
- * @desc
- * @since 2019/8/1 13:54
+ * @date 2019/8/1 13:54
  */
 public class SecurityMgr {
+
     private static SecurityMgr securityMgr = new SecurityMgr();
 
     private SecurityMgr() {}

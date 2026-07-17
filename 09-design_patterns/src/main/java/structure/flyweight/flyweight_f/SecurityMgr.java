@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * 安全管理器
+ *
  * @author lingwh
- * @desc 安全管理器
  * @date 2019/8/1 13:54
  */
 public class SecurityMgr {

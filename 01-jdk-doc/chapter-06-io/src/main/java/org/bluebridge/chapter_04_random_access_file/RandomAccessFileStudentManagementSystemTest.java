@@ -1,17 +1,19 @@
 package org.bluebridge.chapter_04_random_access_file;
 
-import java.io.IOException;
-import java.io.RandomAccessFile;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.io.RandomAccessFile;
+
 /**
+ * 基于RandomAccessFile的学生管理系统 使用固定长度记录存储学生信息
+ *
  * @author lingwh
- * @desc 基于RandomAccessFile的学生管理系统 使用固定长度记录存储学生信息
- * @date 2026/7/9 00:00
+ * @date 2026/6/22 18:04
  */
 @Slf4j
 public class RandomAccessFileStudentManagementSystemTest {

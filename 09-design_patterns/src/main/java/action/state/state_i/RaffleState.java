@@ -6,9 +6,10 @@ import java.util.Random;
  * 抽奖状态
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RaffleState extends State {
+
     // 关联抽奖活动;
     private RaffleActivity raffleActivity;
 

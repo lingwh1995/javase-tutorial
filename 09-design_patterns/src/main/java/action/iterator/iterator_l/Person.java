@@ -1,11 +1,13 @@
 package action.iterator.iterator_l;
 
 /**
+ * 人员模型
+ *
  * @author lingwh
- * @desc 人员模型
  * @date 2019/9/23 10:40
  */
 public class Person {
+
     private String name;
     private Integer age;
 

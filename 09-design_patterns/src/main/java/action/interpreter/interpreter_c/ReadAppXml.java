@@ -7,8 +7,9 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 /**
+ * 读取配置文件
+ *
  * @author lingwh
- * @desc 读取配置文件
  * @date 2019/8/27 13:42
  */
 public class ReadAppXml {

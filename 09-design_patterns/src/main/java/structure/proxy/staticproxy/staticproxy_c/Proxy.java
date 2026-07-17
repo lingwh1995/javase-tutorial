@@ -3,8 +3,9 @@ package structure.proxy.staticproxy.staticproxy_c;
 import java.sql.*;
 
 /**
+ * 代理对象,代理用户数据对象
+ *
  * @author lingwh
- * @desc 代理对象,代理用户数据对象
  * @date 2019/8/15 9:11
  */
 public class Proxy implements UserModelApi {

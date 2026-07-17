@@ -3,16 +3,17 @@ package org.bluebridge.utils;
 import java.util.Arrays;
 
 /**
+ * 补齐工具类
+ *
  * @author lingwh
- * @desc 补齐工具类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PaddingUtil {
 
     /**
      * 例如需要N字节补齐，报文长度少于N个字节，需要补满N个字节，补(N-len)个(N-len)。 如果报文长度正好是N字节的整数倍，则需要补16个十进制16。
      *
-     * @param data 原始字节数组
+     * @param data          原始字节数组
      * @param paddingLength 需要多少字节补齐
      * @return 补齐后的字节数组
      */
@@ -71,7 +72,7 @@ public class PaddingUtil {
     }
 
     public static void main(String[] args) {
-        byte[] array = new byte[] {1, 2, 3, 4, 5, 6};
+        byte[] array = new byte[] { 1, 2, 3, 4, 5, 6 };
         // 16字节补齐 补10个10
         byte[] padding16 = padding(array, 16);
         System.out.println(Arrays.toString(padding16));

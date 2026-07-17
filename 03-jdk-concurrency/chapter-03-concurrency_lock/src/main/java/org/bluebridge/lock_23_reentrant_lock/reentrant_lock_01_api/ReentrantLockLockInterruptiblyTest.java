@@ -4,18 +4,20 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * lockInterruptibly()方法
+ *
  * @author lingwh
- * @desc lockInterruptibly()方法
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ReentrantLockLockInterruptiblyTest {
+
     public static void main(String[] args) throws InterruptedException {
         Lock lock = new ReentrantLock();
         Thread t1 = new Thread(() -> {
             try {
                 lock.lock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 得到锁......");
-                //死循环
+                // 死循环
                 for (int i = 0; i < 3; i++) {
                     System.out.println(i);
                     try {
@@ -24,26 +26,26 @@ public class ReentrantLockLockInterruptiblyTest {
                         e.printStackTrace();
                     }
                 }
-            }finally {
+            } finally {
                 lock.unlock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 释放锁......");
             }
-        },"t1");
+        }, "t1");
 
         Thread t2 = new Thread(() -> {
             try {
-                //改动点
+                // 改动点
                 lock.lockInterruptibly();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 得到锁......");
-                //捕获中断异常
+                // 捕获中断异常
             } catch (InterruptedException e) {
                 e.printStackTrace();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 中断结束......");
-            }finally {
+            } finally {
                 lock.unlock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 释放锁......");
             }
-        },"t2");
+        }, "t2");
 
         t1.start();
         // 让thread1先执行

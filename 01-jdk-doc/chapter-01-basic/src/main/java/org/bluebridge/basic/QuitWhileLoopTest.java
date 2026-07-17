@@ -4,8 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
+ * 退出while循环测试
+ *
  * @author lingwh
- * @desc 退出while循环测试
  * @date 2025/5/3 16:58
  */
 @Slf4j

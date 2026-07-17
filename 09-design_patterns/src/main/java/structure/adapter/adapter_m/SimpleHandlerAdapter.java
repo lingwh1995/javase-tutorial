@@ -1,9 +1,10 @@
 package structure.adapter.adapter_m;
 
 /**
+ * 简单处理器适配器
+ *
  * @author lingwh
- * @desc 简单处理器适配器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SimpleHandlerAdapter implements HandlerAdapter {
 

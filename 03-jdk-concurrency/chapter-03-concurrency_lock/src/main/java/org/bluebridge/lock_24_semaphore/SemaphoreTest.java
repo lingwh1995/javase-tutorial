@@ -3,11 +3,13 @@ package org.bluebridge.lock_24_semaphore;
 import java.util.concurrent.Semaphore;
 
 /**
+ * Semaphore信号量测试
+ *
  * @author lingwh
- * @desc Semaphore信号量测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SemaphoreTest {
+
     public static void main(String[] args) {
         // 定义semaphore实例，设置许可数为3，即停车位为3个
         Semaphore semaphore = new Semaphore(3);
@@ -16,9 +18,9 @@ public class SemaphoreTest {
             new Thread(() -> {
                 try {
                     System.out.println(Thread.currentThread().getName() + "尝试进入停车场......");
-                    //尝试获取许可
+                    // 尝试获取许可
                     semaphore.acquire();
-                    //模拟停车
+                    // 模拟停车
                     long time = (long) (Math.random() * 10 + 1);
                     System.out.println(Thread.currentThread().getName() + "进入了停车场，停车" + time + "秒......");
                     Thread.sleep(time);
@@ -26,7 +28,7 @@ public class SemaphoreTest {
                     e.printStackTrace();
                 } finally {
                     System.out.println(Thread.currentThread().getName() + "开始驶离停车场......");
-                    //释放许可
+                    // 释放许可
                     semaphore.release();
                     System.out.println(Thread.currentThread().getName() + "离开了停车场！");
                 }

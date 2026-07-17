@@ -6,11 +6,13 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
 /**
+ * 客户端测试，在客户端调用远程对象上的远程方法，并返回结果。
+ *
  * @author lingwh
- * @desc 客户端测试，在客户端调用远程对象上的远程方法，并返回结果。
  * @date 2019/9/24 17:43
  */
 public class RemoteProxyClient {
+
     public static void main(String args[]) {
         try {
             CompareHelper compareHelper;

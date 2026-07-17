@@ -1,8 +1,9 @@
 package action.command.command_d;
 
 /**
+ * 重启命令对象
+ *
  * @author lingwh
- * @desc 重启命令对象
  * @date 2019/8/5 13:20
  */
 public class RestartCommand implements Command {

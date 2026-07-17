@@ -4,8 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 /**
+ * PostgreSQ存储Dao
+ *
  * @author lingwh
- * @desc PostgreSQ存储Dao
  * @date 2025/11/10 11:49
  */
 @Slf4j

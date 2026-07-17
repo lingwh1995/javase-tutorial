@@ -4,9 +4,10 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 使用可重入锁解决卖票数量大于500的情况
+ *
  * @author lingwh
- * @desc 使用可重入锁解决卖票数量大于500的情况
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SellTicketReentrantLockTest {
 
@@ -18,7 +19,7 @@ public class SellTicketReentrantLockTest {
 
             @Override
             public void run() {
-                //加锁
+                // 加锁
                 reentrantLock.lock();
                 while (true) {
                     if (index > max) {
@@ -31,12 +32,12 @@ public class SellTicketReentrantLockTest {
                     }
                     System.out.println(Thread.currentThread().getName() + "卖出了第" + index++ + "张电影票......");
                 }
-                //解锁
+                // 解锁
                 reentrantLock.unlock();
             }
         };
-        new Thread(runnable,"窗口1").start();
-        new Thread(runnable,"窗口2").start();
-        new Thread(runnable,"窗口3").start();
+        new Thread(runnable, "窗口1").start();
+        new Thread(runnable, "窗口2").start();
+        new Thread(runnable, "窗口3").start();
     }
 }

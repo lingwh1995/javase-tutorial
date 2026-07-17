@@ -1,11 +1,13 @@
 package org.bluebridge.ioc.xml_two.entity;
 
 /**
+ * 人
+ *
  * @author lingwh
- * @desc 人
- * @date 2019/3/15 00:00
+ * @date 2026/4/21 19:02
  */
 public class Person {
+
     private Student student;
     private Teacher teacher;
 

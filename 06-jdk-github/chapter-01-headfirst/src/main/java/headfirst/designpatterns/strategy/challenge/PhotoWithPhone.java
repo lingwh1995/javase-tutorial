@@ -3,9 +3,10 @@ package headfirst.designpatterns.strategy.challenge;
 import java.util.Scanner;
 
 /**
+ * 手机拍照测试类
+ *
  * @author lingwh
- * @desc 手机拍照测试类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PhotoWithPhone {
 

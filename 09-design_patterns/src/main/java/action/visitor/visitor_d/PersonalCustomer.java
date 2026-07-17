@@ -7,6 +7,7 @@ package action.visitor.visitor_d;
  * @date 2019/10/11 9:37
  */
 public class PersonalCustomer extends Customer {
+
     private String telephone;
     private int age;
 

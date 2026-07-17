@@ -1,11 +1,13 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
+ * 爆米花机
+ *
  * @author lingwh
- * @desc 爆米花机
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PopcornPopper {
+
     String description;
 
     public PopcornPopper(String description) {

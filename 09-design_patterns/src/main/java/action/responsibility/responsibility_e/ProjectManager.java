@@ -1,8 +1,9 @@
 package action.responsibility.responsibility_e;
 
 /**
+ * 项目经理
+ *
  * @author lingwh
- * @desc 项目经理
  * @date 2019/8/27 18:09
  */
 public class ProjectManager extends Handler {

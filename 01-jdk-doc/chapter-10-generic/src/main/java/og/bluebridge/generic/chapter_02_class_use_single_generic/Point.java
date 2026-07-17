@@ -3,9 +3,10 @@ package og.bluebridge.generic.chapter_02_class_use_single_generic;
 import lombok.Data;
 
 /**
+ * 单个泛型
+ *
  * @author lingwh
- * @desc 单个泛型
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 @Data
 public class Point<T> {

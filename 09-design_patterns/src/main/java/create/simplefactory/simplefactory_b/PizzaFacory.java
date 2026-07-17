@@ -4,9 +4,10 @@ package create.simplefactory.simplefactory_b;
  * 披萨工厂
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PizzaFacory {
+
     public static Pizza createPizza(String pizzType) {
         Pizza pizza = null;
         if ("greek".equals(pizzType)) {

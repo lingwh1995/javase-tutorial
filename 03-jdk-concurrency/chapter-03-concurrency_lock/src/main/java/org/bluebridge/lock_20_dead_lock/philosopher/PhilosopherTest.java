@@ -1,11 +1,13 @@
 package org.bluebridge.lock_20_dead_lock.philosopher;
 
 /**
+ * 哲学家就餐模拟死锁
+ *
  * @author lingwh
- * @desc 哲学家就餐模拟死锁
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PhilosopherTest {
+
     public static void main(String[] args) {
         Chopstick c1 = new Chopstick("1");
         Chopstick c2 = new Chopstick("2");

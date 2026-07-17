@@ -1,12 +1,13 @@
 package org.bluebridge.reflect.chapter_01_reflect_basic;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
 
 /**
  * 测试反射操作Person类
@@ -58,8 +59,7 @@ public class ReflectBasicTest {
     @Test
     public void testReflectCreateInstanceByNoArgsConstructor() throws Exception {
         // 1. 获取class对象
-        Class<? extends Object> clazz =
-                getClass().forName("org.bluebridge.reflect.chapter_01_reflect_basic.Person");
+        Class<? extends Object> clazz = getClass().forName("org.bluebridge.reflect.chapter_01_reflect_basic.Person");
         log.info("包名 + 类名: {}", clazz);
         log.info("类名: {}", clazz.getSimpleName());
 
@@ -212,12 +212,13 @@ public class ReflectBasicTest {
 
     /**
      * 获取class对象/构造器加强
-     *    直接可以获取到指定类型的Class对象和构造器，不用再强行转换了
+     * 直接可以获取到指定类型的Class对象和构造器，不用再强行转换了
      *
      * @throws NoSuchMethodException
      */
     @Test
-    public void testReflectCreateInstanceUseGeneric() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public void testReflectCreateInstanceUseGeneric()
+            throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         // 1. 获取指定类型的Class对象
         Class<Person> clazz = Person.class;
         // 2. 获取指定类型的无参构造器
@@ -250,7 +251,9 @@ public class ReflectBasicTest {
             StringBuilder interfacesStr = new StringBuilder();
             for (int i = 0; i < interfaces.length; i++) {
                 interfacesStr.append(interfaces[i].getSimpleName());
-                if (i < interfaces.length - 1) interfacesStr.append(", ");
+                if (i < interfaces.length - 1) {
+                    interfacesStr.append(", ");
+                }
             }
             log.info("实现的接口: {}", interfacesStr.toString());
         }

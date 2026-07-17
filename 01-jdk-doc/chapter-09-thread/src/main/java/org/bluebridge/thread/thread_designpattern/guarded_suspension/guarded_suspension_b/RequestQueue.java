@@ -4,11 +4,13 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
+ * 请求队列
+ *
  * @author lingwh
- * @desc 请求队列
  * @date 2019/10/16 10:32
  */
 public class RequestQueue {
+
     private final BlockingQueue<Request> queue = new LinkedBlockingQueue<>();
 
     public Request getRequest() {

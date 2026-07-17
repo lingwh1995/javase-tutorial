@@ -1,8 +1,9 @@
 package org.bluebridge.innerclass;
 
 /**
+ * 局部内部类
+ *
  * @author lingwh
- * @desc 局部内部类
  * @date 2019/7/3 11:16
  */
 public class PartOuter {

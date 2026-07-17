@@ -1,6 +1,8 @@
 package action.state.state_g;
 
 /**
+ * 重复投票状态
+ *
  * @author lingwh
  * @date 2019/9/23 18:36
  */

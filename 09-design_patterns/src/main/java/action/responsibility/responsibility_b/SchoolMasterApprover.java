@@ -1,11 +1,13 @@
 package action.responsibility.responsibility_b;
 
 /**
+ * 校长 处理金额大于10000的请求
+ *
  * @author lingwh
- * @desc 校长 处理金额大于10000的请求
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SchoolMasterApprover extends Approver {
+
     public SchoolMasterApprover(String name) {
         super(name);
     }

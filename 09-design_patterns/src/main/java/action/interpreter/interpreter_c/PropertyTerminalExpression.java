@@ -1,8 +1,9 @@
 package action.interpreter.interpreter_c;
 
 /**
+ * 属性作为终结符对应的解释器
+ *
  * @author lingwh
- * @desc 属性作为终结符对应的解释器
  * @date 2019/8/27 14:46
  */
 public class PropertyTerminalExpression extends ReadXmlExpression {

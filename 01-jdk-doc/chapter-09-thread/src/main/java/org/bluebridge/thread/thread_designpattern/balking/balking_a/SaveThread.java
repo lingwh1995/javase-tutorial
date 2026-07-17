@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.balking.balking_a;
 import java.io.IOException;
 
 /**
+ * 保存线程
+ *
  * @author lingwh
- * @desc 保存线程
  * @date 2019/10/16 15:42
  */
 public class SaveThread extends Thread {
+
     private final Data data;
 
     public SaveThread(String name, Data data) {

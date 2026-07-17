@@ -3,13 +3,15 @@ package sort.QuickSort.quicksort_a;
 import java.util.Arrays;
 
 /**
+ * 快速排序
+ *
  * @author lingwh
- * @desc 快速排序
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class QuickSort {
+
     public static void main(String[] args) {
-        int[] arr = {-9, 78, 0, 23, 70, 2, -8, 9, 15, 3, -2, -2, 9};
+        int[] arr = { -9, 78, 0, 23, 70, 2, -8, 9, 15, 3, -2, -2, 9 };
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
@@ -48,13 +50,13 @@ public class QuickSort {
                 l++;
             }
             // 向左递归
-            //            if(left<r){
-            //                quickSort(arr,left,r-1);
-            //            }
+            // if(left<r){
+            // quickSort(arr,left,r-1);
+            // }
             // 向右递归
-            //            if(right>l){
-            //                quickSort(arr,l+1,right);
-            //            }
+            // if(right>l){
+            // quickSort(arr,l+1,right);
+            // }
         }
     }
 

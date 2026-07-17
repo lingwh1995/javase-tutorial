@@ -3,11 +3,13 @@ package sort.SelectSort.selectsort_a;
 import java.util.Arrays;
 
 /**
+ * 选择排序
+ *
  * @author lingwh
- * @desc 选择排序
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SelectSort {
+
     public static void main(String[] args) {
         selectSort1();
         System.out.println("------------------------");
@@ -18,7 +20,7 @@ public class SelectSort {
      * 选择排序
      */
     private static void selectSort2() {
-        int[] arr = {1, 12, 84, 52, 3, 9};
+        int[] arr = { 1, 12, 84, 52, 3, 9 };
         System.out.println("原数组:" + Arrays.toString(arr));
         // 第一轮排序
         for (int i = 0; i < arr.length - 1; i++) {
@@ -47,7 +49,7 @@ public class SelectSort {
      * 分步骤选择排序
      */
     private static void selectSort1() {
-        int[] arr = {1, 12, 84, 52, 3, 9};
+        int[] arr = { 1, 12, 84, 52, 3, 9 };
         System.out.println("原数组:" + Arrays.toString(arr));
         // 第一轮排序
         int minIndex = 0;

@@ -4,9 +4,10 @@ package structure.facade.facade_a;
  * 爆米花机，使用饿汉式
  *
  * @author lingwh
- * @date 2019/3/16 00:00
+ * @date 2026/4/21 19:02
  */
 public class Propcorn {
+
     private static Propcorn propcorn = new Propcorn();
 
     public static Propcorn getInstance() {

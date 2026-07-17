@@ -1,11 +1,13 @@
 package action.template.template_c;
 
 /**
+ * 纯豆浆
+ *
  * @author lingwh
- * @desc 纯豆浆
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PureSoyaMilk extends SoyaMilk {
+
     @Override
     void addIngredients() {
         System.out.println("纯豆浆,不加任何佐料......");

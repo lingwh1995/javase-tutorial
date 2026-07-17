@@ -1,11 +1,13 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 李子番茄酱
+ *
  * @author lingwh
- * @desc 李子番茄酱
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PlumTomatoSauce implements Sauce {
+
     public String toString() {
         return "Tomato sauce with plum tomatoes";
     }

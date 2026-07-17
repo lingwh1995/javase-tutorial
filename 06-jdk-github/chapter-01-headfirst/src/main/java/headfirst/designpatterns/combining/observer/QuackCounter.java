@@ -1,11 +1,13 @@
 package headfirst.designpatterns.combining.observer;
 
 /**
+ * 叫声计数器
+ *
  * @author lingwh
- * @desc 叫声计数器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class QuackCounter implements Quackable {
+
     Quackable duck;
     static int numberOfQuacks;
 

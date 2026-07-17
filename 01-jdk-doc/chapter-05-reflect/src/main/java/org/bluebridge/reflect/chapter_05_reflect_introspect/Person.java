@@ -1,9 +1,10 @@
 package org.bluebridge.reflect.chapter_05_reflect_introspect;
 
 /**
+ * 反射操作的类
+ *
  * @author lingwh
- * @desc 反射操作的类
- * @date 2019/3/10 00:00
+ * @date 2026/6/22 18:04
  */
 public class Person {
 

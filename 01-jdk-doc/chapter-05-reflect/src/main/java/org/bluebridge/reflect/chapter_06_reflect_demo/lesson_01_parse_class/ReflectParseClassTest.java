@@ -6,8 +6,9 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
 /**
+ * 反射解析类
+ *
  * @author lingwh
- * @desc 反射解析类
  * @date 2019/10/16 11:41
  */
 public class ReflectParseClassTest {

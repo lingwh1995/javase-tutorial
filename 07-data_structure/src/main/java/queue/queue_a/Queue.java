@@ -3,9 +3,10 @@ package queue.queue_a;
 import java.util.Arrays;
 
 /**
+ * 使用数组模拟队列
+ *
  * @author lingwh
- * @desc 使用数组模拟队列
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Queue {
 

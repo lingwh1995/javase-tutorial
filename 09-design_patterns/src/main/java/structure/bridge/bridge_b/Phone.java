@@ -1,11 +1,13 @@
 package structure.bridge.bridge_b;
 
 /**
+ * 桥接类
+ *
  * @author lingwh
- * @desc 桥接类
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 10:30
  */
 public abstract class Phone {
+
     // 组合品牌
     private Brand brand;
 

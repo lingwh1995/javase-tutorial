@@ -1,11 +1,13 @@
 package headfirst.designpatterns.proxy.javaproxy;
 
 /**
+ * 人员信息实现类
+ *
  * @author lingwh
- * @desc 人员信息实现类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PersonBeanImpl implements PersonBean {
+
     String name;
     String gender;
     String interests;

@@ -8,11 +8,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * 人员类
+ *
  * @author lingwh
- * @desc 人员类
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class Person implements Externalizable {
+
     private static final long serialVersionUID = 1L;
     String userName;
     String password;

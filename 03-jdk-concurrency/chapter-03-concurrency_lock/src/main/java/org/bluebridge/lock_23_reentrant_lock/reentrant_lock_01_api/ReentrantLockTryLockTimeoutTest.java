@@ -5,18 +5,20 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * tryLock超时方法
+ *
  * @author lingwh
- * @desc tryLock超时方法
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ReentrantLockTryLockTimeoutTest {
+
     public static void main(String[] args) throws InterruptedException {
         Lock lock = new ReentrantLock();
         Thread t1 = new Thread(() -> {
             try {
                 lock.tryLock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 得到锁......");
-                //死循环
+                // 死循环
                 for (int i = 0; i < 3; i++) {
                     System.out.println(i);
                     try {
@@ -25,11 +27,11 @@ public class ReentrantLockTryLockTimeoutTest {
                         e.printStackTrace();
                     }
                 }
-            }finally {
+            } finally {
                 lock.unlock();
                 System.out.println("Thread " + Thread.currentThread().getName() + " 释放锁......");
             }
-        },"t1");
+        }, "t1");
 
         Thread t2 = new Thread(() -> {
             boolean alreadyLock = false;
@@ -37,15 +39,15 @@ public class ReentrantLockTryLockTimeoutTest {
                 alreadyLock = lock.tryLock(2, TimeUnit.SECONDS);
                 if (alreadyLock)
                     System.out.println("Thread " + Thread.currentThread().getName() + " 释放锁......");
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
-            }finally {
-                if (alreadyLock){
+            } finally {
+                if (alreadyLock) {
                     lock.unlock();
                 }
             }
             System.out.println("Thread " + Thread.currentThread().getName() + " 结束......");
-        },"t2");
+        }, "t2");
 
         t1.start();
         // 让thread1先执行

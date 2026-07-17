@@ -4,6 +4,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.WriteListener;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintWriter;
@@ -12,9 +13,10 @@ import java.util.Collection;
 import java.util.Locale;
 
 /**
+ * HTTP 响应实现
+ *
  * @author lingwh
- * @desc HTTP 响应实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ResponseImpl implements HttpServletResponse {
 

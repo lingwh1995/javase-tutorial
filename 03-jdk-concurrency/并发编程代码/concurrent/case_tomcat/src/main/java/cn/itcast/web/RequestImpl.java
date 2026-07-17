@@ -13,12 +13,14 @@ import java.security.Principal;
 import java.util.*;
 
 /**
+ * HTTP 请求实现
+ *
  * @author lingwh
- * @desc HTTP 请求实现
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j(topic = "c.RequestImpl")
 public class RequestImpl implements HttpServletRequest {
+
     private Socket socket;
     private BufferedReader reader;
     private String method;

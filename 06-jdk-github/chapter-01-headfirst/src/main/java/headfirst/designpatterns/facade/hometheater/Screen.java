@@ -1,11 +1,13 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
+ * 屏幕
+ *
  * @author lingwh
- * @desc 屏幕
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Screen {
+
     String description;
 
     public Screen(String description) {

@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.guarded_suspension.guarded_su
 import java.util.Random;
 
 /**
+ * 服务器线程
+ *
  * @author lingwh
- * @desc 服务器线程
  * @date 2019/10/16 9:29
  */
 public class ServerThread extends Thread {
+
     private final Random random;
     private final RequestQueue requestQueue;
 

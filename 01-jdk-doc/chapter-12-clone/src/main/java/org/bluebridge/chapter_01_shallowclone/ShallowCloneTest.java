@@ -3,9 +3,10 @@ package org.bluebridge.chapter_01_shallowclone;
 import org.junit.Test;
 
 /**
+ * 浅克隆测试
+ *
  * @author lingwh
- * @desc 浅克隆测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 public class ShallowCloneTest {
 
@@ -18,7 +19,7 @@ public class ShallowCloneTest {
         Sheep sheep = new Sheep();
         sheep.setAge(8);
         sheep.setName("多利");
-        sheep.setSmallShellp(new String[] {"小多利1"});
+        sheep.setSmallShellp(new String[] { "小多利1" });
         System.out.println("克隆前:" + sheep);
         // 克隆羊多利
         Sheep cloneSheep = sheep.clone();

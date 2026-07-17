@@ -4,11 +4,13 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
+ * 请求队列
+ *
  * @author lingwh
- * @desc 请求队列
  * @date 2019/10/16 9:06
  */
 public class RequestQueue {
+
     private final Queue<Request> queue = new LinkedList<>();
 
     public synchronized Request getRequest() {

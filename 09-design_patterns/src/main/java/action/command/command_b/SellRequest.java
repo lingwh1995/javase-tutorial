@@ -1,11 +1,13 @@
 package action.command.command_b;
 
 /**
+ * 具体的销售请求
+ *
  * @author lingwh
- * @desc 具体的销售请求
  * @date 2019/8/2 9:03
  */
 public class SellRequest implements Order {
+
     private Request request;
 
     public SellRequest(Request request) {

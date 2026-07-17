@@ -1,13 +1,15 @@
 package org.bluebridge.reflect.chapter_03_reflect_array;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
+ * 反射操作数组
+ *
  * @author lingwh
- * @desc 反射操作数组
- * @date 2019/3/28 00:00
+ * @date 2026/6/22 18:04
  */
 public class ReflectArrayTest {
 

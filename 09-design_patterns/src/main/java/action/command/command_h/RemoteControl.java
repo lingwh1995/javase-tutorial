@@ -1,11 +1,13 @@
 package action.command.command_h;
 
 /**
+ * 遥控器
+ *
  * @author lingwh
- * @desc 遥控器
  * @date 2019/9/4 15:05
  */
 public class RemoteControl {
+
     private Command[] onCommands;
     private Command[] offCommands;
 

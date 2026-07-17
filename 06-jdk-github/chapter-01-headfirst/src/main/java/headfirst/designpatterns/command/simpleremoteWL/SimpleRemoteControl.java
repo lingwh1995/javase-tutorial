@@ -1,14 +1,17 @@
 package headfirst.designpatterns.command.simpleremoteWL;
 
 /**
+ * 简单遥控器(命令调用者)
+ *
  * @author lingwh
- * @desc 简单遥控器(命令调用者)
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SimpleRemoteControl {
+
     Command slot;
 
-    public SimpleRemoteControl() {}
+    public SimpleRemoteControl() {
+    }
 
     public void setCommand(Command command) {
         slot = command;

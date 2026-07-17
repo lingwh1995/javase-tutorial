@@ -1,19 +1,22 @@
 package org.bluebridge.poi.excel;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
 /**
+ * POI操作Excel测试
+ *
  * @author lingwh
- * @desc POI操作Excel测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class POIExcelTest {
+
     private static final String FILE_PATH = "D:\\Excel\\test.xlsx";
 
     public static void main(String[] args) throws Exception {
@@ -35,7 +38,7 @@ public class POIExcelTest {
         Workbook workbook = new XSSFWorkbook();
         // 2. 创建一个表
         Sheet sheet = workbook.createSheet("sheet-1");
-        int data[][] = {{1, 2, 3}, {4, 5, 6}};
+        int data[][] = { { 1, 2, 3 }, { 4, 5, 6 } };
         for (int i = 0; i < data.length; i++) {
             // 3. 创建一行
             Row row = sheet.createRow(i);

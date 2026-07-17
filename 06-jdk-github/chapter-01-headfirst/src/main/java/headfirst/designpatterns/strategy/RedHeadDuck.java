@@ -1,9 +1,10 @@
 package headfirst.designpatterns.strategy;
 
 /**
+ * 红头鸭
+ *
  * @author lingwh
- * @desc 红头鸭
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RedHeadDuck extends Duck {
 

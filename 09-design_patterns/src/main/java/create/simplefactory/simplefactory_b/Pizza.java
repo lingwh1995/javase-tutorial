@@ -9,9 +9,10 @@ package create.simplefactory.simplefactory_b;
  * 4. box()
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class Pizza {
+
     public abstract void prepare();
 
     public void bake() {

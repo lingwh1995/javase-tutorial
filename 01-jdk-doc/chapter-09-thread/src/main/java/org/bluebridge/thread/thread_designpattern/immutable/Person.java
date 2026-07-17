@@ -5,11 +5,13 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * 不对外提供setter()方法, 注意:此类中getList()方法对局部变量list的处理
+ *
  * @author lingwh
- * @desc 不对外提供setter()方法, 注意:此类中getList()方法对局部变量list的处理
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public final class Person {
+
     private final String name;
     private final String address;
     private final List<String> list;

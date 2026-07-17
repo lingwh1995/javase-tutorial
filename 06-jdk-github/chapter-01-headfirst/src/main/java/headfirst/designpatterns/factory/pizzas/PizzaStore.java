@@ -1,11 +1,13 @@
 package headfirst.designpatterns.factory.pizzas;
 
 /**
+ * 披萨店
+ *
  * @author lingwh
- * @desc 披萨店
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PizzaStore {
+
     SimplePizzaFactory factory;
 
     public PizzaStore(SimplePizzaFactory factory) {

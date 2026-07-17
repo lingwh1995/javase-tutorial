@@ -7,17 +7,19 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
 /**
+ * 创建RMI注册表，启动RMI服务，并将远程对象注册到RMI注册表中。
+ *
  * @author lingwh
- * @desc 创建RMI注册表，启动RMI服务，并将远程对象注册到RMI注册表中。
  * @date 2019/9/24 17:42
  */
 public class Server {
+
     private static final String HOST = "localhost";
     private static final int PORT = 9090;
 
     public static void main(String args[]) {
         try {
-            // 创建2个对象, 准备将这个两个对象作为远程对象注册
+            // 创建 2 个对象，准备将这个两个对象作为远程对象注册
             CompareHelper stringCompareHelper = new StringCompareHelper();
             CompareHelper integerCompareHelper = new IntegerCompareHelper();
             LocateRegistry.createRegistry(PORT);

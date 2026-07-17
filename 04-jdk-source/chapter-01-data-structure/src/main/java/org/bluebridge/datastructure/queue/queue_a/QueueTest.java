@@ -1,12 +1,14 @@
 package org.bluebridge.datastructure.queue.queue_a;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import org.junit.Test;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
+ * 队列测试
+ *
  * @author lingwh
- * @desc 队列测试
  * @date 2019/8/5 14:21
  */
 public class QueueTest {

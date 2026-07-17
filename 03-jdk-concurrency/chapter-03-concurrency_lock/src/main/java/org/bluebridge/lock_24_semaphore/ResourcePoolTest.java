@@ -3,11 +3,13 @@ package org.bluebridge.lock_24_semaphore;
 import java.util.concurrent.Semaphore;
 
 /**
+ * 信号量资源池测试
+ *
  * @author lingwh
- * @desc 信号量资源池测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ResourcePoolTest {
+
     private static final int MAX_RESOURCES = 5;
     private static final Semaphore semaphore = new Semaphore(MAX_RESOURCES);
     private static final Resource[] resources = new Resource[MAX_RESOURCES];

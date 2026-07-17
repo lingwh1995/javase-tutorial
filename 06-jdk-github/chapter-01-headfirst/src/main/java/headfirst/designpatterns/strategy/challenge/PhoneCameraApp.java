@@ -1,11 +1,13 @@
 package headfirst.designpatterns.strategy.challenge;
 
 /**
+ * 手机相机应用抽象类
+ *
  * @author lingwh
- * @desc 手机相机应用抽象类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class PhoneCameraApp {
+
     ShareStrategy shareStrategy;
 
     public void setShareStrategy(ShareStrategy shareStrategy) {

@@ -1,9 +1,10 @@
 package headfirst.designpatterns.command.party;
 
 /**
+ * 遥控器加载器
+ *
  * @author lingwh
- * @desc 遥控器加载器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RemoteLoader {
 
@@ -23,8 +24,8 @@ public class RemoteLoader {
         TVOffCommand tvOff = new TVOffCommand(tv);
         HottubOffCommand hottubOff = new HottubOffCommand(hottub);
 
-        Command[] partyOn = {lightOn, stereoOn, tvOn, hottubOn};
-        Command[] partyOff = {lightOff, stereoOff, tvOff, hottubOff};
+        Command[] partyOn = { lightOn, stereoOn, tvOn, hottubOn };
+        Command[] partyOff = { lightOff, stereoOff, tvOff, hottubOff };
 
         MacroCommand partyOnMacro = new MacroCommand(partyOn);
         MacroCommand partyOffMacro = new MacroCommand(partyOff);

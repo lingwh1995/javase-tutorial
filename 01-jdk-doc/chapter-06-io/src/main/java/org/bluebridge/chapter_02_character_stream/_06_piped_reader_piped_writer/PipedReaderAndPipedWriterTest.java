@@ -1,14 +1,16 @@
 package org.bluebridge.chapter_02_character_stream._06_piped_reader_piped_writer;
 
-import java.io.IOException;
-import java.io.PipedReader;
-import java.io.PipedWriter;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.io.PipedReader;
+import java.io.PipedWriter;
+
 /**
+ * PipedReader用于从管道中读取字符数据，它是Reader类的子类，通常与PipedWriter配合使用，实现线程间通信。
+ *
  * @author lingwh
- * @desc PipedReader用于从管道中读取字符数据，它是Reader类的子类，通常与PipedWriter配合使用，实现线程间通信。
  * @date 2025/9/12 15:32
  */
 @Slf4j

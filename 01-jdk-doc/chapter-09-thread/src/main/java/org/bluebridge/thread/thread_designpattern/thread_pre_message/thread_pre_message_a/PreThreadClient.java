@@ -3,14 +3,16 @@ package org.bluebridge.thread.thread_designpattern.thread_pre_message.thread_pre
 import java.util.stream.IntStream;
 
 /**
+ * Thread-Per-Message 模式客户端
+ *
  * @author lingwh
- * @desc Thread-Per-Message 模式客户端
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class PreThreadClient {
+
     public static void main(String[] args) {
         MessageHandler handler = new MessageHandler();
-        IntStream.rangeClosed(0,10).forEach(i->{
+        IntStream.rangeClosed(0, 10).forEach(i -> {
             handler.request(new Message(String.valueOf(i)));
         });
     }

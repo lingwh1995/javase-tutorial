@@ -1,11 +1,13 @@
 package action.responsibility.responsibility_b;
 
 /**
+ * 采购请求
+ *
  * @author lingwh
- * @desc 采购请求
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PurchaseRequest {
+
     private int type;
 
     /**

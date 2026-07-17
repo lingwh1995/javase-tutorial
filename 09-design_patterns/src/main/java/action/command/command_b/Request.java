@@ -1,8 +1,9 @@
 package action.command.command_b;
 
 /**
+ * 请求类
+ *
  * @author lingwh
- * @desc 请求类
  * @date 2019/8/2 8:59
  */
 public class Request {

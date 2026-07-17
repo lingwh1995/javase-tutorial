@@ -1,11 +1,13 @@
 package action.command.command_c;
 
 /**
+ * 遥控器类
+ *
  * @author lingwh
- * @desc 遥控器类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RemoteContoller {
+
     // 开按钮的命令数组
     private Command[] onCmmands;
     // 关按钮的命令数组

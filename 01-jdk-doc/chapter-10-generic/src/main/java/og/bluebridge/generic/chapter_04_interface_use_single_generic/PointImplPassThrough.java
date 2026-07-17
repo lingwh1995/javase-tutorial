@@ -9,7 +9,7 @@ import lombok.Data;
  * 错误 / 不规范写法（禁止使用） -> public class PointImpl<Integer> implements IPoint {}
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 @Data
 public class PointImplPassThrough<T> implements IPoint<T> {

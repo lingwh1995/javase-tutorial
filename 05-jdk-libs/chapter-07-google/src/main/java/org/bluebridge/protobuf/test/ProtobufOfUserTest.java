@@ -2,13 +2,15 @@ package org.bluebridge.protobuf.test;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.util.JsonFormat;
-import java.util.Arrays;
 import lombok.extern.slf4j.Slf4j;
 import org.bluebridge.protobuf.proto.UserProto;
 
+import java.util.Arrays;
+
 /**
+ * 测试 Protobuf 用户
+ *
  * @author lingwh
- * @desc 测试 Protobuf 用户
  * @date 2025/11/3 20:57
  */
 @Slf4j

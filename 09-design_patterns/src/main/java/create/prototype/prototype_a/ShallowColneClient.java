@@ -3,11 +3,13 @@ package create.prototype.prototype_a;
 import java.util.Date;
 
 /**
+ * 客户端:测试浅客隆/浅拷贝模式的原型模式
+ *
  * @author lingwh
- * @desc 客户端:测试浅客隆/浅拷贝模式的原型模式
- * @date 2019/3/23 00:00
+ * @date 2026/4/21 19:02
  */
 public class ShallowColneClient {
+
     public static void main(String[] args) throws CloneNotSupportedException {
         Date date = new Date(4564654L);
         Sheep sheepPrototype = new Sheep("多利", date);

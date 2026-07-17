@@ -3,11 +3,13 @@ package create.prototype.prototype_a;
 import java.util.Date;
 
 /**
+ * 浅客隆/浅复制实体
+ *
  * @author lingwh
- * @desc 浅客隆/浅复制实体
- * @date 2019/3/23 00:00
+ * @date 2019/3/23 19:02
  */
 public class Sheep implements Cloneable {
+
     /*
      * Cloneable接口:空接口，标记接口
      */

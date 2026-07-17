@@ -1,14 +1,16 @@
 package org.bluebridge.chapter_04_set;
 
-import java.util.HashSet;
-import java.util.Set;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
+ * 测试Set集合
+ *
  * @author lingwh
- * @desc 测试Set集合
- * @date 2026/7/9 00:00
+ * @date 2026/7/8 18:39
  */
 @Slf4j
 public class SetTest {

@@ -1,15 +1,17 @@
 package org.bluebridge.lang3;
 
-import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.SerializationUtils;
 import org.junit.Test;
 
+import java.io.Serializable;
+
 /**
+ * 序列化工具类
+ *
  * @author lingwh
- * @desc 序列化工具类
  * @date 2019/7/26 16:31
  */
 @Slf4j

@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.workerthread;
 
 /**
+ * Worker Thread 模式 - 请求
+ *
  * @author lingwh
- * @desc Worker Thread 模式 - 请求
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Request {
+
     private final String name;
     private final int number;
 

@@ -7,6 +7,7 @@ package action.visitor.visitor_d;
  * @date 2019/10/11 9:39
  */
 public class ServiceRequestVisitor implements Visitor {
+
     @Override
     public void visitEnterpriseCustomer(EnterpriseCustomer ec) {
         // 企业客户提出的具体服务请求

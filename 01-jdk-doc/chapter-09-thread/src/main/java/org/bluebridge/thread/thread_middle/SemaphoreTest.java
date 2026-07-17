@@ -6,16 +6,19 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 信号量测试
+ *
  * @author lingwh
- * @desc 信号量测试
  * @date 2019/10/15 9:30
  */
 public class SemaphoreTest {
+
     private static final Semaphore semaphore = new Semaphore(1);
     private static final ThreadPoolExecutor threadPool =
             new ThreadPoolExecutor(5, 10, 60, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>());
 
     private static class InformationThread extends Thread {
+
         private final String name;
         private final int age;
 
@@ -41,8 +44,8 @@ public class SemaphoreTest {
     }
 
     public static void main(String[] args) {
-        String[] name = {"李明", "王五", "张杰", "王强", "赵二", "李四", "张三"};
-        int[] age = {26, 27, 33, 45, 19, 23, 41};
+        String[] name = { "李明", "王五", "张杰", "王强", "赵二", "李四", "张三" };
+        int[] age = { 26, 27, 33, 45, 19, 23, 41 };
         for (int i = 0; i < 7; i++) {
             Thread t1 = new InformationThread(name[i], age[i]);
             threadPool.execute(t1);

@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_b;
 
 /**
+ * 读写锁
+ *
  * @author lingwh
- * @desc 读写锁
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class ReadWriteLock {
+
     /**
      * 正在读的线程的个数
      */

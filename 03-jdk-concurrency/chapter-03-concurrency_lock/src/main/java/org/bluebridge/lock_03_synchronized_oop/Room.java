@@ -1,11 +1,13 @@
 package org.bluebridge.lock_03_synchronized_oop;
 
 /**
+ * 线程安全的计数房间
+ *
  * @author lingwh
- * @desc 线程安全的计数房间
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Room {
+
     private static int counter = 0;
 
     public void increment() {

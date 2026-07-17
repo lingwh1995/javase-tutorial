@@ -1,8 +1,9 @@
 package structure.decorator.decorator_i.domain;
 
 /**
+ * 销售模型
+ *
  * @author lingwh
- * @desc 销售模型
  * @date 2019/8/7 9:42
  */
 public class SaleModel {

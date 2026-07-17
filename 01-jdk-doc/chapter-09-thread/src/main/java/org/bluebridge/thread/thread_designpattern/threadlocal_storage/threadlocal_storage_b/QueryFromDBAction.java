@@ -1,9 +1,10 @@
 package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadlocal_storage_b;
 
 /**
+ * 从数据库查询
+ *
  * @author lingwh
- * @desc 从数据库查询
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class QueryFromDBAction {
 

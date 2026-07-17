@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzas;
 
 /**
+ * 披萨测试驱动
+ *
  * @author lingwh
- * @desc 披萨测试驱动
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PizzaTestDrive {
 

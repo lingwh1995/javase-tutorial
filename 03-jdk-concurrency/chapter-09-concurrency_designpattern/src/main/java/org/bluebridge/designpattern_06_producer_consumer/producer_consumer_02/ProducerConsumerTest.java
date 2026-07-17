@@ -1,11 +1,13 @@
 package org.bluebridge.designpattern_06_producer_consumer.producer_consumer_02;
 
 /**
+ * 生产者消费者模式
+ *
  * @author lingwh
- * @desc 生产者消费者模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ProducerConsumerTest {
+
     private boolean flag = false;
 
     /**

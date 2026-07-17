@@ -1,11 +1,13 @@
 package headfirst.designpatterns.strategy.challenge;
 
 /**
+ * 分享策略接口
+ *
  * @author lingwh
- * @desc 分享策略接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @FunctionalInterface
 public interface ShareStrategy {
+
     void share();
 }

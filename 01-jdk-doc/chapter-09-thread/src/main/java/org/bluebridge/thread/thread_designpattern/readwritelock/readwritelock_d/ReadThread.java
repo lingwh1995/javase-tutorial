@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_d;
 
 /**
+ * 读线程
+ *
  * @author lingwh
- * @desc 读线程
  * @date 2019/10/18 13:32
  */
 public class ReadThread extends Thread {
+
     private final Data data;
 
     public ReadThread(Data data) {

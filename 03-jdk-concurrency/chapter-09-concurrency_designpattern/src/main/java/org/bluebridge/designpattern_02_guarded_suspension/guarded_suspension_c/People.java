@@ -1,9 +1,10 @@
 package org.bluebridge.designpattern_02_guarded_suspension.guarded_suspension_c;
 
 /**
+ * 收信人
+ *
  * @author lingwh
- * @desc 收信人
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class People extends Thread {
 

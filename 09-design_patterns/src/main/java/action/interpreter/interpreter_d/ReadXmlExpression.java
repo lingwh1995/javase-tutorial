@@ -1,8 +1,9 @@
 package action.interpreter.interpreter_d;
 
 /**
+ * 用于处理自定义Xml取值表达式的接口
+ *
  * @author lingwh
- * @desc 用于处理自定义Xml取值表达式的接口
  * @date 2019/8/27 13:57
  */
 public abstract class ReadXmlExpression {

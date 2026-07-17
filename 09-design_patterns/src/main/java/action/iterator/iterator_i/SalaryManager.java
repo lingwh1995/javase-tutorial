@@ -1,8 +1,9 @@
 package action.iterator.iterator_i;
 
 /**
+ * 被客户方收购的那个公司的工资管理类
+ *
  * @author lingwh
- * @desc 被客户方收购的那个公司的工资管理类
  * @date 2019/8/20 13:28
  */
 public class SalaryManager {

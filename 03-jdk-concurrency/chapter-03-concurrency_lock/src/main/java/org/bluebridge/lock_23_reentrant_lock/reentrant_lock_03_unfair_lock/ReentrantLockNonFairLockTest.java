@@ -4,11 +4,13 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 非公平锁测试
+ *
  * @author lingwh
- * @desc 非公平锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ReentrantLockNonFairLockTest {
+
     // 非公平锁（默认）
     private static final ReentrantLock nonFairLock = new ReentrantLock(false);
 

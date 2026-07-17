@@ -1,11 +1,13 @@
 package headfirst.designpatterns.command.party;
 
 /**
+ * 遥控器(调用者)
+ *
  * @author lingwh
- * @desc 遥控器(调用者)
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RemoteControl {
+
     Command[] onCommands;
     Command[] offCommands;
     Command undoCommand;
@@ -37,18 +39,18 @@ public class RemoteControl {
         undoCommand = offCommands[slot];
     }
 
-	public void undoButtonWasPushed() {
-		undoCommand.undo();
-	}
+    public void undoButtonWasPushed() {
+        undoCommand.undo();
+    }
 
-	public String toString() {
-		StringBuffer stringBuff = new StringBuffer();
-		stringBuff.append("\n------ Remote Control -------\n");
-		for (int i = 0; i < onCommands.length; i++) {
-			stringBuff.append("[slot " + i + "] " + onCommands[i].getClass().getName()
-				+ "    " + offCommands[i].getClass().getName() + "\n");
-		}
-		stringBuff.append("[undo] " + undoCommand.getClass().getName() + "\n");
-		return stringBuff.toString();
-	}
+    public String toString() {
+        StringBuffer stringBuff = new StringBuffer();
+        stringBuff.append("\n------ Remote Control -------\n");
+        for (int i = 0; i < onCommands.length; i++) {
+            stringBuff.append("[slot " + i + "] " + onCommands[i].getClass().getName()
+                    + "    " + offCommands[i].getClass().getName() + "\n");
+        }
+        stringBuff.append("[undo] " + undoCommand.getClass().getName() + "\n");
+        return stringBuff.toString();
+    }
 }

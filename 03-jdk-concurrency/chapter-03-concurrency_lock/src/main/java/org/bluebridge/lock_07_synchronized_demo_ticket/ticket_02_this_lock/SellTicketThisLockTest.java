@@ -3,9 +3,10 @@ package org.bluebridge.lock_07_synchronized_demo_ticket.ticket_02_this_lock;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
+ * 使用this锁解决卖票数量大于500的情况
+ *
  * @author lingwh
- * @desc 使用this锁解决卖票数量大于500的情况
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SellTicketThisLockTest {
 
@@ -40,7 +41,7 @@ public class SellTicketThisLockTest {
              */
             @Override
             public void run() {
-                synchronized (this){
+                synchronized (this) {
                     while (true) {
                         if (index > max) {
                             break;
@@ -56,8 +57,8 @@ public class SellTicketThisLockTest {
                 }
             }
         };
-        new Thread(runnable,"窗口1").start();
-        new Thread(runnable,"窗口2").start();
-        new Thread(runnable,"窗口3").start();
+        new Thread(runnable, "窗口1").start();
+        new Thread(runnable, "窗口2").start();
+        new Thread(runnable, "窗口3").start();
     }
 }

@@ -1,11 +1,13 @@
 package action.command.command_a;
 
 /**
+ * 接收者对象
+ *
  * @author lingwh
- * @desc 接收者对象
  * @date 2019/8/5 11:34
  */
 public class Receiver {
+
     /**
      * 示意方法，真正执行命令相应的操作
      */

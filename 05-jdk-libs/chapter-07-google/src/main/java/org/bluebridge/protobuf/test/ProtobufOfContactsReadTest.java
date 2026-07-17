@@ -1,13 +1,15 @@
 package org.bluebridge.protobuf.test;
 
-import java.io.FileInputStream;
-import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.bluebridge.protobuf.proto.ContactProto;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+
 /**
+ * 测试 Protobuf 测试联系人读取
+ *
  * @author lingwh
- * @desc 测试 Protobuf 测试联系人读取
  * @date 2025/11/6 23:59
  */
 @Slf4j

@@ -1,15 +1,17 @@
 package org.bluebridge.chapter_02_character_stream._07_print_writer;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Date;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
 
 /**
+ * PrintWriter是Java IO包中的一个类，用于以格式化的方式打印各种数据类型的文本输出。它是 Writer 类的子类，提供了方便的打印方法。
+ *
  * @author lingwh
- * @desc PrintWriter是Java IO包中的一个类，用于以格式化的方式打印各种数据类型的文本输出。它是 Writer 类的子类，提供了方便的打印方法。
  * @date 2025/9/12 17:02
  */
 @Slf4j
@@ -21,7 +23,7 @@ public class PrintWriterTest {
     @Test
     public void testPrintWriterToConsole() {
         // 创建输出到控制台的PrintWriter
-        try (PrintWriter pw = new PrintWriter(System.out, true); ) {
+        try (PrintWriter pw = new PrintWriter(System.out, true);) {
             // 打印各种数据类型
             pw.println("Hello, World!");
             pw.println("Integer: " + 42);
@@ -65,7 +67,7 @@ public class PrintWriterTest {
     public void testPrintWriterToString() {
         // 使用 StringWriter 作为输出目标
         try (StringWriter stringWriter = new StringWriter();
-             PrintWriter pw = new PrintWriter(stringWriter)){
+                PrintWriter pw = new PrintWriter(stringWriter)) {
 
             // 写入数据
             pw.println("这是第一行");
@@ -83,7 +85,8 @@ public class PrintWriterTest {
 
     /**
      * 测试PrintWriter输出到网络套接字
-     *    测试方法： cmd -> telnet 127.0.0.1 8080/telnet localhost 8080 -> 直接输入内容（只能发送单个字符）/按下Ctrl+]后输入 send + 内容（可以发送字符串） -> 查看idea控制台接收到的信息
+     * 测试方法： cmd -> telnet 127.0.0.1 8080/telnet localhost 8080 ->
+     * 直接输入内容（只能发送单个字符）/按下Ctrl+]后输入 send + 内容（可以发送字符串） -> 查看idea控制台接收到的信息
      */
     @Test
     public void testPrintWriterToSocket() {
@@ -126,7 +129,8 @@ public class PrintWriterTest {
             // 创建PrintWriter
             PrintWriter pw = new PrintWriter("d:/io/print_writer_error_handling.txt.txt");
             // 带有自动刷新的构造参数
-            //PrintWriter pw = new PrintWriter(new FileWriter("d:/io/print_writer_error_handling.txt", "UTF-8"), true)
+            // PrintWriter pw = new PrintWriter(new
+            // FileWriter("d:/io/print_writer_error_handling.txt", "UTF-8"), true)
             // 正常输出
             pw.println("正常输出内容");
             log.info("检查错误状态: {}", pw.checkError());

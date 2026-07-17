@@ -4,8 +4,9 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * 真正的读者，为了简单就描述一下姓名
+ *
  * @author lingwh
- * @desc 真正的读者，为了简单就描述一下姓名
  * @date 2019/8/19 15:16
  */
 public class Reader implements Observer {

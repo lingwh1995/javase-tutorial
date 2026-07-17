@@ -1,11 +1,13 @@
 package org.bluebridge.ioc.xml_two.config;
 
 /**
+ * 属性标签配置
+ *
  * @author lingwh
- * @desc 属性标签配置
- * @date 2019/3/16 00:00
+ * @date 2026/4/21 19:02
  */
 public class Properties {
+
     private String name;
     private String value;
     private String ref;

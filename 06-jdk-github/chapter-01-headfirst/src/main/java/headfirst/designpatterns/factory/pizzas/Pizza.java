@@ -3,11 +3,13 @@ package headfirst.designpatterns.factory.pizzas;
 import java.util.ArrayList;
 
 /**
+ * 披萨抽象类
+ *
  * @author lingwh
- * @desc 披萨抽象类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public abstract class Pizza {
+
     String name;
     String dough;
     String sauce;

@@ -3,13 +3,15 @@ package sort.RadixSort.radixsort_a;
 import java.util.Arrays;
 
 /**
+ * 基数排序:经典的空间换取时间的算法
+ *
  * @author lingwh
- * @desc 基数排序:经典的空间换取时间的算法
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RadixSort {
+
     public static void main(String[] args) {
-        int[] arr = {53, 3, 542, 748, 14, 214};
+        int[] arr = { 53, 3, 542, 748, 14, 214 };
         // radixSort(arr);
         radixSort1(arr);
         System.out.println(Arrays.toString(arr));

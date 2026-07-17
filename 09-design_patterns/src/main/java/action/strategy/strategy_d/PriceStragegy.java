@@ -1,8 +1,9 @@
 package action.strategy.strategy_d;
 
 /**
+ * 算法策略接口
+ *
  * @author lingwh
- * @desc 算法策略接口
  * @date 2019/8/2 15:06
  */
 public interface PriceStragegy {

@@ -3,11 +3,13 @@ package headfirst.designpatterns.observer.simple;
 import java.util.*;
 
 /**
+ * 简单主题
+ *
  * @author lingwh
- * @desc 简单主题
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class SimpleSubject implements Subject {
+
     private ArrayList<Observer> observers;
     private int value = 0;
 

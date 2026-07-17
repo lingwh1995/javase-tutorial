@@ -4,8 +4,9 @@ import java.util.List;
 import org.w3c.dom.Element;
 
 /**
+ * 以多个元素的属性做为终结符的解释处理对象
+ *
  * @author lingwh
- * @desc 以多个元素的属性做为终结符的解释处理对象
  * @date 2019/8/27 16:25
  */
 public class PropertysTerminalExpression extends ReadXmlExpression {

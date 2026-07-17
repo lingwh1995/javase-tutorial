@@ -1,15 +1,17 @@
 package org.bluebridge.chapter_01_byte_stream._05_sequence_input_stream;
 
+import org.junit.Test;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
-import org.junit.Test;
 
 /**
+ * 合并输入流/输入流的逻辑串联
+ *
  * @author lingwh
- * @desc 合并输入流/输入流的逻辑串联
  * @date 2025/8/16 15:14
  */
 public class SequenceInputStreamTest {

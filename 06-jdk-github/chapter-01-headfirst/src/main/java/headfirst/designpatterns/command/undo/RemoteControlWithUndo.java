@@ -1,11 +1,13 @@
 package headfirst.designpatterns.command.undo;
 
 /**
+ * 带撤销功能的遥控器(命令调用者)
+ *
  * @author lingwh
- * @desc 带撤销功能的遥控器(命令调用者)
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RemoteControlWithUndo {
+
     Command[] onCommands;
     Command[] offCommands;
     Command undoCommand;

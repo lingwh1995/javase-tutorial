@@ -1,11 +1,13 @@
 package create.abstractfactory.abstractfactory_b;
 
 /**
+ * 座椅接口
+ *
  * @author lingwh
- * @desc 座椅接口
- * @date 2019/3/11 00:00
+ * @date 2019/3/11 19:02
  */
 public interface Seat {
+
     void massage();
 }
 

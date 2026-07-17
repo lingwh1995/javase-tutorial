@@ -1,11 +1,13 @@
 package structure.adapter.adapter_a;
 
 /**
+ * 手机
+ *
  * @author lingwh
- * @desc 手机
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Phone {
+
     public void chaging(IVoltage5V iVoltage5V) {
         if (iVoltage5V.output5V() == 5) {
             System.out.println("电压是5V,可以充电......");

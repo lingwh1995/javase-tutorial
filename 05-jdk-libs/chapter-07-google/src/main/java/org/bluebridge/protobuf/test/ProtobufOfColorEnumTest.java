@@ -5,8 +5,9 @@ import org.bluebridge.protobuf.proto.ColorProto;
 import org.junit.Test;
 
 /**
+ * 测试 Protobuf 枚举
+ *
  * @author lingwh
- * @desc 测试 Protobuf 枚举
  * @date 2025/11/7 15:19
  */
 @Slf4j

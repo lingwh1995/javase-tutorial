@@ -1,11 +1,13 @@
 package expand.compound.duck;
 
 /**
+ * 鸣叫计数器装饰者
+ *
  * @author lingwh
- * @desc 鸣叫计数器装饰者
  * @date 2019/10/10 10:22
  */
 public class QuackCounter implements Quackable {
+
     private Quackable quackable;
     private static int numberOfQuacks = 0;
 

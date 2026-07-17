@@ -3,11 +3,13 @@ package sort.ShellSort.shellsort_a;
 import java.util.Arrays;
 
 /**
+ * 希尔排序
+ *
  * @author lingwh
- * @desc 希尔排序
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ShellSort {
+
     public static void main(String[] args) {
         // shellSort1();
         System.out.println("------------------------------");
@@ -20,7 +22,7 @@ public class ShellSort {
      * 一步完成希尔排序:移位法
      */
     private static void shellSort3() {
-        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
+        int[] arr = { 8, 9, 1, 7, 2, 3, 5, 4, 6, 0 };
         int count = 0;
         System.out.println("原数组:" + Arrays.toString(arr));
         for (int gap = arr.length / 2; gap > 0; gap /= 2) {
@@ -44,7 +46,7 @@ public class ShellSort {
      * 一步完成希尔排序: 交换法
      */
     private static void shellSort2() {
-        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
+        int[] arr = { 8, 9, 1, 7, 2, 3, 5, 4, 6, 0 };
         int count = 0;
         System.out.println("原数组:" + Arrays.toString(arr));
         for (int gap = arr.length / 2; gap > 0; gap /= 2) {
@@ -66,7 +68,7 @@ public class ShellSort {
      * 逐步完成希尔排序
      */
     private static void shellSort1() {
-        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
+        int[] arr = { 8, 9, 1, 7, 2, 3, 5, 4, 6, 0 };
         System.out.println("原数组:" + Arrays.toString(arr));
         // 第一轮
         // 将十个数据分成10/2=5组

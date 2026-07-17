@@ -1,11 +1,13 @@
 package headfirst.designpatterns.command.remoteWL;
 
 /**
+ * 遥控器(命令调用者)
+ *
  * @author lingwh
- * @desc 遥控器(命令调用者)
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RemoteControl {
+
 	Command[] onCommands;
 	Command[] offCommands;
 
@@ -37,7 +39,7 @@ public class RemoteControl {
 		stringBuff.append("\n------ Remote Control -------\n");
 		for (int i = 0; i < onCommands.length; i++) {
 			stringBuff.append("[slot " + i + "] " + onCommands[i].getClass().getName()
-				+ "    " + offCommands[i].getClass().getName() + "\n");
+					+ "    " + offCommands[i].getClass().getName() + "\n");
 		}
 		return stringBuff.toString();
 	}

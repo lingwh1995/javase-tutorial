@@ -3,11 +3,13 @@ package structure.decorator.decorator_g;
 import java.util.Date;
 
 /**
+ * 奖金计算器
+ *
  * @author lingwh
- * @desc 奖金计算器
  * @date 2019/8/6 15:23
  */
 public class PriceCalcator {
+
     /**
      * 计算某人在某段时间内的奖金，有些参数在演示中并不会使用， 但是在实际业务实现上是会用的，为了表示这是个具体的业务方法， 因此这些参数被保留了
      *

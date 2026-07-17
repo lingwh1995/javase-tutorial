@@ -1,11 +1,13 @@
 package structure.facade.facade_a;
 
 /**
+ * 电影幕布
+ *
  * @author lingwh
- * @desc 电影幕布
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Screen {
+
     private static Screen screen = new Screen();
 
     public static Screen getInstance() {

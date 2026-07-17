@@ -6,11 +6,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 安全管理，实现成单例
+ *
  * @author lingwh
- * @desc 安全管理，实现成单例
- * @since 2019/7/30 15:02
+ * @date 2019/7/30 15:02
  */
 public class SecurityMgr {
+
     /**
      * 单例的安全管理对象
      */

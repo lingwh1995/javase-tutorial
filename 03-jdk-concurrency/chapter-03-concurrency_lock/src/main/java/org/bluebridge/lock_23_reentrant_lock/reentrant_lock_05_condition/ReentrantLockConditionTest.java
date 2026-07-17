@@ -5,9 +5,10 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * ReentrantLock的Condition条件变量测试
+ *
  * @author lingwh
- * @desc ReentrantLock的Condition条件变量测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ReentrantLockConditionTest {
 
@@ -32,7 +33,7 @@ public class ReentrantLockConditionTest {
             } finally {
                 lock.unlock();
             }
-        },"t1").start();
+        }, "t1").start();
 
         new Thread(() -> {
             try {
@@ -48,7 +49,7 @@ public class ReentrantLockConditionTest {
             } finally {
                 lock.unlock();
             }
-        },"t2").start();
+        }, "t2").start();
         try {
             TimeUnit.MILLISECONDS.sleep(1000);
         } catch (InterruptedException e) {

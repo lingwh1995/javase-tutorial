@@ -3,6 +3,7 @@ package org.bluebridge.utils;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.ByteUtil;
 import cn.hutool.core.util.HexUtil;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.nio.ByteOrder;
@@ -11,9 +12,10 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
+ * 常用协议解析工具类 依赖 hutools部分工具类
+ *
  * @author lingwh
- * @desc 常用协议解析工具类 依赖 hutools部分工具类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ParseUtil {
 
@@ -365,8 +367,8 @@ public class ParseUtil {
         bytes[0] = (byte) 0x68;
         String s = HexUtil.encodeHexStr(bytes);
         System.out.println(s);
-//        byte[] bytes = doubleToBytes(2.0, ByteOrder.BIG_ENDIAN);
-//        System.out.println(HexUtil.encodeHexStr(bytes));
+        // byte[] bytes = doubleToBytes(2.0, ByteOrder.BIG_ENDIAN);
+        // System.out.println(HexUtil.encodeHexStr(bytes));
 
     }
 
@@ -374,7 +376,7 @@ public class ParseUtil {
         String binary = new BigInteger(hexString, 16).toString(2);
         int completionZeroLength = hexString.length() / 2 * 8 - binary.length();
         StringBuilder builder = new StringBuilder();
-        IntStream.range(0,completionZeroLength).forEach(i -> {
+        IntStream.range(0, completionZeroLength).forEach(i -> {
             builder.append(0);
         });
         return builder.append(binary).toString();

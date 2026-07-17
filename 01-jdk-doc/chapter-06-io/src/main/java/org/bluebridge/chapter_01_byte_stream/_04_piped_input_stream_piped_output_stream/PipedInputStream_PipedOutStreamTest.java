@@ -1,14 +1,16 @@
 package org.bluebridge.chapter_01_byte_stream._04_piped_input_stream_piped_output_stream;
 
-import java.io.IOException;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
+
 /**
+ * 管道输入流和管道输出流入门
+ *
  * @author lingwh
- * @desc 管道输入流和管道输出流入门
  * @date 2025/8/16 14:11
  */
 @Slf4j

@@ -1,11 +1,13 @@
 package org.bluebridge.ioc.anno_one.entity;
 
 /**
+ * 人员实体
+ *
  * @author lingwh
- * @desc 人员实体
- * @date 2019/3/15 00:00
+ * @date 2026/4/21 19:02
  */
 public class Person {
+
     private Student student;
     private Teacher teacher;
 

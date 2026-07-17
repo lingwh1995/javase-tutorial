@@ -1,14 +1,16 @@
 package structure.proxy.dynamicproxy.dynamicproxy_e;
 
-import java.lang.reflect.Method;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
+import java.lang.reflect.Method;
+
 /**
+ * cglib代理工厂
+ *
  * @author lingwh
- * @desc cglib代理工厂
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ProxyFactory {
 

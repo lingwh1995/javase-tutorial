@@ -1,13 +1,15 @@
 package org.bluebridge.chapter_01_byte_stream._04_piped_input_stream_piped_output_stream;
 
-import java.io.*;
-import java.util.Random;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+import java.io.*;
+import java.util.Random;
+
 /**
+ * 使用管道输入流和管道输出流实现生产者消费者模型
+ *
  * @author lingwh
- * @desc 使用管道输入流和管道输出流实现生产者消费者模型
  * @date 2025/8/16 14:40
  */
 @Slf4j
@@ -41,6 +43,7 @@ public class PipedInputStream_PipedOutStream_ProducerConsumerTest {
 
 @Slf4j
 class Producer implements Runnable {
+
     private PipedOutputStream pos;
     private Random random = new Random();
 
@@ -68,6 +71,7 @@ class Producer implements Runnable {
 
 @Slf4j
 class Consumer implements Runnable {
+
     private PipedInputStream pis;
 
     public Consumer(PipedInputStream pis) {

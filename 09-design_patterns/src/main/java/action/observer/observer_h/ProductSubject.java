@@ -1,8 +1,9 @@
 package action.observer.observer_h;
 
 /**
+ * 具体的商品
+ *
  * @author lingwh
- * @desc 具体的商品
  * @date 2019/8/30 10:09
  */
 public class ProductSubject extends Subject {

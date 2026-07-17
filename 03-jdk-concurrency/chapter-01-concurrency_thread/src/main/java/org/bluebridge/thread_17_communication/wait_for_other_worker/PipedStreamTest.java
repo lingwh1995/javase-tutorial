@@ -1,13 +1,15 @@
 package org.bluebridge.thread_17_communication.wait_for_other_worker;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.IOException;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
-import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 演示PipedInputStream/PipedOutputStream机制的使用场景：主线程等待多个工作线程完成
+ *
  * @author lingwh
- * @desc 演示PipedInputStream/PipedOutputStream机制的使用场景：主线程等待多个工作线程完成
  * @date 2025/10/28 9:34
  */
 @Slf4j

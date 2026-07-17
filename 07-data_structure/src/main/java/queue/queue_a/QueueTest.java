@@ -1,11 +1,13 @@
 package queue.queue_a;
 
 /**
+ * 测试队列
+ *
  * @author lingwh
- * @desc 测试队列
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class QueueTest {
+
     public static void main(String[] args) {
         Queue queue = new Queue(3);
         // 添加数据

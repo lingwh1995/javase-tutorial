@@ -1,8 +1,9 @@
 package action.iterator.iterator_g;
 
 /**
+ * 工资描述模型对象
+ *
  * @author lingwh
- * @desc 工资描述模型对象
  * @date 2019/8/20 9:21
  */
 public class PayModel {

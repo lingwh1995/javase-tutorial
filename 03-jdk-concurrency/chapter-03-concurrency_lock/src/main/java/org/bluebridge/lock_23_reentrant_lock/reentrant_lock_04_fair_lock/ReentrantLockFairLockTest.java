@@ -38,9 +38,10 @@ import java.util.concurrent.locks.ReentrantLock;
  *      使用AbstractQueuedSynchronizer（AQS）的tryAcquire方法，检查当前是否有其他线程在排队，确保锁按照顺序分配。
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ReentrantLockFairLockTest {
+
     // 公平锁
     private static final ReentrantLock fairLock = new ReentrantLock(true);
 

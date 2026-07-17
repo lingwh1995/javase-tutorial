@@ -5,9 +5,10 @@ import java.util.List;
 import java.util.Stack;
 
 /**
+ * 逆波兰表达式
+ *
  * @author lingwh
- * @desc 逆波兰表达式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class PolandNatation {
 
@@ -45,19 +46,23 @@ public class PolandNatation {
             } else {
                 Integer param1 = Integer.parseInt(elementStack.pop());
                 Integer param2 = Integer.parseInt(elementStack.pop());
-                switch (element){
-                    case "+":{
-                        elementStack.push(String.valueOf(param1 + param2));}
-                    break;
-                    case "-":{
-                        elementStack.push(String.valueOf(param2 - param1));}
-                    break;
-                    case "*":{
-                        elementStack.push(String.valueOf(param1 * param2));}
-                    break;
-                    case "/":{
-                        elementStack.push(String.valueOf(param2 / param1));}
-                    break;
+                switch (element) {
+                    case "+": {
+                        elementStack.push(String.valueOf(param1 + param2));
+                    }
+                        break;
+                    case "-": {
+                        elementStack.push(String.valueOf(param2 - param1));
+                    }
+                        break;
+                    case "*": {
+                        elementStack.push(String.valueOf(param1 * param2));
+                    }
+                        break;
+                    case "/": {
+                        elementStack.push(String.valueOf(param2 / param1));
+                    }
+                        break;
                     default:
                         break;
                 }

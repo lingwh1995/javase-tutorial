@@ -4,11 +4,13 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 生产者
+ *
  * @author lingwh
- * @desc 生产者
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 16:29
  */
 public class Producer extends Thread {
+
     private final MessageQueue messageQueue;
     private static final Random random = new Random();
     private static final AtomicInteger counter = new AtomicInteger();

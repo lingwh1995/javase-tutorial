@@ -1,8 +1,9 @@
 package action.state.state_h;
 
 /**
+ * 重复投票状态
+ *
  * @author lingwh
- * @desc 重复投票状态
  * @date 2019/9/23 18:36
  */
 public class RepeatVoteState implements VoteState {

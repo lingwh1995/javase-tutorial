@@ -6,8 +6,8 @@ import java.util.concurrent.locks.LockSupport;
 /**
  * LockSupport的park与unpark测试
  *
- * 1. 暂停线程运行   LockSupport.park;
- * 2. 恢复线程运行   LockSupport.unpark(thread);
+ * 1. 暂停线程运行 LockSupport.park;
+ * 2. 恢复线程运行 LockSupport.unpark(thread);
  * 3. wait/notify 和 park/unpark的区别
  *    - wait/notify是Object的方法，而park/unpark是LockSupport的方法
  *    - wait/notify必须配合 Object Monitor一起使用，所以要在synchronized中使用，而park/unpark不需要
@@ -15,9 +15,10 @@ import java.util.concurrent.locks.LockSupport;
  *    - park/&unpark 可以先调用unpark，而wait/notify不能先notify.
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ParkUnParkTest {
+
     public static void main(String[] args) {
         Thread t1 = new Thread(() -> {
             System.out.println("Thread " + Thread.currentThread().getName() + " start......");
@@ -29,7 +30,7 @@ public class ParkUnParkTest {
             System.out.println("Thread " + Thread.currentThread().getName() + " park......");
             LockSupport.park();
             System.out.println("Thread " + Thread.currentThread().getName() + " resume......");
-        },"t1");
+        }, "t1");
         t1.start();
 
         try {

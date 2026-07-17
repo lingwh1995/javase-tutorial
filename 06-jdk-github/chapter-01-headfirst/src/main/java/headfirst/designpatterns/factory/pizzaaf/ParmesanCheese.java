@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 帕尔马干酪
+ *
  * @author lingwh
- * @desc 帕尔马干酪
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ParmesanCheese implements Cheese {
 

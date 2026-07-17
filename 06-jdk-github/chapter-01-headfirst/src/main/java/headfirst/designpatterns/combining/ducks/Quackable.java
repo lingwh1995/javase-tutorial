@@ -1,10 +1,12 @@
 package headfirst.designpatterns.combining.ducks;
 
 /**
+ * 叫声接口
+ *
  * @author lingwh
- * @desc 叫声接口
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public interface Quackable {
+
     void quack();
 }

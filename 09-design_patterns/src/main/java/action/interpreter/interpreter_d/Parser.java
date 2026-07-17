@@ -3,8 +3,9 @@ package action.interpreter.interpreter_d;
 import java.util.*;
 
 /**
+ * 根据语法来解析表达式，转换成为相应的抽象语法树
+ *
  * @author lingwh
- * @desc 根据语法来解析表达式，转换成为相应的抽象语法树
  * @date 2019/8/27 16:34
  */
 public class Parser {

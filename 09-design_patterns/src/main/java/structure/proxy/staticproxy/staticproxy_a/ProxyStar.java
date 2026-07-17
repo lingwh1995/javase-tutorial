@@ -1,9 +1,10 @@
 package structure.proxy.staticproxy.staticproxy_a;
 
 /**
+ * 歌手的代理人:除了不能唱歌，其他的什么事儿都可以做
+ *
  * @author lingwh
- * @desc 歌手的代理人:除了不能唱歌，其他的什么事儿都可以做
- * @date 2019/3/23 00:00
+ * @date 2026/4/21 19:02
  */
 public class ProxyStar implements Star {
 

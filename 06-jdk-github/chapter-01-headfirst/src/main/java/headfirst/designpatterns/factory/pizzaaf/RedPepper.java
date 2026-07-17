@@ -1,9 +1,10 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 红辣椒
+ *
  * @author lingwh
- * @desc 红辣椒
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class RedPepper implements Veggies {
 

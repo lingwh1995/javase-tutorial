@@ -1,8 +1,9 @@
 package action.observer.observer_i;
 
 /**
+ * 坐标位置
+ *
  * @author lingwh
- * @desc 坐标位置
  * @date 2019/8/30 11:08
  */
 public class Position {

@@ -4,15 +4,17 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
+ * 使用单例解决Properties文件加载问题
+ *
  * @author lingwh
- * @desc 使用单例解决Properties文件加载问题
  * @date 2019/8/5 16:46
  */
 public class PropertiesUtils {
 
     private static final PropertiesUtils PROPERTIES_UTILS = new PropertiesUtils();
 
-    private PropertiesUtils() {}
+    private PropertiesUtils() {
+    }
 
     /**
      * 获取单例类的实例
