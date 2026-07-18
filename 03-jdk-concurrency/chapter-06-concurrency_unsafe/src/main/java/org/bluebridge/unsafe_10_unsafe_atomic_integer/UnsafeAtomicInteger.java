@@ -1,25 +1,28 @@
 package org.bluebridge.unsafe_10_unsafe_atomic_integer;
 
-import java.util.function.IntBinaryOperator;
-import java.util.function.IntUnaryOperator;
 import org.bluebridge.util.UnsafeAccessor;
 import sun.misc.Unsafe;
 
+import java.util.function.IntBinaryOperator;
+import java.util.function.IntUnaryOperator;
+
 /**
+ * 基于Unsafe实现的原子整数
+ *
  * @author lingwh
- * @desc 基于Unsafe实现的原子整数
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UnsafeAtomicInteger {
-    // 将value声明为volatile，因为乐观锁需要可见性。
+
+    // 将 value 声明为 volatile，因为乐观锁需要可见性。
     private volatile int value;
-    // 需要Unsafe的cas本地方法实现操作。
+    // 需要 Unsafe 的 cas 本地方法实现操作。
     private static final Unsafe unsafe;
-    // 偏移量，这两个变量很重要且通用、不可变，所以均声明为private static final
+    // 偏移量，这两个变量很重要且通用、不可变，所以均声明为 private static final
     private static final long offset;
 
     static {
-        // 静态代码块初始化unsafe
+        // 静态代码块初始化 unsafe
         unsafe = UnsafeAccessor.getUnsafe();
 
         try {
@@ -32,7 +35,8 @@ public class UnsafeAtomicInteger {
         }
     }
 
-    public UnsafeAtomicInteger() {}
+    public UnsafeAtomicInteger() {
+    }
 
     public UnsafeAtomicInteger(int value) {
         this.value = value;

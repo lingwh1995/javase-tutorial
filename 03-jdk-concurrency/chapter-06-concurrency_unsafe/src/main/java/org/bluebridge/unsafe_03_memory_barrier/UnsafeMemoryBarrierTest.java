@@ -4,11 +4,13 @@ import org.bluebridge.util.UnsafeAccessor;
 import sun.misc.Unsafe;
 
 /**
+ * Unsafe内存屏障测试
+ *
  * @author lingwh
- * @desc Unsafe内存屏障测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UnsafeMemoryBarrierTest {
+
     public static void main(String[] args) {
         ChangeThread changeThread = new ChangeThread();
         new Thread(changeThread).start();

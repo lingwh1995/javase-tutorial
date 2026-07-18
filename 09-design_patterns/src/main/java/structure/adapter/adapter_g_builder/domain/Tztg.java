@@ -1,9 +1,10 @@
 package structure.adapter.adapter_g_builder.domain;
 
 /**
+ * 通知通告
+ *
  * @author lingwh
- * @desc 通知通告
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class Tztg {
 

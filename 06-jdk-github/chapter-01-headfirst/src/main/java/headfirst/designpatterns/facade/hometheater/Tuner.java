@@ -1,11 +1,13 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
+ * 调谐器
+ *
  * @author lingwh
- * @desc 调谐器
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class Tuner {
+
     String description;
     Amplifier amplifier;
     double frequency;

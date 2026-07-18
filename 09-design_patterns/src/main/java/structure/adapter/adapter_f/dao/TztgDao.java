@@ -3,11 +3,13 @@ package structure.adapter.adapter_f.dao;
 import structure.adapter.adapter_f.domain.Tztg;
 
 /**
+ * 通知通告Dao
+ *
  * @author lingwh
- * @desc 通知通告Dao
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TztgDao {
+
     public void save(Tztg tztg) {
         System.out.println("保存通知通告......");
     }

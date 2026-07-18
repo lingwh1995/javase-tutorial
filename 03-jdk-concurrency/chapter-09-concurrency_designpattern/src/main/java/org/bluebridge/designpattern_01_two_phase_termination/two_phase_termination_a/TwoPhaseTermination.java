@@ -1,11 +1,13 @@
 package org.bluebridge.designpattern_01_two_phase_termination.two_phase_termination_a;
 
 /**
+ * 两阶段终止模式
+ *
  * @author lingwh
- * @desc 两阶段终止模式
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class TwoPhaseTermination {
+
     // 监控线程
     private Thread monitor;
 
@@ -14,25 +16,25 @@ public class TwoPhaseTermination {
      */
     public void start() {
         monitor = new Thread(() -> {
-           //使用 while(true) 模拟程序正常执行
-           while (true) {
-               Thread current = Thread.currentThread();
-               if(current.isInterrupted()) {
-                   releaseResource();
-                   break;
-               }
+            // 使用 while(true) 模拟程序正常执行
+            while (true) {
+                Thread current = Thread.currentThread();
+                if (current.isInterrupted()) {
+                    releaseResource();
+                    break;
+                }
 
-               try {
-                   Thread.sleep(1000);
-                   System.out.println("执行监控......");
-               } catch (InterruptedException e) {
-                   //e.printStackTrace();
-                   System.out.println("打断标记： " + current.isInterrupted());
-                   //重新设置打断标记
-                   current.interrupt();
-                   System.out.println("打断标记： " + current.isInterrupted());
-               }
-           }
+                try {
+                    Thread.sleep(1000);
+                    System.out.println("执行监控......");
+                } catch (InterruptedException e) {
+                    // e.printStackTrace();
+                    System.out.println("打断标记： " + current.isInterrupted());
+                    // 重新设置打断标记
+                    current.interrupt();
+                    System.out.println("打断标记： " + current.isInterrupted());
+                }
+            }
         });
 
         monitor.start();

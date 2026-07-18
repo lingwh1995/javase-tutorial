@@ -1,12 +1,14 @@
 package org.bluebridge.util;
 
-import java.lang.reflect.Field;
 import sun.misc.Unsafe;
 
+import java.lang.reflect.Field;
+
 /**
+ * 获取Unsafe实例的静态方法
+ *
  * @author lingwh
- * @desc 获取Unsafe实例的静态方法
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UnsafeAccessor {
 

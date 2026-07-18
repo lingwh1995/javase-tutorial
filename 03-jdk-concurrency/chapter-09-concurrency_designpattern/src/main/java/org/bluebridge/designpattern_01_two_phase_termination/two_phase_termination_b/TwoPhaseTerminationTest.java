@@ -1,9 +1,10 @@
 package org.bluebridge.designpattern_01_two_phase_termination.two_phase_termination_b;
 
 /**
+ * 测试两阶段终止线程
+ *
  * @author lingwh
- * @desc 测试两阶段终止线程
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TwoPhaseTerminationTest {
 

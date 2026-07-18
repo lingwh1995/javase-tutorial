@@ -1,16 +1,19 @@
 package org.bluebridge;
 
+import org.junit.Test;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import org.junit.Test;
 
 /**
+ * try-with-resources测试
+ *
  * @author lingwh
- * @desc try-with-resources测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TryWithResourcesTest {
+
     @Test
     public void testTryWithResources() throws Exception {
         try (BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {

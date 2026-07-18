@@ -1,11 +1,12 @@
 package org.bluebridge.chapter_04_set;
 
-import java.util.Comparator;
-import java.util.TreeSet;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
+
+import java.util.Comparator;
+import java.util.TreeSet;
 
 /**
  * TreeSet有序且唯一排序测试
@@ -15,8 +16,8 @@ import org.junit.Test;
  *    - 自然排序(元素具备比较性)：需要实现Comparable<T>并重写compareTo()方法，与hashCode()和equals()无关，不需要重写这两个方法
  *    - 比较器排序(集合具备比较性): 在TreeSet的构造方法中传入Comparator的子类
  *
- * @author ronin
- * @date 2026/7/9 00:00
+ * @author lingwh
+ * @date 2026/7/13 18:39
  */
 @Slf4j
 public class TreeSetTest {
@@ -46,24 +47,24 @@ public class TreeSetTest {
         }
 
         System.out.println("-------------------------");
-        //自然排序(Comparator):存储自定义对象
+        // 自然排序(Comparator):存储自定义对象
         TreeSet<Cat> cats = new TreeSet<>(new Comparator<Cat>() {
             @Override
             public int compare(Cat o1, Cat o2) {
-                //主要条件
-                int age =  o2.age - o1.age;
-                //次要条件
-                return  age == 0 ? o1.name.compareTo(o2.name) : age;
+                // 主要条件
+                int age = o2.age - o1.age;
+                // 次要条件
+                return age == 0 ? o1.name.compareTo(o2.name) : age;
             }
         });
-        cats.add(new Cat("zs",18));
-        cats.add(new Cat("aa",18));
-        cats.add(new Cat("bb",18));
-        cats.add(new Cat("ls",19));
-        cats.add(new Cat("ww",20));
-        cats.add(new Cat("zs",21));
-        cats.add(new Cat("zs",18));
-        for(Cat cat:cats){
+        cats.add(new Cat("zs", 18));
+        cats.add(new Cat("aa", 18));
+        cats.add(new Cat("bb", 18));
+        cats.add(new Cat("ls", 19));
+        cats.add(new Cat("ww", 20));
+        cats.add(new Cat("zs", 21));
+        cats.add(new Cat("zs", 18));
+        for (Cat cat : cats) {
             log.debug("cat: {}", cat);
         }
     }

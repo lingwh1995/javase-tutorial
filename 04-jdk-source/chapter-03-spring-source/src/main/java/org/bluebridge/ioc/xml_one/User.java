@@ -1,11 +1,13 @@
 package org.bluebridge.ioc.xml_one;
 
 /**
+ * 用户
+ *
  * @author lingwh
- * @desc 用户
- * @date 2019/3/14 00:00
+ * @date 2026/7/13 19:02
  */
 public class User {
+
     private String name;
     private String age;
 

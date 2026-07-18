@@ -1,11 +1,13 @@
 package structure.adapter.adapter_j;
 
 /**
+ * 火鸡
+ *
  * @author lingwh
- * @desc 火鸡
  * @date 2019/9/11 8:55
  */
 public interface Turkey {
+
     /**
      * 火鸡咯咯咯叫
      */

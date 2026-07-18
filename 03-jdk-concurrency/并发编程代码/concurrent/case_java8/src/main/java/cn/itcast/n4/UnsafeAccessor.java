@@ -5,11 +5,13 @@ import sun.misc.Unsafe;
 import java.lang.reflect.Field;
 
 /**
+ * Unsafe访问器
+ *
  * @author lingwh
- * @desc Unsafe访问器
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UnsafeAccessor {
+
     private static final Unsafe unsafe;
 
     static {

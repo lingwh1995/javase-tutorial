@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
  * 2. 模式优势：通过使用两阶段终止模式，可以确保线程在终止时能够正确地释放资源，避免资源泄漏或数据不一致的问题。
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TwoPhaseTermination {
 

@@ -4,9 +4,10 @@ package expand.principles.dependenceinversion;
  * 遵循依赖反转原则 + 面向接口编程（基于接口传递实现依赖）
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UseDependenceDeliverTest {
+
     public static void main(String[] args) {
         // 面向接口编程
         Person2 person2 = new Person2();

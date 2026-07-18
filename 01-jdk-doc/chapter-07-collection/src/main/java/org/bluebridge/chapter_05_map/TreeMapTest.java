@@ -5,11 +5,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
+ * TreeMap存储对象并排序测试
+ *
  * @author lingwh
- * @desc TreeMap存储对象并排序测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 18:39
  */
 public class TreeMapTest {
+
     public static void main(String[] args) {
         // 自然排序
         Map<Student, String> treeMapComparable = new TreeMap<>();
@@ -21,20 +23,20 @@ public class TreeMapTest {
 
         System.out.println("--------------------------------------------");
         // 比较器排序
-        Map<Student,String> treeMapCmparor = new TreeMap<>(new Comparator<Student>() {
+        Map<Student, String> treeMapCmparor = new TreeMap<>(new Comparator<Student>() {
             @Override
             public int compare(Student s1, Student s2) {
-                //主要条件
+                // 主要条件
                 int age = s2.age - s1.age;
-                return  age == 0 ?  s1.name.compareTo(s2.name) : age;
+                return age == 0 ? s1.name.compareTo(s2.name) : age;
             }
         });
-        treeMapCmparor.put(new Student("zs",18),"张三");
-        treeMapCmparor.put(new Student("aa",18),"张三");
-        treeMapCmparor.put(new Student("bb",18),"张三");
-        treeMapCmparor.put(new Student("ww",38),"王五");
-        treeMapCmparor.put(new Student("ls",28),"李四");
-        treeMapCmparor.put(new Student("zs",18),"张三");
+        treeMapCmparor.put(new Student("zs", 18), "张三");
+        treeMapCmparor.put(new Student("aa", 18), "张三");
+        treeMapCmparor.put(new Student("bb", 18), "张三");
+        treeMapCmparor.put(new Student("ww", 38), "王五");
+        treeMapCmparor.put(new Student("ls", 28), "李四");
+        treeMapCmparor.put(new Student("zs", 18), "张三");
         System.out.println(treeMapCmparor);
 
         System.out.println("-------------------------------------");
@@ -46,6 +48,7 @@ public class TreeMapTest {
 }
 
 class Student implements Comparable<Student> {
+
     protected String name;
     protected Integer age;
 
@@ -69,6 +72,7 @@ class Student implements Comparable<Student> {
 }
 
 class Dog {
+
     private String name;
     private Integer age;
 

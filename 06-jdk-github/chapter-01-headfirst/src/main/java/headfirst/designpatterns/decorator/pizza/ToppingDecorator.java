@@ -1,11 +1,13 @@
 package headfirst.designpatterns.decorator.pizza;
 
 /**
+ * 配料装饰器
+ *
  * @author lingwh
- * @desc 配料装饰器
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public abstract class ToppingDecorator extends Pizza {
+
     Pizza pizza;
 
     public abstract String getDescription();

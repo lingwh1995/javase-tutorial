@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.workerthread;
 import java.util.Random;
 
 /**
+ * Worker Thread 模式 - 传送线程
+ *
  * @author lingwh
- * @desc Worker Thread 模式 - 传送线程
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 16:29
  */
 public class TransportThread extends Thread {
+
     private final Channel channel;
     private static final Random random = new Random(System.currentTimeMillis());
 

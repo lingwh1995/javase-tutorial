@@ -6,11 +6,13 @@ import java.util.Random;
 import java.util.Vector;
 
 /**
+ * 多线程售票窗口测试
+ *
  * @author lingwh
- * @desc 多线程售票窗口测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TicketWindowTest {
+
     public static void main(String[] args) {
         TicketWindow ticketWindow = new TicketWindow(1000);
         List<Thread> list = new ArrayList<>();
@@ -38,6 +40,7 @@ public class TicketWindowTest {
 
     // Random 为线程安全
     static Random random = new Random();
+
     // 随机 1~5
     public static int randomAmount() {
         return random.nextInt(5) + 1;

@@ -5,11 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * 用户类
+ *
  * @author lingwh
- * @desc 用户类
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 18:39
  */
 public class User implements Cloneable {
+
     /**
      * 基本类型
      */

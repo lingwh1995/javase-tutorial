@@ -1,9 +1,10 @@
 package org.design_pattern.template.template_b;
 
 /**
+ * 线程模板
+ *
  * @author lingwh
- * @desc 线程模板
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public abstract class ThreadTemplate {
 

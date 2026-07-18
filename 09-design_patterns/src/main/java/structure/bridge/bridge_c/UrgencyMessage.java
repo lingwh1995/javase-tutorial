@@ -1,8 +1,9 @@
 package structure.bridge.bridge_c;
 
 /**
+ * 加急消息接口
+ *
  * @author lingwh
- * @desc 加急消息接口
  * @date 2019/7/24 11:11
  */
 public interface UrgencyMessage extends MessageInterface {

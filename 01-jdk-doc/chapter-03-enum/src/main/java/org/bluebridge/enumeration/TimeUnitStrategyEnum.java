@@ -1,11 +1,13 @@
 package org.bluebridge.enumeration;
 
 /**
+ * 时间单位换算策略枚举
+ *
  * @author lingwh
- * @desc 时间单位换算策略枚举
  * @date 2026/1/10 11:23
  */
 public enum TimeUnitStrategyEnum {
+
     SECONDS("S", "秒") {
         @Override
         public long toMillis(long duration) {

@@ -6,11 +6,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
+ * 线程池异常处理测试
+ *
  * @author lingwh
- * @desc 线程池异常处理测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadPoolCatchExceptionTest {
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // testTryCatchDealException();
 

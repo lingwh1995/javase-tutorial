@@ -3,11 +3,13 @@ package org.bluebridge.lock_08_synchronized_demo_transfer;
 import java.util.Random;
 
 /**
+ * 多线程账户转账测试
+ *
  * @author lingwh
- * @desc 多线程账户转账测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TransferAccountTest {
+
     public static void main(String[] args) throws InterruptedException {
         Account a = new Account(1000);
         Account b = new Account(1000);

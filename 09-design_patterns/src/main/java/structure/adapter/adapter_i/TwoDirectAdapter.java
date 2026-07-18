@@ -3,8 +3,9 @@ package structure.adapter.adapter_i;
 import java.util.List;
 
 /**
+ * 双向适配器
+ *
  * @author lingwh
- * @desc 双向适配器
  * @date 2019/8/8 13:57
  */
 public class TwoDirectAdapter implements LogDbOperateApi, LogFileOperateApi {

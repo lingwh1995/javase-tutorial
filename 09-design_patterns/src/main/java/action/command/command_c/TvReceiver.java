@@ -1,11 +1,13 @@
 package action.command.command_c;
 
 /**
+ * 电视接收者
+ *
  * @author lingwh
- * @desc 电视接收者
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TvReceiver {
+
     public void on() {
         System.out.println("电视机打开了......");
     }

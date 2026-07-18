@@ -5,7 +5,7 @@ import org.junit.Test;
 import sun.misc.Unsafe;
 
 /**
- * Unsafe应用一    操作内存
+ * Unsafe应用一 操作内存
  *
  * 1. public native long allocateMemory(long bytes);   // 分配新的本地空间
  * 2. public native long reallocateMemory(long address, long bytes);   //重新调整内存空间的大小
@@ -14,7 +14,7 @@ import sun.misc.Unsafe;
  * 5. public native void freeMemory(long address);     //清除内存
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UnsafeMemoryOperateTest {
 

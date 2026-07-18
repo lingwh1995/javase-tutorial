@@ -3,9 +3,10 @@ package org.bluebridge.api;
 import org.junit.Test;
 
 /**
+ * Thread类的API
+ *
  * @author lingwh
- * @desc Thread类的API
- * @date 2019/3/28 00:00
+ * @date 2026/7/13 16:29
  */
 public class ThreadTest {
 

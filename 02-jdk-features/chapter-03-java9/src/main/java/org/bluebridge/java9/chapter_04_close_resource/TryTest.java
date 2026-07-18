@@ -4,9 +4,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
+ * Java9资源关闭测试
+ *
  * @author lingwh
- * @desc Java9资源关闭测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 15:10
  */
 public class TryTest {
 

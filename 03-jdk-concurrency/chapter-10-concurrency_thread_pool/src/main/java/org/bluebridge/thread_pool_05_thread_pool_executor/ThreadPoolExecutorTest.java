@@ -3,11 +3,13 @@ package org.bluebridge.thread_pool_05_thread_pool_executor;
 import java.util.concurrent.*;
 
 /**
+ * 适用于任务量已知，相对耗时的任务
+ *
  * @author lingwh
- * @desc 适用于任务量已知，相对耗时的任务
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadPoolExecutorTest {
+
     public static void main(String[] args) {
         int corePoolSize = 2; // 核心线程数
         int maxPoolSize = 4; // 最大线程数

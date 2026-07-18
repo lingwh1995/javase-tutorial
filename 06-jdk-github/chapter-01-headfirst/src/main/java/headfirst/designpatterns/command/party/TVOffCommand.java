@@ -1,11 +1,13 @@
 package headfirst.designpatterns.command.party;
 
 /**
+ * 电视关闭命令
+ *
  * @author lingwh
- * @desc 电视关闭命令
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TVOffCommand implements Command {
+
     TV tv;
 
     public TVOffCommand(TV tv) {

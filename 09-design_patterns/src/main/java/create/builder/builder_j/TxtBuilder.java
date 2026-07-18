@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.Map;
 
 /**
+ * 文本构建器
+ *
  * @author lingwh
  * @date 2019/8/8 14:21
  */

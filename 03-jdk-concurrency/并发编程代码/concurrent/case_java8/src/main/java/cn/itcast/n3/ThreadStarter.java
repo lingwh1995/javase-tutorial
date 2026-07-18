@@ -6,12 +6,14 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
+ * 线程启动方式
+ *
  * @author lingwh
- * @desc 线程启动方式
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.ThreadStarter")
 public class ThreadStarter {
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // 构造方法的参数是给线程指定名字，推荐
         Thread t1 = new Thread("t1") {

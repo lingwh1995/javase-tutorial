@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 复合的享元对象
+ *
  * @author lingwh
- * @desc 复合的享元对象
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UnSharedConcreteFlyweight implements Flyweight {
 

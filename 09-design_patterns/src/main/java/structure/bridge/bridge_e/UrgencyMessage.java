@@ -1,8 +1,9 @@
 package structure.bridge.bridge_e;
 
 /**
+ * 加急类型消息
+ *
  * @author lingwh
- * @desc 加急类型消息
  * @date 2019/7/24 13:35
  */
 public class UrgencyMessage extends AbstractMessage {
@@ -15,7 +16,7 @@ public class UrgencyMessage extends AbstractMessage {
      * 加急消息:发送前给消息内容加上加急 发送消息，委派给实现部分的方法
      *
      * @param message 要发送消息的内容
-     * @param toUser 消息的接受者
+     * @param toUser  消息的接受者
      */
     @Override
     public void sendMessage(String message, String toUser) {

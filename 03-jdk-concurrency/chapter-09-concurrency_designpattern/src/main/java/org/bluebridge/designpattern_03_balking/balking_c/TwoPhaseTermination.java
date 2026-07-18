@@ -9,9 +9,10 @@ package org.bluebridge.designpattern_03_balking.balking_c;
  *    在一个线程t1中优雅地终止另一个线程t2，终止线程t2前，让线程t2有一个料理后事的机会
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TwoPhaseTermination {
+
     // 监控线程
     private Thread monitor;
     private volatile boolean stop = false;
@@ -30,10 +31,10 @@ public class TwoPhaseTermination {
             starting = true;
         }
         monitor = new Thread(() -> {
-            //使用 while(true) 模拟程序正常执行
+            // 使用 while(true) 模拟程序正常执行
             while (true) {
                 Thread current = Thread.currentThread();
-                if(stop) {
+                if (stop) {
                     releaseResource();
                     break;
                 }
@@ -42,9 +43,9 @@ public class TwoPhaseTermination {
                     Thread.sleep(1000);
                     System.out.println("执行监控......");
                 } catch (InterruptedException e) {
-                    //e.printStackTrace();
+                    // e.printStackTrace();
                     System.out.println("打断标记： " + current.isInterrupted());
-                    //重新设置打断标记
+                    // 重新设置打断标记
                     current.interrupt();
                     System.out.println("打断标记： " + current.isInterrupted());
                 }
@@ -63,7 +64,7 @@ public class TwoPhaseTermination {
 
     /**
      * 执行释放资源操作
-     *     尤其是释放锁资源，这样可以防止因为暴力终止线程而导致的死锁情况的发生
+     * 尤其是释放锁资源，这样可以防止因为暴力终止线程而导致的死锁情况的发生
      */
     public void releaseResource() {
         System.out.println("释放资源......");

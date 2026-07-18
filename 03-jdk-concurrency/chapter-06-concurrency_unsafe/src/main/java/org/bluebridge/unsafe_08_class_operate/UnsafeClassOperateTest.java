@@ -1,14 +1,16 @@
 package org.bluebridge.unsafe_08_class_operate;
 
-import java.lang.reflect.Field;
 import org.bluebridge.util.UnsafeAccessor;
 import org.junit.Test;
 import sun.misc.Unsafe;
 
+import java.lang.reflect.Field;
+
 /**
+ * Unsafe应用七 操作class
+ *
  * @author lingwh
- * @desc Unsafe应用七 操作class
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UnsafeClassOperateTest {
 

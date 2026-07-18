@@ -3,11 +3,13 @@ package org.bluebridge;
 import org.junit.Test;
 
 /**
+ * 使用final变量
+ *
  * @author lingwh
- * @desc 使用final变量
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UseFinal1 {
+
     @Test
     public void test() {
         System.out.println(FinalTest.A);

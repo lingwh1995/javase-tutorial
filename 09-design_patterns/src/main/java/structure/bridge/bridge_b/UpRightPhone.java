@@ -1,9 +1,10 @@
 package structure.bridge.bridge_b;
 
 /**
+ * 直立式手机
+ *
  * @author lingwh
- * @desc 直立式手机
- * @date 2026/7/9 00:00
+ * @date 2026/7/9 16:08
  */
 public class UpRightPhone extends Phone {
 

@@ -1,14 +1,17 @@
 package org.bluebridge.util;
 
-import java.lang.reflect.Field;
 import sun.misc.Unsafe;
 
+import java.lang.reflect.Field;
+
 /**
+ * Unsafe访问器1
+ *
  * @author lingwh
- * @desc Unsafe访问器1
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class UnsafeAccessor1 {
+
     static Unsafe unsafe;
 
     static {

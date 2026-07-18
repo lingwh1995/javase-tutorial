@@ -1,8 +1,9 @@
 package structure.adapter.adapter_j;
 
 /**
+ * 使用火鸡冒充鸭子
+ *
  * @author lingwh
- * @desc 使用火鸡冒充鸭子
  * @date 2019/9/11 8:58
  */
 public class TurkeyAdapter implements Duck {

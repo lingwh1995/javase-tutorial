@@ -1,11 +1,13 @@
 package headfirst.designpatterns.ducks;
 
 /**
+ * 火鸡适配器
+ *
  * @author lingwh
- * @desc 火鸡适配器
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TurkeyAdapter implements Duck {
+
     Turkey turkey;
 
     public TurkeyAdapter(Turkey turkey) {

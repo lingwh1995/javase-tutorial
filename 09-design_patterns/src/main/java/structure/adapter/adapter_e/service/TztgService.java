@@ -4,11 +4,13 @@ import structure.adapter.adapter_e.dao.TztgDao;
 import structure.adapter.adapter_e.domain.Tztg;
 
 /**
+ * TztgService
+ *
  * @author lingwh
- * @desc TztgService
- * @date 2019/3/11 00:00
+ * @date 2026/7/13 19:02
  */
 public class TztgService implements ITztgService {
+
     private TztgDao tztgDao = new TztgDao();
 
     @Override
