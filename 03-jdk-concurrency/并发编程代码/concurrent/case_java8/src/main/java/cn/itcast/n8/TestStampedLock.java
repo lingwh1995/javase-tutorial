@@ -7,12 +7,14 @@ import java.util.concurrent.locks.StampedLock;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * StampedLock测试
+ *
  * @author lingwh
- * @desc StampedLock测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestStampedLock")
 public class TestStampedLock {
+
     public static void main(String[] args) {
         DataContainerStamped dataContainer = new DataContainerStamped(1);
         new Thread(() -> {

@@ -2,18 +2,20 @@ package cn.itcast.pattern;
 
 import lombok.extern.slf4j.Slf4j;
 
+import static cn.itcast.pattern.Downloader.*;
+
 import java.io.IOException;
 import java.util.List;
 
-import static cn.itcast.pattern.Downloader.*;
-
 /**
+ * 保护对象测试
+ *
  * @author lingwh
- * @desc 保护对象测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestGuardedObject")
 public class TestGuardedObject {
+
     public static void main(String[] args) {
         GuardedObject guardedObject = new GuardedObject();
         new Thread(() -> {

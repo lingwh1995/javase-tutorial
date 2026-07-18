@@ -7,11 +7,13 @@ import java.util.Date;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 公平锁测试
+ *
  * @author lingwh
- * @desc 公平锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestFair {
+
     public static void main(String[] args) throws InterruptedException {
         ReentrantLock lock = new ReentrantLock(false);
 

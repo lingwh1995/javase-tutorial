@@ -4,11 +4,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntUnaryOperator;
 
 /**
+ * AtomicInteger自定义更新测试
+ *
  * @author lingwh
- * @desc AtomicInteger自定义更新测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class Test34 {
+
     public static void main(String[] args) {
 
         AtomicInteger i = new AtomicInteger(5);

@@ -1,9 +1,10 @@
 package org.bluebridge.thread_02_create.way_2;
 
 /**
+ * 实现Runnable接口创建线程
+ *
  * @author lingwh
- * @desc 实现Runnable接口创建线程
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadCreateTest {
 
@@ -14,17 +15,15 @@ public class ThreadCreateTest {
         t1.setName("t1");
         t1.start();
 
-
         // 匿名内部类方式实现Runnable接口创建线程
-            // 不设置线程名称 new Thread() 中不用传递第二个参数
+        // 不设置线程名称 new Thread() 中不用传递第二个参数
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("Thread " + Thread.currentThread().getName() + " is running...");
             }
-        },"t2");
+        }, "t2");
         t2.start();
-
 
         // lambda方式实现Runnable接口创建线程
             // 不设置线程名称 new Thread() 中不用传递第二个参数

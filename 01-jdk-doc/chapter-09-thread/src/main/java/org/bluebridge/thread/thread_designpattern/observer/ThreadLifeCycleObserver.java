@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.observer;
 import java.util.List;
 
 /**
+ * 线程生命周期观察者
+ *
  * @author lingwh
- * @desc 线程生命周期观察者
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 16:29
  */
 public class ThreadLifeCycleObserver implements LifeCycleListener {
+
     private static final Object LOCK = new Object();
 
     public void currentQuery(List<String> ids) {
@@ -18,16 +20,16 @@ public class ThreadLifeCycleObserver implements LifeCycleListener {
             @Override
             public void run() {
                 try {
-                    notifyChange(new RunnableEvent(RunnableState.RUNNING,Thread.currentThread(),null));
+                    notifyChange(new RunnableEvent(RunnableState.RUNNING, Thread.currentThread(), null));
                     System.out.println("query for the id" + id);
                     Thread.sleep(1000L);
                     int x = 1 / 0;
-                    notifyChange(new RunnableEvent(RunnableState.DONE,Thread.currentThread(),null));
-                }catch (Exception e){
-                    notifyChange(new RunnableEvent(RunnableState.ERROR,Thread.currentThread(),e));
+                    notifyChange(new RunnableEvent(RunnableState.DONE, Thread.currentThread(), null));
+                } catch (Exception e) {
+                    notifyChange(new RunnableEvent(RunnableState.ERROR, Thread.currentThread(), e));
                 }
             }
-        },id).start());
+        }, id).start());
     }
 
     @Override

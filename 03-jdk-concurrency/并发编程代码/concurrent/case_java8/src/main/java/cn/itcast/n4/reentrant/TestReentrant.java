@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 可重入锁测试
+ *
  * @author lingwh
- * @desc 可重入锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestReentrant")
 public class TestReentrant {
+
     static ReentrantLock lock = new ReentrantLock();
 
     public static void main(String[] args) {

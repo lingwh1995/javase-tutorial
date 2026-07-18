@@ -3,12 +3,14 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * WaitNotify顺序打印测试
+ *
  * @author lingwh
- * @desc WaitNotify顺序打印测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test27")
 public class Test27 {
+
     public static void main(String[] args) {
         WaitNotify wn = new WaitNotify(1, 5);
         new Thread(() -> {
@@ -30,6 +32,7 @@ public class Test27 {
    c           3             1
  */
 class WaitNotify {
+
     // 打印               a           1             2
     public void print(String str, int waitFlag, int nextFlag) {
         for (int i = 0; i < loopNumber; i++) {

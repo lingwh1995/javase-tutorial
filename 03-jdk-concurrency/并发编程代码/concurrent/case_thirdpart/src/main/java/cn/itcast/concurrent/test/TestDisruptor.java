@@ -8,11 +8,13 @@ import java.nio.ByteBuffer;
 import java.util.concurrent.Executors;
 
 /**
+ * Disruptor 测试
+ *
  * @author lingwh
- * @desc Disruptor 测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestDisruptor {
+
     public static void main(String[] args) throws InterruptedException {
         Disruptor<LongEvent> disruptor = new Disruptor<>(
                 () -> new LongEvent(), 16, Executors.newCachedThreadPool());
@@ -40,6 +42,7 @@ public class TestDisruptor {
 }
 
 class LongEvent {
+
     private long value;
 
     public void set(long value)

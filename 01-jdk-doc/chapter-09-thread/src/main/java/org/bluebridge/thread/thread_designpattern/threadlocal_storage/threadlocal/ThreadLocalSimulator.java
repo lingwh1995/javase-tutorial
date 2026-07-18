@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * ThreadLocal 模拟器
+ *
  * @author lingwh
- * @desc ThreadLocal 模拟器
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 16:29
  */
 public class ThreadLocalSimulator<T> {
+
     private final Map<Thread, T> storage = new HashMap<>();
 
     public void set(T t) {

@@ -3,11 +3,13 @@ package test;
 import java.util.HashMap;
 
 /**
+ * HashMap并发死链测试
+ *
  * @author lingwh
- * @desc HashMap并发死链测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestDeadLink {
+
     public static void main(String[] args) {
         // 测试 java 7 中哪些数字的 hash 结果相等
         System.out.println("长度为16时，桶下标为1的key");

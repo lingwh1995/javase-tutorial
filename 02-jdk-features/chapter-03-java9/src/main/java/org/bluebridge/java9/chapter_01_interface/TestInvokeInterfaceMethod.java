@@ -3,9 +3,10 @@ package org.bluebridge.java9.chapter_01_interface;
 import org.junit.Test;
 
 /**
+ * 测试调用接口中的方法
+ *
  * @author lingwh
- * @desc 测试调用接口中的方法
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 15:10
  */
 public class TestInvokeInterfaceMethod {
 

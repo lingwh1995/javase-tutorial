@@ -12,21 +12,21 @@ public class ClassUseMultipleGenericTest {
 
     @Test
     public void testUseMultipleGenericTest() {
-        // 创建一个泛型T类型为Integer,U类型为String的Point对象
+        // 创建一个泛型 T 类型为 Integer，U 类型为 String 的 Point 对象
         Point<Integer, String> integerStringPoint = new Point<>();
         integerStringPoint.setX(10);
         integerStringPoint.setY(10);
         integerStringPoint.setDesc("第一个坐标点");
         System.out.println(integerStringPoint);
 
-        // 创建一个泛型T类型为Float,U类型为String的Point对象
+        // 创建一个泛型 T 类型为 Float，U 类型为 String 的 Point 对象
         Point<Float, String> floatStringPoint = new Point<>();
         floatStringPoint.setX(20f);
         floatStringPoint.setY(20f);
         floatStringPoint.setDesc("第二个坐标点");
         System.out.println(floatStringPoint);
 
-        // 创建一个泛型T类型为Object,U类型为String的Point对象
+        // 创建一个泛型 T 类型为 Object，U 类型为 String 的 Point 对象
         Point<Object, String> objectStringPoint = new Point<>();
         objectStringPoint.setX(30);
         objectStringPoint.setY("30");

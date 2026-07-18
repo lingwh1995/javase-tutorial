@@ -19,7 +19,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  *    源竞争和死锁等问题。
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadJoinTest {
 
@@ -47,10 +47,10 @@ public class ThreadJoinTest {
      */
     public static void testThreadJoin1() throws InterruptedException {
         Thread t1 = new Thread(() -> {
-            for(int i = 1; i <= 5; i++) {
+            for (int i = 1; i <= 5; i++) {
                 try {
                     Thread.sleep(300);
-                } catch(InterruptedException e) {
+                } catch (InterruptedException e) {
                     System.out.println(e);
                 }
                 System.out.println(Thread.currentThread().getName() + " " + i);
@@ -58,10 +58,10 @@ public class ThreadJoinTest {
         }, "t1");
 
         Thread t2 = new Thread(() -> {
-            for(int i = 1; i <= 5; i++) {
+            for (int i = 1; i <= 5; i++) {
                 try {
                     Thread.sleep(300);
-                } catch(InterruptedException e) {
+                } catch (InterruptedException e) {
                     System.out.println(e);
                 }
                 System.out.println(Thread.currentThread().getName() + " " + i);
@@ -122,7 +122,8 @@ public class ThreadJoinTest {
     }
 
     /**
-     * 测试使用 join() 实现线程同步 第一个 join()：等待时,t2并没有停止,而在运行 第二个 join()：1s后,执行到此,t2也运行了1s,因此也只需再等待 1s
+     * 测试使用 join() 实现线程同步 第一个 join()：等待时,t2并没有停止,而在运行 第二个
+     * join()：1s后,执行到此,t2也运行了1s,因此也只需再等待 1s
      *
      * @throws InterruptedException
      */
@@ -176,9 +177,9 @@ public class ThreadJoinTest {
         // 实现线程同步，获取到的i的值是 10
 
         /*
-         *  1. 注释掉下面一行，演示 不使用join(long millis)实现线程同步
-         *  2. 参数传递1000，即 t1.join(1000) 演示 使用join(long millis)实现线程同步失败
-         *  3. 参数传递3000，即 t1.join(3000) 演示 使用join(long millis)实现线程同步成功
+         * 1. 注释掉下面一行，演示 不使用join(long millis)实现线程同步
+         * 2. 参数传递1000，即 t1.join(1000) 演示 使用join(long millis)实现线程同步失败
+         * 3. 参数传递3000，即 t1.join(3000) 演示 使用join(long millis)实现线程同步成功
          */
         t1.join(1000);
         System.out.println("i = " + i.get());

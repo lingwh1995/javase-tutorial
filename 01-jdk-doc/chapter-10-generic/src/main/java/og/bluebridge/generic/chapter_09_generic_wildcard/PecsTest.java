@@ -1,4 +1,4 @@
-package og.bluebridge.generic.chapter_07_generic_wildcard;
+package og.bluebridge.generic.chapter_09_generic_wildcard;
 
 import java.util.ArrayList;
 import java.util.List;

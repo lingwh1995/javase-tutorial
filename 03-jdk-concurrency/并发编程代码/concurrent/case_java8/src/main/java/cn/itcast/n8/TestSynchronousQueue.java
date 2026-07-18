@@ -7,12 +7,14 @@ import java.util.concurrent.SynchronousQueue;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * SynchronousQueue测试
+ *
  * @author lingwh
- * @desc SynchronousQueue测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestSynchronousQueue")
 public class TestSynchronousQueue {
+
     public static void main(String[] args) {
         SynchronousQueue<Integer> integers = new SynchronousQueue<>();
         new Thread(() -> {

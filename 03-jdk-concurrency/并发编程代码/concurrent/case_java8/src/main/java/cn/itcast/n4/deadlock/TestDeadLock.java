@@ -4,8 +4,15 @@ import lombok.extern.slf4j.Slf4j;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * 死锁测试
+ *
+ * @author lingwh
+ * @date 2026/7/13 19:02
+ */
 @Slf4j(topic = "c.TestDeadLock")
 public class TestDeadLock {
+
     public static void main(String[] args) {
         test1();
     }

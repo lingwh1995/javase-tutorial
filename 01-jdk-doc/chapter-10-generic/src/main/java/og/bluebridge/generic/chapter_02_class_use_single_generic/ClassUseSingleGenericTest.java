@@ -12,19 +12,19 @@ public class ClassUseSingleGenericTest {
 
     @Test
     public void testUseSingleGeneric() {
-        // 创建一个泛型为 Integer 的Point对象
+        // 创建一个泛型 T 类型为 Integer 的 Point 对象
         Point<Integer> integerPoint = new Point<>();
         integerPoint.setX(10);
         integerPoint.setY(10);
         System.out.println(integerPoint);
 
-        // 创建一个泛型为 Float 的Point对象
+        // 创建一个泛型 T 类型为 Float 的 Point 对象
         Point<Float> floatPoint = new Point<>();
         floatPoint.setX(20f);
         floatPoint.setY(20f);
         System.out.println(floatPoint);
 
-        // 创建一个泛型为 Object 的Point对象
+        // 创建一个泛型 T 类型为 Object 的 Point 对象
         Point<Object> objectPoint = new Point<>();
         objectPoint.setX(30);
         objectPoint.setY("30");

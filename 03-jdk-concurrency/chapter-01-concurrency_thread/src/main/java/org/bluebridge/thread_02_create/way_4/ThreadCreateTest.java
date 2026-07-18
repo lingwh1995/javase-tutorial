@@ -4,11 +4,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * 使用线程池创建线程
+ *
  * @author lingwh
- * @desc 使用线程池创建线程
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadCreateTest {
+
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(5);
 
@@ -18,9 +20,9 @@ public class ThreadCreateTest {
         }
 
         executor.shutdown();
-//        while (!executor.isTerminated()) {
-//            // 等待所有线程执行完毕
-//        }
+        // while (!executor.isTerminated()) {
+        // // 等待所有线程执行完毕
+        // }
 
         System.out.println("All threads are finished...");
     }

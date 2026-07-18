@@ -1,11 +1,13 @@
 package org.design_pattern.strategy.strategy_a;
 
 /**
+ * 税务计算器测试
+ *
  * @author lingwh
- * @desc 税务计算器测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class TaxCalculatorTest {
+
     public static void main(String[] args) {
 //        TaxCalculator taxCalculator = new TaxCalculator(1000d,2000d){
 //            @Override

@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * 活锁测试
+ *
  * @author lingwh
- * @desc 活锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestLiveLock")
 public class TestLiveLock {
+
     static volatile int count = 10;
     static final Object lock = new Object();
 

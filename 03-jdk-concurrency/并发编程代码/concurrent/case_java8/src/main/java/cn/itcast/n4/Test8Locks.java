@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * 8锁测试
+ *
  * @author lingwh
- * @desc 8锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test8Locks")
 public class Test8Locks {
+
     public static void main(String[] args) {
         Number n1 = new Number();
         Number n2 = new Number();

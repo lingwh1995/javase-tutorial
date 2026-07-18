@@ -2,17 +2,19 @@ package cn.itcast.test;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.concurrent.atomic.AtomicMarkableReference;
-
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+import java.util.concurrent.atomic.AtomicMarkableReference;
+
 /**
+ * AtomicMarkableReference测试
+ *
  * @author lingwh
- * @desc AtomicMarkableReference测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test38")
 public class Test38 {
+
     public static void main(String[] args) throws InterruptedException {
         GarbageBag bag = new GarbageBag("装满了垃圾");
         // 参数2 mark 可以看作一个标记，表示垃圾袋满了
@@ -38,6 +40,7 @@ public class Test38 {
 }
 
 class GarbageBag {
+
     String desc;
 
     public GarbageBag(String desc) {

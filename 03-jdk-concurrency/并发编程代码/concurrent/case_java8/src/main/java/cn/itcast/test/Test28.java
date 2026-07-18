@@ -8,12 +8,14 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * AwaitSignal顺序打印测试
+ *
  * @author lingwh
- * @desc AwaitSignal顺序打印测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test28")
 public class Test28 {
+
     public static void main(String[] args) {
         AwaitSignal2 as = new AwaitSignal2(3);
         as.start(new Thread(() -> {
@@ -32,6 +34,7 @@ public class Test28 {
 
 @Slf4j(topic = "c.AwaitSignal")
 class AwaitSignal2 extends ReentrantLock {
+
     private Map<Thread, Condition[]> map = new HashMap<>();
 
     public void start(Thread... threads) {

@@ -3,12 +3,14 @@ package cn.itcast.pattern;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 两阶段终止模式测试
+ *
  * @author lingwh
- * @desc 两阶段终止模式测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestTwoPhaseTermination")
 public class TestTwoPhaseTermination {
+
     public static void main(String[] args) throws InterruptedException {
         TPTVolatile t = new TPTVolatile();
         t.start();
@@ -20,6 +22,7 @@ public class TestTwoPhaseTermination {
 }
 @Slf4j(topic = "c.TPTInterrupt")
 class TPTInterrupt {
+
     private Thread thread;
 
     public void start(){
@@ -48,6 +51,7 @@ class TPTInterrupt {
 }
 @Slf4j(topic = "c.TPTVolatile")
 class TPTVolatile {
+
     private Thread thread;
     private volatile boolean stop = false;
 

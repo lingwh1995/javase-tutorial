@@ -1,9 +1,10 @@
 package cn.itcast.n5;
 
 /**
+ * volatile测试
+ *
  * @author lingwh
- * @desc volatile测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestVolatile {
 

@@ -7,12 +7,14 @@ import java.util.concurrent.Semaphore;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * 信号量测试
+ *
  * @author lingwh
- * @desc 信号量测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestSemaphore")
 public class TestSemaphore {
+
     public static void main(String[] args) {
         // 1. 创建 semaphore 对象
         Semaphore semaphore = new Semaphore(3);

@@ -4,11 +4,13 @@ import cn.itcast.Constants;
 import cn.itcast.n2.util.FileReader;
 
 /**
+ * 线程状态测试
+ *
  * @author lingwh
- * @desc 线程状态测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestState2 {
+
     public static void main(String[] args) throws InterruptedException {
         new Thread(() -> {
             FileReader.read(Constants.MP4_FULL_PATH);

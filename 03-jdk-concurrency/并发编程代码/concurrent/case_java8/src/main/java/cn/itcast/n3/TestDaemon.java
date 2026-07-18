@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * 守护线程测试
+ *
  * @author lingwh
- * @desc 守护线程测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestDaemon")
 public class TestDaemon {
+
     public static void main(String[] args) {
         log.debug("开始运行...");
         Thread t1 = new Thread(() -> {

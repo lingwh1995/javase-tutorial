@@ -3,12 +3,14 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 两阶段终止模式
+ *
  * @author lingwh
- * @desc 两阶段终止模式
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test33")
 class Test33 {
+
     private Thread thread;
 
     public void start(){

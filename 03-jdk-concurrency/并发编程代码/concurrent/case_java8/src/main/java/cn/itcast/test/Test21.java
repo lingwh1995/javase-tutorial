@@ -2,14 +2,15 @@ package cn.itcast.test;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.LinkedList;
-
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+import java.util.LinkedList;
+
 /**
+ * 消息队列生产者消费者测试
+ *
  * @author lingwh
- * @desc 消息队列生产者消费者测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test21")
 public class Test21 {
@@ -37,6 +38,7 @@ public class Test21 {
 // 消息队列类 ， java 线程之间通信
 @Slf4j(topic = "c.MessageQueue")
 class MessageQueue {
+
     // 消息的队列集合
     private LinkedList<Message> list = new LinkedList<>();
     // 队列容量
@@ -87,6 +89,7 @@ class MessageQueue {
 }
 
 final class Message {
+
     private int id;
     private Object value;
 

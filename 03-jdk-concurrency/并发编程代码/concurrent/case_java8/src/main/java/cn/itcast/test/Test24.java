@@ -2,18 +2,20 @@ package cn.itcast.test;
 
 import lombok.extern.slf4j.Slf4j;
 
+import static cn.itcast.n2.util.Sleeper.sleep;
+
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static cn.itcast.n2.util.Sleeper.sleep;
-
 /**
+ * ReentrantLock条件变量测试
+ *
  * @author lingwh
- * @desc ReentrantLock条件变量测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test24")
 public class Test24 {
+
     static final Object room = new Object();
     static boolean hasCigarette = false;
     static boolean hasTakeout = false;

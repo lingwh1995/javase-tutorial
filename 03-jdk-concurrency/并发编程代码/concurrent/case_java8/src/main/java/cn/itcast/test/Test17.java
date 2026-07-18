@@ -3,12 +3,14 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * synchronized线程安全测试
+ *
  * @author lingwh
- * @desc synchronized线程安全测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test17")
 public class Test17 {
+
     public static void main(String[] args) throws InterruptedException {
         Room room = new Room();
         Thread t1 = new Thread(() -> {
@@ -32,6 +34,7 @@ public class Test17 {
 }
 
 class Room {
+
     private int counter = 0;
 
     public synchronized void increment() {

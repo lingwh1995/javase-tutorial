@@ -5,18 +5,21 @@ import lombok.extern.slf4j.Slf4j;
 import sun.misc.Unsafe;
 
 /**
+ * 自定义原子整数测试
+ *
  * @author lingwh
- * @desc 自定义原子整数测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test42")
 public class Test42 {
+
     public static void main(String[] args) {
         Account.demo(new MyAtomicInteger(10000));
     }
 }
 
 class MyAtomicInteger implements Account {
+
     private volatile int value;
     private static final long valueOffset;
     private static final Unsafe UNSAFE;

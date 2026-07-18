@@ -3,12 +3,14 @@ package cn.itcast.n4;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * synchronized计数器测试
+ *
  * @author lingwh
- * @desc synchronized计数器测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestCounterSync")
 public class TestCounterSync {
+
     static int counter = 0;
     static final Object room = new Object();
 

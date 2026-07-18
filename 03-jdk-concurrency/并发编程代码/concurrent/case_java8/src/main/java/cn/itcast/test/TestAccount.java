@@ -6,11 +6,13 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 账户测试
+ *
  * @author lingwh
- * @desc 账户测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestAccount {
+
     public static void main(String[] args) {
         Account account = new AccountCas(10000);
         Account.demo(account);
@@ -18,6 +20,7 @@ public class TestAccount {
 }
 
 class AccountCas implements Account {
+
     private AtomicInteger balance;
 
     public AccountCas(int balance) {
@@ -69,6 +72,7 @@ class AccountUnsafe implements Account {
 }
 
 interface Account {
+
     // 获取余额
     Integer getBalance();
 

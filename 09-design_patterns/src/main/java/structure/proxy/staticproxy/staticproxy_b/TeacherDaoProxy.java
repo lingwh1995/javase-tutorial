@@ -1,11 +1,13 @@
 package structure.proxy.staticproxy.staticproxy_b;
 
 /**
+ * 教师数据访问对象代理
+ *
  * @author lingwh
- * @desc 教师数据访问对象代理
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TeacherDaoProxy implements ITeacher {
+
     private ITeacher teacherDao;
 
     public TeacherDaoProxy(ITeacher teacherDao) {

@@ -13,8 +13,13 @@ import lombok.ToString;
 @ToString
 public class FloatPoint {
 
-    // 表示X坐标
+    /**
+     * 表示 X 坐标
+     */
     private Float x;
-    // 表示Y坐标
+
+    /**
+     * 表示 Y 坐标
+     */
     private Float y;
 }

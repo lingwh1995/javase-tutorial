@@ -7,12 +7,14 @@ import java.util.concurrent.TimeUnit;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * join方法测试
+ *
  * @author lingwh
- * @desc join方法测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestJoin")
 public class TestJoin {
+
     static int r = 0;
     static int r1 = 0;
     static int r2 = 0;

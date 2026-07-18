@@ -3,12 +3,14 @@ package cn.itcast.n4;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 不安全计数器测试
+ *
  * @author lingwh
- * @desc 不安全计数器测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestCounterUnsafe")
 public class TestCounterUnsafe {
+
     static int counter = 0;
 
     public static void main(String[] args) throws InterruptedException {

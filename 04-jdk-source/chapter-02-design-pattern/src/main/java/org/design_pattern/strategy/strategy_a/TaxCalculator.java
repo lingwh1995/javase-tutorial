@@ -1,11 +1,13 @@
 package org.design_pattern.strategy.strategy_a;
 
 /**
+ * 税务计算器
+ *
  * @author lingwh
- * @desc 税务计算器
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class TaxCalculator {
+
     private final double salary;
     private final double bonus;
     private TaxCalculatorStrategy taxCalculatorStrategy;

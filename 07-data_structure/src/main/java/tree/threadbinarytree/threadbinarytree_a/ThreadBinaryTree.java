@@ -1,11 +1,13 @@
 package tree.threadbinarytree.threadbinarytree_a;
 
 /**
+ * 线索二叉树
+ *
  * @author lingwh
- * @desc 线索二叉树
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadBinaryTree {
+
     private Node root;
     private Node prev;
 
@@ -50,6 +52,7 @@ public class ThreadBinaryTree {
 }
 
 class Node {
+
     private int id;
     private String name;
     private Node left;

@@ -5,9 +5,10 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
+ * 实现Callable接口创建线程
+ *
  * @author lingwh
- * @desc 实现Callable接口创建线程
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class ThreadCreateTest {
 
@@ -39,7 +40,7 @@ public class ThreadCreateTest {
             }
         });
         // FutureTask对象作为Thread对象的target创建新的线程
-            //不设置线程名称 new Thread() 中不用传递第二个参数
+        // 不设置线程名称 new Thread() 中不用传递第二个参数
         Thread t2 = new Thread(futureTask2, "t2");
         // 线程进入到就绪状态
         t2.start();
@@ -47,18 +48,17 @@ public class ThreadCreateTest {
         Integer r2 = futureTask2.get();
         System.out.println("Thread " + t2.getName() + " 执行结果是: " + r2);
 
-
-        //lambda方式实现Callable接口创建线程
-        //使用FutureTask来包装线程对象
-        FutureTask<Integer> futureTask3 = new FutureTask<>(()-> {
+        // lambda方式实现Callable接口创建线程
+        // 使用FutureTask来包装线程对象
+        FutureTask<Integer> futureTask3 = new FutureTask<>(() -> {
             System.out.println("Thread " + Thread.currentThread().getName() + " is running...");
             int i = 30;
             int j = 30;
             Thread.sleep(1000);
             return Integer.sum(i, j);
         });
-        //FutureTask对象作为Thread对象的target创建新的线程
-            //不设置线程名称 new Thread() 中不用传递第二个参数
+        // FutureTask对象作为Thread对象的target创建新的线程
+        // 不设置线程名称 new Thread() 中不用传递第二个参数
         Thread t3 = new Thread(futureTask3, "t3");
         // 线程进入到就绪状态
         t3.start();

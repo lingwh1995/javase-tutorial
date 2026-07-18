@@ -8,12 +8,14 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * Executors线程池测试
+ *
  * @author lingwh
- * @desc Executors线程池测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestExecutors")
 public class TestExecutors {
+
     public static void main(String[] args) throws InterruptedException {
         test2();
     }

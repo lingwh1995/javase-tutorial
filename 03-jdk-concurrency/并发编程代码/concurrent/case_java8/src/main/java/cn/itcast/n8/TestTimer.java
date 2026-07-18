@@ -9,12 +9,14 @@ import java.util.concurrent.*;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * Timer定时器测试
+ *
  * @author lingwh
- * @desc Timer定时器测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestTimer")
 public class TestTimer {
+
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         /*ScheduledExecutorService pool = Executors.newScheduledThreadPool(1);
         pool.schedule(() -> {

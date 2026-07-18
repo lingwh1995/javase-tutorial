@@ -1,13 +1,14 @@
 package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadlocal;
 
 /**
+ * ThreadLocal 简单测试
+ *
  * @author lingwh
- * @desc ThreadLocal 简单测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 16:29
  */
 public class ThreadLocalSimpleTest {
 
-    private static ThreadLocal<String> threadLocal = new ThreadLocal<String> (){
+    private static ThreadLocal<String> threadLocal = new ThreadLocal<String>() {
         @Override
         protected String initialValue() {
             return "Alex";

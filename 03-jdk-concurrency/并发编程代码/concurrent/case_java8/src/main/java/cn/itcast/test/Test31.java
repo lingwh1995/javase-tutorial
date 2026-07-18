@@ -5,9 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.locks.LockSupport;
 
 /**
+ * ParkUnpark顺序打印测试
+ *
  * @author lingwh
- * @desc ParkUnpark顺序打印测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test31")
 public class Test31 {
@@ -35,6 +36,7 @@ public class Test31 {
 }
 
 class ParkUnpark {
+
     public void print(String str, Thread next) {
         for (int i = 0; i < loopNumber; i++) {
             LockSupport.park();

@@ -1,14 +1,16 @@
 package org.bluebridge.tcpip.v2;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.*;
 import java.net.*;
 import java.util.concurrent.*;
-import lombok.extern.slf4j.Slf4j;
 
 /**
+ * TCP状态机模拟
+ *
  * @author lingwh
- * @desc TCP状态机模拟
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j
 public class TCPStateMachineSimulation {
@@ -78,9 +80,9 @@ public class TCPStateMachineSimulation {
             public void run() {
                 try {
                     BufferedReader in = new BufferedReader(
-                        new InputStreamReader(clientSocket.getInputStream()));
+                            new InputStreamReader(clientSocket.getInputStream()));
                     PrintWriter out = new PrintWriter(
-                        clientSocket.getOutputStream(), true);
+                            clientSocket.getOutputStream(), true);
 
                     String inputLine;
                     while ((inputLine = in.readLine()) != null) {

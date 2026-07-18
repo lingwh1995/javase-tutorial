@@ -3,12 +3,14 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 两阶段终止Balking模式测试
+ *
  * @author lingwh
- * @desc 两阶段终止Balking模式测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TwoPhaseTermination")
 public class Test13 {
+
     public static void main(String[] args) throws InterruptedException {
         TwoPhaseTermination tpt = new TwoPhaseTermination();
         tpt.start();
@@ -23,6 +25,7 @@ public class Test13 {
 
 @Slf4j(topic = "c.TwoPhaseTermination")
 class TwoPhaseTermination {
+
     // 监控线程
     private Thread monitorThread;
     // 停止标记

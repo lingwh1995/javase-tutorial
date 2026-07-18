@@ -8,12 +8,14 @@ import java.util.Date;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
+ * ABA问题测试
+ *
  * @author lingwh
- * @desc ABA问题测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test37")
 public class Test37 {
+
     public static void main(String[] args) throws ParseException, InterruptedException {
         Date a = getDate("1999-10-1");
         AtomicReference<Date> ref = new AtomicReference<>(a);

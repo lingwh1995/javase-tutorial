@@ -4,7 +4,14 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+/**
+ * 教师数据访问代理对象
+ *
+ * @author lingwh
+ * @date 2026/7/13 19:02
+ */
 public class TeacherDaoProxy implements InvocationHandler {
+
     private Object target;
 
     public TeacherDaoProxy(Object target) {

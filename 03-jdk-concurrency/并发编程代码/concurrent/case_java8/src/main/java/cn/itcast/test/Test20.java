@@ -8,12 +8,14 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * 保护对象邮递测试
+ *
  * @author lingwh
- * @desc 保护对象邮递测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test20")
 public class Test20 {
+
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 3; i++) {
             new People().start();
@@ -27,6 +29,7 @@ public class Test20 {
 
 @Slf4j(topic = "c.People")
 class People extends Thread{
+
     @Override
     public void run() {
         // 收信
@@ -39,6 +42,7 @@ class People extends Thread{
 
 @Slf4j(topic = "c.Postman")
 class Postman extends Thread {
+
     private int id;
     private String mail;
 
@@ -56,6 +60,7 @@ class Postman extends Thread {
 }
 
 class Mailboxes {
+
     private static Map<Integer, GuardedObject> boxes = new Hashtable<>();
 
     private static int id = 1;

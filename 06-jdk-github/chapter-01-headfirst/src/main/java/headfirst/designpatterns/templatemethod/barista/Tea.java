@@ -1,11 +1,13 @@
 package headfirst.designpatterns.templatemethod.barista;
 
 /**
+ * 茶
+ *
  * @author lingwh
- * @desc 茶
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Tea extends CaffeineBeverage {
+
     public void brew() {
         System.out.println("Steeping the tea");
     }

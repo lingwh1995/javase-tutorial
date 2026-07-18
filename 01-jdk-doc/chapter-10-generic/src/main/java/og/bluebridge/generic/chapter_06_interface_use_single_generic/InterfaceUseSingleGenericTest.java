@@ -1,4 +1,4 @@
-package og.bluebridge.generic.chapter_04_interface_use_single_generic;
+package og.bluebridge.generic.chapter_06_interface_use_single_generic;
 
 import org.junit.Test;
 
@@ -15,19 +15,19 @@ public class InterfaceUseSingleGenericTest {
      */
     @Test
     public void testUseSingleGenericPassThrough() {
-        // 创建一个泛型为 Integer 的Point对象
+        // 创建一个 Integer 类型 的 Point 对象
         PointImplPassThrough<Integer> integerPoint = new PointImplPassThrough<>();
         integerPoint.setX(10);
         integerPoint.setY(10);
         System.out.println(integerPoint);
 
-        // 创建一个泛型为 Float 的Point对象
+        // 创建一个 Float 类型 的 Point 对象
         PointImplPassThrough<Float> floatPoint = new PointImplPassThrough<>();
         floatPoint.setX(20f);
         floatPoint.setY(20f);
         System.out.println(floatPoint);
 
-        // 创建一个泛型为 Object 的Point对象
+        // 创建一个 Object 类型 的 Point 对象
         PointImplPassThrough<Object> objectPoint = new PointImplPassThrough<>();
         objectPoint.setX(30);
         objectPoint.setY("30");

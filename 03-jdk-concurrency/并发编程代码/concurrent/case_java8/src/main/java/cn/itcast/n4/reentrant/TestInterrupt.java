@@ -7,12 +7,14 @@ import java.util.concurrent.locks.ReentrantLock;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * 可重入锁打断测试
+ *
  * @author lingwh
- * @desc 可重入锁打断测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestInterrupt")
 public class TestInterrupt {
+
     public static void main(String[] args) {
         test2();
     }

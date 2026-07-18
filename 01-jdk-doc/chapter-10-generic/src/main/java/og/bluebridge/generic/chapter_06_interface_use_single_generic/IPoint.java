@@ -1,4 +1,4 @@
-package og.bluebridge.generic.chapter_04_interface_use_single_generic;
+package og.bluebridge.generic.chapter_06_interface_use_single_generic;
 
 /**
  * Point接口

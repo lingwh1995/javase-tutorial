@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 模拟数据库
+ *
  * @author lingwh
- * @desc 模拟数据库
  * @date 2019/8/6 15:23
  */
 public class TempDB {
+
     private TempDB() {}
 
     /**

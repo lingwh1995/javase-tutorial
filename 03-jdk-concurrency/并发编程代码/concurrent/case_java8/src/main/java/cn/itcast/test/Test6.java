@@ -3,9 +3,10 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 线程睡眠状态测试
+ *
  * @author lingwh
- * @desc 线程睡眠状态测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test6")
 public class Test6 {

@@ -1,4 +1,4 @@
-package og.bluebridge.generic.chapter_06_generic_method;
+package og.bluebridge.generic.chapter_08_generic_method;
 
 /**
  * 泛型方法语法测试

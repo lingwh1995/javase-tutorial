@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * wait和notify测试
+ *
  * @author lingwh
- * @desc wait和notify测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestWaitNotify")
 public class TestWaitNotify {
+
     final static Object obj = new Object();
 
     public static void main(String[] args) {

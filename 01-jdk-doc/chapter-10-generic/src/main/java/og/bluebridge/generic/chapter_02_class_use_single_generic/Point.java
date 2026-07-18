@@ -12,12 +12,12 @@ import lombok.Data;
 public class Point<T> {
 
     /**
-     * 表示X坐标
+     * 表示 X 坐标
      */
     private T x;
 
     /**
-     * 表示Y坐标
+     * 表示 Y 坐标
      */
     private T y;
 }

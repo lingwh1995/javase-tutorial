@@ -2,9 +2,10 @@ package cn.itcast.n4;
 
 import java.io.IOException;
 /**
+ * PrintConcurrentLocks
+ *
  * @author lingwh
- * @desc PrintConcurrentLocks
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class Test {
 

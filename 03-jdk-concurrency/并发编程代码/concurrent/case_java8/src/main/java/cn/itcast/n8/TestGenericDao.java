@@ -4,11 +4,13 @@ import java.util.*;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
+ * 通用DAO缓存测试
+ *
  * @author lingwh
- * @desc 通用DAO缓存测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestGenericDao {
+
     public static void main(String[] args) {
         GenericDao dao = new GenericDaoCached();
         System.out.println("------------> 查询");

@@ -7,12 +7,14 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
 
 /**
+ * 日期格式化线程安全测试
+ *
  * @author lingwh
- * @desc 日期格式化线程安全测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test1")
 public class Test1 {
+
     public static void main(String[] args) {
         DateTimeFormatter stf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         for (int i = 0; i < 10; i++) {

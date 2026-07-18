@@ -5,19 +5,23 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 自定义线程池
+ *
  * @author lingwh
- * @desc 自定义线程池
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadPool {
+
     // 阻塞队列
     BlockingQueue<Runnable> taskQueue;
     // 线程集合
     Set<Worker> workers = new HashSet<>();
     // 拒绝策略
     private RejectPolicy<Runnable> rejectPolicy;
+
     // 构造方法
-    public ThreadPool(int coreSize, long timeout, TimeUnit timeUnit, int queueCapacity, RejectPolicy<Runnable> rejectPolicy){
+    public ThreadPool(int coreSize, long timeout, TimeUnit timeUnit, int queueCapacity,
+            RejectPolicy<Runnable> rejectPolicy) {
         this.coreSize = coreSize;
         this.timeout = timeout;
         this.timeUnit = timeUnit;
@@ -39,7 +43,7 @@ public class ThreadPool {
         // 注意workers类不是线程安全的， 需要加锁
         synchronized (workers) {
             if (workers.size() >= coreSize) {
-//                taskQue.put(task);
+                // taskQue.put(task);
                 // 死等
                 // 带超时等待
                 // 让调用者放弃执行任务

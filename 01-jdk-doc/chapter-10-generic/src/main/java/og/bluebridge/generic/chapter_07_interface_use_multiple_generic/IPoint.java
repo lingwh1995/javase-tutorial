@@ -1,4 +1,4 @@
-package og.bluebridge.generic.chapter_05_interface_use_multiple_generic;
+package og.bluebridge.generic.chapter_07_interface_use_multiple_generic;
 
 /**
  * 多个泛型

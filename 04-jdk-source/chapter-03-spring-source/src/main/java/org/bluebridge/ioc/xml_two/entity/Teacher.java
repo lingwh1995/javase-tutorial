@@ -1,11 +1,13 @@
 package org.bluebridge.ioc.xml_two.entity;
 
 /**
+ * 老师
+ *
  * @author lingwh
- * @desc 老师
- * @date 2019/3/15 00:00
+ * @date 2019/3/15 19:02
  */
 public class Teacher {
+
     private Student student;
 
     public Student getStudent() {
@@ -20,5 +22,4 @@ public class Teacher {
     public String toString() {
         return "Teacher [student=" + student + "]";
     }
-
 }

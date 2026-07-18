@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * wait/notify正确姿势测试一
+ *
  * @author lingwh
- * @desc wait/notify正确姿势测试一
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestCorrectPosture")
 public class TestCorrectPostureStep1 {
+
     static final Object room = new Object();
     static boolean hasCigarette = false; // 有没有烟
     static boolean hasTakeout = false;

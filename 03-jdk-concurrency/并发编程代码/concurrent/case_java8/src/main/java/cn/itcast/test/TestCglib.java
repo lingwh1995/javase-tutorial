@@ -9,11 +9,13 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
+ * Cglib代理测试
+ *
  * @author lingwh
- * @desc Cglib代理测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestCglib {
+
     public static void main(String[] args) throws IOException {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(MyService.class);
@@ -47,6 +49,7 @@ public class TestCglib {
 }
 
 class MyService {
+
     public void save() {
         System.out.println("save...");
     }

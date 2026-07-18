@@ -1,6 +1,5 @@
 package cn.itcast.pattern;
 
-
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -8,12 +7,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * 生产者消费者模式测试
+ *
  * @author lingwh
- * @desc 生产者消费者模式测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestProducerConsumer")
 public class TestProducerConsumer {
+
     public static void main(String[] args) {
         MessageQueue messageQueue = new MessageQueue(2);
         for (int i = 0; i < 4; i++) {
@@ -42,6 +43,7 @@ public class TestProducerConsumer {
 }
 
 class Message {
+
     private int id;
     private Object message;
 
@@ -61,6 +63,7 @@ class Message {
 
 @Slf4j(topic = "c.MessageQueue")
 class MessageQueue {
+
     private LinkedList<Message> queue;
     private int capacity;
 

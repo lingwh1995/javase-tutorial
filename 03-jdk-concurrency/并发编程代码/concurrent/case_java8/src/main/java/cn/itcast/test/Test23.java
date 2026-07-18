@@ -7,12 +7,15 @@ import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 哲学家就餐问题
+ *
  * @author lingwh
- * @desc 哲学家就餐问题
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test23")
-public class Test23 {public static void main(String[] args) {
+public class Test23 {
+
+    public static void main(String[] args) {
     Chopstick c1 = new Chopstick("1");
     Chopstick c2 = new Chopstick("2");
     Chopstick c3 = new Chopstick("3");
@@ -28,6 +31,7 @@ public class Test23 {public static void main(String[] args) {
 
 @Slf4j(topic = "c.Philosopher")
 class Philosopher extends Thread {
+
     Chopstick left;
     Chopstick right;
 
@@ -66,6 +70,7 @@ class Philosopher extends Thread {
 }
 
 class Chopstick extends ReentrantLock {
+
     String name;
 
     public Chopstick(String name) {

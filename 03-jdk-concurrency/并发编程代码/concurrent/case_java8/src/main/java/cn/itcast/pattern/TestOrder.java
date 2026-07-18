@@ -6,9 +6,10 @@ import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 同步等待通知打印
+ *
  * @author lingwh
- * @desc 同步等待通知打印
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 class SyncWaitNotify {
 
@@ -39,6 +40,7 @@ class SyncWaitNotify {
 }
 
 class SyncLock extends ReentrantLock {
+
     Condition waitSet = this.newCondition();
     private int flag;
     private int loopNumber;

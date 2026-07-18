@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 /**
  *
  * 获取线程打断状态方式一
- *     boolean isInterrupted()
+ * boolean isInterrupted()
  *
  * 线程打断
  * 1. interrupt()
@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  *    假设你在编写一个长时间运行的任务，你希望在特定条件下中断该任务。你可以在任务的关键部分检查中断标志，如果检测到中断，则优雅地停止任务并释放资源。
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadInterruptTest2 {
 
@@ -44,11 +44,11 @@ public class ThreadInterruptTest2 {
                 if(interrupted) {
                     System.out.println("Thread " + Thread.currentThread().getName() + " is interrupted, stop running...");
                     break;
-                }else {
+                } else {
                     System.out.println("Thread " + Thread.currentThread().getName() + " is running...");
                 }
             }
-        },"t1");
+        }, "t1");
         t.start();
 
         System.out.println("打断标记：" + t.isInterrupted());
@@ -69,7 +69,7 @@ public class ThreadInterruptTest2 {
                 TimeUnit.MILLISECONDS.sleep(2000);
                 System.out.println("sleep执行完成(打印此代码说明没有执行打断操作).....");
             } catch (InterruptedException e) {
-                //收到打断信号后，使用 抛出异常方式 直接中断当前线程运行
+                // 收到打断信号后，使用 抛出异常方式 直接中断当前线程运行
                 throw new RuntimeException(e);
             }
         });
@@ -96,7 +96,7 @@ public class ThreadInterruptTest2 {
                     lock.wait(2000);
                     System.out.println("wait执行完成(打印此代码说明没有执行打断操作).....");
                 } catch (InterruptedException e) {
-                    //收到打断信号后，使用 抛出异常方式 直接中断当前线程运行
+                    // 收到打断信号后，使用 抛出异常方式 直接中断当前线程运行
                     throw new RuntimeException(e);
                 }
             }

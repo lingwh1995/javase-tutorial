@@ -2,20 +2,22 @@ package cn.itcast.pattern;
 
 import lombok.extern.slf4j.Slf4j;
 
+import static cn.itcast.pattern.Downloader.download;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static cn.itcast.pattern.Downloader.download;
-
 /**
+ * 保护对象V3测试
+ *
  * @author lingwh
- * @desc 保护对象V3测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestGuardedObjectV3")
 public class TestGuardedObjectV3 {
+
     public static void main(String[] args) {
         for (int i = 0; i < 3; i++) {
             GuardedObjectV3 v3 = Fetures.createFeture();
@@ -40,6 +42,7 @@ public class TestGuardedObjectV3 {
 }
 
 class Fetures {
+
     private static final ConcurrentHashMap<Integer, GuardedObjectV3> FETURES = new ConcurrentHashMap<>();
     private static final AtomicInteger ID_GENERATOR = new AtomicInteger();
 

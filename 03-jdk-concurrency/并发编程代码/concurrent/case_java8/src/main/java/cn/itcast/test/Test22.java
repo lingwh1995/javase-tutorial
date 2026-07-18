@@ -2,19 +2,21 @@ package cn.itcast.test;
 
 import lombok.extern.slf4j.Slf4j;
 
+import static cn.itcast.n2.util.Sleeper.sleep;
+
 import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static cn.itcast.n2.util.Sleeper.sleep;
-
 /**
+ * ReentrantLock超时测试
+ *
  * @author lingwh
- * @desc ReentrantLock超时测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test22")
 public class Test22 {
+
     private static ReentrantLock lock = new ReentrantLock();
     public static void main(String[] args) {
         Thread t1 = new Thread(() -> {

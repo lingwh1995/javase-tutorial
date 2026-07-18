@@ -2,14 +2,15 @@ package cn.itcast.test;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.concurrent.atomic.AtomicStampedReference;
-
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+import java.util.concurrent.atomic.AtomicStampedReference;
+
 /**
+ * AtomicStampedReference解决ABA问题测试
+ *
  * @author lingwh
- * @desc AtomicStampedReference解决ABA问题测试
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 @Slf4j(topic = "c.Test36")
 public class Test36 {

@@ -11,8 +11,8 @@ import lombok.Data;
 @Data
 public class ObjectPoint {
 
-    // 表示X坐标
+    // 表示 X 坐标
     private Object x;
-    // 表示Y坐标
+    // 表示 Y 坐标
     private Object y;
 }

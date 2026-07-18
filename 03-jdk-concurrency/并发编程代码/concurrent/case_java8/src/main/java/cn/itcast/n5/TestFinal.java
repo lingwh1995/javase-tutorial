@@ -1,11 +1,13 @@
 package cn.itcast.n5;
 
 /**
+ * final关键字测试
+ *
  * @author lingwh
- * @desc final关键字测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestFinal {
+
     static int A = 10;
     static int B = Short.MAX_VALUE+1;
 

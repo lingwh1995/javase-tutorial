@@ -3,12 +3,14 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 线程顺序执行测试
+ *
  * @author lingwh
- * @desc 线程顺序执行测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test25")
 public class Test25 {
+
     static final Object lock = new Object();
     // 表示 t2 是否运行过
     static boolean t2runned = false;

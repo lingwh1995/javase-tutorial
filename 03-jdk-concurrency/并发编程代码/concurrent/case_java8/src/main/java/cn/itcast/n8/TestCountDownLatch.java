@@ -12,12 +12,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * CountDownLatch测试
+ *
  * @author lingwh
- * @desc CountDownLatch测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestCountDownLatch")
 public class TestCountDownLatch {
+
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         test3();
     }

@@ -8,11 +8,13 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * Balking模式测试
+ *
  * @author lingwh
- * @desc Balking模式测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestBalking {
+
     private static final String FILE_NAME = "d:\\mylog.log";
     private static final ConcurrentHashMap<String, String> INFO = new ConcurrentHashMap<>();
     public static void main(String[] args) {

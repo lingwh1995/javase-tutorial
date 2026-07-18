@@ -5,11 +5,13 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 自定义线程池
+ *
  * @author lingwh
- * @desc 自定义线程池
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadPool {
+
     // 阻塞队列
     private BlockingQueue<Runnable> taskQueue;
     // 线程集合

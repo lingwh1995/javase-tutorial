@@ -11,12 +11,14 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 自定义线程池测试
+ *
  * @author lingwh
- * @desc 自定义线程池测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestPool")
 public class TestPool {
+
     public static void main(String[] args) {
         ThreadPool threadPool = new ThreadPool(1,
                 1000, TimeUnit.MILLISECONDS, 1, (queue, task)->{

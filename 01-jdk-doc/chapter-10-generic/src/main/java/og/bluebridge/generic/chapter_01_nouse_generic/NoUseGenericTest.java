@@ -12,19 +12,19 @@ public class NoUseGenericTest {
 
     @Test
     public void testNoUseGeneric() {
-        // 创建一个IntegerPoint对象，x和y属性的值是 Integer类型
+        // 创建一个 IntegerPoint 对象， x 和 y 属性的值是 Integer 类型
         IntegerPoint integerPoint = new IntegerPoint();
         integerPoint.setX(10);
         integerPoint.setY(10);
         System.out.println(integerPoint);
 
-        // 创建一个FloatPoint对象，x和y属性的值是 Float类型
+        // 创建一个 FloatPoint 对象， x 和 y 属性的值是 Float 类型
         FloatPoint floatPoint = new FloatPoint();
         floatPoint.setX(20f);
         floatPoint.setY(20f);
         System.out.println(floatPoint);
 
-        // 创建一个ObjectPoint对象，x和y属性的值是 Object类型
+        // 创建一个 ObjectPoint 对象， x 和 y 属性的值是 Object 类型
         ObjectPoint objectPoint = new ObjectPoint();
         objectPoint.setX(30);
         objectPoint.setY("30");

@@ -1,11 +1,13 @@
 package tree.threadbinarytree.threadbinarytree_a;
 
 /**
+ * 线索二叉树测试
+ *
  * @author lingwh
- * @desc 线索二叉树测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadBinaryTreeTest {
+
     public static void main(String[] args) {
         Node root = new Node(1, "tom");
         Node node2 = new Node(3, "jack");

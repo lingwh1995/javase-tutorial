@@ -1,4 +1,5 @@
 package cn.itcast.threadpool;
+
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayDeque;
@@ -9,16 +10,19 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 拒绝策略接口
+ *
  * @author lingwh
- * @desc 拒绝策略接口
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @FunctionalInterface
 interface RejectPolicy<T> {
+
     void reject(BlockingQueue<T> queue, T task);
 }
 @Slf4j(topic = "c.ThreadPool")
 class ThreadPool {
+
     // 任务队列
     private BlockingQueue<Runnable> taskQueue;
 
@@ -60,6 +64,7 @@ class ThreadPool {
     }
 
     class Worker extends Thread{
+
         private Runnable task;
 
         public Worker(Runnable task) {
@@ -91,6 +96,7 @@ class ThreadPool {
 }
 @Slf4j(topic = "c.BlockingQueue")
 class BlockingQueue<T> {
+
     // 1. 任务队列
     private Deque<T> queue = new ArrayDeque<>();
 

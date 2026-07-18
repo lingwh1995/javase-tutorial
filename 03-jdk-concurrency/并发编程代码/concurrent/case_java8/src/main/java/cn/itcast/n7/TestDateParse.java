@@ -7,12 +7,14 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 /**
+ * 日期解析测试
+ *
  * @author lingwh
- * @desc 日期解析测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestDateParse")
 public class TestDateParse {
+
     public static void main(String[] args) {
         test3();
     }

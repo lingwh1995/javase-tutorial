@@ -16,11 +16,13 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
+ * 单词计数测试
+ *
  * @author lingwh
- * @desc 单词计数测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestWordCount {
+
     public static void main(String[] args) {
         demo(
                 // 创建 map 集合

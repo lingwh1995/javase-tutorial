@@ -1,9 +1,10 @@
 package structure.proxy.dynamicproxy.dynamicproxy_d;
 
 /**
+ * 教师Dao
+ *
  * @author lingwh
- * @desc 教师Dao
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class TeacherDao {
 

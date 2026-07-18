@@ -3,11 +3,13 @@ package cn.itcast.n4;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * 线程饥饿测试
+ *
  * @author lingwh
- * @desc 线程饥饿测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestThreadHungry {
+
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 2; i++) {
             Thread thread = new Thread(() -> {

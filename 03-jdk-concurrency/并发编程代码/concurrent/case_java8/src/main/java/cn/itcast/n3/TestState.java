@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.IOException;
 
 /**
+ * 线程状态测试
+ *
  * @author lingwh
- * @desc 线程状态测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestState")
 public class TestState {
+
     public static void main(String[] args) throws IOException {
         Thread t1 = new Thread("t1") {
             @Override

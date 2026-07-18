@@ -1,11 +1,13 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 厚皮面团
+ *
  * @author lingwh
- * @desc 厚皮面团
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThickCrustDough implements Dough {
+
     public String toString() {
         return "ThickCrust style extra thick crust dough";
     }

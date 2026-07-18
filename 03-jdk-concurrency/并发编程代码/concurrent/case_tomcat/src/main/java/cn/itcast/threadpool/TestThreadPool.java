@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 线程池测试
+ *
  * @author lingwh
- * @desc 线程池测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestThreadPool")
 public class TestThreadPool {
+
     public static void main(String[] args) throws InterruptedException {
         ThreadPool threadPool = new ThreadPool(1, 1000, TimeUnit.MILLISECONDS, 1,
                 (queue, task) -> {

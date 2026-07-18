@@ -3,11 +3,13 @@ package cn.itcast.n4;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 线程安全计数器类
+ *
  * @author lingwh
- * @desc 线程安全计数器类
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 class Room {
+
     int value = 0;
 
     public void increment() {

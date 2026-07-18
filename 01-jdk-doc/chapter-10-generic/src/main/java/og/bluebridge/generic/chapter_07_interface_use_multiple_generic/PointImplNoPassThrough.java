@@ -1,4 +1,4 @@
-package og.bluebridge.generic.chapter_05_interface_use_multiple_generic;
+package og.bluebridge.generic.chapter_07_interface_use_multiple_generic;
 
 import lombok.Data;
 
@@ -12,12 +12,12 @@ import lombok.Data;
 public class PointImplNoPassThrough implements IPoint<Integer, String> {
 
     /**
-     * 表示X坐标
+     * 表示 X 坐标
      */
     private Integer x;
 
     /**
-     * 表示Y坐标
+     * 表示 Y 坐标
      */
     private Integer y;
 

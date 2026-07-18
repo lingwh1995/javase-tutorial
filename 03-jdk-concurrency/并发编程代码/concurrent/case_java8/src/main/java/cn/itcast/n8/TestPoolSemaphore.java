@@ -11,11 +11,13 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
+ * 信号量连接池测试
+ *
  * @author lingwh
- * @desc 信号量连接池测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestPoolSemaphore {
+
     public static void main(String[] args) {
         Pool pool = new Pool(2);
         for (int i = 0; i < 5; i++) {

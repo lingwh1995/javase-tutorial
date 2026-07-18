@@ -6,9 +6,10 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
 /**
+ * ForkJoin测试2
+ *
  * @author lingwh
- * @desc ForkJoin测试2
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestForkJoin2")
 public class TestForkJoin2 {

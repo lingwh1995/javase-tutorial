@@ -7,9 +7,10 @@ import java.util.Vector;
 import java.util.concurrent.locks.LockSupport;
 
 /**
+ * 偏向锁测试
+ *
  * @author lingwh
- * @desc 偏向锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestBiased")
 public class TestBiased {

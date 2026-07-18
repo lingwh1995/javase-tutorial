@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_consumer_b;
 
 /**
+ * 桌子(蛋糕缓冲区)
+ *
  * @author lingwh
- * @desc 桌子(蛋糕缓冲区)
  * @date 2019/10/17 11:19
  */
 public class Table {
+
     private final String[] buffer;
 
     /**

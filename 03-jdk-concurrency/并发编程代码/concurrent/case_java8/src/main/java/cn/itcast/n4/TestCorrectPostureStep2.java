@@ -4,8 +4,15 @@ import lombok.extern.slf4j.Slf4j;
 
 import static cn.itcast.n2.util.Sleeper.sleep;
 
+/**
+ * 正确姿势步骤2
+ *
+ * @author lingwh
+ * @date 2026/7/13 19:02
+ */
 @Slf4j(topic = "c.TestCorrectPosture")
 public class TestCorrectPostureStep2 {
+
     static final Object room = new Object();
     static boolean hasCigarette = false;
     static boolean hasTakeout = false;

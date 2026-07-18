@@ -1,30 +1,32 @@
 package org.bluebridge.thread.threadlocal;
 
 /**
+ * ThreadLocal 测试
+ *
  * @author lingwh
- * @desc ThreadLocal 测试
  * @date 2019/7/25 9:37
  */
 public class ThreadLocalTest {
+
     private static ThreadLocal<String> localThreadVariable = new ThreadLocal<String>();
 
     public static void main(String[] args) {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                //设置线程名称
+                // 设置线程名称
                 Thread.currentThread().setName("thread-01");
                 localThreadVariable.set("我是线程1中的变量");
-                System.out.println(Thread.currentThread().getName()+":"+localThreadVariable.get());
+                System.out.println(Thread.currentThread().getName() + ":" + localThreadVariable.get());
             }
         });
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                //设置线程名称
+                // 设置线程名称
                 Thread.currentThread().setName("thread-02");
                 localThreadVariable.set("我是线程2中的变量");
-                System.out.println(Thread.currentThread().getName()+":"+localThreadVariable.get());
+                System.out.println(Thread.currentThread().getName() + ":" + localThreadVariable.get());
             }
         });
 

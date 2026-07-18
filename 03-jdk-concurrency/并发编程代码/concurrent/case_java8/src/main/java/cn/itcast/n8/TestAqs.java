@@ -10,12 +10,14 @@ import java.util.concurrent.locks.Lock;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * 自定义AQS锁测试
+ *
  * @author lingwh
- * @desc 自定义AQS锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestAqs")
 public class TestAqs {
+
     public static void main(String[] args) {
         MyLock lock = new MyLock();
         new Thread(() -> {

@@ -6,11 +6,13 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 死锁测试v2
+ *
  * @author lingwh
- * @desc 死锁测试v2
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestDeadLock {
+
     public static void main(String[] args) {
         Chopstick c1 = new Chopstick("1");
         Chopstick c2 = new Chopstick("2");

@@ -6,11 +6,13 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * Condition顺序打印测试
+ *
  * @author lingwh
- * @desc Condition顺序打印测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class Test30 {
+
     public static void main(String[] args) throws InterruptedException {
         AwaitSignal awaitSignal = new AwaitSignal(5);
         Condition a = awaitSignal.newCondition();
@@ -39,6 +41,7 @@ public class Test30 {
 }
 
 class AwaitSignal extends ReentrantLock{
+
     private int loopNumber;
 
     public AwaitSignal(int loopNumber) {

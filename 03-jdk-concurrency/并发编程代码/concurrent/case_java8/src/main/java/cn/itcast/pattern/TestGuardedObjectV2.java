@@ -2,18 +2,20 @@ package cn.itcast.pattern;
 
 import lombok.extern.slf4j.Slf4j;
 
+import static cn.itcast.n2.util.Sleeper.sleep;
+
 import java.util.Arrays;
 import java.util.List;
 
-import static cn.itcast.n2.util.Sleeper.sleep;
-
 /**
+ * 保护对象V2测试
+ *
  * @author lingwh
- * @desc 保护对象V2测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestGuardedObjectV2")
 public class TestGuardedObjectV2 {
+
     public static void main(String[] args) {
         GuardedObjectV2 v2 = new GuardedObjectV2();
         new Thread(() -> {

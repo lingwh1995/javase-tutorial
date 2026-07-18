@@ -3,11 +3,13 @@ package org.bluebridge.thread_02_create.way_5;
 import java.util.concurrent.CompletableFuture;
 
 /**
+ * 使用java8提供的CompletableFuture创建线程
+ *
  * @author lingwh
- * @desc 使用java8提供的CompletableFuture创建线程
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadCreateTest {
+
     public static void main(String[] args) {
         // 传统方式实现 使用CompletableFuture创建线程
         CompletableFuture<Void> future1 = CompletableFuture.runAsync(new MyThread());

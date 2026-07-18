@@ -1,9 +1,10 @@
 package org.bluebridge.thread_02_create.way_1;
 
 /**
+ * 继承Thread类创建线程
+ *
  * @author lingwh
- * @desc 继承Thread类创建线程
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadCreateTest {
 

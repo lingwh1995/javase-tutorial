@@ -11,11 +11,13 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
+ * 自定义连接池测试
+ *
  * @author lingwh
- * @desc 自定义连接池测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class Test3 {
+
     public static void main(String[] args) {
         Pool pool = new Pool(2);
         for (int i = 0; i < 5; i++) {

@@ -5,12 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.locks.LockSupport;
 
 /**
+ * LockSupport测试
+ *
  * @author lingwh
- * @desc LockSupport测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test26")
 public class Test26 {
+
     public static void main(String[] args) {
 
         Thread t1 = new Thread(() -> {

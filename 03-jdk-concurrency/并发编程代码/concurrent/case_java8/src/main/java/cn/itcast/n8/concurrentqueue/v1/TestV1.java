@@ -6,9 +6,10 @@ import java.util.Queue;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
+ * 并发队列测试v1
+ *
  * @author lingwh
- * @desc 并发队列测试v1
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class TestV1 {
 

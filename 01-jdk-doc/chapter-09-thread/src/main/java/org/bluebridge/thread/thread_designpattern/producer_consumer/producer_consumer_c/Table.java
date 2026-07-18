@@ -3,8 +3,9 @@ package org.bluebridge.thread.thread_designpattern.producer_consumer.producer_co
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
+ * 桌子(基于ArrayBlockingQueue)
+ *
  * @author lingwh
- * @desc 桌子(基于ArrayBlockingQueue)
  * @date 2019/10/17 11:19
  */
 public class Table extends ArrayBlockingQueue<String> {

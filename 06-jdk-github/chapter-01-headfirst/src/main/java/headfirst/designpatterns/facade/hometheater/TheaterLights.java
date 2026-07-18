@@ -1,11 +1,13 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
+ * 影院灯光
+ *
  * @author lingwh
- * @desc 影院灯光
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class TheaterLights {
+
     String description;
 
     public TheaterLights(String description) {

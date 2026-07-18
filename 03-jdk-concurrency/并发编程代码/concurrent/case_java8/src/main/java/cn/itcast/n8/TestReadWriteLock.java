@@ -7,12 +7,14 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
+ * 读写锁测试
+ *
  * @author lingwh
- * @desc 读写锁测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.TestReadWriteLock")
 public class TestReadWriteLock {
+
     public static void main(String[] args) throws InterruptedException {
         DataContainer dataContainer = new DataContainer();
         new Thread(() -> {

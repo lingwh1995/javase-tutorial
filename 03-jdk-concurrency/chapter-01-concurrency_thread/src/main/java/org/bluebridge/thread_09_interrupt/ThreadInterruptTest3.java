@@ -4,10 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 获取线程打断状态方式二
- *     使用try...catch...捕获异常，如果捕获到了异常，则说明打断状态发生了改变(线程被打断了)
+ *
+ * 使用try...catch...捕获异常，如果捕获到了异常，则说明打断状态发生了改变(线程被打断了)
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ThreadInterruptTest3 {
 
@@ -31,12 +32,12 @@ public class ThreadInterruptTest3 {
                     TimeUnit.MILLISECONDS.sleep(2000);
                 } catch (InterruptedException e) {
                     System.out.println("已经收到线程打断信号.......");
-                    //收到打断信号后，使用 break; 直接中断当前线程运行
+                    // 收到打断信号后，使用 break; 直接中断当前线程运行
                     break;
                 }
                 System.out.println("Thread " + Thread.currentThread().getName() + " is running...");
             }
-        },"t1");
+        }, "t1");
         t.start();
 
         System.out.println("打断标记：" + t.isInterrupted());
@@ -56,18 +57,18 @@ public class ThreadInterruptTest3 {
     private static void testInterruptWaitThread() throws InterruptedException {
         Thread t = new Thread(() -> {
             while (true) {
-                synchronized (lock){
+                synchronized (lock) {
                     try {
                         lock.wait(2000);
                     } catch (InterruptedException e) {
                         System.out.println("已经收到线程打断信号.......");
-                        //收到打断信号后，使用 break; 直接中断当前线程运行
+                        // 收到打断信号后，使用 break; 直接中断当前线程运行
                         break;
                     }
                     System.out.println("Thread " + Thread.currentThread().getName() + " is running...");
                 }
             }
-        },"t1");
+        }, "t1");
         t.start();
 
         System.out.println("打断标记：" + t.isInterrupted());

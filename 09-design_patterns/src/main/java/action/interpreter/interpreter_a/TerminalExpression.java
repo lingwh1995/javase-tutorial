@@ -1,8 +1,9 @@
 package action.interpreter.interpreter_a;
 
 /**
+ * 终结符表达式
+ *
  * @author lingwh
- * @desc 终结符表达式
  * @date 2019/8/27 13:50
  */
 public class TerminalExpression extends AbstractExpression {

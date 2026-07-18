@@ -9,18 +9,21 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
+ * BigDecimal原子引用账户测试
+ *
  * @author lingwh
- * @desc BigDecimal原子引用账户测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 @Slf4j(topic = "c.Test35")
 public class Test35 {
+
     public static void main(String[] args) {
         DecimalAccount.demo(new DecimalAccountCas(new BigDecimal("10000")));
     }
 }
 
 class DecimalAccountCas implements DecimalAccount {
+
     private AtomicReference<BigDecimal> balance;
 
     public DecimalAccountCas(BigDecimal balance) {
@@ -46,6 +49,7 @@ class DecimalAccountCas implements DecimalAccount {
 }
 
 interface DecimalAccount {
+
     // 获取余额
     BigDecimal getBalance();
 

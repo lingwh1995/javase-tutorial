@@ -3,31 +3,33 @@ package org.bluebridge.thread.thread_designpattern.threadlocal_storage.threadloc
 import java.util.Random;
 
 /**
+ * ThreadLocal 复杂测试
+ *
  * @author lingwh
- * @desc ThreadLocal 复杂测试
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 16:29
  */
 public class ThreadLocalComplexTest {
+
     private static final ThreadLocal<String> thradlocal = new ThreadLocal<>();
     private static final Random random = new Random(System.currentTimeMillis());
 
     public static void main(String[] args) throws InterruptedException {
-        Thread t1 = new Thread(()->{
+        Thread t1 = new Thread(() -> {
             thradlocal.set("Thread->T1");
             try {
                 Thread.sleep(random.nextInt(1000));
-                System.out.println(Thread.currentThread().getName()+":"+thradlocal.get());
+                System.out.println(Thread.currentThread().getName() + ":" + thradlocal.get());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
         });
 
-        Thread t2 = new Thread(()->{
+        Thread t2 = new Thread(() -> {
             thradlocal.set("Thread->T2");
             try {
                 Thread.sleep(random.nextInt(1000));
-                System.out.println(Thread.currentThread().getName()+":"+thradlocal.get());
+                System.out.println(Thread.currentThread().getName() + ":" + thradlocal.get());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
