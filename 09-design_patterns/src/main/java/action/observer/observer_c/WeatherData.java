@@ -11,6 +11,7 @@ import java.util.List;
  * @date 2026/7/9 00:00
  */
 public class WeatherData implements Subject {
+
     // 温度
     private String temperature;
     // 气压

@@ -1,11 +1,13 @@
 package action.mediator.mediator_c;
 
 /**
+ * 显卡
+ *
  * @author lingwh
- * @desc 显卡
  * @date 2019/8/14 13:12
  */
 public class VideoCard extends Colleague {
+
     public VideoCard(Mediator mediator) {
         super(mediator);
     }

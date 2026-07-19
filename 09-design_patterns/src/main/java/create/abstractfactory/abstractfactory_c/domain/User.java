@@ -1,6 +1,7 @@
 package create.abstractfactory.abstractfactory_c.domain;
 
 public class User {
+
     private int uid;
     private String uname;
 

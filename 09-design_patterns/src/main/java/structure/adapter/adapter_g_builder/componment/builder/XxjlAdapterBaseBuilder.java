@@ -4,11 +4,13 @@ import structure.adapter.adapter_g_builder.componment.adapter.XxjlAdapter;
 import structure.adapter.adapter_g_builder.domain.Xxjl;
 
 /**
+ * XxjlAdapter抽象执行者
+ *
  * @author lingwh
- * @desc XxjlAdapter抽象执行者
  * @date 2026/7/9 00:00
  */
 public abstract class XxjlAdapterBaseBuilder {
+
     private XxjlAdapter xxjlAdapter = new XxjlAdapter();
 
     /**
@@ -35,9 +37,9 @@ public abstract class XxjlAdapterBaseBuilder {
     /**
      * 执行基础构建
      */
-    public void build(Xxjl xxjl,String phoneNumber,String email) {
+    public void build(Xxjl xxjl, String phoneNumber, String email) {
         buildXxjlOpenfireDao(xxjl)
-        .buildTztgDao(phoneNumber)
-        .buildTztgDao(email);
+                .buildTztgDao(phoneNumber)
+                .buildTztgDao(email);
     }
 }

@@ -3,9 +3,10 @@ package org.bluebridge.ioc.anno_one.entity;
 import org.bluebridge.ioc.anno_one.anno.Service;
 
 /**
+ * 用户服务
+ *
  * @author lingwh
- * @desc 用户服务
- * @date 2019/3/20 00:00
+ * @date 2019/3/20 19:02
  */
 
 @Service

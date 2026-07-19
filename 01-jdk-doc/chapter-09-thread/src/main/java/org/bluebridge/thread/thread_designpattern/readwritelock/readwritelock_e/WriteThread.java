@@ -3,11 +3,13 @@ package org.bluebridge.thread.thread_designpattern.readwritelock.readwritelock_e
 import java.util.Random;
 
 /**
+ * 写线程
+ *
  * @author lingwh
- * @desc 写线程
  * @date 2019/10/18 13:27
  */
 public class WriteThread extends Thread {
+
     private static final Random random = new Random();
     private final Data data;
     private final String filter;

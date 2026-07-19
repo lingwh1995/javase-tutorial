@@ -1,8 +1,9 @@
 package action.observer.observer_g;
 
 /**
+ * 具体的观察者实现
+ *
  * @author lingwh
- * @desc 具体的观察者实现
  * @date 2019/8/19 16:13
  */
 public class Watcher implements WatcherObserver {

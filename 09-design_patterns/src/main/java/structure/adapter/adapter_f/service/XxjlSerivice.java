@@ -4,7 +4,14 @@ import structure.adapter.adapter_f.adapter.XxjlAdapter;
 import structure.adapter.adapter_f.dao.XxjlDao;
 import structure.adapter.adapter_f.domain.Xxjl;
 
+/**
+ * 信息交流服务实现
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
+ */
 public class XxjlSerivice implements IXxjlService {
+
     private XxjlDao xxjlDao = new XxjlDao();
     private XxjlAdapter xxjlAdapter = new XxjlAdapter();
 

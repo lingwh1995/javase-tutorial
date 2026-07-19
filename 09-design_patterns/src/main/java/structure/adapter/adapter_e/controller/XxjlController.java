@@ -12,6 +12,7 @@ import structure.adapter.adapter_e.service.XxjlSerivice;
  * @date 2026/7/9 00:00
  */
 public class XxjlController {
+
     // 多态
     private IXxjlService xxjlService = new XxjlSerivice();
     private IXxjlService xxjlAdapterService = new XxjlAdapterService();

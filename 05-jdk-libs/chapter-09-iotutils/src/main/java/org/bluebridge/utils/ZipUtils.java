@@ -6,11 +6,13 @@ import java.util.stream.IntStream;
 import java.util.zip.GZIPInputStream;
 
 /**
+ * 压缩解压工具类
+ *
  * @author lingwh
- * @desc 压缩解压工具类
  * @date 2026/7/9 00:00
  */
 public class ZipUtils {
+
     /**
      * GZip解压
      *

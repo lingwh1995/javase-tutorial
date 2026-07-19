@@ -1,10 +1,12 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 蔬菜接口
+ *
  * @author lingwh
- * @desc 蔬菜接口
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public interface Veggies {
+
     public String toString();
 }

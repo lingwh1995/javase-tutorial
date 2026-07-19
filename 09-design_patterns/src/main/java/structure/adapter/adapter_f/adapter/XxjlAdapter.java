@@ -6,11 +6,13 @@ import structure.adapter.adapter_f.service.IGatzlService;
 import structure.adapter.adapter_f.service.ITztgService;
 
 /**
+ * 信息交流适配器
+ *
  * @author lingwh
- * @desc 信息交流适配器
  * @date 2026/7/9 00:00
  */
 public class XxjlAdapter extends AbstractXxjlAdapter {
+
     private GatzlDao gatzlDao = new GatzlDao();
     private TztgDao tztgDao = new TztgDao();
 

@@ -3,11 +3,13 @@ package headfirst.designpatterns.iterator.dinermergercafe;
 import java.util.Iterator;
 
 /**
+ * 女服务员
+ *
  * @author lingwh
- * @desc 女服务员
  * @date 2026/7/9 00:00
  */
 public class Waitress {
+
     Menu pancakeHouseMenu;
     Menu dinerMenu;
     Menu cafeMenu;

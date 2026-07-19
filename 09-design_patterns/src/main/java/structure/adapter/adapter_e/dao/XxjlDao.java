@@ -3,11 +3,13 @@ package structure.adapter.adapter_e.dao;
 import structure.adapter.adapter_e.domain.Xxjl;
 
 /**
+ * 信息交流Dao
+ *
  * @author lingwh
- * @desc 信息交流Dao
  * @date 2026/7/9 00:00
  */
 public class XxjlDao {
+
     public void save(Xxjl xxjl) {
         System.out.println("保存信息交流......");
     }

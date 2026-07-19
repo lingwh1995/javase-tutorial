@@ -1,13 +1,15 @@
 package org.bluebridge.chapter_03_list;
 
-import java.util.Enumeration;
-import java.util.Vector;
 import org.junit.Test;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 /**
+ * Vector是ArrayList的线程安全版本，Vector的底层实现是数组，所以Vector的增删改查性能比ArrayList差
+ *
  * @author lingwh
- * @desc Vector是ArrayList的线程安全版本，Vector的底层实现是数组，所以Vector的增删改查性能比ArrayList差
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 18:39
  */
 public class VectorTest {
 

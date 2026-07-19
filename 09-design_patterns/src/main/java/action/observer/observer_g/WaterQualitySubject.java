@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 定义水质监测的目标对象
+ *
  * @author lingwh
- * @desc 定义水质监测的目标对象
  * @date 2019/8/19 16:15
  */
 public abstract class WaterQualitySubject {

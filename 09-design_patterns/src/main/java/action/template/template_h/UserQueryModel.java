@@ -1,8 +1,9 @@
 package action.template.template_h;
 
 /**
+ * 用户查询数据模型
+ *
  * @author lingwh
- * @desc 用户查询数据模型
  * @date 2019/8/26 18:26
  */
 public class UserQueryModel extends UserModel {

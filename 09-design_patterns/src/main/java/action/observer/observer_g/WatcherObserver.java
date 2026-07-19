@@ -1,8 +1,9 @@
 package action.observer.observer_g;
 
 /**
+ * 水质观察者接口定义
+ *
  * @author lingwh
- * @desc 水质观察者接口定义
  * @date 2019/8/19 16:08
  */
 public interface WatcherObserver {

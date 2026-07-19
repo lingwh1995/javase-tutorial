@@ -3,12 +3,14 @@ package org.bluebridge.ioc.anno_one.entity;
 import org.bluebridge.ioc.anno_one.anno.Controller;
 
 /**
+ * 用户控制器
+ *
  * @author lingwh
- * @desc 用户控制器
- * @date 2019/3/20 00:00
+ * @date 2026/4/21 19:02
  */
 @Controller
 public class UserController {
+
     private IUserService userService;
 
     public void say() {

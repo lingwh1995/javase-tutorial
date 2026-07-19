@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 投票管理者
+ *
  * @author lingwh
  * @date 2019/9/23 18:04
  */

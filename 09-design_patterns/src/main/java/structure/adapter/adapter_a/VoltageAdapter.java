@@ -1,11 +1,13 @@
 package structure.adapter.adapter_a;
 
 /**
+ * 电源适配器
+ *
  * @author lingwh
- * @desc 电源适配器
  * @date 2026/7/9 00:00
  */
 public class VoltageAdapter extends Voltage220V implements IVoltage5V {
+
     @Override
     public int output5V() {
         System.out.println("类适配器......");

@@ -11,6 +11,7 @@ package action.observer.observer_b;
  * @date 2026/7/9 00:00
  */
 public class WeatherData {
+
     // 温度
     private String temperature;
     // 气压

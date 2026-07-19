@@ -5,8 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * User实体
+ *
  * @author lingwh
- * @desc User实体
  * @date 2019/6/20 14:30
  */
 @Data

@@ -1,11 +1,13 @@
 package headfirst.designpatterns.proxy.gumball;
 
 /**
+ * 中奖状态
+ *
  * @author lingwh
- * @desc 中奖状态
  * @date 2026/7/9 00:00
  */
 public class WinnerState implements State {
+
     private static final long serialVersionUID = 2L;
     transient GumballMachine gumballMachine;
 

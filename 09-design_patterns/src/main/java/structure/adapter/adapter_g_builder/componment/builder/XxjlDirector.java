@@ -4,11 +4,13 @@ import structure.adapter.adapter_g_builder.componment.adapter.XxjlAdapter;
 import structure.adapter.adapter_g_builder.domain.Xxjl;
 
 /**
+ * Xxjl指挥者
+ *
  * @author lingwh
- * @desc Xxjl指挥者
  * @date 2026/7/9 00:00
  */
 public class XxjlDirector {
+
     private XxjlAdapterBuilder xxjlAdapter;
     private XxjlAdapterBaseBuilder xxjlAdapterBaseConcerteBuilder = new XxjlAdapterBaseConcerteBuilder();
 

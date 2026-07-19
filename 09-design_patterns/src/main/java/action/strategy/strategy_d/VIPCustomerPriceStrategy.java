@@ -1,11 +1,13 @@
 package action.strategy.strategy_d;
 
 /**
+ * VIP客户:打九折
+ *
  * @author lingwh
- * @desc VIP客户:打九折
  * @date 2019/8/2 15:10
  */
 public class VIPCustomerPriceStrategy implements PriceStragegy {
+
     /**
      * 针对VIP客户的计算策略
      *

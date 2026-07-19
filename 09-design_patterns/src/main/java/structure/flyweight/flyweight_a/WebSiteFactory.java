@@ -4,8 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 网站工厂
+ *
  * @author lingwh
- * @desc 网站工厂
  * @date 2026/7/9 00:00
  */
 public class WebSiteFactory {

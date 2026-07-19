@@ -6,11 +6,13 @@ import structure.adapter.adapter_g_builder.componment.builder.XxjlDirector;
 import structure.adapter.adapter_g_builder.domain.Xxjl;
 
 /**
+ * 信息交流服务实现
+ *
  * @author lingwh
- * @desc 信息交流服务实现
  * @date 2026/7/9 00:00
  */
 public class XxjlSerivice implements IXxjlService {
+
     /**
      * 保存行为构建者
      */

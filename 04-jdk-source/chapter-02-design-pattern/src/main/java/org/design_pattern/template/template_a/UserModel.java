@@ -1,8 +1,9 @@
 package org.design_pattern.template.template_a;
 
 /**
+ * 用户数据模型
+ *
  * @author lingwh
- * @desc 用户数据模型
  * @date 2019/8/26 15:32
  */
 public class UserModel {

@@ -1,11 +1,13 @@
 package action.strategy.strategy_e.service;
 
 import action.strategy.strategy_e.dao.UserDao;
+
 import java.io.IOException;
 
 /**
+ * 用户服务实现
+ *
  * @author lingwh
- * @desc 用户服务实现
  * @date 2019/8/5 9:07
  */
 public class UserService implements IUserService {

@@ -1,8 +1,9 @@
 package structure.decorator.decorator_a;
 
 /**
+ * 具体装饰器/具体装饰角色
+ *
  * @author lingwh
- * @desc 具体装饰器/具体装饰角色
  * @date 2019/3/23 00:00
  */
 public class WarterCar extends SuperCar {

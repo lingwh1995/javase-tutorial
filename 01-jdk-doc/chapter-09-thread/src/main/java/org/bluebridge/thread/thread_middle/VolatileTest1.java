@@ -14,24 +14,25 @@ package org.bluebridge.thread.thread_middle;
  * @date 2026/7/9 00:00
  */
 public class VolatileTest1 {
+
     private volatile static int INIT_VALUE = 0;
     private final static int MAX_LIMIT = 5;
 
     public static void main(String[] args) {
-        new Thread(()->{
+        new Thread(() -> {
             int localValue = INIT_VALUE;
-            while (localValue < MAX_LIMIT){
-                if(localValue != INIT_VALUE){
-                    System.out.printf("The value updated to [%d]\n",INIT_VALUE);
+            while (localValue < MAX_LIMIT) {
+                if (localValue != INIT_VALUE) {
+                    System.out.printf("The value updated to [%d]\n", INIT_VALUE);
                     localValue = INIT_VALUE;
                 }
             }
-        },"READED").start();
+        }, "READED").start();
 
-        new Thread(()->{
+        new Thread(() -> {
             int localValue = INIT_VALUE;
-            while(INIT_VALUE < MAX_LIMIT){
-                System.out.printf("Update the value to[%d]\n",++localValue);
+            while (INIT_VALUE < MAX_LIMIT) {
+                System.out.printf("Update the value to[%d]\n", ++localValue);
                 INIT_VALUE = localValue;
                 try {
                     Thread.sleep(1000);
@@ -39,6 +40,6 @@ public class VolatileTest1 {
                     e.printStackTrace();
                 }
             }
-        },"UPDATE").start();
+        }, "UPDATE").start();
     }
 }

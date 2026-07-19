@@ -1,8 +1,9 @@
 package action.observer.observer_g;
 
 /**
+ * 具体的水质监测对象
+ *
  * @author lingwh
- * @desc 具体的水质监测对象
  * @date 2019/8/19 16:16
  */
 public class WaterQuality extends WaterQualitySubject {

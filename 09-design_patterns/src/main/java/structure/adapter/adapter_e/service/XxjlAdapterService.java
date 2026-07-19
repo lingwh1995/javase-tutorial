@@ -7,10 +7,13 @@ import structure.adapter.adapter_e.dao.XxjlDao;
 import structure.adapter.adapter_e.domain.Xxjl;
 
 /**
+ * 信息交流适配器服务
+ *
  * @author lingwh
  * @date 2026/7/9 00:00
  */
 public class XxjlAdapterService extends AbstractXxjlAdapter {
+
     private GatzlDao gatzlDao = new GatzlDao();
     private TztgDao tztgDao = new TztgDao();
     private XxjlDao xxjlDao = new XxjlDao();

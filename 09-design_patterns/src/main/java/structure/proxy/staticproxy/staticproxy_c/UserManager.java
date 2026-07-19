@@ -8,8 +8,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
+ * 接口的实现类
+ *
  * @author lingwh
- * @desc 接口的实现类
  * @date 2019/8/15 9:23
  */
 public class UserManager {

@@ -1,11 +1,13 @@
 package headfirst.designpatterns.state.gumballstatewinner;
 
 /**
+ * 赢家状态
+ *
  * @author lingwh
- * @desc 赢家状态
  * @date 2026/7/9 00:00
  */
 public class WinnerState implements State {
+
     GumballMachine gumballMachine;
 
     public WinnerState(GumballMachine gumballMachine) {
@@ -40,7 +42,8 @@ public class WinnerState implements State {
         }
     }
 
-    public void refill() {}
+    public void refill() {
+    }
 
     public String toString() {
         return "despensing two gumballs for your quarter, because YOU'RE A WINNER!";

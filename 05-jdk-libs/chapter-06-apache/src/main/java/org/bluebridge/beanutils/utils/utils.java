@@ -1,12 +1,14 @@
 package org.bluebridge.beanutils.utils;
 
-import java.lang.reflect.Array;
-import java.util.Map;
 import org.apache.commons.beanutils.BeanUtils;
 
+import java.lang.reflect.Array;
+import java.util.Map;
+
 /**
+ * BeanUtils工具类
+ *
  * @author lingwh
- * @desc BeanUtils工具类
  * @date 2019/6/20 15:14
  */
 public class utils {
@@ -34,20 +36,22 @@ public class utils {
 
     /***
      * 复制数组
-     * @param src 源数组
-     * @param srcPos 源数组要复制的起始位置
-     * @param dest 目的数组
+     * 
+     * @param src     源数组
+     * @param srcPos  源数组要复制的起始位置
+     * @param dest    目的数组
      * @param destPos 目的数组放置的起始位置
-     * @param length 从原数组复制的长度
+     * @param length  从原数组复制的长度
      * @return void
      * @throws
      */
-    // public static void arraycopy(Object src,int srcPos,Object dest,int destPos,int length);
+    // public static void arraycopy(Object src,int srcPos,Object dest,int
+    // destPos,int length);
 
     /**
      * 数组扩容方法，此处不使用泛型也可以，则返回值为Object类型数据(调用方法时要进行类型转换)，而非T类型数组
      *
-     * @param src 原数组
+     * @param src  原数组
      * @param size 新数组的长度
      * @return T
      */

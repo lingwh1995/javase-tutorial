@@ -1,11 +1,13 @@
 package structure.adapter.adapter_b;
 
 /**
+ * 对象适配器
+ *
  * @author lingwh
- * @desc 对象适配器
  * @date 2026/7/9 00:00
  */
 public class VoltageAdapter implements IVoltage5V {
+
     private Voltage220V voltage220V;
 
     public VoltageAdapter(Voltage220V voltage220V) {

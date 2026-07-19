@@ -11,6 +11,7 @@ import structure.adapter.adapter_g_builder.service.XxjlSerivice;
  * @date 2026/7/9 00:00
  */
 public class XxjlController {
+
     private IXxjlService xxjlService = new XxjlSerivice();
 
     // @RequestMappng("xxxx")

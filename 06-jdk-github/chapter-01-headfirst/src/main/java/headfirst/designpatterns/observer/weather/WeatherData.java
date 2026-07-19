@@ -3,11 +3,13 @@ package headfirst.designpatterns.observer.weather;
 import java.util.*;
 
 /**
+ * 气象数据
+ *
  * @author lingwh
- * @desc 气象数据
  * @date 2026/7/9 00:00
  */
 public class WeatherData implements Subject {
+
     private ArrayList<Observer> observers;
     private float temperature;
     private float humidity;

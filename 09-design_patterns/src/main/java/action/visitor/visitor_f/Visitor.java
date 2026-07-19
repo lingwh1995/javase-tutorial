@@ -7,6 +7,7 @@ package action.visitor.visitor_f;
  * @date 2019/10/11 13:48
  */
 public interface Visitor {
+
     /**
      * 访问组合对象，相当于给组合对象添加访问者的功能
      *

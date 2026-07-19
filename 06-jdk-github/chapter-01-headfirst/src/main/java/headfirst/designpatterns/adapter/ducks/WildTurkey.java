@@ -1,11 +1,13 @@
 package headfirst.designpatterns.adapter.ducks;
 
 /**
+ * 野火鸡实现类
+ *
  * @author lingwh
- * @desc 野火鸡实现类
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class WildTurkey implements Turkey {
+
     public void gobble() {
         System.out.println("Gobble gobble");
     }

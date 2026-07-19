@@ -7,6 +7,7 @@ package action.state.state_g;
  * @date 2019/9/24 8:51
  */
 public enum VoteStateEnum {
+
     NORMAL_STATE("001", "正常状态"),
     REPEAT_STATE("002", "重复状态"),
     BLACKWARN_VOTE("003", "黑名单警告状态"),

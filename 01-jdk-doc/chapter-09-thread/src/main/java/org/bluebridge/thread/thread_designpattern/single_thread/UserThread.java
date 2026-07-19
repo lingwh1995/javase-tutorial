@@ -1,11 +1,13 @@
 package org.bluebridge.thread.thread_designpattern.single_thread;
 
 /**
+ * 单线程执行模式 - 用户线程
+ *
  * @author lingwh
- * @desc 单线程执行模式 - 用户线程
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 16:29
  */
 public class UserThread extends Thread {
+
     private final String name;
     private final String address;
     private final Gate gate;

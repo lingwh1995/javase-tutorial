@@ -1,8 +1,9 @@
 package action.mediator.mediator_d;
 
 /**
+ * 人员类
+ *
  * @author lingwh
- * @desc 人员类
  * @date 2019/8/14 13:38
  */
 public class User {

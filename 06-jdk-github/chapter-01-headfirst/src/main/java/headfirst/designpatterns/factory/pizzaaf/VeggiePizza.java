@@ -1,11 +1,13 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
 /**
+ * 蔬菜披萨
+ *
  * @author lingwh
- * @desc 蔬菜披萨
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class VeggiePizza extends Pizza {
+
     PizzaIngredientFactory ingredientFactory;
 
     public VeggiePizza(PizzaIngredientFactory ingredientFactory) {

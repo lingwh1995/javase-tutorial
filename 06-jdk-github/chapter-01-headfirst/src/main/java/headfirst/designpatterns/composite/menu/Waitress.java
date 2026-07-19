@@ -1,11 +1,13 @@
 package headfirst.designpatterns.composite.menu;
 
 /**
+ * 女服务员
+ *
  * @author lingwh
- * @desc 女服务员
- * @date 2026/7/9 00:00
+ * @date 2026/4/21 19:02
  */
 public class Waitress {
+
     MenuComponent allMenus;
 
     public Waitress(MenuComponent allMenus) {

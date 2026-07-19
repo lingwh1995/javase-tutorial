@@ -1,8 +1,9 @@
 package action.state.state_h;
 
 /**
+ * 封装一个投票状态相关的行为
+ *
  * @author lingwh
- * @desc 封装一个投票状态相关的行为
  * @date 2019/9/23 18:02
  */
 public interface VoteState {

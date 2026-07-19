@@ -5,11 +5,13 @@ import structure.adapter.adapter_g_builder.domain.Xxjl;
 import structure.adapter.adapter_g_builder.service.IXxjlService;
 
 /**
+ * 信息交流适配器
+ *
  * @author lingwh
- * @desc 信息交流适配器
  * @date 2026/7/9 00:00
  */
 public class XxjlAdapter implements IXxjlService {
+
     // 发件人
     private IXxjlDao xxjlFjrDao = new XxjlFjrDao();
     // 收件人

@@ -3,9 +3,10 @@ package org.bluebridge.ioc.anno_one.entity;
 import org.bluebridge.ioc.anno_one.anno.Repository;
 
 /**
+ * 用户 DAO
+ *
  * @author lingwh
- * @desc 用户 DAO
- * @date 2019/3/20 00:00
+ * @date2019/3/20 19:02
  */
 @Repository
 public class UserDao {

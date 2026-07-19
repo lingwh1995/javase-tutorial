@@ -3,11 +3,13 @@ package headfirst.designpatterns.observer.weatherobservable;
 import java.util.Observable;
 
 /**
+ * 气象数据
+ *
  * @author lingwh
- * @desc 气象数据
  * @date 2026/7/9 00:00
  */
 public class WeatherData extends Observable {
+
     private float temperature;
     private float humidity;
     private float pressure;

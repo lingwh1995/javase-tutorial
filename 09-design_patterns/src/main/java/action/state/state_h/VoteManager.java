@@ -4,8 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 投票管理
+ *
  * @author lingwh
- * @desc 投票管理
  * @date 2019/9/23 18:04
  */
 public class VoteManager {

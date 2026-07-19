@@ -1,11 +1,13 @@
 package action.state.state_h;
 
 /**
+ * 投票状态枚举
+ *
  * @author lingwh
- * @desc 投票状态枚举
  * @date 2019/9/24 8:51
  */
 public enum VoteStateEnum {
+
     NORMAL_STATE("001", "正常状态", "action.state.state_h.NormalVoteState"),
     REPEAT_STATE("002", "重复状态", "action.state.state_h.RepeatVoteState"),
     BLACKWARN_VOTE("003", "黑名单警告状态", "action.state.state_h.BlackWarnVoteState"),

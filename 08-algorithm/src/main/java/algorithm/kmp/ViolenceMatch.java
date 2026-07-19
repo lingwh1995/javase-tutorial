@@ -1,11 +1,13 @@
 package algorithm.kmp;
 
 /**
+ * 暴力匹配法
+ *
  * @author lingwh
- * @desc 暴力匹配法
- * @date 2026/7/9 00:00
+ * @date 2026/7/13 19:02
  */
 public class ViolenceMatch {
+
     public static void main(String[] args) {
         String s1 = "12386497569";
         String s2 = "569";

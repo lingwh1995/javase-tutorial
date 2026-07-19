@@ -1,11 +1,13 @@
 package structure.adapter.adapter_j;
 
 /**
+ * 野火鸡
+ *
  * @author lingwh
- * @desc 野火鸡
  * @date 2019/9/11 8:57
  */
 public class WildTurkey implements Turkey {
+
     /**
      * 火鸡咯咯咯叫
      */

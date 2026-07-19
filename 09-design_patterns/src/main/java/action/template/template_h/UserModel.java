@@ -1,8 +1,9 @@
 package action.template.template_h;
 
 /**
+ * 描述用户信息的数据模型
+ *
  * @author lingwh
- * @desc 描述用户信息的数据模型
  * @date 2019/8/26 11:36
  */
 public class UserModel {

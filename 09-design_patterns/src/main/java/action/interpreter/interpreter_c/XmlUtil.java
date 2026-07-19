@@ -5,8 +5,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 
 /**
+ * XML工具类
+ *
  * @author lingwh
- * @desc XML工具类
  * @date 2019/8/27 14:08
  */
 public class XmlUtil {

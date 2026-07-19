@@ -1,8 +1,9 @@
 package create.abstractfactory.abstractfactory_k;
 
 /**
+ * 小米路由器实现类
+ *
  * @author lingwh
- * @desc 小米路由器实现类
  * @date 2019/10/18 13:36
  */
 public class XiaomiRouter implements IRouterProduct {

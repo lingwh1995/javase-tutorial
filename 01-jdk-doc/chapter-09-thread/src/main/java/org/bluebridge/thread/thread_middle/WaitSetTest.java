@@ -4,11 +4,13 @@ import java.util.Optional;
 import java.util.stream.IntStream;
 
 /**
+ * 线程 wait set 测试
+ *
  * @author lingwh
- * @desc 线程 wait set 测试
  * @date 2026/7/9 00:00
  */
 public class WaitSetTest {
+
     private static final Object LOCK = new Object();
 
     public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class WaitSetTest {
          * 2. 调用notify()后,wait set中线程被唤醒顺序不是FIFO
          * 3. 线程被notify()之后,不一定被立即执行
          */
-        new Thread(()->{
+        new Thread(() -> {
             work();
         }).start();
         try {
@@ -46,13 +48,15 @@ public class WaitSetTest {
     }
 
     private static void worksetTest() {
-        IntStream.rangeClosed(1,10).forEach(i-> {
-            new Thread(()->{
-                synchronized (LOCK){
+        IntStream.rangeClosed(1, 10).forEach(i -> {
+            new Thread(() -> {
+                synchronized (LOCK) {
                     try {
-                        Optional.of(Thread.currentThread().getName()+" will come to set ").ifPresent(System.out::println);
+                        Optional.of(Thread.currentThread().getName() + " will come to set ")
+                                .ifPresent(System.out::println);
                         LOCK.wait();
-                        Optional.of(Thread.currentThread().getName()+" will leave set ").ifPresent(System.out::println);
+                        Optional.of(Thread.currentThread().getName() + " will leave set ")
+                                .ifPresent(System.out::println);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -60,8 +64,8 @@ public class WaitSetTest {
             }).start();
         });
 
-        IntStream.rangeClosed(1,10).forEach(i-> {
-            synchronized (LOCK){
+        IntStream.rangeClosed(1, 10).forEach(i -> {
+            synchronized (LOCK) {
                 LOCK.notify();
                 try {
                     Thread.sleep(1000);
