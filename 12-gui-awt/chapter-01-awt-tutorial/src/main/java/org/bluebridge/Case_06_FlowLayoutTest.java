@@ -9,14 +9,14 @@ import javax.swing.*;
  * @author lingwh
  * @date 2025/1/26 16:32
  */
-public class Lesson_06_FlowLayoutTest {
+public class Case_06_FlowLayoutTest {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
         // SwingUtilities.invokeLater(() -> new _006_FlowLayoutTest().createAndShowGUIUseFlowLayout());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_06_FlowLayoutTest()::createAndShowGUIUseFlowLayout);
+        SwingUtilities.invokeLater(new Case_06_FlowLayoutTest()::createAndShowGUIUseFlowLayout);
     }
 
     /**

@@ -9,14 +9,14 @@ import javax.swing.*;
  * @author lingwh
  * @date 2026/1/29 22:01
  */
-public class Lesson_13_ScrollPaneTest {
+public class Case_13_ScrollPaneTest {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
         // SwingUtilities.invokeLater(() -> new _013_ScrollPaneTest().createAndShowGUI());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_13_ScrollPaneTest()::createAndShowGUI);
+        SwingUtilities.invokeLater(new Case_13_ScrollPaneTest()::createAndShowGUI);
     }
 
     /**

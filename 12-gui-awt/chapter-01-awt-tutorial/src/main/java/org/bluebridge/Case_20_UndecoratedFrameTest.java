@@ -12,14 +12,14 @@ import javax.swing.*;
  * @author lingwh
  * @date 2026/1/30 20:33
  */
-public class Lesson_20_UndecoratedFrameTest {
+public class Case_20_UndecoratedFrameTest {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
         // SwingUtilities.invokeLater(() -> new _020_UndecoratedFrameTest().createAndShowGUI());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_20_UndecoratedFrameTest()::createAndShowGUI);
+        SwingUtilities.invokeLater(new Case_20_UndecoratedFrameTest()::createAndShowGUI);
     }
 
     /**

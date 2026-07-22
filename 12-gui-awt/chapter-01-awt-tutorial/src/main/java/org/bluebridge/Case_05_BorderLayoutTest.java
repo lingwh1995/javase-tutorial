@@ -9,7 +9,7 @@ import javax.swing.*;
  * @author lingwh
  * @date 2025/1/26 16:32
  */
-public class Lesson_05_BorderLayoutTest {
+public class Case_05_BorderLayoutTest {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
@@ -17,7 +17,7 @@ public class Lesson_05_BorderLayoutTest {
         // _005_BorderLayoutTest().createAndShowGUIUseBorderLayout());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_05_BorderLayoutTest()::createAndShowGUIUseBorderLayout);
+        SwingUtilities.invokeLater(new Case_05_BorderLayoutTest()::createAndShowGUIUseBorderLayout);
     }
 
     /**

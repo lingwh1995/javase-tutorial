@@ -10,14 +10,14 @@ import javax.swing.*;
  * @author lingwh
  * @date 2026/1/29 22:30
  */
-public class Lesson_15_MenuBarAndMenuTest {
+public class Case_15_MenuBarAndMenuTest {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
         // SwingUtilities.invokeLater(() -> new _015_MenuBarAndMenuTest().createAndShowGUI());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_15_MenuBarAndMenuTest()::createAndShowGUI);
+        SwingUtilities.invokeLater(new Case_15_MenuBarAndMenuTest()::createAndShowGUI);
     }
 
     /**

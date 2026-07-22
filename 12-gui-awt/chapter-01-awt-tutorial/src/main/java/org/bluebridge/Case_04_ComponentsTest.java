@@ -10,14 +10,14 @@ import javax.swing.*;
  * @author lingwh
  * @date 2025/8/4 18:11
  */
-public class Lesson_04_ComponentsTest {
+public class Case_04_ComponentsTest {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
         // SwingUtilities.invokeLater(() -> new _004_ComponentsTest().createAndShowGUI());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_04_ComponentsTest()::createAndShowGUI);
+        SwingUtilities.invokeLater(new Case_04_ComponentsTest()::createAndShowGUI);
     }
 
     /**

@@ -4,20 +4,20 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
- * 表格布局案例三 - 把容器分成三列
+ * 表格布局案例一 - 把容器分成三行
  *
  * @author lingwh
  * @date 2026/1/29 21:06
  */
-public class Lesson_11_GridLayout_Demo_3 {
+public class Case_09_GridLayout_1 {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
         // SwingUtilities.invokeLater(() -> new
-        // _011_GridLayout_Demo_3().createAndShowGUIUseGridLayout());
+        // _009_GridLayout_Demo_1().createAndShowGUIUseGridLayout());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_11_GridLayout_Demo_3()::createAndShowGUIUseGridLayout);
+        SwingUtilities.invokeLater(new Case_09_GridLayout_1()::createAndShowGUIUseGridLayout);
     }
 
     /**
@@ -32,8 +32,8 @@ public class Lesson_11_GridLayout_Demo_3 {
 
         // 先设置整个窗口的布局
         GridLayout layout = new GridLayout();
-        // 设置行数为3，一会就会分成3列了
-        layout.setColumns(3);
+        // 设置行数为3，一会就会分成3行了
+        layout.setRows(3);
         frame.setLayout(layout);
 
         /**

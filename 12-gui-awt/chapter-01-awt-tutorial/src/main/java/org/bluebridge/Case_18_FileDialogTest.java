@@ -9,14 +9,14 @@ import javax.swing.*;
  * @author lingwh
  * @date 2026/1/30 17:49
  */
-public class Lesson_18_FileDialogTest {
+public class Case_18_FileDialogTest {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
         // SwingUtilities.invokeLater(() -> new _018_FileDialogTest().createAndShowGUI());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_18_FileDialogTest()::createAndShowGUI);
+        SwingUtilities.invokeLater(new Case_18_FileDialogTest()::createAndShowGUI);
     }
 
     /**

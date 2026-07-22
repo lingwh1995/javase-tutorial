@@ -9,14 +9,14 @@ import javax.swing.*;
  * @author lingwh
  * @date 2025/8/4 18:11
  */
-public class Lesson_01_HelloWorld {
+public class Case_01_HelloWorld {
 
     public static void main(String[] args) {
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - lambda 表达式调用
         // SwingUtilities.invokeLater(() -> new _001_HelloWorld().createAndShowGUI());
 
         // 使用 invokeLater 将 UI 任务推送到事件分发线程 (EDT) - 方法引用调用
-        SwingUtilities.invokeLater(new Lesson_01_HelloWorld()::createAndShowGUI);
+        SwingUtilities.invokeLater(new Case_01_HelloWorld()::createAndShowGUI);
     }
 
     private void createAndShowGUI() {
