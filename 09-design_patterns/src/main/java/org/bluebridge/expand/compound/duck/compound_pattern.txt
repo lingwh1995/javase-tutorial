@@ -1,0 +1,13 @@
+Compound Pattern(复合模式):
+    1.使用多态实现private static void simulate(Quackable mallardDuck){}方法
+    2.使用适配器使得DuckSimulatorClient(鸭子模拟器客户端)中的simulate()方法也同样
+      适用于Goose,本来这个方法是针对于各种Duck的(即实现了Quackable接口的各种Duck类)
+    3.统计所有鸭子鸣叫的次数:要求,不能修改已有的代码,只能扩展
+      使用装饰者模式完成这一需求
+    4.创建一个抽象工厂,这个抽象工厂里面有一系列创建鸭子对象的方法(即支持创建各种鸭子),同时
+      该工厂有两个实现类：
+        第一个实现类(DuckFactory):可以创建的是普通的各种鸭子
+        第二个实现类(CountingDuckFactory):可以创建普通鸭子的装饰者对象，这个装饰者有统计
+            鸣叫次数的功能,对普通鸭子对象做了增强，具有普通鸭子对象不具有的功能
+    5.组合模式:方便的管理一群鸭子,调用flock.quack()即可实现所有鸭子的鸣叫方法
+

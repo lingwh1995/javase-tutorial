@@ -1,0 +1,17 @@
+package org.bluebridge.action.observer.observer_a;
+
+/**
+ * 观察者接口，定义一个更新的接口给那些在目标发生改变的时候被通知的对象
+ *
+ * @author lingwh
+ * @date 2019/8/19 13:44
+ */
+public interface Observer {
+
+    /**
+     * 更新的接口
+     *
+     * @param subject 传入目标对象，好获取相应的目标对象的状态
+     */
+    void update(Subject subject);
+}

@@ -1,0 +1,16 @@
+package org.bluebridge.sort.bubblesort.bubblesort_b;
+
+/**
+ * 测试冒泡排序
+ *
+ * @author lingwh
+ * @date 2019/8/8 9:16
+ */
+public class BubbleSortTest {
+
+    public static void main(String[] args) {
+        int[] num = { -1, -3, 5, 9, 10, 2, 7 };
+        BubbleSort.bubbleSort(num);
+        BubbleSort.show();
+    }
+}

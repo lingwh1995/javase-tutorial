@@ -1,0 +1,39 @@
+package org.bluebridge.create.abstractfactory.abstractfactory_f;
+
+/**
+ * 生产操作操作文件API的的类工厂，并且同时执行了具体的操作
+ *
+ * @author lingwh
+ * @date 2019/8/2 11:34
+ */
+public abstract class AbstractFileOperatorFactory {
+
+    /**
+     * 导出文件
+     *
+     * @param data
+     * @return
+     */
+    public boolean exportFile(String data) {
+        FileOperator txtFileOperator = this.createFileOperator();
+        return txtFileOperator.exportFile(data);
+    }
+
+    /**
+     * 导入文件
+     *
+     * @param data
+     * @return
+     */
+    public boolean importFile(String data) {
+        FileOperator txtFileOperator = this.createFileOperator();
+        return txtFileOperator.importFile(data);
+    }
+
+    /**
+     * 创建具体的文件操作者
+     *
+     * @return
+     */
+    public abstract FileOperator createFileOperator();
+}

@@ -1,0 +1,20 @@
+package org.bluebridge.action.command.command_d;
+
+/**
+ * 主板接口
+ *
+ * @author lingwh
+ * @date 2019/8/5 10:52
+ */
+public interface MainBoardApi {
+
+    /**
+     * 主板具有能开机的功能
+     */
+    void open();
+
+    /**
+     * 主板具有重启的命令
+     */
+    void restart();
+}

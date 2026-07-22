@@ -1,0 +1,26 @@
+1.链式调用+建造者模式+无Director
+2.优点：建造顺序调整很方便，且省去了一个或者N个Direcor
+  缺点：代码难度很高，需要有很高的编码水平才能看出来是用链式调用的顺序不用决定组装顺序的不同
+2.原来Director中体现的装配顺序由链式调用的顺序决定,如:
+    顺序一:
+        建造房子墙壁->建造房子地基->建造房子房顶
+        //创建普通房子建造者
+        HouseBuilder commonHouseBuilder = new CommonHouseBuilder();
+        //建造普通房子
+        House commonHouse = commonHouseBuilder
+                        .buildWalls("普通房子墙壁")
+                        .buildBasic("普通房子地基")
+                        .buildRoof("普通房子房顶")
+                        .build();
+        System.out.println(commonHouse);
+    顺序二:
+        建造房子房顶->建造房子墙壁->建造房子地基
+        //创建普通房子建造者
+        HouseBuilder commonHouseBuilder = new CommonHouseBuilder();
+        //建造普通房子
+        House commonHouse = commonHouseBuilder
+                        .buildRoof("普通房子房顶")
+                        .buildWalls("普通房子墙壁")
+                        .buildBasic("普通房子地基")
+                        .build();
+        System.out.println(commonHouse);

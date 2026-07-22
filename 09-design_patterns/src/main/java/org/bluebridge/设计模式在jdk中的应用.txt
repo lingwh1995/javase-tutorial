@@ -1,0 +1,89 @@
+1.单例模式:Runtime
+    public class Runtime {
+        private static Runtime currentRuntime = new Runtime();
+
+        public static Runtime getRuntime() {
+            return currentRuntime;
+        }
+
+        private Runtime() {
+        }
+    }
+2.简单工厂模式：Calendar
+    根据传入的参数不同，创建不同的Calendar实例
+    public abstract class Calendar {
+        public static Calendar getInstance(TimeZone zone,Locale aLocale){
+            return createCalendar(zone, aLocale);
+        }
+        private static Calendar createCalendar(TimeZone zone,Locale aLocale){
+            CalendarProvider provider =
+                LocaleProviderAdapter.getAdapter(CalendarProvider.class, aLocale).getCalendarProvider();
+            if (provider != null) {
+                try {
+                    return provider.getInstance(zone, aLocale);
+                } catch (IllegalArgumentException iae) {
+                    // fall back to the default instantiation
+                }
+            }
+            Calendar cal = null;
+
+            //简单工厂模式
+            if (aLocale.hasExtensions()) {
+                String caltype = aLocale.getUnicodeLocaleType("ca");
+                if (caltype != null) {
+                    switch (caltype) {
+                    case "buddhist":
+                    cal = new BuddhistCalendar(zone, aLocale);
+                        break;
+                    case "japanese":
+                        cal = new JapaneseImperialCalendar(zone, aLocale);
+                        break;
+                    case "gregory":
+                        cal = new GregorianCalendar(zone, aLocale);
+                        break;
+                    }
+                }
+            }
+            //简单工厂模式
+            if (cal == null) {
+                if (aLocale.getLanguage() == "th" && aLocale.getCountry() == "TH") {
+                    cal = new BuddhistCalendar(zone, aLocale);
+                } else if (aLocale.getVariant() == "JP" && aLocale.getLanguage() == "ja"
+                           && aLocale.getCountry() == "JP") {
+                    cal = new JapaneseImperialCalendar(zone, aLocale);
+                } else {
+                    cal = new GregorianCalendar(zone, aLocale);
+                }
+            }
+            return cal;
+        }
+    }
+3.适配器模式
+    JDK-java.util.Collections#enumeration:对象适配器
+
+    public interface Enumeration<E> {
+              boolean hasMoreElements();
+              E nextElement();
+    }
+
+    public static <T> Enumeration<T> enumeration(final Collection<T> c) {
+        return new Enumeration<T>() {
+        private final Iterator<T> i = c.iterator();
+
+        public boolean hasMoreElements() {
+            return i.hasNext();
+           }
+
+            public T nextElement() {
+            return i.next();
+            }
+        };
+    }
+    Target(目标):Enumeration
+    Adapter(适配器):完成适配功能的类或者方法
+    Adaptee(适配者)：Iterator
+    目标:为了让Enumeration能提供遍历元素的功能，提供了IteratorEnumeration作为适配器类
+4.桥接模式: jdbc
+5.装饰者模式：io
+6.组合模式Hashmap put()/putAll()方法
+7.策略模式 Arrays.sort(T[],Comparator)方法
