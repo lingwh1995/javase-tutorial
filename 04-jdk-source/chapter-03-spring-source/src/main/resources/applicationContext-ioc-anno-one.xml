@@ -1,3 +1,3 @@
 <beans>
-    <component-scan base-package="org.bluebridge.ioc.anno_one"/>
+    <component-scan base-package="org.bluebridge.ioc.section_03_anno"/>
 </beans>

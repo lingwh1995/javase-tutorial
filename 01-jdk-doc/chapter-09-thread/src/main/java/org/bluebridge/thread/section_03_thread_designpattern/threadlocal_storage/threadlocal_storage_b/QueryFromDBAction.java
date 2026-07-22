@@ -1,0 +1,21 @@
+package org.bluebridge.thread.section_03_thread_designpattern.threadlocal_storage.threadlocal_storage_b;
+
+/**
+ * 从数据库查询
+ *
+ * @author lingwh
+ * @date 2026/4/23 16:29
+ */
+public class QueryFromDBAction {
+
+    public void execute() {
+        try {
+            final Context context = ActionContext.getInstance().getContext();
+            Thread.sleep(1_000L);
+            String name = "Alex from db.....";
+            context.setName(name);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}

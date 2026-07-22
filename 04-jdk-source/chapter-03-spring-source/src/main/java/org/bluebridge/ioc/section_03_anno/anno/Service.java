@@ -1,0 +1,18 @@
+package org.bluebridge.ioc.section_03_anno.anno;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ * Service 注解
+ *
+ * @author lingwh
+ * @date 2026/4/21 19:02
+ */
+@Retention(RetentionPolicy.RUNTIME)
+@Target(value = { ElementType.TYPE })
+public @interface Service {
+
+}

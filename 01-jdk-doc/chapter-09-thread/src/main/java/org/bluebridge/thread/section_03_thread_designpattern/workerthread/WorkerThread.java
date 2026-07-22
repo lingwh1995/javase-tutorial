@@ -1,0 +1,32 @@
+package org.bluebridge.thread.section_03_thread_designpattern.workerthread;
+
+import java.util.Random;
+
+/**
+ * Worker Thread 模式 - 工作线程
+ *
+ * @author lingwh
+ * @date 2026/7/9 00:00
+ */
+public class WorkerThread extends Thread {
+
+    private final Channel channel;
+    private static final Random random = new Random(System.currentTimeMillis());
+
+    public WorkerThread(String name, Channel channel) {
+        super(name);
+        this.channel = channel;
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            channel.take().execute();
+            try {
+                Thread.sleep(random.nextInt(1_000));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
