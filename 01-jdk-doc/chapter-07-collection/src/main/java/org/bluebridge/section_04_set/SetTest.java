@@ -7,16 +7,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 测试Set集合
+ * 测试 Set 集合
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 @Slf4j
 public class SetTest {
 
     /**
-     * 添加成功返回true,添加失败返回false
+     * 添加成功返回 true，添加失败返回 false
      */
     @Test
     public void testSetAdd() {

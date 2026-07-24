@@ -3,7 +3,7 @@ package org.bluebridge.java8.section_08_string;
 import java.util.StringJoiner;
 
 /**
- * StringJoiner使用示例
+ * StringJoiner 使用示例
  *
  * @author lingwh
  * @date 2026/6/22 15:10

@@ -7,7 +7,7 @@ import java.util.*;
 import java.util.function.Function;
 
 /**
- * Map的computeIfAbsent和computeIfPresent方法测试
+ * Map 的 computeIfAbsent 和 computeIfPresent 方法测试
  *
  * @author lingwh
  * @date 2025/12/2 11:18
@@ -46,10 +46,10 @@ public class MapTest {
      */
     @Test
     public void testComputeIfAbsentCacheScenario() {
-        // 模拟缓存Map
+        // 模拟缓存 Map
         Map<String, Integer> cache = new HashMap<>();
 
-        // 定义耗时的计算函数，传入一个String类型参数，返回一个Integer类型结果
+        // 定义耗时的计算函数，传入一个 String 类型参数，返回一个 Integer 类型结果
         Function<String, Integer> expensiveCalculation = key -> {
             log.info("执行耗时计算: 计算 {} 的平方...", key);
             try {
@@ -81,7 +81,7 @@ public class MapTest {
         Map<String, Integer> scoreMap = new HashMap<>();
         scoreMap.put("Alice", 85);
         scoreMap.put("Bob", 92);
-        // 注意这个null值
+        // 注意这个 null 值
         scoreMap.put("Charlie", null);
 
         log.info("原始分数: {}", scoreMap);
@@ -93,11 +93,11 @@ public class MapTest {
         // 尝试为不存在的键更新（不会生效）
         scoreMap.computeIfPresent("David", (name, score) -> score + 10);
 
-        // 尝试为null值更新（不会生效）
+        // 尝试为 null 值更新（不会生效）
         scoreMap.computeIfPresent("Charlie", (name, score) -> score + 5);
 
         log.info("更新后分数: {}", scoreMap);
-        // 输出: {Alice=90, Bob=95, Charlie=null}
+        // 输出：{Alice=90, Bob=95, Charlie=null}
     }
 
     /**

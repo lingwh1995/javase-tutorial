@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
  * 图片旋转工具类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 public class ImageRotationUtils {
 
@@ -38,7 +38,7 @@ public class ImageRotationUtils {
     }
 
     /**
-     * 顺时针旋转90度
+     * 顺时针旋转 90 度
      */
     private static byte[] rotate90Clockwise(byte[] imageData, int width, int height) {
         int newWidth = height;
@@ -58,7 +58,7 @@ public class ImageRotationUtils {
     }
 
     /**
-     * 逆时针旋转90度（等同于顺时针旋转270度）
+     * 逆时针旋转 90 度（等同于顺时针旋转 270 度）
      */
     private static byte[] rotate90CounterClockwise(byte[] imageData, int width, int height) {
         int newWidth = height;
@@ -78,7 +78,7 @@ public class ImageRotationUtils {
     }
 
     /**
-     * 旋转180度
+     * 旋转 180 度
      */
     private static byte[] rotate180(byte[] imageData, int width, int height) {
         byte[] rotatedData = new byte[imageData.length];
@@ -96,15 +96,15 @@ public class ImageRotationUtils {
     }
 
     /**
-     * 旋转JPEG图片，保持原始尺寸
+     * 旋转 JPEG 图片，保持原始尺寸
      *
-     * @param jpegData 原始JPEG图片字节数组
+     * @param jpegData 原始 JPEG 图片字节数组
      * @param degrees  旋转角度（90, 180, 270）
-     * @return 旋转后的JPEG图片字节数组
+     * @return 旋转后的 JPEG 图片字节数组
      * @throws IOException 如果图片解码或编码失败
      */
     public static byte[] rotateJpegByDegrees(byte[] jpegData, int degrees) throws IOException {
-        // 解码JPEG图片
+        // 解码 JPEG 图片
         BufferedImage originalImage = ImageIO.read(new ByteArrayInputStream(jpegData));
         int width = originalImage.getWidth();
         int height = originalImage.getHeight();
@@ -115,7 +115,7 @@ public class ImageRotationUtils {
             case 90:
             case 270:
             case -90:
-                // 90度或270度旋转时，需要先创建一个宽高互换的临时图像进行旋转，然后缩放回原始尺寸
+                // 90 度或 270 度旋转时，需要先创建一个宽高互换的临时图像进行旋转，然后缩放回原始尺寸
                 // 创建旋转后的图像（宽高互换）
                 BufferedImage tempRotated = new BufferedImage(height, width, originalImage.getType());
                 Graphics2D g2d = tempRotated.createGraphics();
@@ -124,7 +124,7 @@ public class ImageRotationUtils {
                     g2d.translate(height / 2.0, width / 2.0);
                     g2d.rotate(Math.PI / 2);
                     g2d.translate(-width / 2.0, -height / 2.0);
-                } else { // 270度或-90度
+                } else { // 270 度或-90 度
                     g2d.translate(height / 2.0, width / 2.0);
                     g2d.rotate(-Math.PI / 2);
                     g2d.translate(-width / 2.0, -height / 2.0);
@@ -145,10 +145,10 @@ public class ImageRotationUtils {
                 g2dFinal.dispose();
                 break;
             case 180:
-                // 180度旋转，直接在原始尺寸内旋转
+                // 180 度旋转，直接在原始尺寸内旋转
                 rotatedImage = new BufferedImage(width, height, originalImage.getType());
                 Graphics2D g2d180 = rotatedImage.createGraphics();
-                g2d180.rotate(Math.PI, width / 2.0, height / 2.0); // 以图像中心为原点旋转180度
+                g2d180.rotate(Math.PI, width / 2.0, height / 2.0); // 以图像中心为原点旋转 180 度
                 g2d180.drawImage(originalImage, 0, 0, null);
                 g2d180.dispose();
                 break;
@@ -156,7 +156,7 @@ public class ImageRotationUtils {
                 throw new IllegalArgumentException("只支持90, 180, 270度旋转");
         }
 
-        // 编码为JPEG字节数组
+        // 编码为 JPEG 字节数组
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         ImageIO.write(rotatedImage, "jpeg", outputStream);
         return outputStream.toByteArray();

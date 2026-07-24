@@ -6,7 +6,7 @@ import org.openjdk.jol.info.ClassLayout;
  * 使用对象锁解决卖票数量大于500的情况
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 12:45
  */
 public class SellTicketObjectLockTest {
 

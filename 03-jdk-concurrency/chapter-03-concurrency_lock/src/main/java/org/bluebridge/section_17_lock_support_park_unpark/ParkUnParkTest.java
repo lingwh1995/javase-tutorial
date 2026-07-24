@@ -4,18 +4,18 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * LockSupport的park与unpark测试
+ * LockSupport 的 park 与 unpark 测试
  *
  * 1. 暂停线程运行 LockSupport.park;
  * 2. 恢复线程运行 LockSupport.unpark(thread);
- * 3. wait/notify 和 park/unpark的区别
- *    - wait/notify是Object的方法，而park/unpark是LockSupport的方法
- *    - wait/notify必须配合 Object Monitor一起使用，所以要在synchronized中使用，而park/unpark不需要
- *    - park/unpark是以线程为单位来[阻塞]和[唤醒]线程的，而notify只能随机唤醒一个等待线程，notifyAll是唤醒所有等待线程，不那么精确
- *    - park/&unpark 可以先调用unpark，而wait/notify不能先notify.
+ * 3. wait/notify 和 park/unpark 的区别
+ *    - wait/notify 是 Object 的方法，而 park/unpark 是 LockSupport 的方法
+ *    - wait/notify 必须配合 Object Monitor 一起使用，所以要在 synchronized 中使用，而 park/unpark 不需要
+ *    - park/unpark 是以线程为单位来[阻塞]和[唤醒]线程的，而 notify 只能随机唤醒一个等待线程，notifyAll 是唤醒所有等待线程，不那么精确
+ *    - park/&unpark 可以先调用 unpark，而 wait/notify 不能先 notify.
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:30
  */
 public class ParkUnParkTest {
 

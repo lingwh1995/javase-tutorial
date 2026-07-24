@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 线程安全的实现-乐观锁（CAS）
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 11:30
  */
 public class AccountSafeOptimisticLockCAS implements Account {
 

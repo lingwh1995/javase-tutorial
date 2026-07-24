@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 非公平锁测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 20:00
  */
 public class ReentrantLockNonFairLockTest {
 
@@ -17,7 +17,7 @@ public class ReentrantLockNonFairLockTest {
     public static void main(String[] args) {
         System.out.println("--------- 非公平锁示例 ---------");
         Runnable task = () -> {
-            // 每个线程尝试获取锁2次
+            // 每个线程尝试获取锁 2 次
             for (int i = 0; i < 2; i++) {
                 nonFairLock.lock();
                 try {
@@ -34,7 +34,7 @@ public class ReentrantLockNonFairLockTest {
             }
         };
 
-        // 启动3个线程竞争锁
+        // 启动 3 个线程竞争锁
         for (int i = 0; i < 3; i++) {
             new Thread(task, "Thread-" + (i + 1)).start();
         }

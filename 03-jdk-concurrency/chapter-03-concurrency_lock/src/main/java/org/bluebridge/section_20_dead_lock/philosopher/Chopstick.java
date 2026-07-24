@@ -4,7 +4,7 @@ package org.bluebridge.section_20_dead_lock.philosopher;
  * 筷子类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 16:00
  */
 public class Chopstick {
 

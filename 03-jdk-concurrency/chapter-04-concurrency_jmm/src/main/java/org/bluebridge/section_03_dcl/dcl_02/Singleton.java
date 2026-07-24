@@ -1,12 +1,12 @@
 package org.bluebridge.section_03_dcl.dcl_02;
 
 /**
- * 双重检查锁单例模式(volatile修正)
+ * 双重检查锁单例模式 (volatile) 修正
  *
- * 1. 使用final修饰类，可以防止因为继承而破坏单例模式
+ * 1. 使用 final 修饰类，可以防止因为继承而破坏单例模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 17:15
  */
 public final class Singleton {
 

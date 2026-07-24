@@ -4,7 +4,7 @@ package org.bluebridge.section_15_synchronized_wait_notify;
  * wait()会释放锁，但是也会有阻塞效果
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 12:00
  */
 public class SynchronizedWaitTest {
 

@@ -1,10 +1,10 @@
 package org.bluebridge.thread.section_02_thread_middle;
 
 /**
- * volatile 关键字测试2
+ * volatile 关键字测试 2
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2019/10/15 10:30
  */
 public class VolatileTest2 {
 

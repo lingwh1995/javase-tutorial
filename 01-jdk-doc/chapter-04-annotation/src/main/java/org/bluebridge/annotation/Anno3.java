@@ -1,7 +1,7 @@
 package org.bluebridge.annotation;
 
 /**
- * 注解的value属性
+ * 注解的 value 属性
  *
  * @author lingwh
  * @date 2026/4/23 16:29

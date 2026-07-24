@@ -3,10 +3,10 @@ package org.bluebridge.serializable.section_02_externalizable;
 import java.io.*;
 
 /**
- * Externalizable工具类
+ * Externalizable 工具类
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 public class ExternalizableUtils {
 

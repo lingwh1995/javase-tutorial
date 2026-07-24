@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
- * System类API测试
+ * System 类 API 测试
  *
  * @author lingwh
  * @date 2026/4/23 16:29
@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class SystemTest {
 
     /*
-     * System的arraycopy()方法，此方法常用来执行比较复杂的数组拷贝
+     * System 的 arraycopy() 方法，此方法常用来执行比较复杂的数组拷贝
      *
      * @param src the source array.
      * @param srcPos starting position in the source array.

@@ -3,10 +3,10 @@ package org.bluebridge.section_16_jconsole;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 打开cmd -> 输入jconsole -> 连接到JconsoleTest -> 点击线程标签
+ * 打开 cmd -> 输入 jconsole -> 连接到 JconsoleTest -> 点击线程标签
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 13:30
  */
 public class JconsoleTest {
 

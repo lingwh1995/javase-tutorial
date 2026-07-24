@@ -1,7 +1,7 @@
 package org.bluebridge.section_05_yield;
 
 /**
- * sleep()和yield()对比
+ * sleep() 和 yield() 对比
  *
  * 1. sleep()
  *    - 调用 sleep 会让当前线程从 Running 进入 Timed Waiting 状态（阻塞）
@@ -14,7 +14,7 @@ package org.bluebridge.section_05_yield;
  *    - 具体的实现依赖于操作系统的任务调度器
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 09:15
  */
 public class ThreadSleepAndYieldTest {
 

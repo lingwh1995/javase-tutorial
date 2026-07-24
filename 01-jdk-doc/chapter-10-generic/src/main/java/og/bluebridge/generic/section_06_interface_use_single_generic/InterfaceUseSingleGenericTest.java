@@ -6,7 +6,7 @@ import org.junit.Test;
  * 使用单个泛型测试
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/3/10 10:30
  */
 public class InterfaceUseSingleGenericTest {
 

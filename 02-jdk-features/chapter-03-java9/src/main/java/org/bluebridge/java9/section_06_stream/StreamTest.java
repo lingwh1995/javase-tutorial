@@ -15,7 +15,7 @@ import java.util.stream.Stream;
 public class StreamTest {
 
     /**
-     * takeWhile测试 在有序的Stream中，takeWhile从头开始返回满足条件的元素
+     * takeWhile 测试 在有序的 Stream 中，takeWhile 从头开始返回满足条件的元素
      */
     @Test
     public void testTakeWhile() {
@@ -24,7 +24,7 @@ public class StreamTest {
     }
 
     /**
-     * dropWhile测试 在有序的Stream中，dropWhile返回除了从头开始满足条件的元素
+     * dropWhile 测试 在有序的 Stream 中，dropWhile 返回除了从头开始满足条件的元素
      */
     @Test
     public void testDropWhile() {
@@ -33,9 +33,9 @@ public class StreamTest {
     }
 
     /**
-     * Java8中Stream不能完全为null，否则会报空指针异常。Java9中 新增加的Stream.ofNullable()
+     * Java8 中 Stream 不能完全为 null，否则会报空指针异常。Java9 中 新增加的 Stream.ofNullable()
      *
-     * 方法允许我们创建一个只包含单个 null 的Stream
+     * 方法允许我们创建一个只包含单个 null 的 Stream
      */
     @Test
     public void testStreamOfNullable() {
@@ -43,7 +43,7 @@ public class StreamTest {
         Stream.of(1, 2, 3, 4, null).forEach(System.out::println);
         System.out.println("----------------------------");
 
-        // of() 参数中不能只包含 null ,会报空指针异常
+        // of() 参数中不能只包含 null，会报空指针异常
         // Stream.of(null).forEach(System.out::println);
         System.out.println("----------------------------");
 
@@ -52,15 +52,15 @@ public class StreamTest {
     }
 
     /**
-     * 创建无限流 java9提供了 iterate() 的一个重载方法，这个重载方法提供了新的方式中止无限流
+     * 创建无限流 java9 提供了 iterate() 的一个重载方法，这个重载方法提供了新的方式中止无限流
      */
     @Test
     public void testStreamIterate() {
-        // java8提供的Stream创建无限流的方法
+        // java8 提供的 Stream 创建无限流的方法
         Stream.iterate(0, x -> x + 1).limit(10).forEach(System.out::println);
         System.out.println("----------------------------");
 
-        // java9提供的Stream创建无限流的方法
+        // java9 提供的 Stream 创建无限流的方法
         Stream.iterate(0, x -> x < 100, x -> x + 1).limit(10).forEach(System.out::println);
         System.out.println("----------------------------");
     }

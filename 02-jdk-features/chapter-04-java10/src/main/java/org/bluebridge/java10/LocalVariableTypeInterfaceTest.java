@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * 局部变量类型推断
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class LocalVariableTypeInterfaceTest {
 
@@ -26,13 +26,13 @@ public class LocalVariableTypeInterfaceTest {
         list.add(3);
         System.out.println("--------------------------------------");
 
-        // 2.遍历操作(增强for循环)
+        // 2.遍历操作(增强 for 循环)
         for (var j : list) {
             System.out.println(j);
         }
         System.out.println("--------------------------------------");
 
-        // 3.遍历操作(普通for循环)
+        // 3.遍历操作(普通 for 循环)
         for (var k = 0; k < list.size(); k++) {
             System.out.println(k);
         }
@@ -44,13 +44,13 @@ public class LocalVariableTypeInterfaceTest {
      */
     @Test
     public void testLocalVariableTypeInterface2() {
-        // 1.右值为null
+        // 1.右值为 null
         // var i = null;
 
         // 2.方法引用
         // var j = System.out::println;
 
-        // 3.lambda表达式
+        // 3.lambda 表达式
         // var k = () -> Math.random();
 
         // 4.为数组静态初始化
@@ -67,7 +67,7 @@ public class LocalVariableTypeInterfaceTest {
 
         // 9.类的属性
 
-        // 10.catch块
+        // 10.catch 块
         // try {
         //
         // }catch (var e) {

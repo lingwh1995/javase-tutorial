@@ -3,7 +3,7 @@ package org.bluebridge.java8.section_02_lambda;
 import org.junit.Test;
 
 /**
- * lambda表达式的延迟执行特性
+ * lambda 表达式的延迟执行特性
  *
  * @author lingwh
  * @date 2025/12/2 17:34
@@ -11,7 +11,7 @@ import org.junit.Test;
 public class LambdaLazyExecuteTest {
 
     /**
-     * 测试不使用lambda表达式 - 条件通过时
+     * 测试不使用 lambda 表达式 - 条件通过时
      */
     @Test
     public void testPrintLog_1() {
@@ -26,7 +26,7 @@ public class LambdaLazyExecuteTest {
     }
 
     /**
-     * 测试不使用lambda表达式 - 条件不通过时
+     * 测试不使用 lambda 表达式 - 条件不通过时
      */
     @Test
     public void testPrintLog_2() {
@@ -41,8 +41,8 @@ public class LambdaLazyExecuteTest {
     }
 
     /**
-     * 测试使用lambda表达式 - 条件通过时
-     *     可以观察到：执行时间和不使用lambda表达式的耗时基本一致
+     * 测试使用 lambda 表达式 - 条件通过时
+     *     可以观察到：执行时间和不使用 lambda 表达式的耗时基本一致
      */
     @Test
     public void testPrintLogLambda_1() {
@@ -60,7 +60,7 @@ public class LambdaLazyExecuteTest {
     }
 
     /**
-     * 测试使用lambda表达式 - 条件不通过时
+     * 测试使用 lambda 表达式 - 条件不通过时
      *     可以观察到：执行时间会大大的缩小代码的执行时间，因为这种写法有的逻辑不会执行
      */
     @Test
@@ -79,7 +79,7 @@ public class LambdaLazyExecuteTest {
     }
 
     /**
-     * 没有使用lambda表达式的方法
+     * 没有使用 lambda 表达式的方法
      *
      * @param level
      * @param msg
@@ -91,7 +91,7 @@ public class LambdaLazyExecuteTest {
     }
 
     /**
-     * 使用了lambda表达式的方法
+     * 使用了 lambda 表达式的方法
      *
      * @param level
      * @param builder
@@ -103,7 +103,7 @@ public class LambdaLazyExecuteTest {
     }
 
     /*
-     * 下面这个是函数式接口，方便lambda表达式的使用。
+     * 下面这个是函数式接口，方便 lambda 表达式的使用。
      */
     @FunctionalInterface
     interface MessageBuilder {

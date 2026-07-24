@@ -15,7 +15,7 @@ import java.util.stream.Stream;
 public class OptionalTest {
 
     /**
-     * java9中Optional提供了一个将Optional对象转换为Stream流的方法
+     * java9 中 Optional 提供了一个将 Optional 对象转换为 Stream 流的方法
      */
     @Test
     public void testOptionalStream() {

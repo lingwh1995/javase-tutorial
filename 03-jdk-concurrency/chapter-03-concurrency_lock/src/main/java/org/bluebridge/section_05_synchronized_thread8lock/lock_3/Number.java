@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * 情况3：3 1s 12 或 23 1s 1 或 32 1s 1
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class Number {
 

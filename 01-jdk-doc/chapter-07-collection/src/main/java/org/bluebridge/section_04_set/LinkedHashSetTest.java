@@ -7,16 +7,16 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
- * LinkedHashSet有序且唯一测试
+ * LinkedHashSet 有序且唯一测试
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 @Slf4j
 public class LinkedHashSetTest {
 
     /**
-     * 测试LinkedHashSet
+     * 测试 LinkedHashSet
      *
      * 1. 有序性‌：通过内部的双向链表维护元素插入顺序，遍历时保证与插入顺序一致
      * 2. 唯一性‌：继承自HashSet，确保元素不重复（基于equals()和hashCode()判断）

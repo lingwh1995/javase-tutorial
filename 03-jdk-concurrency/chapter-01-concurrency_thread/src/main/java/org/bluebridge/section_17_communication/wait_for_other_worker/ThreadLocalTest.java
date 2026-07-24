@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 演示ThreadLocal机制的使用场景：主线程等待多个工作线程完成
+ * 演示 ThreadLocal 机制的使用场景：主线程等待多个工作线程完成
  *
  * @author lingwh
  * @date 2025/10/28 9:34
@@ -14,14 +14,14 @@ import java.util.List;
 @Slf4j
 public class ThreadLocalTest {
 
-    // 使用ThreadLocal存储每个线程的工作状态
+    // 使用 ThreadLocal 存储每个线程的工作状态
     private static final ThreadLocal<Boolean> WORKER_COMPLETIONSTATUS = ThreadLocal.withInitial(() -> false);
 
     // 用于存储工作线程的引用
     private static final List<Thread> WORKER_THREADS = new ArrayList<>();
 
     public static void main(String[] args) throws InterruptedException {
-        // 创建并启动3个工作线程
+        // 创建并启动 3 个工作线程
         Thread worker1 = new Thread(new Worker("工作线程1 => 启动服务A"));
         Thread worker2 = new Thread(new Worker("工作线程2 => 启动服务B"));
         Thread worker3 = new Thread(new Worker("工作线程3 => 启动服务C"));
@@ -66,7 +66,7 @@ public class ThreadLocalTest {
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             } finally {
-                // 清理ThreadLocal变量
+                // 清理 ThreadLocal 变量
                 WORKER_COMPLETIONSTATUS.remove();
             }
         }

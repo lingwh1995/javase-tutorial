@@ -3,7 +3,7 @@ package org.bluebridge.java8.section_02_lambda;
 import java.io.Serializable;
 
 /**
- * lambda表达式实际上是函数式接口的实例对象
+ * lambda 表达式实际上是函数式接口的实例对象
  *
  * @author lingwh
  * @date 2025/12/2 17:34
@@ -39,7 +39,7 @@ public class LambdaIsObjectTest {
         // 调用普通的方法
         System.out.println(LambdaIsObjectTest.add(1, 2));
 
-        // 调用Lambda对象
+        // 调用 Lambda 对象
         System.out.println(add.calc(100, 10));
         System.out.println(sub.calc(100, 10));
         System.out.println(mul.calc(100, 10));

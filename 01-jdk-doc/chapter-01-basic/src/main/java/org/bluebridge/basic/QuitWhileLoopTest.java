@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
- * 退出while循环测试
+ * 退出 while 循环测试
  *
  * @author lingwh
  * @date 2025/5/3 16:58
@@ -13,7 +13,7 @@ import org.junit.Test;
 public class QuitWhileLoopTest {
 
     /**
-     * 测试推出while循环
+     * 测试推出 while 循环
      */
     @Test
     public void testQuitWhileLoop() {

@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * 数组类的高级API
+ * 数组类的高级 API
  *
  * @author lingwh
  * @date 2019/3/11 16:29
@@ -15,7 +15,7 @@ import java.util.List;
 public class ArraysTest {
 
     /**
-     * 数组的copyOf()方法，此方法常用来增加数组长度
+     * 数组的 copyOf() 方法，此方法常用来增加数组长度
      */
     @Test
     public void copyOfTest() {
@@ -27,7 +27,7 @@ public class ArraysTest {
     }
 
     /**
-     * 数组的copyOfRange()方法，此方法常用来增加数组长度
+     * 数组的 copyOfRange() 方法，此方法常用来增加数组长度
      */
     @Test
     public void copyOfRangeTest() {
@@ -52,7 +52,7 @@ public class ArraysTest {
     }
 
     /**
-     * 数组的二分查找方法，注意:二分查找前提是数组有序
+     * 数组的二分查找方法，注意：二分查找前提是数组有序
      */
     @Test
     public void binarySearchTest() {

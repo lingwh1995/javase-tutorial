@@ -8,17 +8,17 @@ import java.util.List;
 import java.util.function.Consumer;
 
 /**
- * Lambda表达式语法(有六种语法格式:包括完整写法和简化写法)
+ * Lambda 表达式语法(有六种语法格式：包括完整写法和简化写法)
  *
  * 1. 举例 (o1, o2) -> Integer.compare(o1, o2)
  * 2. 格式
- *    - 左边		lambda形参列表(实际上就是接口中的抽象方法的形参列表)
- *    - 中间		lambda操作符 或 箭头操作符
- *    - 右边		lambda体(其实就是重写的抽象方法的方法体)
- *  3. lambda使用总结
- *    - 左边		lambda形参列表的参数类型可以省略，如果lambda形参列表只有一个参数，包裹这个参数的小括号也可以省略
- *    - 右边		lambda体应该使用一对{}包裹，如果lambda体只有一条执行语句(可能是return语句)，可以省略return和这一对大括号
- *  4. lambda表达式的本质	作为函数式接口的实例，lambda表达式要想使用，必然依赖于函数式接口
+ *    - 左边		lambda 形参列表(实际上就是接口中的抽象方法的形参列表)
+ *    - 中间		lambda 操作符 或 箭头操作符
+ *    - 右边		lambda 体(其实就是重写的抽象方法的方法体)
+ *  3. lambda 使用总结
+ *    - 左边		lambda 形参列表的参数类型可以省略，如果 lambda 形参列表只有一个参数，包裹这个参数的小括号也可以省略
+ *    - 右边		lambda 体应该使用一对{}包裹，如果 lambda 体只有一条执行语句(可能是 return 语句)，可以省略 return 和这一对大括号
+ *  4. lambda 表达式的本质	作为函数式接口的实例，lambda 表达式要想使用，必然依赖于函数式接口
  *  5. 函数式接口	只包含一个抽象方法的接口，称为函数式接口
  *
  * @author lingwh
@@ -43,7 +43,7 @@ public class LambdaGrammerTest {
 		r.run();
 
 		/**
-		 * 使用lambda表达式
+		 * 使用 lambda 表达式
 		 */
 		r = () -> System.out.println("hello lambda...");
 		r.run();
@@ -67,7 +67,7 @@ public class LambdaGrammerTest {
 		System.out.println("--------------------------------------");
 
 		/**
-		 * 使用lambda表达式
+		 * 使用 lambda 表达式
 		 */
 		consumer = (String s) -> {
 			System.out.println(s);
@@ -93,13 +93,13 @@ public class LambdaGrammerTest {
 		System.out.println("--------------------------------------");
 
 		/**
-		 * 使用lambda表达式(省略参数，由编译器推导类型)
+		 * 使用 lambda 表达式(省略参数，由编译器推导类型)
 		 */
 		consumer = (s) -> System.out.println(s);
 		consumer.accept("使用lambda表达式(省略参数，由编译器推导类型，称为类型推断)...");
 
 		/**
-		 * 补充：java8之前的类型推断
+		 * 补充：java8 之前的类型推断
 		 */
 		// 不使用类型推断
 		List<String> list1 = new ArrayList<String>();
@@ -130,14 +130,14 @@ public class LambdaGrammerTest {
 		System.out.println("--------------------------------------");
 
 		/**
-		 * 使用lambda表达式(省略参数，由编译器推导类型) + 省略参数的小括号
+		 * 使用 lambda 表达式(省略参数，由编译器推导类型) + 省略参数的小括号
 		 */
 		consumer = s -> System.out.println(s);
 		consumer.accept("使用lambda表达式(省略参数，由编译器推导类型) + 省略参数的小括号...");
 	}
 
 	/**
-	 * 语法格式五：需要两个或以上参数，多条语句执行，并且可以有多条返回值，这种情况一般只能简写到lambda形式+省略参数类型
+	 * 语法格式五：需要两个或以上参数，多条语句执行，并且可以有多条返回值，这种情况一般只能简写到 lambda 形式+省略参数类型
 	 */
 	@Test
 	public void testLambdaGrammer_5() {
@@ -157,7 +157,7 @@ public class LambdaGrammerTest {
 		System.out.println("--------------------------------------");
 
 		/**
-		 * 使用lambda方式调用
+		 * 使用 lambda 方式调用
 		 */
 		comparator = (o1, o2) -> {
 			System.out.println(o1);
@@ -169,7 +169,7 @@ public class LambdaGrammerTest {
 	}
 
 	/**
-	 * 语法格式六：当lambda体只有一条语句时，如果有return和括号，都可以省略
+	 * 语法格式六：当 lambda 体只有一条语句时，如果有 return 和括号，都可以省略
 	 */
 	@Test
 	public void testLambdaGrammer_6() {
@@ -187,7 +187,7 @@ public class LambdaGrammerTest {
 		System.out.println("--------------------------------------");
 
 		/**
-		 * 使用lambda方式调用
+		 * 使用 lambda 方式调用
 		 */
 		comparator = (o1, o2) -> Integer.compare(o1, o2);
 		result = comparator.compare(20, 10);

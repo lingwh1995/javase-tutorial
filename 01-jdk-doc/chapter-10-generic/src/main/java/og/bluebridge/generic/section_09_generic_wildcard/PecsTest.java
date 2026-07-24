@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * PECS原则测试
+ * PECS 原则测试
  *
  * @author lingwh
- * @date 2026/7/9 11:04
+ * @date 2019/3/10 10:30
  */
 public class PecsTest {
 
@@ -23,7 +23,7 @@ public class PecsTest {
                 new VipOrder("VIP-001", 500.0, "张三"),
                 new VipOrder("VIP-002", 800.0, "李四"));
 
-        // ---------- 场景1：订单金额统计（Producer - extends） ----------
+        // ---------- 场景 1：订单金额统计（Producer - extends） ----------
         System.out.println("--- 场景1：订单金额统计 ---");
         double normalTotal = calculateTotal(normalOrders);
         double vipTotal = calculateTotal(vipOrders);
@@ -31,19 +31,19 @@ public class PecsTest {
         System.out.println("VIP订单总金额: ¥" + vipTotal);
         System.out.println("所有订单总金额: ¥" + (normalTotal + vipTotal));
 
-        // ---------= 场景2：订单数据收集（Consumer - super）---------=
+        // ---------= 场景 2：订单数据收集（Consumer - super）---------=
         System.out.println("\n--- 场景2：订单数据收集 ---");
         List<Order> allOrders = new ArrayList<>();
         collectOrders(allOrders, normalOrders);
         collectOrders(allOrders, vipOrders);
         System.out.println("收集到的订单数量: " + allOrders.size());
 
-        // ---------- 场景3：订单导出（Producer - extends） ----------
+        // ---------- 场景 3：订单导出（Producer - extends） ----------
         System.out.println("\n--- 场景3：订单导出 ---");
         exportToCsv(normalOrders, "normal_orders.csv");
         exportToCsv(vipOrders, "vip_orders.csv");
 
-        // ---------- 场景4：批量添加订单（Consumer - super） ----------
+        // ---------- 场景 4：批量添加订单（Consumer - super） ----------
         System.out.println("\n--- 场景4：批量添加订单 ---");
         List<Object> orderPool = new ArrayList<>();
         batchAddOrders(orderPool);
@@ -51,7 +51,7 @@ public class PecsTest {
     }
 
     /**
-     * Producer场景：统计订单总金额 使用 ? extends Order 可以接收 Order 及其子类（VipOrder等）
+     * Producer 场景：统计订单总金额 使用 ? extends Order 可以接收 Order 及其子类（VipOrder 等）
      */
     public static double calculateTotal(List<? extends Order> orders) {
         double total = 0;
@@ -62,7 +62,7 @@ public class PecsTest {
     }
 
     /**
-     * Consumer场景：收集订单到统一列表 使用 ? super Order 可以写入 Order 及其子类到父类列表
+     * Consumer 场景：收集订单到统一列表 使用 ? super Order 可以写入 Order 及其子类到父类列表
      */
     public static void collectOrders(List<? super Order> target, List<? extends Order> source) {
         for (Order order : source) {
@@ -71,7 +71,7 @@ public class PecsTest {
     }
 
     /**
-     * Producer场景：导出订单到CSV 使用 ? extends Order 支持导出不同类型的订单
+     * Producer 场景：导出订单到 CSV 使用 ? extends Order 支持导出不同类型的订单
      */
     public static void exportToCsv(List<? extends Order> orders, String filename) {
         System.out.println("导出 " + orders.size() + " 条订单到 " + filename);
@@ -81,7 +81,7 @@ public class PecsTest {
     }
 
     /**
-     * Consumer场景：批量添加订单 使用 ? super Order 可以向任意父类容器添加订单
+     * Consumer 场景：批量添加订单 使用 ? super Order 可以向任意父类容器添加订单
      */
     public static void batchAddOrders(List<? super Order> orderList) {
         orderList.add(new Order("BATCH-001", 999.0));
@@ -111,7 +111,7 @@ class Order {
 }
 
 /**
- * VIP订单类（继承Order）
+ * VIP 订单类（继承 Order）
  */
 class VipOrder extends Order {
     private String vipName;

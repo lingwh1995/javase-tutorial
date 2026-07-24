@@ -3,7 +3,7 @@ package org.bluebridge.ioc.section_01_xml;
 import java.util.HashMap;
 
 /**
- * 描述class/beanId和其子属性的对应关系
+ * 描述 class/beanId 和其子属性的对应关系
  *
  * @author lingwh
  * @date 2019/3/14 19:02

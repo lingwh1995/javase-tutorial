@@ -1,7 +1,7 @@
 package org.bluebridge.java9.section_01_interface;
 
 /**
- * Java9接口方法示例
+ * Java9 接口方法示例
  *
  * @author lingwh
  * @date 2026/6/22 15:10

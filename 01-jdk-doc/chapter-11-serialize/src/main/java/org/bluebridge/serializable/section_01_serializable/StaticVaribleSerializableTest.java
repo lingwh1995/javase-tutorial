@@ -8,7 +8,7 @@ import java.io.*;
  * 被static修饰的变量(静态变量)不参与序列化过程
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 public class StaticVaribleSerializableTest implements Serializable {
     private static final long serialVersionUID = 1L;

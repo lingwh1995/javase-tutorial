@@ -3,7 +3,7 @@ package org.bluebridge.protobuf.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 字符串转换为Ascii和Ascii转换为字符串的案例
+ * 字符串转换为 Ascii 和 Ascii 转换为字符串的案例
  *
  * @author lingwh
  * @date 2025/11/3 20:47
@@ -12,17 +12,17 @@ import lombok.extern.slf4j.Slf4j;
 public class AsciiTransferTest {
 
     public static void main(String[] args) {
-        // 字符串转换为Ascii的案例
+        // 字符串转换为 Ascii 的案例
         String asciiToString = asciiToString("460030222028133");
         log.info("字符串转换为Ascii: {}", asciiToString);
-        // Ascii转换为字符串的案例
+        // Ascii 转换为字符串的案例
         String stringToAscii =
                 stringToAscii("0052,0054,0048,0048,0051,0048,0050,0050,0050,0048,0050,0056,0049,0051,0051");
         log.info("Ascii转换为字符串: {}", stringToAscii);
     }
 
     /**
-     * 字符串转换为Ascii
+     * 字符串转换为 Ascii
      *
      * @param value
      * @return
@@ -41,7 +41,7 @@ public class AsciiTransferTest {
     }
 
     /**
-     * Ascii转换为字符串
+     * Ascii 转换为字符串
      *
      * @param value
      * @return

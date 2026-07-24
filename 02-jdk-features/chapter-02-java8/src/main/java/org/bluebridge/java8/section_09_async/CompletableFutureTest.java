@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.concurrent.CompletableFuture;
 
 /**
- * CompletableFuture异步编程测试
+ * CompletableFuture 异步编程测试
  *
  * @author lingwh
  * @date 2026/6/22 15:10

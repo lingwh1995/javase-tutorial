@@ -4,7 +4,7 @@ package org.bluebridge.ioc.section_01_xml;
  * 用户
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2019/3/13 10:30
  */
 public class User {
 

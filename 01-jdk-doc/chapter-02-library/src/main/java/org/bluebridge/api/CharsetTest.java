@@ -13,7 +13,7 @@ import java.nio.charset.Charset;
 public class CharsetTest {
 
     /**
-     * 获取JVM默认字符集
+     * 获取 JVM 默认字符集
      */
     @Test
     public void testDefaultCharset() {

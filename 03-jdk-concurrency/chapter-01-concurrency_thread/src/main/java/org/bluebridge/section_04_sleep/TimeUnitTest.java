@@ -3,10 +3,10 @@ package org.bluebridge.section_04_sleep;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 使用 TimeUnit.SECONDS.sleep(10) 代替 Thread.sleep() ,使得代码可读性更强
+ * 使用 TimeUnit.SECONDS.sleep(10) 代替 Thread.sleep()，使得代码可读性更强
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/4/21 12:30
  */
 public class TimeUnitTest {
 

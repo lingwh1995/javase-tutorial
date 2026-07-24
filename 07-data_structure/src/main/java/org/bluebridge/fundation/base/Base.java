@@ -20,7 +20,7 @@ public class Base {
     public void fun1() {
         int i = 10;
         /**
-         * i向右移动一位,缩小1倍
+         * i 向右移动一位，缩小 1 倍
          */
         System.out.println("i向右移动一位:" + (i >> 1));
 

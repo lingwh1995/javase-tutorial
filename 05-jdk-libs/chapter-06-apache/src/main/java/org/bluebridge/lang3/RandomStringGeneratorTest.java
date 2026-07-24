@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.stream.IntStream;
 
 /**
- * RandomStringGenerator工具类测试
+ * RandomStringGenerator 工具类测试
  *
  * @author lingwh
  * @date 2025/9/15 11:08

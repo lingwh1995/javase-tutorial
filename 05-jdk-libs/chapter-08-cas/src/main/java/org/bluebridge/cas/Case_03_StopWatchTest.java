@@ -16,11 +16,11 @@ import java.util.concurrent.TimeUnit;
 public class Case_03_StopWatchTest {
 
     /**
-     * 测试StopWatch HelloWorld 案例
+     * 测试 StopWatch HelloWorld 案例
      */
     @Test
     public void testStopWatchHelloWorld() throws InterruptedException {
-        // 创建一个StopWatch对象
+        // 创建一个 StopWatch 对象
         StopWatch stopWatch = new StopWatch("秒表");
         // 开始计时
         stopWatch.start("task-1");
@@ -32,37 +32,37 @@ public class Case_03_StopWatchTest {
     }
 
     /**
-     * 测试StopWatch
+     * 测试 StopWatch
      * 1. 多个任务执行时间统计
      * 2. 优雅的打印执行结果
      */
     @Test
     public void testStopWatch() throws InterruptedException {
-        // 创建一个StopWatch对象
+        // 创建一个 StopWatch 对象
         StopWatch stopWatch = new StopWatch("秒表");
-        // task-1开始计时
+        // task-1 开始计时
         stopWatch.start("task-1");
         task1();
-        // task-1停止计时
+        // task-1 停止计时
         stopWatch.stop();
 
-        // task-2开始计时
+        // task-2 开始计时
         stopWatch.start("task-2");
         task2();
-        // task-2停止计时
+        // task-2 停止计时
         stopWatch.stop();
         log.info(stopWatch.prettyPrint());
     }
 
     /**
-     * 任务一：睡眠1000毫秒
+     * 任务一：睡眠 1000 毫秒
      */
     private void task1() throws InterruptedException {
         TimeUnit.MILLISECONDS.sleep(1000);
     }
 
     /**
-     * 任务二：睡眠2000毫秒
+     * 任务二：睡眠 2000 毫秒
      */
     private void task2() throws InterruptedException {
         TimeUnit.MILLISECONDS.sleep(2000);

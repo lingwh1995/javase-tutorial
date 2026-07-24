@@ -4,7 +4,7 @@ package org.bluebridge.section_03_synchronized_oop;
  * 使用面向对象方式改造 synchronized 避免临界区中发生竞态条件
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 09:30
  */
 public class SynchronizedOOPTest {
 

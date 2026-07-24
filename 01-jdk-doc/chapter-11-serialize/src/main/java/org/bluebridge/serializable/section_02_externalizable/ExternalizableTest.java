@@ -6,10 +6,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
- * Externalizable测试
+ * Externalizable 测试
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 public class ExternalizableTest {
 

@@ -16,17 +16,17 @@ import java.util.Map;
 public class Case_04_TemplateLiteralsTest {
 
     /**
-     * 测试模板字符串-基于Java语言
+     * 测试模板字符串-基于 Java 语言
      */
     @Test
     public void testTemplateLiteralsBasedOnJavaLanguage() {
-        // 使用String.format()方式实现
+        // 使用 String.format() 方式实现
         String name = "Alice";
         int age = 23;
         String greeting = String.format("Hello, %s! You are %d years old.", name, age);
         System.out.println(greeting);
 
-        // 使用MessageFormat.format()方式实现
+        // 使用 MessageFormat.format() 方式实现
         name = "Bob";
         age = 25;
         String pattern = "Hello, {0}! You are {1} years old.";
@@ -35,7 +35,7 @@ public class Case_04_TemplateLiteralsTest {
     }
 
     /**
-     * 测试模板字符串-基于Apache Commons Lang3
+     * 测试模板字符串-基于 Apache Commons Lang3
      */
     @Test
     public void testTemplateLiteralsBasedOnApacheCommonsLang3() {
@@ -48,13 +48,13 @@ public class Case_04_TemplateLiteralsTest {
     }
 
     /**
-     * 测试模板字符串-基于Java11文本块儿 + String.format()
+     * 测试模板字符串-基于 Java11 文本块儿 + String.format()
      */
     @Test
     public void testTemplateLiteralsBasedOnJava11() {
         String name = "Alice";
         int age = 30;
-        // 注意：这种方式需要JDK 15及以上支持formatted方法在字符串字面量上。在Java 11到14中，需要先定义变量然后使用String.format
+        // 注意：这种方式需要 JDK 15 及以上支持 formatted 方法在字符串字面量上。在 Java 11 到 14 中，需要先定义变量然后使用 String.format
         String greeting = """
                 Hello, %s! You are %d years old.
                 """

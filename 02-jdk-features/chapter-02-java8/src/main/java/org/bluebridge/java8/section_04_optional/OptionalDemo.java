@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.Optional;
 
 /**
- * Optional使用示例
+ * Optional 使用示例
  *
  * @author lingwh
  * @date 2026/6/22 15:10
@@ -13,7 +13,7 @@ import java.util.Optional;
 public class OptionalDemo {
 
     /**
-     * V1.0 不判断boy和girl是否为空，可能会报空指针异常
+     * V1.0 不判断 boy 和 girl 是否为空，可能会报空指针异常
      *
      * @param boy
      * @return
@@ -33,7 +33,7 @@ public class OptionalDemo {
     }
 
     /**
-     * V2.0 使用传统方法判断boy和girl是否为空，可以避免空指针异常
+     * V2.0 使用传统方法判断 boy 和 girl 是否为空，可以避免空指针异常
      *
      * @param boy
      * @return
@@ -59,7 +59,7 @@ public class OptionalDemo {
     }
 
     /**
-     * V3.0 使用Optional类处理空指针问题
+     * V3.0 使用 Optional 类处理空指针问题
      *
      * @param boy
      * @return
@@ -67,11 +67,11 @@ public class OptionalDemo {
     public String getGirlNameV3(Boy boy) {
         // boy = null;
         Optional<Boy> boyOptional = Optional.ofNullable(boy);
-        // 此时的boy一定非空
+        // 此时的 boy 一定非空
         boy = boyOptional.orElse(new Boy(new Girl("boy为空时-古力娜扎")));
         Girl girl = boy.getGirl();
         Optional<Girl> girlOptional = Optional.ofNullable(girl);
-        // 此时的girl一定非空
+        // 此时的 girl 一定非空
         girl = girlOptional.orElse(new Girl("girl为空时-范冰冰"));
         return girl.getName();
     }

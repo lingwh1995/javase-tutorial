@@ -4,7 +4,7 @@ package org.bluebridge.section_10_unsafe_atomic_integer;
  * 实现账户类，使用手动实现的原子整数作为余额类型
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:30
  */
 public class AccountImpl implements Account {
 

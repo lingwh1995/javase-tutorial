@@ -3,12 +3,12 @@ package org.bluebridge.utils;
 import cn.hutool.crypto.symmetric.AES;
 
 /**
- * AES加密算法
+ * AES 加密算法
  *
- * 使用hutool封装过的实现 - https://doc.hutool.cn/pages/SymmetricCrypto/#%E9%80%9A%E7%94%A8%E4%BD%BF%E7%94%A8
+ * 使用 hutool 封装过的实现 - https://doc.hutool.cn/pages/SymmetricCrypto/#%E9%80%9A%E7%94%A8%E4%BD%BF%E7%94%A8
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 public class AESUtil {
 

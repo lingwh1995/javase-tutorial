@@ -3,10 +3,10 @@ package org.bluebridge.java9.module01;
 import org.bluebridge.java9.module02.Person;
 
 /**
- * Java9模块化测试
+ * Java9 模块化测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 10:30
  */
 public class TestJava9Module {
 

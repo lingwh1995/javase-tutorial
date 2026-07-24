@@ -6,12 +6,12 @@ import org.junit.Test;
  * Java11 String 测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class StringTest {
 
     /**
-     * java11中String的新增方法
+     * java11 中 String 的新增方法
      */
     @Test
     public void testString() {

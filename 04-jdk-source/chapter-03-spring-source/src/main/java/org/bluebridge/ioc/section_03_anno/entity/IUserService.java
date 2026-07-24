@@ -4,7 +4,7 @@ package org.bluebridge.ioc.section_03_anno.entity;
  * 用户服务接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2019/3/15 10:30
  */
 public interface IUserService {
 

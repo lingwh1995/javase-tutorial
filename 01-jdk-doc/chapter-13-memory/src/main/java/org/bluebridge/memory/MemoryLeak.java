@@ -17,11 +17,11 @@ public class MemoryLeak {
     }
 
     /**
-     * 容易导致内存泄漏的集中情况:长生命周期的对象持有短声明周期对象的引用
+     * 容易导致内存泄漏的集中情况：长生命周期的对象持有短声明周期对象的引用
      */
 
     /**
-     * 1. 静态集合类引起内存泄露： 解决方案:使用完后把静态集合的引用指向null，如: vector = null;
+     * 1. 静态集合类引起内存泄露： 解决方案：使用完后把静态集合的引用指向 null，如：vector = null;
      */
     private static Vector vector = new Vector(10);
 
@@ -35,8 +35,8 @@ public class MemoryLeak {
     }
 
     /**
-     * 2. 当集合里面的对象属性被修改后，再调用remove（）方法时不起作用。
-     * 此测试必须在重写Person实体的hashCode()和equals()方法前提下才能模拟出执行remove()无效的情况
+     * 2. 当集合里面的对象属性被修改后，再调用 remove（）方法时不起作用。
+     * 此测试必须在重写 Person 实体的 hashCode() 和 equals() 方法前提下才能模拟出执行 remove() 无效的情况
      */
     public static void testCollectRemove() {
         Set<Person> set = new HashSet<Person>();
@@ -46,17 +46,17 @@ public class MemoryLeak {
         set.add(p1);
         set.add(p2);
         set.add(p3);
-        // 结果：总共有:3 个元素!
+        // 结果：总共有：3 个元素!
         System.out.println("总共有:" + set.size() + " 个元素!");
-        // 修改p3的年龄,此时p3元素对应的hashcode值发生改变
+        // 修改 p3 的年龄，此时 p3 元素对应的 hashcode 值发生改变
         System.out.println("hashcode:" + p3.hashCode());
         p3.setAge(2);
-        // 此时remove不掉，造成内存泄漏
+        // 此时 remove 不掉，造成内存泄漏
         System.out.println("hashcode:" + p3.hashCode());
         set.remove(p3);
         // 重新添加，居然添加成功
         set.add(p3);
-        // 结果：总共有:4 个元素!
+        // 结果：总共有：4 个元素!
         System.out.println("总共有:" + set.size() + " 个元素!");
         for (Person person : set) {
             System.out.println(person);
@@ -65,22 +65,22 @@ public class MemoryLeak {
 }
 
 /**
- * 3. 监听器 在java 编程中，我们都需要和监听器打交道，通常一个应用当中会用到很多监听器，我们会调用一个控件的诸
- * 如addXXXListener()等方法来增加监听器，但往往在释放对象的时候却没有记住去删除这些监听器，从而增 加了内存泄漏的机会。
+ * 3. 监听器 在 java 编程中，我们都需要和监听器打交道，通常一个应用当中会用到很多监听器，我们会调用一个控件的诸
+ * 如 addXXXListener() 等方法来增加监听器，但往往在释放对象的时候却没有记住去删除这些监听器，从而增 加了内存泄漏的机会。
  */
 
 /**
- * 4. 各种连接 比如数据库连接（dataSourse.getConnection()），网络连接(socket)和io连接，除非其显式的调用了
- * 其close（）方法将其连接关闭，否则是不会自动被GC 回收的。对于Resultset 和Statement 对象可以不
- * 进行显式回收，但Connection
- * 一定要显式回收，因为Connection 在任何时候都无法自动回收，而Connection一旦 回收，Resultset 和Statement
- * 对象就会立即为NULL。但是如果使用连接池，情况就不一样了，除了要显式地关闭 连接，还必须显式地关闭Resultset Statement
- * 对象（关闭其中一个，另外一个也会关闭），否则就会造成大量 的Statement
- * 对象无法释放，从而引起内存泄漏。这种情况下一般都会在try里面去的连接，在finally里面释放连接。
+ * 4. 各种连接 比如数据库连接（dataSourse.getConnection()），网络连接(socket)和 io 连接，除非其显式的调用了
+ * 其 close（）方法将其连接关闭，否则是不会自动被 GC 回收的。对于 Resultset 和 Statement 对象可以不
+ * 进行显式回收，但 Connection
+ * 一定要显式回收，因为 Connection 在任何时候都无法自动回收，而 Connection 一旦回收，Resultset 和 Statement
+ * 对象就会立即为 NULL。但是如果使用连接池，情况就不一样了，除了要显式地关闭连接，还必须显式地关闭 Resultset Statement
+ * 对象（关闭其中一个，另外一个也会关闭），否则就会造成大量的 Statement
+ * 对象无法释放，从而引起内存泄漏。这种情况下一般都会在 try 里面去的连接，在 finally 里面释放连接。
  */
 
 /**
- * 5. 单例模式 如果单例对象持有外部对象的引用，那么这个外部对象将不能被jvm正常回收，导致内存泄露。
+ * 5. 单例模式 如果单例对象持有外部对象的引用，那么这个外部对象将不能被 jvm 正常回收，导致内存泄露。
  */
 class A {
     public A() {
@@ -88,7 +88,7 @@ class A {
     }
 }
 
-// B类采用单例模式
+// B 类采用单例模式
 class B {
     private A a;
     private static B instance = new B();

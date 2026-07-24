@@ -3,10 +3,10 @@ package org.bluebridge.section_03_state;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 线程状态 五种状态 操作系统层面 // * 六种状态 JavaAPI层面，Thread.State枚举中体现
+ * 线程状态 五种状态 操作系统层面 // * 六种状态 JavaAPI层面，Thread.State 枚举中体现
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 09:00
  */
 public class ThreadStateTest {
 

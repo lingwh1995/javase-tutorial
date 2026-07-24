@@ -12,10 +12,10 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
- * 常用协议解析工具类 依赖 hutools部分工具类
+ * 常用协议解析工具类 依赖 hutools 部分工具类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 public class ParseUtil {
 
@@ -61,7 +61,7 @@ public class ParseUtil {
     /**
      * 字节数组转为字符串
      *
-     * @param source ASCII字节数组
+     * @param source ASCII 字节数组
      * @param start 数组起始位置
      * @param len 读取长度
      * @return 字符串
@@ -73,7 +73,7 @@ public class ParseUtil {
     /**
      * 字节数组转为字符串
      *
-     * @param source ASCII字节数组
+     * @param source ASCII 字节数组
      * @return 字符串
      */
     public static String bytesToString(byte[] source) {
@@ -81,11 +81,11 @@ public class ParseUtil {
     }
 
     /**
-     * 获取单个bit值
+     * 获取单个 bit 值
      *
      * @param data 数值
-     * @param pos 第几个bit位
-     * @return 该bit位的值
+     * @param pos 第几个 bit 位
+     * @return 该 bit 位的值
      */
     public static int getBitNumber(int data, int pos) {
         return (data >> pos) & 0x1;
@@ -123,10 +123,10 @@ public class ParseUtil {
     public static byte[] numberToHexBytes(BigInteger value, ByteOrder byteOrder, int length) {
         byte[] result = new byte[length];
 
-        // BigInteger.toByteArray()输出为大端模式
+        // BigInteger.toByteArray() 输出为大端模式
         byte[] bytes = value.toByteArray();
 
-        // 前边可能有补0 截取掉
+        // 前边可能有补 0 截取掉
         int numberStart = 0;
         for (int i = 0; i < bytes.length; i++) {
             if (bytes[i] != 0) {
@@ -141,7 +141,7 @@ public class ParseUtil {
         if (ByteOrder.BIG_ENDIAN.equals(byteOrder)) {
             int start = Math.max(0, length - bytes.length);
             System.arraycopy(bytes, 0, result, start, Math.min(bytes.length, length));
-            // 负数填充FF
+            // 负数填充 FF
             if (value.signum() == -1) {
                 for (int i = 0; i < start; i++) {
                     result[i] = -1;
@@ -150,7 +150,7 @@ public class ParseUtil {
         } else {
             ArrayUtil.reverse(bytes);
             System.arraycopy(bytes, 0, result, 0, Math.min(bytes.length, length));
-            // 负数填充FF
+            // 负数填充 FF
             if (value.signum() == -1) {
                 for (int i = bytes.length; i < length; i++) {
                     result[i] = -1;
@@ -234,7 +234,7 @@ public class ParseUtil {
      *
      * @param bytes 字节数组
      * @param byteOrder 大小端模式
-     * @param startIndex 起始下标 从数组中该下标开始取8字节转换为double
+     * @param startIndex 起始下标 从数组中该下标开始取 8 字节转换为 double
      * @return 双精度浮点数
      */
     public static double bytesToDouble(byte[] bytes, ByteOrder byteOrder, int startIndex) {
@@ -383,7 +383,7 @@ public class ParseUtil {
     }
 
     /**
-     * 将BCD码转成String
+     * 将 BCD 码转成 String
      *
      * @param bytes 字节数组
      * @return 十六进制字符串

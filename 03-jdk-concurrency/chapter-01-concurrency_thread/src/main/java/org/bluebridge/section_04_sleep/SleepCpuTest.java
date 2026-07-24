@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * sleep() 应用 防止单核单线程时发生CPU 100% 被占用情况
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 12:00
  */
 public class SleepCpuTest {
 

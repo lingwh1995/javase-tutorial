@@ -4,7 +4,7 @@ package org.bluebridge.section_21_hungry_lock.philosopher;
  * 哲学家就餐模拟饥饿锁
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 17:15
  */
 public class PhilosopherTest {
 

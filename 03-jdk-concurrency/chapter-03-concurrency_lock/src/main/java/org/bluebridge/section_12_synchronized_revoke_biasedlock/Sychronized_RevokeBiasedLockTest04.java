@@ -15,7 +15,7 @@ import org.openjdk.jol.info.ClassLayout;
  *    撤销偏向锁阈值超过20次后，jvm会这样觉得，我是不是偏向错了呢，于是会在给这些对象加锁时重新偏向至加锁线程
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 11:00
  */
 public class Sychronized_RevokeBiasedLockTest04 {
 

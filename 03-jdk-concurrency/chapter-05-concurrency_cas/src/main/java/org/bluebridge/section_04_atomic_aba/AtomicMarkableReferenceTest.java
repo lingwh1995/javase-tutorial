@@ -3,10 +3,10 @@ package org.bluebridge.section_04_atomic_aba;
 import java.util.concurrent.atomic.AtomicMarkableReference;
 
 /**
- * AtomicMarkableReference测试
+ * AtomicMarkableReference 测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:45
  */
 public class AtomicMarkableReferenceTest {
 

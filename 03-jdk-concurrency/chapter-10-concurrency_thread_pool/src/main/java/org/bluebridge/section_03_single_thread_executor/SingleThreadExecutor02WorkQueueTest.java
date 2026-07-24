@@ -3,18 +3,18 @@ package org.bluebridge.section_03_single_thread_executor;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * LinkedBlockingQueue工作队列测试 SingleThreadExecutor
+ * LinkedBlockingQueue 工作队列测试 SingleThreadExecutor
  *
  * 1. 希望多个任务排队执行。线程数固定为 1，任务数多于 1 时，会放入无界队列排队。任务执行完毕，这唯一的线程 也不会被释放。
- * 2. 使用的工作队列是LinkedBlockingQueue
+ * 2. 使用的工作队列是 LinkedBlockingQueue
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:45
  */
 public class SingleThreadExecutor02WorkQueueTest {
 
     public static void main(String[] args) {
-        // 创建一个容量为10的LinkedBlockingQueue
+        // 创建一个容量为 10 的 LinkedBlockingQueue
         LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>(10);
 
         // 创建一个生产者线程，用于往队列中添加元素

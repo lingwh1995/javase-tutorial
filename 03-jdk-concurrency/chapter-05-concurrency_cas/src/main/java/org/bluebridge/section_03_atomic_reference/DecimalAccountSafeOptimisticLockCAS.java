@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * BigDecimal账户乐观锁实现
+ * BigDecimal 账户乐观锁实现
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 13:45
  */
 public class DecimalAccountSafeOptimisticLockCAS implements DecimalAccount {
 

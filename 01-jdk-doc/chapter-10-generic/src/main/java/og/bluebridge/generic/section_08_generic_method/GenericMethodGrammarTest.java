@@ -4,18 +4,18 @@ package og.bluebridge.generic.section_08_generic_method;
  * 泛型方法语法测试
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/3/10 10:30
  */
 public class GenericMethodGrammarTest {
 
     public static void main(String[] args) {
         // 测试静态泛型方法
-        // 调用方式一: 直接调用
+        // 调用方式一：直接调用
         String desc = "[静态泛型方法]调用方式一: 直接调用";
         GenericMethodGrammarTest.staticMethod(desc, 100);
         GenericMethodGrammarTest.staticMethod(desc, 100f);
         GenericMethodGrammarTest.staticMethod(desc, "100");
-        // 调用方式二: 调用时添加泛型约束
+        // 调用方式二：调用时添加泛型约束
         desc = "[静态泛型方法]调用方式二: 调用时添加泛型约束";
         GenericMethodGrammarTest.<Integer>staticMethod(desc, 100);
         GenericMethodGrammarTest.<Float>staticMethod(desc, 100f);
@@ -24,13 +24,13 @@ public class GenericMethodGrammarTest {
         System.out.println("---------------------------------------------------------");
 
         // 测试常规泛型方法
-        // 调用方式一: 直接调用
+        // 调用方式一：直接调用
         desc = "[常规泛型方法]调用方式一: 直接调用";
         GenericMethodGrammarTest genericFunctionTest = new GenericMethodGrammarTest();
         genericFunctionTest.normalMethod(desc, 100);
         genericFunctionTest.normalMethod(desc, 100f);
         genericFunctionTest.normalMethod(desc, "100");
-        // 调用方式二: 调用时添加泛型约束
+        // 调用方式二：调用时添加泛型约束
         desc = "[常规泛型方法]调用方式二: 调用时添加泛型约束";
         genericFunctionTest.<Integer>normalMethod(desc, 100);
         genericFunctionTest.<Float>normalMethod(desc, 100f);

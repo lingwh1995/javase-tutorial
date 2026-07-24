@@ -9,7 +9,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 使用多种方式判断list中元素是否重复
+ * 使用多种方式判断 list 中元素是否重复
  *
  * @author lingwh
  * @date 2026/4/21 19:02
@@ -50,9 +50,9 @@ public class Case_01_ListDuplicateTest {
     }
 
     /**
-     * 2.HashSet法（基础实现方案）
+     * 2.HashSet 法（基础实现方案）
      * 优化点
-     *    初始容量设置为list.size()避免扩容
+     *    初始容量设置为 list.size() 避免扩容
      *    快速失败机制
      *
      * @param list
@@ -61,7 +61,7 @@ public class Case_01_ListDuplicateTest {
     public static boolean hasDuplicateByHashSet(List<?> list) {
         Set<Object> set = new HashSet<>(list.size());
         for (Object item : list) {
-            // add返回false表示存在重复
+            // add 返回 false 表示存在重复
             if (!set.add(item)) {
                 return true;
             }
@@ -70,7 +70,7 @@ public class Case_01_ListDuplicateTest {
     }
 
     /**
-     * 3.Stream API实现（进阶实现方案）
+     * 3.Stream API 实现（进阶实现方案）
      *
      * 特征
      *    代码简洁
@@ -84,10 +84,10 @@ public class Case_01_ListDuplicateTest {
     }
 
     /**
-     * 4.TreeSet排序法（进阶实现方案）
+     * 4.TreeSet 排序法（进阶实现方案）
      * 适用场景
      *    需要自然排序结果
-     *    元素实现Comparable接口
+     *    元素实现 Comparable 接口
      *
      * @param list
      * @return
@@ -100,7 +100,7 @@ public class Case_01_ListDuplicateTest {
     /**
      * 5.并行流处理（高性能优化方案）
      * 优势
-     *    利用多核CPU加速
+     *    利用多核 CPU 加速
      *    线程安全的并发集合
      *
      * @param list
@@ -108,12 +108,12 @@ public class Case_01_ListDuplicateTest {
      */
     public static boolean hasDuplicateParallel(List<?> list) {
         Set<Object> seen = ConcurrentHashMap.newKeySet();
-        // 用于判断流中是否存在任意一个元素满足给定的条件（Predicate）。若存在则返回true，否则返回false‌。
+        // 用于判断流中是否存在任意一个元素满足给定的条件（Predicate）。若存在则返回 true，否则返回 false‌。
         return list.parallelStream().anyMatch(e -> !seen.add(e));
     }
 
     /**
-     * 6.BitSet位图法（高性能优化方案）
+     * 6.BitSet 位图法（高性能优化方案）
      * 限制
      *    仅适用于正整数
      *    内存占用与最大数值相关
@@ -132,7 +132,7 @@ public class Case_01_ListDuplicateTest {
     }
 
     /**
-     * 7.Guava工具类
+     * 7.Guava 工具类
      *
      * @param list
      * @return

@@ -1,7 +1,7 @@
 package org.bluebridge.section_10_synchronized_monitor;
 
 /**
- * 同步代码块Monitor测试
+ * 同步代码块 Monitor 测试
  *
  * 1. 终端中输入如下命令
  *    javac .\MonitorSynchronizedCodeBlockTest.java -> javap -c .\MonitorSynchronizedCodeBlockTest.class
@@ -31,7 +31,7 @@ package org.bluebridge.section_10_synchronized_monitor;
  * 3. 可以观察到同步代码块中通过 monitorenter 和 monitorexit 实现同步
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:15
  */
 public class MonitorSynchronizedCodeBlockTest {
 

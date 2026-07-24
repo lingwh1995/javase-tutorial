@@ -9,19 +9,19 @@ import java.util.stream.IntStream;
 /**
  * 还原表端二进制数据为图片流程
  *
- * 1. 先zip解压 压缩以后的字节数组
- * 2. 将解压后的字节数组（1000字节） 按200字节一组，分为五组
- * 3. 将200字节还原成1600字节
- * 4. 加上bmp头+1600字节输出为bmp文件
+ * 1. 先 zip 解压 压缩以后的字节数组
+ * 2. 将解压后的字节数组（1000 字节） 按 200 字节一组，分为五组
+ * 3. 将 200 字节还原成 1600 字节
+ * 4. 加上 bmp 头+1600 字节输出为 bmp 文件
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 @Slf4j
 public class ImageUtil {
 
     /**
-     * 把一个byte转换为8个bits，并且把这8个bits放入到一个数组中
+     * 把一个 byte 转换为 8 个 bits，并且把这 8 个 bits 放入到一个数组中
      *
      * @param b
      * @return
@@ -39,7 +39,7 @@ public class ImageUtil {
     }
 
     private static byte[] transImageBitsToBytes(byte[] src) {
-        // 把byte[]数组转换为bit数组
+        // 把 byte[] 数组转换为 bit 数组
         byte[] des = new byte[src.length * 8];
         for (int i = 0; i < src.length; i++) {
             byte[] trans = transByteToBitsArray(src[i]);
@@ -59,7 +59,7 @@ public class ImageUtil {
      * @param imageName   图像名称
      */
     public static void transferBytesToBmpImages(byte[] source, String imagePrefix, String imageName) {
-        // 使用gzip算法解压原始数据
+        // 使用 gzip 算法解压原始数据
         // byte[] unGZipBytes = ZipUtils.unGZip(source);
         // 获取还原后的字节数组
         byte[] desBytes = transImageBitsToBytes(source);
@@ -72,7 +72,7 @@ public class ImageUtil {
             }
             System.out.print((desBytes[i] & 0xFF) + "\t");
         }
-        // 把图片顺时针旋转90度
+        // 把图片顺时针旋转 90 度
         desBytes = ImageRotationUtils.rotateImage(desBytes, 100, 320, 90);
         byte[] bmpBytes = BmpHeaderUtil.createBmpFile(desBytes, 320, 100);
         FileUtil.writeBytes(bmpBytes, imagePrefix + imageName);

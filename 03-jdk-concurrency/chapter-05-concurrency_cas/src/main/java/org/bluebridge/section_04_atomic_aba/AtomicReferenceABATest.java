@@ -6,14 +6,14 @@ import java.util.concurrent.atomic.AtomicReference;
  * 原子引用
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:30
  */
 public class AtomicReferenceABATest {
 
     private static AtomicReference<String> atomicReference = new AtomicReference<>("A");
 
     /**
-     * AtomicReference无法判断是否发生过ABA问题
+     * AtomicReference 无法判断是否发生过 ABA 问题
      *
      * @param args
      * @throws InterruptedException

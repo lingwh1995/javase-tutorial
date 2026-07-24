@@ -6,12 +6,12 @@ import java.util.Arrays;
  * 补齐工具类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 public class PaddingUtil {
 
     /**
-     * 例如需要N字节补齐，报文长度少于N个字节，需要补满N个字节，补(N-len)个(N-len)。 如果报文长度正好是N字节的整数倍，则需要补16个十进制16。
+     * 例如需要 N 字节补齐，报文长度少于 N 个字节，需要补满 N 个字节，补 (N-len) 个 (N-len)。 如果报文长度正好是 N 字节的整数倍，则需要补 16 个十进制 16。
      *
      * @param data          原始字节数组
      * @param paddingLength 需要多少字节补齐
@@ -50,10 +50,10 @@ public class PaddingUtil {
     }
 
     /**
-     * 去除padding数据，取字节数组最后一个字节N,即padding了N个N,将这N个N截取掉，返回剩余的数组
+     * 去除 padding 数据，取字节数组最后一个字节 N，即 padding 了 N 个 N，将这 N 个 N 截取掉，返回剩余的数组
      *
      * @param data 原始字节数组
-     * @return 去掉padding后的数组
+     * @return 去掉 padding 后的数组
      */
     public static byte[] removePadding(byte[] data) {
         if (null == data || data.length == 0) {
@@ -73,14 +73,14 @@ public class PaddingUtil {
 
     public static void main(String[] args) {
         byte[] array = new byte[] { 1, 2, 3, 4, 5, 6 };
-        // 16字节补齐 补10个10
+        // 16 字节补齐 补 10 个 10
         byte[] padding16 = padding(array, 16);
         System.out.println(Arrays.toString(padding16));
         // 去除补齐数据
         byte[] originPadding16 = removePadding(padding16);
         System.out.println(Arrays.toString(originPadding16));
 
-        // 8字节补齐 补2个2
+        // 8 字节补齐 补 2 个 2
         byte[] padding8 = padding(array, 8);
         System.out.println(Arrays.toString(padding8));
         // 去除补齐数据

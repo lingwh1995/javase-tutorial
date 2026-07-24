@@ -1,11 +1,11 @@
 package org.bluebridge.section_04_happens_before;
 
 /**
- * happens-before线程启动规则测试
- * 线程 start 前对变量的写，对该线程开始后对该变量的读可见(程序顺序规则+线程启动规则)
+ * happens-before 线程启动规则测试
+ * 线程 start 前对变量的写，对该线程开始后对该变量的读可见 (程序顺序规则+线程启动规则)
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 18:15
  */
 public class HappensBeforeTest3 {
 

@@ -8,7 +8,7 @@ import java.io.*;
  * 深克隆测试
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/12 10:30
  */
 public class DeepCloneTest {
 
@@ -31,12 +31,12 @@ public class DeepCloneTest {
         Student studentCloneSerializable = (Student) ois.readObject();
         // 关闭流
         ois.close();
-        // 原型对象:
+        // 原型对象：
         System.out.println("原Student：" + student);
-        // 修改克隆对象中引用类型数据的属性值:
+        // 修改克隆对象中引用类型数据的属性值：
         Teacher teacher1 = new Teacher(1, 42, "张老师11111");
         studentCloneSerializable.setTeacher(teacher1);
-        // 克隆对象:
+        // 克隆对象：
         System.out.println("克隆的Student：" + studentCloneSerializable);
         System.out.println("修改克隆出来的副本后再打印Student：" + student);
     }

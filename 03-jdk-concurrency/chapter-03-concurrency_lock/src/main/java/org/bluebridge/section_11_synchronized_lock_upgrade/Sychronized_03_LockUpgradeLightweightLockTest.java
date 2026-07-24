@@ -17,7 +17,7 @@ import org.openjdk.jol.info.ClassLayout;
  *    - 当Thread t2尝试获取锁时，由于Thread t1已经持有锁，因此Thread t2将进行自旋，等待锁的释放。
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 09:45
  */
 public class Sychronized_03_LockUpgradeLightweightLockTest {
 

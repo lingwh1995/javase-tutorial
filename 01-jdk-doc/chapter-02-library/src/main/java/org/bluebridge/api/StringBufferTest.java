@@ -3,7 +3,7 @@ package org.bluebridge.api;
 import org.junit.Test;
 
 /**
- * StringBuffer测试
+ * StringBuffer 测试
  *
  * @author lingwh
  * @date 2026/4/23 16:29
@@ -11,7 +11,7 @@ import org.junit.Test;
 public class StringBufferTest {
 
     /**
-     * 测试StringBuffer初始化容量和不初始化容量以及直接使用+=拼接字符串 性能差别: 不初始化容量:161ms 初始化容量:93ms 使用+=直接拼接:无限制长的时间
+     * 测试 StringBuffer 初始化容量和不初始化容量以及直接使用+=拼接字符串 性能差别： 不初始化容量： 161 ms 初始化容量： 93 ms 使用+=直接拼接：无限制长的时间
      */
     @Test
     public void appTest() {

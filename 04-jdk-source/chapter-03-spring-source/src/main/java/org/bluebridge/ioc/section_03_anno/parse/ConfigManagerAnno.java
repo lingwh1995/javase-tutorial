@@ -9,10 +9,10 @@ import java.io.InputStream;
 import java.util.logging.Logger;
 
 /**
- * 获取base-package配置的路径
+ * 获取 base-package 配置的路径
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class ConfigManagerAnno {
 

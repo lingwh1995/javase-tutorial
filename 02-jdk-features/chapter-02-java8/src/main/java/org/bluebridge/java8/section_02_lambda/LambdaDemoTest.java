@@ -9,7 +9,7 @@ import java.util.function.IntBinaryOperator;
 import java.util.function.IntPredicate;
 
 /**
- * lambda表达式案例
+ * lambda 表达式案例
  *
  * @author lingwh
  * @date 2026/6/22 15:10
@@ -17,7 +17,7 @@ import java.util.function.IntPredicate;
 public class LambdaDemoTest {
 
 	/**
-	 * 测试分别使用匿名内部类和lambda表达式创建一个线程
+	 * 测试分别使用匿名内部类和 lambda 表达式创建一个线程
 	 */
 	@Test
 	public void testLambdaThread() {
@@ -32,27 +32,27 @@ public class LambdaDemoTest {
 		}).start();
 
 		/**
-		 * 使用lambda函数创建线程
+		 * 使用 lambda 函数创建线程
 		 */
 		new Thread(() -> {
 			System.out.println("Thread2 is running......");
 		}).start();
 
 		/**
-		 * 使用lambda函数创建线程(简写形式)
+		 * 使用 lambda 函数创建线程(简写形式)
 		 */
 		new Thread(() -> System.out.println("Thread2 is running......")).start();
 
 		/**
-		 * 使用lambda函数创建线程(创建线程和调用分开写)
+		 * 使用 lambda 函数创建线程(创建线程和调用分开写)
 		 */
 		Runnable t3 = () -> System.out.println("Thread3 is running......");
-		// 注意：这里调用要用run()方法
+		// 注意：这里调用要用 run() 方法
 		t3.run();
 	}
 
 	/**
-	 * 测试使用匿名内部类方式和lambda方式调用参数为 IntBinaryOperator 接口方法
+	 * 测试使用匿名内部类方式和 lambda 方式调用参数为 IntBinaryOperator 接口方法
 	 */
 	@Test
 	public void testIntBinaryOperator() {
@@ -68,7 +68,7 @@ public class LambdaDemoTest {
 		System.out.println("不使用lambda方式调用:" + result);
 
 		/**
-		 * 使用lambda方式调用
+		 * 使用 lambda 方式调用
 		 */
 		result = calculateNum((int left, int right) -> {
 			return left + right;
@@ -76,13 +76,13 @@ public class LambdaDemoTest {
 		System.out.println("使用lambda方式调用:" + result);
 
 		/**
-		 * 使用lambda方式调用(简写形式)
+		 * 使用 lambda 方式调用(简写形式)
 		 */
 		result = calculateNum((int left, int right) -> left + right);
 		System.out.println("使用lambda方式调用(简写形式):" + result);
 
 		/**
-		 * 使用lambda方式调用(最简写形式)
+		 * 使用 lambda 方式调用(最简写形式)
 		 */
 		result = calculateNum((left, right) -> left + right);
 		System.out.println("使用lambda方式调用(简写形式):" + result);
@@ -101,22 +101,22 @@ public class LambdaDemoTest {
 	@Test
 	public void testFilter() {
 		int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		// 筛选数组中大于5的数字
+		// 筛选数组中大于 5 的数字
 		List<Integer> numsGT5 = filterGT5(nums);
 		System.out.println("numsGT5 = " + numsGT5);
-		// 筛选数组中小于等于5的数字
+		// 筛选数组中小于等于 5 的数字
 		List<Integer> numsLE5 = filterLE5(nums);
 		System.out.println("numsLE5 = " + numsLE5);
 
-		// 使用lambda实现函数行为参数化
+		// 使用 lambda 实现函数行为参数化
 		filterNum(num -> num > 5 ? true : false);
 
-		// 使用lambda实现函数行为参数化
+		// 使用 lambda 实现函数行为参数化
 		filterNum(num -> num <= 5 ? true : false);
 	}
 
 	/**
-	 * 过滤出大于5的值
+	 * 过滤出大于 5 的值
 	 *
 	 * @param nums
 	 * @return
@@ -132,7 +132,7 @@ public class LambdaDemoTest {
 	}
 
 	/**
-	 * 过滤出小于等于5的数
+	 * 过滤出小于等于 5 的数
 	 *
 	 * @param nums
 	 * @return
@@ -148,7 +148,7 @@ public class LambdaDemoTest {
 	}
 
 	/**
-	 * 测试使用匿名内部类方式和lambda方式调用参数为 IntBinaryOperator 接口方法
+	 * 测试使用匿名内部类方式和 lambda 方式调用参数为 IntBinaryOperator 接口方法
 	 */
 	@Test
 	public void testIntPredicate() {
@@ -163,14 +163,14 @@ public class LambdaDemoTest {
 		});
 
 		/**
-		 * 使用lambda方式调用
+		 * 使用 lambda 方式调用
 		 */
 		filterNum(value -> {
 			return value % 2 == 0;
 		});
 
 		/**
-		 * 使用lambda方式调用(最简写形式：省略大括号和return关键字)
+		 * 使用 lambda 方式调用(最简写形式：省略大括号和 return 关键字)
 		 */
 		filterNum(value -> value % 2 == 0);
 	}
@@ -191,7 +191,7 @@ public class LambdaDemoTest {
 	}
 
 	/**
-	 * 测试Comparator
+	 * 测试 Comparator
 	 */
 	@Test
 	public void testComparator() {
@@ -208,14 +208,14 @@ public class LambdaDemoTest {
 		System.out.println(result);
 
 		/**
-		 * 使用lambda方式调用(简写形式)
+		 * 使用 lambda 方式调用(简写形式)
 		 */
 		comparator = (Integer o1, Integer o2) -> Integer.compare(o1, o2);
 		result = comparator.compare(20, 10);
 		System.out.println(result);
 
 		/**
-		 * 使用lambda方式调用(简写形式)
+		 * 使用 lambda 方式调用(简写形式)
 		 */
 		comparator = (o1, o2) -> Integer.compare(o1, o2);
 		result = comparator.compare(20, 10);

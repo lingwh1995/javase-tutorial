@@ -10,7 +10,7 @@ import java.util.stream.Stream;
  * Java16 Stream 测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class StreamTest {
 
@@ -20,11 +20,11 @@ public class StreamTest {
     @Test
     public void testStreamToList() {
         String[] fruits = { "apple", "pear", "orange" };
-        // java16之前
+        // java16 之前
         List<String> collect = Stream.of(fruits).filter(fruit -> fruit.length() >= 5).collect(Collectors.toList());
         System.out.println(collect);
 
-        // java16及以后
+        // java16 及以后
         List<String> list = Stream.of(fruits).filter(fruit -> fruit.length() >= 5).toList();
         System.out.println(list);
     }

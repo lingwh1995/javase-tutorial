@@ -16,7 +16,7 @@ import java.util.concurrent.locks.LockSupport;
  *    对象都会变为不可偏向的，新建的对象也是不可偏向的
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 11:15
  */
 public class Sychronized_RevokeBiasedLockTest05 {
 

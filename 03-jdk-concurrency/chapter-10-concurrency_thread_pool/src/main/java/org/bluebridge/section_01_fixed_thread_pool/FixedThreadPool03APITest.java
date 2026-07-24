@@ -7,14 +7,14 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * 固定大小的线程池FixedThreadPool
- * <p>
+ * 固定大小的线程池 FixedThreadPool
+ *
  * 1. 线程池大小固定，不会随着任务的增长而增长。
  * 2. 核心线程数和最大线程数相等，使用无界队列
- * 3. 使用的工作队列是LinkedBlockingQueue
+ * 3. 使用的工作队列是 LinkedBlockingQueue
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 09:30
  */
 public class FixedThreadPool03APITest {
 

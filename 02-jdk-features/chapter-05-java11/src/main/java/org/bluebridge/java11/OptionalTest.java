@@ -8,12 +8,12 @@ import java.util.Optional;
  * Java11 Optional 测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class OptionalTest {
 
     /**
-     * java11新增了 检测Optional中对象是否为空的方法
+     * java11 新增了 检测 Optional 中对象是否为空的方法
      */
     @Test
     public void testOptionalIsEmpty() {

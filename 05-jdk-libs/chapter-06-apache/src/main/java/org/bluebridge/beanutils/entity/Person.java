@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * Person实体
+ * Person 实体
  *
  * @author lingwh
  * @date 2019/6/20 15:02

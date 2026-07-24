@@ -4,12 +4,12 @@ package org.bluebridge.stackframe;
  * 多线程栈帧测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:15
  */
 public class MultiplyThreadStackFrameTest {
 
     public static void main(String[] args) {
-        // 单独开启一个线程调用method1()
+        // 单独开启一个线程调用 method1()
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -17,7 +17,7 @@ public class MultiplyThreadStackFrameTest {
             }
         }, "t1").start();
 
-        // 在主线程中调用method1()
+        // 在主线程中调用 method1()
         method1(10);
     }
 

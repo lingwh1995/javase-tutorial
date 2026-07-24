@@ -15,10 +15,10 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 /**
- * 解析xml，返回读取结果
+ * 解析 xml，返回读取结果
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class ConfigManager {
 
@@ -39,13 +39,13 @@ public class ConfigManager {
             e.printStackTrace();
             logger.info("读取xml文件发生了异常，请检查文件名称和路径是否正确？");
         }
-        // 3. 解析xml，找出所有的<bean/>标签
+        // 3. 解析 xml，找出所有的<bean/>标签
         Element rootElement = document.getRootElement();
         List<Element> beanElements = rootElement.elements("bean");
         Map<String, Bean> map = new HashMap<String, Bean>();
         if (!beanElements.isEmpty()) {
             for (Element beanElement : beanElements) {
-                // 4. 把每一个bean标签的id/class封装到Bean这个实体中
+                // 4. 把每一个 bean 标签的 id/class 封装到 Bean 这个实体中
                 Bean bean = new Bean();
                 bean.setId(beanElement.attributeValue("id"));
                 bean.setClassName(beanElement.attributeValue("class"));
@@ -53,9 +53,9 @@ public class ConfigManager {
                 if (StringUtils.isNotBlank(scope)) {
                     bean.setScope(scope);
                 }
-                // 5. 遍历每一个Bean标签下面的<property/>,并把name/value/value封装到Properties这个实体中
+                // 5. 遍历每一个 Bean 标签下面的<property/>，并把 name/value/value 封装到 Properties 这个实体中
                 List<Element> propertyElements = beanElement.elements("property");
-                // 存放每一个Bean节点下面的<property/>
+                // 存放每一个 Bean 节点下面的<property/>
                 List<Properties> listProperties = new ArrayList<Properties>();
                 if (!propertyElements.isEmpty()) {
                     for (Element propertyElement : propertyElements) {

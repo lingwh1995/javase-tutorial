@@ -6,7 +6,7 @@ import java.util.Random;
  * 写线程
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 10:30
  */
 public class WriteThread extends Thread {
 

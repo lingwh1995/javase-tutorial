@@ -6,10 +6,10 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
 /**
- * ForkJoin任务拆分
+ * ForkJoin 任务拆分
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 12:45
  */
 @Slf4j(topic = "c.AddTask")
 public class AddTask1 extends RecursiveTask<Integer> {
@@ -33,12 +33,12 @@ public class AddTask1 extends RecursiveTask<Integer> {
             return n;
         }
 
-        // 将任务进行拆分(fork)
+        // 将任务进行拆分 (fork)
         AddTask1 t1 = new AddTask1(n - 1);
         t1.fork();
         log.debug("fork() {} + {}", n, t1);
 
-        // 合并(join)结果
+        // 合并 (join) 结果
         int result = n + t1.join();
         log.debug("join() {} + {} = {}", n, t1, result);
         return result;

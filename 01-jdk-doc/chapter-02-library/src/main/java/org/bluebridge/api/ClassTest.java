@@ -3,7 +3,7 @@ package org.bluebridge.api;
 import org.junit.Test;
 
 /**
- * Class类API测试
+ * Class 类 API 测试
  *
  * @author lingwh
  * @date 2019/3/28 16:29
@@ -11,7 +11,7 @@ import org.junit.Test;
 public class ClassTest {
 
     /**
-     * 根据Class信息判断一个对象是不是数组
+     * 根据 Class 信息判断一个对象是不是数组
      */
     @Test
     public void isArrayTest() {
@@ -22,7 +22,7 @@ public class ClassTest {
     }
 
     /**
-     * 根据Class信息获取该Class对象的SuperClass信息
+     * 根据 Class 信息获取该 Class 对象的 SuperClass 信息
      */
     @Test
     public void getSuperClassTest() {

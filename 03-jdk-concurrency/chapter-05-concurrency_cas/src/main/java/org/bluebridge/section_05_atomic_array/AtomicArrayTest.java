@@ -13,7 +13,7 @@ import java.util.function.Supplier;
  * 原子数组测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 15:00
  */
 public class AtomicArrayTest {
 
@@ -53,7 +53,7 @@ public class AtomicArrayTest {
         T array = arraySupplier.get();
         int length = lengthFun.apply(array);
         for (int i = 0; i < length; i++) {
-            // 每个线程对数组作 10000 次操作,每一次循环后，正常的情况下数组的元素的值会在原来基础上增加一千
+            // 每个线程对数组作 10000 次操作，每一次循环后，正常的情况下数组的元素的值会在原来基础上增加一千
             ts.add(new Thread(() -> {
                 for (int j = 0; j < 10000; j++) {
                     putConsumer.accept(array, j % length);

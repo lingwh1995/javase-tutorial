@@ -22,9 +22,9 @@ import java.util.function.*;
 public class MethodReferenceTest {
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例一: Function<String, Integer> function = Integer :: parseInt
+	 * 案例一： Function<String, Integer> function = Integer :: parseInt
 	 */
 	@Test
 	public void testStaticMethodReference_1() {
@@ -39,7 +39,7 @@ public class MethodReferenceTest {
 		System.out.println(apply.getClass().getSimpleName());
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = (t) -> Integer.parseInt(t);
 		apply = function.apply("20");
 		System.out.println(apply.getClass().getSimpleName());
@@ -53,9 +53,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例一: Function<Integer, String> function = String :: valueOf
+	 * 案例一： Function<Integer, String> function = String :: valueOf
 	 */
 	@Test
 	public void testStaticMethodReference_2() {
@@ -71,7 +71,7 @@ public class MethodReferenceTest {
 		System.out.println(apply.getClass().getSimpleName());
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = (i) -> String.valueOf(i);
 		apply = function.apply(20);
 		System.out.println("apply = " + apply);
@@ -86,9 +86,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例二: Printer :: printMessage
+	 * 案例二： Printer :: printMessage
 	 */
 	@Test
 	public void testStaticMethodReference_3() {
@@ -102,7 +102,7 @@ public class MethodReferenceTest {
 		consumer.accept("10");
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		consumer = s -> Printer.printMessage(s);
 		consumer.accept("20");
 		System.out.println("------------------------------");
@@ -114,9 +114,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例三: Comparator<Integer> comparator = Integer :: compare;
+	 * 案例三： Comparator<Integer> comparator = Integer :: compare;
 	 */
 	@Test
 	public void testStaticMethodReference_4() {
@@ -130,7 +130,7 @@ public class MethodReferenceTest {
 		System.out.println(comparator.compare(10, 20));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		comparator = (t1, t2) -> Integer.compare(t1, t2);
 		System.out.println(comparator.compare(20, 10));
 		System.out.println("------------------------------");
@@ -142,9 +142,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例四: Function<Double, Long> function = Math :: round;
+	 * 案例四： Function<Double, Long> function = Math :: round;
 	 */
 	@Test
 	public void testStaticMethodReference_5() {
@@ -158,7 +158,7 @@ public class MethodReferenceTest {
 		System.out.println(function.apply(12.3));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = d -> Math.round(d);
 		System.out.println(function.apply(15.6));
 		System.out.println("------------------------------");
@@ -170,9 +170,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例五: Supplier<Double> supplier = Math :: random;
+	 * 案例五： Supplier<Double> supplier = Math :: random;
 	 */
 	@Test
 	public void testStaticMethodReference_6() {
@@ -186,7 +186,7 @@ public class MethodReferenceTest {
 		System.out.println(supplier.get());
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		supplier = () -> Math.random();
 		System.out.println(supplier.get());
 		System.out.println("------------------------------");
@@ -198,9 +198,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例六: Supplier<Double> supplier = Math :: random;
+	 * 案例六： Supplier<Double> supplier = Math :: random;
 	 */
 	@Test
 	public void testStaticMethodReference_7() {
@@ -214,7 +214,7 @@ public class MethodReferenceTest {
 		System.out.println(function.apply(4.0));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = (d) -> Math.sqrt(d);
 		System.out.println(function.apply(16.0));
 		System.out.println("------------------------------");
@@ -226,9 +226,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例七: Function<Double, Long> function = Math :: max;
+	 * 案例七： Function<Double, Long> function = Math :: max;
 	 */
 	@Test
 	public void testStaticMethodReference_8() {
@@ -242,7 +242,7 @@ public class MethodReferenceTest {
 		System.out.println(biFunction.apply(10, 20));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		biFunction = (a, b) -> Math.max(a, b);
 		System.out.println(biFunction.apply(20, 30));
 		System.out.println("------------------------------");
@@ -254,9 +254,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例八: Function<String, String> function = String :: toUpperCase;
+	 * 案例八： Function<String, String> function = String :: toUpperCase;
 	 */
 	@Test
 	public void testStaticMethodReference_9() {
@@ -270,7 +270,7 @@ public class MethodReferenceTest {
 		System.out.println(function.apply("abc"));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = s -> s.toUpperCase();
 		System.out.println(function.apply("abc"));
 		System.out.println("------------------------------");
@@ -282,13 +282,13 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况一: 静态方法引用(类名 :: 静态方法名)
+	 * 情况一： 静态方法引用(类名 :: 静态方法名)
      *
-	 * 案例九: System.out :: println
+	 * 案例九： System.out :: println
 	 */
 	@Test
 	public void testStaticMethodReference_10() {
-		// lambda表达式
+		// lambda 表达式
 		List<String> list = Arrays.asList("a", "b", "c", "d", "e");
 		list.forEach(item -> System.out.println(item));
 		System.out.println("------------------------------------");
@@ -307,7 +307,7 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 打印字符s
+	 * 打印字符 s
 	 *
 	 * @param s
 	 */
@@ -316,7 +316,7 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 判断字符s是不是小写 c
+	 * 判断字符 s 是不是小写 c
 	 *
 	 * @param s
 	 * @return
@@ -326,9 +326,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式一 对象 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式一 对象 :: 非静态方法名)
      *
-	 * 案例一: String s = "method reference";
+	 * 案例一： String s = "method reference";
 	 * Supplier<Boolean> supplier = s :: isEmpty
 	 */
 	@Test
@@ -344,7 +344,7 @@ public class MethodReferenceTest {
 		System.out.println(supplier.get());
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		supplier = () -> s.isEmpty();
 		System.out.println(supplier.get());
 		System.out.println("------------------------------");
@@ -356,9 +356,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式一 对象 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式一 对象 :: 非静态方法名)
      *
-	 * 案例二: PrintStream ps = System.out;
+	 * 案例二： PrintStream ps = System.out;
 	 * Consumer<String> consumer = ps :: println;
 	 */
 	@Test
@@ -373,7 +373,7 @@ public class MethodReferenceTest {
 		consumer.accept("10");
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		consumer = i -> System.out.println(i);
 		consumer.accept("20");
 		System.out.println("------------------------------");
@@ -386,9 +386,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式一 对象 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式一 对象 :: 非静态方法名)
      *
-	 * 案例三: Person person = new Person("张三", 23);
+	 * 案例三： Person person = new Person("张三", 23);
 	 * person :: getUsername;
 	 */
 	@Test
@@ -404,7 +404,7 @@ public class MethodReferenceTest {
 		System.out.println(supplier.get());
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		supplier = () -> person.getUsername();
 		System.out.println(supplier.get());
 		System.out.println("------------------------------");
@@ -416,9 +416,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式二 类名 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式二 类名 :: 非静态方法名)
      *
-	 * 案例四: Comparator<String> comparator = String :: compareTo;
+	 * 案例四： Comparator<String> comparator = String :: compareTo;
 	 */
 	@Test
 	public void testInstanceReference_4() {
@@ -442,9 +442,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式二 类名 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式二 类名 :: 非静态方法名)
      *
-	 * 案例五: Comparator<String> comparator = String :: compareTo;
+	 * 案例五： Comparator<String> comparator = String :: compareTo;
 	 */
 	@Test
 	public void testInstanceReference_5() {
@@ -461,7 +461,7 @@ public class MethodReferenceTest {
 		cities.forEach(item -> System.out.println(item));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		Collections.sort(cities, (city1, city2) -> city1.compareTo(city2));
 		cities.forEach(item -> System.out.println(item));
 		System.out.println("------------------------------");
@@ -473,9 +473,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式二 类名 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式二 类名 :: 非静态方法名)
      *
-	 * 案例六: Comparator<String> comparator = String :: compareTo;
+	 * 案例六： Comparator<String> comparator = String :: compareTo;
 	 */
 	@Test
 	public void testMethodReference_6() {
@@ -489,7 +489,7 @@ public class MethodReferenceTest {
 		System.out.println(biPredicate.test("aaa", "aaa"));
 		System.out.println("--------------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		biPredicate = (a, b) -> a.equals(b);
 		System.out.println(biPredicate.test("bbb", "bbb"));
 		System.out.println("--------------------------------------");
@@ -501,9 +501,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式二 类名 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式二 类名 :: 非静态方法名)
      *
-	 * 案例七: Function<Person, String> function = Person :: getUsername;
+	 * 案例七： Function<Person, String> function = Person :: getUsername;
 	 */
 	@Test
 	public void testMethodReference_7() {
@@ -518,7 +518,7 @@ public class MethodReferenceTest {
 		System.out.println(function.apply(person));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = p -> p.getUsername();
 		System.out.println(function.apply(person));
 		System.out.println("------------------------------");
@@ -530,9 +530,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式二 类名 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式二 类名 :: 非静态方法名)
      *
-	 * 案例七: BiConsumer<Person, String> = (Person p, String username) -> p.setUsername(username);
+	 * 案例七： BiConsumer<Person, String> = (Person p, String username) -> p.setUsername(username);
 	 */
 	@Test
 	public void testMethodReference_8() {
@@ -548,7 +548,7 @@ public class MethodReferenceTest {
 		System.out.println("person = " + person);
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		biConsumer = (Person p, String username) -> p.setUsername(username);
 		biConsumer.accept(person, "李四");
 		System.out.println("person = " + person);
@@ -562,9 +562,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式二 类名 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式二 类名 :: 非静态方法名)
      *
-	 * 案例七: Function<Person, Integer> function = Person::hashCode;
+	 * 案例七： Function<Person, Integer> function = Person::hashCode;
 	 */
 	@Test
 	public void testMethodReference_9() {
@@ -579,7 +579,7 @@ public class MethodReferenceTest {
 		System.out.println(function.apply(person));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = (Person p) -> p.hashCode();
 		System.out.println(function.apply(person));
 		System.out.println("------------------------------");
@@ -591,9 +591,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况二: 实例方法引用(格式二 类名 :: 非静态方法名)
+	 * 情况二： 实例方法引用(格式二 类名 :: 非静态方法名)
      *
-	 * 案例七: Function<Person, String> function = Person :: getUsername;
+	 * 案例七： Function<Person, String> function = Person :: getUsername;
 	 */
 	@Test
 	public void testMethodReference_10() {
@@ -609,7 +609,7 @@ public class MethodReferenceTest {
 		System.out.println(biFunction.apply(p1, p2));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		biFunction = (Person o1, Person o2) -> o1.equals(o2);
 		System.out.println(biFunction.apply(p1, p2));
 		System.out.println("------------------------------");
@@ -621,19 +621,19 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况三: 构造方法引用(类名::new)
+	 * 情况三： 构造方法引用(类名::new)
      *
-	 * 案例一: ArrayList::new
+	 * 案例一： ArrayList::new
 	 */
 	@Test
 	public void testConstructorReference_1() {
-		// 不设置ArrayList初始容量
+		// 不设置 ArrayList 初始容量
 		Supplier<List<Integer>> supplier = ArrayList::new;
 		List<Integer> list = supplier.get();
 		list.add(10);
 		System.out.println(list);
 
-		// 设置ArrayList初始容量为32
+		// 设置 ArrayList 初始容量为 32
 		Function<Integer, List<Integer>> function = ArrayList::new;
 		list = function.apply(32);
 		list.add(20);
@@ -641,9 +641,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况三: 构造方法引用(类名::new)
+	 * 情况三： 构造方法引用(类名::new)
      *
-	 * 案例二: Person::new
+	 * 案例二： Person::new
 	 */
 	@Test
 	public void testConstructorReference_2() {
@@ -657,7 +657,7 @@ public class MethodReferenceTest {
 		System.out.println(supplier.get());
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		supplier = () -> new Person();
 		System.out.println(supplier.get());
 		System.out.println("------------------------------");
@@ -668,9 +668,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况三: 构造方法引用(类名::new)
+	 * 情况三： 构造方法引用(类名::new)
      *
-	 * 案例二: Person::new
+	 * 案例二： Person::new
 	 */
 	@Test
 	public void testConstructorReference_3() {
@@ -684,7 +684,7 @@ public class MethodReferenceTest {
 		System.out.println(function.apply(10));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = age -> new Person(age);
 		System.out.println(function.apply(20));
 		System.out.println("------------------------------");
@@ -695,9 +695,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况三: 构造方法引用(类名::new)
+	 * 情况三： 构造方法引用(类名::new)
      *
-	 * 案例二: Person::new
+	 * 案例二： Person::new
 	 */
 	@Test
 	public void testConstructorReference_4() {
@@ -711,7 +711,7 @@ public class MethodReferenceTest {
 		System.out.println(biFunction.apply("张三", 10));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		biFunction = (username, age) -> new Person(username, age);
 		System.out.println(biFunction.apply("李四", 20));
 		System.out.println("------------------------------");
@@ -722,9 +722,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况三: 构造方法引用(类名::new)
+	 * 情况三： 构造方法引用(类名::new)
      *
-	 * 案例三: Person::new
+	 * 案例三： Person::new
 	 */
 	@Test
 	public void testConstructorReference_5() {
@@ -738,7 +738,7 @@ public class MethodReferenceTest {
 		System.out.println(function.apply(10));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		function = (id) -> new Person(id);
 		System.out.println(function.apply(20));
 		System.out.println("------------------------------");
@@ -749,9 +749,9 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况三: 构造方法引用(类名::new)
+	 * 情况三： 构造方法引用(类名::new)
      *
-	 * 案例三: Person::new
+	 * 案例三： Person::new
 	 */
 	@Test
 	public void testConstructorReference_6() {
@@ -765,7 +765,7 @@ public class MethodReferenceTest {
 		System.out.println(biFunction.apply("张三", 10));
 		System.out.println("------------------------------");
 
-		// lambda表达式
+		// lambda 表达式
 		biFunction = (username, id) -> new Person(username, id);
 		System.out.println(biFunction.apply("李四", 20));
 		System.out.println("------------------------------");
@@ -776,43 +776,43 @@ public class MethodReferenceTest {
 	}
 
 	/**
-	 * 情况四: 数组构造方法引用 数据类型[]::new
+	 * 情况四： 数组构造方法引用 数据类型[]::new
      *
-	 * 案例一: 使用方法引用创建空的String类型数组
+	 * 案例一： 使用方法引用创建空的 String 类型数组
 	 */
 	@Test
 	public void testArrayConstructorReference_1() {
-		// lambda表达式(初始化一个长度为10的String类型数组)
+		// lambda 表达式(初始化一个长度为 10 的 String 类型数组)
 		Function<Integer, String[]> function = l -> new String[l];
 		String[] apply = function.apply(10);
 		System.out.println(apply);
 
-		// 数组构造引用(初始化一个长度为10的String类型数组)
+		// 数组构造引用(初始化一个长度为 10 的 String 类型数组)
 		function = String[]::new;
 		apply = function.apply(10);
 		System.out.println(apply);
 	}
 
 	/**
-	 * 情况四: 数组构造方法引用 数据类型[] :: new
+	 * 情况四： 数组构造方法引用 数据类型[] :: new
      *
-	 * 案例二: 使用方法引用创建空的int类型数组
+	 * 案例二： 使用方法引用创建空的 int 类型数组
 	 */
 	@Test
 	public void testArrayConstructorReference_2() {
-		// lambda表达式(初始化一个长度为10的int类型数组)
+		// lambda 表达式(初始化一个长度为 10 的 int 类型数组)
 		Function<Integer, int[]> function = n -> new int[n];
 		int[] apply = function.apply(10);
 		System.out.println(Arrays.toString(apply));
 
-		// 数组构造引用(初始化一个长度为10的int类型数组)
+		// 数组构造引用(初始化一个长度为 10 的 int 类型数组)
 		function = int[]::new;
 		apply = function.apply(10);
 		System.out.println(Arrays.toString(apply));
 	}
 
 	/**
-	 * 情况四: 数组构造方法引用 数据类型[] :: new
+	 * 情况四： 数组构造方法引用 数据类型[] :: new
 	 */
 	@Test
 	public void testArrayConstructorReference_3() {
@@ -829,7 +829,7 @@ public class MethodReferenceTest {
 
 		// 方法引用
 		Integer[] arr2 = list.stream()
-				// 此时它会去创建一个Integer类型的数组，长度和流里面数组的个数是一样的，并把流里面的数据放到数组中
+				// 此时它会去创建一个 Integer 类型的数组，长度和流里面数组的个数是一样的，并把流里面的数据放到数组中
 				.toArray(Integer[]::new);
 		System.out.println(Arrays.toString(arr2));
 	}

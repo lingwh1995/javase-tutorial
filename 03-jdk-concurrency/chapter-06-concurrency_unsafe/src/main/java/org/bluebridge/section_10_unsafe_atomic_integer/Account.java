@@ -6,12 +6,12 @@ import java.util.ArrayList;
  * 账户接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:45
  */
 interface Account {
 
     /**
-     * 获取balance的方法
+     * 获取 balance 的方法
      *
      * @return
      */

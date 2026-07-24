@@ -3,10 +3,10 @@ package org.bluebridge.section_03_atomic_reference;
 import java.math.BigDecimal;
 
 /**
- * BigDecimal账户悲观锁实现
+ * BigDecimal 账户悲观锁实现
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:00
  */
 public class DecimalAccountPessimisticLockSynchronized implements DecimalAccount {
 

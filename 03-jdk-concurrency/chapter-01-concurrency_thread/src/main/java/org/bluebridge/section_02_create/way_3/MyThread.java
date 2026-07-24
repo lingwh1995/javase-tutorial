@@ -3,10 +3,10 @@ package org.bluebridge.section_02_create.way_3;
 import java.util.concurrent.Callable;
 
 /**
- * 实现Callable接口的自定义线程
+ * 实现 Callable 接口的自定义线程
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class MyThread implements Callable<Integer> {
 

@@ -3,17 +3,17 @@ package org.bluebridge.section_04_atomic_aba;
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 /**
- * AtomicStampedReference测试
+ * AtomicStampedReference 测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:15
  */
 public class AtomicStampedReferenceTest {
 
     private static AtomicStampedReference<String> atomicStampedReference = new AtomicStampedReference<>("A", 0);
 
     /**
-     * AtomicStampedReference可以通过添加版本号来确定有没有发生过ABA问题
+     * AtomicStampedReference 可以通过添加版本号来确定有没有发生过 ABA 问题
      *
      * @param args
      * @throws InterruptedException

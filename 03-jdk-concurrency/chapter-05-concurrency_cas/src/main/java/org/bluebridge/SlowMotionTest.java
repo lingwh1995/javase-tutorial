@@ -3,10 +3,10 @@ package org.bluebridge;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * CAS慢动作测试
+ * CAS 慢动作测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:15
  */
 public class SlowMotionTest {
 

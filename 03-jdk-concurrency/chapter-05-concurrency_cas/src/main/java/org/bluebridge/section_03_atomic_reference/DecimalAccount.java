@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * BigDecimal账户接口
+ * BigDecimal 账户接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 13:00
  */
 public interface DecimalAccount {
 

@@ -3,7 +3,7 @@ package org.bluebridge.ioc.section_02_xml.config;
 import java.util.List;
 
 /**
- * Bean标签配置
+ * Bean 标签配置
  *
  * @author lingwh
  * @date 2019/3/16 19:02

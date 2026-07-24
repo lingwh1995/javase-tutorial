@@ -31,8 +31,8 @@ public class ScannerTest {
             log.info("input：{}", input);
         }*/
 
-        // scanner.hasNextXXX()的作用：外层不调用scanner.hasNextInt(),内层直接调用scanner.nextInt();
-        // 如果输入了浮点类型数据，则会直接抛出java.util.InputMismatchException异常
+        // scanner.hasNextXXX() 的作用：外层不调用 scanner.hasNextInt()，内层直接调用 scanner.nextInt();
+        // 如果输入了浮点类型数据，则会直接抛出 java.util.InputMismatchException 异常
         if (scanner.hasNextInt()) {
             int input1 = scanner.nextInt();
             int input2 = scanner.nextInt();

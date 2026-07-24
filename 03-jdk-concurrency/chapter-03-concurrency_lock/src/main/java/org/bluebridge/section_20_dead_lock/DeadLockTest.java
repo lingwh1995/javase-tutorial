@@ -24,11 +24,11 @@ import java.util.concurrent.TimeUnit;
  *    - 死锁是因为线程互相持有对象想要的锁，并且都不释放，最后线程阻塞，停止运行的现象。
  *    - 活锁是因为线程间修改了对方的结束条件，而导致代码一直在运行，却一直运行不完的现象。
  * 6. JVM工具查看死锁
- *    - jps -> 获取DeadLockTest的进程号 -> jstack 进程号
+ *    - jps -> 获取 DeadLockTest 的进程号 -> jstack 进程号
  *    - jconsole -> DeadLockTest -> 选择线程标签页
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 15:45
  */
 public class DeadLockTest {
 

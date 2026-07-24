@@ -4,7 +4,7 @@ package org.bluebridge.section_12_catch_exception;
  * 捕获线程运行时异常
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 12:45
  */
 public class CatchThreadRuntimeExceptionTest {
 

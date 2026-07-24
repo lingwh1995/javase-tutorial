@@ -4,7 +4,7 @@ package org.bluebridge.section_02_synchronized;
  * 使用 synchronized 避免临界区中发生竞态条件
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 09:00
  */
 public class SynchronizedTest {
 

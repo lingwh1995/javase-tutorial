@@ -7,11 +7,11 @@ package org.bluebridge.section_03_dcl.dcl_01;
  * 3. 有隐含的，但很关键的一点：第一个 if 使用了 INSTANCE 变量，是在同步块之外
  *
  * 注意
- * 1. 使用final修饰类，可以防止因为继承而破坏单例模式
+ * 1. 使用 final 修饰类，可以防止因为继承而破坏单例模式
  * 2. 在多线程环境下，上面的代码是有问题的
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 16:45
  */
 public final class Singleton {
 

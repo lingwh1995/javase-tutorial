@@ -7,14 +7,14 @@ import java.util.List;
  * 数组工具类测试
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2026/6/12 10:30
  */
 public class ArraysTest {
 
     public static void main(String[] args) {
         /**
          * public static <T> List<T> asList(T... a) {}
-         * 把数组转换为集合,本质上还是数组，所以只要长度不发生改变,任何操作都可以
+         * 把数组转换为集合，本质上还是数组，所以只要长度不发生改变，任何操作都可以
          */
         String[] s = { "a", "b", "c" };
         List<String> l1 = Arrays.asList(s);

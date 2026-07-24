@@ -15,7 +15,7 @@ public class InterfaceUseMultipleGenericTest {
      */
     @Test
     public void testUseMultipleGenericPassThroughTest() {
-        // 创建一个泛型 T 类型为 Integer,U 类型为 String 的 Point 对象
+        // 创建一个泛型 T 类型为 Integer，U 类型为 String 的 Point 对象
         PointImplPassThrough<Integer, String> integerStringPoint = new PointImplPassThrough<>();
         integerStringPoint.setX(10);
         integerStringPoint.setY(10);

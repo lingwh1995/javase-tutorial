@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * isAlive(): 判断线程是否还存活
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 10:45
  */
 public class ThreadIsAliveTest {
 

@@ -4,16 +4,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Java9资源关闭测试
+ * Java9 资源关闭测试
  *
  * @author lingwh
- * @date 2026/7/13 15:10
+ * @date 2026/6/22 10:30
  */
 public class TryTest {
 
     public static void main(String[] args) {
         /**
-         * Java8之前释放流资源
+         * Java8 之前释放流资源
          */
         /*
         InputStreamReader reader = null;
@@ -38,7 +38,7 @@ public class TryTest {
         }*/
 
         /**
-         * Java8中资源关闭操作 Java8中可以实现资源的自动关闭，但是要求要关闭的所有资源必须在try子句中初始化，否则编译时会报错
+         * Java8 中资源关闭操作 Java8 中可以实现资源的自动关闭，但是要求要关闭的所有资源必须在 try 子句中初始化，否则编译时会报错
          */
         /*
         try(InputStreamReader reader = new InputStreamReader(System.in)) {
@@ -53,7 +53,7 @@ public class TryTest {
         }*/
 
         /**
-         * Java9中资源关闭操作 Java8中可以实现资源的自动关闭，要关闭的所有资源可以不在try子句中初始化
+         * Java9 中资源关闭操作 Java8 中可以实现资源的自动关闭，要关闭的所有资源可以不在 try 子句中初始化
          */
         InputStreamReader reader = new InputStreamReader(System.in);
         try (reader) {

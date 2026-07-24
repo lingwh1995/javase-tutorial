@@ -7,10 +7,10 @@ import sun.misc.Unsafe;
 import java.lang.reflect.Field;
 
 /**
- * Unsafe应用三 操作对象
+ * Unsafe 应用三 操作对象
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 11:30
  */
 public class UnsafeObjectOperateTest {
 
@@ -31,7 +31,7 @@ public class UnsafeObjectOperateTest {
     }
 
     /**
-     * 测试获取指定字段在对象内存中的偏移地址，这个偏移地址仅在该Unsafe函数中访问指定字段时使用‌。
+     * 测试获取指定字段在对象内存中的偏移地址，这个偏移地址仅在该 Unsafe 函数中访问指定字段时使用‌。
      */
     @Test
     public void testUnsafeObjectOperate() throws NoSuchFieldException {

@@ -1,11 +1,11 @@
 package org.bluebridge.section_04_happens_before;
 
 /**
- * happens-before锁监视器规则测试
- * 线程解锁 m 之前对变量的写，对于接下来对 m 加锁的其它线程对该变量的读可见(synchronized关键字的可见性、监视器规则)
+ * happens-before 锁监视器规则测试
+ * 线程解锁 m 之前对变量的写，对于接下来对 m 加锁的其它线程对该变量的读可见 (synchronized 关键字的可见性、监视器规则)
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 17:45
  */
 public class HappensBeforeTest1 {
 

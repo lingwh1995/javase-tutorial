@@ -5,15 +5,15 @@ import org.junit.Test;
 import java.util.*;
 
 /**
- * Collection集合常用方法测试
+ * Collection 集合常用方法测试
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 public class CollectionTest {
 
     /**
-     * 测试addAll() 把B的值全部添加到A里面
+     * 测试addAll() 把 B 的值全部添加到 A 里面
      */
     @Test
     public void testCollectionAddAll() {
@@ -37,10 +37,10 @@ public class CollectionTest {
 
     /**
      * 测试removeAll()
-     * 从A里面移除B中的全部元素，前提是B里面的元素在A里面也有，只要移除了最少一个元素就返回true
+     * 从 A 里面移除 B 中的全部元素，前提是 B 里面的元素在 A 里面也有，只要移除了最少一个元素就返回 true
      *
-     * 1. 相当于从c1中移除c1、c2交集部分
-     * 2. 只要移除了就返回true
+     * 1. 相当于从 c1 中移除 c1、c2 交集部分
+     * 2. 只要移除了就返回 true
      */
     @Test
     public void testCollectionRemoveAll() {
@@ -75,10 +75,10 @@ public class CollectionTest {
 
     /**
      * 测试contains()
-     * A里面是否包含某个元素，包含返回true
+     * A 里面是否包含某个元素，包含返回 true
      *
      * 测试containsAll()
-     * A里面是否包含集合B中的全部元素，全部包含返回true
+     * A 里面是否包含集合 B 中的全部元素，全部包含返回 true
      */
     @Test
     public void testCollectionContainsAndContainsAll() {
@@ -102,7 +102,7 @@ public class CollectionTest {
 
     /**
      * 测试retainAll()
-     * A与B做交集，交集的值保存在A中，方法执行完成后,如果A的值发生了改变,则返回true，如果A的值没发生改变,则返回false
+     * A 与 B 做交集，交集的值保存在 A 中，方法执行完成后，如果 A 的值发生了改变，则返回 true，如果 A 的值没发生改变，则返回 false
      */
     @Test
     public void testCollectionRetainAll() {
@@ -144,7 +144,7 @@ public class CollectionTest {
 
     /**
      * 集合装换为数组
-     * ArrayList源码注释:c.toArray might (incorrectly) not return Object[] (see 6260652)
+     * ArrayList 源码注释：c.toArray might (incorrectly) not return Object[] (see 6260652)
      */
     @Test
     public void toArray() {

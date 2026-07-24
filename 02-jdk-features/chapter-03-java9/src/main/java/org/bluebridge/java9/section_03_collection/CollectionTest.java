@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.*;
 
 /**
- * Java9只读集合创建测试
+ * Java9 只读集合创建测试
  *
  * @author lingwh
  * @date 2026/6/22 15:10
@@ -13,7 +13,7 @@ import java.util.*;
 public class CollectionTest {
 
     /**
-     * Java9之前创建只读集合
+     * Java9 之前创建只读集合
      */
     @Test
     public void testCreateUnmodifiableCollectionBeforeJava9() {
@@ -21,7 +21,7 @@ public class CollectionTest {
         list.add("A");
         list.add("B");
         list.add("C");
-        // 设为只读List集合
+        // 设为只读 List 集合
         list = Collections.unmodifiableList(list);
         System.out.println(list);
         System.out.println("--------------------------------------");
@@ -30,7 +30,7 @@ public class CollectionTest {
         set.add("E");
         set.add("F");
         set.add("G");
-        // 设为只读Set集合
+        // 设为只读 Set 集合
         set = Collections.unmodifiableSet(set);
         System.out.println(set);
         System.out.println("--------------------------------------");
@@ -39,7 +39,7 @@ public class CollectionTest {
         map.put("k1", "v1");
         map.put("k2", "v2");
         map.put("k3", "v3");
-        // 设为只读Map集合
+        // 设为只读 Map 集合
         map = Collections.unmodifiableMap(map);
         System.out.println(map);
         System.out.println("--------------------------------------");
@@ -52,22 +52,22 @@ public class CollectionTest {
     }
 
     /**
-     * Java9之后创建只读集合
-     * java9提供了更方便的方式来创建只读集合
+     * Java9 之后创建只读集合
+     * java9 提供了更方便的方式来创建只读集合
      */
     @Test
     public void testCreateUnmodifiableCollectionAfterJava9() {
-        // 创建只读List集合
+        // 创建只读 List 集合
         List<String> list = List.of("A", "B", "C");
         System.out.println(list);
         System.out.println("--------------------------------------");
 
-        // 创建只读Set集合
+        // 创建只读 Set 集合
         Set<String> set = Set.of("E", "F", "G");
         System.out.println(set);
         System.out.println("--------------------------------------");
 
-        // 创建只读Map集合
+        // 创建只读 Map 集合
         Map<String, String> map = Map.of("k1", "v1", "k2", "v2", "k3", "v3");
         System.out.println(map);
         System.out.println("--------------------------------------");

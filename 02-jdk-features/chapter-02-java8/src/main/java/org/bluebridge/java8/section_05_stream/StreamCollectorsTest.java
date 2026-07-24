@@ -38,56 +38,56 @@ public class StreamCollectorsTest {
     }
 
     /**
-     * 收集流中元素到List集合中
+     * 收集流中元素到 List 集合中
      */
     @Test
     public void testCollectToList() {
         // 创建流
         Stream<Employee> stream = employees.stream();
         List<Employee> collectList = stream
-                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
+                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉 age 为 null 的元素
                 .filter(employee -> employee.getAge() > 15)
                 .collect(Collectors.toList());
         log.debug("collectList: {}", collectList);
     }
 
     /**
-     * 收集流中元素到ArrayList集合中
+     * 收集流中元素到 ArrayList 集合中
      */
     @Test
     public void testCollectToArrayList() {
         // 创建流
         Stream<Employee> stream = employees.stream();
         ArrayList<Employee> collectArrayList = stream
-                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
+                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉 age 为 null 的元素
                 .filter(employee -> employee.getAge() > 15)
                 .collect(Collectors.toCollection(ArrayList::new));
         log.debug("collectArrayList: {}", collectArrayList);
     }
 
     /**
-     * 收集流中元素到Set集合中
+     * 收集流中元素到 Set 集合中
      */
     @Test
     public void testCollectToHashSet() {
         // 创建流
         Stream<Employee> stream = employees.stream();
         Set<Employee> collectSet = stream
-                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
+                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉 age 为 null 的元素
                 .filter(employee -> employee.getAge() > 15)
                 .collect(Collectors.toSet());
         log.debug("collectSet: {}", collectSet);
     }
 
     /**
-     * 收集流中元素到HashSet集合中
+     * 收集流中元素到 HashSet 集合中
      */
     @Test
     public void testCollectToSet() {
         // 创建流
         Stream<Employee> stream = employees.stream();
         HashSet<Employee> collectHashSet = stream
-                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
+                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉 age 为 null 的元素
                 .filter(employee -> employee.getAge() > 15)
                 .collect(Collectors.toCollection(HashSet::new));
         log.debug("collectHashSet: {}", collectHashSet);
@@ -101,7 +101,7 @@ public class StreamCollectorsTest {
         // 创建流
         Stream<Employee> stream = employees.stream();
         Integer[] collectArray = stream
-                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
+                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉 age 为 null 的元素
                 .map(employee -> employee.getAge())
                 // .toArray(value -> new Integer[value]); // 此处的参数 value 就是 流中元素的个数
                 .toArray(Integer[]::new);
@@ -116,7 +116,7 @@ public class StreamCollectorsTest {
         // 创建流
         Stream<Employee> stream = employees.stream();
         String ageStr = stream
-                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
+                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉 age 为 null 的元素
                 .map(employee -> employee.getAge())
                 .map(String::valueOf)
                 .collect(Collectors.joining("-")); // 只填入分隔符
@@ -124,7 +124,7 @@ public class StreamCollectorsTest {
 
         stream = employees.stream();
         ageStr = stream
-                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉age为null的元素
+                .filter(employee -> Objects.nonNull(employee.getAge())) // 过滤掉 age 为 null 的元素
                 .map(employee -> employee.getAge())
                 .map(String::valueOf).collect(Collectors.joining("-", "[", "]")); // 填入分隔符和头尾
         log.debug("ageStr: {}", ageStr);
@@ -137,7 +137,7 @@ public class StreamCollectorsTest {
         map.put("id", "001");
         map.put("age", "25");
         Map<String, String> sortedMap = map.entrySet().stream()
-                .sorted(Map.Entry.comparingByKey()) // 根据key排序
+                .sorted(Map.Entry.comparingByKey()) // 根据 key 排序
                 // .sorted(Map.Entry.comparingByValue()) // 根据值排序
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,

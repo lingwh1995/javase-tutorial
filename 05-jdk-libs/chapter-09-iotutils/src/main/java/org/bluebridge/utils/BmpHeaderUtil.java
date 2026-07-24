@@ -1,10 +1,10 @@
 package org.bluebridge.utils;
 
 /**
- * BMP文件头工具类
+ * BMP 文件头工具类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 public class BmpHeaderUtil {
 
@@ -38,7 +38,7 @@ public class BmpHeaderUtil {
         header[8] = 0;
         header[9] = 0;
 
-        int offset = 54 + 1024; // 文件头(54) + 调色板(256色×4字节)
+        int offset = 54 + 1024; // 文件头(54) + 调色板(256 色×4 字节)
         header[10] = (byte) (offset & 0xFF);
         header[11] = (byte) ((offset >> 8) & 0xFF);
         header[12] = (byte) ((offset >> 16) & 0xFF);

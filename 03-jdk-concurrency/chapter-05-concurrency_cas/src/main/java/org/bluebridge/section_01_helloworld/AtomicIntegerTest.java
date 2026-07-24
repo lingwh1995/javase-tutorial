@@ -3,10 +3,10 @@ package org.bluebridge.section_01_helloworld;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * AtomicInteger用法测试
+ * AtomicInteger 用法测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:00
  */
 public class AtomicIntegerTest {
 
@@ -32,13 +32,13 @@ public class AtomicIntegerTest {
         // getAndDecrement()：获取当前值然后自减
         System.out.println("先获取当前值然后自减后的值 (getAndDecrement): " + atomicInteger.getAndDecrement());
 
-        // getAndAdd(int delta)：获取当前值然后加上delta
+        // getAndAdd(int delta)：获取当前值然后加上 delta
         System.out.println("先获取当前值然后加上delta (5): " + atomicInteger.getAndAdd(5));
 
-        // addAndGet(int delta)：加上delta并返回新的值
+        // addAndGet(int delta)：加上 delta 并返回新的值
         System.out.println("加上delta后的值 (5) (addAndGet): " + atomicInteger.addAndGet(5));
 
-        // compareAndSet(expectedValue, updateValue)：如果当前值等于expectedValue，则将其设置为updateValue
+        // compareAndSet(expectedValue, updateValue)：如果当前值等于 expectedValue，则将其设置为 updateValue
         boolean flag = atomicInteger.compareAndSet(20, 22);
         System.out.println("compareAndSet操作结果 (应为true): " + flag + ", 新值: " + atomicInteger.get());
 

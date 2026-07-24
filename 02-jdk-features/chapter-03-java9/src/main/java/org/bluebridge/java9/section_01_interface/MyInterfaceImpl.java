@@ -1,7 +1,7 @@
 package org.bluebridge.java9.section_01_interface;
 
 /**
- * MyInterface的实现类
+ * MyInterface 的实现类
  *
  * @author lingwh
  * @date 2026/6/22 15:10

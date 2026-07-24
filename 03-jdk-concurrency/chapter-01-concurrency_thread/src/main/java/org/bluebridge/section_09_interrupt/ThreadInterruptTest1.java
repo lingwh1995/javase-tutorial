@@ -10,7 +10,7 @@ package org.bluebridge.section_09_interrupt;
  * https://blog.csdn.net/shadow_zed/article/details/131169470
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 10:00
  */
 public class ThreadInterruptTest1 {
 

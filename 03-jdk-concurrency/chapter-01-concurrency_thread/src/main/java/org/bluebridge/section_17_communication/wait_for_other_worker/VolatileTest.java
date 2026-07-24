@@ -3,7 +3,7 @@ package org.bluebridge.section_17_communication.wait_for_other_worker;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 演示volatile机制的使用场景：主线程等待多个工作线程完成
+ * 演示 volatile 机制的使用场景：主线程等待多个工作线程完成
  *
  * @author lingwh
  * @date 2025/10/28 9:34
@@ -17,7 +17,7 @@ public class VolatileTest {
     private static final int TOTAL_WORKERS = 3;
 
     public static void main(String[] args) throws InterruptedException {
-        // 启动3个工作线程
+        // 启动 3 个工作线程
         new Thread(new Worker("工作线程1 => 启动服务A")).start();
         new Thread(new Worker("工作线程2 => 启动服务B")).start();
         new Thread(new Worker("工作线程3 => 启动服务C")).start();

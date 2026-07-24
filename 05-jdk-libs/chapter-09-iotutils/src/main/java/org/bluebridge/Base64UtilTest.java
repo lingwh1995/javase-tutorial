@@ -4,10 +4,10 @@ import org.bluebridge.utils.Base64Util;
 import org.junit.Test;
 
 /**
- * Base64工具测试类
+ * Base64 工具测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/2/3 10:30
  */
 public class Base64UtilTest {
 

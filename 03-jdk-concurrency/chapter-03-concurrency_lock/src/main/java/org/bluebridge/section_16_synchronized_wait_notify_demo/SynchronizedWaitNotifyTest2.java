@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * 解决其它线程阻塞问题，但如果有其它线程也在等待条件呢？
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 13:00
  */
 public class SynchronizedWaitNotifyTest2 {
 

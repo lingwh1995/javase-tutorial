@@ -1,7 +1,7 @@
 package org.bluebridge.basic;
 
 /**
- * java语言HelloWorld
+ * java 语言 HelloWorld
  *
  * @author lingwh
  * @date 2019/3/12 16:58

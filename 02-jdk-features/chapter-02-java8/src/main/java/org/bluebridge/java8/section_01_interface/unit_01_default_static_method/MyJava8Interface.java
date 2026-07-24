@@ -1,7 +1,7 @@
 package org.bluebridge.java8.section_01_interface.unit_01_default_static_method;
 
 /**
- * 定义一个Java8接口，可以包含抽象方法、静态方法、默认方法、
+ * 定义一个 Java8 接口，可以包含抽象方法、静态方法、默认方法、
  *
  * @author lingwh
  * @date 2025/12/2 15:07

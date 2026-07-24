@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.Random;
 
 /**
- * goto测试
+ * goto 测试
  *
  * @author lingwh
  * @date 2019/3/12 16:58
@@ -15,7 +15,7 @@ import java.util.Random;
 public class GotoTest {
 
     /**
-     * java中没有goto,但是可以使用break和continue实现类似于goto的效果
+     * java 中没有 goto，但是可以使用 break 和 continue 实现类似于 goto 的效果
      */
     @Test
     public void testGoto() {

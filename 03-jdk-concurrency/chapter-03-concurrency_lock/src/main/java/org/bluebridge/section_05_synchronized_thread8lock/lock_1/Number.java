@@ -4,7 +4,7 @@ package org.bluebridge.section_05_synchronized_thread8lock.lock_1;
  * 情况1：12 或 21
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:00
  */
 public class Number {
 

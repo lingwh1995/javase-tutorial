@@ -5,10 +5,10 @@ import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Timer定时器测试
+ * Timer 定时器测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/4/21 11:30
  */
 public class TimerTest {
 

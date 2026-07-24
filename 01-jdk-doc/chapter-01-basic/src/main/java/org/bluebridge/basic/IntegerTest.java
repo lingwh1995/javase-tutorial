@@ -3,7 +3,7 @@ package org.bluebridge.basic;
 import org.junit.Test;
 
 /**
- * Integer测试
+ * Integer 测试
  *
  * @author lingwh
  * @date 2026/3/14 14:19
@@ -11,7 +11,7 @@ import org.junit.Test;
 public class IntegerTest {
 
     /**
-     * 统计二进制位中1的个数
+     * 统计二进制位中 1 的个数
      */
     @Test
     public void bitCountTest() {

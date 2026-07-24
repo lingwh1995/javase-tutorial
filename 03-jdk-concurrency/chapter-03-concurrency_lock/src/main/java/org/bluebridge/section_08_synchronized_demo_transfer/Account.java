@@ -4,7 +4,7 @@ package org.bluebridge.section_08_synchronized_demo_transfer;
  * 银行账户
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 13:30
  */
 public class Account {
 

@@ -4,7 +4,7 @@ package org.bluebridge.section_07_synchronized_demo_ticket.ticket_06_ticket_wind
  * 售票窗口
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 09:15
  */
 public class TicketWindow {
 

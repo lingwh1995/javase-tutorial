@@ -5,15 +5,15 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 /**
- * BigDecimal账户测试
+ * BigDecimal 账户测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 13:30
  */
 public class DecimalAccountTest {
 
     /**
-     * 测试不安全的DecimalAccount
+     * 测试不安全的 DecimalAccount
      */
     @Test
     public void testDecimalAccountUnsafe() {

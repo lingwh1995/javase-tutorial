@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 筷子类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 19:15
  */
 public class Chopstick extends ReentrantLock {
 

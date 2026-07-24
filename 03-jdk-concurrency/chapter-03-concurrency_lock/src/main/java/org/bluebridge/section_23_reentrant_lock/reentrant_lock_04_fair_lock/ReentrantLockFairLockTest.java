@@ -34,11 +34,11 @@ import java.util.concurrent.locks.ReentrantLock;
  *    +--------------------+               +--------------------+
  *
  * 5. ReentrantLock 的公平锁实现
- *      当使用公平锁时，ReentrantLock 通过内部维护一个FIFO队列来确保每个线程按照请求顺序获取锁。具体实现上，ReentrantLock
- *      使用AbstractQueuedSynchronizer（AQS）的tryAcquire方法，检查当前是否有其他线程在排队，确保锁按照顺序分配。
+ *      当使用公平锁时，ReentrantLock 通过内部维护一个 FIFO 队列来确保每个线程按照请求顺序获取锁。具体实现上，ReentrantLock
+ *      使用 AbstractQueuedSynchronizer（AQS）的 tryAcquire 方法，检查当前是否有其他线程在排队，确保锁按照顺序分配。
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 20:15
  */
 public class ReentrantLockFairLockTest {
 
@@ -48,7 +48,7 @@ public class ReentrantLockFairLockTest {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("--------- 公平锁示例 ---------");
         Runnable task = () -> {
-            // 每个线程尝试获取锁2次
+            // 每个线程尝试获取锁 2 次
             for (int i = 0; i < 2; i++) {
                 fairLock.lock();
                 try {
@@ -65,7 +65,7 @@ public class ReentrantLockFairLockTest {
             }
         };
 
-        // 启动3个线程竞争锁
+        // 启动 3 个线程竞争锁
         for (int i = 0; i < 3; i++) {
             new Thread(task, "Thread-" + (i + 1)).start();
         }

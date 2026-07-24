@@ -3,15 +3,15 @@ package org.bluebridge.section_01_fixed_thread_pool;
 import java.util.concurrent.*;
 
 /**
- * LinkedBlockingQueue工作队列测试
+ * LinkedBlockingQueue 工作队列测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 09:15
  */
 public class FixedThreadPool02WorkQueueTest {
 
     public static void main(String[] args) {
-        // 创建一个容量为10的LinkedBlockingQueue
+        // 创建一个容量为 10 的 LinkedBlockingQueue
         LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>(10);
 
         // 创建一个生产者线程，用于往队列中添加元素

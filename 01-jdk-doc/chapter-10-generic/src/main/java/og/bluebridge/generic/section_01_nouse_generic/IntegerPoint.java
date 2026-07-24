@@ -6,7 +6,7 @@ import lombok.Data;
  * 设置Integer类型的点坐标
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/3/10 10:30
  */
 @Data
 public class IntegerPoint {

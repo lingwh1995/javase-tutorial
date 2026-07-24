@@ -4,7 +4,7 @@ import org.bluebridge.enumeration.ColorEnum;
 import org.junit.Test;
 
 /**
- * ColorEnum测试
+ * ColorEnum 测试
  *
  * @author lingwh
  * @date 2026/4/23 16:29
@@ -12,7 +12,7 @@ import org.junit.Test;
 public class ColorEnumTest {
 
     /**
-     * 枚举api
+     * 枚举 api
      * name() ：返回枚举的名称
      * ordinal() ：枚举的下标，下标从0开始
      * valueOf(Class<T> enumType, String name) ：得到枚举的对象

@@ -4,19 +4,19 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 固定大小的线程池FixedThreadPool
+ * 固定大小的线程池 FixedThreadPool
  *
  * 1. 线程池大小固定，不会随着任务的增长而增长。
  * 2. 核心线程数和最大线程数相等，使用无界队列
- * 3. 使用的工作队列是LinkedBlockingQueue
+ * 3. 使用的工作队列是 LinkedBlockingQueue
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 09:00
  */
 public class FixedThreadPool01HelloWorldTest {
 
     public static void main(String[] args) {
-        // 创建一个固定大小为4的线程池
+        // 创建一个固定大小为 4 的线程池
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         // 提交任务

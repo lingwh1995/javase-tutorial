@@ -10,7 +10,7 @@ import java.util.Arrays;
  * 命令工具类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 @Data
 @AllArgsConstructor
@@ -37,7 +37,7 @@ public class CommandUtil {
     private boolean isEncryp;
 
     /**
-     * 是否计算mac并添加mac到数据区尾部
+     * 是否计算 mac 并添加 mac 到数据区尾部
      */
     private boolean withMac;
 
@@ -57,7 +57,7 @@ public class CommandUtil {
         if (isEncryp()) {
             dataAreaBytes = encryptDataArea(dataAreaBytes);
         }
-        // 如果计算mac并将计算结果拼接到数据区尾部
+        // 如果计算 mac 并将计算结果拼接到数据区尾部
         if (withMac()) {
             dataAreaBytes = calcMacAndAppendMacToDataAreaTail(dataAreaBytes);
         }
@@ -74,8 +74,8 @@ public class CommandUtil {
     }
 
     /**
-     * 补齐数据区 需要16字节补齐，报文长度少于16个字节，需要补满16个字节，补(16-len)个(16-len)。
-     * 如果报文长度正好时N字节的整数倍，则需要补16个十进制16。
+     * 补齐数据区 需要 16 字节补齐，报文长度少于 16 个字节，需要补满 16 个字节，补 (16-len) 个 (16-len)。
+     * 如果报文长度正好时 N 字节的整数倍，则需要补 16 个十进制 16。
      *
      * @param dataArea 没有补齐的数据区
      * @return 补齐后的数据区
@@ -114,7 +114,7 @@ public class CommandUtil {
     }
 
     /**
-     * 计算mac并且把计算后的mac值拼接到数据区尾部
+     * 计算 mac 并且把计算后的 mac值拼接到数据区尾部
      *
      * @param encryptDataArea 加密后的数据区
      * @return 可以直接用于组包的数据区
@@ -123,7 +123,7 @@ public class CommandUtil {
     protected byte[] calcMacAndAppendMacToDataAreaTail(byte[] encryptDataArea) throws Exception {
         byte[] randomCommunicationCodeBytes = ParseUtil.hexStringToByte(randomCode);
         byte[] mainSecretBytes = ParseUtil.hexStringToByte(mainSecret);
-        // 使用主密钥对随机通信码进行AES128计算取前16字节得到加密密钥
+        // 使用主密钥对随机通信码进行 AES128 计算取前 16 字节得到加密密钥
         byte[] secretKeyBytes = AESUtil.encrypt(randomCommunicationCodeBytes, mainSecretBytes);
         secretKeyBytes = secretKeyBytes.length > 16 ? Arrays.copyOfRange(secretKeyBytes, 0, 16) : secretKeyBytes;
 
@@ -132,9 +132,9 @@ public class CommandUtil {
         System.arraycopy(randomCommunicationCodeBytes, 0, calcDataAreaBytes, 0, randomCommunicationCodeBytes.length);
         System.arraycopy(encryptDataArea, 0, calcDataAreaBytes, randomCommunicationCodeBytes.length,
                 encryptDataArea.length);
-        // 2.经过MAC算法计算出MAC值
+        // 2.经过 MAC 算法计算出 MAC 值
         byte[] mac = HmacUtil.hmacsha256Encrypt(calcDataAreaBytes, secretKeyBytes);
-        // 3.最后将MAC追加在数据对象内容后作为数据域。
+        // 3.最后将 MAC 追加在数据对象内容后作为数据域。
         byte[] finalDataArea = new byte[encryptDataArea.length + mac.length];
         System.arraycopy(encryptDataArea, 0, finalDataArea, 0, encryptDataArea.length);
         System.arraycopy(mac, 0, finalDataArea, encryptDataArea.length, mac.length);
@@ -160,7 +160,7 @@ public class CommandUtil {
     }
 
     /**
-     * 是否计算mac并将计算结果拼接到数据区尾部
+     * 是否计算 mac 并将计算结果拼接到数据区尾部
      *
      * @return
      */
@@ -177,7 +177,7 @@ public class CommandUtil {
     public String parseDataArea() throws Exception {
         byte[] dataAreaBytes = HexUtil.decodeHex(this.dataAreaHex);
         if (withMac()) {
-            // 移除数据区中的mac部分
+            // 移除数据区中的 mac 部分
             dataAreaBytes = Arrays.copyOfRange(dataAreaBytes, 0, dataAreaBytes.length - 32);
         }
         byte[] mainSecretBytes = ParseUtil.hexStringToByte(mainSecret);

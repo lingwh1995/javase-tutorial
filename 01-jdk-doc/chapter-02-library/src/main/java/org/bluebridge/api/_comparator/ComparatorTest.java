@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.*;
 
 /**
- * Comparator外部比较器测试
+ * Comparator 外部比较器测试
  *
  * @author lingwh
  * @date 2026/4/23 16:29
@@ -13,7 +13,7 @@ import java.util.*;
 public class ComparatorTest {
 
     /**
-     * 测试使用外部比较器接口Comparator对集合进行排序
+     * 测试使用外部比较器接口 Comparator 对集合进行排序
      */
     @Test
     public void testCollectionComparable() {
@@ -22,10 +22,10 @@ public class ComparatorTest {
         personList.add(new Person("b", 20));
         personList.add(new Person("c", 30));
 
-        // 打印list的原始序列
+        // 打印 list 的原始序列
         System.out.printf("原始序列：%s\n", personList);
 
-        // 使用外部比较器接口Comparator进行排序
+        // 使用外部比较器接口 Comparator 进行排序
         Collections.sort(personList, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
@@ -44,7 +44,7 @@ public class ComparatorTest {
     }
 
     /**
-     * 测试使用外部比较器接口Comparator对数组进行排序
+     * 测试使用外部比较器接口 Comparator 对数组进行排序
      */
     @Test
     public void testArrayComparable() {
@@ -56,7 +56,7 @@ public class ComparatorTest {
         // 打印数组的原始序列
         System.out.printf("原始序列： %s\n", personArr);
 
-        // 使用外部比较器接口Comparator进行排序
+        // 使用外部比较器接口 Comparator 进行排序
         Arrays.sort(personArr, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {

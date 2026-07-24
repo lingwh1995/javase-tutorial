@@ -4,10 +4,10 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 
 /**
- * 自定义AQS同步器
+ * 自定义 AQS 同步器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 15:00
  */
 final class MySync extends AbstractQueuedSynchronizer {
 
@@ -25,7 +25,7 @@ final class MySync extends AbstractQueuedSynchronizer {
         int state = getState();
         System.out.println("Thread " + Thread.currentThread().getName() + " state[tryAcquire] = " + state);
         if (compareAndSetState(0, 1)) {
-            // 进入if表示锁已经加上了
+            // 进入 if 表示锁已经加上了
             setExclusiveOwnerThread(Thread.currentThread());
             return true;
         }

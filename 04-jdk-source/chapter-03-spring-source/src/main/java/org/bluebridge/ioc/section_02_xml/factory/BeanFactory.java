@@ -1,7 +1,7 @@
 package org.bluebridge.ioc.section_02_xml.factory;
 
 /**
- * Bean工厂
+ * Bean 工厂
  *
  * @author lingwh
  * @date 2019/3/15 19:02
@@ -9,7 +9,7 @@ package org.bluebridge.ioc.section_02_xml.factory;
 public interface BeanFactory {
 
     /**
-     * 获取bean
+     * 获取 bean
      *
      * @param beanId
      * @return
@@ -17,7 +17,7 @@ public interface BeanFactory {
     Object getBean(String beanId);
 
     /**
-     * 获取bean
+     * 获取 bean
      *
      * @param beanId
      * @param t

@@ -10,7 +10,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 /**
- * POI操作Excel测试
+ * POI 操作 Excel 测试
  *
  * @author lingwh
  * @date 2026/4/21 19:02
@@ -25,16 +25,16 @@ public class POIExcelTest {
     }
 
     /**
-     * 给excel表格写入数据
+     * 给 excel 表格写入数据
      *
      * @param path
      * @throws Exception
      */
     public static void write(String path) throws Exception {
-        // 针对.xls格式的excel文件
+        // 针对.xls 格式的 excel 文件
         // Workbook workbook = new HSSFWorkbook();
-        // 针对.xlsx格式的excel文件
-        // 1. 获取excel文件
+        // 针对.xlsx 格式的 excel 文件
+        // 1. 获取 excel 文件
         Workbook workbook = new XSSFWorkbook();
         // 2. 创建一个表
         Sheet sheet = workbook.createSheet("sheet-1");
@@ -56,7 +56,7 @@ public class POIExcelTest {
     }
 
     /**
-     * 读取excel表格数据
+     * 读取 excel 表格数据
      *
      * @throws Exception
      */

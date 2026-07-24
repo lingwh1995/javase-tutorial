@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  *    被唤醒，如果没有没有被唤醒，就放弃了CPU执行权,进入了block()状态
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 12:30
  */
 public class SynchronizedSleepWaitTest {
 

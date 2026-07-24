@@ -32,7 +32,7 @@ public class GuavaTest {
 
     /**
      * chapter 1: 基础工具
-     * 核心思想：快速失败，比起JDK原生的if-else抛异常，代码更简洁
+     * 核心思想：快速失败，比起 JDK 原生的 if-else 抛异常，代码更简洁
      */
     private static void chapter1_basicUtilities() {
         // 1. 检查参数是否为空 (替代 if (name == null) throw new...)
@@ -56,15 +56,15 @@ public class GuavaTest {
 
     /**
      * chapter2: 字符串处理
-     * 核心思想：解决JDK原生String.split的坑（如丢弃尾部空字符串），提供流式API
+     * 核心思想：解决 JDK 原生 String.split 的坑（如丢弃尾部空字符串），提供流式 API
      */
     private static void chapter2_strings() {
-        // 1. Joiner (连接器) - 自动处理null值
+        // 1. Joiner (连接器) - 自动处理 null 值
         List<String> parts = Lists.newArrayList("Java", null, "Guava", "Kotlin");
-        // 跳过null
+        // 跳过 null
         String result1 = Joiner.on(", ").skipNulls().join(parts);
         System.out.println("Joiner (skipNulls): " + result1);
-        // 替换null为默认值
+        // 替换 null 为默认值
         String result2 = Joiner.on(", ").useForNull("N/A").join(parts);
         System.out.println("Joiner (useForNull): " + result2);
 
@@ -92,7 +92,7 @@ public class GuavaTest {
 
     /**
      * chapter3: 不可变集合
-     * 核心思想：不可变对象是安全的、自由的、高效的。Guava是Java界推广不可变对象的先驱
+     * 核心思想：不可变对象是安全的、自由的、高效的。Guava 是 Java 界推广不可变对象的先驱
      */
     private static void chapter3_immutableCollections() {
         // 1. of() 方法：快速创建包含已知元素的不可变集合
@@ -116,7 +116,7 @@ public class GuavaTest {
 
     /**
      * chapter4: 新集合类型
-     * 核心思想：解决JDK中繁琐的 Map<K, List<V>> 等嵌套结构，减少模板代码
+     * 核心思想：解决 JDK 中繁琐的 Map<K, List<V>> 等嵌套结构，减少模板代码
      */
     private static void chapter4_newCollections() {
         // 1. Multiset (无序可重复集合) - 统计词频的神器
@@ -124,7 +124,7 @@ public class GuavaTest {
         Multiset<String> wordCounts = HashMultiset.create();
         wordCounts.add("Apple", 3);
         wordCounts.add("Banana", 2);
-        wordCounts.add("Apple"); // 再加1个Apple
+        wordCounts.add("Apple"); // 再加 1 个 Apple
         System.out.println("Multiset count of Apple: " + wordCounts.count("Apple")); // 4
 
         // 2. Multimap (一键多值映射) - 不再需要 Map<K, Collection<V>>
@@ -142,8 +142,8 @@ public class GuavaTest {
         dictionary.put("Banana", "香蕉");
         // 通过 value 获取 key
         System.out.println("反转查找 '苹果': " + dictionary.inverse().get("苹果")); // Apple
-        // dictionary.put("Orange", "苹果"); // 会抛异常，因为value重复了！
-        dictionary.forcePut("Orange", "苹果"); // 强制覆盖原来的Apple
+        // dictionary.put("Orange", "苹果"); // 会抛异常，因为 value 重复了！
+        dictionary.forcePut("Orange", "苹果"); // 强制覆盖原来的 Apple
         System.out.println("强制覆盖后的词典: " + dictionary);
 
         // 4. Table (二维表) - 不再需要 Map<RowKey, Map<ColKey, Value>>
@@ -176,7 +176,7 @@ public class GuavaTest {
 
         try {
             System.out.println("First query (Cache Miss): " + cache.get("Key1"));
-            System.out.println("Second query (Cache Hit): " + cache.get("Key1")); // 不会触发DB Query
+            System.out.println("Second query (Cache Hit): " + cache.get("Key1")); // 不会触发 DB Query
         } catch (Exception e) {
             e.printStackTrace();
         }

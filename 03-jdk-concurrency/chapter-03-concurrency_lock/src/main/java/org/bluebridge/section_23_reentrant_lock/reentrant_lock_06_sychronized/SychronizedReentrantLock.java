@@ -4,7 +4,7 @@ package org.bluebridge.section_23_reentrant_lock.reentrant_lock_06_sychronized;
  * Sychronized锁的可重入性
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 14:00
  */
 public class SychronizedReentrantLock {
 

@@ -3,10 +3,10 @@ package org.bluebridge.section_25_reentrant_read_write_lock;
 import java.util.concurrent.TimeUnit;
 
 /**
- * ReentrantReadWriteLock读写锁测试
+ * ReentrantReadWriteLock 读写锁测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 22:00
  */
 public class ReentrantReadWriteLockTest {
 

@@ -8,7 +8,7 @@ import java.util.concurrent.Semaphore;
  * 限制数据库连接数
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 21:30
  */
 public class DatabaseConnectionLimiterTest {
 

@@ -3,10 +3,10 @@ package org.bluebridge.section_02_create.way_5;
 import java.util.concurrent.CompletableFuture;
 
 /**
- * 使用java8提供的CompletableFuture创建线程
+ * 使用 java8 提供的 CompletableFuture 创建线程
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/4/21 11:45
  */
 public class ThreadCreateTest {
 

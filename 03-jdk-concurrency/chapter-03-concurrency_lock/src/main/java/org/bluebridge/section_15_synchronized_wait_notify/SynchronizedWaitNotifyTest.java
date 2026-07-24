@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  * 3. obj.notifyAll() 让 object 上正在 waitSet 等待的线程全部唤醒
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 12:15
  */
 public class SynchronizedWaitNotifyTest {
 

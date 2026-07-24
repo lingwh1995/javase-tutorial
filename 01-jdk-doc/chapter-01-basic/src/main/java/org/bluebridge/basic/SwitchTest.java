@@ -13,7 +13,7 @@ import org.junit.Test;
 public class SwitchTest {
 
     /**
-     * 测试switch的嵌套
+     * 测试 switch 的嵌套
      */
     @Test
     public void testSwitchNest() {
@@ -50,7 +50,7 @@ public class SwitchTest {
     }
 
     /**
-     * 测试switch配合枚举使用
+     * 测试 switch 配合枚举使用
      */
     @Test
     public void testSwitchEnum() {
@@ -72,7 +72,7 @@ public class SwitchTest {
     }
 
     /**
-     * 测试case穿透
+     * 测试 case 穿透
      */
     @Test
     public void testCasePenetrate() {

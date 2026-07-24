@@ -5,10 +5,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * TreeMap存储对象并排序测试
+ * TreeMap 存储对象并排序测试
  *
  * @author lingwh
- * @date 2026/7/13 18:39
+ * @date 2019/7/9 10:30
  */
 public class TreeMapTest {
 
@@ -40,7 +40,7 @@ public class TreeMapTest {
         System.out.println(treeMapCmparor);
 
         System.out.println("-------------------------------------");
-        // 测试TreeMap.put();
+        // 测试 TreeMap.put();
         Map<String, String> tree = new TreeMap<>();
         System.out.println(tree.put("first", "zs"));
         System.out.println(tree.put("first", "zs"));

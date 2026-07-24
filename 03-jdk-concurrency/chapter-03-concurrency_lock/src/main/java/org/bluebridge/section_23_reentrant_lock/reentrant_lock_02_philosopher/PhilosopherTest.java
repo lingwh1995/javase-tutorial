@@ -4,7 +4,7 @@ package org.bluebridge.section_23_reentrant_lock.reentrant_lock_02_philosopher;
  * 哲学家就餐问题测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 19:45
  */
 public class PhilosopherTest {
 

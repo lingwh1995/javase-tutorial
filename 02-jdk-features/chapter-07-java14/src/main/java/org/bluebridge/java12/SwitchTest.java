@@ -3,15 +3,15 @@ package org.bluebridge.java12;
 import org.junit.Test;
 
 /**
- * java12提供了更强的 switch 使用语法
+ * java12 提供了更强的 switch 使用语法
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 10:30
  */
 public class SwitchTest {
 
     /**
-     * 配合lambda表达式使用
+     * 配合 lambda 表达式使用
      */
     @Test
     public void testSwitchWithLambda() {
@@ -25,7 +25,7 @@ public class SwitchTest {
     }
 
     /**
-     * 有返回值的Return
+     * 有返回值的 Return
      */
     @Test
     public void testSwitchHasReturn() {

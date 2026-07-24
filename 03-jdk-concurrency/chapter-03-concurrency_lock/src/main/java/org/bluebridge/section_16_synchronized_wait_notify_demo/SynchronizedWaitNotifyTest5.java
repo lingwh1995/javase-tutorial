@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  * 解决方法，改为 notifyAll
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/9 13:45
  */
 public class SynchronizedWaitNotifyTest5 {
 

@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 /**
- * FileUtils工具类测试
+ * FileUtils 工具类测试
  *
  * @author lingwh
  * @date 2025/9/15 10:55
@@ -72,7 +72,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testFilterFiles() {
-        // 查找所有.txt文件
+        // 查找所有.txt 文件
         FileFilter txtFilter = new SuffixFileFilter(".txt");
         File[] txtFiles = new File("d:/file_utils").listFiles(txtFilter);
         Arrays.stream(txtFiles).forEach(file -> log.info("fileName: {}", file.getName()));

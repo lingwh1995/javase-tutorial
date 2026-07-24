@@ -7,10 +7,10 @@ import java.util.function.IntBinaryOperator;
 import java.util.function.IntUnaryOperator;
 
 /**
- * 基于Unsafe实现的原子整数
+ * 基于 Unsafe 实现的原子整数
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/4/21 14:00
  */
 public class UnsafeAtomicInteger {
 
@@ -26,7 +26,7 @@ public class UnsafeAtomicInteger {
         unsafe = UnsafeAccessor.getUnsafe();
 
         try {
-            // 获取value在当前类中的偏移量
+            // 获取 value 在当前类中的偏移量
             offset = unsafe.objectFieldOffset(UnsafeAtomicInteger.class.getDeclaredField("value"));
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
@@ -51,7 +51,7 @@ public class UnsafeAtomicInteger {
     }
 
     public final int getAndIncrement() {
-        // 局部变量是必须的，因为多次从主存中读取value的值不可靠。
+        // 局部变量是必须的，因为多次从主存中读取 value 的值不可靠。
         int oldValue;
         while (true) {
             oldValue = value;

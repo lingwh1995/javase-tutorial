@@ -30,7 +30,7 @@ public class ClassPathAnnoApplicationContext implements BeanFactoryAnno {
          */
         String basePackage = ConfigManagerAnno.getXmlConfig(path);
         /**
-         * 2.获取这个包下所有类的class文件
+         * 2.获取这个包下所有类的 class 文件
          */
         List<Class<? extends Object>> classes = ClassUtils.getClasses(basePackage);
         for (Class classs : classes) {

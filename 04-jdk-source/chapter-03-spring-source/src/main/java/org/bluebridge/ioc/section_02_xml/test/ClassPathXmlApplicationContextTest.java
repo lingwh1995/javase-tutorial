@@ -5,7 +5,7 @@ import org.bluebridge.ioc.section_02_xml.factory.BeanFactory;
 import org.bluebridge.ioc.section_02_xml.factory.ClassPathXmlApplicationContext;
 
 /**
- * 测试ClassPathXmlApplicationContext
+ * 测试 ClassPathXmlApplicationContext
  *
  * @author lingwh
  * @date 2019/3/15 19:02
@@ -14,7 +14,7 @@ public class ClassPathXmlApplicationContextTest {
 
     public static void main(String[] args) {
         /**
-         * 验证单例Bean思路:实例化对象/创建对象必走无参，单例的话无参构造函数只调用一次
+         * 验证单例 Bean 思路：实例化对象/创建对象必走无参，单例的话无参构造函数只调用一次
          */
         BeanFactory context = new ClassPathXmlApplicationContext("applicationContext-ioc-xml-two.xml");
         System.out.println(context.getBean("student"));

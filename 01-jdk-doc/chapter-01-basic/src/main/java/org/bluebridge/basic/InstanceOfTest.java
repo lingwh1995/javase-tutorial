@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
- * instanceof关键字测试
+ * instanceof 关键字测试
  *
  * @author lingwh
  * @date 2019/3/12 16:58
@@ -23,7 +23,7 @@ public class InstanceOfTest {
     }
 
     /**
-     * 测试实现时实现类是不是instanceof父接口
+     * 测试实现时实现类是不是 instanceof 父接口
      */
     @Test
     public void testImplementInterface() {

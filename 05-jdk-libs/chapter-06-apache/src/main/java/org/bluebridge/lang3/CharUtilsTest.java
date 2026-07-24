@@ -22,7 +22,7 @@ public class CharUtilsTest {
         // 测试字符转换
         log.info("字符 {} 转换结果：{}", alpha, CharUtils.toString(alpha));
 
-        // 判断是否为ASCII字符/可打印ASCII字符
+        // 判断是否为 ASCII 字符/可打印 ASCII 字符
         log.info("字符 {} 是否为ASCII字符：{}", alpha, CharUtils.isAscii(alpha));
         log.info("字符 {} 是否为ASCII字符：{}", symbol, CharUtils.isAscii(symbol));
         log.info("字符 {} 是否为ASCII字符：{}", number, CharUtils.isAscii(number));
@@ -43,15 +43,15 @@ public class CharUtilsTest {
         // 测试字符比较（忽略大小写）
         log.info("字符 {} 和 {} 是否相等：{}", alpha, symbol, CharUtils.compare('A', 'a'));
 
-        // 测试toCharacterObject方法
+        // 测试 toCharacterObject 方法
         Character convertedToCharacterObject = CharUtils.toCharacterObject("A");
         log.info("字符 {} 转换结果：{}", "A", convertedToCharacterObject);
 
-        // 测试toChar方法
+        // 测试 toChar 方法
         char convertedToChar = CharUtils.toChar("B");
         log.info("字符 {} 转换结果：{}", "B", convertedToChar);
 
-        // 测试unicode转义
+        // 测试 unicode 转义
         String unicodeEscaped = CharUtils.unicodeEscaped('\'');
         log.info("字符 {} 转换结果：{}", "'", unicodeEscaped);
     }

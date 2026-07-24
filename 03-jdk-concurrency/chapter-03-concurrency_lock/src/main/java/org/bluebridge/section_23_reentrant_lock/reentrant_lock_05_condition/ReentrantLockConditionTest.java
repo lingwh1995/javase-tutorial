@@ -5,10 +5,10 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * ReentrantLock的Condition条件变量测试
+ * ReentrantLock 的 Condition 条件变量测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 20:30
  */
 public class ReentrantLockConditionTest {
 

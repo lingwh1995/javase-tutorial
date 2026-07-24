@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * JPEG无损旋转工具类
+ * JPEG 无损旋转工具类
  *
  * @author lingwh
  * @date 2026/2/3 10:13

@@ -15,21 +15,21 @@ import java.time.Duration;
  * Java11 HttpClient 测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class HttpClientTest {
 
     /**
-     * 使用 HttpClient 发送get请求
+     * 使用 HttpClient 发送 get 请求
      *
      * @throws IOException
      * @throws InterruptedException
      */
     @Test
     public void testHttpClientGet() throws IOException, InterruptedException {
-        // ①、创建HttpClient对象
+        // ①、创建 HttpClient 对象
         HttpClient client = HttpClient.newBuilder()// 1
-            // 指定HTTP协议的版本
+            // 指定 HTTP 协议的版本
             .version(HttpClient.Version.HTTP_2)
             // 指定重定向策略
             .followRedirects(HttpClient.Redirect.NORMAL)
@@ -38,15 +38,15 @@ public class HttpClientTest {
             // 如有必要，可通过该方法指定代理服务器地址
             // .proxy(ProxySelector.of(new InetSocketAddress("proxy.crazyit.com", 80)))
             .build();
-        // ②、创建HttpRequest对象
+        // ②、创建 HttpRequest 对象
         HttpRequest request = HttpRequest.newBuilder()// 2
-            // 执行请求的URL
+            // 执行请求的 URL
             .uri(URI.create("https://baike.baidu.com/item/%E7%AB%A5%E7%8E%B2/974254?fr=aladdin"))
             // 指定请求超时的时长
             .timeout(Duration.ofMinutes(2))
             // 指定请求头
             .header("Content-Type", "text/html")
-            // 创建GET请求
+            // 创建 GET 请求
             .GET()
             .build();
         // HttpResponse.BodyHandlers.ofString()指定将服务器响应转化成字符串
@@ -60,36 +60,36 @@ public class HttpClientTest {
     }
 
     /**
-     * 使用 HttpClient 发送post请求
+     * 使用 HttpClient 发送 post 请求
      *
      * @throws IOException
      * @throws InterruptedException
      */
     @Test
     public void testHttpClientPost() throws IOException, InterruptedException {
-        // 为CookieHandler设置默认的Cookie管理器
+        // 为 CookieHandler 设置默认的 Cookie 管理器
         CookieHandler.setDefault(new CookieManager());
         HttpClient client = HttpClient.newBuilder()
             .version(HttpClient.Version.HTTP_2)
             .followRedirects(HttpClient.Redirect.NORMAL)
             .connectTimeout(Duration.ofSeconds(20))
-            // 设置默认的Cookie处理器
+            // 设置默认的 Cookie 处理器
             .cookieHandler(CookieHandler.getDefault())// 1
             .build();
-        // 创建发送POST请求的request
+        // 创建发送 POST 请求的 request
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create("http://localhost:8888/foo/login.jsp"))
             .timeout(Duration.ofMinutes(2))
             // 指定以提交表单的方式编码请求体
             .header("Content-Type", "application/x-www-form-urlencoded")
-            // 通过字符串创建请求体，然后作为POST请求的请求参数
+            // 通过字符串创建请求体，然后作为 POST 请求的请求参数
             .POST(HttpRequest.BodyPublishers.ofString("name=crazyit.org&pass=leegang"))// 2
             .build();
         // HttpResponse.BodyHandlers.ofString()指定将服务器响应转化成字符串
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println("POST请求的响应码:" + response.statusCode());
         System.out.println("POST请求的响应体:" + response.body());
-        // 创建发送GET请求的request
+        // 创建发送 GET 请求的 request
         request = HttpRequest.newBuilder()
             .uri(URI.create("http://localhost:8888/foo/secret.jsp"))
             .timeout(Duration.ofMinutes(2))

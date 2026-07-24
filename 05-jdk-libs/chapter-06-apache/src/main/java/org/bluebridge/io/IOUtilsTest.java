@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.io.*;
 
 /**
- * IOUtils工具类测试
+ * IOUtils 工具类测试
  *
  * @author lingwh
  * @date 2025/9/15 11:34
@@ -20,10 +20,10 @@ public class IOUtilsTest {
      */
     @Test
     public void testReadFromInputStreamAndWriteToOutputStream() throws IOException {
-        // 从InputStream读取内容到字符串
+        // 从 InputStream 读取内容到字符串
         String content = IOUtils.toString(new FileInputStream("d:/io_utils/io_utils_read.txt"), "UTF-8");
         log.info("content：{}", content);
-        // 将字符串写入OutputStream
+        // 将字符串写入 OutputStream
         IOUtils.write("你是一只小青蛙，呱呱呱呱！", new FileOutputStream("d:/io_utils/io_utils_write.txt"), "UTF-8");
     }
 

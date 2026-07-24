@@ -9,7 +9,7 @@ import java.util.Vector;
  * 多线程售票窗口测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 09:30
  */
 public class TicketWindowTest {
 

@@ -6,7 +6,7 @@ import java.util.Random;
  * ThreadLocal 复杂测试
  *
  * @author lingwh
- * @date 2026/7/13 16:29
+ * @date 2026/4/23 16:29
  */
 public class ThreadLocalComplexTest {
 
@@ -36,7 +36,7 @@ public class ThreadLocalComplexTest {
         });
         t1.start();
         t2.start();
-        // 串行化效果,先执行子线程,再执行主线程
+        // 串行化效果，先执行子线程，再执行主线程
         t1.join();
         t2.join();
         System.out.println(Thread.currentThread().getName() + ":" + thradlocal.get());

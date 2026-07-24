@@ -21,7 +21,7 @@ public class Case_05_DataTypeConvertTest {
     @Test
     public void testDataTypeConvert() {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
-        // 使用stream实现数据类型转换
+        // 使用 stream 实现数据类型转换
         List<String> collectList = list.stream().map(i -> String.valueOf(i)).collect(Collectors.toList());
         log.debug("collectList: {}", collectList);
         // 使用stream集合lambda进行数据类型转换，此应用场景十分之经典

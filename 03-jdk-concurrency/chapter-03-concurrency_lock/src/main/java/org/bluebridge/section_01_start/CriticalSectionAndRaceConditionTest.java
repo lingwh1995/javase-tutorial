@@ -15,7 +15,7 @@ package org.bluebridge.section_01_start;
  *      非阻塞式的解决方案：原子变量
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 09:00
  */
 public class CriticalSectionAndRaceConditionTest {
 

@@ -13,13 +13,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Slf4j
 public class AtomicTest {
 
-    // 使用原子变量替代普通int变量
+    // 使用原子变量替代普通 int 变量
     private static final AtomicInteger COMPLETED_WORKERS = new AtomicInteger(0);
     // 总工作线程数量
     private static final int TOTAL_WORKERS = 3;
 
     public static void main(String[] args) throws InterruptedException {
-        // 启动3个工作线程
+        // 启动 3 个工作线程
         new Thread(new Worker("工作线程1 => 启动服务A")).start();
         new Thread(new Worker("工作线程2 => 启动服务B")).start();
         new Thread(new Worker("工作线程3 => 启动服务C")).start();
@@ -28,7 +28,7 @@ public class AtomicTest {
 
         // 主线程轮询等待所有工作完成
         while (COMPLETED_WORKERS.get() < TOTAL_WORKERS) {
-            Thread.sleep(100); // 短暂休眠避免过度占用CPU
+            Thread.sleep(100); // 短暂休眠避免过度占用 CPU
         }
 
         log.info("所有工作已完成，主线程继续执行......");

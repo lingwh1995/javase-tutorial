@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 /**
- * Stream流中止操作
+ * Stream 流中止操作
  *
  * @author lingwh
  * @date 2026/6/22 15:10
@@ -105,7 +105,7 @@ public class StreamEndTest {
     }
 
     /**
-     * 返回流中的任意一个元素，特别适用于并行流。在并行流中，findAny()可能比findFirst()更高效，因为它可以直接返回找到的第一个可用结果。
+     * 返回流中的任意一个元素，特别适用于并行流。在并行流中，findAny() 可能比 findFirst() 更高效，因为它可以直接返回找到的第一个可用结果。
      */
     @Test
     public void testStreamFindAny() {
@@ -167,17 +167,17 @@ public class StreamEndTest {
 
         // 使用有 identity 参数的 reduce
         int sum = numbers.stream().reduce(0, Integer::sum);
-        System.out.println(sum); // 输出: 15
+        System.out.println(sum); // 输出：15
         System.out.println("----------------------");
 
         // 使用没有 identity 的 reduce
         Optional<Integer> sumWithoutIdentity = numbers.stream().reduce(Integer::sum);
-        sumWithoutIdentity.ifPresent(System.out::println); // 输出: 15
+        sumWithoutIdentity.ifPresent(System.out::println); // 输出：15
         System.out.println("----------------------");
 
         List<String> words = Arrays.asList("Hello", "World", "Java");
         String result = words.stream().reduce("", (a, b) -> a + " " + b);
-        System.out.println(result); // 输出: " Hello World Java"
+        System.out.println(result); // 输出：" Hello World Java"
         System.out.println("----------------------");
     }
 
@@ -188,10 +188,10 @@ public class StreamEndTest {
         // 使用 mapToInt 将 Integer 转为 int
         IntSummaryStatistics stats = numbers.stream().mapToInt(Integer::intValue).summaryStatistics();
 
-        System.out.println("Max: " + stats.getMax()); // 输出: Max: 9
-        System.out.println("Min: " + stats.getMin()); // 输出: Min: 1
-        System.out.println("Sum: " + stats.getSum()); // 输出: Sum: 45
-        System.out.println("Average: " + stats.getAverage()); // 输出: Average: 5.0
-        System.out.println("Count: " + stats.getCount()); // 输出: Count: 9
+        System.out.println("Max: " + stats.getMax()); // 输出：Max: 9
+        System.out.println("Min: " + stats.getMin()); // 输出：Min: 1
+        System.out.println("Sum: " + stats.getSum()); // 输出：Sum: 45
+        System.out.println("Average: " + stats.getAverage()); // 输出：Average: 5.0
+        System.out.println("Count: " + stats.getCount()); // 输出：Count: 9
     }
 }

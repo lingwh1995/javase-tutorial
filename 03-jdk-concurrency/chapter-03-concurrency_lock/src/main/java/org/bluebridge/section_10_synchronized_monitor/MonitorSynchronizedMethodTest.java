@@ -1,10 +1,10 @@
 package org.bluebridge.section_10_synchronized_monitor;
 
 /**
- * 同步方法Monitor测试
+ * 同步方法 Monitor 测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:00
  */
 public class MonitorSynchronizedMethodTest {
 

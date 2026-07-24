@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * Java9输入流transferTo方法测试
+ * Java9 输入流 transferTo 方法测试
  *
  * @author lingwh
  * @date 2026/6/22 15:10

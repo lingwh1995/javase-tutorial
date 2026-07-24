@@ -5,15 +5,15 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * 实现Callable接口创建线程
+ * 实现 Callable 接口创建线程
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:45
  */
 public class ThreadCreateTest {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        // 传统方式实现Callable接口创建线程
+        // 传统方式实现 Callable 接口创建线程
         // 创建线程对象
         Callable thread = new MyThread();
         // 使用FutureTask来包装线程对象
@@ -27,7 +27,7 @@ public class ThreadCreateTest {
         final Integer r1 = futureTask1.get();
         System.out.println("Thread " + t1.getName() + " 执行结果是: " + r1);
 
-        // 匿名内部类方式实现Callable接口创建线程
+        // 匿名内部类方式实现 Callable 接口创建线程
         // 使用FutureTask来包装线程对象
         FutureTask<Integer> futureTask2 = new FutureTask<>(new Callable<Integer>() {
             @Override
@@ -48,7 +48,7 @@ public class ThreadCreateTest {
         Integer r2 = futureTask2.get();
         System.out.println("Thread " + t2.getName() + " 执行结果是: " + r2);
 
-        // lambda方式实现Callable接口创建线程
+        // lambda方式实现 Callable 接口创建线程
         // 使用FutureTask来包装线程对象
         FutureTask<Integer> futureTask3 = new FutureTask<>(() -> {
             System.out.println("Thread " + Thread.currentThread().getName() + " is running...");

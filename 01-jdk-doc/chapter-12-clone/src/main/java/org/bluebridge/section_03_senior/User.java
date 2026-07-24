@@ -8,7 +8,7 @@ import java.util.List;
  * 用户类
  *
  * @author lingwh
- * @date 2026/7/13 18:39
+ * @date 2019/7/11 10:30
  */
 public class User implements Cloneable {
 
@@ -18,7 +18,7 @@ public class User implements Cloneable {
     private int id;
 
     /**
-     * String类型
+     * String 类型
      */
     private String name;
 
@@ -46,7 +46,7 @@ public class User implements Cloneable {
     protected User clone() throws CloneNotSupportedException {
         User user = (User) super.clone();
         // 处理数组类型数据
-        // 获取副本中hobby的引用，此引用和原型中hobby指向堆中同一块区域
+        // 获取副本中 hobby 的引用，此引用和原型中 hobby 指向堆中同一块区域
         String[] hobby = user.getHobby();
         // 把原型中的引用指向堆中的数据复制一份
         String[] hobbyCopy = Arrays.copyOf(hobby, hobby.length);
@@ -54,7 +54,7 @@ public class User implements Cloneable {
         user.setHobby(hobbyCopy);
 
         // 处理集合类型的数据
-        // 获取副本中List的引用，此引用和原型中hobby指向堆中同一块区域
+        // 获取副本中 List 的引用，此引用和原型中 hobby 指向堆中同一块区域
         List<String> friends = user.getFriends();
         // 把原型中的引用指向堆中的数据复制一份
         ArrayList<String> friendsCopy = new ArrayList<>(friends);

@@ -22,7 +22,7 @@ public class Dog extends Animal {
     }
 
     /**
-     * 测试在继承关系中使用this调用父类的方法
+     * 测试在继承关系中使用 this 调用父类的方法
      */
     public void testThis() {
         this.eat();
@@ -31,7 +31,7 @@ public class Dog extends Animal {
     }
 
     /**
-     * 测试在继承关系中使用super调用父类的方法
+     * 测试在继承关系中使用 super 调用父类的方法
      */
     public void testSuper() {
         // 下面一行放开会报错

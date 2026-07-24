@@ -6,7 +6,7 @@ import java.util.Random;
  * Worker Thread 模式 - 传送线程
  *
  * @author lingwh
- * @date 2026/7/13 16:29
+ * @date 2026/4/23 10:30
  */
 public class TransportThread extends Thread {
 

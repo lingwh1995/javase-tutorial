@@ -21,7 +21,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 /**
- * 使用jaxp的Dom方式解析xml文件,jaxp增、删、改操作对格式化的支持很差
+ * 使用 jaxp 的 Dom 方式解析 xml 文件，jaxp 增、删、改操作对格式化的支持很差
  *
  * @author lingwh
  * @date 2026/4/21 19:02
@@ -33,34 +33,34 @@ public class JaxpDomParseXml {
     private static final String FILE_PATH = BASIC_PATH + FILE_RELATIVE_PATH;
 
     /**
-     * dom方式解析xml： 根据xml的层级结构在内存中分配一个树，把html的标签、属性、文本都封装成对象
-     * 缺点:如果xml文档过大，容易造成内存溢出
+     * dom 方式解析 xml： 根据 xml 的层级结构在内存中分配一个树，把 html 的标签、属性、文本都封装成对象
+     * 缺点：如果 xml 文档过大，容易造成内存溢出
      * 优点：很方便的实现增删改操作
      */
     public static void main(String[] args)
             throws ParserConfigurationException, SAXException, IOException, TransformerException {
-        // 使用jaxp的dom方式解析xml,获取document对象
+        // 使用 jaxp 的 dom 方式解析 xml，获取 document 对象
         Document document = domParseXmlgetDocumentObject();
-        // 获取xml回写工厂对象
+        // 获取 xml 回写工厂对象
         Transformer transfomer = getTransfomer();
-        // 获取xml中所有的节点
+        // 获取 xml 中所有的节点
         // selectAllNodes(document);
 
-        // 给第一个节点下面增加一个新的节点,不支持格式化插入
+        // 给第一个节点下面增加一个新的节点，不支持格式化插入
         // addNode(document,transfomer);
 
-        // 修改xml节点
+        // 修改 xml 节点
         // editNode(document,transfomer);
 
-        // 删除xml节点
+        // 删除 xml 节点
         deleteNode(document, transfomer);
 
-        // 递归遍历xml节点
+        // 递归遍历 xml 节点
         listNode(document);
     }
 
     /**
-     * 获取xml回写工厂对象
+     * 获取 xml 回写工厂对象
      *
      * @return
      * @throws TransformerFactoryConfigurationError
@@ -68,19 +68,19 @@ public class JaxpDomParseXml {
      */
     private static Transformer getTransfomer()
             throws TransformerFactoryConfigurationError, TransformerConfigurationException {
-        // 1.获取xml回写工厂
+        // 1.获取 xml 回写工厂
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        // 2.通过工厂获取xml回写工厂对象
+        // 2.通过工厂获取 xml 回写工厂对象
         return transformerFactory.newTransformer();
     }
 
     /**
-     * 遍历xml节点
+     * 遍历 xml 节点
      *
      * @param node
      */
     private static void listNode(Node node) {
-        // 判断一下,如果是节点类型,就打印该节点名称
+        // 判断一下，如果是节点类型，就打印该节点名称
         if (node.getNodeType() == Node.ELEMENT_NODE) {
             System.out.println("NodeType:" + node.getNodeType() + "---"
                     + "Node.ELEMENT_NODE:" + Node.ELEMENT_NODE + "---"
@@ -93,14 +93,14 @@ public class JaxpDomParseXml {
         for (int i = 0; i < childNodes.getLength(); i++) {
             Node childNode = childNodes.item(i);
             System.out.println("Node中的文本值:" + childNode.getTextContent());
-            // 如果再有子节点,递归调用
+            // 如果再有子节点，递归调用
             listNode(childNode);
         }
 
     }
 
     /**
-     * 删除xml节点
+     * 删除 xml 节点
      *
      * @param document
      * @param transfomer
@@ -109,21 +109,21 @@ public class JaxpDomParseXml {
      */
     private static void deleteNode(Document document, Transformer transfomer)
             throws TransformerException, FileNotFoundException {
-        // 1.获取所有的节点,然后获取第一个节点
+        // 1.获取所有的节点，然后获取第一个节点
         Node node = document.getElementsByTagName("name").item(0);
-        // 2.获取node节点的父节点
+        // 2.获取 node 节点的父节点
         Node nodeParent = node.getParentNode();
-        // 3.使用删除获取到的name节点
+        // 3.使用删除获取到的 name 节点
         Node removeChild = nodeParent.removeChild(node);
         System.out.println(removeChild);
-        // 4.把内存中新创建的节点会回写到xml文件中
+        // 4.把内存中新创建的节点会回写到 xml 文件中
         File file = new File(FILE_PATH);
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         transfomer.transform(new DOMSource(document), new StreamResult(fileOutputStream));
     }
 
     /**
-     * 编辑xml节点
+     * 编辑 xml 节点
      *
      * @param document
      * @param transfomer
@@ -132,18 +132,18 @@ public class JaxpDomParseXml {
      */
     private static void editNode(Document document, Transformer transfomer)
             throws TransformerException, FileNotFoundException {
-        // 1.获取所有的节点,然后获取第一个节点
+        // 1.获取所有的节点，然后获取第一个节点
         Node node = document.getElementsByTagName("name").item(0);
         // 2.修改节点的值
         node.setTextContent("这个值被我修改了!");
-        // 3.把内存中新创建的节点会回写到xml文件中
+        // 3.把内存中新创建的节点会回写到 xml 文件中
         File file = new File(FILE_PATH);
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         transfomer.transform(new DOMSource(document), new StreamResult(fileOutputStream));
     }
 
     /**
-     * 添加xml节点
+     * 添加 xml 节点
      *
      * @param document
      * @param transfomer
@@ -152,28 +152,28 @@ public class JaxpDomParseXml {
      */
     private static void addNode(Document document, Transformer transfomer)
             throws TransformerException, FileNotFoundException {
-        // 1.获取所有的节点,然后获取第一个节点
+        // 1.获取所有的节点，然后获取第一个节点
         Node node = document.getElementsByTagName("name").item(0);
         // 2.创建新的节点
         Element newNode = document.createElement("sex");
-        // 3.创建文本值,并把文本值加到新创建的节点中
+        // 3.创建文本值，并把文本值加到新创建的节点中
         Text newNodeText = document.createTextNode("女");
         newNode.appendChild(newNodeText);
         // 4.把新创建的节点加入到第一个节点下面
         node.appendChild(newNode);
-        // 5.把内存中新创建的节点会回写到xml文件中
+        // 5.把内存中新创建的节点会回写到 xml 文件中
         File file = new File(FILE_PATH);
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         transfomer.transform(new DOMSource(document), new StreamResult(fileOutputStream));
     }
 
     /**
-     * 获取xml中所有的节点
+     * 获取 xml 中所有的节点
      *
      * @param document
      */
     private static void selectAllNodes(Document document) {
-        // 1.根据xml的标签名获取节点集合
+        // 1.根据 xml 的标签名获取节点集合
         NodeList nodes = document.getElementsByTagName("name");
         // 2.遍历该节点集合
         for (int i = 0; i < nodes.getLength(); i++) {
@@ -185,7 +185,7 @@ public class JaxpDomParseXml {
     }
 
     /**
-     * 使用jaxp的dom方式解析xml,获取document对象
+     * 使用 jaxp 的 dom 方式解析 xml，获取 document 对象
      *
      * @return
      * @throws ParserConfigurationException
@@ -198,7 +198,7 @@ public class JaxpDomParseXml {
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         // 2.创建解析器
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-        // 3.使用解析器解析xml文档
+        // 3.使用解析器解析 xml 文档
         InputStream resourceAsStream = Dom4jParseXml.class.getResourceAsStream(FILE_RELATIVE_PATH);
         return documentBuilder.parse(resourceAsStream);
     }

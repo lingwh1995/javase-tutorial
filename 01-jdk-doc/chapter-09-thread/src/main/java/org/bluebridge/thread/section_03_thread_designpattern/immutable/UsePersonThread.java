@@ -1,10 +1,10 @@
 package org.bluebridge.thread.section_03_thread_designpattern.immutable;
 
 /**
- * 使用Person的线程
+ * 使用 Person 的线程
  *
  * @author lingwh
- * @date 2026/7/13 16:29
+ * @date 2026/4/23 10:30
  */
 public class UsePersonThread extends Thread {
 

@@ -7,7 +7,7 @@ import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 
 /**
- * 演示PipedInputStream/PipedOutputStream机制的使用场景：主线程等待多个工作线程完成
+ * 演示 PipedInputStream/PipedOutputStream 机制的使用场景：主线程等待多个工作线程完成
  *
  * @author lingwh
  * @date 2025/10/28 9:34
@@ -33,7 +33,7 @@ public class PipedStreamTest {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        // 启动3个工作线程
+        // 启动 3 个工作线程
         new Thread(new Worker("工作线程1 => 启动服务A", pipedOutputStreams[0], 0)).start();
         new Thread(new Worker("工作线程2 => 启动服务B", pipedOutputStreams[1], 1)).start();
         new Thread(new Worker("工作线程3 => 启动服务C", pipedOutputStreams[2], 2)).start();

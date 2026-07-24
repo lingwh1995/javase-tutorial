@@ -5,10 +5,10 @@ import org.junit.Test;
 import java.io.*;
 
 /**
- * 使用对象序列化流实现序列化和反序列化 对象序列化流:把对象像流一样存入文本文件或者在网络中传输
+ * 使用对象序列化流实现序列化和反序列化 对象序列化流：把对象像流一样存入文本文件或者在网络中传输
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 public class SerializableTest {
 

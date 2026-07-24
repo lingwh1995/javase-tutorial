@@ -6,7 +6,7 @@ import java.util.Random;
  * Worker Thread 模式 - 工作线程
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/4/23 10:30
  */
 public class WorkerThread extends Thread {
 

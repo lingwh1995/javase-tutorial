@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
- * List集合removeIf方法测试
+ * List 集合 removeIf 方法测试
  *
  * @author lingwh
  * @date 2025/12/2 11:23
@@ -19,20 +19,20 @@ import java.util.stream.Collectors;
 public class ListTest {
 
     /**
-     * 删除列表中长度大于5的元素
+     * 删除列表中长度大于 5 的元素
      */
     @Test
     public void testRemoveIf_1() {
         List<String> list = new ArrayList<>(Arrays.asList("apple", "banana", "cherry", "date"));
         log.info("删除前: {}", list);
-        // 删除长度大于5的元素
+        // 删除长度大于 5 的元素
         boolean removed = list.removeIf(s -> s.length() > 5);
         log.info("是否删除了元素: {}", removed);
         log.info("删除后: {}", list);
     }
 
     /**
-     * 删除列表中长度大于5的元素，且找出被删除的元素
+     * 删除列表中长度大于 5 的元素，且找出被删除的元素
      */
     @Test
     public void testRemoveIf_2() {

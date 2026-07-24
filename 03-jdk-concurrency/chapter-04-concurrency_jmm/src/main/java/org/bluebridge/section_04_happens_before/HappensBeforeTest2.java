@@ -1,10 +1,10 @@
 package org.bluebridge.section_04_happens_before;
 
 /**
- * happens-before volatile规则测试
+ * happens-before volatile 规则测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 18:00
  */
 public class HappensBeforeTest2 {
 

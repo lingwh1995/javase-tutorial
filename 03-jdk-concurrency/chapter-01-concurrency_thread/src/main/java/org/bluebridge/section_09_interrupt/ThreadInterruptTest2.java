@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  *    假设你在编写一个长时间运行的任务，你希望在特定条件下中断该任务。你可以在任务的关键部分检查中断标志，如果检测到中断，则优雅地停止任务并释放资源。
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 10:15
  */
 public class ThreadInterruptTest2 {
 

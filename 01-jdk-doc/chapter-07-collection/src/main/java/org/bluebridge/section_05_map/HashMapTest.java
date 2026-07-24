@@ -12,7 +12,7 @@ import java.util.Set;
  * 哈希表的作用是保证键的唯一性：hash结构底层依赖hashCode()和equals(),去重要重写hashCode()和equals()方法
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 public class HashMapTest {
 

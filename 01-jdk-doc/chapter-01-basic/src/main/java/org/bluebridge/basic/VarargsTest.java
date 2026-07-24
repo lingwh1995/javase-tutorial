@@ -8,9 +8,9 @@ import org.junit.Test;
  *
  * 1. 只有最后一个形参才能被定义成可变参数
  * 2. 一个方法的形参列表中只能有一个可变参数
- * 3. 方法的形参数组,如:fun(int[] nums)也可以实现可变参数的效果，但是调用时较为复杂，可变参数调用时就简单很多了
+ * 3. 方法的形参数组，如：fun(int[] nums) 也可以实现可变参数的效果，但是调用时较为复杂，可变参数调用时就简单很多了
  * 4. 可变参数底层也是通过数组实现，获取该可变参数的具体类型，根据该类型创建该类型的形参数组
- * 5. 泛型不可以和可变参数配置使用,如:fun(T... args)
+ * 5. 泛型不可以和可变参数配置使用，如：fun(T... args)
  *
  * @author lingwh
  * @date 2019/4/10 13:39
@@ -19,14 +19,14 @@ import org.junit.Test;
 public class VarargsTest {
 
     /**
-     * 测试java的可变参数
+     * 测试 java 的可变参数
      */
     @Test
     public void testVarargs() {
-        // 传递多个String类型参数
+        // 传递多个 String 类型参数
         testVarargs1(1, "乒乓", "篮球");
 
-        // 传递一个String[]类型的参数
+        // 传递一个 String[] 类型的参数
         testVarargs1(2, new String[] {"唱歌", "听音乐"});
 
         // 接收并转发可变参数
@@ -41,7 +41,7 @@ public class VarargsTest {
      * 接收并处理可变参数
      *
      * 1. 只有最后一个形参可以作为可变参数
-     * 2. 可变参数类型为:多个String字符串/一个String[])
+     * 2. 可变参数类型为：多个 String 字符串/一个 String[])
      *
      * @param age
      * @param favorites

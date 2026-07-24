@@ -3,15 +3,15 @@ package org.bluebridge.api;
 import org.junit.Test;
 
 /**
- * Thread类的API
+ * Thread 类的 API
  *
  * @author lingwh
- * @date 2026/7/13 16:29
+ * @date 2019/3/11 10:30
  */
 public class ThreadTest {
 
     /**
-     * 获取当前类的全限定名(有一种方式):适用于静态方法
+     * 获取当前类的全限定名(有一种方式)：适用于静态方法
      */
     public static void main(String[] args) {
         StackTraceElement[] stackTraces = Thread.currentThread().getStackTrace();
@@ -28,7 +28,7 @@ public class ThreadTest {
     }
 
     /**
-     * 获取当前类的全限定名(有两种方式):适用于非静态方法
+     * 获取当前类的全限定名(有两种方式)：适用于非静态方法
      */
     @Test
     public void fun1() {

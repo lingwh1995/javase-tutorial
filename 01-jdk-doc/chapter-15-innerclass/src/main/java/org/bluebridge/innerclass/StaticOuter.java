@@ -9,7 +9,7 @@ package org.bluebridge.innerclass;
 public class StaticOuter {
 
     public static void main(String[] args) {
-        // 访问静态内部类的静态方法，Inner类被加载,此时外部类未被加载，独立存在，不依赖于外围类。
+        // 访问静态内部类的静态方法，Inner 类被加载，此时外部类未被加载，独立存在，不依赖于外围类。
         StaticInner.innerStaticShow();
         // 访问静态内部类的成员方法
         StaticInner oi = new StaticInner();
@@ -74,7 +74,7 @@ public class StaticOuter {
          * 静态方法
          */
         public static void innerStaticShow() {
-            // 被调用时会先加载Outer类
+            // 被调用时会先加载 Outer 类
             outerStaticMethod();
             System.out.println("outerStaticVariable" + outerStaticVariable);
         }

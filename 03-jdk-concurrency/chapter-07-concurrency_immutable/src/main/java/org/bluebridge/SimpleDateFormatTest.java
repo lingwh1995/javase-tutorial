@@ -4,10 +4,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 /**
- * SimpleDateFormat.parse()线程安全问题以及解决 方式一：使用同步锁解决线程安全问题
+ * SimpleDateFormat.parse() 线程安全问题以及解决 方式一：使用同步锁解决线程安全问题
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 09:20
  */
 public class SimpleDateFormatTest {
 

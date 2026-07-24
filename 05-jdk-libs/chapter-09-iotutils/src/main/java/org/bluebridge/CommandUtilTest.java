@@ -7,7 +7,7 @@ import org.junit.Test;
  * 命令工具测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/2/3 10:30
  */
 public class CommandUtilTest {
 
@@ -26,7 +26,7 @@ public class CommandUtilTest {
         String dataAreaHex = "0000250718003224";
         // 是否加密数据区
         boolean isEncryp = false;
-        // 是否计算mac并添加mac到数据区尾部
+        // 是否计算 mac 并添加 mac 到数据区尾部
         boolean withMac = true;
         CommandUtil commandUtil = new CommandUtil(mainSecret, randomCode, dataAreaHex, isEncryp, withMac);
         String finalDataAreaHex = commandUtil.buildFinalDataArea();
@@ -51,7 +51,7 @@ public class CommandUtilTest {
         String dataAreaHex = "08be9cb04fec345f9ec2ced957691faab7330fb7c95782fc3d67e7c3a66728dab17c939713873ebb1def93b174f9bc4a07a39c4f1fb2866625ed3c1bd31fc05eae072ffa666731d1522212f0f2911072495d02924e94345cf5b6af8b81e81b0a770c8a0a2235e771b7ff80e3a418d9ee4fd4575d86aecb8d34694da27d4834cb";
         // 是否加密数据区
         boolean isEncryp = true;
-        // 是否计算mac并添加mac到数据区尾部
+        // 是否计算 mac 并添加 mac 到数据区尾部
         boolean withMac = true;
         CommandUtil commandUtil = new CommandUtil(mainSecret, randomCode, dataAreaHex, isEncryp, withMac);
         String originalDataAreaHex = commandUtil.parseDataArea();

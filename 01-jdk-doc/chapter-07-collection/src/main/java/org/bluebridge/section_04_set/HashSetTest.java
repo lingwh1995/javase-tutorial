@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.util.HashSet;
 
 /**
- * HashSet保证元素唯一性测试
+ * HashSet 保证元素唯一性测试
  *
  * 1. HashSet保证元素唯一性:调用hashSet.add(E e)时底层依赖hashCode()和equals()方法
  *    如果是对象类型元素需要重写hashCode()和equals()方法
@@ -19,7 +19,7 @@ import java.util.HashSet;
  *    HashTable:使用Comparator或者Comparable保证实现元素唯一性
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/9 10:30
  */
 @Slf4j
 public class HashSetTest {

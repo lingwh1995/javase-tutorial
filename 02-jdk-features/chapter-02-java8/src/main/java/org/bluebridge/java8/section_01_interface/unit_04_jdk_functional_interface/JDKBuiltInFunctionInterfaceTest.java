@@ -12,7 +12,7 @@ import java.util.concurrent.FutureTask;
 import java.util.function.*;
 
 /**
- * JDK中内置的函数式接口测试
+ * JDK 中内置的函数式接口测试
  *
  * @author lingwh
  * @date 2025/12/2 16:20
@@ -20,11 +20,11 @@ import java.util.function.*;
 public class JDKBuiltInFunctionInterfaceTest {
 
     /**
-     * 测试Runnable函数式接口
+     * 测试 Runnable 函数式接口
      */
     @Test
     public void testRunnable() {
-        // 匿名内部类方式使用Runnable接口
+        // 匿名内部类方式使用 Runnable 接口
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -33,13 +33,13 @@ public class JDKBuiltInFunctionInterfaceTest {
         };
         new Thread(runnable,"T1").start();
 
-        // 匿名内部类方式使用Predicate接口
+        // 匿名内部类方式使用 Predicate 接口
         runnable = () -> System.out.println("Hello World~");
         new Thread(runnable, "T2").start();
     }
 
     /**
-     * 测试Callable函数式接口
+     * 测试 Callable 函数式接口
      */
     @Test
     public void testCallable() throws ExecutionException, InterruptedException {
@@ -50,7 +50,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试Comparator函数式接口
+     * 测试 Comparator 函数式接口
      */
     @Test
     public void testComparator() {
@@ -63,7 +63,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试Consumer函数式接口
+     * 测试 Consumer 函数式接口
      */
     @Test
     public void testConsumer() {
@@ -72,7 +72,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试BiConsumer函数式接口
+     * 测试 BiConsumer 函数式接口
      */
     @Test
     public void testBiConsumer() {
@@ -83,12 +83,12 @@ public class JDKBuiltInFunctionInterfaceTest {
 
         BiConsumer<String,Integer> biConsumer = (name,age) -> System.out.println("name : " + name + ",age : " + age);
 
-        // BiConsumer常用来遍历map
+        // BiConsumer 常用来遍历 map
         map.forEach(biConsumer);
     }
 
     /**
-     * 测试IntConsumer函数式接口
+     * 测试 IntConsumer 函数式接口
      */
     @Test
     public void testIntConsumer() {
@@ -97,7 +97,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试LongConsumer函数式接口
+     * 测试 LongConsumer 函数式接口
      */
     @Test
     public void testLongConsumer() {
@@ -106,7 +106,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试DoubleConsumer函数式接口
+     * 测试 DoubleConsumer 函数式接口
      */
     @Test
     public void testDoubleConsumer() {
@@ -115,7 +115,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试Function函数式接口
+     * 测试 Function 函数式接口
      */
     @Test
     public void testFunction() {
@@ -128,12 +128,12 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试BiFunction函数式接口
+     * 测试 BiFunction 函数式接口
      */
     @Test
     public void testBiFunction() {
         /**
-         * 使用BiFunction实现加、减、乘、除四则运算
+         * 使用 BiFunction 实现加、减、乘、除四则运算
          */
         // 加法运算
         BiFunction<Double, Double, Double> addBiFunction = (a, b) -> a + b;
@@ -149,7 +149,7 @@ public class JDKBuiltInFunctionInterfaceTest {
         System.out.println("除法运算 = " + divBiFunction.apply(100.0, 20.0));
 
         /**
-         * 使用BiFunction实现 通过传入name、age作为构造参数，返回一个Person对象
+         * 使用 BiFunction 实现 通过传入 name、age 作为构造参数，返回一个 Person 对象
          */
         BiFunction<String, Integer, Person> biFunction = (name, age) -> new Person(name, age);
         Person person = biFunction.apply("李四", 26);
@@ -157,7 +157,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试IntFunction函数式接口
+     * 测试 IntFunction 函数式接口
      */
     @Test
     public void testIntFunction() {
@@ -166,7 +166,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试LongFunction函数式接口
+     * 测试 LongFunction 函数式接口
      */
     @Test
     public void testLongFunction() {
@@ -175,7 +175,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试DoubleFunction函数式接口
+     * 测试 DoubleFunction 函数式接口
      */
     @Test
     public void testDoubleFunction() {
@@ -196,7 +196,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试Predicate函数式接口
+     * 测试 Predicate 函数式接口
      */
     @Test
     public void testPredicate() {
@@ -205,7 +205,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试BiPredicate函数式接口
+     * 测试 BiPredicate 函数式接口
      */
     @Test
     public void testBiPredicate() {
@@ -214,7 +214,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试IntPredicate函数式接口
+     * 测试 IntPredicate 函数式接口
      */
     @Test
     public void testIntPredicate() {
@@ -233,7 +233,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试LongPredicate函数式接口
+     * 测试 LongPredicate 函数式接口
      */
     @Test
     public void testLongPredicate() {
@@ -242,7 +242,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试DoublePredicate函数式接口
+     * 测试 DoublePredicate 函数式接口
      */
     @Test
     public void testDoublePredicate() {
@@ -251,7 +251,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试Supplier函数式接口
+     * 测试 Supplier 函数式接口
      */
     @Test
     public void testSupplier() {
@@ -260,7 +260,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试IntSupplier函数式接口
+     * 测试 IntSupplier 函数式接口
      */
     @Test
     public void testIntSupplier() {
@@ -269,7 +269,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试LongSupplier函数式接口
+     * 测试 LongSupplier 函数式接口
      */
     @Test
     public void testLongSupplier() {
@@ -278,7 +278,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试DoubleSupplier函数式接口
+     * 测试 DoubleSupplier 函数式接口
      */
     @Test
     public void testDoubleSupplier() {
@@ -287,7 +287,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试UnaryOperator函数式接口
+     * 测试 UnaryOperator 函数式接口
      */
     @Test
     public void testUnaryOperator() {
@@ -296,7 +296,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试BinaryOperator函数式接口
+     * 测试 BinaryOperator 函数式接口
      */
     @Test
     public void testBinaryOperator() {
@@ -305,7 +305,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试DoubleBinaryOperator函数式接口
+     * 测试 DoubleBinaryOperator 函数式接口
      */
     @Test
     public void testDoubleBinaryOperator() {
@@ -314,7 +314,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试IntUnaryOperator函数式接口
+     * 测试 IntUnaryOperator 函数式接口
      */
     @Test
     public void testIntOperator() {
@@ -323,7 +323,7 @@ public class JDKBuiltInFunctionInterfaceTest {
     }
 
     /**
-     * 测试IntBinaryOperator函数式接口
+     * 测试 IntBinaryOperator 函数式接口
      */
     @Test
     public void testIntBinaryOperator() {

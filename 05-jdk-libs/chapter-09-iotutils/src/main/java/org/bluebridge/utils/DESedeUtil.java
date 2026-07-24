@@ -7,15 +7,15 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * 3DES加密工具类
+ * 3DES 加密工具类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 public class DESedeUtil {
 
     /**
-     * 3des加密
+     * 3des 加密
      *
      * @param sourceBytes 源
      * @return 加密后的密文
@@ -28,7 +28,7 @@ public class DESedeUtil {
     }
 
     /**
-     * 3des解密
+     * 3des 解密
      *
      * @param sourceBytes 密文
      * @return 源字符串
@@ -41,7 +41,7 @@ public class DESedeUtil {
     }
 
     /**
-     * 3des加密
+     * 3des 加密
      *
      * @param sourceBytes 源
      * @return 加密后的密文
@@ -53,7 +53,7 @@ public class DESedeUtil {
     }
 
     /**
-     * 3des解密
+     * 3des 解密
      *
      * @param sourceBytes 密文
      * @return 源字符串
@@ -70,7 +70,7 @@ public class DESedeUtil {
         // 加密密钥
         byte[] key = new byte[24];
 
-        // 使用hutool封装过的实现
+        // 使用 hutool 封装过的实现
         DESede des = new DESede("ECB", "PKCS7Padding", key);
         // 加密
         byte[] encrypt = des.encrypt(content);
@@ -79,7 +79,7 @@ public class DESedeUtil {
         byte[] decrypt = des.decrypt(encrypt);
         System.out.println(HexUtil.encodeHexStr(decrypt));
 
-        // 使用jdk自带工具类实现
+        // 使用 jdk 自带工具类实现
         // 加密
         byte[] encryptByJdk = encrypt(content, key);
         System.out.println(HexUtil.encodeHexStr(encryptByJdk));

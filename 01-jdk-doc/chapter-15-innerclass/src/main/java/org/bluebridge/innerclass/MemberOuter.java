@@ -19,8 +19,8 @@ public class MemberOuter {
         // memberInner.innerShow();
 
         /*
-         * 可在Outer中定义get方法，获得Inner对象,那么使用时，只需outer.getInnerInstance()即可。
-         * public Inner getInnerInstance(Inner类的构造方法参数){
+         * 可在 Outer 中定义 get 方法，获得 Inner 对象，那么使用时，只需outer.getInnerInstance()即可。
+         * public Inner getInnerInstance(Inner 类的构造方法参数){
          * return new Inner(参数);
          * }
          */
@@ -30,7 +30,7 @@ public class MemberOuter {
     private int commonVariable = 2;
     private static int outerStaticVariable = 3;
 
-    // 省略getter/setter
+    // 省略 getter/setter
 
     /**
      * 成员方法

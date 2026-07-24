@@ -4,7 +4,7 @@ package org.bluebridge.thread.section_03_thread_designpattern.threadlocal_storag
  * ThreadLocal 简单测试
  *
  * @author lingwh
- * @date 2026/7/13 16:29
+ * @date 2026/4/23 16:29
  */
 public class ThreadLocalSimpleTest {
 

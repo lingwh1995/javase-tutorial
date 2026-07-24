@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * 哲学家类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 19:30
  */
 public class Philosopher extends Thread {
 

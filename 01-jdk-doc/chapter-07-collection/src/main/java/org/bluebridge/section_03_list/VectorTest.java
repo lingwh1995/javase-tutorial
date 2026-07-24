@@ -6,10 +6,10 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- * Vector是ArrayList的线程安全版本，Vector的底层实现是数组，所以Vector的增删改查性能比ArrayList差
+ * Vector 是 ArrayList 的线程安全版本，Vector 的底层实现是数组，所以 Vector 的增删改查性能比 ArrayList 差
  *
  * @author lingwh
- * @date 2026/7/13 18:39
+ * @date 2019/7/9 10:30
  */
 public class VectorTest {
 

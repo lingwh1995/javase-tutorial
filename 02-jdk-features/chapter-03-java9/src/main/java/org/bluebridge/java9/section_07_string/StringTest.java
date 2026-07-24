@@ -3,10 +3,10 @@ package org.bluebridge.java9.section_07_string;
 /**
  * Java9 String 测试
  *
- * 1. Java9中String底层实现由char[]改为byte[]
+ * 1. Java9 中 String 底层实现由 char[] 改为 byte[]
  * 2. 从很多不同应用程序收集的信息表名，字符串是堆使用的主要组成部分，而且，大多数字符串对象只包含一个字符，这样的字符只需要一个字节的存储空间，因此这些字符串
- *    对象的内部char数组中有一半的空间被闲置。JDK9之前String底层使用char数组存储数据private final char value[]，JDK9将String底层存储数据改为byte数
- *    组存储数据private final byte[] value。StringBuffer和StringBuilder也同样做了变更，将以往char数组改为byte数组。
+ *    对象的内部 char 数组中有一半的空间被闲置。JDK9 之前 String 底层使用 char 数组存储数据 private final char value[]，JDK9 将 String 底层存储数据改为 byte 数
+ *    组存储数据 private final byte[] value。StringBuffer 和 StringBuilder 也同样做了变更，将以往 char 数组改为 byte 数组。
  *
  * @author lingwh
  * @date 2026/6/22 15:10

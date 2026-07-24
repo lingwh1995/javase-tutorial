@@ -6,7 +6,7 @@ import org.bluebridge.ioc.section_03_anno.anno.Controller;
  * 用户控制器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2019/3/15 10:30
  */
 @Controller
 public class UserController {

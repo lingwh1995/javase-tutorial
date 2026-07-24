@@ -5,10 +5,10 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 调试lock()方法源码
+ * 调试 lock() 方法源码
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 19:00
  */
 public class ReentrantLockSourceDebugTest {
 
@@ -40,7 +40,7 @@ public class ReentrantLockSourceDebugTest {
             }
         }, "t2");
 
-        // 让thread1先执行
+        // 让 thread1 先执行
         t1.start();
         TimeUnit.MILLISECONDS.sleep(50);
 

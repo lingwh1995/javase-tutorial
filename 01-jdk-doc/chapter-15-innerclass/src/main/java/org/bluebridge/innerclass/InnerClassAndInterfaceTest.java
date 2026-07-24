@@ -4,7 +4,7 @@ package org.bluebridge.innerclass;
  * 同时内部类实现一个接口
  *
  * @author lingwh
- * @date 2026/7/9 14:37
+ * @date 2019/7/3 10:30
  */
 public class InnerClassAndInterfaceTest {
 

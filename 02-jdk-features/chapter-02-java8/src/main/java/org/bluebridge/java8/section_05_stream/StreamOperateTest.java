@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Stream流中间操作
+ * Stream 流中间操作
  *
  * @author lingwh
  * @date 2026/6/22 15:10
@@ -46,7 +46,7 @@ public class StreamOperateTest {
     }
 
     /**
-     * 过滤流中元素 过滤出年龄大于20的雇员
+     * 过滤流中元素 过滤出年龄大于 20 的雇员
      */
     @Test
     public void testStreamFilter() {
@@ -68,7 +68,7 @@ public class StreamOperateTest {
     }
 
     /**
-     * 跳过前面n个元素
+     * 跳过前面 n 个元素
      */
     @Test
     public void testStreamSkip() {
@@ -103,7 +103,7 @@ public class StreamOperateTest {
      */
     @Test
     public void testStreamDistinct3() {
-        // 使用stream判断list中元素是否重复
+        // 使用 stream 判断 list 中元素是否重复
         List<Integer> list = Arrays.asList(1, 2, 2, 3, 3, 4, 5, 6);
         if (list.stream().distinct().count() < list.size()) {
             System.out.println("有重复元素");
@@ -129,19 +129,19 @@ public class StreamOperateTest {
     }
 
     /**
-     * 映射：常用来进行数据类型转换 演示Stream的 map和lambda表达式的结合使用
+     * 映射：常用来进行数据类型转换 演示 Stream 的 map 和 lambda 表达式的结合使用
      */
     @Test
     public void testStreamMap2() {
         Integer[] numbers = { 1, 2, 3, 4, 5 };
         String result = Arrays.stream(numbers)
-                .map(String::valueOf) // 转换为字符串 => stream和lambda表达式结合使用的最经典场景之一
+                .map(String::valueOf) // 转换为字符串 => stream 和 lambda 表达式结合使用的最经典场景之一
                 .collect(Collectors.joining(" | "));
         System.out.println(result); // 输出：1 | 2 | 3 | 4 | 5
     }
 
     /**
-     * stream()常用统计方法
+     * stream() 常用统计方法
      */
     @Test
     public void testStreamMapToInt() {
@@ -176,7 +176,7 @@ public class StreamOperateTest {
                 Arrays.asList("1"),
                 Arrays.asList("2", "3"),
                 Arrays.asList("4", "5", "6"));
-        // lambda表达式写法
+        // lambda 表达式写法
         List<String> collect = nestedList.stream().flatMap(items -> items.stream()).collect(Collectors.toList());
         System.out.println(collect);
 
@@ -194,7 +194,7 @@ public class StreamOperateTest {
     }
 
     /**
-     * 去重:输出hello world stream
+     * 去重：输出 hello world stream
      */
     @Test
     public void testStreamFlatMap3() {
@@ -230,7 +230,7 @@ public class StreamOperateTest {
     }
 
     /**
-     * 根据firstName分组
+     * 根据 firstName 分组
      */
     @Test
     public void testStreamGroupByFirstName() {
@@ -240,13 +240,13 @@ public class StreamOperateTest {
         Person p4 = new Person("王", "铭", 40);
         List<Person> persons = Arrays.asList(p1, p2, p3, p4);
 
-        // 根据firstName值进行分组，firstName值相同的Person对象放入到map的一个Entry中
+        // 根据 firstName 值进行分组，firstName 值相同的 Person 对象放入到 map 的一个 Entry 中
         Map<String, List<Person>> groupingByResult1 = persons.stream().collect(Collectors.groupingBy(Person::getFirstName));
         groupingByResult1.entrySet().forEach(entry-> System.out.println(entry.getKey() + " -- " + entry.getValue()));
         // select name,count(*) from user group by name;
         System.out.println("----------------------------------");
 
-        // 根据firstName值进行分组，统计firstName值相同的Person对象的个数放入到一个Entry中
+        // 根据 firstName 值进行分组，统计 firstName 值相同的 Person 对象的个数放入到一个 Entry 中
         Map<String, Long> groupingByResult2 = persons.stream().collect(Collectors.groupingBy(Person::getFirstName, Collectors.counting()));
         groupingByResult2.entrySet().forEach(entry-> System.out.println(entry.getKey() + " -- " + entry.getValue()));
         System.out.println("----------------------------------");
@@ -257,8 +257,8 @@ public class StreamOperateTest {
     }
 
     /**
-     * 根据age进行分区
-     * 根据指定的布尔条件将流中的元素分区到一个Map中，键为true和false。
+     * 根据 age 进行分区
+     * 根据指定的布尔条件将流中的元素分区到一个 Map 中，键为 true 和 false。
      */
     @Test
     public void testStreamPartitioningByFirstName() {
@@ -272,7 +272,7 @@ public class StreamOperateTest {
     }
 
     /**
-     * 根据年龄进行分区 分为大于等于20的和不满足这个条件的
+     * 根据年龄进行分区 分为大于等于 20 的和不满足这个条件的
      */
     @Test
     public void testStreamPartitioningByAge() {
@@ -286,7 +286,7 @@ public class StreamOperateTest {
     }
 
     /**
-     * 分别使用串行和并行的方式查找出第一个长度为5的单词
+     * 分别使用串行和并行的方式查找出第一个长度为 5 的单词
      */
     @Test
     public void testStreamFindStr() {
@@ -312,7 +312,7 @@ public class StreamOperateTest {
                 .peek(s -> System.out.println("Processing: " + s))
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());
-        // 输出: [APPLE, BANANA, CHERRY]
+        // 输出：[APPLE, BANANA, CHERRY]
         System.out.println(result);
     }
 }

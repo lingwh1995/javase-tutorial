@@ -3,10 +3,10 @@ package org.bluebridge.section_08_lock;
 import static java.lang.Thread.sleep;
 
 /**
- * CAS锁测试
+ * CAS 锁测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 14:30
  */
 public class LockCasTest {
 

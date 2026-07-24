@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * 多个线程竞争同一把锁时，如果一个线程获取到了锁，其他线程只能等待锁被释放，才能获取到锁
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 09:00
  */
 public class ThreadMutualExclusionTest {
 

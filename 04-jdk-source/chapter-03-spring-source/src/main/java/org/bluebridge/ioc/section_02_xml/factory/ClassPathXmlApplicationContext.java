@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * XML方式应用上下文
+ * XML 方式应用上下文
  *
  * @author lingwh
  * @date 2019/3/15 19:02
@@ -29,24 +29,24 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
      */
     public ClassPathXmlApplicationContext(String path) {
         /*
-         * 在构造函数中作如下步骤:
-         * 1.根据传入的path值解析xml，获取xml的文件中的信息
-         * 2.根据解析xml的信息，初始化所有Bean对象
+         * 在构造函数中作如下步骤：
+         * 1.根据传入的 path 值解析 xml，获取 xml 的文件中的信息
+         * 2.根据解析 xml 的信息，初始化所有 Bean 对象
          */
         xmlInfomMap = ConfigManager.parseXml(path);
         Set<Map.Entry<String, Bean>> entries = xmlInfomMap.entrySet();
         for (Map.Entry<String, Bean> entry : entries) {
             /**
-             * 获取beanId
+             * 获取 beanId
              */
             String beanId = entry.getKey();
             /**
-             * 获取value
+             * 获取 value
              */
             Bean beanInfo = entry.getValue();
             /**
-             * 根据beanId在HashMap(Context)域中查询，如果有和该beanId对应的，那么直接拿过
-             * 来用，如果没有则创建一个，并(在初始化时)存放在HashMap<String,Bean>，相当于缓存
+             * 根据 beanId 在 HashMap(Context) 域中查询，如果有和该 beanId 对应的，那么直接拿过
+             * 来用，如果没有则创建一个，并(在初始化时)存放在 HashMap<String,Bean>，相当于缓存
              */
             Object object = context.get(beanId);
             if (object == null && beanInfo.getScope().equals("single_thread")) {
@@ -100,10 +100,10 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
                     }
                 }
                 if (StringUtils.isNotBlank(ref)) {
-                    // value不为空，情况如下:
+                    // value 不为空，情况如下：
                     // <bean id="" class=""><property name="" ref=""></bean>
                     /**
-                     * 注意:1.当ref不为空时，那么需要根据ref的值创建一个新的对象
+                     * 注意：1.当 ref 不为空时，那么需要根据 ref 的值创建一个新的对象
                      * 2.每当创建新对象时，就需要判断当前域中是否存在该对象
                      */
                     Object isExist = context.get(ref);
@@ -126,21 +126,21 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
                 }
 
                 /**
-                 * 不使用BeanUtils封装数据，无法进行数据类型自动转换操作
+                 * 不使用 BeanUtils 封装数据，无法进行数据类型自动转换操作
                  */
-                // //根据传入属性名称获取该改属性的set方法
+                // //根据传入属性名称获取该改属性的 set 方法
                 // Method method = IntrospectUtils.getWriteMethod(newInstance,name);
                 // Object param = null;
                 // if(StringUtils.isNotBlank(value)){
-                // //value不为空，情况如下:
+                // //value 不为空，情况如下：
                 // //<bean id="" class=""><property name="" value=""></bean>
                 // param = value;
                 // }
                 // if(StringUtils.isNotBlank(ref)){
-                // //value不为空，情况如下:
+                // //value 不为空，情况如下：
                 // //<bean id="" class=""><property name="" ref=""></bean>
                 // /**
-                // * 注意:1.当ref不为空时，那么需要根据ref的值创建一个新的对象
+                // * 注意：1.当 ref 不为空时，那么需要根据 ref 的值创建一个新的对象
                 // * 2.每当创建新对象时，就需要判断当前域中是否存在该对象
                 // */
                 // Object isExist = context.get(ref);
@@ -170,7 +170,7 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
     }
 
     /**
-     * 获取bean
+     * 获取 bean
      *
      * @param beanId
      * @param t
@@ -183,17 +183,17 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
     }
 
     /**
-     * 获取bean
+     * 获取 bean
      *
      * @param beanId
      * @return
      */
     @Override
     public Object getBean(String beanId) {
-        // 如何xml中scope配置的值是prototype，不是singleton，那么context中不会包含该Bean对象
+        // 如何 xml 中 scope 配置的值是 prototype，不是 singleton，那么 context 中不会包含该 Bean 对象
         Object bean = context.get(beanId);
         if (bean == null) {
-            // 如果不存在该bean对象，那么就创建该对象
+            // 如果不存在该 bean 对象，那么就创建该对象
             bean = createBean(xmlInfomMap.get(beanId));
         }
         return bean;

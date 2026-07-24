@@ -10,7 +10,7 @@ package org.bluebridge.section_04_sleep;
  * 5. 建议用 TimeUnit 的 sleep 代替 Thread 的 sleep 来获得更好的可读性
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 12:15
  */
 public class SleepTest {
 

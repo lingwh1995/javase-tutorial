@@ -6,7 +6,7 @@ import java.io.Serializable;
  * 教师类
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/7/12 10:30
  */
 public class Teacher implements Serializable {
 

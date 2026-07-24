@@ -9,9 +9,10 @@ import java.lang.annotation.Target;
  * Controller 注解
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2019/3/21 10:30
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(value = { ElementType.TYPE })
 public @interface Controller {
+
 }

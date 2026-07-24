@@ -4,7 +4,7 @@ package org.bluebridge.section_07_synchronized_demo_ticket.ticket_01_no_lock;
  * 由于线程安全问题，可能会出现卖票数量大于500的情况
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 12:00
  */
 public class SellTicketNoLockTest {
 

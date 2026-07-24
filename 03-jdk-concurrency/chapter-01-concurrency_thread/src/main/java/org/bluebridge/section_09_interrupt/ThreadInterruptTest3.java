@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * 使用try...catch...捕获异常，如果捕获到了异常，则说明打断状态发生了改变(线程被打断了)
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 10:30
  */
 public class ThreadInterruptTest3 {
 

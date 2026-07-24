@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * BeanUtils工具类测试
+ * BeanUtils 工具类测试
  *
  * @author lingwh
  * @date 2019/6/20 14:27
@@ -24,7 +24,7 @@ import java.util.Map;
 public class BeanUtilsTest {
 
     /**
-     * 把Map数据封装到javaBean中，此方法多用于处理表单数据
+     * 把 Map 数据封装到 javaBean 中，此方法多用于处理表单数据
      */
     @Test
     public void populate() {
@@ -43,18 +43,18 @@ public class BeanUtilsTest {
     }
 
     /**
-     * 使用BeanUtils给属性设置值
+     * 使用 BeanUtils 给属性设置值
      */
     @Test
     public void copyProperty() {
         try {
-            // 给User的age属性设置一个Integer类型的值,不涉及类型自动转换
+            // 给 User 的 age 属性设置一个 Integer 类型的值，不涉及类型自动转换
             Integer ageValueInteger = 28;
             User user1 = new User();
             BeanUtils.copyProperty(user1, "age", ageValueInteger);
             log.info("不涉及类型自动转换: {}", user1);
 
-            // 给User的age属性设置一个String类型的值,涉及类型自动转换
+            // 给 User 的 age 属性设置一个 String 类型的值，涉及类型自动转换
             String ageValueString = "49";
             User user2 = new User();
             BeanUtils.copyProperty(user2, "age", ageValueString);
@@ -65,7 +65,7 @@ public class BeanUtilsTest {
     }
 
     /**
-     * 使用BeanUtils复制对象中数据
+     * 使用 BeanUtils 复制对象中数据
      */
     @Test
     public void copyPropertiesBeanToBean() {
@@ -80,11 +80,11 @@ public class BeanUtilsTest {
     }
 
     /**
-     * 使用BeanUtils把Map中数据封装到Bean中/或者说将Map装换为JavaBean对象
+     * 使用 BeanUtils 把 Map 中数据封装到 Bean 中/或者说将 Map 装换为 JavaBean 对象
      *
      * 注意
-     *    age:String类型自动转换为Integer类型了
-     *    school:key值应该是school，不是school1，key不对应，不会报错,但是值封装不进去
+     *    age：String 类型自动转换为 Integer 类型了
+     *    school：key 值应该是 school，不是 school1，key 不对应，不会报错，但是值封装不进去
      */
     @Test
     public void copyPropertiesMapToBean() {
@@ -103,7 +103,7 @@ public class BeanUtilsTest {
     }
 
     /**
-     * 把Map中数据封装到Bean中，并进行时间格式转换
+     * 把 Map 中数据封装到 Bean 中，并进行时间格式转换
      */
     @Test
     public void copyPropertiesWithDateFormate() {
@@ -128,11 +128,11 @@ public class BeanUtilsTest {
             pattern[2] = "yyyy/MM/dd";
             converter.setPatterns(pattern);
 
-            // 如果Id上面没有数据,则设置为null
+            // 如果 Id 上面没有数据，则设置为 null
             IntegerConverter integerConverter = new IntegerConverter(10003);
             ConvertUtils.register(integerConverter, Integer.class);
 
-            // 注册Date时间对象格式
+            // 注册 Date 时间对象格式
             ConvertUtils.register(converter, Date.class);
             // 开始复制数据信息
             BeanUtils.copyProperties(person, beanMap);
@@ -144,12 +144,12 @@ public class BeanUtilsTest {
     }
 
     /**
-     * 使用BeanUtils给属性设置值
+     * 使用 BeanUtils 给属性设置值
      */
     @Test
     public void setProperty() {
         try {
-            // 给User的age属性设置一个String类型的值,涉及类型自动转换
+            // 给 User 的 age 属性设置一个 String 类型的值，涉及类型自动转换
             String ageValueString = "49";
             User user = new User();
             BeanUtils.setProperty(user, "age", ageValueString);
@@ -160,7 +160,7 @@ public class BeanUtilsTest {
     }
 
     /**
-     * 使用BeanUtils给属性设置值
+     * 使用 BeanUtils 给属性设置值
      */
     @Test
     public void getProperty() {
@@ -174,7 +174,7 @@ public class BeanUtilsTest {
     }
 
     /**
-     * 使用BeanUtils克隆JavaBean
+     * 使用 BeanUtils 克隆 JavaBean
      */
     @Test
     public void cloneBean() {

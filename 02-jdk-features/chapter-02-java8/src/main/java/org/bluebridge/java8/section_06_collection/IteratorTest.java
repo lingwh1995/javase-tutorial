@@ -22,14 +22,14 @@ public class IteratorTest {
          */
         List<String> list = Arrays.asList("Java", "Jackson", "Mysql", "Redis");
         Iterator<String> iterator = list.iterator();
-        // forEachRemaining() 取出所有元素 - lambda表达式版
+        // forEachRemaining() 取出所有元素 - lambda 表达式版
         iterator.forEachRemaining(item -> System.out.println(item));
         // forEachRemaining() 取出所有元素 - 方法引用版
         // iterator.forEachRemaining(System.out::println);
         System.out.println("-----------------------");
 
         /**
-         * forEachRemaining() 获取JsonNode中所有 key，再通过 key 获取 value
+         * forEachRemaining() 获取 JsonNode 中所有 key，再通过 key 获取 value
          */
         String jsonStr = "{ \"id\":1001, \"name\":\"张三\", \"age\":22, \"address\":\"西安\" }";
         ObjectMapper mapper = new ObjectMapper();
@@ -38,11 +38,11 @@ public class IteratorTest {
             Iterator<String> fieldNames = root.fieldNames();
             List<String> keys = new ArrayList<>();
 
-            // 将所有顶层key收集到集合
+            // 将所有顶层 key 收集到集合
             fieldNames.forEachRemaining(keys::add);
             System.out.printf("JSON顶层所有key：%s\n", keys);
 
-            // 重新获取迭代器，遍历打印key和value
+            // 重新获取迭代器，遍历打印 key 和 value
             System.out.println("\n遍历键值对：");
             root.fieldNames().forEachRemaining(key -> {
                 JsonNode value = root.get(key);
@@ -52,7 +52,7 @@ public class IteratorTest {
         System.out.println("-----------------------");
 
         /**
-         * forEachRemaining() 同时获取JsonNode中 key、value
+         * forEachRemaining() 同时获取 JsonNode 中 key、value
          */
         JsonNode node = mapper.readTree(jsonStr);
         if (node.isObject()) {
@@ -71,12 +71,12 @@ public class IteratorTest {
         Iterator<Integer> it = nums.iterator();
         List<Integer> bigNum = new ArrayList<>();
 
-        // 只收集大于10的数字
+        // 只收集大于 10 的数字
         it.forEachRemaining(num -> {
             if (num > 10) {
                 bigNum.add(num);
             }
         });
-        System.out.println("大于10的数字：" + bigNum);
+        System.out.println("大于 10 的数字：" + bigNum);
     }
 }

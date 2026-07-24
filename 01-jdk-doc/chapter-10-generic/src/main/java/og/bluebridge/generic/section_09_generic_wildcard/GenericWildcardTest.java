@@ -7,7 +7,7 @@ import java.util.List;
  * 泛型通配符测试
  *
  * @author lingwh
- * @date 2026/7/8 18:35
+ * @date 2019/3/10 10:30
  */
 public class GenericWildcardTest {
 

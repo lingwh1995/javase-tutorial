@@ -9,23 +9,23 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 /**
- * TreeSet有序且唯一排序测试
+ * TreeSet 有序且唯一排序测试
  *
  * 1. TreeSet(有序且唯一)，能对元素按照某种规则进行排序，底层数据结构是红黑树
- * 2. 排序有两种:
- *    - 自然排序(元素具备比较性)：需要实现Comparable<T>并重写compareTo()方法，与hashCode()和equals()无关，不需要重写这两个方法
- *    - 比较器排序(集合具备比较性): 在TreeSet的构造方法中传入Comparator的子类
+ * 2. 排序有两种：
+ *    - 自然排序(元素具备比较性)：需要实现 Comparable<T> 并重写 compareTo() 方法，与 hashCode() 和 equals() 无关，不需要重写这两个方法
+ *    - 比较器排序(集合具备比较性)：在 TreeSet 的构造方法中传入 Comparator 的子类
  *
  * @author lingwh
- * @date 2026/7/13 18:39
+ * @date 2019/7/9 10:30
  */
 @Slf4j
 public class TreeSetTest {
 
     @Test
     public void testTreeSet() {
-        // 自然排序:存储Integer
-        // 自然排序(Comparator):存储Integer
+        // 自然排序：存储 Integer
+        // 自然排序(Comparator)：存储 Integer
         TreeSet<Integer> integers = new TreeSet<>();
         integers.add(10);
         integers.add(1);
@@ -35,7 +35,7 @@ public class TreeSetTest {
         log.debug("integers: {}", integers);
 
         System.out.println("-------------------------");
-        // 比较器排序(Comparable):存储自定义对象
+        // 比较器排序(Comparable)：存储自定义对象
         TreeSet<Dog> dogs = new TreeSet<>();
         dogs.add(new Dog("zs", 15));
         dogs.add(new Dog("ls", 16));
@@ -47,7 +47,7 @@ public class TreeSetTest {
         }
 
         System.out.println("-------------------------");
-        // 自然排序(Comparator):存储自定义对象
+        // 自然排序(Comparator)：存储自定义对象
         TreeSet<Cat> cats = new TreeSet<>(new Comparator<Cat>() {
             @Override
             public int compare(Cat o1, Cat o2) {

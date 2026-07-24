@@ -1,10 +1,10 @@
 package org.bluebridge.section_11_get_id;
 
 /**
- * getId() 获取线程id
+ * getId() 获取线程 id
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 11:00
  */
 public class ThreadGetIdTest {
 

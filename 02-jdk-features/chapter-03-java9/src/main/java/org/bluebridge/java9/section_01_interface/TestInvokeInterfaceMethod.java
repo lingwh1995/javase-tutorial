@@ -6,7 +6,7 @@ import org.junit.Test;
  * 测试调用接口中的方法
  *
  * @author lingwh
- * @date 2026/7/13 15:10
+ * @date 2026/6/22 10:30
  */
 public class TestInvokeInterfaceMethod {
 

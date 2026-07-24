@@ -4,7 +4,7 @@ package og.bluebridge.generic.section_03_param_use_single_generic;
  * 单个泛型
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2019/3/10 10:30
  */
 public class Point<T> {
 

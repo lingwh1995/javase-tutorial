@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.Arrays;
 
 /**
- * 修复bmp图片文件的header
+ * 修复 bmp 图片文件的 header
  *
  * @author lingwh
  * @date 2025/9/16 14:06
@@ -26,7 +26,7 @@ public class BMPImageRepairUtil {
                     byte[] buffer = new byte[Math.toIntExact(fileSize)];
                     fis.read(buffer);
 
-                    // 创建修复后的BMP文件
+                    // 创建修复后的 BMP 文件
                     byte[] bmpFile =
                             BmpHeaderUtil.createBmpFile(Arrays.copyOfRange(buffer, 54, buffer.length), 320, 100);
                     FileUtil.writeBytes(bmpFile, f.getAbsolutePath());

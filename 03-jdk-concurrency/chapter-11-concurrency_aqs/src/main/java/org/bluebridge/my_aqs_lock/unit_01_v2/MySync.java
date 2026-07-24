@@ -4,10 +4,10 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 
 /**
- * 自定义AQS同步器
+ * 自定义 AQS 同步器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 15:45
  */
 final class MySync extends AbstractQueuedSynchronizer {
 

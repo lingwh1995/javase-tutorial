@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * User实体
+ * User 实体
  *
  * @author lingwh
  * @date 2019/6/20 14:30

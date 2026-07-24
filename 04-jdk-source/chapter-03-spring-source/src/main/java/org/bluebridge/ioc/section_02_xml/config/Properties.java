@@ -4,7 +4,7 @@ package org.bluebridge.ioc.section_02_xml.config;
  * 属性标签配置
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2019/3/16 10:30
  */
 public class Properties {
 

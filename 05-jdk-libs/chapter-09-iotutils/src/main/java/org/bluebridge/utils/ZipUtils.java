@@ -9,12 +9,12 @@ import java.util.zip.GZIPInputStream;
  * 压缩解压工具类
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2025/9/16 10:30
  */
 public class ZipUtils {
 
     /**
-     * GZip解压
+     * GZip 解压
      *
      * @param data
      * @return

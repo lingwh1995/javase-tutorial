@@ -16,7 +16,7 @@ public class PassByValueAndPassByReference {
     public void testSwapNumber() {
         int a = 10, b = 20;
         swapNumber(a, b);
-        // a和b的值没有改变的原因是java是值传递，在swapNumber()方法中，操作的是实参a和b的副本，而不是a和b本身
+        // a 和 b 的值没有改变的原因是 java 是值传递，在 swapNumber() 方法中，操作的是实参 a 和 b 的副本，而不是 a 和 b 本身
         log.info("a = {}, b = {}", a, b);
     }
 

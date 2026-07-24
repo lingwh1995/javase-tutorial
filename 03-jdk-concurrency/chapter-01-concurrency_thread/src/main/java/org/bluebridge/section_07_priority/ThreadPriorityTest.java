@@ -4,7 +4,7 @@ package org.bluebridge.section_07_priority;
  * 注意：yield 和设置线程优先级都不能真正的做到设置优先，这个仅仅是对操作系统的任务调度器的一个提示
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/13 09:30
  */
 public class ThreadPriorityTest {
 

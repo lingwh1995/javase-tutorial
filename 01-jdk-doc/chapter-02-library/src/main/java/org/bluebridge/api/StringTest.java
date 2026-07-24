@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 /**
- * String类高级API
+ * String 类高级 API
  *
  * @author lingwh
  * @date 2026/4/23 16:29
@@ -18,7 +18,7 @@ import java.util.StringTokenizer;
 public class StringTest {
 
     /**
-     * 测试String的split()方法
+     * 测试 String 的 split() 方法
      * 把字符串根据分隔符转换成数组
      */
     @Test
@@ -33,9 +33,9 @@ public class StringTest {
     }
 
     /**
-     * 测试String的indexOf()方法
+     * 测试 String 的 indexOf() 方法
      *
-     * 返回指定字符或字符串在当前字符串中第一次出现的索引位置 如果当前字符串中不包含指定的字符或字符串，则返回-1
+     * 返回指定字符或字符串在当前字符串中第一次出现的索引位置 如果当前字符串中不包含指定的字符或字符串，则返回 -1
      */
     @Test
     public void testIndexOf() {
@@ -50,9 +50,9 @@ public class StringTest {
     }
 
     /**
-     * String的Join方法
+     * String 的 Join 方法
      *
-     * 使用指定的拼接符号把数组/集合中每一个元素拼接起来,拼成一个字符串
+     * 使用指定的拼接符号把数组/集合中每一个元素拼接起来，拼成一个字符串
      */
     @Test
     public void testJoin() {
@@ -73,9 +73,9 @@ public class StringTest {
     }
 
     /**
-     * 测试String的StringTokenizer对象
+     * 测试 String 的 StringTokenizer 对象
      *
-     * 把字符串根据分隔符转换成数组，和split()的区别：当分隔符是.等特殊字符时，split()无法分割，使用StringTokenizer对象可以分割该对象
+     * 把字符串根据分隔符转换成数组，和 split() 的区别：当分隔符是.等特殊字符时，split() 无法分割，使用 StringTokenizer 对象可以分割该对象
      */
     @Test
     public void testStringTokenizer() {
@@ -100,7 +100,7 @@ public class StringTest {
     }
 
     /**
-     * 返回索引位置的字符的ascii码
+     * 返回索引位置的字符的 ascii 码
      */
     @Test
     public void testcCodePoint() {
@@ -109,7 +109,7 @@ public class StringTest {
     }
 
     /**
-     * 返回索引位置的前一个字符的ascii码，如果前面没有字符，即index<=0抛出下标越界异常
+     * 返回索引位置的前一个字符的 ascii 码，如果前面没有字符，即 index<=0 抛出下标越界异常
      */
     @Test
     public void testCodePointBefore() {
@@ -118,7 +118,7 @@ public class StringTest {
     }
 
     /**
-     * 从指定索引位置开始算，返回指定索引位置到结尾处的码点数 码点和长度的区别: 这个emoj 😂 的编码是 \uD83D和\uDE02，这个emoj的长度是2，码点数是1
+     * 从指定索引位置开始算，返回指定索引位置到结尾处的码点数 码点和长度的区别： 这个 emoj 😂 的编码是 \uD83D 和 \uDE02，这个 emoj 的长度是 2，码点数是 1
      */
     @Test
     public void testCodePointCount() {
@@ -128,7 +128,7 @@ public class StringTest {
     }
 
     /**
-     * valueOf和toString()
+     * valueOf 和 toString()
      *
      * valueOf()源码:
      * public static String valueOf(Object obj) {

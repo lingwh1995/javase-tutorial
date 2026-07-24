@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Comparable内部比较器测试
+ * Comparable 内部比较器测试
  *
  * @author lingwh
  * @date 2026/4/23 16:29
@@ -15,7 +15,7 @@ import java.util.List;
 public class ComparableTest {
 
     /**
-     * 测试使用内部比较器接口Comparable对集合进行排序
+     * 测试使用内部比较器接口 Comparable 对集合进行排序
      */
     @Test
     public void testCollectionComparable() {
@@ -24,10 +24,10 @@ public class ComparableTest {
         personList.add(new Person("b", 10));
         personList.add(new Person("c", 10));
 
-        // 打印list的原始序列
+        // 打印 list 的原始序列
         System.out.printf("原始序列： %s\n", personList.toString());
 
-        // 使用内部比较器接口Comparable<String>进行排序
+        // 使用内部比较器接口 Comparable<String> 进行排序
         Collections.sort(personList);
         System.out.printf("按名字进行排序(内部比较器接口Comparable)： %s\n", personList.toString());
     }

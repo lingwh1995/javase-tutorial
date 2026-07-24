@@ -5,15 +5,15 @@ import cn.hutool.core.util.HexUtil;
 import java.util.Base64;
 
 /**
- * Base64工具类
+ * Base64 工具类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/16 10:30
  */
 public class Base64Util {
 
     /**
-     * Base64转字符串
+     * Base64 转字符串
      *
      * @param base64Message
      * @return
@@ -23,7 +23,7 @@ public class Base64Util {
     }
 
     /**
-     * String转Base64字符串
+     * String 转 Base64 字符串
      *
      * @param stringMessage
      * @return

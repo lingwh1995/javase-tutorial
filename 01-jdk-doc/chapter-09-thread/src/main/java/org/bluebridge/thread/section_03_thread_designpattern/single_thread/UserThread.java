@@ -4,7 +4,7 @@ package org.bluebridge.thread.section_03_thread_designpattern.single_thread;
  * 单线程执行模式 - 用户线程
  *
  * @author lingwh
- * @date 2026/7/13 16:29
+ * @date 2026/4/23 10:30
  */
 public class UserThread extends Thread {
 

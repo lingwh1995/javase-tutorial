@@ -3,10 +3,10 @@ package org.design_pattern.section_01_composite.case_01;
 import java.util.HashMap;
 
 /**
- * HashMap中的组合模式
+ * HashMap 中的组合模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 10:30
  */
 public class HashMapCompostieTest {
 

@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * 演示CountDownLatch的使用场景：主线程等待多个工作线程完成
+ * 演示 CountDownLatch 的使用场景：主线程等待多个工作线程完成
  *
  * @author lingwh
  * @date 2025/10/27 18:25
@@ -18,7 +18,7 @@ public class CountDownLatchTest {
 
     public static void main(String[] args) throws InterruptedException {
 
-        // 启动3个工作线程
+        // 启动 3 个工作线程
         new Thread(new Worker(WAIT_LATCH, "工作线程1 => 启动服务A")).start();
         new Thread(new Worker(WAIT_LATCH, "工作线程2 => 启动服务B")).start();
         new Thread(new Worker(WAIT_LATCH, "工作线程3 => 启动服务C")).start();
