@@ -120,7 +120,7 @@ public class BeanUtilsTest {
             // 时间数据格式对象
             DateConverter converter = new DateConverter();
 
-            // converter.setPattern("yyyy-MM-dd HH:mm:ss"); //单个数据格式
+            // converter.setPattern("yyyy-MM-dd HH:mm:ss"); // 单个数据格式
             // 一组时间格式
             String[] pattern = new String[3];
             pattern[0] = "yyyy-MM-dd HH:mm:ss";

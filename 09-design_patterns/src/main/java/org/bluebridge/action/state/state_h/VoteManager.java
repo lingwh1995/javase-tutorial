@@ -62,7 +62,7 @@ public class VoteManager {
      */
     //    public void vote(String user,String voteItem){
     //        //1：先为该用户增加投票的次数
-    //        //先从记录中取出已有的投票次数
+    //        // 先从记录中取出已有的投票次数
     //        Integer oldVoteCount = mapVoteCount.get(user);
     //        if(oldVoteCount==null){
     //            oldVoteCount = 0;
@@ -72,11 +72,11 @@ public class VoteManager {
     //
     //        //2：获取该用户的投票状态
     //        VoteState state = mapState.get(user);
-    //        //如果没有投票状态，说明还没有投过票，就初始化一个正常投票状态
+    //        // 如果没有投票状态，说明还没有投过票，就初始化一个正常投票状态
     //        if(state==null){
     //            state = new NormalVoteState();
     //        }
-    //        //然后转调状态对象来进行相应的操作
+    //        // 然后转调状态对象来进行相应的操作
     //        state.vote(user, voteItem, this);
     //    }
 
@@ -88,7 +88,7 @@ public class VoteManager {
      */
     //    public void vote(String user,String voteItem){
     //        //1：先为该用户增加投票的次数
-    //        //先从记录中取出已有的投票次数
+    //        // 先从记录中取出已有的投票次数
     //        Integer oldVoteCount = mapVoteCount.get(user);
     //        if(oldVoteCount==null){
     //            oldVoteCount = 0;
@@ -98,9 +98,9 @@ public class VoteManager {
     //        VoteState state = null;
     //        //2：直接从数据库获取该用户对应的下一个状态的状态编码
     //        String stateId = MockDb.DB.get(user);
-    //        //开始根据状态编码来创建需用的状态对象
+    //        // 开始根据状态编码来创建需用的状态对象
     //        if(stateId==null || stateId.trim().length()==0){
-    //            //如果没有值，说明还没有投过票，就初始化一个正常投票状态
+    //            // 如果没有值，说明还没有投过票，就初始化一个正常投票状态
     //            state = new NormalVoteState();
     //        }else if(VoteStateEnum.REPEAT_STATE.getCode().equals(stateId)){
     //            state = new RepeatVoteState();
@@ -111,7 +111,7 @@ public class VoteManager {
     //        }else if(VoteStateEnum.BLACK_VOTE.getCode().equals(stateId)){
     //            state = new BlackVoteState();
     //        }
-    //        //然后转调状态对象来进行相应的操作
+    //        // 然后转调状态对象来进行相应的操作
     //        state.vote(user, voteItem, this);
     //    }
 

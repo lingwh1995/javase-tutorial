@@ -73,11 +73,11 @@ public class VoteManager {
 
         // 2. 获取该用户的投票状态
         VoteState state = mapState.get(user);
-        //如果没有投票状态，说明还没有投过票，就初始化一个正常投票状态
+        // 如果没有投票状态，说明还没有投过票，就初始化一个正常投票状态
         if(state==null){
             state = new NormalVoteState();
         }
-        //然后转调状态对象来进行相应的操作
+        // 然后转调状态对象来进行相应的操作
         state.vote(user, voteItem, this);
     }*/
 

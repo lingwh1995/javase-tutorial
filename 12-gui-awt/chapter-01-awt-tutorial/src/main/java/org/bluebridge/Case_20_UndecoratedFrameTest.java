@@ -58,13 +58,16 @@ public class Case_20_UndecoratedFrameTest {
         // 添加鼠标监听器实现窗口拖动功能
         frame.addMouseMotionListener(new MouseMotionAdapter() {
             int oldX, oldY;
-            //鼠标拖动时如果是标题栏，就将窗口位置修改
+            // 鼠标拖动时如果是标题栏，就将窗口位置修改
+            @Override
             public void mouseDragged(MouseEvent e) {
-                if(e.getY() <= 28)
+                if(e.getY() <= 28) {
                     frame.setLocation(e.getXOnScreen() - oldX, e.getYOnScreen() - oldY);
+                }
             }
 
             // 记录上一次的鼠标位置
+            @Override
             public void mouseMoved(MouseEvent e) {
                 oldX = e.getX();
                 oldY = e.getY();

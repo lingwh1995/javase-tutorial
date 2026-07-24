@@ -17,7 +17,7 @@ public class Composite extends Component {
         visitor.visitComposite(this);
         // 循环子元素，让子元素也接受访问
 //        for(Component c : childComponents){
-//            //调用子对象接受访问，变相实现递归
+//            // 调用子对象接受访问，变相实现递归
 //            c.accept(visitor);
 //        }
     }

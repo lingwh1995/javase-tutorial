@@ -20,7 +20,7 @@ public class ExportToXml {
      */
     public void export(ExportHeaderModel ehm,Map<String,
             Collection<ExportDataModel>> mapData,ExportFooterModel efm){
-        //用来记录最终输出的文件内容
+        // 用来记录最终输出的文件内容
         StringBuffer buffer = new StringBuffer();
         // 1. 先来拼接文件头的内容
         buffer.append("<?xml version='1.0' encoding='gb2312'?>\n");

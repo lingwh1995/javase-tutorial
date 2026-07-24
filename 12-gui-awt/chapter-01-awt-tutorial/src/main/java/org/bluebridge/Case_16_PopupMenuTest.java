@@ -42,7 +42,7 @@ public class Case_16_PopupMenuTest {
             public void mousePressed(MouseEvent e) {
                 // 监听鼠标右键
                 if (e.getButton() == MouseEvent.BUTTON3) {
-                    //要展示弹出菜单，我们只需要调用show方法即可
+                    // 要展示弹出菜单，我们只需要调用show方法即可
                     menu.show(frame, e.getX(), e.getY());
                     // 注意，第一个参数必须是弹出菜单所加入的窗口或是窗口中的任意一个组件
                     // 后面的坐标就是相对于这个窗口或是组件的原点（左上角）这个位置进行弹出
