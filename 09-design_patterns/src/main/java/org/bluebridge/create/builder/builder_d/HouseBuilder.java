@@ -4,7 +4,7 @@ package org.bluebridge.create.builder.builder_d;
  * 抽象的建造者
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 18:05
  */
 public abstract class HouseBuilder {
 
@@ -20,7 +20,7 @@ public abstract class HouseBuilder {
     public abstract void buildRoof();
 
     /**
-     * 如何建造房子交给指挥者，并且把Director的功能加入到抽象构建者
+     * 如何建造房子交给指挥者，并且把 Director 的功能加入到抽象构建者
      *
      * @return
      */

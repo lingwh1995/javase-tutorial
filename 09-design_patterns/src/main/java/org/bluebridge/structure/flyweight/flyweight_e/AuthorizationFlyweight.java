@@ -9,7 +9,7 @@ package org.bluebridge.structure.flyweight.flyweight_e;
 public class AuthorizationFlyweight implements Flyweight {
 
     /**
-     * 安全实体:被权限系统检测的对象
+     * 安全实体：被权限系统检测的对象
      */
     private String securityEntity;
 
@@ -35,8 +35,8 @@ public class AuthorizationFlyweight implements Flyweight {
     /**
      * 判断传入的安全实体和内部权限，是否和享元对象的内部状态相匹配
      *
-     * @param securityEntity 安全实体:被权限系统检测的对象
-     * @param authority 具体的权限
+     * @param securityEntity 安全实体：被权限系统检测的对象
+     * @param authority      具体的权限
      * @return
      */
     @Override
@@ -48,7 +48,7 @@ public class AuthorizationFlyweight implements Flyweight {
     }
 
     /**
-     * 为flyweight添加子flyweight对象
+     * 为 flyweight 添加子 flyweight 对象
      *
      * @param flyweight
      */

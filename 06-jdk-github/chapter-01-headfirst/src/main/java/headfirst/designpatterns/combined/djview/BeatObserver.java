@@ -4,7 +4,7 @@ package headfirst.designpatterns.combined.djview;
  * 节拍观察者
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 13:38
  */
 public interface BeatObserver {
 

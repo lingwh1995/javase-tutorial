@@ -6,7 +6,7 @@ import java.util.Stack;
  * 根据序号确定元素在链表中存放的顺序
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:58
  */
 public class HeroLinkedList {
 
@@ -28,7 +28,7 @@ public class HeroLinkedList {
     public Node add(Node node) {
         Node tempNode = headNode;
         while (true) {
-            // 说明temNode已经是链表中最后一个元素
+            // 说明 temNode 已经是链表中最后一个元素
             if (null == tempNode.next) {
                 break;
             }
@@ -123,7 +123,7 @@ public class HeroLinkedList {
     }
 
     /**
-     * 获取链表中倒数第n个节点的元素
+     * 获取链表中倒数第 n 个节点的元素
      *
      * @param index
      * @return
@@ -235,7 +235,7 @@ public class HeroLinkedList {
     }
 
     /**
-     * 从尾到头遍历链表:不破坏链表的数据结构
+     * 从尾到头遍历链表：不破坏链表的数据结构
      */
     public void reverseList() {
         // 头指针

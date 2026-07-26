@@ -9,12 +9,12 @@ package org.bluebridge.action.observer.observer_i;
 public class Position {
 
     /**
-     * x坐标的位置
+     * x 坐标的位置
      */
     private int x;
 
     /**
-     * y坐标的位置
+     * y 坐标的位置
      */
     private int y;
 

@@ -9,7 +9,7 @@ package org.bluebridge.create.builder.builder_a;
 public class Client {
 
     public static void main(String[] args) {
-        // Dragon号飞船
+        // Dragon 号飞船
         DragonAirShipBuilder dragonAirShipBuilder = new DragonAirShipBuilder();
         AirShipDirector airShipDirector = new AirShipDirector(dragonAirShipBuilder);
         AirShip dragonAirShip = airShipDirector.directAirShip();

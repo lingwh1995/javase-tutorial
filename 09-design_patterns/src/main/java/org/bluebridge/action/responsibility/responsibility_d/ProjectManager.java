@@ -11,7 +11,7 @@ public class ProjectManager extends Handler {
     @Override
     public String handleFeeRequest(String user, double fee) {
         String str = "";
-        // 项目经理的权限比较小，只能在500以内
+        // 项目经理的权限比较小，只能在 500 以内
         if (fee < 500) {
             // 为了测试，简单点，只同意小李的
             if ("小李".equals(user)) {
@@ -22,7 +22,7 @@ public class ProjectManager extends Handler {
             }
             return str;
         } else {
-            // 超过500，继续传递给级别更高的人处理
+            // 超过 500，继续传递给级别更高的人处理
             if (this.successor != null) {
                 return successor.handleFeeRequest(user, fee);
             }

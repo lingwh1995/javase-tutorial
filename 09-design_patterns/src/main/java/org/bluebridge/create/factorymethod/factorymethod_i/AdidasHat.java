@@ -1,10 +1,10 @@
 package org.bluebridge.create.factorymethod.factorymethod_i;
 
 /**
- * Adidas帽子
+ * Adidas 帽子
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:18
  */
 public class AdidasHat implements IHat {
 

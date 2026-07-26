@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 煎饼屋菜单迭代器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:07
  */
 public class PancakeHouseMenuIterator implements Iterator {
 
@@ -17,12 +17,14 @@ public class PancakeHouseMenuIterator implements Iterator {
         this.items = items;
     }
 
+    @Override
     public MenuItem next() {
         MenuItem item = items.get(position);
         position = position + 1;
         return item;
     }
 
+    @Override
     public boolean hasNext() {
         if (position >= items.size()) {
             return false;

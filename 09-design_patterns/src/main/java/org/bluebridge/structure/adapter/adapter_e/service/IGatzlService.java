@@ -6,7 +6,7 @@ import org.bluebridge.structure.adapter.adapter_e.domain.Gatzl;
  * 公安厅指令接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 17:54
  */
 public interface IGatzlService {
 

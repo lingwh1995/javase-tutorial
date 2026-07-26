@@ -9,10 +9,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * ReentrantLock超时测试
+ * ReentrantLock 超时测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 09:55
  */
 @Slf4j(topic = "c.Test22")
 public class Test22 {

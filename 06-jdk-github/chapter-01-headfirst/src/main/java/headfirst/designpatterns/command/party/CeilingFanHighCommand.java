@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.party;
  * 吊扇高速命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:36
  */
 public class CeilingFanHighCommand implements Command {
 

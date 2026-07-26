@@ -11,7 +11,7 @@ public class Client1 {
     public static void main(String[] args) throws Exception {
         // 准备上下文
         Context c = new Context("D:\\Repository\\github\\JavaSE\\designpattern\\src\\main\\resources\\InterpreterTest.xml");
-        // 想要获取多个d元素的值，也就是如下表达式的值："root/a/b/d$"
+        // 想要获取多个 d 元素的值，也就是如下表达式的值："root/a/b/d$"
         // 首先要构建解释器的抽象语法树
         ElementExpression root = new ElementExpression("root");
         ElementExpression aEle = new ElementExpression("a");

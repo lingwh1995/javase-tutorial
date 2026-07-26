@@ -7,10 +7,10 @@ import java.util.concurrent.SynchronousQueue;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * SynchronousQueue测试
+ * SynchronousQueue 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 10:08
  */
 @Slf4j(topic = "c.TestSynchronousQueue")
 public class TestSynchronousQueue {

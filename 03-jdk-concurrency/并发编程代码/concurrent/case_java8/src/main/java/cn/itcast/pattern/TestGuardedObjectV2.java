@@ -8,10 +8,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 保护对象V2测试
+ * 保护对象 V2 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 19:07
  */
 @Slf4j(topic = "c.TestGuardedObjectV2")
 public class TestGuardedObjectV2 {

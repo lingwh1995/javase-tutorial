@@ -4,7 +4,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
- * CompareHellper接口的其中一种实现. 用于处理Integer类型.
+ * CompareHellper 接口的其中一种实现. 用于处理 Integer 类型.
  *
  * @author lingwh
  * @date 2019/9/24 17:40

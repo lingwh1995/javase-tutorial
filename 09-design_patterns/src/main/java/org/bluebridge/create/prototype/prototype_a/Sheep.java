@@ -11,14 +11,14 @@ import java.util.Date;
 public class Sheep implements Cloneable {
 
     /*
-     * Cloneable接口:空接口，标记接口
+     * Cloneable 接口：空接口，标记接口
      */
     private String name;
     private Date birthday;
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        // 直接调用Object的clone()方法
+        // 直接调用 Object 的 clone() 方法
         Object obj = super.clone();
         return obj;
     }

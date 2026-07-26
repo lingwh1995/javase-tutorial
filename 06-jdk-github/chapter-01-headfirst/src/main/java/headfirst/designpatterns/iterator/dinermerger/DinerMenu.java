@@ -4,7 +4,7 @@ package headfirst.designpatterns.iterator.dinermerger;
  * 餐厅菜单
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:28
  */
 public class DinerMenu implements Menu {
 

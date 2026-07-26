@@ -4,14 +4,15 @@ package headfirst.designpatterns.strategy;
  * 鸭子抽象类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:52
  */
 public abstract class Duck {
 
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
-    public Duck() {}
+    public Duck() {
+    }
 
     public void setFlyBehavior(FlyBehavior fb) {
         flyBehavior = fb;

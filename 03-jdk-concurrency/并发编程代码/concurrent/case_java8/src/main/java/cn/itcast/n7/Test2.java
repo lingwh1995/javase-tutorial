@@ -8,7 +8,7 @@ import java.util.function.BiFunction;
  * 累加器测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/7 21:20
  */
 @Slf4j(topic = "c.Test2")
 public class Test2 {

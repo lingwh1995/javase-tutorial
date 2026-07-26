@@ -4,7 +4,7 @@ package org.bluebridge.structure.bridge.bridge_b;
  * 直立式手机
  *
  * @author lingwh
- * @date 2026/7/9 16:08
+ * @date 2026/7/22 16:07
  */
 public class UpRightPhone extends Phone {
 

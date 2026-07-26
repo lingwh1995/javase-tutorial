@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.party;
  * 电视关闭命令
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2023/12/7 11:42
  */
 public class TVOffCommand implements Command {
 
@@ -14,10 +14,12 @@ public class TVOffCommand implements Command {
         this.tv = tv;
     }
 
+    @Override
     public void execute() {
         tv.off();
     }
 
+    @Override
     public void undo() {
         tv.on();
     }

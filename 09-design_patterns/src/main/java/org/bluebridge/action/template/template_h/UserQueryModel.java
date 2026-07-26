@@ -10,9 +10,8 @@ public class UserQueryModel extends UserModel {
 
     /**
      * 年龄是一个区间查询，也就是年龄查询的条件可以是：
-     * age >= 条件值1  and  age <= 条件值2
-     * 把UserModel中的age当作条件值1，
-     * 这里定义的age2当作条件值2
+     * age >= 条件值 1 and age <= 条件值 2
+     * 把 UserModel 中的 age 当作条件值 1，这里定义的 age2 当作条件值 2
      */
     private int age2;
 

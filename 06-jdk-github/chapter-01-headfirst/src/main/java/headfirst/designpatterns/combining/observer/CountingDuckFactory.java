@@ -4,7 +4,7 @@ package headfirst.designpatterns.combining.observer;
  * 计数鸭子工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:56
  */
 public class CountingDuckFactory extends AbstractDuckFactory {
 

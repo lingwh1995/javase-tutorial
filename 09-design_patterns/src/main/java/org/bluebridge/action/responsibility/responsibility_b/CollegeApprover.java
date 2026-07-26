@@ -1,10 +1,10 @@
 package org.bluebridge.action.responsibility.responsibility_b;
 
 /**
- * 学院主任 处理大于等于5000小于等于10000的采购请求
+ * 学院主任 处理大于等于 5000 小于等于 10000 的采购请求
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class CollegeApprover extends Approver {
 

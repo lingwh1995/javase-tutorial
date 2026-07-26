@@ -6,7 +6,7 @@ import java.util.*;
  * 气象数据
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2023/12/7 19:19
  */
 public class WeatherData implements Subject {
 

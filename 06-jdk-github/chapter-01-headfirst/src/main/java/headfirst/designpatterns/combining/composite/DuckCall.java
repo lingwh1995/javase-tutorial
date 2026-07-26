@@ -4,14 +4,16 @@ package headfirst.designpatterns.combining.composite;
  * 鸭子叫声
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:47
  */
 public class DuckCall implements Quackable {
 
+    @Override
     public void quack() {
         System.out.println("Kwak");
     }
 
+    @Override
     public String toString() {
         return "Duck Call";
     }

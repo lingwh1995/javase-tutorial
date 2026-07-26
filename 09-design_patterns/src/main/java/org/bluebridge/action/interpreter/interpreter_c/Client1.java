@@ -12,7 +12,7 @@ public class Client1 {
         // 准备上下文
         Context c = new Context("D:\\Repository\\github\\JavaSE\\designpattern\\src\\main\\resources\\InterpreterTest.xml");
 
-        // 想要获取c元素的值，也就是如下表达式的值："root/a/b/c"
+        // 想要获取 c 元素的值，也就是如下表达式的值："root/a/b/c"
         // 首先要构建解释器的抽象语法树
         ElementExpression root = new ElementExpression("root");
         ElementExpression aEle = new ElementExpression("a");

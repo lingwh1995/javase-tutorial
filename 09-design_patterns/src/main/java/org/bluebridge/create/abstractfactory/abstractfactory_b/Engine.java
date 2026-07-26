@@ -4,7 +4,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_b;
  * 发动机接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:15
  */
 public interface Engine {
 

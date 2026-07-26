@@ -20,16 +20,16 @@ public class Client {
 
         calculator.setAddCommand(addCommand);
         calculator.setSubstractCommand(substractCommand);
-        // 执行一次加法运算:0+1=1
+        // 执行一次加法运算：0+1=1
         calculator.addButtonWasPressed();
         System.out.println(concreteOperationApi.getResult());
-        // 执行一次减法运算:1-2=-1
+        // 执行一次减法运算：1-2=-1
         calculator.subButtonWasPressed();
         System.out.println(concreteOperationApi.getResult());
-        // 执行一次撤销:-1+2=1
+        // 执行一次撤销：-1+2=1
         calculator.undoButtonWasPressed();
         System.out.println(concreteOperationApi.getResult());
-        // 再执行一次撤销:1-1=0
+        // 再执行一次撤销：1-1=0
         calculator.undoButtonWasPressed();
         System.out.println(concreteOperationApi.getResult());
     }

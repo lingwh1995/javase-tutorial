@@ -4,7 +4,7 @@ package headfirst.designpatterns.observer.weatherobservable;
  * 气象站热量指数
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 13:46
  */
 public class WeatherStationHeatIndex {
 

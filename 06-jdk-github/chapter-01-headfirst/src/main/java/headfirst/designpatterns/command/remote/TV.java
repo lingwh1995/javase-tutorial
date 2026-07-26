@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.remote;
  * 电视
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2023/12/7 16:03
  */
 public class TV {
 

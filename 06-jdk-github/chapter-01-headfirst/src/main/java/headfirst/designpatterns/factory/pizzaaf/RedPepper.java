@@ -4,10 +4,11 @@ package headfirst.designpatterns.factory.pizzaaf;
  * 红辣椒
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:47
  */
 public class RedPepper implements Veggies {
 
+    @Override
     public String toString() {
         return "Red Pepper";
     }

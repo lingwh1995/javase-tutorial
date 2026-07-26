@@ -13,7 +13,7 @@ public class NoCommand implements Command {
      */
     @Override
     public void execute() {
-        // 空实现,不做任何处理
+        // 空实现，不做任何处理
     }
 
     /**
@@ -21,6 +21,6 @@ public class NoCommand implements Command {
      */
     @Override
     public void undo() {
-        // 空实现,不做任何处理
+        // 空实现，不做任何处理
     }
 }

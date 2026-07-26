@@ -7,10 +7,10 @@ import java.util.concurrent.locks.StampedLock;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * StampedLock测试
+ * StampedLock 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 09:14
  */
 @Slf4j(topic = "c.TestStampedLock")
 public class TestStampedLock {

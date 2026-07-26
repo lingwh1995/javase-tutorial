@@ -6,10 +6,10 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 死锁测试v2
+ * 死锁测试 v2
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 23:10
  */
 public class TestDeadLock {
 

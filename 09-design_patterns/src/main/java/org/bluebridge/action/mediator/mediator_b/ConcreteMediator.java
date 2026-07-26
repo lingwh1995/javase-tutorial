@@ -9,28 +9,28 @@ package org.bluebridge.action.mediator.mediator_b;
 public class ConcreteMediator implements Mediator {
 
     /**
-     * 持有并维护同事A
+     * 持有并维护同事 A
      */
     private ConcreteColleagueA colleagueA;
 
     /**
-     * 持有并维护同事B
+     * 持有并维护同事 B
      */
     private ConcreteColleagueB colleagueB;
 
     /**
-     * 设置中介者需要了解并维护的同事A对象
+     * 设置中介者需要了解并维护的同事 A 对象
      *
-     * @param colleague 同事A对象
+     * @param colleague 同事 A 对象
      */
     public void setConcreteColleagueA(ConcreteColleagueA colleague) {
         colleagueA = colleague;
     }
 
     /**
-     * 设置中介者需要了解并维护的同事B对象
+     * 设置中介者需要了解并维护的同事 B 对象
      *
-     * @param colleague 同事B对象
+     * @param colleague 同事 B 对象
      */
     public void setConcreteColleagueB(ConcreteColleagueB colleague) {
         colleagueB = colleague;

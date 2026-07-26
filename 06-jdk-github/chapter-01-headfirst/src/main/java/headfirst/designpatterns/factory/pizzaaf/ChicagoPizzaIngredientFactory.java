@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzaaf;
  * 芝加哥披萨原料工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 22:00
  */
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
@@ -21,7 +21,7 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
     }
 
     public Veggies[] createVeggies() {
-        Veggies veggies[] = {new BlackOlives(), new Spinach(), new Eggplant()};
+        Veggies veggies[] = { new BlackOlives(), new Spinach(), new Eggplant() };
         return veggies;
     }
 

@@ -4,7 +4,7 @@ package org.bluebridge.structure.decorator.decorator_a;
  * 具体装饰器/具体装饰角色
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:37
  */
 public class AICar extends SuperCar {
 

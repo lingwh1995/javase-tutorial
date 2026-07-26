@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
  * 测试保护性暂停模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/25 13:39
  */
 public class GuardedObjectTest {
 

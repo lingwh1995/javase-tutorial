@@ -7,12 +7,12 @@ import java.util.List;
  * 学院
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:23
  */
 public class College extends OrganizationComponment {
 
     /**
-     * 存放的department
+     * 存放的 department
      */
     List<OrganizationComponment> deparmentList = new ArrayList<OrganizationComponment>();
 
@@ -41,7 +41,7 @@ public class College extends OrganizationComponment {
     }
 
     /**
-     * 输出College中所包含的学院
+     * 输出 College 中所包含的学院
      */
     @Override
     public void print() {

@@ -1,7 +1,7 @@
 package org.bluebridge.create.builder.builder_a;
 
 /**
- * 构建Dragon号发动机
+ * 构建 Dragon 号发动机
  *
  * @author lingwh
  * @date 2019/3/23 12:27

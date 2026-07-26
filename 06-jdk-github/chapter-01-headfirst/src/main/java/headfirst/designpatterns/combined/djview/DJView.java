@@ -5,10 +5,10 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- * DJ视图
+ * DJ 视图
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 16:39
  */
 public class DJView implements ActionListener, BeatObserver, BPMObserver {
 

@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * 局部变量类型推断
  *
  * @author lingwh
- * @date 2026/4/21 10:30
+ * @date 2025/1/25 12:48
  */
 public class LocalVariableTypeInterfaceTest {
 

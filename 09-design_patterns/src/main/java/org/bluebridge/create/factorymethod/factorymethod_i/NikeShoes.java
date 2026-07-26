@@ -1,10 +1,10 @@
 package org.bluebridge.create.factorymethod.factorymethod_i;
 
 /**
- * Nike鞋子
+ * Nike 鞋子
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:21
  */
 public class NikeShoes implements IShoes {
 

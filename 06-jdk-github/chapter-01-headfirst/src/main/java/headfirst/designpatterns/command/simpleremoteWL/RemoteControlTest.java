@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.simpleremoteWL;
  * 遥控器测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 09:51
  */
 public class RemoteControlTest {
 

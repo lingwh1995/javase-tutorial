@@ -6,7 +6,7 @@ import java.util.Random;
  * 抽奖状态
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class RaffleState extends State {
 
@@ -30,7 +30,7 @@ public class RaffleState extends State {
         Random random = new Random();
         int num = random.nextInt(10);
         if (num == 5) {
-            // 只有10%的中奖机会; ==> 发放奖品状态;
+            // 只有 10% 的中奖机会; ==> 发放奖品状态;
             raffleActivity.setState(raffleActivity.getOfferPrizesState());
             return true;
         } else {

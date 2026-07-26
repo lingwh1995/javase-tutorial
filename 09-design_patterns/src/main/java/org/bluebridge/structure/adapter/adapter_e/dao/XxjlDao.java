@@ -3,10 +3,10 @@ package org.bluebridge.structure.adapter.adapter_e.dao;
 import org.bluebridge.structure.adapter.adapter_e.domain.Xxjl;
 
 /**
- * 信息交流Dao
+ * 信息交流 Dao
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 11:32
  */
 public class XxjlDao {
 

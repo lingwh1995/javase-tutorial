@@ -4,7 +4,7 @@ package org.bluebridge.section_02_guarded_suspension.case_02;
  * 关联对象-GuardedObject
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/25 12:19
  */
 public class GuardedObject {
 
@@ -26,7 +26,7 @@ public class GuardedObject {
             while (response == null) {
                 // 这一轮循环应该等待的时间（假设 timeout 是 1000，结果在 400 时被唤醒了，那么还有 600 要等）
                 long waitTime = timeout - passedTime;
-                // 经历的时间超过了最大等待时间, 退出循环
+                // 经历的时间超过了最大等待时间，退出循环
                 if (waitTime <= 0) {
                     break;
                 }

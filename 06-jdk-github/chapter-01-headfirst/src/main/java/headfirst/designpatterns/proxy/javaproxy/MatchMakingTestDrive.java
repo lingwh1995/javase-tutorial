@@ -7,7 +7,7 @@ import java.util.*;
  * 相亲测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 14:10
  */
 public class MatchMakingTestDrive {
 
@@ -47,20 +47,19 @@ public class MatchMakingTestDrive {
         System.out.println("Rating is " + nonOwnerProxy.getHotOrNotRating());
     }
 
-	PersonBean getOwnerProxy(PersonBean person) {
-
+    PersonBean getOwnerProxy(PersonBean person) {
         return (PersonBean) Proxy.newProxyInstance(
-            	person.getClass().getClassLoader(),
-            	person.getClass().getInterfaces(),
+                person.getClass().getClassLoader(),
+                person.getClass().getInterfaces(),
                 new OwnerInvocationHandler(person));
-	}
+    }
 
-	PersonBean getNonOwnerProxy(PersonBean person) {
+    PersonBean getNonOwnerProxy(PersonBean person) {
         return (PersonBean) Proxy.newProxyInstance(
-            	person.getClass().getClassLoader(),
-            	person.getClass().getInterfaces(),
+                person.getClass().getClassLoader(),
+                person.getClass().getInterfaces(),
                 new NonOwnerInvocationHandler(person));
-	}
+    }
 
     PersonBean getPersonFromDatabase(String name) {
         return (PersonBean) datingDB.get(name);

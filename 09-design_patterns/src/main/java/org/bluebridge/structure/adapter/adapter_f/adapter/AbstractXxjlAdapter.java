@@ -9,7 +9,7 @@ import org.bluebridge.structure.adapter.adapter_f.service.ITztgService;
  * 信息交流适配器抽象类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 21:15
  */
 public class AbstractXxjlAdapter implements IGatzlService, ITztgService {
 

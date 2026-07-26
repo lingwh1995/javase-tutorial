@@ -51,7 +51,7 @@ public class Calculator {
     }
 
     /**
-     * 撤销按钮被按下 在命令历史中取出最后一个命令,撤销该命令，并从历史命令中删除该命令,相当于没有执行过该命令
+     * 撤销按钮被按下 在命令历史中取出最后一个命令，撤销该命令，并从历史命令中删除该命令，相当于没有执行过该命令
      */
     public void undoButtonWasPressed() {
         if (this.undoCommands.size() > 0) {

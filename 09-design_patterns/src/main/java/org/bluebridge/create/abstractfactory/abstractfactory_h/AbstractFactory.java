@@ -9,9 +9,9 @@ package org.bluebridge.create.abstractfactory.abstractfactory_h;
 public interface AbstractFactory {
 
     /**
-     * 创建CPU的对象
+     * 创建 CPU 的对象
      *
-     * @return CPU的对象
+     * @return CPU 的对象
      */
     CPUApi createCPU();
 

@@ -6,7 +6,7 @@ import java.util.*;
  * 太平洋日历
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 09:40
  */
 public class PacificCalendar extends Calendar {
 
@@ -16,6 +16,7 @@ public class PacificCalendar extends Calendar {
         // ...
     }
 
+    @Override
     public void createCalendar(List<String> appointments) {
         // make calendar from appointments
         System.out.println("Making the calendar");

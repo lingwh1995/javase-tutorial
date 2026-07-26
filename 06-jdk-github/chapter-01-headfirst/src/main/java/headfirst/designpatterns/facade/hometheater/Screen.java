@@ -4,7 +4,7 @@ package headfirst.designpatterns.facade.hometheater;
  * 屏幕
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 12:14
  */
 public class Screen {
 
@@ -22,6 +22,7 @@ public class Screen {
         System.out.println(description + " going down");
     }
 
+    @Override
     public String toString() {
         return description;
     }

@@ -9,7 +9,7 @@ import org.bluebridge.structure.adapter.adapter_f.service.ITztgService;
  * 信息交流适配器
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 20:34
  */
 public class XxjlAdapter extends AbstractXxjlAdapter {
 

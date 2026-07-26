@@ -1,7 +1,7 @@
 package org.bluebridge.action.strategy.strategy_d;
 
 /**
- * 常规客户:不打折
+ * 常规客户：不打折
  *
  * @author lingwh
  * @date 2019/8/2 15:07

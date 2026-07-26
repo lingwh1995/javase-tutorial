@@ -1,7 +1,7 @@
 package org.bluebridge.structure.decorator.decorator_d;
 
 /**
- * 具体的装饰者:给面包加上曲奇
+ * 具体的装饰者：给面包加上曲奇
  *
  * @author lingwh
  * @date 2019/7/25 17:05

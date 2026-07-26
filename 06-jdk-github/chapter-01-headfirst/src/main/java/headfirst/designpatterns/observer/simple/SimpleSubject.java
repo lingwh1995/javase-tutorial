@@ -6,7 +6,7 @@ import java.util.*;
  * 简单主题
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 19:33
  */
 public class SimpleSubject implements Subject {
 
@@ -17,10 +17,12 @@ public class SimpleSubject implements Subject {
         observers = new ArrayList<Observer>();
     }
 
+    @Override
     public void registerObserver(Observer o) {
         observers.add(o);
     }
 
+    @Override
     public void removeObserver(Observer o) {
         int i = observers.indexOf(o);
         if (i >= 0) {
@@ -28,6 +30,7 @@ public class SimpleSubject implements Subject {
         }
     }
 
+    @Override
     public void notifyObservers() {
         for (Observer observer : observers) {
             observer.update(value);

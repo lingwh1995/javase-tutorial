@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * Properties工具类
+ * Properties 工具类
  *
  * @author lingwh
  * @date 2019/8/5 16:46

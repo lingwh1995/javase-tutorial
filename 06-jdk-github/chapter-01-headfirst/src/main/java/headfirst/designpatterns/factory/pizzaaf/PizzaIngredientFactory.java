@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzaaf;
  * 披萨原料工厂接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:54
  */
 public interface PizzaIngredientFactory {
 

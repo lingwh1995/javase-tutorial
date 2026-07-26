@@ -8,7 +8,7 @@ import headfirst.designpatterns.adapter.ducks.challenge.SuperDrone;
  * 鸭子测试驱动类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:33
  */
 public class DuckTestDrive {
 

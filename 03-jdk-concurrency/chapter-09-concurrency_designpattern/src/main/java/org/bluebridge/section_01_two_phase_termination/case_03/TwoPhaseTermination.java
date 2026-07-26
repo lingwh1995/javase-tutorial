@@ -3,10 +3,10 @@ package org.bluebridge.section_01_two_phase_termination.case_03;
 /**
  * 两阶段终止模式说明
  *
- * 在一个线程t1中优雅地终止另一个线程t2，终止线程t2前，让线程t2有一个料理后事的机会
+ * 在一个线程 t1 中优雅地终止另一个线程 t2，终止线程 t2 前，让线程 t2 有一个料理后事的机会
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/11 17:52
  */
 public class TwoPhaseTermination {
 
@@ -48,7 +48,7 @@ public class TwoPhaseTermination {
      */
     public void stop() {
         stop = true;
-        // 让线程立即停止而不是等待sleep结束
+        // 让线程立即停止而不是等待 sleep 结束
         monitor.interrupt();
     }
 

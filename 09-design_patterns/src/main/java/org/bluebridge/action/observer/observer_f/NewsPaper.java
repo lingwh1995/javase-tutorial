@@ -32,7 +32,7 @@ public class NewsPaper extends Observable {
     public void setContent(String content) {
         this.content = content;
         // 内容有了，说明又出新报纸了，那就通知所有的读者
-        // 注意在用Java中的Observer模式的时候，下面这句话不可少
+        // 注意在用 Java 中的 Observer 模式的时候，下面这句话不可少
         this.setChanged();
         // 然后主动通知，这里用的是推的方式
         // this.notifyObservers(this.content);

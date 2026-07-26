@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.undo;
  * 命令接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 16:27
  */
 public interface Command {
 

@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.undo;
  * 吊扇低速命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 19:41
  */
 public class CeilingFanLowCommand implements Command {
 

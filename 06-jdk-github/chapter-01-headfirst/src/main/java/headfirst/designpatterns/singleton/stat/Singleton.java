@@ -4,7 +4,7 @@ package headfirst.designpatterns.singleton.stat;
  * 静态初始化单例
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:12
  */
 public class Singleton {
 

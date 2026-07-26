@@ -4,7 +4,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_l;
  * Mysql 数据库工厂
  *
  * @author lingwh
- * @date 2026/7/13 8:35
+ * @date 2026/7/22 11:28
  */
 public class MysqlFactory implements IFactory {
 

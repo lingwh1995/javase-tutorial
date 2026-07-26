@@ -9,7 +9,7 @@ package org.bluebridge.action.command.command_d;
 public class RestartCommand implements Command {
 
     /**
-     * 持有可以真正完成命令的对象的引用:即技嘉主板
+     * 持有可以真正完成命令的对象的引用：即技嘉主板
      */
     private MainBoardApi mainBoard;
 

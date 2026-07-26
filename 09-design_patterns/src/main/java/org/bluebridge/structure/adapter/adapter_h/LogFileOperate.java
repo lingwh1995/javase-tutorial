@@ -12,7 +12,7 @@ import java.util.List;
 public class LogFileOperate implements LogFileOperateApi {
 
     /**
-     * 日志文件的路径和文件名称，默认是当前项目的根下的AdapterLog.log
+     * 日志文件的路径和文件名称，默认是当前项目的根下的 AdapterLog.log
      */
     private String logFilePathName = "AdapterLog.log";
 

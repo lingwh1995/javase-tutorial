@@ -7,7 +7,7 @@ import java.util.List;
  * 使用迪米特法则改进
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:09
  */
 public class Demeter2 {
 
@@ -53,7 +53,7 @@ class CollegeEmployee2 {
 class CollegeManager2 {
     public List<CollegeEmployee2> getAllCollegeEmployee() {
         List<CollegeEmployee2> list = new ArrayList<CollegeEmployee2>();
-        // 增加10个员工到学院
+        // 增加 10 个员工到学院
         for (int i = 0; i < 10; i++) {
             CollegeEmployee2 collegeEmployee2 = new CollegeEmployee2();
             collegeEmployee2.setId("学院员工id" + i);
@@ -82,7 +82,7 @@ class CollegeManager2 {
 class SchoolManager2 {
     public List<Employee2> getAllEmployee() {
         List<Employee2> list = new ArrayList<Employee2>();
-        // 增加5个员工到学校总部
+        // 增加 5 个员工到学校总部
         for (int i = 0; i < 5; i++) {
             Employee2 employee2 = new Employee2();
             employee2.setId("学校总部员工id" + i);

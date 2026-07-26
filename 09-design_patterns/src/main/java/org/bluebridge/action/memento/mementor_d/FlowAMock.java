@@ -1,7 +1,7 @@
 package org.bluebridge.action.memento.mementor_d;
 
 /**
- * 模拟运行流程A，只是一个示意，代指某个具体流程
+ * 模拟运行流程 A，只是一个示意，代指某个具体流程
  *
  * @author lingwh
  * @date 2019/8/27 11:04

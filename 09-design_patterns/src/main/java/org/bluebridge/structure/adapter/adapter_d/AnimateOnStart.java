@@ -4,7 +4,7 @@ package org.bluebridge.structure.adapter.adapter_d;
  * 动画开始监听器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:42
  */
 public class AnimateOnStart extends AbstractAnimateListenerAdpater {
 

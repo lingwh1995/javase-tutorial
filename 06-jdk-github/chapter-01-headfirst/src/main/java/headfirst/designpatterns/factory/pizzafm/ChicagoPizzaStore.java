@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzafm;
  * 芝加哥披萨店
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 21:35
  */
 public class ChicagoPizzaStore extends PizzaStore {
 
@@ -17,6 +17,8 @@ public class ChicagoPizzaStore extends PizzaStore {
             return new ChicagoStyleClamPizza();
         } else if (item.equals("pepperoni")) {
             return new ChicagoStylePepperoniPizza();
-        } else return null;
+        } else {
+            return null;
+        }
     }
 }

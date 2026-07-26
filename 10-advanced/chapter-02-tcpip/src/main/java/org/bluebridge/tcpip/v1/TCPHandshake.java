@@ -3,10 +3,10 @@ package org.bluebridge.tcpip.v1;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * TCP三次握手模拟
+ * TCP 三次握手模拟
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/17 17:25
  */
 @Slf4j
 public class TCPHandshake {

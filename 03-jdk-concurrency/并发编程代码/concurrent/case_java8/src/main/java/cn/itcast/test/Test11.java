@@ -3,10 +3,10 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 线程打断sleep测试
+ * 线程打断 sleep 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 19:30
  */
 @Slf4j(topic = "c.Test11")
 public class Test11 {
@@ -15,7 +15,7 @@ public class Test11 {
         Thread t1 = new Thread(() -> {
             log.debug("sleep...");
             try {
-                Thread.sleep(5000); // wait, join
+                Thread.sleep(5000); // wait， join
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

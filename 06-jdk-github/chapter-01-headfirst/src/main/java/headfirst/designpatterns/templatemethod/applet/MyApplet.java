@@ -7,33 +7,38 @@ import java.awt.Graphics;
  * 小程序示例
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:40
  */
 public class MyApplet extends Applet {
 
     private static final long serialVersionUID = 2L;
     String message;
 
+    @Override
     public void init() {
         message = "Hello World, I'm alive!";
         repaint();
     }
 
+    @Override
     public void start() {
         message = "Now I'm starting up...";
         repaint();
     }
 
+    @Override
     public void stop() {
         message = "Oh, now I'm being stopped...";
         repaint();
     }
 
+    @Override
     public void destroy() {
         message = "Goodbye, cruel world";
         repaint();
     }
 
+    @Override
     public void paint(Graphics g) {
         g.drawString(message, 5, 15);
     }

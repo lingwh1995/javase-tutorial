@@ -12,7 +12,7 @@ public class Client {
         // 创建装机工程师对象
         ComputerEngineer engineer = new ComputerEngineer();
         // 客户选择并创建需要使用的装机方案对象
-        // 装配华硕电脑:华硕电脑搭载Intel CPU和技嘉主板
+        // 装配华硕电脑：华硕电脑搭载 Intel CPU 和技嘉主板
         AbstractFactory asus = new DellFactory();
         // 告诉装机工程师自己选择的装机方案，让装机工程师组装电脑
         engineer.makeComputer(asus);

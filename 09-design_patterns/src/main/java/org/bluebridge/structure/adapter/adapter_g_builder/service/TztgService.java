@@ -7,7 +7,7 @@ import org.bluebridge.structure.adapter.adapter_g_builder.domain.Tztg;
  * 通知通告服务实现
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 12:47
  */
 public class TztgService implements ITztgService {
 

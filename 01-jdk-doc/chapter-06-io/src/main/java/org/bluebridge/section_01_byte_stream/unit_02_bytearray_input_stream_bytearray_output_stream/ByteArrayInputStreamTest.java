@@ -37,13 +37,13 @@ public class ByteArrayInputStreamTest {
             if (bais.markSupported()) {
                 log.info("support mark：{}", bais.markSupported());
             }
-            // 现在是位置在i,进行标记.
+            // 现在是位置在 i，进行标记.
             bais.mark(0);
-            // 使用字节数组,一次性读取三个字节.
+            // 使用字节数组，一次性读取三个字节.
             byte[] byteArray = new byte[3];
             bais.read(byteArray, 0, 3);
             log.info("new String(byteArray)：{}", new String(byteArray));
-            // 通过reset()方法将指针指到到mark位置
+            // 通过 reset() 方法将指针指到到 mark 位置
             bais.reset();
             log.info("reset：{}", (char) bais.read());
         } catch (IOException e) {

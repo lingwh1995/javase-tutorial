@@ -19,7 +19,7 @@ public class Client {
         System.out.println(calculate);
 
         /**
-         * 下面代码不是策略模式，只是当使用接口作为参数的时候,匿名内部类的实现并重写接口中的方法
+         * 下面代码不是策略模式，只是当使用接口作为参数的时候，匿名内部类的实现并重写接口中的方法
          */
         /*
         OperationApi calculator = new OperationApi(new ICalucatorStrategy() {

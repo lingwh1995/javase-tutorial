@@ -8,7 +8,7 @@ import javax.swing.*;
  * 图片代理测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 12:11
  */
 public class ImageProxyTestDrive {
 
@@ -22,13 +22,13 @@ public class ImageProxyTestDrive {
         ImageProxyTestDrive testDrive = new ImageProxyTestDrive();
     }
 
-	public ImageProxyTestDrive() throws Exception {
-		cds.put("Buddha Bar","http://images.amazon.com/images/P/B00009XBYK.01.LZZZZZZZ.jpg");
-		cds.put("Ima","http://images.amazon.com/images/P/B000005IRM.01.LZZZZZZZ.jpg");
-		cds.put("Karma","http://images.amazon.com/images/P/B000005DCB.01.LZZZZZZZ.gif");
-		cds.put("MCMXC A.D.","http://images.amazon.com/images/P/B000002URV.01.LZZZZZZZ.jpg");
-		cds.put("Northern Exposure","http://images.amazon.com/images/P/B000003SFN.01.LZZZZZZZ.jpg");
-		cds.put("Selected Ambient Works, Vol. 2","http://images.amazon.com/images/P/B000002MNZ.01.LZZZZZZZ.jpg");
+    public ImageProxyTestDrive() throws Exception {
+        cds.put("Buddha Bar", "http://images.amazon.com/images/P/B00009XBYK.01.LZZZZZZZ.jpg");
+        cds.put("Ima", "http://images.amazon.com/images/P/B000005IRM.01.LZZZZZZZ.jpg");
+        cds.put("Karma", "http://images.amazon.com/images/P/B000005DCB.01.LZZZZZZZ.gif");
+        cds.put("MCMXC A.D.", "http://images.amazon.com/images/P/B000002URV.01.LZZZZZZZ.jpg");
+        cds.put("Northern Exposure", "http://images.amazon.com/images/P/B000003SFN.01.LZZZZZZZ.jpg");
+        cds.put("Selected Ambient Works, Vol. 2", "http://images.amazon.com/images/P/B000002MNZ.01.LZZZZZZZ.jpg");
 
         URL initialURL = new URL((String) cds.get("Selected Ambient Works, Vol. 2"));
         menuBar = new JMenuBar();
@@ -36,15 +36,15 @@ public class ImageProxyTestDrive {
         menuBar.add(menu);
         frame.setJMenuBar(menuBar);
 
-		for (Enumeration<String> e = cds.keys(); e.hasMoreElements();) {
-			String name = (String)e.nextElement();
-			JMenuItem menuItem = new JMenuItem(name);
-			menu.add(menuItem);
-			menuItem.addActionListener(event -> {
-				imageComponent.setIcon(new ImageProxy(getCDUrl(event.getActionCommand())));
-				frame.repaint();
-			});
-		}
+        for (Enumeration<String> e = cds.keys(); e.hasMoreElements();) {
+            String name = (String) e.nextElement();
+            JMenuItem menuItem = new JMenuItem(name);
+            menu.add(menuItem);
+            menuItem.addActionListener(event -> {
+                imageComponent.setIcon(new ImageProxy(getCDUrl(event.getActionCommand())));
+                frame.repaint();
+            });
+        }
 
         // set up frame and menus
 

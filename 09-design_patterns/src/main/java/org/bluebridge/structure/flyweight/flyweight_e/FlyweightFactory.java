@@ -20,14 +20,14 @@ public class FlyweightFactory {
     }
 
     /**
-     * 缓存多个flyweight对象
+     * 缓存多个 flyweight 对象
      */
     private Map<String, Flyweight> fsMap = new HashMap<String, Flyweight>();
 
     /**
-     * 获取key对应的享元对象
+     * 获取 key 对应的享元对象
      *
-     * @param key 获取享元对象的key
+     * @param key 获取享元对象的 key
      * @return 对应的享元对象
      */
     public Flyweight getFlyweight(String key) {

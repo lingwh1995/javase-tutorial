@@ -1,7 +1,7 @@
 package org.bluebridge.structure.flyweight.flyweight_c;
 
 /**
- * 描述授权数据的Model
+ * 描述授权数据的 Model
  *
  * @author lingwh
  * @date 2019/7/30 15:00

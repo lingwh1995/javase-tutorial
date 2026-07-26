@@ -6,7 +6,7 @@ import org.bluebridge.create.abstractfactory.abstractfactory_d.service.*;
  * 简单工厂和抽象工厂模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:45
  */
 public class EasyPersistenceFactory {
 

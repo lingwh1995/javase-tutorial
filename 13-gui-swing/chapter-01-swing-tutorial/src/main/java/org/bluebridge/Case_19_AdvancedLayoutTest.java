@@ -7,7 +7,7 @@ import javax.swing.*;
  * 高级布局管理器演示程序 演示多种常用的布局管理器及其特点，包含更多教学示例
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/2/5 21:14
  */
 public class Case_19_AdvancedLayoutTest extends JFrame {
 

@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 使用数组模拟队列
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 18:05
  */
 public class Queue {
 
@@ -16,12 +16,12 @@ public class Queue {
     private int maxCapacity;
 
     /**
-     * 队列头指针:指向队列中第一个元素的前一个元素
+     * 队列头指针：指向队列中第一个元素的前一个元素
      */
     private int front;
 
     /**
-     * 列尾指针:指向队列中的最后一个元素
+     * 列尾指针：指向队列中的最后一个元素
      */
     private int rear;
 
@@ -75,7 +75,7 @@ public class Queue {
     }
 
     /**
-     * 出对列:队列的头指针移动上移
+     * 出对列：队列的头指针移动上移
      *
      * @return
      */

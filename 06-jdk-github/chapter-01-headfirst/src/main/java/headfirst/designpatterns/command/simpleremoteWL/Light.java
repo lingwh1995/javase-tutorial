@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.simpleremoteWL;
  * 灯
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:17
  */
 public class Light {
 

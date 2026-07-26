@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 披萨抽象类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:56
  */
 public abstract class Pizza {
 
@@ -35,6 +35,7 @@ public abstract class Pizza {
         System.out.println("Boxing " + name);
     }
 
+    @Override
     public String toString() {
         // code to display pizza name and ingredients
         StringBuffer display = new StringBuffer();

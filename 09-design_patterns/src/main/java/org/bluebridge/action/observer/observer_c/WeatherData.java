@@ -8,7 +8,7 @@ import java.util.List;
  * 具体的被观察者
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 15:03
  */
 public class WeatherData implements Subject {
 
@@ -41,7 +41,7 @@ public class WeatherData implements Subject {
     }
 
     /**
-     * 当数据有更新时就调用此方法:会先更新数据然后通知所有的观察者
+     * 当数据有更新时就调用此方法：会先更新数据然后通知所有的观察者
      *
      * @param temperature
      * @param pressure
@@ -66,7 +66,7 @@ public class WeatherData implements Subject {
     }
 
     /**
-     * 遍历所有观察者,并通知
+     * 遍历所有观察者，并通知
      */
     @Override
     public void notifyObservers() {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * 对象结构,通常在这里对元素对象进行遍历，让访问者能访问到所有的元素
+ * 对象结构，通常在这里对元素对象进行遍历，让访问者能访问到所有的元素
  *
  * @author lingwh
  * @date 2019/10/11 9:27

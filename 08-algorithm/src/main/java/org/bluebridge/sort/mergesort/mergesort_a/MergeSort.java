@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 归并排序
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:15
  */
 public class MergeSort {
 
@@ -42,14 +42,14 @@ public class MergeSort {
      * @param temp temp数组
      */
     private static void merge(int[] arr, int left, int mid, int right, int[] temp) {
-        // l、r是检测指针
+        // l、r 是检测指针
         int l = left;
         int r = mid + 1;
-        // t是temp数组的指针
+        // t 是 temp 数组的指针
         System.out.println("left:" + left);
         int t = left;
 
-        // if判断法
+        // if 判断法
         while (l <= mid && r <= right) {
             if (arr[l] <= arr[r]) {
                 temp[t++] = arr[l++];
@@ -60,9 +60,10 @@ public class MergeSort {
 
         // 三目运算
         /*
-         while(l<=mid && r<=right){
-         temp[t++] = arr[l]<=arr[r] ? arr[l++] : arr[r++];
-         }*/
+         * while(l<=mid && r<=right){
+         * temp[t++] = arr[l]<=arr[r] ? arr[l++] : arr[r++];
+         * }
+         */
 
         // 如果第一个序列未检测完，直接将后面所有元素加到合并的序列中
         while (l <= mid) {

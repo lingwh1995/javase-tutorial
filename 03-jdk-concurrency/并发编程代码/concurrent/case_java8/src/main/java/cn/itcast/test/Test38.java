@@ -7,17 +7,17 @@ import static cn.itcast.n2.util.Sleeper.sleep;
 import java.util.concurrent.atomic.AtomicMarkableReference;
 
 /**
- * AtomicMarkableReference测试
+ * AtomicMarkableReference 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 16:52
  */
 @Slf4j(topic = "c.Test38")
 public class Test38 {
 
     public static void main(String[] args) throws InterruptedException {
         GarbageBag bag = new GarbageBag("装满了垃圾");
-        // 参数2 mark 可以看作一个标记，表示垃圾袋满了
+        // 参数 2 mark 可以看作一个标记，表示垃圾袋满了
         AtomicMarkableReference<GarbageBag> ref = new AtomicMarkableReference<>(bag, true);
 
         log.debug("start...");

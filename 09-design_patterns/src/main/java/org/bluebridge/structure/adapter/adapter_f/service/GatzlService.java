@@ -7,7 +7,7 @@ import org.bluebridge.structure.adapter.adapter_f.domain.Gatzl;
  * 公安厅指令服务实现
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:52
  */
 public class GatzlService implements IGatzlService {
 

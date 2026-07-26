@@ -44,7 +44,7 @@ public class LoginTemplate {
      *
      * @param lm 用户填写的登录数据
      * @param dbLm 在存储中对应的数据
-     * @return true表示匹配成功，false表示匹配失败
+     * @return true 表示匹配成功，false 表示匹配失败
      */
     public boolean match(LoginModel lm, LoginModel dbLm) {
         if (lm.getLoginId().equals(dbLm.getLoginId()) && lm.getPwd().equals(dbLm.getPwd())) {

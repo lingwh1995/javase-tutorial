@@ -4,7 +4,7 @@ package org.bluebridge.action.state.state_i;
  * 抽奖活动
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class RaffleActivity {
 
@@ -37,12 +37,12 @@ public class RaffleActivity {
     // 抽奖;
     public void raffle() {
         if (state.raffle()) {
-            // 抽奖了就做好发奖品的准备吧,
+            // 抽奖了就做好发奖品的准备吧，
             state.offeringPrizes();
         }
     }
 
-    // getter ,setter方法;
+    // getter，setter 方法;
     public State getState() {
         return state;
     }

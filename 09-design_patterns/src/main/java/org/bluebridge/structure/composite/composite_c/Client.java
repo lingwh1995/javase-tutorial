@@ -4,7 +4,7 @@ package org.bluebridge.structure.composite.composite_c;
  * 客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:18
  */
 public class Client {
 
@@ -27,9 +27,9 @@ public class Client {
         // 将学院加入到学校
         university.add(xxCollege);
         university.add(jrCollege);
-        // 打印University所有下属机构信息
+        // 打印 University 所有下属机构信息
         university.print();
-        // 打印College所有下属机构信息
+        // 打印 College 所有下属机构信息
         // xxCollege.print();
     }
 }

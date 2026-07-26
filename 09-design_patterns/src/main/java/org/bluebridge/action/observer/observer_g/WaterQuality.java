@@ -9,7 +9,7 @@ package org.bluebridge.action.observer.observer_g;
 public class WaterQuality extends WaterQualitySubject {
 
     /**
-     * 污染的级别，0表示正常，1表示轻度污染，2表示中度污染，3表示高度污染
+     * 污染的级别，0 表示正常，1 表示轻度污染，2 表示中度污染，3 表示高度污染
      */
     private int polluteLevel = 0;
 

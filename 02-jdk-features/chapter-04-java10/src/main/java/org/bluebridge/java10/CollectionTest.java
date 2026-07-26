@@ -9,7 +9,7 @@ import java.util.List;
  * java10 新增创建不可变集合方式
  *
  * @author lingwh
- * @date 2026/4/21 10:30
+ * @date 2025/1/25 14:46
  */
 public class CollectionTest {
 

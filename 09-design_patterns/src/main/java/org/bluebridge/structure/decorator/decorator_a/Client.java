@@ -21,14 +21,14 @@ public class Client {
 
         System.out.println("给普通车增加新的功能:自动驾驶--------");
         /*
-         * 装饰普通Car，新增加自动驾驶功能-->陆地跑、自动驾驶
+         * 装饰普通 Car，新增加自动驾驶功能-->陆地跑、自动驾驶
          */
         SuperCar aiCar = new AICar(car);
         aiCar.run();
 
         System.out.println("给有飞行功能的普通车增加新的功能:自动驾驶--------");
         /*
-         * 装饰FlyCar，增加自动驾驶功能-->陆地跑、飞行、自动驾驶
+         * 装饰 FlyCar，增加自动驾驶功能-->陆地跑、飞行、自动驾驶
          */
         SuperCar aiAndFlyCar = new AICar(new FlyCar(new Car()));
         aiAndFlyCar.run();

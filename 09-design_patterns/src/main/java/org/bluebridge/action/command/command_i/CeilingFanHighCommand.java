@@ -36,7 +36,7 @@ public class CeilingFanHighCommand implements Command {
     }
 
     /**
-     * 撤销命令:将吊扇的速度设置会之前的值,达到撤销的目的
+     * 撤销命令：将吊扇的速度设置会之前的值，达到撤销的目的
      */
     @Override
     public void undo() {

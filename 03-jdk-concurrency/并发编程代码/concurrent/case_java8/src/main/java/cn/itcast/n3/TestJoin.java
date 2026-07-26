@@ -7,10 +7,10 @@ import java.util.concurrent.TimeUnit;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * join方法测试
+ * join 方法测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 13:45
  */
 @Slf4j(topic = "c.TestJoin")
 public class TestJoin {

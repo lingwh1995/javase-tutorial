@@ -1,10 +1,10 @@
 package org.bluebridge.expand.principles.open_close;
 
 /**
- * 遵循OCP原则示例
+ * 遵循 OCP 原则示例
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:08
  */
 public class OCPTest2 {
 
@@ -16,7 +16,7 @@ public class OCPTest2 {
 }
 
 /**
- * 方法的使用方: 遵守OCP,扩展的时候不用再对方法的使用方做修改
+ * 方法的使用方：遵守 OCP，扩展的时候不用再对方法的使用方做修改
  */
 class Painter2 {
     public void drawShape(Shape2 shape) {

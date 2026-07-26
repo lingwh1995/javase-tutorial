@@ -1,7 +1,7 @@
 package org.bluebridge.structure.bridge.bridge_f;
 
 /**
- * 实现部分接口:定义了第一个维度的操作(基本操作)
+ * 实现部分接口：定义了第一个维度的操作(基本操作)
  *
  * @author lingwh
  * @date 2019/8/6 9:03

@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzafm;
  * 披萨店抽象类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 14:11
  */
 public abstract class PizzaStore {
 

@@ -9,13 +9,13 @@ package org.bluebridge.structure.bridge.bridge_h;
 public class Client {
 
     public static void main(String[] args) {
-        // 使用Mac播放AVI
+        // 使用 Mac 播放 AVI
         VideoFomat aviFormat = new AVIFormat();
         SystemPlatform macPlatform = new MacPlatform();
         macPlatform.setVideoFomat(aviFormat);
         macPlatform.playVedio();
 
-        // 使用windos 播放MPEG
+        // 使用 windos 播放 MPEG
         VideoFomat mpegFormat = new MPEGFormat();
         SystemPlatform windowsPlatform = new WindowsPlatform();
         windowsPlatform.setVideoFomat(mpegFormat);

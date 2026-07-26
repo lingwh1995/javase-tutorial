@@ -48,23 +48,23 @@ public class ArrayIteratorImpl implements AggregationIterator {
         // 需要在这里先计算需要获取的数据的开始条数和结束条数
         int start = (pageNum - 1) * pageShow;
         int end = start + pageShow - 1;
-        // 控制start的边界，最小是0
+        // 控制 start 的边界，最小是 0
         if (start < 0) {
             start = 0;
         }
 
-        // 控制end的边界，最大是数组的最大索引
+        // 控制 end 的边界，最大是数组的最大索引
         if (end > this.pms.length - 1) {
             end = this.pms.length - 1;
         }
 
-        // 每次取值都是从头开始循环，所以设置index为0
+        // 每次取值都是从头开始循环，所以设置 index 为 0
         index = 0;
         while (hasNext() && index <= end) {
             if (index >= start) {
                 col.add(pms[index]);
             }
-            // 把已访问索引加1
+            // 把已访问索引加 1
             index++;
         }
         return col;

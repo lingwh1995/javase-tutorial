@@ -4,7 +4,7 @@ package org.bluebridge.structure.facade.facade_a;
  * 爆米花机，使用饿汉式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:22
  */
 public class Propcorn {
 

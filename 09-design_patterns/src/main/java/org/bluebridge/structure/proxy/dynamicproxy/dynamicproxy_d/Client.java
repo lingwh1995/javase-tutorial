@@ -3,7 +3,7 @@ package org.bluebridge.structure.proxy.dynamicproxy.dynamicproxy_d;
 /**
  * 客户端 - 测试动态代理
  *
- * java8以上环境运行时需要添加VM参数，否则会报错 --add-opens java.base/java.lang=ALL-UNNAMED
+ * java8 以上环境运行时需要添加 VM 参数，否则会报错 --add-opens java.base/java.lang=ALL-UNNAMED
  *
  * @author lingwh
  * @date 2019/8/19 11:52

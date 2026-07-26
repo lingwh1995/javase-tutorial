@@ -1,10 +1,10 @@
 package org.bluebridge.create.factorymethod.factorymethod_i;
 
 /**
- * Puma服装生产工厂
+ * Puma 服装生产工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:27
  */
 public class PumaClothesProduceFactory implements IClothesProduceFactory {
 

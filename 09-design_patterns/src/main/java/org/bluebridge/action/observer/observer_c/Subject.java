@@ -3,7 +3,7 @@ package org.bluebridge.action.observer.observer_c;
 import java.util.List;
 
 /**
- * 被观察者接口:由具体发布者实现,让WeatherData实现
+ * 被观察者接口：由具体发布者实现，让 WeatherData 实现
  *
  * @author lingwh
  * @date 2019/8/19 13:37

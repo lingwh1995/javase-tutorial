@@ -4,7 +4,7 @@ package headfirst.designpatterns.observer.weather;
  * 统计数据展示
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 19:56
  */
 public class StatisticsDisplay implements Observer, DisplayElement {
 
@@ -19,6 +19,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
+    @Override
     public void update(float temp, float humidity, float pressure) {
         tempSum += temp;
         numReadings++;
@@ -34,6 +35,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         display();
     }
 
+    @Override
     public void display() {
         System.out.println(
                 "Avg/Max/Min temperature = " + (tempSum / numReadings) + "/" + maxTemp + "/" + minTemp);

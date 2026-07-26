@@ -24,21 +24,21 @@ public class ReadAppXml {
         Document doc = null;
         // 建立一个解析器工厂
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        // 获得一个DocumentBuilder对象，这个对象代表了具体的DOM解析器
+        // 获得一个 DocumentBuilder 对象，这个对象代表了具体的 DOM 解析器
         DocumentBuilder builder = factory.newDocumentBuilder();
-        // 得到一个表示XML文档的Document对象
+        // 得到一个表示 XML 文档的 Document 对象
         doc = builder.parse(filePathName);
-        // 去掉XML中作为格式化内容的空白而映射在DOM树中的Text Node对象
+        // 去掉 XML 中作为格式化内容的空白而映射在 DOM 树中的 Text Node 对象
         doc.normalize();
 
-        // 获取jdbc的配置值
+        // 获取 jdbc 的配置值
         NodeList jdbc = doc.getElementsByTagName("jdbc");
-        // 只有一个jdbc,获取jdbc中的驱动类的名称
+        // 只有一个 jdbc，获取 jdbc 中的驱动类的名称
         NodeList driverClassNode = ((Element) jdbc.item(0)).getElementsByTagName("driver-class");
         String driverClass = driverClassNode.item(0).getFirstChild().getNodeValue();
         System.out.println("driverClass==" + driverClass);
 
-        // 同理获取url、user、password等的值
+        // 同理获取 url、user、password 等的值
         NodeList urlNode = ((Element) jdbc.item(0)).getElementsByTagName("url");
         String url = urlNode.item(0).getFirstChild().getNodeValue();
         System.out.println("url==" + url);
@@ -51,7 +51,7 @@ public class ReadAppXml {
         String password = passwordNode.item(0).getFirstChild().getNodeValue();
         System.out.println("password==" + password);
 
-        // 获取application-xml
+        // 获取 application-xml
         NodeList applicationXmlNode = doc.getElementsByTagName("application-xml");
         String applicationXml = applicationXmlNode.item(0).getFirstChild().getNodeValue();
         System.out.println("applicationXml==" + applicationXml);

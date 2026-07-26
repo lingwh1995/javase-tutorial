@@ -4,7 +4,7 @@ package headfirst.designpatterns.ducks;
  * 火鸡接口
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2023/12/7 11:49
  */
 public interface Turkey {
 

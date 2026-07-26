@@ -4,7 +4,7 @@ package org.bluebridge.create.builder.builder_a;
  * 熊猫太空飞船
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 20:28
  */
 public class PanadaAirShipBuilder extends AbstractAirShipBuilder {
 

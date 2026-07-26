@@ -4,10 +4,11 @@ package headfirst.designpatterns.factory.pizzaaf;
  * 大蒜
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:04
  */
 public class Garlic implements Veggies {
 
+    @Override
     public String toString() {
         return "Garlic";
     }

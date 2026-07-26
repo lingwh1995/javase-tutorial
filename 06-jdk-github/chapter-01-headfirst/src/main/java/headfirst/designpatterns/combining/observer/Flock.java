@@ -7,7 +7,7 @@ import java.util.Iterator;
  * 鸭群
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 09:25
  */
 public class Flock implements Quackable {
 
@@ -17,6 +17,7 @@ public class Flock implements Quackable {
         ducks.add(duck);
     }
 
+    @Override
     public void quack() {
         Iterator<Quackable> iterator = ducks.iterator();
         while (iterator.hasNext()) {
@@ -25,6 +26,7 @@ public class Flock implements Quackable {
         }
     }
 
+    @Override
     public void registerObserver(Observer observer) {
         Iterator<Quackable> iterator = ducks.iterator();
         while (iterator.hasNext()) {
@@ -33,9 +35,11 @@ public class Flock implements Quackable {
         }
     }
 
+    @Override
     public void notifyObservers() {
     }
 
+    @Override
     public String toString() {
         return "Flock of Ducks";
     }

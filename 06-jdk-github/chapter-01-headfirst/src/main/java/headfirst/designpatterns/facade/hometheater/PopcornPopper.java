@@ -4,7 +4,7 @@ package headfirst.designpatterns.facade.hometheater;
  * 爆米花机
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:21
  */
 public class PopcornPopper {
 
@@ -26,6 +26,7 @@ public class PopcornPopper {
         System.out.println(description + " popping popcorn!");
     }
 
+    @Override
     public String toString() {
         return description;
     }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Mysql数据库,维护了Redis和Es数据库的引用
+ * Mysql 数据库，维护了 Redis 和 Es 数据库的引用
  *
  * @author lingwh
  * @date 2019/8/14 13:59
@@ -14,12 +14,12 @@ public class MysqlDatabase extends AbstractDatabase {
     private List<String> dataset = new ArrayList<String>();
 
     /**
-     * Redis数据库
+     * Redis 数据库
      */
     private RedisDatabase redisDatabase;
 
     /**
-     * Es数据库
+     * Es 数据库
      */
     private EsDatabase esDatabase;
 
@@ -32,7 +32,7 @@ public class MysqlDatabase extends AbstractDatabase {
     }
 
     /**
-     * 给Mysql数据库添加数据
+     * 给 Mysql 数据库添加数据
      *
      * @param data
      */
@@ -43,21 +43,21 @@ public class MysqlDatabase extends AbstractDatabase {
     }
 
     /**
-     * 把刚才添加的数据同步维护到Redis数据库中 把刚才添加的数据同步维护到Elasticsearch中
+     * 把刚才添加的数据同步维护到 Redis 数据库中 把刚才添加的数据同步维护到 Elasticsearch 中
      *
      * @param data
      */
     @Override
     public void add(String data) {
         addData(data);
-        // 维护同步到Redis的同步作业
+        // 维护同步到 Redis 的同步作业
         this.redisDatabase.addData(data);
-        // 维护同步到Elasticsearch的同步作业
+        // 维护同步到 Elasticsearch 的同步作业
         this.esDatabase.addData(data);
     }
 
     /**
-     * Mysql数据库独有的查询功能
+     * Mysql 数据库独有的查询功能
      */
     public void select() {
         System.out.println("- Mysql 查询，数据：" + this.dataset.toString());

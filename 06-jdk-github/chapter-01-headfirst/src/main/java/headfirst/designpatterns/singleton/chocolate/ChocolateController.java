@@ -4,7 +4,7 @@ package headfirst.designpatterns.singleton.chocolate;
  * 巧克力锅炉控制器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:37
  */
 public class ChocolateController {
 

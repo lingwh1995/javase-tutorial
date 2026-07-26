@@ -10,7 +10,7 @@ import static cn.itcast.n2.util.Sleeper.sleep;
  * 信号量测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 11:33
  */
 @Slf4j(topic = "c.TestSemaphore")
 public class TestSemaphore {
@@ -19,7 +19,7 @@ public class TestSemaphore {
         // 1. 创建 semaphore 对象
         Semaphore semaphore = new Semaphore(3);
 
-        // 2. 10个线程同时运行
+        // 2. 10 个线程同时运行
         for (int i = 0; i < 10; i++) {
             new Thread(() -> {
                 try {

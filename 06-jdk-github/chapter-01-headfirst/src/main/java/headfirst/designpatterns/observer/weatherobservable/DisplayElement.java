@@ -4,7 +4,7 @@ package headfirst.designpatterns.observer.weatherobservable;
  * 展示元素接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 16:51
  */
 public interface DisplayElement {
 

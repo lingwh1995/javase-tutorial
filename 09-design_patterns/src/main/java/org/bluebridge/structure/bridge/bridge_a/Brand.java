@@ -4,7 +4,7 @@ package org.bluebridge.structure.bridge.bridge_a;
  * 品牌接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:42
  */
 public interface Brand {
 
@@ -26,7 +26,7 @@ class Lenovol implements Brand {
 }
 
 /**
- * Dell电脑
+ * Dell 电脑
  *
  * @author lingwh
  * @date 2019/3/23 00:08

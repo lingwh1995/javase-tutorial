@@ -8,10 +8,10 @@ import java.util.Date;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * ABA问题测试
+ * ABA 问题测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 13:14
  */
 @Slf4j(topic = "c.Test37")
 public class Test37 {
@@ -33,7 +33,7 @@ public class Test37 {
         // 1s 后
         Thread.sleep(1000);
 
-        // 认为 prev 仍为 A, 打印 true
+        // 认为 prev 仍为 A， 打印 true
         Date c = getDate("2000-10-1");
         log.debug("change A{}->C{}-{}", ref.compareAndSet(a, c), ref.get());
     }

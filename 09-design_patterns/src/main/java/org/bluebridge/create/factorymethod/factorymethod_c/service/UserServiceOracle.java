@@ -3,10 +3,10 @@ package org.bluebridge.create.factorymethod.factorymethod_c.service;
 import org.bluebridge.create.factorymethod.factorymethod_c.domain.User;
 
 /**
- * Oracle用户服务
+ * Oracle 用户服务
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 15:31
  */
 public class UserServiceOracle implements IUserService {
 

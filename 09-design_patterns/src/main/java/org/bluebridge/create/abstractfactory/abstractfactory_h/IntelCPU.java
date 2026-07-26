@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_h;
 
 /**
- * Intel牌CPU实现
+ * Intel 牌 CPU 实现
  *
  * @author lingwh
  * @date 2019/8/7 14:57
@@ -18,7 +18,7 @@ public class IntelCPU implements CPUApi {
     }
 
     /**
-     * CPU具有运算功能
+     * CPU 具有运算功能
      */
     @Override
     public void calculate() {

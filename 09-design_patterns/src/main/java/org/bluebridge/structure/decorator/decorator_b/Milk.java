@@ -1,10 +1,10 @@
 package org.bluebridge.structure.decorator.decorator_b;
 
 /**
- * 具体的Decorator
+ * 具体的 Decorator
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:35
  */
 public class Milk extends Decorator {
 

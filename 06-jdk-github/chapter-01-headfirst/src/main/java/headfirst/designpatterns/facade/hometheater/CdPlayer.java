@@ -1,10 +1,10 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
- * CD播放器
+ * CD 播放器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:03
  */
 public class CdPlayer {
 

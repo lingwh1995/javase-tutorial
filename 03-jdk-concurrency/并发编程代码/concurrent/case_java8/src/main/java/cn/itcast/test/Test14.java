@@ -7,10 +7,10 @@ import static cn.itcast.n2.util.Sleeper.sleep;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * park打断测试
+ * park 打断测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 11:36
  */
 @Slf4j(topic = "c.Test14")
 public class Test14 {

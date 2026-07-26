@@ -3,10 +3,10 @@ package test;
 import java.util.HashMap;
 
 /**
- * HashMap并发死链测试
+ * HashMap 并发死链测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 11:38
  */
 public class TestDeadLink {
 
@@ -24,7 +24,7 @@ public class TestDeadLink {
                 System.out.println(i);
             }
         }
-        // 1, 35, 16, 50 当大小为16时，它们在一个桶内
+        // 1，35，16，50 当大小为 16 时，它们在一个桶内
         final HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         // 放 12 个元素
         map.put(2, null);
@@ -44,7 +44,7 @@ public class TestDeadLink {
         new Thread() {
             @Override
             public void run() {
-                // 放第 13 个元素, 发生扩容
+                // 放第 13 个元素，发生扩容
                 map.put(50, null);
                 System.out.println("扩容后大小[Thread-0]:"+map.size());
             }
@@ -52,7 +52,7 @@ public class TestDeadLink {
         new Thread() {
             @Override
             public void run() {
-                // 放第 13 个元素, 发生扩容
+                // 放第 13 个元素，发生扩容
                 map.put(50, null);
                 System.out.println("扩容后大小[Thread-1]:"+map.size());
             }

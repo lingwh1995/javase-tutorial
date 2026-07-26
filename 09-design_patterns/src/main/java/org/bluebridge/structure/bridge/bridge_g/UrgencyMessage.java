@@ -1,7 +1,7 @@
 package org.bluebridge.structure.bridge.bridge_g;
 
 /**
- * 加急消息:这个维度的实现类，可以在发送短信的时候添加一些扩充方法
+ * 加急消息：这个维度的实现类，可以在发送短信的时候添加一些扩充方法
  *
  * @author lingwh
  * @date 2019/8/6 9:17
@@ -13,7 +13,7 @@ public class UrgencyMessage extends AbstractMessage {
     }
 
     /**
-     * 发送加急消息:
+     * 发送加急消息
      *
      * @param message
      * @param toUer
@@ -25,7 +25,7 @@ public class UrgencyMessage extends AbstractMessage {
     }
 
     /**
-     * 扩展自己的新功能:监控某消息的处理过程
+     * 扩展自己的新功能：监控某消息的处理过程
      *
      * @param messgeId 被监控的消息的编号
      * @return

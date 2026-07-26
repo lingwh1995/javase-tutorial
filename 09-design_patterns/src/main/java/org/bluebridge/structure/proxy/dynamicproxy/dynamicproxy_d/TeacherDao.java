@@ -1,10 +1,10 @@
 package org.bluebridge.structure.proxy.dynamicproxy.dynamicproxy_d;
 
 /**
- * 教师Dao
+ * 教师 Dao
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:20
  */
 public class TeacherDao {
 

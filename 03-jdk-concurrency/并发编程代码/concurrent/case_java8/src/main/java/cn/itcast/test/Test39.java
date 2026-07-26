@@ -13,7 +13,7 @@ import java.util.function.Supplier;
  * 原子数组测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 09:27
  */
 public class Test39 {
 
@@ -37,7 +37,7 @@ public class Test39 {
      *
      * @param arraySupplier 提供数组、可以是线程不安全数组或线程安全数组
      * @param lengthFun 获取数组长度的方法
-     * @param putConsumer 自增方法，回传 array, index
+     * @param putConsumer 自增方法，回传 array， index
      * @param printConsumer 打印数组的方法
      * @param <T>
      */

@@ -9,10 +9,10 @@ import java.util.concurrent.*;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * Timer定时器测试
+ * Timer 定时器测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 15:30
  */
 @Slf4j(topic = "c.TestTimer")
 public class TestTimer {

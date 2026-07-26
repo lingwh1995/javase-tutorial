@@ -9,7 +9,7 @@ package org.bluebridge.structure.flyweight.flyweight_b;
 public abstract class Flyweight {
 
     /**
-     * 内部状态做为成员变量,同一个享元对象其内部状态是一致的
+     * 内部状态做为成员变量，同一个享元对象其内部状态是一致的
      */
     private String intrinsic;
 
@@ -36,7 +36,7 @@ public abstract class Flyweight {
     }
 
     /**
-     * 定义业务操作 外部状态extrinsicState在使用时由外部设置，不保存在享元对象中，即使是同一个对象
+     * 定义业务操作 外部状态 extrinsicState 在使用时由外部设置，不保存在享元对象中，即使是同一个对象
      *
      * @param extrinsic 外部状态
      */

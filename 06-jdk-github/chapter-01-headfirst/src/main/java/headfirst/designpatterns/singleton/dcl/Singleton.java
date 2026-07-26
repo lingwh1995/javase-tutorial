@@ -7,7 +7,7 @@ package headfirst.designpatterns.singleton.dcl;
  * guaranteed to work prior to Java 5
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:46
  */
 public class Singleton {
 

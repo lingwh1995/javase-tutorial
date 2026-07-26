@@ -4,10 +4,10 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 交替打印(LockCondition版)
+ * 交替打印(LockCondition 版)
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/3/7 12:39
  */
 public class AlternatePrintLockConditionEditionTest {
 

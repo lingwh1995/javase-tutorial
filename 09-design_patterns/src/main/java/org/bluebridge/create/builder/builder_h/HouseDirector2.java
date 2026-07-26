@@ -4,13 +4,13 @@ package org.bluebridge.create.builder.builder_h;
  * 指挥者
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:38
  */
 public class HouseDirector2 {
 
     private HouseBuilder houseBuilder;
 
-    // 通过构造器传入HouseBuilder
+    // 通过构造器传入 HouseBuilder
     public HouseDirector2(HouseBuilder houseBuilder) {
         this.houseBuilder = houseBuilder;
     }

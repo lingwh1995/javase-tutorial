@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
  * 线程顺序执行测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 17:26
  */
 @Slf4j(topic = "c.Test25")
 public class Test25 {

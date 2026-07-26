@@ -19,7 +19,7 @@ public class Client {
         stack.add("4");
         stack.add("5");
         Enumeration<String> elements = stack.elements();
-        // 遍历Stack
+        // 遍历 Stack
         foreach(elements);
     }
 

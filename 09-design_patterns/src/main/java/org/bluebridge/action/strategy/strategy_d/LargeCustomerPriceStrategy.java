@@ -1,7 +1,7 @@
 package org.bluebridge.action.strategy.strategy_d;
 
 /**
- * 大客户:打8折
+ * 大客户：打 8 折
  *
  * @author lingwh
  * @date 2019/8/2 15:12

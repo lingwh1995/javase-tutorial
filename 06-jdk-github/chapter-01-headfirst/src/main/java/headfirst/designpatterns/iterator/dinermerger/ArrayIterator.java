@@ -4,7 +4,7 @@ package headfirst.designpatterns.iterator.dinermerger;
  * 数组迭代器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:34
  */
 public class ArrayIterator implements Iterator {
 

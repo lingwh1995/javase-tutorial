@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.party;
  * 浴缸关闭命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 13:37
  */
 public class HottubOffCommand implements Command {
 

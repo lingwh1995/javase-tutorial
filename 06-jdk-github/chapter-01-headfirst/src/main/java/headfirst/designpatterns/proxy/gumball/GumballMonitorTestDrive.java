@@ -6,7 +6,7 @@ import java.rmi.*;
  * 糖果机监控器测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:08
  */
 public class GumballMonitorTestDrive {
 

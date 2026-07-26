@@ -7,7 +7,7 @@ import java.util.Iterator;
  * 交替餐厅菜单迭代器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:01
  */
 public class AlternatingDinerMenuIterator implements Iterator<MenuItem> {
 
@@ -36,11 +36,12 @@ public class AlternatingDinerMenuIterator implements Iterator<MenuItem> {
      * No longer needed as of Java 8
      *
      * (non-Javadoc)
+     * 
      * @see java.util.Iterator#remove()
      *
-    public void remove() {
-        throw new UnsupportedOperationException(
-            "Alternating Diner Menu Iterator does not support remove()");
-    }
-    */
+     * public void remove() {
+     * throw new UnsupportedOperationException(
+     * "Alternating Diner Menu Iterator does not support remove()");
+     * }
+     */
 }

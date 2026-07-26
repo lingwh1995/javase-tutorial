@@ -4,7 +4,7 @@ package org.bluebridge.create.factorymethod.factorymethod_c.domain;
  * 用户实体类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 12:42
  */
 public class User {
 

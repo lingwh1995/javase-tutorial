@@ -12,10 +12,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * CountDownLatch测试
+ * CountDownLatch 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 11:14
  */
 @Slf4j(topic = "c.TestCountDownLatch")
 public class TestCountDownLatch {

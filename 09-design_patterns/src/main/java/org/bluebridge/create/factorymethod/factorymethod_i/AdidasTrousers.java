@@ -1,10 +1,10 @@
 package org.bluebridge.create.factorymethod.factorymethod_i;
 
 /**
- * Adidas裤子
+ * Adidas 裤子
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 12:25
  */
 public class AdidasTrousers implements ITrousers {
 

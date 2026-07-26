@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 组合对象，通常需要存储子对象，定义有子部件的部件行为， 并实现在Component里面定义的与子部件有关的操作
+ * 组合对象，通常需要存储子对象，定义有子部件的部件行为， 并实现在 Component 里面定义的与子部件有关的操作
  *
  * @author lingwh
  * @date 2019/8/22 11:06

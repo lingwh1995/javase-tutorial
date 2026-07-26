@@ -14,7 +14,7 @@ import org.w3c.dom.Element;
 public class ElementExpression extends ReadXmlExpression {
 
     /**
-     * 用来记录组合的ReadXmlExpression元素
+     * 用来记录组合的 ReadXmlExpression 元素
      */
     private Collection<ReadXmlExpression> eles = new ArrayList<ReadXmlExpression>();
 
@@ -67,7 +67,7 @@ public class ElementExpression extends ReadXmlExpression {
             tempList.add(nowEles.get(0));
             c.setPreEles(tempList);
         }
-        // 循环调用子元素的interpret方法
+        // 循环调用子元素的 interpret 方法
         String[] ss = null;
         for (ReadXmlExpression tempEle : eles) {
             ss = tempEle.interpret(c);

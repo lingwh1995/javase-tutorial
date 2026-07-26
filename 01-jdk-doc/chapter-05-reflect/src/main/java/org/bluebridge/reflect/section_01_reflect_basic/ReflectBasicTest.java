@@ -28,25 +28,26 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectGetJavaBeanClass() throws ClassNotFoundException, NoSuchFieldException {
-        // 方式1. 该对象自身的.class属性，注意:该方式只能获取到当前类的.class属性，不能获取到父类的.class属性
+        // 方式 1. 该对象自身的 .class 属性，注意：该方式只能获取到当前类的 .class 属性，不能获取到父类的 .class 属性
         Class<Person> class1 = Person.class;
         // 打印 class 类信息
         printClassInfo(class1);
 
-        // 方式2. 根据运行时的类的对象
+        // 方式 2. 根据运行时的类的对象
         Person person = new Person();
         Class<? extends Object> class2 = person.getClass();
         // 打印 class 类信息
         printClassInfo(class2);
 
-        // 方式3. Class的静态方法.forName()获取:体现反射的动态性
+        // 方式 3. Class 的静态方法.forName() 获取：体现反射的动态性
         Class<? extends Object> class3 = Class.forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
         // 打印 class 类信息
         printClassInfo(class3);
 
         // 方式4. 通过类加载器获取
         ClassLoader classLoader = this.getClass().getClassLoader();
-        Class<? extends Object> clazz4 = classLoader.loadClass("org.bluebridge.reflect.section_01_reflect_basic.Person");
+        Class<? extends Object> clazz4 = classLoader
+                .loadClass("org.bluebridge.reflect.section_01_reflect_basic.Person");
         // 打印 class 类信息
         printClassInfo(clazz4);
     }
@@ -58,16 +59,16 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectCreateInstanceByNoArgsConstructor() throws Exception {
-        // 1. 获取class对象
+        // 1. 获取 class 对象
         Class<? extends Object> clazz = getClass().forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
         log.info("包名 + 类名: {}", clazz);
         log.info("类名: {}", clazz.getSimpleName());
 
-        // 2. 得到Person实例，通过反射操作无参构造方法
-        // 通过反射操作无参构造器实例化对象方式1: 不推荐，从java9开始已经被标记为 废弃方法
+        // 2. 得到 Person 实例，通过反射操作无参构造方法
+        // 通过反射操作无参构造器实例化对象方式 1：不推荐，从 java 9 开始已经被标记为 废弃方法
         Person person = (Person) clazz.newInstance();
         log.info("反射操作无参构造实例化对象方式一 person: {}", person);
-        // 通过反射操作无参构造器实例化对象方式2: 推荐
+        // 通过反射操作无参构造器实例化对象方式 2：推荐
         person = (Person) clazz.getDeclaredConstructor().newInstance();
         log.info("反射操作无参构造实例化对象方式二 person: {}", person);
     }
@@ -79,14 +80,15 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectCreateInstanceByRequiredArgsConstructor() throws Exception {
-        // 1. 获取class对象
+        // 1. 获取 class 对象
         Class<? extends Object> clazz = Class.forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
-        // 2. 得到Person实例，通过反射操作有参构造方法
-        // 通过反射操作有参构造器实例化对象方式1: 直接传入两个参数的数据类型的class
+        // 2. 得到 Person 实例，通过反射操作有参构造方法
+        // 通过反射操作有参构造器实例化对象方式 1：直接传入两个参数的数据类型的 class
         Person person = (Person) clazz.getDeclaredConstructor(String.class, String.class).newInstance("张三", "18");
         log.info("反射操作有参构造实例化对象方式一 person: {}", person);
-            // 通过反射操作有参构造器实例化对象方式2: 传入一个Class[]对象
-        person = (Person)clazz.getDeclaredConstructor(new Class[]{String.class,String.class}).newInstance("李四","20");
+        // 通过反射操作有参构造器实例化对象方式 2：传入一个 Class[] 对象
+        person = (Person) clazz.getDeclaredConstructor(new Class[] { String.class, String.class }).newInstance("李四",
+                "20");
         log.info("反射操作有参构造实例化对象方式二 person: {}", person);
     }
 
@@ -97,9 +99,9 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectGetFieldInfoAndSetFieldInfo() throws Exception {
-        // 1. 获取class对象
+        // 1. 获取 class 对象
         Class clazz = Class.forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
-        // 2. 得到Person对象
+        // 2. 得到 Person 对象
         Person person = (Person) clazz.getDeclaredConstructor().newInstance();
         // 3. 获取属性
         // getDeclaredFields(): 得到所有的属性
@@ -128,12 +130,12 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectInvokePublicMethod() throws Exception {
-        // 1. 获取class对象
+        // 1. 获取 class 对象
         Class clazz = Class.forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
-        // 2. 得到Person对象
+        // 2. 得到 Person 对象
         Person person = (Person) clazz.getDeclaredConstructor().newInstance();
         // 3. 操作普通方法
-        // 两个参数: 1.方法名 2.参数数据类型
+        // 两个参数：1. 方法名 2. 参数数据类型
         Method method = clazz.getDeclaredMethod("setName", String.class);
         // 4. 使用反射执行该方法
         method.invoke(person, "zhangsan");
@@ -147,9 +149,9 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectInvokePrivateMethod() throws Exception {
-        // 1. 获取class对象
+        // 1. 获取 class 对象
         Class clazz = getClass().forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
-        // 2. 获取Person实例
+        // 2. 获取 Person 实例
         Person person = (Person) clazz.newInstance();
         // 3. 使用反射操作私有方法
         Method method = clazz.getDeclaredMethod("drink", String.class);
@@ -166,7 +168,7 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectInvokeStaticMethod() throws Exception {
-        // 1. 获取class对象
+        // 1. 获取 class 对象
         Class clazz = getClass().forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
         // 2. 获取方法操作器
         Method method = clazz.getDeclaredMethod("sleep", String.class);
@@ -184,7 +186,7 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectGetFieldModifiy() throws Exception {
-        // 1. 获取class对象
+        // 1. 获取 class 对象
         Class clazz = getClass().forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
         // 2. 获取属性
         Field filed = clazz.getDeclaredField("name");
@@ -200,13 +202,14 @@ public class ReflectBasicTest {
      */
     @Test
     public void testReflectGetMethodModifiy() throws Exception {
-        // 1. 获取class对象
+        // 1. 获取 class 对象
         Class clazz = getClass().forName("org.bluebridge.reflect.section_01_reflect_basic.Person");
         // 2. 获取方法
         Method method = clazz.getDeclaredMethod("sleep", String.class);
         // 3. 获取方法的修饰符
         int modifiers = method.getModifiers();
-        // 最终的打印结果是 10 ，private = 0x00000002, static = 0x00000008， private + static = 2 + 8 = 10
+        // 最终的打印结果是 10 ，private = 0x00000002, static = 0x00000008， private + static = 2
+        // + 8 = 10
         log.info("{} 方法的修饰符: {}", method.getName(), modifiers);
     }
 

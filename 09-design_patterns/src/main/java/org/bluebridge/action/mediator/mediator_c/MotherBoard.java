@@ -14,7 +14,7 @@ public class MotherBoard implements Mediator {
     private CDDriver cdDriver = null;
 
     /**
-     * 需要知道要交互的同事类——CPU类
+     * 需要知道要交互的同事类——CPU 类
      */
     private CPU cpu = null;
 
@@ -50,7 +50,7 @@ public class MotherBoard implements Mediator {
             // 表示光驱读取数据了
             this.opeCDDriverReadData((CDDriver) colleague);
         } else if (colleague == cpu) {
-            // 表示CPU处理完了
+            // 表示 CPU 处理完了
             this.opeCPU((CPU) colleague);
         }
     }
@@ -63,17 +63,17 @@ public class MotherBoard implements Mediator {
     private void opeCDDriverReadData(CDDriver cd) {
         // 1. 先获取光驱读取的数据
         String data = cd.getData();
-        // 2. 把这些数据传递给CPU进行处理
+        // 2. 把这些数据传递给 CPU 进行处理
         this.cpu.executeData(data);
     }
 
     /**
-     * 处理CPU处理完数据后与其它对象的交互
+     * 处理 CPU 处理完数据后与其它对象的交互
      *
-     * @param cpu CPU同事类
+     * @param cpu CPU 同事类
      */
     private void opeCPU(CPU cpu) {
-        // 1. 先获取CPU处理过后的数据
+        // 1. 先获取 CPU 处理过后的数据
         String videoData = cpu.getVideoData();
         String soundData = cpu.getSoundData();
         // 2. 把这些数据传递给显卡和声卡展示出来

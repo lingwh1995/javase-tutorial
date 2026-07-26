@@ -4,7 +4,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_b;
  * 低端汽车工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:33
  */
 public class LowCarFactory implements CarFactory {
 

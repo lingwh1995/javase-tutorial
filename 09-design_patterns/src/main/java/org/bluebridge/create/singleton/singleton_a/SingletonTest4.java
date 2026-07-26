@@ -1,13 +1,13 @@
 package org.bluebridge.create.singleton.singleton_a;
 
 /**
- * 静态内部类实现:懒加载模式、线程安全
+ * 静态内部类实现：懒加载模式、线程安全
  *
- * 1. 外部类中没有static属性,不会像饿汉那样立即加载对象
- * 2. 只有真正调用getInstance()才会加载静态内部类。加载类时线程是安全的，instance是static final类型，保证了内存中只有这样一个实
+ * 1. 外部类中没有 static 属性，不会像饿汉那样立即加载对象
+ * 2. 只有真正调用 getInstance() 才会加载静态内部类。加载类时线程是安全的，instance 是 static final 类型，保证了内存中只有这样一个实
  *    例存在，而且只能被赋值一次，从而保证了线程安全
  * 3. 兼备了并发调用和延迟加载的优势
- *    并发体现在: 调用的时候可以直接调用
+ *    并发体现在： 调用的时候可以直接调用
  *
  * @author lingwh
  * @date 2019/3/23 22:10
@@ -24,7 +24,8 @@ public class SingletonTest4 {
 }
 
 class Singleton4 {
-    private Singleton4() {}
+    private Singleton4() {
+    }
 
     private static class SingletonInstance {
         private static final Singleton4 INSTANCE = new Singleton4();

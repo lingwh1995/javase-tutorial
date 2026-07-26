@@ -4,7 +4,7 @@ package headfirst.designpatterns.decorator.starbuzz;
  * 豆浆调料
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:28
  */
 public class Soy extends CondimentDecorator {
 
@@ -12,10 +12,12 @@ public class Soy extends CondimentDecorator {
         this.beverage = beverage;
     }
 
+    @Override
     public String getDescription() {
         return beverage.getDescription() + ", Soy";
     }
 
+    @Override
     public double cost() {
         return .15 + beverage.cost();
     }

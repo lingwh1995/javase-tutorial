@@ -4,13 +4,13 @@ package org.bluebridge.create.builder.builder_h;
  * 客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:17
  */
 public class Client {
 
     public static void main(String[] args) {
         /**
-         * 测试第一个指挥者:地基-->墙面-->屋顶
+         * 测试第一个指挥者：地基-->墙面-->屋顶
          */
         // 盖普通房子
         CommonHouseBuilder commonHouseBuilder = new CommonHouseBuilder();
@@ -29,7 +29,7 @@ public class Client {
 
         System.out.println("---------------------------");
         /**
-         * 测试第二个指挥者:地基-->屋顶-->墙面
+         * 测试第二个指挥者：地基-->屋顶-->墙面
          */
         // 创建指挥者
         HouseDirector2 houseDirecto2 = new HouseDirector2(commonHouseBuilder);
@@ -38,7 +38,7 @@ public class Client {
 
         System.out.println("---------------------------");
         /**
-         * 测试第三个指挥者:墙面-->屋顶-->地基
+         * 测试第三个指挥者：墙面-->屋顶-->地基
          */
         // 创建指挥者
         HouseDirector3 houseDirecto3 = new HouseDirector3(commonHouseBuilder);

@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * synchronized加锁测试
+ * synchronized 加锁测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 11:22
  */
 @Slf4j(topic = "c.Test29")
 public class Test29 {

@@ -3,10 +3,10 @@ package org.bluebridge.create.factorymethod.factorymethod_c.service;
 import org.bluebridge.create.factorymethod.factorymethod_c.domain.User;
 
 /**
- * Mysql用户服务
+ * Mysql 用户服务
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:18
  */
 public class UserServiceMysql implements IUserService {
 

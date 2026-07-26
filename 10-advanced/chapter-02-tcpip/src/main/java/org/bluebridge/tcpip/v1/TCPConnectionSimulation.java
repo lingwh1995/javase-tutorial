@@ -3,10 +3,10 @@ package org.bluebridge.tcpip.v1;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * TCP连接状态模拟测试类
+ * TCP 连接状态模拟测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/17 15:09
  */
 @Slf4j
 public class TCPConnectionSimulation {

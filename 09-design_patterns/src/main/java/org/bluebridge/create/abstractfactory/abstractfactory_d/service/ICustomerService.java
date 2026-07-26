@@ -6,7 +6,7 @@ import org.bluebridge.create.abstractfactory.abstractfactory_d.domain.Cusomer;
  * 客户服务接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 12:55
  */
 public interface ICustomerService {
 

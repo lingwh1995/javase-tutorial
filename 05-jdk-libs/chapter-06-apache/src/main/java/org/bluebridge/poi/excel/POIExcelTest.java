@@ -13,7 +13,7 @@ import java.io.FileOutputStream;
  * POI 操作 Excel 测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 09:12
  */
 public class POIExcelTest {
 
@@ -31,9 +31,9 @@ public class POIExcelTest {
      * @throws Exception
      */
     public static void write(String path) throws Exception {
-        // 针对.xls 格式的 excel 文件
+        // 针对 .xls 格式的 excel 文件
         // Workbook workbook = new HSSFWorkbook();
-        // 针对.xlsx 格式的 excel 文件
+        // 针对 .xlsx 格式的 excel 文件
         // 1. 获取 excel 文件
         Workbook workbook = new XSSFWorkbook();
         // 2. 创建一个表

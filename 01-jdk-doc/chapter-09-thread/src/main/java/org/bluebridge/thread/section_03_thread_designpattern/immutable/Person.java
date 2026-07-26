@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 不对外提供setter()方法, 注意:此类中getList()方法对局部变量list的处理
+ * 不对外提供 setter() 方法，注意：此类中 getList() 方法对局部变量 list 的处理
  *
  * @author lingwh
  * @date 2026/4/23 16:29

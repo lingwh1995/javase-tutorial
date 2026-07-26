@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.party;
  * 灯打开命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 09:36
  */
 public class LightOnCommand implements Command {
 
@@ -14,10 +14,12 @@ public class LightOnCommand implements Command {
         this.light = light;
     }
 
+    @Override
     public void execute() {
         light.on();
     }
 
+    @Override
     public void undo() {
         light.off();
     }

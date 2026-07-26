@@ -6,7 +6,7 @@ import java.util.HashMap;
  * 变量解释器
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 15:03
  */
 public class VarExpression extends Expression {
 
@@ -17,7 +17,7 @@ public class VarExpression extends Expression {
     }
 
     /**
-     * @param var key:公式 value:变量对应的具体值,如:{a=10,b=20}
+     * @param var key：公式 value：变量对应的具体值，如：{a=10，b=20}
      * @return
      */
     @Override

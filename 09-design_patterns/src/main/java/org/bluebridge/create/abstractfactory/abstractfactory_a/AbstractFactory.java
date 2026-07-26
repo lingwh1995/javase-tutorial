@@ -9,16 +9,16 @@ package org.bluebridge.create.abstractfactory.abstractfactory_a;
 public interface AbstractFactory {
 
     /**
-     * 示例方法，创建抽象产品A的对象
+     * 示例方法，创建抽象产品 A 的对象
      *
-     * @return 抽象产品A的对象
+     * @return 抽象产品 A 的对象
      */
     public AbstractProductA createProductA();
 
     /**
-     * 示例方法，创建抽象产品B的对象
+     * 示例方法，创建抽象产品 B 的对象
      *
-     * @return 抽象产品B的对象
+     * @return 抽象产品 B 的对象
      */
     public AbstractProductB createProductB();
 }

@@ -7,11 +7,11 @@ import java.util.List;
  * 测试保护性暂停模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/25 10:58
  */
 public class GuardedObjectTest {
 
-    // 线程1 等待 线程2 的下载结果
+    // 线程 1 等待 线程 2 的下载结果
     public static void main(String[] args) {
         GuardedObject guardedObject = new GuardedObject();
         new Thread(() -> {

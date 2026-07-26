@@ -8,7 +8,7 @@ import static cn.itcast.n2.util.Sleeper.sleep;
  * 死锁测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 22:40
  */
 @Slf4j(topic = "c.TestDeadLock")
 public class TestDeadLock {

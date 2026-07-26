@@ -4,7 +4,7 @@ package org.bluebridge.algorithm.kmp;
  * KMP算法
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 20:11
  */
 public class KMPAlgorithm {
 
@@ -45,9 +45,9 @@ public class KMPAlgorithm {
      * @return
      */
     public static int[] kmpNext(String dest) {
-        // 创建一个next数组保存部分匹配值
+        // 创建一个 next 数组保存部分匹配值
         int[] next = new int[dest.length()];
-        // 如果字符串产犊为1,部分匹配值就是0
+        // 如果字符串产犊为 1，部分匹配值就是 0
         next[0] = 0;
         for (int i = 1, j = 0; i < dest.length(); i++) {
             while (j > 0 && dest.charAt(i) != dest.charAt(j)) {

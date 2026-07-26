@@ -1,10 +1,10 @@
 package org.bluebridge.structure.proxy.staticproxy.staticproxy_a;
 
 /**
- * 抽象角色:定义代理角色和真实角色的公共对外方法
+ * 抽象角色：定义代理角色和真实角色的公共对外方法
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:15
  */
 public interface Star {
 

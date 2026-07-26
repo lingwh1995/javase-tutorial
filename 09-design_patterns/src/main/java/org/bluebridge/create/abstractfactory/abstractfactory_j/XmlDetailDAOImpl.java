@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_j;
 
 /**
- * Xml订单子记录DAO实现
+ * Xml 订单子记录 DAO 实现
  *
  * @author lingwh
  * @date 2019/9/4 11:39

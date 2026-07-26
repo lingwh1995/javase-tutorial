@@ -9,7 +9,7 @@ package org.bluebridge.action.visitor.visitor_a;
 public class Client {
 
     public static void main(String[] args) {
-        // 创建ObjectStructure
+        // 创建 ObjectStructure
         ObjectStructure os = new ObjectStructure();
         // 创建要加入对象结构的元素
         Element eleA = new ConcreteElementA();

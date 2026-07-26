@@ -6,7 +6,7 @@ import java.io.*;
  * 输入测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:08
  */
 public class InputTest {
 
@@ -27,8 +27,7 @@ public class InputTest {
             }
         }
         System.out.println();
-        try (InputStream in2 =
-                new LowerCaseInputStream(new BufferedInputStream(new FileInputStream("test.txt")))) {
+        try (InputStream in2 = new LowerCaseInputStream(new BufferedInputStream(new FileInputStream("test.txt")))) {
             while ((c = in2.read()) >= 0) {
                 System.out.print((char) c);
             }

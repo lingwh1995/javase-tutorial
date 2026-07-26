@@ -4,7 +4,7 @@ package headfirst.designpatterns.strategy.challenge;
  * 基础相机应用
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 12:56
  */
 public class BasicCameraApp extends PhoneCameraApp {
 

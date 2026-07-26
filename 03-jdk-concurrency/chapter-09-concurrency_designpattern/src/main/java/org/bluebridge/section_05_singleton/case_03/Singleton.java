@@ -1,10 +1,10 @@
 package org.bluebridge.section_05_singleton.case_03;
 
 /**
- * 实现3(synchronized方法)
+ * 实现 3(synchronized 方法)
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/3/13 11:26
  */
 public final class Singleton {
 
@@ -13,7 +13,7 @@ public final class Singleton {
 
     private static Singleton INSTANCE = null;
 
-    // 分析这里的线程安全, 并说明有什么缺点(没有线程安全问题，同步代码块粒度太大，性能差)
+    // 分析这里的线程安全，并说明有什么缺点(没有线程安全问题，同步代码块粒度太大，性能差)
     public static synchronized Singleton getInstance() {
         if (INSTANCE != null) {
             return INSTANCE;

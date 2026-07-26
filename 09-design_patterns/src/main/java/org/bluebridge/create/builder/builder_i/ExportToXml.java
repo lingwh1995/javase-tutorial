@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Map;
 
 /**
- * 导出数据到XML文件的对象
+ * 导出数据到 XML 文件的对象
  *
  * @author lingwh
  * @date 2019/8/8 14:16
@@ -12,14 +12,13 @@ import java.util.Map;
 public class ExportToXml {
 
     /**
-     * 导出数据到XML文件
+     * 导出数据到 XML 文件
      *
-     * @param ehm 文件头的内容
+     * @param ehm     文件头的内容
      * @param mapData 数据的内容
-     * @param efm 文件尾的内容
+     * @param efm     文件尾的内容
      */
-    public void export(ExportHeaderModel ehm,Map<String,
-            Collection<ExportDataModel>> mapData,ExportFooterModel efm){
+    public void export(ExportHeaderModel ehm, Map<String, Collection<ExportDataModel>> mapData, ExportFooterModel efm) {
         // 用来记录最终输出的文件内容
         StringBuffer buffer = new StringBuffer();
         // 1. 先来拼接文件头的内容

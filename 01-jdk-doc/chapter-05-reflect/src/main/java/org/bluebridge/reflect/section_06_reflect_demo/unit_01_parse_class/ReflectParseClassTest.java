@@ -73,17 +73,17 @@ public class ReflectParseClassTest {
      * @param annotation 注解对象，包括字段、类、方法上的注解
      */
     private static String filterAnnotation(Annotation annotation) {
-        // 获取注解简称，如:RequestMapping
+        // 获取注解简称，如：RequestMapping
         String annotationSimpleName = annotation.annotationType().getSimpleName();
-        // 获取注解全称，如:
+        // 获取注解全称，如：
         // @org.springframework.web.bind.annotation.RequestMapping(headers=[], value=[jzpt/xxfb],
         // produces=[], method=[], params=[], consumes=[])
         String annotationFullName = annotation.toString();
-        // 过滤注解全称中无用部分，生成的心字符串如:
+        // 过滤注解全称中无用部分，生成的心字符串如：
         // @RequestMapping(headers=[], value=[wsmbDeleted], produces=[], method=[], params=[],
         // consumes=[])
         String originalAnnotationName = annotationFullName.substring(annotationFullName.indexOf(annotationFullName));
-        // 将上面的字符串做进一步处理,生成字符串如:
+        // 将上面的字符串做进一步处理，生成字符串如：
         // headers=[], value=[wsmbDeleted], produces=[], method=[], params=[], consumes=[]
         // 再将这个字符串转换为字符串数组
         String[] annotationElements = originalAnnotationName.replaceAll(annotationSimpleName, "")

@@ -19,7 +19,7 @@ public class RepeatVoteState implements VoteState {
     public void vote(String user, String voteItem, VoteManager voteManager) {
         // 重复投票，暂时不做处理
         System.out.println("请不要重复投票");
-        // 重复投票完成，维护下一个状态，重复投票到5次，就算恶意投票了
+        // 重复投票完成，维护下一个状态，重复投票到 5 次，就算恶意投票了
         if (voteManager.getMapVoteCount().get(user) >= 4) {
             // 不要这么写了
             // voteManager.getMapState().put(user,new SpiteVoteState());

@@ -6,7 +6,7 @@ import java.util.Random;
  * 已投币状态
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:35
  */
 public class HasQuarterState implements State {
 
@@ -18,15 +18,18 @@ public class HasQuarterState implements State {
         this.gumballMachine = gumballMachine;
     }
 
+    @Override
     public void insertQuarter() {
         System.out.println("You can't insert another quarter");
     }
 
+    @Override
     public void ejectQuarter() {
         System.out.println("Quarter returned");
         gumballMachine.setState(gumballMachine.getNoQuarterState());
     }
 
+    @Override
     public void turnCrank() {
         System.out.println("You turned...");
         int winner = randomWinner.nextInt(10);
@@ -37,10 +40,12 @@ public class HasQuarterState implements State {
         }
     }
 
+    @Override
     public void dispense() {
         System.out.println("No gumball dispensed");
     }
 
+    @Override
     public String toString() {
         return "waiting for turn of crank";
     }

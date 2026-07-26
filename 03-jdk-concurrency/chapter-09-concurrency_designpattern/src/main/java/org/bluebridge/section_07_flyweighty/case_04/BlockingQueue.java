@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 阻塞队列
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/3/20 13:51
  */
 public class BlockingQueue<T> {
 
@@ -48,7 +48,7 @@ public class BlockingQueue<T> {
         try {
             while (queue.size() == 0) {
                 try {
-                    // 等待超时依旧没有获取，返回null
+                    // 等待超时依旧没有获取，返回 null
                     if (nanoTime <= 0) {
                         return null;
                     }
@@ -156,7 +156,7 @@ public class BlockingQueue<T> {
     }
 
     /**
-     * 从形参接收拒绝策略的put方法
+     * 从形参接收拒绝策略的 put 方法
      *
      * @param rejectPolicy
      * @param task

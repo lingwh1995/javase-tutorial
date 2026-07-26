@@ -7,7 +7,7 @@ import java.util.List;
  * 未遵守迪米特法则
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:27
  */
 public class Demeter1 {
 
@@ -53,7 +53,7 @@ class CollegeEmployee1 {
 class CollegeManager1 {
     public List<CollegeEmployee1> getAllCollegeEmployee() {
         List<CollegeEmployee1> list = new ArrayList<CollegeEmployee1>();
-        // 增加10个员工到学院
+        // 增加 10 个员工到学院
         for (int i = 0; i < 10; i++) {
             CollegeEmployee1 collegeEmployee = new CollegeEmployee1();
             collegeEmployee.setId("学院员工id" + i);
@@ -65,14 +65,14 @@ class CollegeManager1 {
 
 /**
  * 学校总部员工管理类
- * SchoolManager的直接朋友：Employee、CollegeManager
- * SchoolManager的非直接朋友：CollegeEmployee，这样就
+ * SchoolManager 的直接朋友：Employee、CollegeManager
+ * SchoolManager 的非直接朋友：CollegeEmployee，这样就
  * 违反了迪米特法则（只与直接的朋友通信，最少知道原则，避免与非直接朋友的耦合）
  */
 class SchoolManager1 {
     public List<Employee1> getAllEmployee() {
         List<Employee1> list = new ArrayList<Employee1>();
-        // 增加5个员工到学校总部
+        // 增加 5 个员工到学校总部
         for (int i = 0; i < 5; i++) {
             Employee1 employee1 = new Employee1();
             employee1.setId("学校总部员工id" + i);

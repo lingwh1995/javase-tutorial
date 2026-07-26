@@ -1,7 +1,7 @@
 package org.bluebridge.create.simplefactory.simplefactory_a;
 
 /**
- * 调用者1 - 不使用工厂模式
+ * 调用者 1 - 不使用工厂模式
  *
  * @author lingwh
  * @date 2019/3/10 10:56

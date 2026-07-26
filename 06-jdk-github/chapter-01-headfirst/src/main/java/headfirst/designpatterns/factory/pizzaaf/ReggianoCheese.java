@@ -4,10 +4,11 @@ package headfirst.designpatterns.factory.pizzaaf;
  * 雷吉亚诺奶酪
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:24
  */
 public class ReggianoCheese implements Cheese {
 
+    @Override
     public String toString() {
         return "Reggiano Cheese";
     }

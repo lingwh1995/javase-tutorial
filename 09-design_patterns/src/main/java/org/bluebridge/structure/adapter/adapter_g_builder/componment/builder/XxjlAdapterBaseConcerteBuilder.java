@@ -6,10 +6,10 @@ import org.bluebridge.structure.adapter.adapter_g_builder.dao.XxjlOpenfireDao;
 import org.bluebridge.structure.adapter.adapter_g_builder.domain.Xxjl;
 
 /**
- * Xxjl适配器基础具体构建者
+ * Xxjl 适配器基础具体构建者
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 14:17
  */
 public class XxjlAdapterBaseConcerteBuilder extends XxjlAdapterBaseBuilder {
 

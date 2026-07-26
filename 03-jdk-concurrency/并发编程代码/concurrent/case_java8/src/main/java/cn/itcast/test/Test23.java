@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 哲学家就餐问题
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 15:44
  */
 @Slf4j(topic = "c.Test23")
 public class Test23 {

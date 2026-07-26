@@ -1,7 +1,7 @@
 package org.bluebridge.structure.facade.facade_b;
 
 /**
- * 示意配置描述的数据Model，真实的配置数据会很多
+ * 示意配置描述的数据 Model，真实的配置数据会很多
  *
  * @author lingwh
  * @date 2019/9/11 18:44
@@ -9,17 +9,17 @@ package org.bluebridge.structure.facade.facade_b;
 public class ConfigModel {
 
     /**
-     * 是否需要生成表现层，默认是true
+     * 是否需要生成表现层，默认是 true
      */
     private boolean needGenPresentation = true;
 
     /**
-     * 是否需要生成逻辑层，默认是true
+     * 是否需要生成逻辑层，默认是 true
      */
     private boolean needGenBusiness = true;
 
     /**
-     * 是否需要生成DAO，默认是true
+     * 是否需要生成 DAO，默认是 true
      */
     private boolean needGenDAO = true;
 

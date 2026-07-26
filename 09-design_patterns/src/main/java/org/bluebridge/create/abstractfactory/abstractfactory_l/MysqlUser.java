@@ -4,7 +4,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_l;
  * MysqlUser
  *
  * @author lingwh
- * @date 2026/7/13 8:35
+ * @date 2026/7/22 13:55
  */
 public class MysqlUser implements IUser {
 

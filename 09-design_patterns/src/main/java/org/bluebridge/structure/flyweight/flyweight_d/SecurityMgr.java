@@ -15,14 +15,15 @@ public class SecurityMgr {
 
     private static SecurityMgr securityMgr = new SecurityMgr();
 
-    private SecurityMgr() {}
+    private SecurityMgr() {
+    }
 
     public static SecurityMgr getInstance() {
         return securityMgr;
     }
 
     /**
-     * 在运行期间，用来存放登录人员对应的权限， 在Web应用中，这些数据通常会存放到session中
+     * 在运行期间，用来存放登录人员对应的权限， 在 Web 应用中，这些数据通常会存放到 session 中
      */
     private Map<String, Collection<Flyweight>> map = new HashMap<>();
 

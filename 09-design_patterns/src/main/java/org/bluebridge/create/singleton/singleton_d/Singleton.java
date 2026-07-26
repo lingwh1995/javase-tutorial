@@ -3,7 +3,7 @@ package org.bluebridge.create.singleton.singleton_d;
 /**
  * 双重检查锁单例模式
  *
- * volatile不能保证原子性，能保证内存可见性，多个线程看到的数据是同一份
+ * volatile 不能保证原子性，能保证内存可见性，多个线程看到的数据是同一份
  *
  * @author lingwh
  * @date 2019/8/5 18:29
@@ -11,7 +11,7 @@ package org.bluebridge.create.singleton.singleton_d;
 public class Singleton {
 
     /**
-     * 对保存实例的变量添加volatile的修饰
+     * 对保存实例的变量添加 volatile 的修饰
      */
     private static volatile Singleton instance = null;
 

@@ -8,10 +8,10 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Balking模式测试
+ * Balking 模式测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 14:05
  */
 public class TestBalking {
 

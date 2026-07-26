@@ -4,7 +4,7 @@ package headfirst.designpatterns.collections.iterator;
  * 餐厅菜单实现类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:43
  */
 public class DinerMenu implements Menu {
 

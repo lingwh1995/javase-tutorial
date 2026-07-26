@@ -34,7 +34,7 @@ public abstract class Component {
     /**
      * 返回某个索引对应的组件对象
      *
-     * @param index 需要获取的组件对象的索引，索引从0开始
+     * @param index 需要获取的组件对象的索引，索引从 0 开始
      * @return 索引对应的组件对象
      */
     public Component getChildren(int index) {

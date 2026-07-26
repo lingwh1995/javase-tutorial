@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_h;
 
 /**
- * AMD品牌CPU
+ * AMD 品牌 CPU
  *
  * @author lingwh
  * @date 2019/8/7 15:00
@@ -18,7 +18,7 @@ public class AMDCPU implements CPUApi {
     }
 
     /**
-     * CPU具有运算功能
+     * CPU 具有运算功能
      */
     @Override
     public void calculate() {

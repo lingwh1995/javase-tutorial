@@ -21,7 +21,7 @@ public class LogModel implements Serializable {
     private String operateUser;
 
     /**
-     * 操作时间，以yyyy-MM-dd HH:mm:ss的格式记录
+     * 操作时间，以 yyyy-MM-dd HH:mm:ss 的格式记录
      */
     private String operateTime;
 

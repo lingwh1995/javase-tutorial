@@ -38,7 +38,7 @@ public class ArrayIteratorImpl implements Iterator {
         Object retObj = null;
         if (hasNext()) {
             retObj = aggregate.get(index);
-            // 每取走一个值，就把已访问索引加1
+            // 每取走一个值，就把已访问索引加 1
             index++;
         }
         return retObj;

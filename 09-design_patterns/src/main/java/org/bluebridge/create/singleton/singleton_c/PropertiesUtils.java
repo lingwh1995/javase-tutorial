@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * 使用单例解决Properties文件加载问题
+ * 使用单例解决 Properties 文件加载问题
  *
  * @author lingwh
  * @date 2019/8/5 16:46

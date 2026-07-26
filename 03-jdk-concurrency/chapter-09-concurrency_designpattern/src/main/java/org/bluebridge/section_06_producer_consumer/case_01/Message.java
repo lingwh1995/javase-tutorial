@@ -1,10 +1,10 @@
 package org.bluebridge.section_06_producer_consumer.case_01;
 
 /**
- * 这里使用final修饰，将这个类设置成不可变类
+ * 这里使用 final 修饰，将这个类设置成不可变类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/28 10:46
  */
 final class Message {
 

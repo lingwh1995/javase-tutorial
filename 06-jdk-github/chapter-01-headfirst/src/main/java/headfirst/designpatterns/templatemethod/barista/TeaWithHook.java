@@ -6,18 +6,21 @@ import java.io.*;
  * 茶(带钩子)
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 13:21
  */
 public class TeaWithHook extends CaffeineBeverageWithHook {
 
+    @Override
     public void brew() {
         System.out.println("Steeping the tea");
     }
 
+    @Override
     public void addCondiments() {
         System.out.println("Adding Lemon");
     }
 
+    @Override
     public boolean customerWantsCondiments() {
 
         String answer = getUserInput();

@@ -1,7 +1,7 @@
 package org.bluebridge.create.builder.builder_a;
 
 /**
- * AirShip构建者接口
+ * AirShip 构建者接口
  *
  * @author lingwh
  * @date 2019年3月23日

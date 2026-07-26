@@ -24,7 +24,7 @@ import javax.xml.transform.stream.StreamResult;
  * 使用 jaxp 的 Dom 方式解析 xml 文件，jaxp 增、删、改操作对格式化的支持很差
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/4/21 11:47
  */
 public class JaxpDomParseXml {
 
@@ -33,7 +33,7 @@ public class JaxpDomParseXml {
     private static final String FILE_PATH = BASIC_PATH + FILE_RELATIVE_PATH;
 
     /**
-     * dom 方式解析 xml： 根据 xml 的层级结构在内存中分配一个树，把 html 的标签、属性、文本都封装成对象
+     * dom 方式解析 xml：根据 xml 的层级结构在内存中分配一个树，把 html 的标签、属性、文本都封装成对象
      * 缺点：如果 xml 文档过大，容易造成内存溢出
      * 优点：很方便的实现增删改操作
      */

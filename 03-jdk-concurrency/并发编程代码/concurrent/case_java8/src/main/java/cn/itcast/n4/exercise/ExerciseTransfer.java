@@ -8,7 +8,7 @@ import java.util.Random;
  * 转账练习
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/7 23:55
  */
 @Slf4j(topic = "c.ExerciseTransfer")
 public class ExerciseTransfer {
@@ -30,7 +30,7 @@ public class ExerciseTransfer {
         t2.start();
         t1.join();
         t2.join();
-        // 查看转账2000次后的总金额
+        // 查看转账 2000 次后的总金额
         log.debug("total:{}", (a.getMoney() + b.getMoney()));
     }
 

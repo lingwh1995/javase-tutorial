@@ -3,10 +3,10 @@ package org.bluebridge.structure.adapter.adapter_e.dao;
 import org.bluebridge.structure.adapter.adapter_e.domain.Gatzl;
 
 /**
- * 公安厅指令Dao
+ * 公安厅指令 Dao
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:47
  */
 public class GatzlDao {
 

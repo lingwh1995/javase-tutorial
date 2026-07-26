@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * 菜单宏命令对象:是个宏命令对象,里面聚合了多个子命令
+ * 菜单宏命令对象：是个宏命令对象，里面聚合了多个子命令
  *
  * @author lingwh
  * @date 2019/8/5 13:43

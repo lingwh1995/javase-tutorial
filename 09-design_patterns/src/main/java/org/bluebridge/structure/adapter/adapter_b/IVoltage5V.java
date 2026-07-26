@@ -1,10 +1,10 @@
 package org.bluebridge.structure.adapter.adapter_b;
 
 /**
- * 5V电压接口
+ * 5V 电压接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:51
  */
 public interface IVoltage5V {
 

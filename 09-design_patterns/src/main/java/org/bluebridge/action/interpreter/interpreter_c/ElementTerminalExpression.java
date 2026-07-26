@@ -19,10 +19,11 @@ public class ElementTerminalExpression extends ReadXmlExpression {
         this.eleName = name;
     }
 
+    @Override
     public String[] interpret(Context c) {
         // 先取出上下文里的当前元素作为父级元素
         Element pEle = c.getPreEle();
-        // 查找到当前元素名称所对应的xml元素
+        // 查找到当前元素名称所对应的 xml 元素
         Element ele = null;
         if (pEle == null) {
             // 说明现在获取的是根元素

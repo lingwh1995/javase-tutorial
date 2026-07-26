@@ -21,7 +21,7 @@ public class Client {
         decorator = new SumPrizeDecorator(decorator);
 
         // 注意：这里只需使用最后组合好的对象调用业务方法即可，会依次调用回去
-        // 日期对象都没有用上，所以传null就可以了
+        // 日期对象都没有用上，所以传 null 就可以了
         double zs = decorator.calcPrize("张三", null, null);
         System.out.println("----------张三应得奖金：" + zs);
         double ls = decorator.calcPrize("李四", null, null);

@@ -1,7 +1,7 @@
 package org.bluebridge.structure.facade.facade_c;
 
 /**
- * 示意配置管理，就是负责读取配置文件， 并把配置文件的内容设置到配置Model中去，是个单例
+ * 示意配置管理，就是负责读取配置文件， 并把配置文件的内容设置到配置 Model 中去，是个单例
  *
  * @author lingwh
  * @date 2019/9/12 8:51
@@ -20,7 +20,7 @@ public class ConfigManager {
         if (manager == null) {
             manager = new ConfigManager();
             cm = new ConfigModel();
-            // 读取配置文件，把值设置到ConfigModel中去，这里省略了
+            // 读取配置文件，把值设置到 ConfigModel 中去，这里省略了
         }
         return manager;
     }

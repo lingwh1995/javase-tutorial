@@ -1,10 +1,10 @@
 package org.bluebridge.structure.bridge.bridge_b;
 
 /**
- * Vivo手机
+ * Vivo 手机
  *
  * @author lingwh
- * @date 2026/7/9 15:45
+ * @date 2026/7/22 15:42
  */
 public class Vivo implements Brand {
 

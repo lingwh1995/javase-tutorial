@@ -53,7 +53,7 @@ public class Client {
                             @Override
                             public String encryptPwd(String pwd, LoginTemplate template) {
                                 // 覆盖父类的方法，提供真正的加密实现
-                                // 这里对密码进行加密，比如使用：MD5、3DES等等，省略了
+                                // 这里对密码进行加密，比如使用：MD5、3DES 等等，省略了
                                 System.out.println("使用MD5进行密码加密");
                                 return pwd;
                             }

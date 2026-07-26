@@ -4,7 +4,7 @@ package headfirst.designpatterns.ducks;
  * 鸭子测试驱动
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 12:01
  */
 public class DuckTestDrive {
 

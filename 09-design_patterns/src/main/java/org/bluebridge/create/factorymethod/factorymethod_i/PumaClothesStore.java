@@ -1,10 +1,10 @@
 package org.bluebridge.create.factorymethod.factorymethod_i;
 
 /**
- * Puma服装店
+ * Puma 服装店
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:44
  */
 public class PumaClothesStore extends ClothesStore {
 

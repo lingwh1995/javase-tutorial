@@ -1,10 +1,10 @@
 package org.bluebridge.structure.adapter.adapter_m;
 
 /**
- * HTTP处理器适配器
+ * HTTP 处理器适配器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:14
  */
 public class HttpHandlerAdapter implements HandlerAdapter {
 

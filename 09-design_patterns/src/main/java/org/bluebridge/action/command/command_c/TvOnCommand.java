@@ -4,7 +4,7 @@ package org.bluebridge.action.command.command_c;
  * 电视打开命令
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 15:03
  */
 public class TvOnCommand implements Command {
 

@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_h;
 
 /**
- * CPU的接口
+ * CPU 的接口
  *
  * @author lingwh
  * @date 2019/8/7 14:56
@@ -9,7 +9,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_h;
 public interface CPUApi {
 
     /**
-     * CPU具有运算功能
+     * CPU 具有运算功能
      */
     void calculate();
 }

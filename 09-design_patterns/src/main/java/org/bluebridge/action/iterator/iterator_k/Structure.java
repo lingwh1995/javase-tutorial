@@ -6,7 +6,7 @@ import java.util.Iterator;
  * 结构接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public interface Structure {
 

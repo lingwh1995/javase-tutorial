@@ -6,7 +6,7 @@ import org.junit.Test;
  * 接口使用多个泛型测试
  *
  * @author lingwh
- * @date 2026/7/8 18:39
+ * @date 2026/7/8 14:23
  */
 public class InterfaceUseMultipleGenericTest {
 

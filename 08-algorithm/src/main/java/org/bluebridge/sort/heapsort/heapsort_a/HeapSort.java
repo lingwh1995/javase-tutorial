@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 堆排序
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:23
  */
 public class HeapSort {
 
@@ -44,15 +44,15 @@ public class HeapSort {
      *
      * @param arr    待调整的数组
      * @param i      表示非叶子节点在数组中的索引
-     * @param length 表示多少个元素继续调整，length在逐渐减少
+     * @param length 表示多少个元素继续调整，length 在逐渐减少
      */
     public static void adjustHeap(int[] arr, int i, int length) {
-        // 先取出当前元素的值，放在temp中
+        // 先取出当前元素的值，放在 temp 中
         int temp = arr[i];
-        // k = i * 2 + 1,k是i节点的左子节点
+        // k = i * 2 + 1，k 是 i 节点的左子节点
         for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
             if (k + 1 < length && arr[k] < arr[k + 1]) {
-                // 让k指向右子节点
+                // 让 k 指向右子节点
                 k++;
             }
             if (arr[k] > temp) {
@@ -61,7 +61,7 @@ public class HeapSort {
             } else {
                 break;
             }
-            // 当for循环结束后，我们已经将以i为父节点的树的最大值，放在了最顶上
+            // 当 for 循环结束后，我们已经将以 i 为父节点的树的最大值，放在了最顶上
             arr[i] = temp;
         }
     }

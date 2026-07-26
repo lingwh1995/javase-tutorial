@@ -50,7 +50,7 @@ public class CPU extends Colleague {
         String[] ss = data.split(",");
         this.videoData = ss[0];
         this.soundData = ss[1];
-        // 通知主板，CPU的工作完成
+        // 通知主板，CPU 的工作完成
         this.getMediator().changed(this);
     }
 }

@@ -4,7 +4,7 @@ package headfirst.designpatterns.combining.decorator;
  * 嘎嘎叫接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 09:22
  */
 public interface Quackable {
 

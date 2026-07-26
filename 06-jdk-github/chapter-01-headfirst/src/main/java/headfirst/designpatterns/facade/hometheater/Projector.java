@@ -4,7 +4,7 @@ package headfirst.designpatterns.facade.hometheater;
  * 投影仪
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:58
  */
 public class Projector {
 
@@ -32,6 +32,7 @@ public class Projector {
         System.out.println(description + " in tv mode (4x3 aspect ratio)");
     }
 
+    @Override
     public String toString() {
         return description;
     }

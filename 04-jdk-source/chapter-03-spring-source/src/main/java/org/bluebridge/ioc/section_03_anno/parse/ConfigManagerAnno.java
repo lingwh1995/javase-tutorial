@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  * 获取 base-package 配置的路径
  *
  * @author lingwh
- * @date 2026/4/21 10:30
+ * @date 2023/12/7 11:37
  */
 public class ConfigManagerAnno {
 

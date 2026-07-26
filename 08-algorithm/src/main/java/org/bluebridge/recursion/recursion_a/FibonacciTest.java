@@ -1,10 +1,10 @@
 package org.bluebridge.recursion.recursion_a;
 
 /**
- * 斐波那契数列:1 1 2 3 5 8 13
+ * 斐波那契数列：1 1 2 3 5 8 13
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 19:58
  */
 public class FibonacciTest {
 

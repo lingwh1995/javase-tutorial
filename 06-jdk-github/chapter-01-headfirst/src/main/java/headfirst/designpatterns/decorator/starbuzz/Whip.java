@@ -4,7 +4,7 @@ package headfirst.designpatterns.decorator.starbuzz;
  * 奶泡调料
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2023/12/7 19:53
  */
 public class Whip extends CondimentDecorator {
 

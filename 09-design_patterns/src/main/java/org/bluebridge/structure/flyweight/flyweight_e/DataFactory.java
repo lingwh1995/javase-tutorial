@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 模拟数据库:可以提供权限相关数据
+ * 模拟数据库：可以提供权限相关数据
  *
  * @author lingwh
  * @date 2019/7/30 15:04
@@ -19,7 +19,7 @@ public class DataFactory {
     public static Collection<String> authorityInfos;
 
     /**
-     * 用来存放组合授权数据的值， key为组合数据的id，value为该组合包含的多条授权数据的值
+     * 用来存放组合授权数据的值， key 为组合数据的 id，value 为该组合包含的多条授权数据的值
      */
     public static Map<String, String[]> authorityInfosMap;
 

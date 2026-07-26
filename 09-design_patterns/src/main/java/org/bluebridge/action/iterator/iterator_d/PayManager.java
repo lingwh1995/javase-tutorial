@@ -12,7 +12,7 @@ import java.util.List;
 public class PayManager extends Aggregate {
 
     /**
-     * 聚合对象，这里是Java的集合对象
+     * 聚合对象，这里是 Java 的集合对象
      */
     private List list = new ArrayList();
 

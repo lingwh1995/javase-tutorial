@@ -6,10 +6,10 @@ import java.util.Properties;
 import java.util.concurrent.Executor;
 
 /**
- * 自定义Connection实现
+ * 自定义 Connection 实现
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/7 18:45
  */
 public class MyConnection implements Connection {
 

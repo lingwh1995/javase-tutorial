@@ -1,10 +1,10 @@
 package org.bluebridge.create.factorymethod.factorymethod_i;
 
 /**
- * Adidas鞋子
+ * Adidas 鞋子
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:43
  */
 public class AdidasShoes implements IShoes {
 

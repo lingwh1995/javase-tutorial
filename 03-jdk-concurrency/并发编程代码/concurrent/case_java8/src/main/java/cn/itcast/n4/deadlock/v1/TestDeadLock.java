@@ -6,10 +6,10 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Random;
 
 /**
- * 死锁测试v1
+ * 死锁测试 v1
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 22:55
  */
 public class TestDeadLock {
 

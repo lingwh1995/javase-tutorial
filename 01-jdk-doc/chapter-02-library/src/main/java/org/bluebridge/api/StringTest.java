@@ -40,12 +40,12 @@ public class StringTest {
     @Test
     public void testIndexOf() {
         String str = "abccdef";
-        // 从0位置开始找
+        // 从 0 位置开始找
         log.debug("str.indexOf('a'): {}", str.indexOf('a'));
         log.debug("str.indexOf('cc'): {}", str.indexOf("cc"));
         log.debug("str.indexOf('d'): {}", str.indexOf('d'));
 
-        // 从2位置开始找，返回结果是从0位置开始找的索引位置
+        // 从 2 位置开始找，返回结果是从 0 位置开始找的索引位置
         log.debug("str.indexOf('d'): {}", str.indexOf('d', 2));
     }
 
@@ -75,7 +75,8 @@ public class StringTest {
     /**
      * 测试 String 的 StringTokenizer 对象
      *
-     * 把字符串根据分隔符转换成数组，和 split() 的区别：当分隔符是.等特殊字符时，split() 无法分割，使用 StringTokenizer 对象可以分割该对象
+     * 把字符串根据分隔符转换成数组，和 split() 的区别：当分隔符是 . 等特殊字符时，split() 无法分割，使用 StringTokenizer
+     * 对象可以分割该对象
      */
     @Test
     public void testStringTokenizer() {
@@ -118,7 +119,8 @@ public class StringTest {
     }
 
     /**
-     * 从指定索引位置开始算，返回指定索引位置到结尾处的码点数 码点和长度的区别： 这个 emoj 😂 的编码是 \uD83D 和 \uDE02，这个 emoj 的长度是 2，码点数是 1
+     * 从指定索引位置开始算，返回指定索引位置到结尾处的码点数 码点和长度的区别： 这个 emoj 😂 的编码是 \uD83D 和 \uDE02，这个 emoj
+     * 的长度是 2，码点数是 1
      */
     @Test
     public void testCodePointCount() {
@@ -130,17 +132,17 @@ public class StringTest {
     /**
      * valueOf 和 toString()
      *
-     * valueOf()源码:
+     * valueOf() 源码：
      * public static String valueOf(Object obj) {
      * return (obj == null) ? "null" : obj.toString();
      * }
      */
     @Test
     public void testValueOfAndToString() {
-        // valueOf():不会抛空指针异常
+        // valueOf()：不会抛空指针异常
         Integer num = null;
         log.debug("String.valueOf(num): {}", String.valueOf(num));
-        // toString():会跑出空指针异常
+        // toString()：会跑出空指针异常
     }
 
     @Test
@@ -153,7 +155,7 @@ public class StringTest {
     @Test
     public void testReplace() {
         String str1 = "abcdea";
-        // 替换全部target字符串，不支持正则
+        // 替换全部 target 字符串，不支持正则
         log.debug(str1.replace("a", "a_"));
 
         // 替换全部符合正则表达式的字符串
@@ -168,7 +170,7 @@ public class StringTest {
         // 在编译期会进行优化，编译期优化后相当于 String s1 = "qe";
         String s1 = "q" + "e";
         String s2 = "3";
-        // 编译时期不会做优化，因为编译的时候还不知道s1和s3代表的具体值是什么
+        // 编译时期不会做优化，因为编译的时候还不知道 s1 和 s3 代表的具体值是什么
         String s3 = s1 + s2;
         log.debug("s3: {}", s3);
     }
@@ -179,9 +181,9 @@ public class StringTest {
     @Test
     public void testFormat() {
         String str = "abcde";
-        // 左补0
+        // 左补 0
         log.debug("左补0： {}", String.format("%10s", str).replace(' ', '0'));
-        // 右补0
+        // 右补 0
         log.debug("右补0： {}", String.format("%-10s", str).replace(' ', '0'));
     }
 

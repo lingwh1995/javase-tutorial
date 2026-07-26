@@ -1,7 +1,7 @@
 package org.bluebridge.structure.decorator.decorator_e;
 
 /**
- * 装饰者:持有抽象组件的引用
+ * 装饰者：持有抽象组件的引用
  *
  * @author lingwh
  * @date 2019/7/25 18:39

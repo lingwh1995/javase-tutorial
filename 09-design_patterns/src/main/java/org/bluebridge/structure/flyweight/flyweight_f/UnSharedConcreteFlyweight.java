@@ -7,7 +7,7 @@ import java.util.List;
  * 复合的享元对象
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 10:22
  */
 public class UnSharedConcreteFlyweight implements Flyweight {
 
@@ -34,7 +34,7 @@ public class UnSharedConcreteFlyweight implements Flyweight {
     }
 
     /**
-     * 为flyweight添加子flyweight对象
+     * 为 flyweight 添加子 flyweight 对象
      *
      * @param flyweight
      */

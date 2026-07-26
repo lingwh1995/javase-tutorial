@@ -1,10 +1,10 @@
 package org.bluebridge.action.memento.mementor_b;
 
 /**
- * 备忘录对象:负责保存好状态变化的记录
+ * 备忘录对象：负责保存好状态变化的记录
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class Memento {
 

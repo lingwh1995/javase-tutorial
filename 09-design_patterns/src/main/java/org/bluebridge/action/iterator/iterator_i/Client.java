@@ -18,12 +18,12 @@ public class Client {
         // 得到翻页迭代器
         AggregationIterator it = salaryManager.createIterator();
 
-        // 获取第一页，每页显示2条
+        // 获取第一页，每页显示 2 条
         Collection col = it.next(2);
         System.out.println("第一页数据：");
         print(col);
 
-        // 获取第二页，每页显示2条
+        // 获取第二页，每页显示 2 条
         Collection col2 = it.next(2);
         System.out.println("第二页数据：");
         print(col2);

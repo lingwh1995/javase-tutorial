@@ -23,7 +23,7 @@ public class ArrayIteratorImpl implements Iterator {
     private int index = 0;
 
     public ArrayIteratorImpl(SalaryManager aggregate) {
-        // 在这里先对聚合对象的数据进行过滤，比如工资必须在3000以下
+        // 在这里先对聚合对象的数据进行过滤，比如工资必须在 3000 以下
         Collection<PayModel> tempCol = new ArrayList<PayModel>();
         for (PayModel pm : aggregate.getPays()) {
             if (pm.getPay() < 3000) {
@@ -53,7 +53,7 @@ public class ArrayIteratorImpl implements Iterator {
         Object retObj = null;
         if (hasNext()) {
             retObj = pms[index];
-            // 每取走一个值，就把已访问索引加1
+            // 每取走一个值，就把已访问索引加 1
             index++;
         }
         // 在这里对要返回的数据进行过滤，比如不让查看工资数据

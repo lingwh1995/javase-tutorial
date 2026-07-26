@@ -9,10 +9,10 @@ import java.util.Map;
 import javax.swing.*;
 
 /**
- * IntelliJ风格界面示例
+ * IntelliJ 风格界面示例
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/1/23 19:51
  */
 public class FlatJetbrainsStyle {
 

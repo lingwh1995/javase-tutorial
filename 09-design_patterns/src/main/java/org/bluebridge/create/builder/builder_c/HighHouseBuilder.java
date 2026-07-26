@@ -4,7 +4,7 @@ package org.bluebridge.create.builder.builder_c;
  * 具体的建造者，只负责产品的创建
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:28
  */
 public class HighHouseBuilder extends HouseBuilder {
 

@@ -7,10 +7,10 @@ import static cn.itcast.n2.util.Sleeper.sleep;
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 /**
- * AtomicStampedReference解决ABA问题测试
+ * AtomicStampedReference 解决 ABA 问题测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/7 08:49
  */
 @Slf4j(topic = "c.Test36")
 public class Test36 {

@@ -4,7 +4,7 @@ package headfirst.designpatterns.combining.decorator;
  * 鸭子模拟器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 19:54
  */
 public class DuckSimulator {
 

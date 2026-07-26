@@ -4,7 +4,7 @@ package headfirst.designpatterns.observer.simple;
  * 简单观察者
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 19:50
  */
 public class SimpleObserver implements Observer {
 
@@ -16,6 +16,7 @@ public class SimpleObserver implements Observer {
         simpleSubject.registerObserver(this);
     }
 
+    @Override
     public void update(int value) {
         this.value = value;
         display();

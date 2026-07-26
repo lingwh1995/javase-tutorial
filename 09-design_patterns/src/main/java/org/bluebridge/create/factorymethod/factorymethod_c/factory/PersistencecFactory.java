@@ -1,12 +1,12 @@
 package org.bluebridge.create.factorymethod.factorymethod_c.factory;
 
-import create.factorymethod.factorymethod_c.service.IUserService;
+import org.bluebridge.create.factorymethod.factorymethod_c.service.IUserService;
 
 /**
  * 持久化工厂抽象类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:15
  */
 public abstract class PersistencecFactory {
 

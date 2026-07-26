@@ -9,14 +9,14 @@ package org.bluebridge.action.visitor.visitor_a;
 public interface Visitor {
 
     /**
-     * 访问元素A，相当于给元素A添加访问者的功能
+     * 访问元素 A，相当于给元素 A 添加访问者的功能
      *
      * @param elementA
      */
     void visitConcreteElementA(ConcreteElementA elementA);
 
     /**
-     * 访问元素B，相当于给元素B添加访问者的功能
+     * 访问元素 B，相当于给元素 B 添加访问者的功能
      *
      * @param elementB
      */

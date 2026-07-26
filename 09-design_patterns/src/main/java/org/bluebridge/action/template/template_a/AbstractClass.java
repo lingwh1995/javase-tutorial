@@ -9,12 +9,12 @@ package org.bluebridge.action.template.template_a;
 public abstract class AbstractClass {
 
     /**
-     * 原语操作1，所谓原语操作就是抽象的操作，必须要由子类提供实现
+     * 原语操作 1，所谓原语操作就是抽象的操作，必须要由子类提供实现
      */
     public abstract void doPrimitiveOperation1();
 
     /**
-     * 原语操作2
+     * 原语操作 2
      */
     public abstract void doPrimitiveOperation2();
 

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * 一个简单的实现JDBC增删改查功能的模板
+ * 一个简单的实现 JDBC 增删改查功能的模板
  *
  * @author lingwh
  * @date 2019/8/26 16:02
@@ -40,7 +40,7 @@ public abstract class JDBCTemplate {
      * @param obj 需要被新增的数据对象
      */
     public final void create(Object obj) {
-        // 1. 获取新增的sql
+        // 1. 获取新增的 sql
         String sql = this.getMainSql(TYPE_CREATE);
         // 2. 调用通用的更新实现
         this.executeUpdate(sql, TYPE_CREATE, obj);
@@ -52,7 +52,7 @@ public abstract class JDBCTemplate {
      * @param obj 需要被修改的数据对象
      */
     public final void update(Object obj) {
-        // 1. 获取修改的sql
+        // 1. 获取修改的 sql
         String sql = this.getMainSql(TYPE_UPDATE);
         // 2. 调用通用的更新实现
         this.executeUpdate(sql, TYPE_UPDATE, obj);
@@ -64,7 +64,7 @@ public abstract class JDBCTemplate {
      * @param obj 需要被删除的数据对象
      */
     public final void delete(Object obj) {
-        // 1. 获取删除的sql
+        // 1. 获取删除的 sql
         String sql = this.getMainSql(TYPE_DELETE);
         // 2. 调用通用的更新实现
         this.executeUpdate(sql, TYPE_DELETE, obj);
@@ -77,7 +77,7 @@ public abstract class JDBCTemplate {
      * @return 符合条件的数据对象集合
      */
     public final Collection getByCondition(Object qm) {
-        // 1. 获取查询的sql
+        // 1. 获取查询的 sql
         String sql = this.getMainSql(TYPE_CONDITION);
         // 2. 调用通用的查询实现
         return this.getByCondition(sql, qm);
@@ -86,37 +86,37 @@ public abstract class JDBCTemplate {
     /*---------------------原语操作---------------------*/
 
     /**
-     * 获取操作需要的主干sql
+     * 获取操作需要的主干 sql
      *
      * @param type 操作类型
-     * @return 操作对应的主干sql
+     * @return 操作对应的主干 sql
      */
     protected abstract String getMainSql(int type);
 
     /**
-     * 为更新操作的sql中的"?"设置值
+     * 为更新操作的 sql 中的 "?" 设置值
      *
-     * @param type 操作类型
-     * @param pstmt PreparedStatement对象
-     * @param obj 操作的数据对象
+     * @param type  操作类型
+     * @param pstmt PreparedStatement 对象
+     * @param obj   操作的数据对象
      * @throws Exception
      */
     protected abstract void setUpdateSqlValue(int type, PreparedStatement pstmt, Object obj) throws Exception;
 
     /**
-     * 为通用查询动态的拼接sql的条件部分，基本思路是： 只有用户填写了相应的条件，那么才在sql中添加对应的条件
+     * 为通用查询动态的拼接 sql 的条件部分，基本思路是： 只有用户填写了相应的条件，那么才在 sql 中添加对应的条件
      *
-     * @param sql sql的主干部分
-     * @param qm 封装查询条件的数据模型
-     * @return 拼接好的sql语句
+     * @param sql sql 的主干部分
+     * @param qm  封装查询条件的数据模型
+     * @return 拼接好的 sql 语句
      */
     protected abstract String prepareQuerySql(String sql, Object qm);
 
     /**
-     * 为通用查询的sql动态设置条件的值
+     * 为通用查询的 sql 动态设置条件的值
      *
-     * @param pstmt 预处理查询sql的对象
-     * @param qm 封装查询条件的数据模型
+     * @param pstmt 预处理查询 sql 的对象
+     * @param qm    封装查询条件的数据模型
      * @throws Exception
      */
     protected abstract void setQuerySqlValue(PreparedStatement pstmt, Object qm) throws Exception;
@@ -146,8 +146,8 @@ public abstract class JDBCTemplate {
     /**
      * 执行查询
      *
-     * @param sql 查询的主干sql语句
-     * @param qm 封装查询条件的数据模型
+     * @param sql 查询的主干 sql 语句
+     * @param qm  封装查询条件的数据模型
      * @return 查询后的结果对象集合
      */
     protected Collection getByCondition(String sql, Object qm) {
@@ -181,9 +181,9 @@ public abstract class JDBCTemplate {
     }
 
     /**
-     * * 执行更改数据的sql语句，包括增删改的功能
+     * * 执行更改数据的 sql 语句，包括增删改的功能
      *
-     * @param sql 需要执行的sql语句
+     * @param sql  需要执行的 sql 语句
      * @param type
      * @param obj
      */

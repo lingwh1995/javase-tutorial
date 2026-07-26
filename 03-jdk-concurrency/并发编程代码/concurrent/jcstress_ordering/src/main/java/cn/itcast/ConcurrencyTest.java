@@ -8,7 +8,7 @@ import org.openjdk.jcstress.infra.results.I_Result;
  * 并发重排序测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/7 14:23
  */
 @JCStressTest
 @Outcome(id = {"1", "4"}, expect = Expect.ACCEPTABLE, desc = "ok")

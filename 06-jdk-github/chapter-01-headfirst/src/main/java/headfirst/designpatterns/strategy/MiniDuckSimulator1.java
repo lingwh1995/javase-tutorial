@@ -4,7 +4,7 @@ package headfirst.designpatterns.strategy;
  * 迷你鸭子模拟器1
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:05
  */
 public class MiniDuckSimulator1 {
 

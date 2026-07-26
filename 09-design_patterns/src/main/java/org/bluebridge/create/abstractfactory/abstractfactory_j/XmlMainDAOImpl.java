@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_j;
 
 /**
- * xml方式操作主数据库
+ * xml 方式操作主数据库
  *
  * @author lingwh
  * @date 2019/9/4 11:38

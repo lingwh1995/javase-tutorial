@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.challenge;
  * 东部时区
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2023/12/7 22:49
  */
 public class ZoneEastern extends Zone {
 

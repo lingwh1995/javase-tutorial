@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.simpleremote;
  * 命令接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:31
  */
 public interface Command {
 

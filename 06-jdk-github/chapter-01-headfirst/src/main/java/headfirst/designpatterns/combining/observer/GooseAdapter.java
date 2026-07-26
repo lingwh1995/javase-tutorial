@@ -4,7 +4,7 @@ package headfirst.designpatterns.combining.observer;
  * 鹅适配器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:23
  */
 public class GooseAdapter implements Quackable {
 
@@ -16,11 +16,13 @@ public class GooseAdapter implements Quackable {
         observable = new Observable(this);
     }
 
+    @Override
     public void quack() {
         goose.honk();
         notifyObservers();
     }
 
+    @Override
     public void registerObserver(Observer observer) {
         observable.registerObserver(observer);
     }

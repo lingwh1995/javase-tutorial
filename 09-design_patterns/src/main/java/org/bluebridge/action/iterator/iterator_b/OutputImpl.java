@@ -6,7 +6,7 @@ import java.util.List;
  * 输出实现类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class OutputImpl {
 
@@ -26,7 +26,7 @@ public class OutputImpl {
     }
 
     /**
-     * 遍历所有的学院,调用printDepartment输出系
+     * 遍历所有的学院，调用 printDepartment 输出系
      */
     public void printCollege() {
         for (College college : collegeList) {

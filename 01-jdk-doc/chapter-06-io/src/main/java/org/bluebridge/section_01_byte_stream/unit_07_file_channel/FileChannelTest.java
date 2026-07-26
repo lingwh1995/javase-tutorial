@@ -7,7 +7,7 @@ import java.nio.channels.FileChannel;
 /**
  * FileChannel
  *
- * 用于读取、写入文件的通道,只能被RandomAccessFile、FileInputStream、FileOutputStream创建
+ * 用于读取、写入文件的通道，只能被 RandomAccessFile、FileInputStream、FileOutputStream 创建
  *
  * @author lingwh
  * @date 2019/9/25 13:14

@@ -1,6 +1,6 @@
 package org.bluebridge.structure.decorator.decorator_h;
 
-import structure.decorator.decorator_g.TempDB;
+import org.bluebridge.structure.decorator.decorator_g.TempDB;
 
 import java.util.Date;
 
@@ -20,7 +20,7 @@ public class GroupPrizeDecorator extends Decorator {
     public double calcPrize(String user, Date begin, Date end) {
         // 1. 先获取前面运算出来的奖金
         double money = super.calcPrize(user, begin, end);
-        // 2. 然后计算当月团队业务奖金，先计算出团队总的业务额，然后再乘以1%
+        // 2. 然后计算当月团队业务奖金，先计算出团队总的业务额，然后再乘以 1%
         // 假设都是一个团队的
         double group = 0.0;
         for (double d : TempDB.mapMonthSaleMoney.values()) {

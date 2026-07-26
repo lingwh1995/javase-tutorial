@@ -7,7 +7,7 @@ import org.junit.Test;
  * 有限状态机，又称有限状态自动机，简称状态机 - 使用常量作为状态码实现状态机
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/5/10 16:41
  */
 @Slf4j
 public class FSM1Test {

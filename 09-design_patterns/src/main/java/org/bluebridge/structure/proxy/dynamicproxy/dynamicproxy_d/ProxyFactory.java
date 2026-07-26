@@ -7,10 +7,10 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * CGLIB代理工厂
+ * CGLIB 代理工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:30
  */
 public class ProxyFactory implements MethodInterceptor {
 

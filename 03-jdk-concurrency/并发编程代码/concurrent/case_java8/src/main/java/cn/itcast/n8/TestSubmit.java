@@ -10,10 +10,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
- * 线程池submit测试
+ * 线程池 submit 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 13:45
  */
 @Slf4j(topic = "c.TestSubmit")
 public class TestSubmit {

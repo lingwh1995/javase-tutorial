@@ -4,7 +4,7 @@ package org.bluebridge.action.command.command_c;
  * 客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class Client {
 
@@ -17,7 +17,7 @@ public class Client {
 
         // 创建遥控器
         RemoteContoller remoteContoller = new RemoteContoller();
-        // no=0是电灯的开和关的操作
+        // no=0 是电灯的开和关的操作
         remoteContoller.setCommand(0, lightOnCommand, lightOffCommand);
         // 开灯
         remoteContoller.onButtonWasPush(0);
@@ -31,7 +31,7 @@ public class Client {
         TvOnCommand tvOnCommand = new TvOnCommand(tvReceiver);
         TvOffCommand tvOffCommand = new TvOffCommand(tvReceiver);
 
-        // no=1是电视机的开和关的操作
+        // no=1 是电视机的开和关的操作
         remoteContoller.setCommand(1, tvOnCommand, tvOffCommand);
         remoteContoller.onButtonWasPush(1);
         remoteContoller.offButtonWasPush(1);

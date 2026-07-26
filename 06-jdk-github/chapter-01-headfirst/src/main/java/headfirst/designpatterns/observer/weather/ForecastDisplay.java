@@ -4,7 +4,7 @@ package headfirst.designpatterns.observer.weather;
  * 天气预报展示
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 21:47
  */
 public class ForecastDisplay implements Observer, DisplayElement {
 
@@ -17,6 +17,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
+    @Override
     public void update(float temp, float humidity, float pressure) {
         lastPressure = currentPressure;
         currentPressure = pressure;
@@ -24,6 +25,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
         display();
     }
 
+    @Override
     public void display() {
         System.out.print("Forecast: ");
         if (currentPressure > lastPressure) {

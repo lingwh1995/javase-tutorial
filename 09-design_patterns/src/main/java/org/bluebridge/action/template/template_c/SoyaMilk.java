@@ -4,17 +4,17 @@ package org.bluebridge.action.template.template_c;
  * 豆浆
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public abstract class SoyaMilk {
 
     /**
-     * 模板方法,设置为final,不允许子类覆盖此方法
+     * 模板方法，设置为 final，不允许子类覆盖此方法
      */
     public final void make() {
         // 选料
         select();
-        // 添加配料:使用钩子方法增强
+        // 添加配料：使用钩子方法增强
         if (hook()) {
             addIngredients();
         }
@@ -51,7 +51,7 @@ public abstract class SoyaMilk {
     }
 
     /**
-     * 钩子方法:确定是否添加配料
+     * 钩子方法：确定是否添加配料
      */
     public boolean hook() {
         return true;

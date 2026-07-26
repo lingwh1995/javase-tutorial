@@ -3,10 +3,10 @@ package org.bluebridge.create.abstractfactory.abstractfactory_d.service;
 import org.bluebridge.create.abstractfactory.abstractfactory_d.domain.Cusomer;
 
 /**
- * Mysql客户服务实现
+ * Mysql 客户服务实现
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:39
  */
 public class CustomerServiceMysql implements ICustomerService {
 

@@ -18,7 +18,7 @@ public class Client {
         Iterator it = salaryManager.createIterator();
         // 首先设置迭代器到第一个元素
         it.first();
-        // 先next一个
+        // 先 next 一个
         if (!it.isDone()) {
             PayModel pm = (PayModel) it.currentItem();
             System.out.println("next1 == " + pm);
@@ -26,7 +26,7 @@ public class Client {
             it.next();
         }
 
-        // 然后previous一个
+        // 然后 previous 一个
         if (!it.isFirst()) {
             // 向前迭代一个
             it.previous();
@@ -34,7 +34,7 @@ public class Client {
             System.out.println("previous1 == " + pm);
         }
 
-        // 再next一个
+        // 再 next 一个
         if (!it.isDone()) {
             PayModel pm = (PayModel) it.currentItem();
             System.out.println("next2 == " + pm);
@@ -42,7 +42,7 @@ public class Client {
             it.next();
         }
 
-        // 继续next一个
+        // 继续 next 一个
         if (!it.isDone()) {
             PayModel pm = (PayModel) it.currentItem();
             System.out.println("next3 == " + pm);
@@ -50,7 +50,7 @@ public class Client {
             it.next();
         }
 
-        // 然后previous一个
+        // 然后 previous 一个
         if (!it.isFirst()) {
             // 向前迭代一个
             it.previous();

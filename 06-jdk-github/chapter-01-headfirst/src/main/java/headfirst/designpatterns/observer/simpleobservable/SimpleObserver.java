@@ -7,7 +7,7 @@ import java.util.Observer;
  * 简单观察者
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 08:38
  */
 public class SimpleObserver implements Observer {
 

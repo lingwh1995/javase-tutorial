@@ -4,7 +4,7 @@ package headfirst.designpatterns.combining.ducks;
  * 诱饵鸭
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:19
  */
 public class DecoyDuck implements Quackable {
 

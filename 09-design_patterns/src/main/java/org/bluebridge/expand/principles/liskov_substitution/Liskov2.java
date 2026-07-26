@@ -3,19 +3,20 @@ package org.bluebridge.expand.principles.liskov_substitution;
 /**
  * 使用里氏替换原则
  *
- * 1. B2类不再继承A2类，改为A2类和B2类都继承一个基类Base
- * 2. 这样调用者通过查看继承关系，明显的就知道了B2类中的fun1()里面的逻辑是a+b，而不是a-b
- * 3. 把A2和B2中的公用方法printHelloWorld()抽取到了Base中
+ * 1. B2 类不再继承 A2 类，改为 A2 类和 B2 类都继承一个基类 Base
+ * 2. 这样调用者通过查看继承关系，明显的就知道了 B2 类中的 fun1() 里面的逻辑是 a+b，而不是 a-b
+ * 3. 把 A2 和 B2 中的公用方法 printHelloWorld() 抽取到了 Base 中
  *
- * 注意：本来B2继承了A2，可以直接调用父类A2中的方法，里氏替换原则修改代码后，B2不再继承A2，B2想要调用A2中的方法则可以通过依赖A2来实现调用
+ * 注意：本来 B2 继承了 A2，可以直接调用父类 A2 中的方法，里氏替换原则修改代码后，B2 不再继承 A2，B2 想要调用 A2
+ * 中的方法则可以通过依赖 A2 来实现调用
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:33
  */
 public class Liskov2 {
 
     /**
-     * 将A2和B2中的公用方法printHelloWorld()抽取到了Base中
+     * 将 A2 和 B2 中的公用方法 printHelloWorld() 抽取到了 Base 中
      */
     public void printHelloWorld() {
         System.out.println("Hello World!");
@@ -23,12 +24,12 @@ public class Liskov2 {
 }
 
 class Base {
-    // 把更加基础的方法和成员写到Base类中
+    // 把更加基础的方法和成员写到 Base 类中
 }
 
 class A2 extends Base {
     /**
-     * 返回 a与b的差
+     * 返回 a 与 b 的差
      *
      * @param a
      * @param b
@@ -41,11 +42,11 @@ class A2 extends Base {
 
 class B2 extends Base {
 
-    // B通过这个方式依赖A
+    // B 通过这个方式依赖 A
     private A2 a2 = new A2();
 
     /**
-     * 返回 a与b的和
+     * 返回 a 与 b 的和
      *
      * @param a
      * @param b
@@ -56,7 +57,7 @@ class B2 extends Base {
     }
 
     /**
-     * B2独有方法，非继承自A2 返回 a与b的和加上9
+     * B2 独有方法，非继承自 A2 返回 a 与 b 的和加上 9
      *
      * @param a
      * @param b
@@ -67,7 +68,8 @@ class B2 extends Base {
     }
 
     /**
-     * 里氏替换原则，如果B2和A2同时继承了基类Base，那么当B2想要使用A2类中的方法的时候，可以通过依赖的方式来调用A类2中的方法
+     * 里氏替换原则，如果 B2 和 A2 同时继承了基类 Base，那么当 B2 想要使用 A2 类中的方法的时候，可以通过依赖的方式来调用 A 类 2
+     * 中的方法
      *
      * @param a
      * @param b

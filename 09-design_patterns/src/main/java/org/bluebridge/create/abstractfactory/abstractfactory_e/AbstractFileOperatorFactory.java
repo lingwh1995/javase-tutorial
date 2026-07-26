@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_e;
 
 /**
- * 生产操作操作文件API的工厂
+ * 生产操作操作文件 API 的工厂
  *
  * @author lingwh
  * @date 2019/8/2 11:34

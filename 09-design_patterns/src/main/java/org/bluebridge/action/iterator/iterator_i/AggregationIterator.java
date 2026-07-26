@@ -13,7 +13,7 @@ public interface AggregationIterator {
     /**
      * 判断是否还有下一个元素，无所谓是否够一页的数据， 因为最后哪怕只有一条数据，也是要算一页的
      *
-     * @return 如果有下一个元素，返回true，没有下一个元素就返回false
+     * @return 如果有下一个元素，返回 true，没有下一个元素就返回 false
      */
     public boolean hasNext();
 
@@ -28,7 +28,7 @@ public interface AggregationIterator {
     /**
      * 判断是否还有上一个元素，无所谓是否够一页的数据， 因为最后哪怕只有一条数据，也是要算一页的
      *
-     * @return 如果有上一个元素，返回true，没有上一个元素就返回false
+     * @return 如果有上一个元素，返回 true，没有上一个元素就返回 false
      */
     public boolean hasPrevious();
 

@@ -4,7 +4,7 @@ package headfirst.designpatterns.combined.djview;
  * 心跳适配器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:22
  */
 public class HeartAdapter implements BeatModelInterface {
 
@@ -14,34 +14,43 @@ public class HeartAdapter implements BeatModelInterface {
         this.heart = heart;
     }
 
+    @Override
     public void initialize() {
     }
 
+    @Override
     public void on() {
     }
 
+    @Override
     public void off() {
     }
 
+    @Override
     public int getBPM() {
         return heart.getHeartRate();
     }
 
+    @Override
     public void setBPM(int bpm) {
     }
 
+    @Override
     public void registerObserver(BeatObserver o) {
         heart.registerObserver(o);
     }
 
+    @Override
     public void removeObserver(BeatObserver o) {
         heart.removeObserver(o);
     }
 
+    @Override
     public void registerObserver(BPMObserver o) {
         heart.registerObserver(o);
     }
 
+    @Override
     public void removeObserver(BPMObserver o) {
         heart.removeObserver(o);
     }

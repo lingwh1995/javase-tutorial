@@ -24,7 +24,7 @@ public class ConcreteAggregate extends Aggregate {
 
     @Override
     public Iterator createIterator() {
-        // 实现创建Iterator的工厂方法
+        // 实现创建 Iterator 的工厂方法
         return new ConcreteIterator(this);
     }
 

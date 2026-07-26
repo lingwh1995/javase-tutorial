@@ -4,7 +4,7 @@ package headfirst.designpatterns.decorator.starbuzz;
  * 摩卡调料
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 16:02
  */
 public class Mocha extends CondimentDecorator {
 
@@ -12,10 +12,12 @@ public class Mocha extends CondimentDecorator {
         this.beverage = beverage;
     }
 
+    @Override
     public String getDescription() {
         return beverage.getDescription() + ", Mocha";
     }
 
+    @Override
     public double cost() {
         return .20 + beverage.cost();
     }

@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzaaf;
  * 蔬菜披萨
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2023/12/7 18:05
  */
 public class VeggiePizza extends Pizza {
 
@@ -14,6 +14,7 @@ public class VeggiePizza extends Pizza {
         this.ingredientFactory = ingredientFactory;
     }
 
+    @Override
     void prepare() {
         System.out.println("Preparing " + name);
         dough = ingredientFactory.createDough();

@@ -1,10 +1,10 @@
 package headfirst.designpatterns.facade.hometheater;
 
 /**
- * DVD播放器
+ * DVD 播放器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 21:15
  */
 public class DvdPlayer {
 

@@ -16,7 +16,7 @@ public class Client {
         boolean f1 = securityMgr.hasAuthority("张三", "薪资数据", "查看");
         boolean f2 = securityMgr.hasAuthority("李四", "薪资数据", "查看");
 
-        // 表示张三对薪资数据没有查看的权限；而f2为true，表示李四对对薪资数据有查看的权限，是正确的，基本完成了功能。
+        // 表示张三对薪资数据没有查看的权限；而 f2 为 true，表示李四对对薪资数据有查看的权限，是正确的，基本完成了功能。
         System.out.println("f1==" + f1);
         System.out.println("f2==" + f2);
 

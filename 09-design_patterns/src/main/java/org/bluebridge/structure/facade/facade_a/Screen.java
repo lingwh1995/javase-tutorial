@@ -4,7 +4,7 @@ package org.bluebridge.structure.facade.facade_a;
  * 电影幕布
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:05
  */
 public class Screen {
 

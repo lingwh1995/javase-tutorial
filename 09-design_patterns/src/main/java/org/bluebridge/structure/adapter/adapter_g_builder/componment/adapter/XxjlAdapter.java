@@ -8,7 +8,7 @@ import org.bluebridge.structure.adapter.adapter_g_builder.service.IXxjlService;
  * 信息交流适配器
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 14:08
  */
 public class XxjlAdapter implements IXxjlService {
 
@@ -18,9 +18,9 @@ public class XxjlAdapter implements IXxjlService {
     private IXxjlDao xxjlSjrDao = new XxjlSjrDao();
     // Openfire
     private XxjlOpenfireDao xxjlOpenfireDao = new XxjlOpenfireDao();
-    // 公安厅指令Dao
+    // 公安厅指令 Dao
     private GatzlDao gatzlDao = new GatzlDao();
-    // 通知通告Dao
+    // 通知通告 Dao
     private TztgDao tztgDao = new TztgDao();
 
     @Override
@@ -29,7 +29,7 @@ public class XxjlAdapter implements IXxjlService {
         xxjlFjrDao.save(xxjl);
         // 保存收件人
         xxjlSjrDao.save(xxjl);
-        // openfire发送通知
+        // openfire 发送通知
         xxjlOpenfireDao.sendXxjlNotice(xxjl);
         // 发送短信
         gatzlDao.sendMsg("123456789");
@@ -43,7 +43,7 @@ public class XxjlAdapter implements IXxjlService {
         xxjlFjrDao.delete(xxjl);
         // 删除收件人
         xxjlSjrDao.delete(xxjl);
-        // openfire发送通知
+        // openfire 发送通知
         xxjlOpenfireDao.sendXxjlNotice(xxjl);
         // 发送短信
         gatzlDao.sendMsg("123456789");

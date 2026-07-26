@@ -9,7 +9,7 @@ import java.util.concurrent.FutureTask;
  * 线程启动方式
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 20:41
  */
 @Slf4j(topic = "c.ThreadStarter")
 public class ThreadStarter {
@@ -28,7 +28,7 @@ public class ThreadStarter {
         // 创建任务对象
         Runnable task2 = () -> log.debug("hello");
 
-        // 参数1 是任务对象; 参数2 是线程名字，推荐
+        // 参数 1 是任务对象; 参数 2 是线程名字，推荐
         Thread t2 = new Thread(task2, "t2");
         t2.start();
 
@@ -39,7 +39,7 @@ public class ThreadStarter {
             return 100;
         });
 
-        // 参数1 是任务对象; 参数2 是线程名字，推荐
+        // 参数 1 是任务对象; 参数 2 是线程名字，推荐
         new Thread(task3, "t3").start();
 
         // 主线程阻塞，同步等待 task 执行完毕的结果

@@ -1,15 +1,15 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_c.factory;
 
-import create.abstractfactory.abstractfactory_c.service.CustomerServiceMysql;
-import create.abstractfactory.abstractfactory_c.service.ICustomerService;
-import create.abstractfactory.abstractfactory_c.service.IUserService;
-import create.abstractfactory.abstractfactory_c.service.UserServiceMysql;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.CustomerServiceMysql;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.ICustomerService;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.IUserService;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.UserServiceMysql;
 
 /**
  * Mysql 数据库工厂
  *
  * @author lingwh
- * @date 2026/7/13 8:35
+ * @date 2026/7/22 09:12
  */
 public class MysqlFactory implements PersistencecFactory {
 

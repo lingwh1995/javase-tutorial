@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_j;
 
 /**
- * 订单主记录对应的DAO操作接口
+ * 订单主记录对应的 DAO 操作接口
  *
  * @author lingwh
  * @date 2019/9/4 11:35

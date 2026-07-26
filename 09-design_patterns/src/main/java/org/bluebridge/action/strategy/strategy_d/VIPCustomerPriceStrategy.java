@@ -1,7 +1,7 @@
 package org.bluebridge.action.strategy.strategy_d;
 
 /**
- * VIP客户:打九折
+ * VIP 客户：打九折
  *
  * @author lingwh
  * @date 2019/8/2 15:10
@@ -9,7 +9,7 @@ package org.bluebridge.action.strategy.strategy_d;
 public class VIPCustomerPriceStrategy implements PriceStragegy {
 
     /**
-     * 针对VIP客户的计算策略
+     * 针对 VIP 客户的计算策略
      *
      * @param price 具体的价格
      * @return

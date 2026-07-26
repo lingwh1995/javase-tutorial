@@ -18,7 +18,7 @@ public class Client {
         // 向小李支付工资
         ctx1.payNow();
 
-        // 切换一个人，给petter支付工资
+        // 切换一个人，给 petter 支付工资
         PaymentContext ctx2 = new PaymentContext("Petter", 8000, strategyDollar);
         ctx2.payNow();
     }

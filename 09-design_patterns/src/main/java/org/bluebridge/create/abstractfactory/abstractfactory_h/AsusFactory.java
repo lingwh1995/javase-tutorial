@@ -3,7 +3,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_h;
 /**
  * 华硕工厂
  *
- * 组装华硕电脑，华硕电脑搭载Intel CPU和技嘉主板
+ * 组装华硕电脑，华硕电脑搭载 Intel CPU 和技嘉主板
  *
  * @author lingwh
  * @date 2019/8/7 14:50
@@ -11,16 +11,16 @@ package org.bluebridge.create.abstractfactory.abstractfactory_h;
 public class AsusFactory implements AbstractFactory {
 
     /**
-     * 构造方法在此处无意义,只是标识一个这个类是华硕
+     * 构造方法在此处无意义，只是标识一个这个类是华硕
      */
     public AsusFactory() {
         System.out.println("华硕电脑工厂准备生产华硕电脑,华硕电脑搭载Intel牌CPU和技嘉主板");
     }
 
     /**
-     * 创建CPU的对象 Intel牌CPU
+     * 创建 CPU 的对象 Intel 牌 CPU
      *
-     * @return CPU的对象
+     * @return CPU 的对象
      */
     @Override
     public CPUApi createCPU() {

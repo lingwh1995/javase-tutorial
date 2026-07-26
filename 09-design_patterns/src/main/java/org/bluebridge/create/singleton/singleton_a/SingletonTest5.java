@@ -3,11 +3,11 @@ package org.bluebridge.create.singleton.singleton_a;
 /**
  * 枚举实现单例模式
  * 1. 优点
- *    - 实现简单
- *    - 枚举本身就是单例模式,由JVM从根本上提供保障！避免通过反射和反序列化的漏洞
- *    - 反射漏洞:即使构造方法私有化，依然可以通过反射创建对象
+ * - 实现简单
+ * - 枚举本身就是单例模式，由 JVM 从根本上提供保障！避免通过反射和反序列化的漏洞
+ * - 反射漏洞：即使构造方法私有化，依然可以通过反射创建对象
  * 2. 缺点
- *    - 无延迟加载(没有lazy-load机制)
+ * - 无延迟加载(没有 lazy-load 机制)
  *
  * @author lingwh
  * @date 2019/3/23 22:10
@@ -23,7 +23,7 @@ public class SingletonTest5 {
     }
 }
 
-enum Singleton5{
+enum Singleton5 {
 
     INSTACE;
 }

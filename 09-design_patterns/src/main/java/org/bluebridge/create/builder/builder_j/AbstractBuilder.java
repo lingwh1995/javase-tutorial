@@ -17,21 +17,21 @@ public abstract class AbstractBuilder {
     protected StringBuffer buffer = new StringBuffer();
 
     /**
-     * 构建输出文件的Header部分
+     * 构建输出文件的 Header 部分
      *
      * @param ehm 文件头的内容
      */
     abstract void buildHeader(ExportHeaderModel ehm);
 
     /**
-     * 构建输出文件的Body部分
+     * 构建输出文件的 Body 部分
      *
      * @param mapData 要输出的数据的内容
      */
     abstract void buildBody(Map<String, Collection<ExportDataModel>> mapData);
 
     /**
-     * 构建输出文件的Footer部分
+     * 构建输出文件的 Footer 部分
      *
      * @param efm 文件尾的内容
      */

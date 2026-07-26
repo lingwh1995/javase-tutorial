@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * 模拟数据库:可以提供权限相关数据
+ * 模拟数据库：可以提供权限相关数据
  *
  * @author lingwh
  * @date 2019/7/30 15:04

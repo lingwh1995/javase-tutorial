@@ -4,7 +4,7 @@ package org.bluebridge.action.iterator.iterator_b;
  * 学院接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public interface College {
 
@@ -16,7 +16,7 @@ public interface College {
     void addDepartment(String name, String desc);
 
     /**
-     * 返回一个迭代器,遍历
+     * 返回一个迭代器，遍历
      */
     Iterator ceateIterator();
 }

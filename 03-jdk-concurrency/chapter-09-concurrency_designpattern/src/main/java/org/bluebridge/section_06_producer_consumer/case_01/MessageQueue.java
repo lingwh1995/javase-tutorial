@@ -3,10 +3,10 @@ package org.bluebridge.section_06_producer_consumer.case_01;
 import java.util.LinkedList;
 
 /**
- * 消息队列类，java线程之间通信
+ * 消息队列类，java 线程之间通信
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/28 14:23
  */
 class MessageQueue {
 

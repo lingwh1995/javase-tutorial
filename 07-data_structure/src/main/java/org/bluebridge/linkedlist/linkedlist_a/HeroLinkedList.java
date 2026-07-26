@@ -1,10 +1,10 @@
 package org.bluebridge.linkedlist.linkedlist_a;
 
 /**
- * 链表模拟梁山108英雄排行榜
+ * 链表模拟梁山 108 英雄排行榜
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:17
  */
 public class HeroLinkedList {
 
@@ -20,7 +20,7 @@ public class HeroLinkedList {
      * @return 插入成功返回插入的英雄
      */
     public Node add(Node hero) {
-        // tips:链表的插入需要把要插入的目标节点插入到最后一个节点,初始化的时候使调度节点指向链表中第一个节点
+        // tips：链表的插入需要把要插入的目标节点插入到最后一个节点，初始化的时候使调度节点指向链表中第一个节点
         Node tempNode = headNode;
         while (true) {
             if (null == tempNode.next) {

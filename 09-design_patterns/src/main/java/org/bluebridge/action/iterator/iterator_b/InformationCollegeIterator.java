@@ -3,10 +3,10 @@ package org.bluebridge.action.iterator.iterator_b;
 import java.util.List;
 
 /**
- * 信息工程学院:元素存放在集合中
+ * 信息工程学院：元素存放在集合中
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class InformationCollegeIterator implements Iterator {
 

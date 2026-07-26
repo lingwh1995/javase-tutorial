@@ -7,10 +7,10 @@ import static cn.itcast.n2.util.Sleeper.sleep;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * 自旋锁CAS实现
+ * 自旋锁 CAS 实现
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/7 09:36
  */
 @Slf4j(topic = "c.Test42")
 public class LockCas {

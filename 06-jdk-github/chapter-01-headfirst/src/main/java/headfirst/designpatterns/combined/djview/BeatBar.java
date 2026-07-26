@@ -6,7 +6,7 @@ import javax.swing.*;
  * 节拍进度条
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 09:41
  */
 public class BeatBar extends JProgressBar implements Runnable {
 

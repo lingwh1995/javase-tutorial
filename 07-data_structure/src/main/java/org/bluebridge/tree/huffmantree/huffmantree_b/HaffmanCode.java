@@ -6,15 +6,15 @@ import java.util.*;
  * 赫夫曼编码
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:33
  */
 public class HaffmanCode {
 
     /**
      * 生成赫夫曼树对应的赫夫曼编码
-     * 1. 将赫夫曼编码表存放在Map<Byte,String>形式
-     *    32->01 97->100 100->11000等形式
-     * 2. 在生成赫夫曼编码表时，需要去拼接路径，定义一个StringBuilder，存储某个叶子节点的路径
+     * 1. 将赫夫曼编码表存放在 Map<Byte,String> 形式
+     *    32 -> 01 97 -> 100 100 -> 11000 等形式
+     * 2. 在生成赫夫曼编码表时，需要去拼接路径，定义一个 StringBuilder，存储某个叶子节点的路径
      */
     static Map<Byte, String> huffmanCodes = new HashMap<Byte, String>();
 
@@ -58,7 +58,7 @@ public class HaffmanCode {
      * @return
      */
     private static byte[] deode(Map<Byte, String> huffmanCodes, byte[] huffmanBytes) {
-        // 1.得到赫夫曼数组对应的二进制字符串
+        // 1. 得到赫夫曼数组对应的二进制字符串
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < huffmanBytes.length; i++) {
             byte b = huffmanBytes[i];
@@ -75,7 +75,7 @@ public class HaffmanCode {
         }
         System.out.println("reverseHuffmanMap:" + reverseHuffmanMap);
 
-        // 创建集合，存放byte
+        // 创建集合，存放 byte
         ArrayList<Byte> list = new ArrayList<>();
         for (int i = 0; i < stringBuilder.length();) {
             int count = 1;
@@ -83,7 +83,7 @@ public class HaffmanCode {
             Byte charElement = null;
             while (flag) {
                 // 取出一个'1' '0'
-                // i不动，让count移动，指定匹配到一个字符
+                // i 不动，让 count 移动，指定匹配到一个字符
                 String key = stringBuilder.substring(i, count + i);
                 charElement = reverseHuffmanMap.get(key);
                 if (charElement == null) {
@@ -95,7 +95,7 @@ public class HaffmanCode {
                 }
             }
             list.add(charElement);
-            // i直接移动到count的位置
+            // i 直接移动到 count 的位置
             i += count;
         }
         byte[] bytes = new byte[list.size()];
@@ -192,22 +192,22 @@ public class HaffmanCode {
      */
     private static Node ceateHuffmanTree(List<Node> nodes) {
         while (nodes.size() > 1) {
-            // 1.排序
+            // 1. 排序
             Collections.sort(nodes);
-            // 2.获取权值最小的二叉树和权值次小的二叉树
+            // 2. 获取权值最小的二叉树和权值次小的二叉树
             Node leftNode = nodes.get(0);
             Node rightNode = nodes.get(1);
-            // 3.根据获取到的两个节点的创建新的二叉树
+            // 3. 根据获取到的两个节点的创建新的二叉树
             Node parent = new Node(null, leftNode.weight + rightNode.weight);
             parent.left = leftNode;
             parent.right = rightNode;
-            // 4.把parent加入到nodes中
+            // 4. 把 parent 加入到 nodes 中
             nodes.add(parent);
-            // 5.从list中删除两个节点
+            // 5. 从 list 中删除两个节点
             nodes.remove(leftNode);
             nodes.remove(rightNode);
         }
-        // 6.返回根节点
+        // 6. 返回根节点
         return nodes.get(0);
     }
 

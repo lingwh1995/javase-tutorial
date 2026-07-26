@@ -17,7 +17,7 @@ import org.w3c.dom.NodeList;
 public class Context {
 
     /**
-     * Dom解析Xml的Document对象
+     * Dom 解析 Xml 的 Document 对象
      */
     private Document document = null;
 
@@ -29,11 +29,11 @@ public class Context {
     /**
      * 构造方法
      *
-     * @param filePathName 需要读取的xml的路径和名字
+     * @param filePathName 需要读取的 xml 的路径和名字
      * @throws Exception
      */
     public Context(String filePathName) throws Exception {
-        // 通过辅助的Xml工具类来获取被解析的xml对应的Document对象
+        // 通过辅助的 Xml 工具类来获取被解析的 xml 对应的 Document 对象
         this.document = XmlUtil.getRoot(filePathName);
     }
 
@@ -45,9 +45,9 @@ public class Context {
     }
 
     /**
-     * 各个Expression公共使用的方法, 根据父元素和当前元素的名称来获取当前的多个元素的集合
+     * 各个 Expression 公共使用的方法，根据父元素和当前元素的名称来获取当前的多个元素的集合
      *
-     * @param pEle 父元素
+     * @param pEle    父元素
      * @param eleName 当前元素的名称
      * @return 当前的多个元素的集合
      */

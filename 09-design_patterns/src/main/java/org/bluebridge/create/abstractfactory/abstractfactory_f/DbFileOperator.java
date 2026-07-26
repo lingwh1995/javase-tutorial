@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_f;
 
 /**
- * 提供导出文件到数据库脚本API 的对象,本质上是一个API的提供者
+ * 提供导出文件到数据库脚本 API 的对象，本质上是一个 API 的提供者
  *
  * @author lingwh
  * @date 2019/8/2 10:20

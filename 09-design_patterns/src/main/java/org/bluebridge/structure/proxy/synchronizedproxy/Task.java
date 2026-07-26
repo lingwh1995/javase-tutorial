@@ -4,7 +4,7 @@ package org.bluebridge.structure.proxy.synchronizedproxy;
  * 任务接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:20
  */
 public interface Task {
 

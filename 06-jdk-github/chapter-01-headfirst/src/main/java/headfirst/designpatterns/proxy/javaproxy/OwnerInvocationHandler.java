@@ -6,7 +6,7 @@ import java.lang.reflect.*;
  * 拥有者调用处理器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 13:36
  */
 public class OwnerInvocationHandler implements InvocationHandler {
 

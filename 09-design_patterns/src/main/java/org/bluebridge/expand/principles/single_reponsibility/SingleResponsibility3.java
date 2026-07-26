@@ -6,7 +6,7 @@ import org.junit.Test;
  * 方法级别的单一职能原则，会导致类中方法大爆炸
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:38
  */
 public class SingleResponsibility3 {
 

@@ -4,7 +4,7 @@ package headfirst.designpatterns.iterator.dinermerger;
  * 菜单项
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:16
  */
 public class MenuItem {
 
@@ -36,6 +36,7 @@ public class MenuItem {
         return vegetarian;
     }
 
+    @Override
     public String toString() {
         return (name + ", $" + price + "\n   " + description);
     }

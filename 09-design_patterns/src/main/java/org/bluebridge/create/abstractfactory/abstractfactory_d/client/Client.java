@@ -31,11 +31,11 @@ public class Client {
 
         // 使用抽象工厂方法(通过简单工厂改进过)模式
         IUserService userOperator = EasyPersistenceFactory.createUserOperator();
-        // 操作User表
+        // 操作 User 表
         userOperator.get(1);
 
         ICustomerService customerOperator = EasyPersistenceFactory.createCustomerOperator();
-        // 操作Customer表
+        // 操作 Customer 表
         customerOperator.get(1);
     }
 }

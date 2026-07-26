@@ -4,7 +4,7 @@ package headfirst.designpatterns.facade.hometheater;
  * 影院灯光
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 13:39
  */
 public class TheaterLights {
 
@@ -26,6 +26,7 @@ public class TheaterLights {
         System.out.println(description + " dimming to " + level + "%");
     }
 
+    @Override
     public String toString() {
         return description;
     }

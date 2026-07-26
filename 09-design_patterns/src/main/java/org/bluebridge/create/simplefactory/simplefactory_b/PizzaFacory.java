@@ -4,7 +4,7 @@ package org.bluebridge.create.simplefactory.simplefactory_b;
  * 披萨工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:27
  */
 public class PizzaFacory {
 

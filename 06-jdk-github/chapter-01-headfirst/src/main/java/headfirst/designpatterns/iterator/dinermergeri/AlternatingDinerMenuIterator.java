@@ -7,7 +7,7 @@ import java.util.Iterator;
  * 交替餐厅菜单迭代器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:34
  */
 public class AlternatingDinerMenuIterator implements Iterator<Object> {
 

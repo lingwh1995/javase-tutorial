@@ -1,10 +1,10 @@
 package headfirst.designpatterns.combined.djview;
 
 /**
- * DJ测试驱动类
+ * DJ 测试驱动类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:04
  */
 public class DJTestDrive {
 

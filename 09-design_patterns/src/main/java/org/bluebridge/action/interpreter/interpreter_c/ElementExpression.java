@@ -13,7 +13,7 @@ import org.w3c.dom.Element;
 public class ElementExpression extends ReadXmlExpression {
 
     /**
-     * 用来记录组合的ReadXmlExpression元素
+     * 用来记录组合的 ReadXmlExpression 元素
      */
     private Collection<ReadXmlExpression> eles = new ArrayList<ReadXmlExpression>();
 
@@ -38,7 +38,7 @@ public class ElementExpression extends ReadXmlExpression {
 
     public String[] interpret(Context c) {
         // 先取出上下文里的当前元素作为父级元素
-        // 查找到当前元素名称所对应的xml元素，并设置回到上下文中
+        // 查找到当前元素名称所对应的 xml 元素，并设置回到上下文中
         Element pEle = c.getPreEle();
         if (pEle == null) {
             // 说明现在获取的是根元素
@@ -50,7 +50,7 @@ public class ElementExpression extends ReadXmlExpression {
             c.setPreEle(nowEle);
         }
 
-        // 循环调用子元素的interpret方法
+        // 循环调用子元素的 interpret 方法
         String[] ss = null;
         for (ReadXmlExpression ele : eles) {
             ss = ele.interpret(c);

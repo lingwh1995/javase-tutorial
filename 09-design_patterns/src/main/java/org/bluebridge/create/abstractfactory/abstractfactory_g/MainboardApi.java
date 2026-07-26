@@ -9,7 +9,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_g;
 public interface MainboardApi {
 
     /**
-     * 给主板安装CPU
+     * 给主板安装 CPU
      */
     void installCPU();
 }

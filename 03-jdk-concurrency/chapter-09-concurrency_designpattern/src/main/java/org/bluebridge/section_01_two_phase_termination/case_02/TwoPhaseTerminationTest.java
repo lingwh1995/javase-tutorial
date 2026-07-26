@@ -4,7 +4,7 @@ package org.bluebridge.section_01_two_phase_termination.case_02;
  * 测试两阶段终止线程
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/12 17:38
  */
 public class TwoPhaseTerminationTest {
 

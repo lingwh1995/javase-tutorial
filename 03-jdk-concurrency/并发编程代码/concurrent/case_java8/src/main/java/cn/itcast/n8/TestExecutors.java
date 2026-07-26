@@ -8,10 +8,10 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Executors线程池测试
+ * Executors 线程池测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 09:32
  */
 @Slf4j(topic = "c.TestExecutors")
 public class TestExecutors {

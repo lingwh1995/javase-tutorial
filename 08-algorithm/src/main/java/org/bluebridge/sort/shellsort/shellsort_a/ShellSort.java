@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 希尔排序
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:15
  */
 public class ShellSort {
 
@@ -19,7 +19,7 @@ public class ShellSort {
     }
 
     /**
-     * 一步完成希尔排序:移位法
+     * 一步完成希尔排序：移位法
      */
     private static void shellSort3() {
         int[] arr = { 8, 9, 1, 7, 2, 3, 5, 4, 6, 0 };
@@ -43,7 +43,7 @@ public class ShellSort {
     }
 
     /**
-     * 一步完成希尔排序: 交换法
+     * 一步完成希尔排序：交换法
      */
     private static void shellSort2() {
         int[] arr = { 8, 9, 1, 7, 2, 3, 5, 4, 6, 0 };
@@ -71,9 +71,9 @@ public class ShellSort {
         int[] arr = { 8, 9, 1, 7, 2, 3, 5, 4, 6, 0 };
         System.out.println("原数组:" + Arrays.toString(arr));
         // 第一轮
-        // 将十个数据分成10/2=5组
+        // 将十个数据分成 10/2=5 组
         for (int i = 5; i < arr.length; i++) {
-            // 步长是5
+            // 步长是 5
             for (int j = i - 5; j >= 0; j -= 5) {
                 if (arr[j] > arr[j + 5]) {
                     int temp = arr[j];
@@ -85,9 +85,9 @@ public class ShellSort {
         System.out.println("第一轮:" + Arrays.toString(arr));
 
         // 第二轮
-        // 将十个数据分成5/2=2组
+        // 将十个数据分成 5/2=2 组
         for (int i = 2; i < arr.length; i++) {
-            // 步长是2
+            // 步长是 2
             for (int j = i - 2; j >= 0; j -= 2) {
                 if (arr[j] > arr[j + 2]) {
                     int temp = arr[j];
@@ -99,9 +99,9 @@ public class ShellSort {
         System.out.println("第二轮:" + Arrays.toString(arr));
 
         // 第三轮
-        // 将十个数据分成2/2=1组
+        // 将十个数据分成 2/2=1 组
         for (int i = 1; i < arr.length; i++) {
-            // 步长是1
+            // 步长是 1
             for (int j = i - 1; j >= 0; j -= 1) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];

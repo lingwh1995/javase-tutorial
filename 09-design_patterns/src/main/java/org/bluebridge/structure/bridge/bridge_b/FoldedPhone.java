@@ -4,7 +4,7 @@ package org.bluebridge.structure.bridge.bridge_b;
  * 折叠式手机
  *
  * @author lingwh
- * @date 2026/7/9 11:37
+ * @date 2026/7/22 11:14
  */
 public class FoldedPhone extends Phone {
 

@@ -6,7 +6,7 @@ import java.util.*;
  * 枚举转迭代器适配器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 12:20
  */
 public class EnumerationIterator implements Iterator<Object> {
 
@@ -16,14 +16,17 @@ public class EnumerationIterator implements Iterator<Object> {
         this.enumeration = enumeration;
     }
 
+    @Override
     public boolean hasNext() {
         return enumeration.hasMoreElements();
     }
 
+    @Override
     public Object next() {
         return enumeration.nextElement();
     }
 
+    @Override
     public void remove() {
         throw new UnsupportedOperationException();
     }

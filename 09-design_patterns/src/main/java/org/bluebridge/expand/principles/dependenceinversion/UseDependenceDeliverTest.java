@@ -4,7 +4,7 @@ package org.bluebridge.expand.principles.dependenceinversion;
  * 遵循依赖反转原则 + 面向接口编程（基于接口传递实现依赖）
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 15:48
  */
 public class UseDependenceDeliverTest {
 

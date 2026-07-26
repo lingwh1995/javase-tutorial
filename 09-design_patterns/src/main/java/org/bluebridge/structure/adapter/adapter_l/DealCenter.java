@@ -6,12 +6,12 @@ import java.util.List;
  * 数据处理中心
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:15
  */
 public class DealCenter {
 
     /**
-     * 打印list
+     * 打印 list
      *
      * @param list
      */

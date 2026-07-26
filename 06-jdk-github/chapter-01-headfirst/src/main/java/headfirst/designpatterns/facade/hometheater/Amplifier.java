@@ -4,7 +4,7 @@ package headfirst.designpatterns.facade.hometheater;
  * 功放
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 19:47
  */
 public class Amplifier {
 

@@ -4,7 +4,7 @@ package headfirst.designpatterns.state.gumballstate;
  * 糖果机
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:55
  */
 public class GumballMachine {
 

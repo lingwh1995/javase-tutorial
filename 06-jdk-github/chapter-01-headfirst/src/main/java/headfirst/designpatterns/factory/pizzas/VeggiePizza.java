@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzas;
  * 蔬菜披萨
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2023/12/7 09:28
  */
 public class VeggiePizza extends Pizza {
 

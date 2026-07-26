@@ -4,10 +4,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntUnaryOperator;
 
 /**
- * AtomicInteger自定义更新测试
+ * AtomicInteger 自定义更新测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 20:45
  */
 public class Test34 {
 
@@ -18,8 +18,8 @@ public class Test34 {
         /*System.out.println(i.incrementAndGet()); // ++i   1
         System.out.println(i.getAndIncrement()); // i++   2
 
-        System.out.println(i.getAndAdd(5)); // 2 , 7
-        System.out.println(i.addAndGet(5)); // 12, 12*/
+        System.out.println(i.getAndAdd(5)); // 2 ， 7
+        System.out.println(i.addAndGet(5)); // 12， 12*/
 
         //             读取到    设置值
 //        i.updateAndGet(value -> value * 10);

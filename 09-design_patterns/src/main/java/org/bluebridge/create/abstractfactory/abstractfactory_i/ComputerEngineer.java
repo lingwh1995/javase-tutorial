@@ -17,7 +17,7 @@ public class ComputerEngineer {
     private MemoryApi memory = null;
 
     public void makeComputer(AbstractFactory factory) {
-        // 这里要去准备CPU和主板的具体实现，为了示例简单，这里只准备这两个
+        // 这里要去准备 CPU 和主板的具体实现，为了示例简单，这里只准备这两个
         // 可是，装机工程师并不知道如何去创建，怎么办呢？
 
         // 使用抽象工厂来获取相应的接口对象

@@ -8,7 +8,7 @@ public interface IRouterProduct {
     // 关机
     void shutdown();
 
-    // 打开wifi
+    // 打开 wifi
     void openwifi();
 
     // 设置

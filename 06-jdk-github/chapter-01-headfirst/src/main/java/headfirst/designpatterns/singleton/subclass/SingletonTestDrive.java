@@ -4,7 +4,7 @@ package headfirst.designpatterns.singleton.subclass;
  * 单例测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 08:48
  */
 public class SingletonTestDrive {
 

@@ -4,7 +4,7 @@ package headfirst.designpatterns.combined.djview;
  * 心跳模型接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:48
  */
 public interface HeartModelInterface {
 

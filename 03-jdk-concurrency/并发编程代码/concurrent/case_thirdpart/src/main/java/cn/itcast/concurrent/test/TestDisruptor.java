@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
  * Disruptor 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 14:17
  */
 public class TestDisruptor {
 
@@ -24,7 +24,7 @@ public class TestDisruptor {
             System.out.println(Thread.currentThread().getName() + " " + event);
         });
 
-        // Start the Disruptor, starts all threads running
+        // Start the Disruptor，starts all threads running
         disruptor.start();
 
         // Get the ring buffer from the Disruptor to be used for publishing.

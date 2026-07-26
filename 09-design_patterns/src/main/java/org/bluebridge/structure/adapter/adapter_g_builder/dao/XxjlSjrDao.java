@@ -6,7 +6,7 @@ import org.bluebridge.structure.adapter.adapter_g_builder.domain.Xxjl;
  * 信息交流收件人数据访问对象
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 21:33
  */
 public class XxjlSjrDao implements IXxjlDao {
 

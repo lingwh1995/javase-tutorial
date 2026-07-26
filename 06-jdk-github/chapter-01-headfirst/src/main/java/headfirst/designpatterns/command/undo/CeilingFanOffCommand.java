@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.undo;
  * 吊扇关闭命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:53
  */
 public class CeilingFanOffCommand implements Command {
 

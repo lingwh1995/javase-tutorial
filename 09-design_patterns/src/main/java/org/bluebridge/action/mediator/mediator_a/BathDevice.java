@@ -1,7 +1,7 @@
 package org.bluebridge.action.mediator.mediator_a;
 
 /**
- * 具体同事类3 洗浴设备
+ * 具体同事类 3 洗浴设备
  *
  * @author lingwh
  * @date 2019/7/29 9:23

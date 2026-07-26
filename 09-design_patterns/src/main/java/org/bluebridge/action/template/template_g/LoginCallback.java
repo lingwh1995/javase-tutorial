@@ -1,7 +1,7 @@
 package org.bluebridge.action.template.template_g;
 
 /**
- * 登录控制的模板方法需要的回调接口，需要把所有需要的接口方法都定义出来, 或者说是所有可以被扩展的方法都需要被定义出来
+ * 登录控制的模板方法需要的回调接口，需要把所有需要的接口方法都定义出来， 或者说是所有可以被扩展的方法都需要被定义出来
  *
  * @author lingwh
  * @date 2019/8/26 14:43
@@ -14,7 +14,7 @@ public interface LoginCallback {
      * @param loginId 登录编号
      * @return 登录编号在存储中相对应的数据
      */
-    public LoginModel findLoginUser(String loginId);
+    LoginModel findLoginUser(String loginId);
 
     /**
      * 对密码数据进行加密
@@ -23,7 +23,7 @@ public interface LoginCallback {
      * @param template LoginTemplate对象，通过它来调用在 LoginTemplate中定义的公共方法或缺省实现
      * @return 加密后的密码数据
      */
-    public String encryptPwd(String pwd, LoginTemplate template);
+    String encryptPwd(String pwd, LoginTemplate template);
 
     /**
      * 判断用户填写的登录数据和存储中对应的数据是否匹配得上
@@ -33,5 +33,5 @@ public interface LoginCallback {
      * @param template LoginTemplate对象，通过它来调用在LoginTemplate中定义的公共方法或缺省实现
      * @return true表示匹配成功，false表示匹配失败
      */
-    public boolean match(LoginModel lm, LoginModel dbLm, LoginTemplate template);
+    boolean match(LoginModel lm, LoginModel dbLm, LoginTemplate template);
 }

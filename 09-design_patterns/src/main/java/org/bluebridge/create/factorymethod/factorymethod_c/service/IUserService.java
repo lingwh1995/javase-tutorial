@@ -6,7 +6,7 @@ import org.bluebridge.create.factorymethod.factorymethod_c.domain.User;
  * 用户服务接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:55
  */
 public interface IUserService {
 

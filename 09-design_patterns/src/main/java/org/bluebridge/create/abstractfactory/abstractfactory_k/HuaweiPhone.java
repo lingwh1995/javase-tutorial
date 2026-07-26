@@ -4,7 +4,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_k;
  * 华为手机实现类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:51
  */
 public class HuaweiPhone implements IPhoneProduct {
 

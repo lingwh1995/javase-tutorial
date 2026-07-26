@@ -4,7 +4,7 @@ package org.bluebridge.structure.composite.composite_c;
  * 组织组件
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:47
  */
 public abstract class OrganizationComponment {
 

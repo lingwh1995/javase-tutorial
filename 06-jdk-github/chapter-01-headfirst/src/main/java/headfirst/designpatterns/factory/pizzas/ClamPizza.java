@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzas;
  * 蛤蜊披萨
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:07
  */
 public class ClamPizza extends Pizza {
 

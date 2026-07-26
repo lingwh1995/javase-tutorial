@@ -4,7 +4,7 @@ package org.bluebridge.structure.decorator.decorator_c;
  * 具体装饰器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:51
  */
 public class ConcreteDecorator extends Decorator {
 

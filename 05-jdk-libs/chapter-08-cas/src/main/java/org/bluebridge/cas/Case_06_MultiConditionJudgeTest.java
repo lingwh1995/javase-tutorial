@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 多条件判断简化写法
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 19:43
  */
 public class Case_06_MultiConditionJudgeTest {
 

@@ -5,10 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * wait/notify正确姿势测试一
+ * wait/notify 正确姿势测试一
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 15:18
  */
 @Slf4j(topic = "c.TestCorrectPosture")
 public class TestCorrectPostureStep1 {

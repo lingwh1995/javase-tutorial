@@ -1,10 +1,10 @@
-package questions.maze;
+package org.bluebridge.questions.maze;
 
 /**
  * 递归解决小球问题
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:54
  */
 public class Maze {
 
@@ -47,9 +47,9 @@ public class Maze {
     }
 
     /**
-     * 小球寻找出口的方法:如果小球到了map[6][5]的位置，说明小球已经找到了出口 游戏规则: 0:这个点还没有走过 1:代表围墙 路:表示该点是通路
-     * x:表示该点已经走过，但是走不通
-     * 小球路径策略:下->右->上->左,如果到某一点走不通了,就回溯
+     * 小球寻找出口的方法：如果小球到了 map[6][5] 的位置，说明小球已经找到了出口 游戏规则： 0：这个点还没有走过 1：代表围墙 路：表示该点是通路
+     * x：表示该点已经走过，但是走不通
+     * 小球路径策略：下->右->上->左，如果到某一点走不通了，就回溯
      *
      * @param i 小球起始位置
      * @param j 小球起始位置
@@ -57,7 +57,7 @@ public class Maze {
      */
     public static boolean findDoor(int i, int j) {
         if (map[i][j].equals("D")) {
-            // 如果找到了出口,则返回true
+            // 如果找到了出口，则返回 true
             return true;
         } else {
             // 如果这个点没有走过
@@ -77,12 +77,12 @@ public class Maze {
                     // 向左走
                     return true;
                 } else {
-                    // 回溯:设置该点为走不通状态
+                    // 回溯：设置该点为走不通状态
                     map[i][j] = "x";
                     return false;
                 }
             } else {
-                // 说明是:1(围墙) 或 x:(该点已经走过，但是走不通)
+                // 说明是：1(围墙) 或 x：(该点已经走过，但是走不通)
                 return false;
             }
         }

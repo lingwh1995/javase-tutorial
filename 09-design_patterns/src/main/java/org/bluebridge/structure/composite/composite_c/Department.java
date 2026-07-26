@@ -4,7 +4,7 @@ package org.bluebridge.structure.composite.composite_c;
  * 系
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:35
  */
 public class Department extends OrganizationComponment {
 
@@ -12,7 +12,7 @@ public class Department extends OrganizationComponment {
         super(name, desc);
     }
 
-    // 注意:add()和remove()方法就不需要再重写了，因为Department是叶子节点，不用去管理子节点了
+    // 注意：add() 和 remove() 方法就不需要再重写了，因为 Department 是叶子节点，不用去管理子节点了
 
     @Override
     public String getName() {
@@ -25,7 +25,7 @@ public class Department extends OrganizationComponment {
     }
 
     /**
-     * 输出College中所包含的学院
+     * 输出 College 中所包含的学院
      */
     @Override
     public void print() {

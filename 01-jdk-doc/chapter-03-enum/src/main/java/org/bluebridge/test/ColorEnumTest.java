@@ -14,16 +14,16 @@ public class ColorEnumTest {
     /**
      * 枚举 api
      * name() ：返回枚举的名称
-     * ordinal() ：枚举的下标，下标从0开始
+     * ordinal() ：枚举的下标，下标从 0 开始
      * valueOf(Class<T> enumType, String name) ：得到枚举的对象
      *
-     * 还有两个方法，都是这两个方法不在api里面，编译的时候生成两个方法
+     * 还有两个方法，都是这两个方法不在 api 里面，编译的时候生成两个方法
      * valueof(String name) 转换枚举对象
      * values() 获得所有枚举对象数组
      */
 
     /**
-     * 测试枚举对象api：知道枚举的对象,得到枚举对象的名称和下标
+     * 测试枚举对象 api：知道枚举的对象，得到枚举对象的名称和下标
      * name()：获取枚举对象名称
      * ordinal()：获取枚举对象下标
      */
@@ -40,7 +40,7 @@ public class ColorEnumTest {
     }
 
     /**
-     * 测试根据枚举名称获取枚举对象：知道枚举的名称,得到枚举的对象和下标
+     * 测试根据枚举名称获取枚举对象：知道枚举的名称，得到枚举的对象和下标
      * valueOf()：根据枚举对象的名称获取枚举对象
      */
     @Test
@@ -65,9 +65,9 @@ public class ColorEnumTest {
         // 得到枚举下标
         int idx = 2;
         // 根据下标得到枚举对象
-        // 1.得到枚举数组
+        // 1. 得到枚举数组
         ColorEnum[] colors = ColorEnum.values();
-        // 2.根据下标得到对象
+        // 2. 根据下标得到对象
         ColorEnum yellow = colors[idx];
 
         // 得到枚举名称

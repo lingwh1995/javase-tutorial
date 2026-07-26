@@ -4,10 +4,10 @@ import cn.itcast.n2.util.Sleeper;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * wait释放锁测试
+ * wait 释放锁测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 10:17
  */
 @Slf4j(topic = "c.Test19")
 public class Test19 {

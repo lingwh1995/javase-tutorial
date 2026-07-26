@@ -7,7 +7,7 @@ import javax.swing.*;
  * 窗口示例
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 12:44
  */
 public class MyFrame extends JFrame {
 
@@ -21,6 +21,7 @@ public class MyFrame extends JFrame {
         this.setVisible(true);
     }
 
+    @Override
     public void paint(Graphics graphics) {
         super.paint(graphics);
         String msg = "I rule!!";

@@ -4,7 +4,7 @@ package headfirst.designpatterns.state.gumballstatewinner;
  * 糖果机测试类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 21:59
  */
 public class GumballMachineTestDrive {
 

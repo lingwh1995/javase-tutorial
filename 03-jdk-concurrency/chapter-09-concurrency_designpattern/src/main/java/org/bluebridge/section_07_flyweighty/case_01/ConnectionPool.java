@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
  * 自定义线程池
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/3/20 18:21
  */
 public class ConnectionPool {
 
@@ -17,7 +17,7 @@ public class ConnectionPool {
     // 2. 连接对象数组
     private Connection[] connections;
 
-    // 3. 连接状态数组 0 表示空闲， 1 表示繁忙
+    // 3. 连接状态数组 0 表示空闲，1 表示繁忙
     private AtomicIntegerArray states;
 
     // 4. 构造方法初始化

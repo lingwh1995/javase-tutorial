@@ -4,7 +4,7 @@ package org.bluebridge.linkedlist.linkedlist_b;
  * 英雄节点测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:43
  */
 public class HeroNodeTest {
 
@@ -38,7 +38,7 @@ public class HeroNodeTest {
         System.out.println("链表中有效节点个数:" + heroLinkedList.size());
 
         System.out.println("----------------------获取链表中倒数第n个元素----------------------------");
-        // 获取链表中倒数第n个元素
+        // 获取链表中倒数第 n 个元素
         Node reverseNode = heroLinkedList.getReverseNode(1);
         System.out.println(reverseNode);
 
@@ -51,18 +51,18 @@ public class HeroNodeTest {
         // 反转后
         heroLinkedList.list();
 
-        // 反转链表:不带返回值
+        // 反转链表：不带返回值
         System.out.println("---------------------------------------------------");
         heroLinkedList.reverseList();
 
-        // 反转链表:带返回值
+        // 反转链表：带返回值
         System.out.println("-------------------反转链表:带返回值--------------------------------");
         HeroLinkedList reverseHasResult = heroLinkedList.reverseHasResult();
         reverseHasResult.list();
 
         // 合并链表
         System.out.println("------------------------合并链表---------------------------");
-        // 上面的节点的next已经不为空了，不可以继续使用了
+        // 上面的节点的 next 已经不为空了，不可以继续使用了
         // Node songj = new Node(1, "宋江", "及时雨");
         // Node chaog = new Node(2, "晁盖", "托塔天王");
         // HeroLinkedList l1 = new HeroLinkedList();

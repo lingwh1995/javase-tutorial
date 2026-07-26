@@ -20,11 +20,11 @@ public class Client {
         // 以下就需要使用被代理过的接口来操作了
         // 李四想要来修改，那就会报错
         orderApi.setOrderNum(123, "李四");
-        // 输出order
+        // 输出 order
         System.out.println("李四修改后订单记录没有变化：" + orderApi);
         // 张三修改就不会有问题
         orderApi.setOrderNum(123, "张三");
-        // 再次输出order
+        // 再次输出 order
         System.out.println("张三修改后，订单记录：" + orderApi);
     }
 }

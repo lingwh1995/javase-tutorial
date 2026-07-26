@@ -4,10 +4,11 @@ package headfirst.designpatterns.factory.pizzaaf;
  * 纽约披萨店
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 22:19
  */
 public class NYPizzaStore extends PizzaStore {
 
+    @Override
     protected Pizza createPizza(String item) {
         Pizza pizza = null;
         PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();

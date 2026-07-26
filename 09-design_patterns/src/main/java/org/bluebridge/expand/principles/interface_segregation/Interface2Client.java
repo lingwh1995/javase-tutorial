@@ -3,15 +3,15 @@ package org.bluebridge.expand.principles.interface_segregation;
 import org.junit.Test;
 
 /**
- * 调用Interface2的客户端
+ * 调用 Interface2 的客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:21
  */
 public class Interface2Client {
 
     /**
-     * 测试A2通过接口Interface2A,Interface2B依赖B2
+     * 测试 A2 通过接口 Interface2A，Interface2B 依赖 B2
      */
     @Test
     public void testA2() {
@@ -22,7 +22,7 @@ public class Interface2Client {
     }
 
     /**
-     * 测试C2通过接口Interface2B,Interface2C依赖D2
+     * 测试 C2 通过接口 Interface2B，Interface2C 依赖 D2
      */
     @Test
     public void testC2() {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 组合对象，可以包含其它组合对象或者叶子对象， 相当于访问者模式的具体Element实现对象
+ * 组合对象，可以包含其它组合对象或者叶子对象， 相当于访问者模式的具体 Element 实现对象
  *
  * @author lingwh
  * @date 2019/10/11 13:50

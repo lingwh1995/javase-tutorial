@@ -18,7 +18,7 @@ public interface AbstractFile {
 }
 
 /**
- * 模拟Leaf节点:单个文件
+ * 模拟 Leaf 节点：单个文件
  *
  * @author lingwh
  * @date 2019/3/23 13:57
@@ -38,7 +38,7 @@ class imageFiles implements AbstractFile {
 }
 
 /**
- * 模拟Leaf节点:单个文件
+ * 模拟 Leaf 节点：单个文件
  *
  * @author lingwh
  * @date 2019/3/23 14:04
@@ -58,7 +58,7 @@ class TextFiles implements AbstractFile {
 }
 
 /**
- * 模拟容器组件:文件夹
+ * 模拟容器组件：文件夹
  *
  * @author lingwh
  * @date 2019/3/23 14:14

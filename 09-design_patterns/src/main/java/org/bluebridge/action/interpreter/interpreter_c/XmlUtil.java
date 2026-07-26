@@ -5,7 +5,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 
 /**
- * XML工具类
+ * XML 工具类
  *
  * @author lingwh
  * @date 2019/8/27 14:08
@@ -16,11 +16,11 @@ public class XmlUtil {
         Document doc = null;
         // 建立一个解析器工厂
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        // 获得一个DocumentBuilder对象，这个对象代表了具体的DOM解析器
+        // 获得一个 DocumentBuilder 对象，这个对象代表了具体的 DOM 解析器
         DocumentBuilder builder = factory.newDocumentBuilder();
-        // 得到一个表示XML文档的Document对象
+        // 得到一个表示 XML 文档的 Document 对象
         doc = builder.parse(filePathName);
-        // 去掉XML文档中作为格式化内容的空白而映射在DOM树中的TextNode对象
+        // 去掉 XML 文档中作为格式化内容的空白而映射在 DOM 树中的 TextNode 对象
         doc.normalize();
         return doc;
     }

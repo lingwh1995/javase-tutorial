@@ -4,7 +4,7 @@ package org.bluebridge.algorithm.kmp;
  * 暴力匹配法
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 17:36
  */
 public class ViolenceMatch {
 
@@ -21,9 +21,9 @@ public class ViolenceMatch {
         int c1Length = c1.length;
         int c2Length = c2.length;
 
-        // i索引指向是c1
+        // i 索引指向是 c1
         int i = 0;
-        // j索引指向是c2
+        // j 索引指向是 c2
         int j = 0;
         while (i < c1Length && j < c2Length) {
             // 匹配成功

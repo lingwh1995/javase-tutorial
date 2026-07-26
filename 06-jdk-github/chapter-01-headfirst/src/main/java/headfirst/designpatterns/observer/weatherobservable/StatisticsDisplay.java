@@ -7,7 +7,7 @@ import java.util.Observer;
  * 统计数据展示
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:00
  */
 public class StatisticsDisplay implements Observer, DisplayElement {
 
@@ -20,6 +20,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         observable.addObserver(this);
     }
 
+    @Override
     public void update(Observable observable, Object arg) {
         if (observable instanceof WeatherData) {
             WeatherData weatherData = (WeatherData) observable;
@@ -39,6 +40,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         }
     }
 
+    @Override
     public void display() {
         System.out.println(
                 "Avg/Max/Min temperature = " + (tempSum / numReadings) + "/" + maxTemp + "/" + minTemp);

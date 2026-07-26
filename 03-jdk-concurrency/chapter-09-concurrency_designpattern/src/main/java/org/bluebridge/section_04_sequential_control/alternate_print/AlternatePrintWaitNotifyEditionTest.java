@@ -1,10 +1,10 @@
 package org.bluebridge.section_04_sequential_control.alternate_print;
 
 /**
- * 交替打印(WaitNotify版)
+ * 交替打印(WaitNotify 版)
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/3/7 12:02
  */
 public class AlternatePrintWaitNotifyEditionTest {
 

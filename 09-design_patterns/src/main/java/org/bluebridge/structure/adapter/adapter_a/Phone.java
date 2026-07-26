@@ -4,7 +4,7 @@ package org.bluebridge.structure.adapter.adapter_a;
  * 手机
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:42
  */
 public class Phone {
 

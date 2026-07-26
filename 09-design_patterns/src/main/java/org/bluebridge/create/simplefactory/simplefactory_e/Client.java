@@ -4,7 +4,7 @@ package org.bluebridge.create.simplefactory.simplefactory_e;
  * 客户端 - 简单工厂模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:42
  */
 public class Client {
 

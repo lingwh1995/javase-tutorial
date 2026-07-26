@@ -6,7 +6,7 @@ import java.util.Iterator;
  * 菜单项
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 16:51
  */
 public class MenuItem extends MenuComponent {
 
@@ -22,26 +22,32 @@ public class MenuItem extends MenuComponent {
         this.price = price;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public String getDescription() {
         return description;
     }
 
+    @Override
     public double getPrice() {
         return price;
     }
 
+    @Override
     public boolean isVegetarian() {
         return vegetarian;
     }
 
+    @Override
     public Iterator<MenuComponent> createIterator() {
         return new NullIterator();
     }
 
+    @Override
     public void print() {
         System.out.print("  " + getName());
         if (isVegetarian()) {

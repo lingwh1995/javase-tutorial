@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 第三方应用启动类
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 08:52
  */
 @SpringBootApplication
 public class ThirdpartApplication {

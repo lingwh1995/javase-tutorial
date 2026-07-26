@@ -4,13 +4,14 @@ package org.bluebridge.tree.binarytree.binarytree_a;
  * 二叉树测试
  *
  * <pre>
- *                          宋江
- *                  吴用               卢俊义
- *                              关胜      林冲
+ * 宋江
+ * 吴用 卢俊义
+ * 关胜 林冲
+ * 
  * <pre/>
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 19:07
  */
 public class BinaryTest {
 
@@ -31,13 +32,13 @@ public class BinaryTest {
         binaryTree.setRoot(songjiang);
 
         System.out.println("-----------------------");
-        // 前序遍历:根->左->右
+        // 前序遍历：根 -> 左 -> 右
         binaryTree.preorderTravel();
         System.out.println("------------q-----------");
-        // 中序遍历:左->根->右
+        // 中序遍历：左 -> 根 -> 右
         binaryTree.infixorderTravel();
         System.out.println("------------z-----------");
-        // 后序遍历:左->右->根
+        // 后序遍历：左 -> 右 -> 根
         binaryTree.sufixorderTravle();
         System.out.println("------------h-----------");
 
@@ -55,7 +56,7 @@ public class BinaryTest {
         binaryTree.deleteByNo(3);
 
         System.out.println("-------------------------------");
-        // 前序遍历:根->左->右
+        // 前序遍历：根 -> 左 -> 右
         binaryTree.preorderTravel();
 
         System.out.println("---------------------------------");

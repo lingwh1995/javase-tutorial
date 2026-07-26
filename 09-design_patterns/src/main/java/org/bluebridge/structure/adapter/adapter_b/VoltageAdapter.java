@@ -4,7 +4,7 @@ package org.bluebridge.structure.adapter.adapter_b;
  * 对象适配器
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 13:24
  */
 public class VoltageAdapter implements IVoltage5V {
 

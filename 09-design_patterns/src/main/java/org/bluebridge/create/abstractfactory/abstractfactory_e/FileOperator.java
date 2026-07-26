@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_e;
 
 /**
- * 操作文件的接口，本质上是一个,本质上是一个API的提供者的规范接口
+ * 操作文件的接口，本质上是一个，本质上是一个 API 的提供者的规范接口
  *
  * @author lingwh
  * @date 2019/8/2 9:29

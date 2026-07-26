@@ -11,15 +11,15 @@ public class NormalLogin {
     /**
      * 判断登录数据是否正确，也就是是否能登录成功
      *
-     * @param lm 封装登录数据的Model
-     * @return true表示登录成功，false表示登录失败
+     * @param lm 封装登录数据的 Model
+     * @return true 表示登录成功，false 表示登录失败
      */
     public boolean login(LoginModel lm) {
         // 1. 从数据库获取登录人员的信息，就是根据用户编号去获取人员的数据
         UserModel um = this.findUserByUserId(lm.getUserId());
         // 2. 判断从前台传递过来的登录数据，和数据库中已有的数据是否匹配
-        // 先判断用户是否存在，如果um为null，说明用户肯定不存在
-        // 但是不为null，用户不一定存在，因为数据层可能返回new UserModel();
+        // 先判断用户是否存在，如果 um 为 null，说明用户肯定不存在
+        // 但是不为 null，用户不一定存在，因为数据层可能返回 new UserModel();
         // 因此还需要做进一步的判断
         if (um != null) {
             // 如果用户存在，检查用户编号和密码是否匹配

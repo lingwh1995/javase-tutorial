@@ -3,10 +3,10 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 两阶段终止Balking模式测试
+ * 两阶段终止 Balking 模式测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 20:54
  */
 @Slf4j(topic = "c.TwoPhaseTermination")
 public class Test13 {

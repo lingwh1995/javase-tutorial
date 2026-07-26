@@ -3,10 +3,10 @@ package org.bluebridge.tcpip.v1;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * TCP四次挥手模拟
+ * TCP 四次挥手模拟
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/17 11:32
  */
 @Slf4j
 public class TCPWaveBye {

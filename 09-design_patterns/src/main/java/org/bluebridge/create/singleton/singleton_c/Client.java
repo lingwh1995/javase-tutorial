@@ -9,7 +9,7 @@ package org.bluebridge.create.singleton.singleton_c;
 public class Client {
 
     public static void main(String[] args) {
-        // 获取单例的PropertiesUtils
+        // 获取单例的 PropertiesUtils
         PropertiesUtils propertiesUtils = PropertiesUtils.getInstance();
         PropertiesUtils propertiesUtils1 = PropertiesUtils.getInstance();
         System.out.println(propertiesUtils == propertiesUtils1);

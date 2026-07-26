@@ -4,7 +4,7 @@ package org.bluebridge.action.memento.mementor_b;
  * 客户端
  *
  * @author lingwh
- * @date 2026/7/9 09:47
+ * @date 2026/7/22 15:03
  */
 public class Client {
 
@@ -28,7 +28,7 @@ public class Client {
         // 希望得到状态#1
         Memento memento = careTaker.getMemento(0);
         originator.getStateFromMemento(memento);
-        // 并将originator的状态恢复到状态1
+        // 并将 originator 的状态恢复到状态 1
         System.out.println("当前状态是:" + originator.getState());
     }
 }

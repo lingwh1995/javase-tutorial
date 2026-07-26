@@ -4,7 +4,7 @@ package org.bluebridge.section_06_producer_consumer.case_02;
  * 生产者消费者模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/3/21 15:08
  */
 public class ProducerConsumerTest {
 

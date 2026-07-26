@@ -12,16 +12,16 @@ public class FeeRequest {
      * 提交聚餐费用申请给项目经理
      *
      * @param user 申请人
-     * @param fee 申请费用
+     * @param fee  申请费用
      * @return 成功或失败的具体通知
      */
     public String requestToProjectManager(String user, double fee) {
         String str = "";
         if (fee < 500) {
-            // 项目经理的权限比较小，只能在500以内
+            // 项目经理的权限比较小，只能在 500 以内
             str = this.projectHandle(user, fee);
         } else if (fee < 1000) {
-            // 部门经理的权限只能在1000以内
+            // 部门经理的权限只能在 1000 以内
             str = this.depManagerHandle(user, fee);
         } else if (fee >= 1000) {
             // 总经理的权限很大，只要请求到了这里，他都可以处理

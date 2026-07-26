@@ -4,12 +4,12 @@ package org.bluebridge.action.visitor.visitor_b;
  * 客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class Client {
 
     public static void main(String[] args) {
-        // 创建ObjectStructure
+        // 创建 ObjectStructure
         ObjectStructure objectStructure = new ObjectStructure();
 
         objectStructure.attach(new Man());

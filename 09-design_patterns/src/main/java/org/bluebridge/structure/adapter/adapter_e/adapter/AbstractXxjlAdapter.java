@@ -7,7 +7,7 @@ import org.bluebridge.structure.adapter.adapter_e.service.IXxjlService;
  * 抽象信息交流适配器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:45
  */
 public class AbstractXxjlAdapter implements IXxjlService {
 

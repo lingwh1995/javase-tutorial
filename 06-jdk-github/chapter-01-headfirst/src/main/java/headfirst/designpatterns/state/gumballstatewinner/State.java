@@ -4,7 +4,7 @@ package headfirst.designpatterns.state.gumballstatewinner;
  * 状态接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:54
  */
 public interface State {
 

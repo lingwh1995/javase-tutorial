@@ -4,7 +4,7 @@ package org.bluebridge.create.factorymethod.factorymethod_i;
  * 服装工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:42
  */
 public interface IClothesProduceFactory {
 

@@ -4,7 +4,7 @@ package org.bluebridge.structure.decorator.decorator_j;
  * 序列输入流
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:54
  */
 public class SequenceInputStream extends InputStream {
 

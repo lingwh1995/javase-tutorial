@@ -4,7 +4,7 @@ package headfirst.designpatterns.adapter.ducks;
  * 火鸡适配器
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2023/12/7 15:26
  */
 public class TurkeyAdapter implements Duck {
 
@@ -14,10 +14,12 @@ public class TurkeyAdapter implements Duck {
         this.turkey = turkey;
     }
 
+    @Override
     public void quack() {
         turkey.gobble();
     }
 
+    @Override
     public void fly() {
         for (int i = 0; i < 5; i++) {
             turkey.fly();

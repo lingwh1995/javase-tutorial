@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Map;
 
 /**
- * 实现导出数据到XML文件的的生成器对象
+ * 实现导出数据到 XML 文件的的生成器对象
  *
  * @author lingwh
  * @date 2019/8/8 14:26

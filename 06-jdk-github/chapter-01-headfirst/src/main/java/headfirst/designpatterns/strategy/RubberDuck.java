@@ -4,7 +4,7 @@ package headfirst.designpatterns.strategy;
  * 橡皮鸭
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 08:00
  */
 public class RubberDuck extends Duck {
 
@@ -19,6 +19,7 @@ public class RubberDuck extends Duck {
         this.quackBehavior = quackBehavior;
     }
 
+    @Override
     public void display() {
         System.out.println("I'm a rubber duckie");
     }

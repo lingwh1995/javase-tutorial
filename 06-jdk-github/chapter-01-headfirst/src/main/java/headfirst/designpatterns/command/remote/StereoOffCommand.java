@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.remote;
  * 音响关闭命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:49
  */
 public class StereoOffCommand implements Command {
 
@@ -14,6 +14,7 @@ public class StereoOffCommand implements Command {
         this.stereo = stereo;
     }
 
+    @Override
     public void execute() {
         stereo.off();
     }

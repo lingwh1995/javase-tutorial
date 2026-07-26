@@ -1,4 +1,4 @@
-package action.command.command_i;
+package org.bluebridge.action.command.command_i;
 
 import org.bluebridge.action.command.command_h.Command;
 
@@ -34,7 +34,7 @@ public class CeilingFanOffCommand implements Command {
     }
 
     /**
-     * 撤销命令:将吊扇的速度设置会之前的值,达到撤销的目的
+     * 撤销命令：将吊扇的速度设置会之前的值，达到撤销的目的
      */
     @Override
     public void undo() {

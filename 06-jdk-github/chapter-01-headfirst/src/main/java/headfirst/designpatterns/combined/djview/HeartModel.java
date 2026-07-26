@@ -6,7 +6,7 @@ import java.util.*;
  * 心跳模型
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 19:13
  */
 public class HeartModel implements HeartModelInterface, Runnable {
 
@@ -22,6 +22,7 @@ public class HeartModel implements HeartModelInterface, Runnable {
         thread.start();
     }
 
+    @Override
     public void run() {
         int lastrate = -1;
 
@@ -46,14 +47,17 @@ public class HeartModel implements HeartModelInterface, Runnable {
         }
     }
 
+    @Override
     public int getHeartRate() {
         return 60000 / time;
     }
 
+    @Override
     public void registerObserver(BeatObserver o) {
         beatObservers.add(o);
     }
 
+    @Override
     public void removeObserver(BeatObserver o) {
         int i = beatObservers.indexOf(o);
         if (i >= 0) {
@@ -68,10 +72,12 @@ public class HeartModel implements HeartModelInterface, Runnable {
         }
     }
 
+    @Override
     public void registerObserver(BPMObserver o) {
         bpmObservers.add(o);
     }
 
+    @Override
     public void removeObserver(BPMObserver o) {
         int i = bpmObservers.indexOf(o);
         if (i >= 0) {

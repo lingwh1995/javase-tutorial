@@ -9,7 +9,7 @@ package org.bluebridge.structure.bridge.bridge_f;
 public class SpecialUrgencyMessage extends AbstractMessage {
 
     /**
-     * 构造方法:传入实现部分的对象
+     * 构造方法：传入实现部分的对象
      *
      * @param messageImplementor
      */
@@ -18,7 +18,7 @@ public class SpecialUrgencyMessage extends AbstractMessage {
     }
 
     /**
-     * 因为是特急消息:所以就催促发送
+     * 因为是特急消息：所以就催促发送
      */
     public void hurry() {
         System.out.println("催促......");

@@ -41,7 +41,7 @@ public class Client {
         // 测试输出到文本文件
         ExportToTxt toTxt = new ExportToTxt();
         toTxt.export(ehm, mapData, efm);
-        // 测试输出到xml文件
+        // 测试输出到 xml 文件
         ExportToXml toXml = new ExportToXml();
         toXml.export(ehm, mapData, efm);
     }

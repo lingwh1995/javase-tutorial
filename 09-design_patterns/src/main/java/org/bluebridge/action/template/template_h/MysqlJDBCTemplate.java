@@ -13,7 +13,7 @@ public class MysqlJDBCTemplate extends JDBCTemplate {
 
     @Override
     protected String getMainSql(int type) {
-        // 根据操作类型，返回相应的主干sql语句
+        // 根据操作类型，返回相应的主干 sql 语句
         String sql = "";
         if (type == TYPE_CREATE) {
             sql = "insert into tbl_user values(?,?,?)";
@@ -29,7 +29,7 @@ public class MysqlJDBCTemplate extends JDBCTemplate {
 
     @Override
     protected void setUpdateSqlValue(int type, PreparedStatement pstmt, Object obj) throws Exception {
-        // 设置增、删、改操作的sql中"?"对应的值
+        // 设置增、删、改操作的 sql 中 "?" 对应的值
         if (type == TYPE_CREATE) {
             this.setCreateValue(pstmt, (UserModel) obj);
         } else if (type == TYPE_DELETE) {

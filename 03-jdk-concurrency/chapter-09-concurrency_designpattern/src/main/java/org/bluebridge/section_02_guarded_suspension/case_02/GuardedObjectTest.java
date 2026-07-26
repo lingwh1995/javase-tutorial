@@ -6,12 +6,12 @@ import java.util.concurrent.TimeUnit;
  * 测试保护性暂停模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/25 16:08
  */
 public class GuardedObjectTest {
 
     public static void main(String[] args) {
-        // 线程1等待线程2的下载结果
+        // 线程 1 等待线程 2 的下载结果
         GuardedObject guardeObject = new GuardedObject();
         new Thread(() -> {
             System.out.println("等待结果......");

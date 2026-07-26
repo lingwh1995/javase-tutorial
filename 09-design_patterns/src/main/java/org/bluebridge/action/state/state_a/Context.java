@@ -1,7 +1,7 @@
 package org.bluebridge.action.state.state_a;
 
 /**
- * 定义客户感兴趣的接口，通常会维护一个State类型的对象实例
+ * 定义客户感兴趣的接口，通常会维护一个 State 类型的对象实例
  *
  * @author lingwh
  * @date 2019/8/27 9:13
@@ -9,14 +9,14 @@ package org.bluebridge.action.state.state_a;
 public class Context {
 
     /**
-     * 持有一个State类型的对象实例
+     * 持有一个 State 类型的对象实例
      */
     private State state;
 
     /**
-     * 设置实现State的对象的实例
+     * 设置实现 State 的对象的实例
      *
-     * @param state 实现State的对象的实例
+     * @param state 实现 State 的对象的实例
      */
     public void setState(State state) {
         this.state = state;
@@ -28,7 +28,7 @@ public class Context {
      * @param sampleParameter 示意参数
      */
     public void request(String sampleParameter) {
-        // 在处理中，会转调state来处理
+        // 在处理中，会转调 state 来处理
         state.handle(sampleParameter);
     }
 }

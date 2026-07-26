@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.party;
  * 宏命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:13
  */
 public class MacroCommand implements Command {
 
@@ -14,6 +14,7 @@ public class MacroCommand implements Command {
         this.commands = commands;
     }
 
+    @Override
     public void execute() {
         for (int i = 0; i < commands.length; i++) {
             commands[i].execute();
@@ -24,6 +25,7 @@ public class MacroCommand implements Command {
      * NOTE: these commands have to be done backwards to ensure
      * proper undo functionality
      */
+    @Override
     public void undo() {
         for (int i = commands.length - 1; i >= 0; i--) {
             commands[i].undo();

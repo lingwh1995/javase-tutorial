@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzafm;
  * 依赖披萨店
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:30
  */
 public class DependentPizzaStore {
 

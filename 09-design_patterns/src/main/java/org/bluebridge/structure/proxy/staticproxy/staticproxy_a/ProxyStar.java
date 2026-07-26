@@ -1,10 +1,10 @@
 package org.bluebridge.structure.proxy.staticproxy.staticproxy_a;
 
 /**
- * 歌手的代理人:除了不能唱歌，其他的什么事儿都可以做
+ * 歌手的代理人：除了不能唱歌，其他的什么事儿都可以做
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:30
  */
 public class ProxyStar implements Star {
 

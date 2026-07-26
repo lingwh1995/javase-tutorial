@@ -4,7 +4,7 @@ package org.bluebridge.linkedlist.linkedlist_d;
  * 节点
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:50
  */
 public class Node<T> {
 
@@ -15,13 +15,13 @@ public class Node<T> {
         Node<String> node3 = new Node<String>("3");
 
         /**
-         * 简单append():追加节点
+         * 简单 append()：追加节点
          */
         // node1.append(node2);
         // node2.append(node3);
 
         /**
-         * 复杂append():追加节点
+         * 复杂 append()：追加节点
          */
         node1.append(node2).append(node3);
 
@@ -69,7 +69,7 @@ public class Node<T> {
      * @throws
      */
     public Node<T> append(Node<T> node) {
-        // 当前节点(this代表方法调用者本身)
+        // 当前节点(this 代表方法调用者本身)
         Node<T> currentNode = this;
         // 循环向后查找
         while (true) {
@@ -82,7 +82,7 @@ public class Node<T> {
             // 赋值给当前节点
             currentNode = nextNode;
         }
-        // 把需要追加的节点追加到currentNode这个节点上
+        // 把需要追加的节点追加到 currentNode 这个节点上
         currentNode.next = node;
         return this;
     }
@@ -147,11 +147,11 @@ public class Node<T> {
      * @throws
      */
     public void after(Node<T> node) {
-        // 1.获取到当前节点的下一个节点作为当前节点的下下一个节点
+        // 1. 获取到当前节点的下一个节点作为当前节点的下下一个节点
         Node<T> nextNext = this.next;
-        // 2.设置插入的节点作为当前节点的下一个节点
+        // 2. 设置插入的节点作为当前节点的下一个节点
         this.next = node;
-        // 2.设置插入的节点的下一个节点为当前节点的下下一个节点
+        // 2. 设置插入的节点的下一个节点为当前节点的下下一个节点
         node.next = nextNext;
     }
 

@@ -4,7 +4,7 @@ package org.design_pattern.section_03_template.case_02;
  * 线程模板测试
  *
  * @author lingwh
- * @date 2026/7/13 10:30
+ * @date 2023/12/7 18:27
  */
 public class ThreadTemplateTest {
 

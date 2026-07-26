@@ -6,7 +6,7 @@ import org.junit.Test;
  * java12 提供了更强的 switch 使用语法
  *
  * @author lingwh
- * @date 2026/7/9 10:30
+ * @date 2025/1/25 11:08
  */
 public class SwitchTest {
 

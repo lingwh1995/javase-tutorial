@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
  * 枚举形式的单例
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:23
  */
 public class EnumSingleton {
 

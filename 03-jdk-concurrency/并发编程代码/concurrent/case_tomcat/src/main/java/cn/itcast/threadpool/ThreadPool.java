@@ -13,7 +13,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 拒绝策略接口
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 18:09
  */
 @FunctionalInterface
 interface RejectPolicy<T> {

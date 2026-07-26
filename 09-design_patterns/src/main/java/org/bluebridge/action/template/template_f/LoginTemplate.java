@@ -11,8 +11,8 @@ public abstract class LoginTemplate {
     /**
      * 判断登录数据是否正确，也就是是否能登录成功
      *
-     * @param lm 封装登录数据的Model
-     * @return true表示登录成功，false表示登录失败
+     * @param lm 封装登录数据的 Model
+     * @return true 表示登录成功，false 表示登录失败
      */
     public final boolean login(LoginModel lm) {
         // 1. 根据登录人员的编号去获取相应的数据
@@ -49,9 +49,9 @@ public abstract class LoginTemplate {
     /**
      * 判断用户填写的登录数据和存储中对应的数据是否匹配得上
      *
-     * @param lm 用户填写的登录数据
+     * @param lm   用户填写的登录数据
      * @param dbLm 在存储中对应的数据
-     * @return true表示匹配成功，false表示匹配失败
+     * @return true 表示匹配成功，false 表示匹配失败
      */
     public boolean match(LoginModel lm, LoginModel dbLm) {
         if (lm.getLoginId().equals(dbLm.getLoginId()) && lm.getPwd().equals(dbLm.getPwd())) {

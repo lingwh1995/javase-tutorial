@@ -4,7 +4,7 @@ package headfirst.designpatterns.adapter.ducks;
  * 鸭子接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:14
  */
 public interface Duck {
 

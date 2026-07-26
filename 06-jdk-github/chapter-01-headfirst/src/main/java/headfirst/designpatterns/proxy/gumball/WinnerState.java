@@ -4,7 +4,7 @@ package headfirst.designpatterns.proxy.gumball;
  * 中奖状态
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2023/12/7 16:43
  */
 public class WinnerState implements State {
 
@@ -15,18 +15,22 @@ public class WinnerState implements State {
         this.gumballMachine = gumballMachine;
     }
 
+    @Override
     public void insertQuarter() {
         System.out.println("Please wait, we're already giving you a Gumball");
     }
 
+    @Override
     public void ejectQuarter() {
         System.out.println("Please wait, we're already giving you a Gumball");
     }
 
+    @Override
     public void turnCrank() {
         System.out.println("Turning again doesn't get you another gumball!");
     }
 
+    @Override
     public void dispense() {
         System.out.println("YOU'RE A WINNER! You get two gumballs for your quarter");
         gumballMachine.releaseBall();
@@ -43,6 +47,7 @@ public class WinnerState implements State {
         }
     }
 
+    @Override
     public String toString() {
         return "despensing two gumballs for your quarter, because YOU'RE A WINNER!";
     }

@@ -4,7 +4,7 @@ package org.bluebridge.structure.adapter.adapter_m;
  * 注解处理器适配器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:52
  */
 public class AnnotationHandlerAdapter implements HandlerAdapter {
 

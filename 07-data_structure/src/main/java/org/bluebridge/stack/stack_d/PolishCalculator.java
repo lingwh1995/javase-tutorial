@@ -9,7 +9,7 @@ import java.util.Stack;
  * 2*(8+16)/4 ==> 2 8 16 + * 4
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:15
  */
 public class PolishCalculator {
 
@@ -27,21 +27,21 @@ public class PolishCalculator {
                 if (str.matches("\\d+") || str.equals(".")) { // 匹配到多位数
                     // 处理多位数
                     keepnum += str;
-                    // 如果str是最后一位，则直接入栈
+                    // 如果 str 是最后一位，则直接入栈
                     if (index == middleExpression.length() - 1) {
                         numstack.push(keepnum);
                     } else {
                         // 判断下一个字符是不是数字
-                        // 只是往后看一位，index的值不改变
+                        // 只是往后看一位，index 的值不改变
                         if (operstack.isOper(middleExpression.substring(index + 1, index + 2).charAt(0))) {
                             numstack.push(keepnum);
-                            // 清空keepnum
+                            // 清空 keepnum
                             keepnum = "";
                         }
                     }
                     break;
                 } else {
-                    // 进行条件判断，符号栈为空，或str为“（”，或优先级大于符号栈栈顶的运算符，则直接压入符号栈中
+                    // 进行条件判断，符号栈为空，或 str 为“（”，或优先级大于符号栈栈顶的运算符，则直接压入符号栈中
                     if (operstack.isEmpty()
                             || str.equals("(")
                             || operstack.priority(operstack.peek()) < operstack.priority(str)) {
@@ -90,13 +90,13 @@ public class PolishCalculator {
     public static double calculate(List<String> list) {
         // 创建一个栈，一个栈即可
         Stack<String> stack = new Stack();
-        // 遍历list
+        // 遍历 list
         for (String str : list) {
             // 这里使用正则表达式来取出数（多位数或小数皆可）
             if (str.matches("\\d+") || str.matches("\\d+\\.\\d+")) {
                 stack.push(str); // 加入栈中
             } else {
-                // pop出两个数并运算，运算结束后再入栈
+                // pop 出两个数并运算，运算结束后再入栈
                 double num1 = Double.parseDouble(stack.pop());
                 double num2 = Double.parseDouble(stack.pop());
                 double result = 0;
@@ -116,11 +116,11 @@ public class PolishCalculator {
                     default:
                         throw new RuntimeException("运算符有误");
                 }
-                // 将result转为String，入栈
+                // 将 result 转为 String，入栈
                 stack.push(result + "");
             }
         }
-        // 最后留在stack中的就是结果
+        // 最后留在 stack 中的就是结果
         return Double.parseDouble(stack.pop());
     }
 }
@@ -128,11 +128,11 @@ public class PolishCalculator {
 class Transformation {
     private int maxSize; // 栈的大小
     private String[] stack; // 数组，数组模拟栈，数据放在数组中
-    private int top = -1; // top表示栈底，初始化为-1（表示没有数据）
+    private int top = -1; // top 表示栈底，初始化为 -1（表示没有数据）
 
     public Transformation(int maxSize) {
         this.maxSize = maxSize;
-        stack = new String[maxSize]; // 创建大小为maxSize的数组
+        stack = new String[maxSize]; // 创建大小为 maxSize 的数组
     }
 
     // 增加一个方法，可以返回当前栈顶的值，但不是出栈
@@ -159,7 +159,7 @@ class Transformation {
                 result = num1 + num2;
                 break;
             case '-':
-                // num2后取，num1先取
+                // num2 后取，num1 先取
                 result = num2 - num1;
                 break;
             case '*':
@@ -189,7 +189,7 @@ class Transformation {
         return top == -1;
     }
 
-    // 入栈--push
+    // 入栈 -- push
     public void push(String value) {
         if (isFull()) {
             System.out.println("栈满");
@@ -199,7 +199,7 @@ class Transformation {
         stack[top] = value;
     }
 
-    // 出栈--pop
+    // 出栈 -- pop
     public String pop() {
         if (isEmpty()) {
             // 抛出异常

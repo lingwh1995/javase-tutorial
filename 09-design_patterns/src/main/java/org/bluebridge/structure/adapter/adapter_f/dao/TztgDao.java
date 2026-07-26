@@ -3,10 +3,10 @@ package org.bluebridge.structure.adapter.adapter_f.dao;
 import org.bluebridge.structure.adapter.adapter_f.domain.Tztg;
 
 /**
- * 通知通告Dao
+ * 通知通告 Dao
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 16:08
  */
 public class TztgDao {
 

@@ -1,13 +1,13 @@
 package org.bluebridge.create.factorymethod.factorymethod_c.factory;
 
-import create.factorymethod.factorymethod_c.service.IUserService;
-import create.factorymethod.factorymethod_c.service.UserServiceMysql;
+import org.bluebridge.create.factorymethod.factorymethod_c.service.IUserService;
+import org.bluebridge.create.factorymethod.factorymethod_c.service.UserServiceMysql;
 
 /**
- * Mysql工厂
+ * Mysql 工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:33
  */
 public class MysqlFactory extends PersistencecFactory {
 

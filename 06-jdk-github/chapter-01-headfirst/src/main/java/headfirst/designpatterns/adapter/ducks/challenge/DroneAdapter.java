@@ -6,7 +6,7 @@ import headfirst.designpatterns.adapter.ducks.Duck;
  * 无人机适配器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 21:39
  */
 public class DroneAdapter implements Duck {
 

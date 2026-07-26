@@ -14,7 +14,7 @@ public class Client2 {
                 new Context(
                         "D:\\Repository\\github\\JavaSE\\designpattern\\src\\main\\resources\\InterpreterTest.xml");
 
-        // 想要获取d元素的id属性，也就是如下表达式的值："a/b/d$.id$"
+        // 想要获取 d 元素的 id 属性，也就是如下表达式的值："a/b/d$.id$"
         // 首先要构建解释器的抽象语法树
         ElementExpression root = new ElementExpression("root");
         ElementExpression aEle = new ElementExpression("a");

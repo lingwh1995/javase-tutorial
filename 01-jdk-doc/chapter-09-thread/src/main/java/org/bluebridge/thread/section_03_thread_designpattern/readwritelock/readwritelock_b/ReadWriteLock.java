@@ -49,7 +49,7 @@ public class ReadWriteLock {
     public synchronized void readLock() throws InterruptedException {
         this.watingReaders++;
         try {
-            // 如果当前有线程在写,就不能读了
+            // 如果当前有线程在写，就不能读了
             while (writingWriters > 0 || (preferWriter && waitingWriters > 0)) {
                 this.wait();
             }

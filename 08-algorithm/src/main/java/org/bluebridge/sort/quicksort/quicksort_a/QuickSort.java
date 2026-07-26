@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 快速排序
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:32
  */
 public class QuickSort {
 
@@ -24,28 +24,28 @@ public class QuickSort {
         // 中轴值
         int mid = arr[(l + r) / 2];
         int temp = 0;
-        // while循环的目的是把比中轴值大的值放到右边,把中轴值小的值放到左边
+        // while 循环的目的是把比中轴值大的值放到右边，把中轴值小的值放到左边
         while (l < r) {
-            // 在中轴的左边一直找，直到大于等于mid的值才退出
+            // 在中轴的左边一直找，直到大于等于 mid 的值才退出
             while (arr[l] < mid) {
                 l++;
             }
-            // 在中轴的右边一直找，直到小于等于mid的值才退出
+            // 在中轴的右边一直找，直到小于等于 mid 的值才退出
             while (arr[r] > mid) {
                 r--;
             }
-            // 如果l>=r,说明mid左右两边的值已经按照左边全是小于等于mid，右边全是大于等于mid
+            // 如果 l>=r，说明 mid 左右两边的值已经按照左边全是小于等于 mid，右边全是大于等于 mid
             if (l >= r) {
                 break;
             }
             temp = arr[l];
             arr[l] = arr[r];
             arr[r] = temp;
-            // 如果交换完成后,发现arr[l]==mid,则r--
+            // 如果交换完成后，发现 arr[l]==mid，则 r--
             if (arr[l] == mid) {
                 r--;
             }
-            // 如果交换完成后,发现arr[r]==mid,则l++
+            // 如果交换完成后，发现 arr[r]==mid，则 l++
             if (arr[r] == mid) {
                 l++;
             }
@@ -67,7 +67,7 @@ public class QuickSort {
         }
         i = low;
         j = high;
-        // temp就是基准位
+        // temp 就是基准位
         temp = arr[low];
 
         while (i < j) {
@@ -86,7 +86,7 @@ public class QuickSort {
                 arr[i] = t;
             }
         }
-        // 最后将基准为与i和j相等位置的数字交换
+        // 最后将基准为与 i 和 j 相等位置的数字交换
         arr[low] = arr[i];
         arr[i] = temp;
         // 递归调用左半数组

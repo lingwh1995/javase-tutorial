@@ -27,7 +27,7 @@ public class RemoteControl {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
-        // 一开始,并没有所谓的前一个命令对象，将其设置为noCommand对象
+        // 一开始，并没有所谓的前一个命令对象，将其设置为 noCommand 对象
         undoCommand = noCommand;
     }
 
@@ -43,7 +43,7 @@ public class RemoteControl {
      */
     public void onButtonWasPressed(int solt) {
         onCommands[solt].execute();
-        // 不管是打开还是关闭命令,处理方式都是一样的
+        // 不管是打开还是关闭命令，处理方式都是一样的
         undoCommand = onCommands[solt];
     }
 
@@ -54,12 +54,12 @@ public class RemoteControl {
      */
     public void offButtonWasPressed(int solt) {
         offCommands[solt].execute();
-        // 不管是打开还是关闭命令,处理方式都是一样的
+        // 不管是打开还是关闭命令，处理方式都是一样的
         undoCommand = offCommands[solt];
     }
 
     /**
-     * 撤销按钮被按下,执行撤销操作 注意:undoCommand永远保存的都是前一个被执行的命令,执行撤销命令则会倒转前一个命令
+     * 撤销按钮被按下，执行撤销操作 注意：undoCommand 永远保存的都是前一个被执行的命令，执行撤销命令则会倒转前一个命令
      */
     public void undoButtonWasPressed() {
         System.out.println("............");

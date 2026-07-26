@@ -4,7 +4,7 @@ package headfirst.designpatterns.state.gumballstatewinner;
  * 糖果机(带赢家状态)
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 22:36
  */
 public class GumballMachine {
 

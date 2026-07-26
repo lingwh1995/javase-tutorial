@@ -19,7 +19,7 @@ public class SecurityMgr {
     }
 
     /**
-     * 在运行期间，用来存放登录人员对应的权限， 在Web应用中，这些数据通常会存放到session中
+     * 在运行期间，用来存放登录人员对应的权限，在 Web 应用中，这些数据通常会存放到 session 中
      */
     private Map<String, Collection<Flyweight>> map = new HashMap<>();
 
@@ -40,7 +40,7 @@ public class SecurityMgr {
      * @param user 被检测权限的用户
      * @param securityEntity 安全实体
      * @param permit 权限
-     * @return true表示拥有相应权限，false表示没有相应权限
+     * @return true 表示拥有相应权限，false 表示没有相应权限
      */
     public boolean hasAuthority(String user, String securityEntity, String permit) {
         Collection<Flyweight> col = map.get(user);

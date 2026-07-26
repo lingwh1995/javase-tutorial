@@ -4,7 +4,7 @@ package org.bluebridge.tree.avltree.avltree_a;
  * 平衡二叉树测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:09
  */
 public class AVLTreeTest {
 
@@ -13,7 +13,7 @@ public class AVLTreeTest {
          * 测试左旋转
          */
         int[] arrLeft = { 4, 3, 6, 5, 7, 8 };
-        // 创建要给AVLTree对象
+        // 创建要给 AVLTree 对象
         AVLTree avlTreeLeft = new AVLTree();
         // 添加节点
         for (int i = 0; i < arrLeft.length; i++) {

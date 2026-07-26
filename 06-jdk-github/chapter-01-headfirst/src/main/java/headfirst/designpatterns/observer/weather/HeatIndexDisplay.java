@@ -4,19 +4,20 @@ package headfirst.designpatterns.observer.weather;
  * 热量指数展示
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 21:10
  */
 public class HeatIndexDisplay implements Observer, DisplayElement {
 
-    float heatIndex = 0.0f;
-    private WeatherData weatherData;
+	float heatIndex = 0.0f;
+	private WeatherData weatherData;
 
-    public HeatIndexDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
-        weatherData.registerObserver(this);
-    }
+	public HeatIndexDisplay(WeatherData weatherData) {
+		this.weatherData = weatherData;
+		weatherData.registerObserver(this);
+	}
 
-	public void update(float t, float rh, float pressure) {
+	@Override
+    public void update(float t, float rh, float pressure) {
 		heatIndex = computeHeatIndex(t, rh);
 		display();
 	}
@@ -33,7 +34,8 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
 		return index;
 	}
 
+	@Override
     public void display() {
-        System.out.println("Heat index is " + heatIndex);
-    }
+		System.out.println("Heat index is " + heatIndex);
+	}
 }

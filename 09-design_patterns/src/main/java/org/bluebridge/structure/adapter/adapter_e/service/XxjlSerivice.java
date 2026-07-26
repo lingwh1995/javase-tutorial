@@ -7,7 +7,7 @@ import org.bluebridge.structure.adapter.adapter_e.domain.Xxjl;
  * 信息交流服务实现
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 19:27
  */
 public class XxjlSerivice implements IXxjlService {
 

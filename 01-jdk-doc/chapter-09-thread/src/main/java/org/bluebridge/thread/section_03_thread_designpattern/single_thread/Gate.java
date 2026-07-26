@@ -31,7 +31,7 @@ public class Gate {
     }
 
     /**
-     * 注意:加上下面两个方法,Gate类就不安全了 因为String name,String address必须合在一起赋值才能有保护意义
+     * 注意：加上下面两个方法，Gate 类就不安全了 因为 String name，String address 必须合在一起赋值才能有保护意义
      */
     // public synchronized void setName(String name) {
     // this.name = name;

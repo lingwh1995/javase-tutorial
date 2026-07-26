@@ -4,7 +4,7 @@ package org.bluebridge.structure.adapter.adapter_c;
  * 客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:14
  */
 public class Client {
 
@@ -19,7 +19,7 @@ public class Client {
             }
         };
         /**
-         * 加入了一个缓冲层AbstractAnimateListenerAdpater，对AbstractAnimateListenerAdpater中的方法进行适配
+         * 加入了一个缓冲层 AbstractAnimateListenerAdpater，对 AbstractAnimateListenerAdpater 中的方法进行适配
          */
         animateListener.onAnimateStart();
         AbstractAnimateListenerAdpater listener = new AbstractAnimateListenerAdpater() {

@@ -8,23 +8,23 @@ package org.bluebridge.action.iterator.iterator_h;
  */
 public interface Iterator {
 
-    public void first();
+    void first();
 
-    public void next();
+    void next();
 
-    public boolean isDone();
+    boolean isDone();
 
-    public Object currentItem();
+    Object currentItem();
 
     /**
      * 判断是否为第一个元素
      *
-     * @return 如果为第一个元素，返回true，否则返回false
+     * @return 如果为第一个元素，返回 true，否则返回 false
      */
-    public boolean isFirst();
+    boolean isFirst();
 
     /**
      * 移动到聚合对象的上一个位置
      */
-    public void previous();
+    void previous();
 }

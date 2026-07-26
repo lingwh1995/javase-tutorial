@@ -9,7 +9,7 @@ package org.bluebridge.structure.composite.composite_a;
 public class Client {
 
     public static void main(String[] args) {
-        // 定义多个Composite对象
+        // 定义多个 Composite 对象
         Component root = new Composite();
         Component c1 = new Composite();
         Component c2 = new Composite();
@@ -26,7 +26,7 @@ public class Client {
         c1.addChild(leaf2);
         c2.addChild(leaf3);
 
-        // 操作Component对象
+        // 操作 Component 对象
         Component o = root.getChildren(1);
         System.out.println(o);
         root.someOperation();

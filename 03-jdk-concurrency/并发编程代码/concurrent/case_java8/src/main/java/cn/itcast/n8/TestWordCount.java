@@ -19,7 +19,7 @@ import java.util.stream.IntStream;
  * 单词计数测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 11:27
  */
 public class TestWordCount {
 
@@ -32,7 +32,7 @@ public class TestWordCount {
                 (map, words) -> {
                     for (String word : words) {
 
-                        // 如果缺少一个 key，则计算生成一个 value , 然后将  key value 放入 map
+                        // 如果缺少一个 key，则计算生成一个 value ， 然后将  key value 放入 map
                         //                  a      0
                         LongAdder value = map.computeIfAbsent(word, (key) -> new LongAdder());
                         // 执行累加

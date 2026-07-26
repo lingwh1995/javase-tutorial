@@ -3,10 +3,10 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * synchronized线程安全测试
+ * synchronized 线程安全测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 14:50
  */
 @Slf4j(topic = "c.Test17")
 public class Test17 {

@@ -7,7 +7,7 @@ import java.util.Observer;
  * 天气预报展示
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 16:14
  */
 public class ForecastDisplay implements Observer, DisplayElement {
 
@@ -18,6 +18,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
         observable.addObserver(this);
     }
 
+    @Override
     public void update(Observable observable, Object arg) {
         if (observable instanceof WeatherData) {
             WeatherData weatherData = (WeatherData) observable;
@@ -27,6 +28,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
         }
     }
 
+    @Override
     public void display() {
         System.out.print("Forecast: ");
         if (currentPressure > lastPressure) {

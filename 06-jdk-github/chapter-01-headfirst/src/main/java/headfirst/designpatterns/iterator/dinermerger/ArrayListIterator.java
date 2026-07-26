@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 数组列表迭代器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:31
  */
 public class ArrayListIterator implements Iterator {
 

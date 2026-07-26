@@ -4,7 +4,7 @@ package headfirst.designpatterns.state.gumballstate;
  * 售罄状态
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 09:27
  */
 public class SoldOutState implements State {
 
@@ -14,26 +14,32 @@ public class SoldOutState implements State {
         this.gumballMachine = gumballMachine;
     }
 
+    @Override
     public void insertQuarter() {
         System.out.println("You can't insert a quarter, the machine is sold out");
     }
 
+    @Override
     public void ejectQuarter() {
         System.out.println("You can't eject, you haven't inserted a quarter yet");
     }
 
+    @Override
     public void turnCrank() {
         System.out.println("You turned, but there are no gumballs");
     }
 
+    @Override
     public void dispense() {
         System.out.println("No gumball dispensed");
     }
 
+    @Override
     public void refill() {
         gumballMachine.setState(gumballMachine.getNoQuarterState());
     }
 
+    @Override
     public String toString() {
         return "sold out";
     }

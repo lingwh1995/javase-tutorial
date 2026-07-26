@@ -10,7 +10,7 @@ import java.util.List;
  * 生产者消费者模式测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 10:33
  */
 @Slf4j(topic = "c.TestProducerConsumer")
 public class TestProducerConsumer {

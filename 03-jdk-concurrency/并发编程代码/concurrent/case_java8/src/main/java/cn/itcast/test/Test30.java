@@ -6,10 +6,10 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Condition顺序打印测试
+ * Condition 顺序打印测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 16:41
  */
 public class Test30 {
 

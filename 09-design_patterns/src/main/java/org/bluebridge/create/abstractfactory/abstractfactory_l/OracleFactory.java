@@ -1,10 +1,10 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_l;
 
 /**
- * Oracle工厂
+ * Oracle 工厂
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 12:42
  */
 public class OracleFactory implements IFactory {
 

@@ -19,10 +19,11 @@ public class SecurityMgr {
     /**
      * 私有化构造方法
      */
-    private SecurityMgr() {}
+    private SecurityMgr() {
+    }
 
     /**
-     * 获取单例的SecurityMgr实例
+     * 获取单例的 SecurityMgr 实例
      *
      * @return
      */
@@ -65,7 +66,7 @@ public class SecurityMgr {
             if (ss[0].equals(user)) {
                 Flyweight flyweight = null;
                 if (ss[3].equals("2")) {
-                    // ss[3].equals("2")为真表示是组合
+                    // ss[3].equals("2") 为真表示是组合
                     flyweight = new UnSharedConcreteFlyweight();
                     // 获取需要组合的数据
                     String tempSs[] = DataFactory.getAuthorityInfosMap().get(ss[1]);

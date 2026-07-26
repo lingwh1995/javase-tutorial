@@ -4,7 +4,7 @@ package org.bluebridge.structure.facade.facade_a;
  * 投影仪，使用饿汉式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:38
  */
 public class Projector {
 

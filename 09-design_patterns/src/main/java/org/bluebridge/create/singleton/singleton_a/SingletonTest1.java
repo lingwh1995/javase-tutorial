@@ -1,7 +1,7 @@
 package org.bluebridge.create.singleton.singleton_a;
 
 /**
- * 饿汉式:静态方法
+ * 饿汉式：静态方法
  *
  * @author lingwh
  * @date 2019/3/23 23:10
@@ -18,13 +18,14 @@ public class SingletonTest1 {
 }
 
 class Singleton1 {
-    private Singleton1() {}
+    private Singleton1() {
+    }
 
     /**
      * 饿汉式
      *
      * 1. 线程安全，效率高，但是不能延时加载
-     * 2. 巧记:恶汉式，非常饿，上来就吃了
+     * 2. 巧记：恶汉式，非常饿，上来就吃了
      * 3. 效率高体现在不使用同步
      */
     private static final Singleton1 singleton1 = new Singleton1();

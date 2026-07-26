@@ -25,7 +25,7 @@ public class Client {
         oracleOrder.getOrder(1);
 
         System.out.println("--------------------------------------");
-        // 使用了抽象工厂模式后，把创建操作接口的细节隐藏了起来，不用new了，直接从工厂中获取
+        // 使用了抽象工厂模式后，把创建操作接口的细节隐藏了起来，不用 new 了，直接从工厂中获取
         IFactory mysqlFactory = new MysqlFactory();
         IUser userInterfaceMysql = mysqlFactory.createUserInterface();
         userInterfaceMysql.insert(new User());

@@ -4,7 +4,7 @@ package org.bluebridge.structure.bridge.bridge_b;
  * 获取手机
  *
  * @author lingwh
- * @date 2026/7/9 17:50
+ * @date 2026/7/22 17:53
  */
 public class Client {
 
@@ -30,7 +30,7 @@ public class Client {
         ximiUpRight.close();
 
         System.out.println("--------------------------------------");
-        // 获取直立式Vivo手机：样式+品牌
+        // 获取直立式 Vivo 手机：样式+品牌
         UpRightPhone vivoUpRight = new UpRightPhone(new Vivo());
         vivoUpRight.open();
         vivoUpRight.call();

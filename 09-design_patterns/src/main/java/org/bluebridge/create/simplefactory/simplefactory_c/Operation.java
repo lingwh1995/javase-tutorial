@@ -4,7 +4,7 @@ package org.bluebridge.create.simplefactory.simplefactory_c;
  * 运算符类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 20:34
  */
 public interface Operation {
 

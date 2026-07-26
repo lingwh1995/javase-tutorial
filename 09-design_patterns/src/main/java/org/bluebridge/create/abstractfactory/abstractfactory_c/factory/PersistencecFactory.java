@@ -1,13 +1,13 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_c.factory;
 
-import create.abstractfactory.abstractfactory_c.service.ICustomerService;
-import create.abstractfactory.abstractfactory_c.service.IUserService;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.ICustomerService;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.IUserService;
 
 /**
  * PersistencecFactory
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 13:45
  */
 public interface PersistencecFactory {
 

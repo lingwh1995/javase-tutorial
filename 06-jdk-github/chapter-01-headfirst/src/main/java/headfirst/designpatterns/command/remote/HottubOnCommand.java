@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.remote;
  * 热水浴缸开启命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 14:52
  */
 public class HottubOnCommand implements Command {
 
@@ -14,6 +14,7 @@ public class HottubOnCommand implements Command {
         this.hottub = hottub;
     }
 
+    @Override
     public void execute() {
         hottub.on();
         hottub.heat();

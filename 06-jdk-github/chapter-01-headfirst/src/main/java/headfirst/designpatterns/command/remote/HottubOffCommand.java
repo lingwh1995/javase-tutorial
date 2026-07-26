@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.remote;
  * 热水浴缸关闭命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:17
  */
 public class HottubOffCommand implements Command {
 

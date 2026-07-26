@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 煎饼屋菜单实现类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 14:09
  */
 public class PancakeHouseMenu implements Menu {
 
@@ -29,10 +29,12 @@ public class PancakeHouseMenu implements Menu {
         return menuItems;
     }
 
+    @Override
     public Iterator createIterator() {
         return new PancakeHouseMenuIterator(menuItems);
     }
 
+    @Override
     public String toString() {
         return "Pancake House Menu";
     }

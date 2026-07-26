@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_g;
 
 /**
- * Intel的CPU实现
+ * Intel 的 CPU 实现
  *
  * @author lingwh
  * @date 2019/9/4 9:42
@@ -9,14 +9,14 @@ package org.bluebridge.create.abstractfactory.abstractfactory_g;
 public class IntelCPU implements CPUApi {
 
     /**
-     * CPU的针脚数目
+     * CPU 的针脚数目
      */
     private int pins = 0;
 
     /**
-     * 构造方法，传入CPU的针脚数目
+     * 构造方法，传入 CPU 的针脚数目
      *
-     * @param pins CPU的针脚数目
+     * @param pins CPU 的针脚数目
      */
     public IntelCPU(int pins) {
         this.pins = pins;

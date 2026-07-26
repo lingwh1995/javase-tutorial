@@ -4,7 +4,7 @@ package headfirst.designpatterns.decorator.starbuzz;
  * 牛奶调料
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:49
  */
 public class Milk extends CondimentDecorator {
 
@@ -12,10 +12,12 @@ public class Milk extends CondimentDecorator {
         this.beverage = beverage;
     }
 
+    @Override
     public String getDescription() {
         return beverage.getDescription() + ", Milk";
     }
 
+    @Override
     public double cost() {
         return .10 + beverage.cost();
     }

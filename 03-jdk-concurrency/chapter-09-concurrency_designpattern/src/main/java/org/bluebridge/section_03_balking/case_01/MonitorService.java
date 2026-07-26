@@ -4,7 +4,7 @@ package org.bluebridge.section_03_balking.case_01;
  * 监控服务
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/3/10 11:32
  */
 public class MonitorService {
 
@@ -19,7 +19,7 @@ public class MonitorService {
             }
             starting = true;
         }
-        // 其实synchronized外面还可以再套一层if，或者改为if(!starting)，if框后直接return
+        // 其实 synchronized 外面还可以再套一层 if，或者改为 if(!starting)，if 框后直接 return
         // 真正启动监控线程...
     }
 }

@@ -4,7 +4,7 @@ package org.bluebridge.create.factorymethod.factorymethod_b;
  * 加法工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 12:27
  */
 public class AddFactory extends OperationFactory {
 

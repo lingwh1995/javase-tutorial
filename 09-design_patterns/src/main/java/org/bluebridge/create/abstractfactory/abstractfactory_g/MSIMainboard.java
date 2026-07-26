@@ -9,14 +9,14 @@ package org.bluebridge.create.abstractfactory.abstractfactory_g;
 public class MSIMainboard implements MainboardApi {
 
     /**
-     * CPU插槽的孔数
+     * CPU 插槽的孔数
      */
     private int cpuHoles = 0;
 
     /**
-     * 构造方法，传入CPU插槽的孔数
+     * 构造方法，传入 CPU 插槽的孔数
      *
-     * @param cpuHoles CPU插槽的孔数
+     * @param cpuHoles CPU 插槽的孔数
      */
     public MSIMainboard(int cpuHoles) {
         this.cpuHoles = cpuHoles;

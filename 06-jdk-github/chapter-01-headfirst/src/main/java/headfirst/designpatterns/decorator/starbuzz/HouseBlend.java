@@ -4,7 +4,7 @@ package headfirst.designpatterns.decorator.starbuzz;
  * 综合咖啡
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 14:36
  */
 public class HouseBlend extends Beverage {
 
@@ -12,6 +12,7 @@ public class HouseBlend extends Beverage {
         description = "House Blend Coffee";
     }
 
+    @Override
     public double cost() {
         return .89;
     }

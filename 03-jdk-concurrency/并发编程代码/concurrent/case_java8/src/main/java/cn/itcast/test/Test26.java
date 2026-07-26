@@ -5,10 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * LockSupport测试
+ * LockSupport 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 12:39
  */
 @Slf4j(topic = "c.Test26")
 public class Test26 {

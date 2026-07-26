@@ -1,7 +1,7 @@
 package org.bluebridge.create.factorymethod.factorymethod_g;
 
 /**
- * 导出数据:文本文件格式
+ * 导出数据：文本文件格式
  *
  * @author lingwh
  * @date 2019/9/3 16:59

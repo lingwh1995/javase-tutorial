@@ -6,7 +6,7 @@ import java.util.Iterator;
  * 餐厅菜单迭代器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:28
  */
 public class DinerMenuIterator implements Iterator<MenuItem> {
 
@@ -33,7 +33,7 @@ public class DinerMenuIterator implements Iterator<MenuItem> {
 
     public void remove() {
         if (position <= 0) {
-            throw new IllegalStateException( "You can't remove an item until you've done at least one next()");
+            throw new IllegalStateException("You can't remove an item until you've done at least one next()");
         }
         if (list[position - 1] != null) {
             for (int i = position - 1; i < (list.length - 1); i++) {

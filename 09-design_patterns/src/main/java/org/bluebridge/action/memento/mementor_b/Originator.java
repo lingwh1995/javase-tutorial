@@ -4,7 +4,7 @@ package org.bluebridge.action.memento.mementor_b;
  * 原始对象
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class Originator {
 
@@ -31,7 +31,7 @@ public class Originator {
     }
 
     /**
-     * 得到状态,并且恢复状态
+     * 得到状态，并且恢复状态
      *
      * @return
      */

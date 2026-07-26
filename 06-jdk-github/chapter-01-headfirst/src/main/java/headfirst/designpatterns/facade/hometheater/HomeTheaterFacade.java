@@ -4,7 +4,7 @@ package headfirst.designpatterns.facade.hometheater;
  * 家庭影院外观模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 08:33
  */
 public class HomeTheaterFacade {
 

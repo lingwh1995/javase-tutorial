@@ -3,10 +3,10 @@ package cn.itcast.n4;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * synchronized计数器测试
+ * synchronized 计数器测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 15:10
  */
 @Slf4j(topic = "c.TestCounterSync")
 public class TestCounterSync {

@@ -4,7 +4,7 @@ package headfirst.designpatterns.decorator.pizza;
  * 薄底披萨
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2023/12/7 22:29
  */
 public class ThincrustPizza extends Pizza {
 
@@ -12,6 +12,7 @@ public class ThincrustPizza extends Pizza {
         description = "Thin crust pizza, with tomato sauce";
     }
 
+    @Override
     public double cost() {
         return 7.99;
     }

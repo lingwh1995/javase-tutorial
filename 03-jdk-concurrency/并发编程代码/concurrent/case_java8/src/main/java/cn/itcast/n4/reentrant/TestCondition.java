@@ -8,10 +8,10 @@ import java.util.concurrent.locks.ReentrantLock;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * Condition条件变量测试
+ * Condition 条件变量测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 09:05
  */
 @Slf4j(topic = "c.TestCondition")
 public class TestCondition {

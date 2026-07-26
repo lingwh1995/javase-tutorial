@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.remoteWL;
  * 吊扇
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:29
  */
 public class CeilingFan {
 

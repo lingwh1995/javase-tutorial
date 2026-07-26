@@ -1,16 +1,16 @@
 package org.bluebridge.action.iterator.iterator_c;
 
 /**
- * 对于List和Array两种不同的结构,可以使用相同的方式来遍历
+ * 对于 List 和 Array 两种不同的结构，可以使用相同的方式来遍历
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class Client {
 
     public static void main(String[] args) {
         /**
-         * 遍历list结构
+         * 遍历 list 结构
          */
         Structure listStructure = new ListStructure();
         Iterator listiIterator = listStructure.iterator();
@@ -20,7 +20,7 @@ public class Client {
 
         System.out.println("------------------");
         /**
-         * 遍历Array结构
+         * 遍历 Array 结构
          */
         Structure arrayStructure = new ArrayStructure();
         Iterator arrayIterator = arrayStructure.iterator();

@@ -3,10 +3,10 @@ package org.bluebridge.expand.principles.single_reponsibility;
 import org.junit.Test;
 
 /**
- * 不使用单一职能原则 Vehicle1.run()方法违反了单一职能原则
+ * 不使用单一职能原则 Vehicle1.run() 方法违反了单一职能原则
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:23
  */
 public class SingleReponsibility1 {
 

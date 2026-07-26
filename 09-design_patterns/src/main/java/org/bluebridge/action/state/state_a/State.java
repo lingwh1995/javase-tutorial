@@ -1,7 +1,7 @@
 package org.bluebridge.action.state.state_a;
 
 /**
- * 封装与Context的一个特定状态相关的行为
+ * 封装与 Context 的一个特定状态相关的行为
  *
  * @author lingwh
  * @date 2019/8/27 9:10

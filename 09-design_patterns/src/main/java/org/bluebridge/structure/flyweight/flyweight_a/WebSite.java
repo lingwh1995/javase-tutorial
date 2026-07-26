@@ -4,7 +4,7 @@ package org.bluebridge.structure.flyweight.flyweight_a;
  * 网站接口
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 08:25
  */
 public interface WebSite {
 

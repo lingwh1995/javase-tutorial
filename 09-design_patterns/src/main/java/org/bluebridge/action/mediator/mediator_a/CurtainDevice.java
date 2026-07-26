@@ -1,7 +1,7 @@
 package org.bluebridge.action.mediator.mediator_a;
 
 /**
- * 具体同事类1:窗帘设备
+ * 具体同事类 1：窗帘设备
  *
  * @author lingwh
  * @date 2019/7/29 9:20

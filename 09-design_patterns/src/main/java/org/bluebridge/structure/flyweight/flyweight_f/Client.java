@@ -22,7 +22,7 @@ public class Client {
         }
 
         // 特别提醒：这里查看的引用次数，不是指测试使用的次数，指的是
-        // SecurityMgr的queryByUser方法通过享元工厂去获取享元对象的次数
+        // SecurityMgr 的 queryByUser 方法通过享元工厂去获取享元对象的次数
         System.out.println(
                 "薪资数据,查看 被引用了" + FlyweightFactory.getInstance().getUseTimes("薪资数据,查看") + "次");
         System.out.println(

@@ -7,7 +7,7 @@ import java.util.List;
  * 对象结构
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class ObjectStructure {
 
@@ -17,7 +17,7 @@ public class ObjectStructure {
     private List<Person> persons = new LinkedList<Person>();
 
     /**
-     * 增加到list中
+     * 增加到 list 中
      *
      * @param person
      */
@@ -26,7 +26,7 @@ public class ObjectStructure {
     }
 
     /**
-     * 从list中移除
+     * 从 list 中移除
      *
      * @param person
      */

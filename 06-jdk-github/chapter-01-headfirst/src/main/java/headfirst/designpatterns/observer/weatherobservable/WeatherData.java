@@ -6,7 +6,7 @@ import java.util.Observable;
  * 气象数据
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2023/12/7 14:23
  */
 public class WeatherData extends Observable {
 
@@ -14,7 +14,8 @@ public class WeatherData extends Observable {
     private float humidity;
     private float pressure;
 
-    public WeatherData() {}
+    public WeatherData() {
+    }
 
     public void measurementsChanged() {
         setChanged();

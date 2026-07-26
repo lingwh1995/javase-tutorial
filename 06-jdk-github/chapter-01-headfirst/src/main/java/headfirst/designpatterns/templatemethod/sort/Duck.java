@@ -4,7 +4,7 @@ package headfirst.designpatterns.templatemethod.sort;
  * 鸭子
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:16
  */
 public class Duck implements Comparable<Duck> {
 

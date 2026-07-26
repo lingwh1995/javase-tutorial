@@ -4,7 +4,7 @@ package org.bluebridge.structure.proxy.synchronizedproxy;
  * 同步代理
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/22 15:30
  */
 public class SynchronizedProxy implements Task {
 
@@ -15,7 +15,7 @@ public class SynchronizedProxy implements Task {
     }
 
     /**
-     * 使用join完成同步执行处理
+     * 使用 join 完成同步执行处理
      */
     @Override
     public void task() {
@@ -23,7 +23,7 @@ public class SynchronizedProxy implements Task {
             Thread thread1 = createThread1();
             Thread thread2 = createThread2();
             thread1.start();
-            // 调用join,等待线程一的方法执行完毕
+            // 调用 join，等待线程一的方法执行完毕
             thread1.join();
             thread2.start();
         } catch (Exception e) {

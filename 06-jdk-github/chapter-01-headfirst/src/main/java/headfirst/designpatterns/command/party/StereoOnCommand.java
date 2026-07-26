@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.party;
  * 音响打开命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 14:36
  */
 public class StereoOnCommand implements Command {
 
@@ -14,10 +14,12 @@ public class StereoOnCommand implements Command {
         this.stereo = stereo;
     }
 
+    @Override
     public void execute() {
         stereo.on();
     }
 
+    @Override
     public void undo() {
         stereo.off();
     }

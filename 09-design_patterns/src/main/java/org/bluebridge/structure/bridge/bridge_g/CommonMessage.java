@@ -1,7 +1,7 @@
 package org.bluebridge.structure.bridge.bridge_g;
 
 /**
- * 普通消息,什么也不干
+ * 普通消息，什么也不干
  *
  * @author lingwh
  * @date 2019/8/6 9:16
@@ -13,7 +13,7 @@ public class CommonMessage extends AbstractMessage {
     }
 
     /**
-     * 发送普通消息:普通消息什么也不干，直接调用父类方法，把消息发送出去
+     * 发送普通消息：普通消息什么也不干，直接调用父类方法，把消息发送出去
      *
      * @param message
      * @param toUer

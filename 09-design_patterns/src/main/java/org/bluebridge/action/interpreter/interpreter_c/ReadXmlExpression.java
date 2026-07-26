@@ -1,7 +1,7 @@
 package org.bluebridge.action.interpreter.interpreter_c;
 
 /**
- * 用于处理自定义Xml取值表达式的接口
+ * 用于处理自定义 Xml 取值表达式的接口
  *
  * @author lingwh
  * @date 2019/8/27 13:57

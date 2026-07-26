@@ -7,10 +7,10 @@ import java.net.*;
 import java.util.concurrent.*;
 
 /**
- * TCP三次握手模拟
+ * TCP 三次握手模拟
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/17 13:56
  */
 @Slf4j
 public class TCPHandshakeSimulation {

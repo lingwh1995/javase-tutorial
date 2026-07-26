@@ -1,18 +1,18 @@
 package org.bluebridge.create.factorymethod.factorymethod_c.client;
 
-import create.factorymethod.factorymethod_c.domain.User;
-import create.factorymethod.factorymethod_c.factory.MysqlFactory;
-import create.factorymethod.factorymethod_c.factory.OracelFactory;
-import create.factorymethod.factorymethod_c.factory.PersistencecFactory;
-import create.factorymethod.factorymethod_c.service.IUserService;
-import create.factorymethod.factorymethod_c.service.UserServiceMysql;
-import create.factorymethod.factorymethod_c.service.UserServiceOracle;
+import org.bluebridge.create.factorymethod.factorymethod_c.domain.User;
+import org.bluebridge.create.factorymethod.factorymethod_c.factory.MysqlFactory;
+import org.bluebridge.create.factorymethod.factorymethod_c.factory.OracelFactory;
+import org.bluebridge.create.factorymethod.factorymethod_c.factory.PersistencecFactory;
+import org.bluebridge.create.factorymethod.factorymethod_c.service.IUserService;
+import org.bluebridge.create.factorymethod.factorymethod_c.service.UserServiceMysql;
+import org.bluebridge.create.factorymethod.factorymethod_c.service.UserServiceOracle;
 
 /**
  * 工厂方法模式客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:28
  */
 public class Client {
 

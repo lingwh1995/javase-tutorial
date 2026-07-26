@@ -4,7 +4,7 @@ package org.bluebridge.hashtable.hashtable_a;
  * 哈希表
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:52
  */
 public class HashTable {
 
@@ -35,7 +35,7 @@ public class HashTable {
     }
 
     /**
-     * 根据Employee的id计算出存放在具体的哪条链表中
+     * 根据 Employee 的 id 计算出存放在具体的哪条链表中
      *
      * @param id
      * @return
@@ -54,7 +54,7 @@ public class HashTable {
     }
 
     /**
-     * 根据id在哈希表中查找雇员
+     * 根据 id 在哈希表中查找雇员
      *
      * @param id
      */
@@ -68,7 +68,7 @@ public class HashTable {
     }
 
     /**
-     * 根据id在哈希表中删除雇员
+     * 根据 id 在哈希表中删除雇员
      *
      * @param id
      */
@@ -113,12 +113,12 @@ class Employee {
 class EmployeeLinkedList {
 
     /**
-     * 头指针，指向第一个Employee默认为null
+     * 头指针，指向第一个 Employee 默认为 null
      */
     private Employee head;
 
     /**
-     * 添加雇员到链表 假定id是自增长，即id的分配总是从小到大,因此我们将雇员直接添加到本链表最后即可
+     * 添加雇员到链表 假定 id 是自增长，即 id 的分配总是从小到大，因此我们将雇员直接添加到本链表最后即可
      *
      * @param employee
      */
@@ -164,7 +164,7 @@ class EmployeeLinkedList {
     }
 
     /**
-     * 根据输入的id查找对象
+     * 根据输入的 id 查找对象
      *
      * @param id
      * @return
@@ -190,7 +190,7 @@ class EmployeeLinkedList {
     }
 
     /**
-     * 根据输入的id删除对象
+     * 根据输入的 id 删除对象
      *
      * @param id
      * @return

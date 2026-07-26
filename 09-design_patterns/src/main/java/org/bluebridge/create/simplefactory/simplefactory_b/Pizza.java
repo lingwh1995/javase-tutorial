@@ -1,7 +1,7 @@
 package org.bluebridge.create.simplefactory.simplefactory_b;
 
 /**
- * pizza的制作分为四个流程
+ * pizza 的制作分为四个流程
  *
  * 1. prepare()
  * 2. bake()
@@ -9,7 +9,7 @@ package org.bluebridge.create.simplefactory.simplefactory_b;
  * 4. box()
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:52
  */
 public abstract class Pizza {
 

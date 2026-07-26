@@ -4,7 +4,7 @@ package headfirst.designpatterns.iterator.implicit;
  * 菜单项
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:01
  */
 public class MenuItem {
 

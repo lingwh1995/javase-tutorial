@@ -7,10 +7,10 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * cglib代理工厂
+ * cglib 代理工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:40
  */
 public class ProxyFactory {
 

@@ -1,7 +1,7 @@
 package org.bluebridge.action.command.command_d;
 
 /**
- * 技嘉主板类，开机命令的真正实现者，在Command模式中充当Receiver
+ * 技嘉主板类，开机命令的真正实现者，在 Command 模式中充当 Receiver
  *
  * @author lingwh
  * @date 2019/8/5 10:52

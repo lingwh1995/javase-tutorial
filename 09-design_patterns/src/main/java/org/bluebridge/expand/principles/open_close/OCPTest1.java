@@ -1,12 +1,12 @@
 package org.bluebridge.expand.principles.open_close;
 
 /**
- * 不遵循OCP原则
+ * 不遵循 OCP 原则
  *
- * 目前只有一个画三角形的需求，当增加一个画圆形的需求的时候，不仅要对方法的提供者Painter做修改，也要对调用者做修改
+ * 目前只有一个画三角形的需求，当增加一个画圆形的需求的时候，不仅要对方法的提供者 Painter 做修改，也要对调用者做修改
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:52
  */
 public class OCPTest1 {
 
@@ -18,7 +18,7 @@ public class OCPTest1 {
 }
 
 /**
- * 方法的使用方: 不遵守OCP,扩展的时候要对方法的使用方做修改
+ * 方法的使用方：不遵守 OCP，扩展的时候要对方法的使用方做修改
  */
 class Painter1 {
     public void drawShape(Shape1 shape) {

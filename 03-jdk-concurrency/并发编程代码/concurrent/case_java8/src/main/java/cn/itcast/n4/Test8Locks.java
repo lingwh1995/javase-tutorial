@@ -5,10 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * 8锁测试
+ * 8 锁测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 21:35
  */
 @Slf4j(topic = "c.Test8Locks")
 public class Test8Locks {

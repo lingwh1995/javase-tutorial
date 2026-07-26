@@ -15,7 +15,7 @@ public class Client {
         Hero top = new Hero("top", new Position(0, 0));
         // 中路
         Hero middle = new Hero("middle", new Position(0, 0));
-        // 打野发布消息,中上订阅
+        // 打野发布消息，中上订阅
         jungle.addObserver(top);
         jungle.addObserver(middle);
         System.out.println("-------------------------------");
@@ -23,7 +23,7 @@ public class Client {
         System.out.println("-------------------------------");
         jungle.move();
         System.out.println("-------------------------------");
-        // 中路发布消息,上野订阅
+        // 中路发布消息，上野订阅
         middle.addObserver(top);
         middle.addObserver(jungle);
         middle.move();

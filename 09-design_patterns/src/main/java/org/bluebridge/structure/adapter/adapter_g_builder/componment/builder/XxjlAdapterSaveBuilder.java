@@ -4,10 +4,10 @@ import org.bluebridge.structure.adapter.adapter_g_builder.dao.*;
 import org.bluebridge.structure.adapter.adapter_g_builder.domain.Xxjl;
 
 /**
- * XxjlAdapter实际构建者
+ * XxjlAdapter 实际构建者
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 10:43
  */
 public class XxjlAdapterSaveBuilder extends XxjlAdapterBuilder {
 

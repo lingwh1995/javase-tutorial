@@ -9,7 +9,7 @@ import java.util.concurrent.FutureTask;
  * 性能基准测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/1/25 10:47
  */
 @Fork(1)
 @BenchmarkMode(Mode.AverageTime)
@@ -18,9 +18,11 @@ import java.util.concurrent.FutureTask;
 public class MyBenchmark {
 
     static int[] ARRAY = new int[1000_000_00];
+
     static {
         Arrays.fill(ARRAY, 1);
     }
+
     @Benchmark
     public int c() throws Exception {
         int[] array = ARRAY;
@@ -58,6 +60,7 @@ public class MyBenchmark {
         new Thread(t4).start();
         return t1.get() + t2.get() + t3.get()+ t4.get();
     }
+
     @Benchmark
     public int d() throws Exception {
         int[] array = ARRAY;

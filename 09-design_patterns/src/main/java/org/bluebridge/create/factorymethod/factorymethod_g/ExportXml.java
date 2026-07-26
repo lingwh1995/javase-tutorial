@@ -1,7 +1,7 @@
 package org.bluebridge.create.factorymethod.factorymethod_g;
 
 /**
- * 导出Xml
+ * 导出 Xml
  *
  * @author lingwh
  * @date 2019/9/3 17:07

@@ -3,7 +3,7 @@ package org.bluebridge.structure.proxy.staticproxy.staticproxy_c;
 import java.sql.*;
 
 /**
- * 代理对象,代理用户数据对象
+ * 代理对象，代理用户数据对象
  *
  * @author lingwh
  * @date 2019/8/15 9:11
@@ -65,7 +65,7 @@ public class Proxy implements UserModelApi {
         if (!this.loaded) {
             // 从数据库中重新装载
             reload();
-            // 设置重新装载的标志为true
+            // 设置重新装载的标志为 true
             this.loaded = true;
         }
         return realSubject.getDepId();
@@ -93,7 +93,7 @@ public class Proxy implements UserModelApi {
             pstmt.setString(1, realSubject.getUserId());
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
-                // 只需要重新获取除了userId和name外的数据
+                // 只需要重新获取除了 userId 和 name 外的数据
                 realSubject.setDepId(rs.getString("depId"));
                 realSubject.setSex(rs.getString("sex"));
             }

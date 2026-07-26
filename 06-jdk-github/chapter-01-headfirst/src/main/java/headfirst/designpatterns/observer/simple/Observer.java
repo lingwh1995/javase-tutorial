@@ -4,7 +4,7 @@ package headfirst.designpatterns.observer.simple;
  * 观察者接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:07
  */
 public interface Observer {
 

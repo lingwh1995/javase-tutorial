@@ -4,7 +4,7 @@ package org.bluebridge.tree.bstree.bstree_a;
  * 二叉排序树
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:27
  */
 public class BinarySortTree {
 
@@ -41,9 +41,9 @@ public class BinarySortTree {
         if (root == null) {
             return;
         } else {
-            // 1.先找到要删除的节点targetNode
+            // 1. 先找到要删除的节点 targetNode
             Node targetNode = search(value);
-            // 如果没有找到目标节点,则结束程序
+            // 如果没有找到目标节点，则结束程序
             if (targetNode == null) {
                 return;
             }
@@ -52,11 +52,11 @@ public class BinarySortTree {
                 root = null;
                 return;
             }
-            // 找到targetNode的父节点
+            // 找到 targetNode 的父节点
             Node parent = searchParent(value);
             // 如果要删除的节点是叶子节点
             if (targetNode.left == null && targetNode.right == null) {
-                // 判断targetNode是父节点的左子节点还是右子节点
+                // 判断 targetNode 是父节点的左子节点还是右子节点
                 if (parent.left != null && parent.left.value == value) {
                     // 是左子节点
                     parent.left = null;
@@ -73,11 +73,11 @@ public class BinarySortTree {
                 // 如果要删除的节点有左子节点
                 if (targetNode.left != null) {
                     if (parent != null) {
-                        // 如果targetNode是parent的左子节点
+                        // 如果 targetNode 是 parent 的左子节点
                         if (parent.left.value == value) {
                             parent.left = targetNode.left;
                         } else {
-                            // 如果targetNode是parent的右子节点
+                            // 如果 targetNode 是 parent 的右子节点
                             parent.right = targetNode.left;
                         }
                     } else {
@@ -85,11 +85,11 @@ public class BinarySortTree {
                     }
                 } else { // 如果要删除的节点有右子节点
                     if (parent != null) {
-                        // 如果targetNode是parent的左子节点
+                        // 如果 targetNode 是 parent 的左子节点
                         if (parent.left.value == value) {
                             parent.left = targetNode.right;
                         } else {
-                            // 如果targetNode是parent的右子节点
+                            // 如果 targetNode 是 parent 的右子节点
                             parent.right = targetNode.right;
                         }
                     } else {
@@ -102,15 +102,15 @@ public class BinarySortTree {
 
     /**
      * @param node 传入的节点(当作二叉排序树的根节点)
-     * @return 返回以node为根节点的二叉排序树的最小节点的值
+     * @return 返回以 node 为根节点的二叉排序树的最小节点的值
      */
     public int delRightTreeMin(Node node) {
         Node target = node;
-        // 循环的查找左节点,就会找到最小值
+        // 循环的查找左节点，就会找到最小值
         while (target.left != null) {
             target = target.left;
         }
-        // 这时target就指向了最小的节点
+        // 这时 target 就指向了最小的节点
         delNode(target.value);
         return target.value;
     }
@@ -182,13 +182,13 @@ class Node {
         if (value == this.value) {
             return this;
         } else if (value < this.value) {
-            // 如果查找的值小于当前节点,向左子树递归查找
+            // 如果查找的值小于当前节点，向左子树递归查找
             if (this.left == null) {
                 return null;
             }
             return this.left.search(value);
         } else {
-            // 如果查找的值不小于当前节点,向右子树递归查找
+            // 如果查找的值不小于当前节点，向右子树递归查找
             if (this.right == null) {
                 return null;
             }
@@ -203,12 +203,12 @@ class Node {
      * @return
      */
     public Node searchParent(int value) {
-        // 如果当前节点就是要删除的节点的父节点,就返回
+        // 如果当前节点就是要删除的节点的父节点，就返回
         if ((this.left != null && this.left.value == value)
                 || this.right != null && this.right.value == value) {
             return this;
         } else {
-            // 如果查找的值小于当前节点的值,并且当前节点的左子节点不为空
+            // 如果查找的值小于当前节点的值，并且当前节点的左子节点不为空
             if (value < this.value && this.left != null) {
                 return this.left.searchParent(value);
             } else if (value >= this.value && this.right != null) {

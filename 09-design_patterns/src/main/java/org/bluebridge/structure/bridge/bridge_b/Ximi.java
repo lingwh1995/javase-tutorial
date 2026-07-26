@@ -4,7 +4,7 @@ package org.bluebridge.structure.bridge.bridge_b;
  * 小米手机
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 08:51
  */
 public class Ximi implements Brand {
 

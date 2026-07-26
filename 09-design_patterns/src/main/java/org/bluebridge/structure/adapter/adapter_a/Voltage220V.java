@@ -1,10 +1,10 @@
 package org.bluebridge.structure.adapter.adapter_a;
 
 /**
- * 220V电压
+ * 220V 电压
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 11:53
  */
 public class Voltage220V {
 

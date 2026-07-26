@@ -4,7 +4,7 @@ package org.bluebridge.structure.adapter.adapter_b;
  * 客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 17:09
  */
 public class Client {
 

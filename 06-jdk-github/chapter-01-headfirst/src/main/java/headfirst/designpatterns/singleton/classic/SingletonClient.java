@@ -4,7 +4,7 @@ package headfirst.designpatterns.singleton.classic;
  * 单例客户端
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:03
  */
 public class SingletonClient {
 

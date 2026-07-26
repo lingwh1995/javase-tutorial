@@ -4,7 +4,7 @@ package headfirst.designpatterns.state.gumballstatewinner;
  * 赢家状态
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2023/12/7 18:17
  */
 public class WinnerState implements State {
 
@@ -14,18 +14,22 @@ public class WinnerState implements State {
         this.gumballMachine = gumballMachine;
     }
 
+    @Override
     public void insertQuarter() {
         System.out.println("Please wait, we're already giving you a Gumball");
     }
 
+    @Override
     public void ejectQuarter() {
         System.out.println("Please wait, we're already giving you a Gumball");
     }
 
+    @Override
     public void turnCrank() {
         System.out.println("Turning again doesn't get you another gumball!");
     }
 
+    @Override
     public void dispense() {
         gumballMachine.releaseBall();
         if (gumballMachine.getCount() == 0) {
@@ -42,9 +46,11 @@ public class WinnerState implements State {
         }
     }
 
+    @Override
     public void refill() {
     }
 
+    @Override
     public String toString() {
         return "despensing two gumballs for your quarter, because YOU'RE A WINNER!";
     }

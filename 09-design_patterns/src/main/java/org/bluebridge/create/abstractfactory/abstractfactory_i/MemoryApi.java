@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_i;
 
 /**
- * 内存条API
+ * 内存条 API
  *
  * @author lingwh
  * @date 2019/8/7 16:11

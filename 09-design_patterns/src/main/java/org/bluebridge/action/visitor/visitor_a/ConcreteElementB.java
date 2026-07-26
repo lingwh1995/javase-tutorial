@@ -1,7 +1,7 @@
 package org.bluebridge.action.visitor.visitor_a;
 
 /**
- * 具体元素B
+ * 具体元素 B
  *
  * @author lingwh
  * @date 2019/10/11 9:22
@@ -19,7 +19,7 @@ public class ConcreteElementB extends Element {
     }
 
     /**
-     * 示例犯法,表示元素已有的功能实现
+     * 示例犯法，表示元素已有的功能实现
      */
     public void operationB() {
         // 已有的功能实现

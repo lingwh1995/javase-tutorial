@@ -8,10 +8,10 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * AwaitSignal顺序打印测试
+ * AwaitSignal 顺序打印测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 14:08
  */
 @Slf4j(topic = "c.Test28")
 public class Test28 {

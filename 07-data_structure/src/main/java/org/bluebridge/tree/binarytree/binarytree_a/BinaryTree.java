@@ -4,7 +4,7 @@ package org.bluebridge.tree.binarytree.binarytree_a;
  * 二叉树
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 20:41
  */
 public class BinaryTree {
 
@@ -215,23 +215,23 @@ class Node {
     }
 
     /**
-     * 根据节点的id值进行前序查找
+     * 根据节点的 id 值进行前序查找
      */
     public Node preorderSearch(int no) {
-        // 1.先判断no和根节点是否相等,如果相等，则返回根节点
+        // 1. 先判断 no 和根节点是否相等，如果相等，则返回根节点
         if (no == this.id) {
             return this;
         }
-        // 2.判断左子节点是否为空,不为空则递归向左查找
+        // 2. 判断左子节点是否为空，不为空则递归向左查找
         Node resultNode = null;
         if (null != this.left) {
             resultNode = this.left.preorderSearch(no);
         }
-        // 3.如果找到了,则返回该节点
+        // 3. 如果找到了，则返回该节点
         if (null != resultNode) {
             return resultNode;
         }
-        // 4.没找到,继续递归向右查找
+        // 4. 没找到，继续递归向右查找
         if (null != this.right) {
             resultNode = this.right.preorderSearch(no);
         }
@@ -239,23 +239,23 @@ class Node {
     }
 
     /**
-     * 根据节点的id值进行中序查找:左->根—>右
+     * 根据节点的 id 值进行中序查找：左 -> 根 -> 右
      */
     public Node infixorderSearch(int no) {
-        // 1.先判断当前节点的左子节点是否为空，如果不为空,则递归中序查找
+        // 1. 先判断当前节点的左子节点是否为空，如果不为空，则递归中序查找
         Node resultNode = null;
         if (this.left != null) {
             resultNode = this.left.infixorderSearch(no);
         }
-        // 2.如果找到了，则返回
+        // 2. 如果找到了，则返回
         if (null != resultNode) {
             return resultNode;
         }
-        // 3.如果没有找到，就和当前节点比较,相等则返回
+        // 3. 如果没有找到，就和当前节点比较，相等则返回
         if (this.id == no) {
             return this;
         }
-        // 4.如果当前节点的右节点不为空,则继续向右进行递归查找
+        // 4. 如果当前节点的右节点不为空，则继续向右进行递归查找
         if (this.right != null) {
             resultNode = this.right.infixorderSearch(no);
         }
@@ -266,25 +266,25 @@ class Node {
      * 根据节点的id值进行后序查找
      */
     public Node sufixorderSearch(int no) {
-        // 1.先判断当前节点的左子节点是否为空，如果不为空,则递归中序查找
+        // 1. 先判断当前节点的左子节点是否为空，如果不为空，则递归中序查找
         Node resultNode = null;
         if (null != this.left) {
             resultNode = this.left.sufixorderSearch(no);
         }
-        // 2.如果找到了，则返回
+        // 2. 如果找到了，则返回
         if (null != resultNode) {
             return resultNode;
         }
-        // 3..如果当前节点的右节点不为空,则继续向右进行递归查找
+        // 3. 如果当前节点的右节点不为空，则继续向右进行递归查找
         if (null != this.right) {
             resultNode = this.right.sufixorderSearch(no);
         }
-        // 4.如果没有找到，就和当前节点比较,相等则返回
+        // 4. 如果没有找到，就和当前节点比较，相等则返回
         if (null != resultNode) {
             return resultNode;
         }
         System.out.println("进入后序遍历~");
-        // 5.如果左右子树都没有找到,就和当前节点进行比较
+        // 5. 如果左右子树都没有找到，就和当前节点进行比较
         if (no == this.id) {
             resultNode = this;
         }

@@ -8,10 +8,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static cn.itcast.n4.deadlock.v3.TestDeadLock.STATE;
 
 /**
- * 死锁测试v3
+ * 死锁测试 v3
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 23:25
  */
 @Slf4j(topic = "c.TestDeadLock")
 public class TestDeadLock {

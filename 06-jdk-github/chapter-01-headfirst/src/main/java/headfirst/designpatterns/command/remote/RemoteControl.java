@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.remote;
  * 遥控器(命令调用者)
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 21:19
  */
 public class RemoteControl {
 
@@ -35,7 +35,8 @@ public class RemoteControl {
 		offCommands[slot].execute();
 	}
 
-	public String toString() {
+	@Override
+    public String toString() {
 		StringBuffer stringBuff = new StringBuffer();
 		stringBuff.append("\n------ Remote Control -------\n");
 		for (int i = 0; i < onCommands.length; i++) {

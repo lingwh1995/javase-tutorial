@@ -6,7 +6,7 @@ import java.util.Observable;
  * 简单主题
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 09:52
  */
 public class SimpleSubject extends Observable {
 

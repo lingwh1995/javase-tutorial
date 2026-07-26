@@ -4,7 +4,7 @@ package org.bluebridge.create.simplefactory.simplefactory_c;
  * 减法运算
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/22 10:14
  */
 public class Sub implements Operation {
 

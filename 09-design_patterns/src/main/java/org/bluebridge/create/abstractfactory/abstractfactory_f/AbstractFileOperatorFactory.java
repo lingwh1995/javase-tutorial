@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_f;
 
 /**
- * 生产操作操作文件API的的类工厂，并且同时执行了具体的操作
+ * 生产操作操作文件 API 的的类工厂，并且同时执行了具体的操作
  *
  * @author lingwh
  * @date 2019/8/2 11:34

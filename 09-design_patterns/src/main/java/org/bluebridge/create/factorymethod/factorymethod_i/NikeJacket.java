@@ -1,10 +1,10 @@
 package org.bluebridge.create.factorymethod.factorymethod_i;
 
 /**
- * Nike夹克
+ * Nike 夹克
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:47
  */
 public class NikeJacket implements IJacket {
 

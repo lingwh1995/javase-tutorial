@@ -1,7 +1,7 @@
 package org.bluebridge.structure.bridge.bridge_g;
 
 /**
- * 使用Email的方法发送消息
+ * 使用 Email 的方法发送消息
  *
  * @author lingwh
  * @date 2019/8/6 9:14

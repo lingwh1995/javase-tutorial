@@ -4,7 +4,7 @@ package org.bluebridge.expand.principles.dependenceinversion;
  * 依赖关系传递的三种方式 第二种方式：通过构造方法传递依赖
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:42
  */
 public class DependenceDeliver2 {
 

@@ -7,12 +7,12 @@ package org.bluebridge.create.simplefactory.simplefactory_c;
  * 1. 隐藏创建类的操作
  *
  * 工厂模式缺点
- * 1. 静态方法无法继承,无法形成基于继承的代码结构
+ * 1. 静态方法无法继承，无法形成基于继承的代码结构
  * 2. 新增加一个子类的时候，就要对工厂进行修改，如果在创建类的时候要加复杂的逻辑操作，会导致工厂类冗余而且庞大，维护性变差
  * 3. 删除新增某个子类的时候要对工厂类进行操作，违反了开闭原则
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 21:47
  */
 public class OperationFactory {
 

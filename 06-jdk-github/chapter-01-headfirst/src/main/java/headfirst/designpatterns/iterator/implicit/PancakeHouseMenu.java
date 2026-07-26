@@ -7,7 +7,7 @@ import java.util.Iterator;
  * 煎饼屋菜单
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 22:57
  */
 public class PancakeHouseMenu implements Menu {
 
@@ -17,38 +17,39 @@ public class PancakeHouseMenu implements Menu {
 		menuItems = new ArrayList<MenuItem>();
 
 		addItem("K&B's Pancake Breakfast",
-			"Pancakes with scrambled eggs, and toast",
-			true,
-			2.99);
+				"Pancakes with scrambled eggs, and toast",
+				true,
+				2.99);
 
 		addItem("Regular Pancake Breakfast",
-			"Pancakes with fried eggs, sausage",
-			false,
-			2.99);
+				"Pancakes with fried eggs, sausage",
+				false,
+				2.99);
 
 		addItem("Blueberry Pancakes",
-			"Pancakes made with fresh blueberries, and blueberry syrup",
-			true,
-			3.49);
+				"Pancakes made with fresh blueberries, and blueberry syrup",
+				true,
+				3.49);
 
 		addItem("Waffles",
-			"Waffles, with your choice of blueberries or strawberries",
-			true,
-			3.59);
+				"Waffles, with your choice of blueberries or strawberries",
+				true,
+				3.59);
 	}
 
-    public void addItem(String name, String description, boolean vegetarian, double price) {
-        MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
-        menuItems.add(menuItem);
-    }
+	public void addItem(String name, String description, boolean vegetarian, double price) {
+		MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
+		menuItems.add(menuItem);
+	}
 
-    public ArrayList<MenuItem> getMenuItems() {
-        return menuItems;
-    }
+	public ArrayList<MenuItem> getMenuItems() {
+		return menuItems;
+	}
 
+	@Override
     public Iterator<MenuItem> createIterator() {
-        return menuItems.iterator();
-    }
+		return menuItems.iterator();
+	}
 
-    // other menu methods here
+	// other menu methods here
 }

@@ -7,7 +7,7 @@ import java.util.Observer;
  * 当前状况展示
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:28
  */
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 

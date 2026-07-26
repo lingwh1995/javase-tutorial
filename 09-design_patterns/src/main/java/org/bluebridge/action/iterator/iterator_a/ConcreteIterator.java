@@ -15,7 +15,7 @@ public class ConcreteIterator implements Iterator {
     private ConcreteAggregate aggregate;
 
     /**
-     * 内部索引，记录当前迭代到的索引位置。 -1表示刚开始的时候，迭代器指向聚合对象第一个对象之前
+     * 内部索引，记录当前迭代到的索引位置。 -1 表示刚开始的时候，迭代器指向聚合对象第一个对象之前
      */
     private int index = -1;
 

@@ -1,7 +1,7 @@
 package org.bluebridge.action.visitor.visitor_f;
 
 /**
- * 叶子对象，相当于访问者模式的具体Element实现对象
+ * 叶子对象，相当于访问者模式的具体 Element 实现对象
  *
  * @author lingwh
  * @date 2019/10/11 13:52

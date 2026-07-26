@@ -4,7 +4,7 @@ package headfirst.designpatterns.observer.simple;
  * 观察者模式示例
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 20:24
  */
 public class Example {
 

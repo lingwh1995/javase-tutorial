@@ -4,7 +4,7 @@ package org.bluebridge.stack.stack_a;
  * 数组模拟栈
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:23
  */
 public class ArrayStack {
 

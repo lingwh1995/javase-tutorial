@@ -1,7 +1,7 @@
 package org.bluebridge.action.mediator.mediator_a;
 
 /**
- * 抽象同事类:智能设备
+ * 抽象同事类：智能设备
  *
  * @author lingwh
  * @date 2019/7/29 9:19

@@ -18,14 +18,15 @@ public class SecurityMgr {
      */
     private static SecurityMgr securityMgr = new SecurityMgr();
 
-    private SecurityMgr() {}
+    private SecurityMgr() {
+    }
 
     public static SecurityMgr getInstance() {
         return securityMgr;
     }
 
     /**
-     * 在运行期间，用来存放登录人员对应的权限， 在Web应用中，这些数据通常会存放到session中
+     * 在运行期间，用来存放登录人员对应的权限， 在 Web 应用中，这些数据通常会存放到 session 中
      */
     private Map<String, Collection<AuthorizationModel>> map = new HashMap<>();
 
@@ -57,8 +58,8 @@ public class SecurityMgr {
                 am.setSecurityEntity(authorityInfoArr[1]);
                 am.setAuthority(authorityInfoArr[2]);
                 /**
-                 * 和享元模式的区别:此模式并没有区分出变化和不变化的元数据，而是将变化和不变化的元数据一起封装到了
-                 * AuthorizationModel这个实体中，而享元模式是区分出不变的发生变化的，把不变的作为内部状态封装 到享元类中
+                 * 和享元模式的区别：此模式并没有区分出变化和不变化的元数据，而是将变化和不变化的元数据一起封装到了
+                 * AuthorizationModel 这个实体中，而享元模式是区分出不变的发生变化的，把不变的作为内部状态封装 到享元类中
                  */
                 col.add(am);
             }
@@ -69,10 +70,10 @@ public class SecurityMgr {
     /**
      * 判断某用户对某个安全实体是否拥有某权限
      *
-     * @param user 被检测权限的用户
+     * @param user           被检测权限的用户
      * @param securityEntity 安全实体
-     * @param authority 权限
-     * @return true表示拥有相应权限，false表示没有相应权限
+     * @param authority      权限
+     * @return true 表示拥有相应权限，false 表示没有相应权限
      */
     public boolean hasAuthority(String user, String securityEntity, String authority) {
         Collection<AuthorizationModel> col = map.get(user);

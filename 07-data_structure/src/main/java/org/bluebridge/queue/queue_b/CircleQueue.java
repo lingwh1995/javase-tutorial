@@ -7,7 +7,7 @@ package org.bluebridge.queue.queue_b;
  * 2. 环形队列好处是能把数组中空出来的位置再次利用起来
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 19:33
  */
 public class CircleQueue {
 
@@ -17,12 +17,12 @@ public class CircleQueue {
     private int maxCapacity;
 
     /**
-     * 队列头指针:指向队列中第一个元素
+     * 队列头指针：指向队列中第一个元素
      */
     private int front;
 
     /**
-     * 列尾指针:指向队列中的最后一个元素的后一个元素
+     * 列尾指针：指向队列中的最后一个元素的后一个元素
      */
     private int rear;
 

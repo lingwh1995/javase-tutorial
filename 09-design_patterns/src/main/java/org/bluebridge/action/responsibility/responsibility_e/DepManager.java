@@ -11,7 +11,7 @@ public class DepManager extends Handler {
     @Override
     public String handleFeeRequest(String user, double fee) {
         String str = "";
-        // 部门经理的权限只能在1000以内
+        // 部门经理的权限只能在 1000 以内
         if (fee < 1000) {
             // 为了测试，简单点，只同意小李申请的
             if ("小李".equals(user)) {
@@ -22,7 +22,7 @@ public class DepManager extends Handler {
             }
             return str;
         } else {
-            // 超过1000，继续传递给级别更高的人处理
+            // 超过 1000，继续传递给级别更高的人处理
             if (this.successor != null) {
                 return this.successor.handleFeeRequest(user, fee);
             }
@@ -32,13 +32,13 @@ public class DepManager extends Handler {
 
     @Override
     public boolean handlePreFeeRequest(String user, double requestNum) {
-        // 部门经理的权限比较小，只能在1000以内
+        // 部门经理的权限比较小，只能在 1000 以内
         if (requestNum < 1000) {
             // 工作需要嘛，统统同意
             System.out.println("部门经理同意" + user + "预支差旅费用" + requestNum + "元的请求");
             return true;
         } else {
-            // 超过1000，继续传递给级别更高的人处理
+            // 超过 1000，继续传递给级别更高的人处理
             if (this.successor != null) {
                 return this.successor.handlePreFeeRequest(user, requestNum);
             }

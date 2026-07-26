@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.party;
  * 吊扇
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 19:08
  */
 public class CeilingFan {
 

@@ -6,14 +6,16 @@ import java.util.Iterator;
  * 空迭代器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:19
  */
 public class NullIterator implements Iterator<MenuComponent> {
 
+    @Override
     public MenuComponent next() {
         return null;
     }
 
+    @Override
     public boolean hasNext() {
         return false;
     }
@@ -22,7 +24,7 @@ public class NullIterator implements Iterator<MenuComponent> {
      * No longer needed as of Java 8
      *
      * (non-Javadoc)
-     * 
+     *
      * @see java.util.Iterator#remove()
      *
      * public void remove() {

@@ -8,10 +8,10 @@ import java.util.Queue;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * 并发队列测试v2
+ * 并发队列测试 v2
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 10:30
  */
 @Slf4j(topic = "c.TestV2")
 public class TestV2 {

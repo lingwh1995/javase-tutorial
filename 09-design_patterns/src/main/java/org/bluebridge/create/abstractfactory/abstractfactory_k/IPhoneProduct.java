@@ -1,10 +1,10 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_k;
 
 /**
- * PhoneProduct接口
+ * PhoneProduct 接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:25
  */
 public interface IPhoneProduct {
 

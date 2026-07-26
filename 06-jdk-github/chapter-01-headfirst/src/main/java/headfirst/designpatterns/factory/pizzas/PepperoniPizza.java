@@ -4,7 +4,7 @@ package headfirst.designpatterns.factory.pizzas;
  * 意大利辣香肠披萨
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 14:23
  */
 public class PepperoniPizza extends Pizza {
 

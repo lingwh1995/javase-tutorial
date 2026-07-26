@@ -4,7 +4,7 @@ package org.bluebridge.tree.arraybinarytree.arraybinarytree_a;
  * 数组存储二叉树
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 22:04
  */
 public class ArrayBinaryTree {
 
@@ -53,7 +53,7 @@ class BinaryTree {
     }
 
     /**
-     * 前序遍历：根->左->右
+     * 前序遍历：根 -> 左 -> 右
      *
      * @param index 索引
      */
@@ -74,7 +74,7 @@ class BinaryTree {
     }
 
     /**
-     * 中序遍历：左->根->右
+     * 中序遍历：左 -> 根 -> 右
      *
      * @param index 索引
      */
@@ -95,7 +95,7 @@ class BinaryTree {
     }
 
     /**
-     * 前序遍历：左->右->根
+     * 前序遍历：左 -> 右 -> 根
      *
      * @param index 索引
      */

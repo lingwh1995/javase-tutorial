@@ -8,12 +8,12 @@ import java.util.Stack;
  * 逆波兰表达式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:32
  */
 public class PolandNatation {
 
     /**
-     * 转换字符串，将字符串放入到List中
+     * 转换字符串，将字符串放入到 List 中
      *
      * @param src
      * @return

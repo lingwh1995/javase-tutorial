@@ -10,12 +10,11 @@ public class Client2 {
 
     public static void main(String[] args) throws Exception {
         // 准备上下文
-        Context c =
-                new Context(
-                        "D:\\Repository\\github\\JavaSE\\designpattern\\src\\main\\resources\\InterpreterTest.xml");
+        Context c = new Context(
+                "D:\\Repository\\github\\JavaSE\\designpattern\\src\\main\\resources\\InterpreterTest.xml");
 
-        // 想要获取c元素的name属性，也就是如下表达式的值："root/a/b/c.name"
-        // 这个时候c不是终结了，需要把c修改成ElementExpressioin
+        // 想要获取 c 元素的 name 属性，也就是如下表达式的值："root/a/b/c.name"
+        // 这个时候 c 不是终结了，需要把 c 修改成 ElementExpressioin
         ElementExpression root = new ElementExpression("root");
         ElementExpression aEle = new ElementExpression("a");
         ElementExpression bEle = new ElementExpression("b");
@@ -32,7 +31,7 @@ public class Client2 {
         System.out.println("c的属性name的值是=" + ss[0]);
 
         // 如果要使用同一个上下文，连续进行解析，需要重新初始化上下文对象
-        // 比如要连续的重新再获取一次属性name的值，当然你可以重新组合元素，
+        // 比如要连续的重新再获取一次属性 name 的值，当然你可以重新组合元素，
         // 重新解析，只要是在使用同一个上下文，就需要重新初始化上下文对象
         c.reInit();
         String ss2[] = root.interpret(c);

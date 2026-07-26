@@ -6,7 +6,7 @@ package headfirst.designpatterns.singleton.classic;
  * NOTE: This is not thread safe!
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:20
  */
 public class Singleton {
 

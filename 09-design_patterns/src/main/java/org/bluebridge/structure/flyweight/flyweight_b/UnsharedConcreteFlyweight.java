@@ -1,7 +1,7 @@
 package org.bluebridge.structure.flyweight.flyweight_b;
 
 /**
- * 不需要共享的享元对象:通常是将被共享的享元对象作为子节点，组合出来的对象
+ * 不需要共享的享元对象：通常是将被共享的享元对象作为子节点，组合出来的对象
  *
  * @author lingwh
  * @date 2019/7/30 13:38

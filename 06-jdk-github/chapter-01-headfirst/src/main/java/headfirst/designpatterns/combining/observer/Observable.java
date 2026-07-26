@@ -7,7 +7,7 @@ import java.util.Iterator;
  * 可观察者实现
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 13:34
  */
 public class Observable implements QuackObservable {
 
@@ -18,10 +18,12 @@ public class Observable implements QuackObservable {
         this.duck = duck;
     }
 
+    @Override
     public void registerObserver(Observer observer) {
         observers.add(observer);
     }
 
+    @Override
     public void notifyObservers() {
         Iterator<Observer> iterator = observers.iterator();
         while (iterator.hasNext()) {

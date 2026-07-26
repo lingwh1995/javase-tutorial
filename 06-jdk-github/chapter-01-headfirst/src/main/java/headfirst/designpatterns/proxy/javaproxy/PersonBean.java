@@ -4,7 +4,7 @@ package headfirst.designpatterns.proxy.javaproxy;
  * 人员信息接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 13:19
  */
 public interface PersonBean {
 

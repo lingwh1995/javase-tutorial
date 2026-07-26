@@ -1,13 +1,13 @@
 package org.bluebridge.create.factorymethod.factorymethod_c.factory;
 
-import create.factorymethod.factorymethod_c.service.IUserService;
-import create.factorymethod.factorymethod_c.service.UserServiceOracle;
+import org.bluebridge.create.factorymethod.factorymethod_c.service.IUserService;
+import org.bluebridge.create.factorymethod.factorymethod_c.service.UserServiceOracle;
 
 /**
- * Oracle工厂
+ * Oracle 工厂
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 09:47
  */
 public class OracelFactory extends PersistencecFactory {
 

@@ -4,7 +4,7 @@ package org.bluebridge.structure.adapter.adapter_c;
  * 动画监听器适配器抽象类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:38
  */
 public abstract class AbstractAnimateListenerAdpater implements AnimateListener {
 

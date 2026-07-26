@@ -13,7 +13,7 @@ public class SpecialUrgencyMessage extends AbstractMessage {
     }
 
     /**
-     * 因为是特急消息:所以就催促发送
+     * 因为是特急消息：所以就催促发送
      */
     public void hurry() {
         System.out.println("特急......");

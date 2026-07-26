@@ -9,10 +9,10 @@ import java.sql.*;
 import java.util.*;
 
 /**
- * 通用DAO
+ * 通用 DAO
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/7 09:41
  */
 public class GenericDao {
 

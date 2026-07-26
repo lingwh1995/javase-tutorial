@@ -5,10 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import static cn.itcast.n2.util.Sleeper.sleep;
 
 /**
- * wait和notify测试
+ * wait 和 notify 测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 21:44
  */
 @Slf4j(topic = "c.TestWaitNotify")
 public class TestWaitNotify {
@@ -21,7 +21,7 @@ public class TestWaitNotify {
             synchronized (obj) {
                 log.debug("执行....");
                 try {
-                    obj.wait(); // 让线程在obj上一直等待下去
+                    obj.wait(); // 让线程在 obj 上一直等待下去
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -33,7 +33,7 @@ public class TestWaitNotify {
             synchronized (obj) {
                 log.debug("执行....");
                 try {
-                    obj.wait(); // 让线程在obj上一直等待下去
+                    obj.wait(); // 让线程在 obj 上一直等待下去
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -45,8 +45,8 @@ public class TestWaitNotify {
         sleep(0.5);
         log.debug("唤醒 obj 上其它线程");
         synchronized (obj) {
-//            obj.notify(); // 唤醒obj上一个线程
-            obj.notifyAll(); // 唤醒obj上所有等待线程
+//            obj.notify(); // 唤醒 obj 上一个线程
+            obj.notifyAll(); // 唤醒 obj 上所有等待线程
         }
     }
 }

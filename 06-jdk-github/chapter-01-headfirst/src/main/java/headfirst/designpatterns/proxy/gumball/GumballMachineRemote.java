@@ -6,7 +6,7 @@ import java.rmi.*;
  * 糖果机远程接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:59
  */
 public interface GumballMachineRemote extends Remote {
 

@@ -4,7 +4,7 @@ package org.bluebridge.tree.threadbinarytree.threadbinarytree_a;
  * 线索二叉树测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 18:22
  */
 public class ThreadBinaryTreeTest {
 
@@ -28,7 +28,7 @@ public class ThreadBinaryTreeTest {
         ThreadBinaryTree threadBinaryTree = new ThreadBinaryTree(root);
         threadBinaryTree.threadNodes();
 
-        // 以10号节点为例
+        // 以 10 号节点为例
         Node leftNode = node5.getLeft();
         Node rightNode = node5.getRight();
         System.out.println("10号节点的前驱节点:" + leftNode);

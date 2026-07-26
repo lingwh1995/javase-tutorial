@@ -4,7 +4,7 @@ package headfirst.designpatterns.observer.weatherobservable;
  * 气象站
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2023/12/7 09:14
  */
 public class WeatherStation {
 

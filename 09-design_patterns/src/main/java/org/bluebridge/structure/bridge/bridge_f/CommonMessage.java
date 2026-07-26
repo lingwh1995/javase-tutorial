@@ -9,7 +9,7 @@ package org.bluebridge.structure.bridge.bridge_f;
 public class CommonMessage extends AbstractMessage {
 
     /**
-     * 构造方法:传入实现部分的对象
+     * 构造方法：传入实现部分的对象
      *
      * @param messageImplementor
      */
@@ -18,7 +18,7 @@ public class CommonMessage extends AbstractMessage {
     }
 
     /**
-     * 发送普通消息:普通消息什么也不干，直接调用父类方法，把消息发送出去
+     * 发送普通消息：普通消息什么也不干，直接调用父类方法，把消息发送出去
      *
      * @param message
      * @param toUer

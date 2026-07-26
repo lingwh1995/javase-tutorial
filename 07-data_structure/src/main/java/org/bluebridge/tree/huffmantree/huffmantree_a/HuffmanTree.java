@@ -8,7 +8,7 @@ import java.util.List;
  * 赫夫曼树
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 21:13
  */
 public class HuffmanTree {
 
@@ -25,9 +25,9 @@ public class HuffmanTree {
      * @param arr
      */
     public static Node createufmanTree(int[] arr) {
-        // 1.遍历arr数组
-        // 2.将arr的每个元素构成一个Node
-        // 3.将Node放入到ArrayList中
+        // 1. 遍历 arr 数组
+        // 2. 将 arr 的每个元素构成一个 Node
+        // 3. 将 Node 放入到 ArrayList 中
         List<Node> nodes = new ArrayList<Node>();
         for (int i : arr) {
             nodes.add(new Node(i));
@@ -36,17 +36,17 @@ public class HuffmanTree {
             // 排序从小到大
             Collections.sort(nodes);
             System.out.println(nodes);
-            // 1.取出权值最小的两棵二叉树
+            // 1. 取出权值最小的两棵二叉树
             Node leftNode = nodes.get(0);
             Node rightNode = nodes.get(1);
-            // 2.构建一棵新的二叉树
+            // 2. 构建一棵新的二叉树
             Node parent = new Node(leftNode.value + rightNode.value);
             parent.left = leftNode;
             parent.right = rightNode;
-            // 3.从ArrayList中删除处理过的节点
+            // 3. 从 ArrayList 中删除处理过的节点
             nodes.remove(leftNode);
             nodes.remove(rightNode);
-            // 4.将parent节点加入到Nodes节点
+            // 4. 将 parent 节点加入到 Nodes 节点
             nodes.add(parent);
             Collections.sort(nodes);
             System.out.println(nodes);

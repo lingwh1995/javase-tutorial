@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
  * 自定义线程池
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/3/20 14:57
  */
 public class ConnectionPool {
 
@@ -35,13 +35,13 @@ public class ConnectionPool {
     // 5. 借连接
     public Connection borrow() {
         while (true) {
-            // 信号量加1
+            // 信号量加 1
             try {
                 signal.acquire();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            // 成功,获取空闲连接
+            // 成功，获取空闲连接
             for (int i = 0; i < size; i++) {
                 if (status.get(i) == 0) {
                     if (status.compareAndSet(i, 0, 1)) {
@@ -59,7 +59,7 @@ public class ConnectionPool {
             if (connections[i] == connection) {
                 System.out.printf("释放连接: %d\n", i);
                 status.set(i, 0);
-                // 信号量减1
+                // 信号量减 1
                 signal.release();
                 break;
             }

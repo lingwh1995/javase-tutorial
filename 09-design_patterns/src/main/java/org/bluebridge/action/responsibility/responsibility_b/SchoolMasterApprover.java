@@ -1,10 +1,10 @@
 package org.bluebridge.action.responsibility.responsibility_b;
 
 /**
- * 校长 处理金额大于10000的请求
+ * 校长 处理金额大于 10000 的请求
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:03
  */
 public class SchoolMasterApprover extends Approver {
 

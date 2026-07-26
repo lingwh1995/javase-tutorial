@@ -4,7 +4,7 @@ package headfirst.designpatterns.facade.hometheater;
  * 调谐器
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2023/12/7 14:52
  */
 public class Tuner {
 
@@ -37,6 +37,7 @@ public class Tuner {
         System.out.println(description + " setting FM mode");
     }
 
+    @Override
     public String toString() {
         return description;
     }

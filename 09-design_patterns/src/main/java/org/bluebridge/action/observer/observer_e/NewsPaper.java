@@ -16,7 +16,7 @@ public class NewsPaper extends Subject {
 
     public void setContent(String content) {
         this.content = content;
-        // 内容有了，说明又出报纸了，那就通知所有的读者,推模型
+        // 内容有了，说明又出报纸了，那就通知所有的读者，推模型
         notifyObservers(content);
     }
 }

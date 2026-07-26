@@ -8,7 +8,7 @@ import java.util.Set;
  * 信箱管理
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/25 15:44
  */
 public class Mailboxes {
 
@@ -21,7 +21,7 @@ public class Mailboxes {
     }
 
     /**
-     * 根据id得到唯一的GuardedObject,用完给到收信人得移除GuardedObject
+     * 根据 id 得到唯一的 GuardedObject，用完给到收信人得移除 GuardedObject
      *
      * @param id
      * @return
@@ -31,7 +31,7 @@ public class Mailboxes {
     }
 
     /**
-     * 产生GuardedObject
+     * 产生 GuardedObject
      *
      * @return
      */
@@ -42,7 +42,7 @@ public class Mailboxes {
     }
 
     /**
-     * 得到map中的所有键，也就是id
+     * 得到 map 中的所有键，也就是 id
      *
      * @return
      */

@@ -4,7 +4,7 @@ package headfirst.designpatterns.proxy.gumball;
  * 售出状态
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:17
  */
 public class SoldState implements State {
 
@@ -15,18 +15,22 @@ public class SoldState implements State {
         this.gumballMachine = gumballMachine;
     }
 
+    @Override
     public void insertQuarter() {
         System.out.println("Please wait, we're already giving you a gumball");
     }
 
+    @Override
     public void ejectQuarter() {
         System.out.println("Sorry, you already turned the crank");
     }
 
+    @Override
     public void turnCrank() {
         System.out.println("Turning twice doesn't get you another gumball!");
     }
 
+    @Override
     public void dispense() {
         gumballMachine.releaseBall();
         if (gumballMachine.getCount() > 0) {
@@ -37,6 +41,7 @@ public class SoldState implements State {
         }
     }
 
+    @Override
     public String toString() {
         return "dispensing a gumball";
     }

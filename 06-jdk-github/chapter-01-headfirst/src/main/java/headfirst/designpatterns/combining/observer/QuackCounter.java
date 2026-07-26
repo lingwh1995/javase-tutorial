@@ -4,7 +4,7 @@ package headfirst.designpatterns.combining.observer;
  * 叫声计数器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 15:39
  */
 public class QuackCounter implements Quackable {
 
@@ -15,6 +15,7 @@ public class QuackCounter implements Quackable {
         this.duck = duck;
     }
 
+    @Override
     public void quack() {
         duck.quack();
         numberOfQuacks++;
@@ -24,14 +25,17 @@ public class QuackCounter implements Quackable {
         return numberOfQuacks;
     }
 
+    @Override
     public void registerObserver(Observer observer) {
         duck.registerObserver(observer);
     }
 
+    @Override
     public void notifyObservers() {
         duck.notifyObservers();
     }
 
+    @Override
     public String toString() {
         return duck.toString();
     }

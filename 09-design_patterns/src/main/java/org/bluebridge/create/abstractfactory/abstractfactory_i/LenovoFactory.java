@@ -1,7 +1,7 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_i;
 
 /**
- * 联想工厂:组装联想电脑，联想电脑搭载 AMD CPU和微星主板
+ * 联想工厂：组装联想电脑，联想电脑搭载 AMD CPU 和微星主板
  *
  * @author lingwh
  * @date 2019/8/7 14:52
@@ -9,7 +9,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_i;
 public class LenovoFactory implements AbstractFactory {
 
     /**
-     * 构造方法在此处无意义,只是标识一个这个类是华硕
+     * 构造方法在此处无意义，只是标识一个这个类是华硕
      */
     public LenovoFactory() {
         System.out.println("联想电脑工厂准备生产联想电脑,联想电脑搭载AMD牌CPU和MSI主板");
@@ -24,7 +24,7 @@ public class LenovoFactory implements AbstractFactory {
     @Override
     public Object createHardware(int type) {
         Object object = null;
-        // type为1表示创建CPU，type为2表示创建主板
+        // type 为 1 表示创建 CPU，type 为 2 表示创建主板
         if (type == 1) {
             object = new AMDCPU(939);
         } else if (type == 2) {

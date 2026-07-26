@@ -16,7 +16,7 @@ enum STATE {
  * 有限状态机测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/5/10 14:18
  */
 @Slf4j
 public class FSM2Test {

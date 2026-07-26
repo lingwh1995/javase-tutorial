@@ -4,7 +4,7 @@ package org.bluebridge.structure.proxy.staticproxy.staticproxy_b;
  * 教师数据访问对象代理
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 16:25
  */
 public class TeacherDaoProxy implements ITeacher {
 

@@ -15,7 +15,7 @@ public class ArrayIteratorImpl implements Iterator {
 
     /**
      * 用来记录当前迭代到的位置索引
-     *    -1表示刚开始的时候，迭代器指向聚合对象第一个对象之前
+     *    -1 表示刚开始的时候，迭代器指向聚合对象第一个对象之前
      */
     private int index = -1;
 

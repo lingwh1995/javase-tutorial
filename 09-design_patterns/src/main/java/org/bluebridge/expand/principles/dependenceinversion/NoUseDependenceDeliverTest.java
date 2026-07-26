@@ -4,7 +4,7 @@ package org.bluebridge.expand.principles.dependenceinversion;
  * 不使用依赖反转原则
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 12:34
  */
 public class NoUseDependenceDeliverTest {
 
@@ -17,7 +17,7 @@ public class NoUseDependenceDeliverTest {
 }
 
 /**
- * 通过Person1实现接口消息的功能 缺点:接受QQ要写一个方法，接收邮件要写一个方法
+ * 通过 Person1 实现接口消息的功能 缺点：接受 QQ 要写一个方法，接收邮件要写一个方法
  */
 class Person1 {
     public void receviceEmail(Email1 email1) {

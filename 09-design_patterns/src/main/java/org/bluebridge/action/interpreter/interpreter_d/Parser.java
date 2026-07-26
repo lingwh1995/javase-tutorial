@@ -13,7 +13,8 @@ public class Parser {
     /**
      * 私有化构造器，避免外部无谓的创建对象实例
      */
-    private Parser() {}
+    private Parser() {
+    }
 
     /**
      * 定义几个常量，内部使用
@@ -58,7 +59,7 @@ public class Parser {
     private static Map<String, ParserModel> parseMapPath(String expr) {
         // 先按照/分割字符串
         StringTokenizer tokenizer = new StringTokenizer(expr, BACKLASH);
-        // 初始化一个map用来存放分解出来的值
+        // 初始化一个 map 用来存放分解出来的值
         Map<String, ParserModel> mapPath = new HashMap<String, ParserModel>();
         while (tokenizer.hasMoreTokens()) {
             String onePath = tokenizer.nextToken();
@@ -172,7 +173,7 @@ public class Parser {
                 preRe = re;
                 returnRe = re;
             } else {
-                // 把元素添加到上一个对象下面，同时把本对象设置成为oldRe，
+                // 把元素添加到上一个对象下面，同时把本对象设置成为 oldRe，
                 // 作为下一个对象的父结点
                 if (preRe instanceof ElementExpression) {
                     ElementExpression ele = (ElementExpression) preRe;

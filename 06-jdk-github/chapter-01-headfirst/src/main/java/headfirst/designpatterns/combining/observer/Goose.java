@@ -4,7 +4,7 @@ package headfirst.designpatterns.combining.observer;
  * 鹅
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 10:48
  */
 public class Goose {
 
@@ -12,6 +12,7 @@ public class Goose {
         System.out.println("Honk");
     }
 
+    @Override
     public String toString() {
         return "Goose";
     }

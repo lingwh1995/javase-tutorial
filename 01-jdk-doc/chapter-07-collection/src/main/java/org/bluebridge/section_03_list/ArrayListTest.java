@@ -26,17 +26,17 @@ public class ArrayListTest {
     }
 
     /**
-     * 测试list的 set()
+     * 测试 list 的 set()
      */
     @Test
     public void testListSet() {
-        // 使用set()
+        // 使用 set()
         nums.set(0, 100);
         System.out.println("nums = " + nums);
     }
 
     /**
-     * 测试list的 indexOf()
+     * 测试 list 的 indexOf()
      */
     @Test
     public void testListIndexOf() {
@@ -45,7 +45,7 @@ public class ArrayListTest {
     }
 
     /**
-     * 测试list的 lastIndexOf()
+     * 测试 list 的 lastIndexOf()
      */
     @Test
     public void testListLastIndexOf() {
@@ -54,13 +54,13 @@ public class ArrayListTest {
     }
 
     /**
-     * 测试list的 listIterator()
+     * 测试 list 的 listIterator()
      */
     @Test
     public void testListListIterator() {
-        // 从索引为0的元素开始遍历
+        // 从索引为 0 的元素开始遍历
         // ListIterator<Integer> iterator = nums.listIterator();
-        // 从索引为1的元素开始遍历
+        // 从索引为 1 的元素开始遍历
         ListIterator<Integer> iterator = nums.listIterator(1);
         while (iterator.hasNext()) {
             Integer i = iterator.next();

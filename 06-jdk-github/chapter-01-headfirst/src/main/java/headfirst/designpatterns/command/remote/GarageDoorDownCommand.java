@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.remote;
  * 车库门下降命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:55
  */
 public class GarageDoorDownCommand implements Command {
 
@@ -14,6 +14,7 @@ public class GarageDoorDownCommand implements Command {
         this.garageDoor = garageDoor;
     }
 
+    @Override
     public void execute() {
         garageDoor.up();
     }

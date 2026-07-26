@@ -11,17 +11,17 @@ public class WorkerLogin {
     /**
      * 判断登录数据是否正确，也就是是否能登录成功
      *
-     * @param lm 封装登录数据的Model
-     * @return true表示登录成功，false表示登录失败
+     * @param lm 封装登录数据的 Model
+     * @return true 表示登录成功，false 表示登录失败
      */
     public boolean login(LoginModel lm) {
         // 1. 根据工作人员编号去获取工作人员的数据
         WorkerModel wm = findWorkerByWorkerId(lm.getWorkerId());
         // 2. 判断从前台传递过来的用户名和加密后的密码数据，
         // 和数据库中已有的数据是否匹配
-        // 先判断工作人员是否存在，如果wm为null，说明工作人员肯定不存在
-        // 但是不为null，工作人员不一定存在，
-        // 因为数据层可能返回new WorkerModel();因此还需要做进一步的判断
+        // 先判断工作人员是否存在，如果 wm 为 null，说明工作人员肯定不存在
+        // 但是不为 null，工作人员不一定存在，
+        // 因为数据层可能返回 new WorkerModel();因此还需要做进一步的判断
         if (wm != null) {
             // 3. 把从前台传来的密码数据，使用相应的加密算法进行加密运算
             String encryptPwd = this.encryptPwd(lm.getPwd());

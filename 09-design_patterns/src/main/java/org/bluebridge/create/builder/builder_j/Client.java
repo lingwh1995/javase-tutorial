@@ -49,7 +49,7 @@ public class Client {
 
         System.out.println("------------------------------------------");
 
-        // 测试输出到xml文件
+        // 测试输出到 xml 文件
         AbstractBuilder xmlBuilder = new XmlBuilder();
         // 重置具体的建造者
         director.setBuilder(xmlBuilder);

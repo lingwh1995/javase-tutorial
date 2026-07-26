@@ -4,7 +4,7 @@ package headfirst.designpatterns.combining.composite;
  * 抽象鸭子工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 17:05
  */
 public abstract class AbstractDuckFactory {
 

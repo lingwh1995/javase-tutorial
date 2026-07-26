@@ -4,7 +4,7 @@ package org.bluebridge.structure.adapter.adapter_a;
  * 电源适配器
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 10:15
  */
 public class VoltageAdapter extends Voltage220V implements IVoltage5V {
 

@@ -4,7 +4,7 @@ package headfirst.designpatterns.adapter.ducks.challenge;
  * 无人机接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 22:05
  */
 public interface Drone {
 

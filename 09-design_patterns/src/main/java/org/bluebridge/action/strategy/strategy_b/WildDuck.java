@@ -4,7 +4,7 @@ package org.bluebridge.action.strategy.strategy_b;
  * 野鸭
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 15:03
  */
 public class WildDuck extends Duck {
 

@@ -3,10 +3,10 @@ package org.bluebridge.create.abstractfactory.abstractfactory_d.service;
 import org.bluebridge.create.abstractfactory.abstractfactory_d.domain.User;
 
 /**
- * Oracle用户服务实现
+ * Oracle 用户服务实现
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 14:08
  */
 public class UserServiceOracle implements IUserService {
 

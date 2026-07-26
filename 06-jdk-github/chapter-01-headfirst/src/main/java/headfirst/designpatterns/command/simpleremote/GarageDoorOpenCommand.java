@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.simpleremote;
  * 车库门开启命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:27
  */
 public class GarageDoorOpenCommand implements Command {
 
@@ -14,6 +14,7 @@ public class GarageDoorOpenCommand implements Command {
         this.garageDoor = garageDoor;
     }
 
+    @Override
     public void execute() {
         garageDoor.up();
     }

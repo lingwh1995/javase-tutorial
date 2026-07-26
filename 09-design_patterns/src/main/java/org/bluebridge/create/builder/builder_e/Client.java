@@ -4,15 +4,16 @@ package org.bluebridge.create.builder.builder_e;
  * 客户端测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:36
  */
 public class Client {
 
     public static void main(String[] args) {
-        // 非Builder模式
-        // Customer customer1 = new Customer("00001", "test01", "test01.@qq.com", 18, "运动", "中国");
+        // 非 Builder 模式
+        // Customer customer1 = new Customer("00001", "test01", "test01.@qq.com", 18,
+        // "运动", "中国");
         // System.out.println(customer1);
-        // Builder模式
+        // Builder 模式
         Customer.Builder builder = new Customer.Builder();
         // 链式风格
         Customer customer2 = builder

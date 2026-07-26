@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 监控应用启动类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/2/7 08:41
  */
 @SpringBootApplication
 public class MonitorApplication {

@@ -1,7 +1,7 @@
 package org.bluebridge.action.mediator.mediator_b;
 
 /**
- * 具体的同事类B
+ * 具体的同事类 B
  *
  * @author lingwh
  * @date 2019/8/14 11:33

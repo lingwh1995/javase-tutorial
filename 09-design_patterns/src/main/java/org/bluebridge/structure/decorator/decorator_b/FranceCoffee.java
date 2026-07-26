@@ -4,7 +4,7 @@ package org.bluebridge.structure.decorator.decorator_b;
  * 法国咖啡：被装饰者
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:46
  */
 public class FranceCoffee extends Coffee {
 

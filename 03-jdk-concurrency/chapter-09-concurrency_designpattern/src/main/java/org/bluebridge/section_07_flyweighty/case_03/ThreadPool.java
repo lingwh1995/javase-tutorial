@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * 自定义线程池
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/3/20 16:33
  */
 public class ThreadPool {
 
@@ -34,9 +34,9 @@ public class ThreadPool {
 
     // 线程池的执行方法
     public void execute(Runnable task) {
-        // 当线程数大于等于coreSize的时候，将任务放入阻塞队列
-        // 当线程数小于coreSize的时候，新建一个Worker放入workers
-        // 注意workers类不是线程安全的， 需要加锁
+        // 当线程数大于等于 coreSize 的时候，将任务放入阻塞队列
+        // 当线程数小于 coreSize 的时候，新建一个 Worker 放入 workers
+        // 注意 workers 类不是线程安全的，需要加锁
         synchronized (workers) {
             if (workers.size() >= coreSize) {
                 taskQueue.put(task);

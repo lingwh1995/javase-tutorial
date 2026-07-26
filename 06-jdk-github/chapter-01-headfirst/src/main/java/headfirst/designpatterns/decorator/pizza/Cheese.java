@@ -4,7 +4,7 @@ package headfirst.designpatterns.decorator.pizza;
  * 芝士配料
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 18:07
  */
 public class Cheese extends ToppingDecorator {
 
@@ -12,6 +12,7 @@ public class Cheese extends ToppingDecorator {
         this.pizza = pizza;
     }
 
+    @Override
     public String getDescription() {
         return pizza.getDescription() + ", Cheese";
     }

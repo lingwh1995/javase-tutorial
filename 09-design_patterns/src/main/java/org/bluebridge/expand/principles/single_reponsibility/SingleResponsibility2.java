@@ -5,10 +5,10 @@ import org.junit.Test;
 /**
  * 类级别的单一职能原则
  *
- * 严格遵守了单一职责原则，遵守了单一职责原则:但是会导致类大爆炸
+ * 严格遵守了单一职责原则，遵守了单一职责原则：但是会导致类大爆炸
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:47
  */
 public class SingleResponsibility2 {
 

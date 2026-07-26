@@ -7,7 +7,7 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
 /**
- * 创建RMI注册表，启动RMI服务，并将远程对象注册到RMI注册表中。
+ * 创建 RMI 注册表，启动 RMI 服务，并将远程对象注册到 RMI 注册表中。
  *
  * @author lingwh
  * @date 2019/9/24 17:42
@@ -23,7 +23,7 @@ public class Server {
             CompareHelper stringCompareHelper = new StringCompareHelper();
             CompareHelper integerCompareHelper = new IntegerCompareHelper();
             LocateRegistry.createRegistry(PORT);
-            // 绑定的URL标准格式为：rmi://host:port/name(其中协议名可以省略，下面两种写法都是正确的）
+            // 绑定的 URL 标准格式为：rmi://host:port/name(其中协议名可以省略，下面两种写法都是正确的）
             // 本例子中就是 "rmi://localhost:9090/XXXXXXCompareHelper"
             Naming.bind("rmi://" + HOST + ":" + PORT + "/StringCompareHelper", stringCompareHelper);
             Naming.bind("//" + HOST + ":" + PORT + "/IntegerCompareHelper", integerCompareHelper);

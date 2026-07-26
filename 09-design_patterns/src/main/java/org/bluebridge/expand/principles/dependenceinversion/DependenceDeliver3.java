@@ -1,10 +1,10 @@
 package org.bluebridge.expand.principles.dependenceinversion;
 
 /**
- * 依赖关系传递的三种方式 第三种方式：通过setter()方法传递依赖
+ * 依赖关系传递的三种方式 第三种方式：通过 setter() 方法传递依赖
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 16:55
  */
 public class DependenceDeliver3 {
 

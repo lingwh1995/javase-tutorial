@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Redis数据库,不维护其他数据库的引用
+ * Redis 数据库，不维护其他数据库的引用
  *
  * @author lingwh
  * @date 2019/8/14 14:00
@@ -26,7 +26,7 @@ public class RedisDatabase extends AbstractDatabase {
     }
 
     /**
-     * Redis独有的缓存功能
+     * Redis 独有的缓存功能
      */
     public void cache() {
         System.out.println("- Redis 缓存的数据：" + this.dataset.toString());

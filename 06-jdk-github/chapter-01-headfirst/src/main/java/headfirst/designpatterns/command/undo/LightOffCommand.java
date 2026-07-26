@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.undo;
  * 灯关闭命令
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 12:46
  */
 public class LightOffCommand implements Command {
 
@@ -15,11 +15,13 @@ public class LightOffCommand implements Command {
         this.light = light;
     }
 
+    @Override
     public void execute() {
         level = light.getLevel();
         light.off();
     }
 
+    @Override
     public void undo() {
         light.dim(level);
     }

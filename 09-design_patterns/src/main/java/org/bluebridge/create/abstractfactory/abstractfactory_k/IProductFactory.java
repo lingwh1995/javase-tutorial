@@ -4,7 +4,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_k;
  * ProductFactory
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 08:12
  */
 public interface IProductFactory {
 

@@ -1,7 +1,7 @@
 package org.bluebridge.structure.facade.facade_d;
 
 /**
- * C模块的接口
+ * C 模块的接口
  *
  * @author lingwh
  * @date 2019/9/12 13:17

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 数组适配器
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 10:32
  */
 public class ArrayAdapter extends ArrayList {
 
@@ -22,7 +22,7 @@ public class ArrayAdapter extends ArrayList {
     }
 
     /**
-     * 注意：这个size()方法一定要重写，不然遍历的时候调用ArrayAdapter.size()返回的值是0，无法进行遍历
+     * 注意：这个 size() 方法一定要重写，不然遍历的时候调用 ArrayAdapter.size() 返回的值是 0，无法进行遍历
      */
     @Override
     public int size() {

@@ -9,7 +9,7 @@ package org.bluebridge.action.command.command_j;
 public class MacroCommand implements Command {
 
     /**
-     * 在宏命令模式中,使用命令数组存储一大推命令
+     * 在宏命令模式中，使用命令数组存储一大推命令
      */
     Command[] commands;
 

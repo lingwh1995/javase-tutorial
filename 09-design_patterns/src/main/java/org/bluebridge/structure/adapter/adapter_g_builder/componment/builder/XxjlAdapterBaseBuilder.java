@@ -4,31 +4,31 @@ import org.bluebridge.structure.adapter.adapter_g_builder.componment.adapter.Xxj
 import org.bluebridge.structure.adapter.adapter_g_builder.domain.Xxjl;
 
 /**
- * XxjlAdapter抽象执行者
+ * XxjlAdapter 抽象执行者
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 20:21
  */
 public abstract class XxjlAdapterBaseBuilder {
 
     private XxjlAdapter xxjlAdapter = new XxjlAdapter();
 
     /**
-     * 执行OpenfireDao保存Xxjl行为
+     * 执行 OpenfireDao 保存 Xxjl 行为
      *
      * @param xxjl
      */
     public abstract XxjlAdapterBaseBuilder buildXxjlOpenfireDao(Xxjl xxjl);
 
     /**
-     * 执行公安厅指令Dao发送短信行为
+     * 执行公安厅指令 Dao 发送短信行为
      *
      * @param phoneNumber
      */
     public abstract XxjlAdapterBaseBuilder buildGatzlDao(String phoneNumber);
 
     /**
-     * 执行通知通告Dao发送邮件行为
+     * 执行通知通告 Dao 发送邮件行为
      *
      * @param email
      */

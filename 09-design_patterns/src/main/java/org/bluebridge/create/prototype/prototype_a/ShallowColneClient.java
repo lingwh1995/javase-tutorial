@@ -3,10 +3,10 @@ package org.bluebridge.create.prototype.prototype_a;
 import java.util.Date;
 
 /**
- * 客户端:测试浅客隆/浅拷贝模式的原型模式
+ * 客户端：测试浅客隆/浅拷贝模式的原型模式
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 11:45
  */
 public class ShallowColneClient {
 
@@ -18,7 +18,7 @@ public class ShallowColneClient {
         Sheep sheepClone1 = (Sheep) sheepPrototype.clone();
         System.out.println("克隆对象1:" + sheepClone1);
 
-        // 判断原型对象和克隆的对象引用值是否相同: false
+        // 判断原型对象和克隆的对象引用值是否相同： false
         System.out.println("判断原型对象和克隆的对象引用值是否相同:" + (sheepPrototype == sheepClone1));
 
         Sheep sheepClone2 = (Sheep) sheepPrototype.clone();
@@ -27,14 +27,14 @@ public class ShallowColneClient {
 
         // 先创建克隆对象，再修改原型中引用类型属性的值
         Sheep sheepClone3 = (Sheep) sheepPrototype.clone();
-        // 修改原型中birthday指向的属性的值
+        // 修改原型中 birthday 指向的属性的值
         date.setTime(7788854L);
         System.out.println("修改后的原型:" + sheepPrototype.getBirthday());
 
-        // 打印后可以看出克隆出来的对象的birthday的属性的值也收到了影响
+        // 打印后可以看出克隆出来的对象的 birthday 的属性的值也收到了影响
         System.out.println("克隆对象3:" + sheepClone3.getBirthday());
 
-        // 浅客隆:对比原型和克隆对象中中引用类型的值，返回true
+        // 浅客隆：对比原型和克隆对象中中引用类型的值，返回 true
         System.out.println(sheepPrototype.getBirthday() == sheepClone3.getBirthday());
     }
 }

@@ -7,10 +7,10 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
- * FlatLaf Mac风格SVG图标展示
+ * FlatLaf Mac 风格 SVG 图标展示
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/1/23 08:37
  */
 public class FlatMacSvg {
 
@@ -38,8 +38,9 @@ public class FlatMacSvg {
             list.setCellRenderer(new DefaultListCellRenderer() {
                 @Override
                 public Component getListCellRendererComponent(JList<?> list, Object value, int index,
-                                                              boolean isSelected, boolean cellHasFocus) {
-                    JLabel label = (JLabel) super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                        boolean isSelected, boolean cellHasFocus) {
+                    JLabel label = (JLabel) super.getListCellRendererComponent(list, value, index, isSelected,
+                            cellHasFocus);
 
                     // 根据索引模拟不同的图标（实际开发中建议封装一个 Icon 对象）
                     String iconName = "home.svg"; // 假设你有这些 svg 文件

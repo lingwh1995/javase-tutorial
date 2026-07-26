@@ -4,7 +4,7 @@ package org.bluebridge.create.factorymethod.factorymethod_b;
  * 除法工厂
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:18
  */
 public class DivFactory extends OperationFactory {
 

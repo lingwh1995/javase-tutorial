@@ -21,7 +21,7 @@ public interface Iterator {
     /**
      * 判断是否已经移动到聚合对象的最后一个位置
      *
-     * @return true表示已经移动到聚合对象的最后一个位置， false表示还没有移动到聚合对象的最后一个位置
+     * @return true 表示已经移动到聚合对象的最后一个位置， false 表示还没有移动到聚合对象的最后一个位置
      */
     boolean isDone();
 

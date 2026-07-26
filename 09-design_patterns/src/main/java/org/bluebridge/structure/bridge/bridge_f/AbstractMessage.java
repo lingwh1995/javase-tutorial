@@ -16,7 +16,7 @@ public abstract class AbstractMessage {
     protected MessageImplementor messageImplementor;
 
     /**
-     * 构造方法:传入实现部分的对象
+     * 构造方法：传入实现部分的对象
      *
      * @param messageImplementor
      */

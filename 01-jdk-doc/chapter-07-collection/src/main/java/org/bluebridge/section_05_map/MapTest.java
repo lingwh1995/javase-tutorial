@@ -18,9 +18,9 @@ public class MapTest {
     @Test
     public void testMap() {
         Map<String, String> map = new HashMap<>();
-        // 第一次存储,返回null,直接存储
+        // 第一次存储，返回 null，直接存储
         System.out.println("第一次put():" + map.put("a", "zs"));
-        // 第二次存储,把原来的值替换为新值,返回以前的值
+        // 第二次存储，把原来的值替换为新值，返回以前的值
         System.out.println("第二次put():" + map.put("a", "zs1"));
         map.put("b", "ls");
         map.put("c", "ww");

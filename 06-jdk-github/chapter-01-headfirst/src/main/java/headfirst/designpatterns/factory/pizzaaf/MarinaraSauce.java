@@ -4,10 +4,11 @@ package headfirst.designpatterns.factory.pizzaaf;
  * 番茄酱
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 16:27
  */
 public class MarinaraSauce implements Sauce {
 
+    @Override
     public String toString() {
         return "Marinara Sauce";
     }

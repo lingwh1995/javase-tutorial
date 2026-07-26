@@ -7,7 +7,7 @@ import javax.sound.midi.*;
  * 节拍模型
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 11:53
  */
 public class BeatModel implements BeatModelInterface, MetaEventListener {
 

@@ -6,7 +6,7 @@ import java.util.HashMap;
  * 减法解释器
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/22 15:03
  */
 public class SubExpression extends SymbolExpression {
 
@@ -25,7 +25,7 @@ public class SubExpression extends SymbolExpression {
     }
 
     /**
-     * @param var key:公式 value:变量对应的具体值,如:{a=10,b=20}
+     * @param var key：公式 value：变量对应的具体值，如：{a=10，b=20}
      * @return
      */
     @Override

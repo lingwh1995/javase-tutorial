@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * ES数据库
+ * ES 数据库
  *
  * @author lingwh
  * @date 2019/8/15 8:38

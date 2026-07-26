@@ -23,13 +23,13 @@ public class NewsPaper extends Subject {
     }
 
     /**
-     * 示意，设置报纸的具体内容，相当于要出版报纸了 注意:一般是设置完状态之后才通知各个观察者
+     * 示意，设置报纸的具体内容，相当于要出版报纸了 注意：一般是设置完状态之后才通知各个观察者
      *
      * @param content 报纸的具体内容
      */
     public void setContent(String content) {
         this.content = content;
-        // 内容有了，说明又出报纸了，那就通知所有的读者,拉模型
+        // 内容有了，说明又出报纸了，那就通知所有的读者，拉模型
         notifyObservers();
     }
 }

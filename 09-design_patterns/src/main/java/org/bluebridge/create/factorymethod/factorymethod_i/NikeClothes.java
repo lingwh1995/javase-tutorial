@@ -1,10 +1,10 @@
 package org.bluebridge.create.factorymethod.factorymethod_i;
 
 /**
- * Nike服装
+ * Nike 服装
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:55
  */
 public class NikeClothes extends Clothes {
 

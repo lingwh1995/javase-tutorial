@@ -37,17 +37,17 @@ public class FlyweightFactory {
     }
 
     /**
-     * 缓存多个flyweight对象
+     * 缓存多个 flyweight 对象
      */
     private Map<String, Flyweight> flyweightMap = new HashMap<>();
 
     /**
-     * 用来缓存被共享对象的缓存配置，key值和上面map的一样
+     * 用来缓存被共享对象的缓存配置，key 值和上面 map 的一样
      */
     private Map<String, CacheConfModel> cacheConfMap = new HashMap<>();
 
     /**
-     * 用来记录缓存对象被引用的次数，key值和上面map的一样
+     * 用来记录缓存对象被引用的次数，key 值和上面 map 的一样
      */
     private Map<String, Integer> countMap = new HashMap<>();
 
@@ -59,7 +59,7 @@ public class FlyweightFactory {
     /**
      * 获取某个享元被使用的次数
      *
-     * @param key 享元的key
+     * @param key 享元的 key
      * @return 被使用的次数
      */
     public synchronized int getUseTimes(String key) {
@@ -71,10 +71,10 @@ public class FlyweightFactory {
     }
 
     /**
-     * 获取key对应的享元对象
+     * 获取 key 对应的享元对象
      *
-     * @param key 获取享元对象的key
-     * @return key对应的享元对象
+     * @param key 获取享元对象的 key
+     * @return key 对应的享元对象
      */
     public synchronized Flyweight getFlyweight(String key) {
         Flyweight flyweight = flyweightMap.get(key);
@@ -96,7 +96,7 @@ public class FlyweightFactory {
             cacheConfModel.setBeginTime(System.currentTimeMillis());
             // 设置回去
             this.cacheConfMap.put(key, cacheConfModel);
-            // 同时计数加1
+            // 同时计数加 1
             Integer count = countMap.get(key);
             count++;
             countMap.put(key, count);
@@ -140,9 +140,9 @@ public class FlyweightFactory {
                     FlyweightFactory.getInstance().removeFlyweight(key);
                 }
 
-                System.out.println("当前享元池中对象的个数="+flyweightMap.size()+",flyweightMap=="+flyweightMap.keySet());
+                System.out.println("当前享元池中对象的个数=" + flyweightMap.size() + ",flyweightMap==" + flyweightMap.keySet());
 
-                // 休息1秒再重新判断
+                // 休息 1 秒再重新判断
                 try {
                     Thread.sleep(1000L);
                 } catch (InterruptedException e) {

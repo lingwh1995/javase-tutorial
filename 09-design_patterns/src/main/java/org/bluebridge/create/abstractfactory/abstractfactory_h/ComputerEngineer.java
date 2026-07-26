@@ -9,7 +9,7 @@ package org.bluebridge.create.abstractfactory.abstractfactory_h;
 public class ComputerEngineer {
 
     /**
-     * 定义组装机器需要的CPU
+     * 定义组装机器需要的 CPU
      */
     private CPUApi cpu = null;
 
@@ -24,7 +24,7 @@ public class ComputerEngineer {
      * @param factory
      */
     public void makeComputer(AbstractFactory factory) {
-        // 创建CPU
+        // 创建 CPU
         CPUApi cpu = factory.createCPU();
         // 创建主板
         MainboardApi mainboard = factory.createMainboard();

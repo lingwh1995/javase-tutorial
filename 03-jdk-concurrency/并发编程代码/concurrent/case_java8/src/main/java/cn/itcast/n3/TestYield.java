@@ -3,10 +3,10 @@ package cn.itcast.n3;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * yield方法测试
+ * yield 方法测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 19:07
  */
 @Slf4j(topic = "c.TestYield")
 public class TestYield {

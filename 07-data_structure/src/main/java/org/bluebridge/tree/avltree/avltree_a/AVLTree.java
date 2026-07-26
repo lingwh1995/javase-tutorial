@@ -1,10 +1,10 @@
 package org.bluebridge.tree.avltree.avltree_a;
 
 /**
- * avl是在平衡二叉树的基础上增加一个功能的树
+ * avl 是在平衡二叉树的基础上增加一个功能的树
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:28
  */
 public class AVLTree {
 
@@ -49,9 +49,9 @@ public class AVLTree {
         if (root == null) {
             return;
         } else {
-            // 1.先找到要删除的节点targetNode
+            // 1. 先找到要删除的节点 targetNode
             Node targetNode = search(value);
-            // 如果没有找到目标节点,则结束程序
+            // 如果没有找到目标节点，则结束程序
             if (targetNode == null) {
                 return;
             }
@@ -60,11 +60,11 @@ public class AVLTree {
                 root = null;
                 return;
             }
-            // 找到targetNode的父节点
+            // 找到 targetNode 的父节点
             Node parent = searchParent(value);
             // 如果要删除的节点是叶子节点
             if (targetNode.left == null && targetNode.right == null) {
-                // 判断targetNode是父节点的左子节点还是右子节点
+                // 判断 targetNode 是父节点的左子节点还是右子节点
                 if (parent.left != null && parent.left.value == value) {
                     // 是左子节点
                     parent.left = null;
@@ -81,11 +81,11 @@ public class AVLTree {
                 // 如果要删除的节点有左子节点
                 if (targetNode.left != null) {
                     if (parent != null) {
-                        // 如果targetNode是parent的左子节点
+                        // 如果 targetNode 是 parent 的左子节点
                         if (parent.left.value == value) {
                             parent.left = targetNode.left;
                         } else {
-                            // 如果targetNode是parent的右子节点
+                            // 如果 targetNode 是 parent 的右子节点
                             parent.right = targetNode.left;
                         }
                     } else {
@@ -93,11 +93,11 @@ public class AVLTree {
                     }
                 } else { // 如果要删除的节点有右子节点
                     if (parent != null) {
-                        // 如果targetNode是parent的左子节点
+                        // 如果 targetNode 是 parent 的左子节点
                         if (parent.left.value == value) {
                             parent.left = targetNode.right;
                         } else {
-                            // 如果targetNode是parent的右子节点
+                            // 如果 targetNode 是 parent 的右子节点
                             parent.right = targetNode.right;
                         }
                     } else {
@@ -110,15 +110,15 @@ public class AVLTree {
 
     /**
      * @param node 传入的节点(当作二叉排序树的根节点)
-     * @return 返回以node为根节点的二叉排序树的最小节点的值
+     * @return 返回以 node 为根节点的二叉排序树的最小节点的值
      */
     public int delRightTreeMin(Node node) {
         Node target = node;
-        // 循环的查找左节点,就会找到最小值
+        // 循环的查找左节点，就会找到最小值
         while (target.left != null) {
             target = target.left;
         }
-        // 这时target就指向了最小的节点
+        // 这时 target 就指向了最小的节点
         delNode(target.value);
         return target.value;
     }
@@ -194,7 +194,7 @@ class Node {
      * 左旋转 每次添加一个节点后要判断是否要进行左旋转
      */
     public void leftRotate() {
-        // 创建新节点,以当前根节点的值
+        // 创建新节点，以当前根节点的值
         Node newNode = new Node(value);
         // 把新节点的左子树设置成当前节点的左子树
         newNode.left = left;
@@ -212,7 +212,7 @@ class Node {
      * 右旋转 每次添加一个节点后要判断是否要进行左旋转
      */
     public void rightRotate() {
-        // 创建新节点,以当前根节点的值
+        // 创建新节点，以当前根节点的值
         Node newNode = new Node(value);
         // 把新节点的右子树设置成当前节点的右子树
         newNode.right = right;
@@ -250,7 +250,7 @@ class Node {
             }
         }
 
-        // 当添加完一个节点后,右子树的高度减去左子树的高度的值大于1,则左旋转
+        // 当添加完一个节点后，右子树的高度减去左子树的高度的值大于 1，则左旋转
         if (rightHeight() - leftHeight() > 1) {
             // 如果右子树的左子树的高度大于右子树的右子树的高度
             if (right != null && right.leftHeight() > right.rightHeight()) {
@@ -265,16 +265,16 @@ class Node {
             // 这里必须返回
             return;
         }
-        // 当添加完一个节点后,左子树的高度减去右子树的高度的值大于1,则右旋转
+        // 当添加完一个节点后，左子树的高度减去右子树的高度的值大于 1，则右旋转
         if (leftHeight() - rightHeight() > 1) {
             // 如果左子树的右子树的右子树高度大于左子树高度
             if (left != null && left.rightHeight() > left.leftHeight()) {
-                // 先对当前节点的左节点(左子树)->左节点
+                // 先对当前节点的左节点(左子树) -> 左节点
                 left.leftRotate();
                 // 再对当前节点进行右旋转
                 rightRotate();
             } else {
-                // 否则:直接进行右旋转即可
+                // 否则：直接进行右旋转即可
                 rightRotate();
             }
         }
@@ -282,19 +282,19 @@ class Node {
 
     /**
      * @param value 希望删除的节点的值
-     * @return 如果找到返回该节点的值,否则返回null
+     * @return 如果找到返回该节点的值，否则返回 null
      */
     public Node search(int value) {
         if (value == this.value) {
             return this;
         } else if (value < this.value) {
-            // 如果查找的值小于当前节点,向左子树递归查找
+            // 如果查找的值小于当前节点，向左子树递归查找
             if (this.left == null) {
                 return null;
             }
             return this.left.search(value);
         } else {
-            // 如果查找的值不小于当前节点,向右子树递归查找
+            // 如果查找的值不小于当前节点，向右子树递归查找
             if (this.right == null) {
                 return null;
             }
@@ -309,12 +309,12 @@ class Node {
      * @return
      */
     public Node searchParent(int value) {
-        // 如果当前节点就是要删除的节点的父节点,就返回
+        // 如果当前节点就是要删除的节点的父节点，就返回
         if ((this.left != null && this.left.value == value)
                 || this.right != null && this.right.value == value) {
             return this;
         } else {
-            // 如果查找的值小于当前节点的值,并且当前节点的左子节点不为空
+            // 如果查找的值小于当前节点的值，并且当前节点的左子节点不为空
             if (value < this.value && this.left != null) {
                 return this.left.searchParent(value);
             } else if (value >= this.value && this.right != null) {

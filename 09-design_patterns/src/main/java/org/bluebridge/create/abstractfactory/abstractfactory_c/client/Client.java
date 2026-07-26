@@ -14,7 +14,7 @@ import create.abstractfactory.abstractfactory_c.service.UserServiceOracle;
  * 测试抽象工厂模式与工厂方法模式区别：抽象工厂模式可以产生多个对象，工厂方法模式只能产生一个对象
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 15:08
  */
 public class Client {
 
@@ -32,13 +32,13 @@ public class Client {
         OracelFactory oracelFactory = OracelFactory.class.newInstance();
         MysqlFactory mysqlFactory = MysqlFactory.class.newInstance();
 
-        // 操作User表
+        // 操作 User 表
         IUserService userOracleOperator = oracelFactory.getUserOperator();
         userOracleOperator.get(1);
         IUserService userMysqlOperator = mysqlFactory.getUserOperator();
         userMysqlOperator.get(1);
 
-        // 操作Customer表
+        // 操作 Customer 表
         ICustomerService customerMysqlOperator = mysqlFactory.getCustomerOperator();
         ICustomerService customerOracleOperator = oracelFactory.getCustomerOperator();
         customerMysqlOperator.get(1);

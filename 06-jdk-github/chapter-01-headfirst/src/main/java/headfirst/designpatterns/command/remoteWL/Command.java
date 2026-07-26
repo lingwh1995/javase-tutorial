@@ -4,7 +4,7 @@ package headfirst.designpatterns.command.remoteWL;
  * 命令接口
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2023/12/7 14:41
  */
 @FunctionalInterface
 public interface Command {

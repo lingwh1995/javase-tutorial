@@ -6,10 +6,10 @@ import java.util.HashMap;
  * 抽象运算符解释器
  *
  * 每个运算符，都只和自己左右两个数字有关
- * 但左右两个数字有可能也是一个解析的结果，无论何种类型，都是Expression的实现类
+ * 但左右两个数字有可能也是一个解析的结果，无论何种类型，都是 Expression 的实现类
  *
  * @author lingwh
- * @date 2026/7/9 19:02
+ * @date 2026/7/22 15:03
  */
 public class SymbolExpression extends Expression {
 
@@ -31,7 +31,7 @@ public class SymbolExpression extends Expression {
     /**
      * 此方法默认空实现，由具体的子类进行实现
      *
-     * @param var key:公式 value:变量对应的具体值,如:{a=10,b=20}
+     * @param var key：公式 value：变量对应的具体值，如：{a=10，b=20}
      * @return
      */
     @Override

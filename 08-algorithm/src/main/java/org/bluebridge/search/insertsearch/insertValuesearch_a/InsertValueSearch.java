@@ -4,7 +4,7 @@ package org.bluebridge.search.insertsearch.insertValuesearch_a;
  * 插值查找 要求数组是有序的
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 13:41
  */
 public class InsertValueSearch {
 

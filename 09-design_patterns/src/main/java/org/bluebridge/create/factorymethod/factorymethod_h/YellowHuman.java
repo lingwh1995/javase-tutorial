@@ -4,7 +4,7 @@ package org.bluebridge.create.factorymethod.factorymethod_h;
  * 黄色人种
  *
  * @author lingwh
- * @date 2026/7/9 00:00
+ * @date 2026/7/22 16:18
  */
 public class YellowHuman extends Human {
 

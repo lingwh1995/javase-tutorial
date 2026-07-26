@@ -4,7 +4,7 @@ package org.bluebridge.create.builder.builder_e;
  * 客户实体类
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 09:44
  */
 public class Customer {
 

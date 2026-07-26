@@ -7,10 +7,10 @@ import java.net.*;
 import java.util.concurrent.*;
 
 /**
- * TCP状态机模拟
+ * TCP 状态机模拟
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2025/9/17 09:23
  */
 @Slf4j
 public class TCPStateMachineSimulation {

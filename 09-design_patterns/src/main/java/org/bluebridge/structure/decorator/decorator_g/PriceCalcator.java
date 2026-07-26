@@ -36,7 +36,7 @@ public class PriceCalcator {
      * 计算某人的当月业务奖金，参数重复，就不再注释了
      */
     private double monthPrize(String user, Date begin, Date end) {
-        // 计算当月业务奖金,按照人员去获取当月的业务额，然后再乘以3%
+        // 计算当月业务奖金，按照人员去获取当月的业务额，然后再乘以 3%
         double prize = TempDB.mapMonthSaleMoney.get(user) * 0.03;
         System.out.println(user + "当月业务奖金" + prize);
         return prize;
@@ -46,8 +46,8 @@ public class PriceCalcator {
      * 计算某人的累计奖金，参数重复，就不再注释了
      */
     public double sumPrize(String user, Date begin, Date end) {
-        // 计算累计奖金,其实应该按照人员去获取累计的业务额，然后再乘以0.1%
-        // 简单演示一下，假定大家的累计业务额都是1000000元
+        // 计算累计奖金，其实应该按照人员去获取累计的业务额，然后再乘以 0.1%
+        // 简单演示一下，假定大家的累计业务额都是 1000000 元
         double prize = 1000000 * 0.001;
         System.out.println(user + "累计奖金" + prize);
         return prize;
@@ -72,7 +72,7 @@ public class PriceCalcator {
      * 计算当月团队业务奖，参数重复，就不再注释了
      */
     public double groupPrize(String user, Date begin, Date end) {
-        // 计算当月团队业务奖金，先计算出团队总的业务额，然后再乘以1%，
+        // 计算当月团队业务奖金，先计算出团队总的业务额，然后再乘以 1%，
         // 假设都是一个团队的
         double group = 0.0;
         for (double d : TempDB.mapMonthSaleMoney.values()) {

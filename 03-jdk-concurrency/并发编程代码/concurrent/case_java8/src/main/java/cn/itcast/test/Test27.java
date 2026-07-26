@@ -3,10 +3,10 @@ package cn.itcast.test;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * WaitNotify顺序打印测试
+ * WaitNotify 顺序打印测试
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 19:50
  */
 @Slf4j(topic = "c.Test27")
 public class Test27 {

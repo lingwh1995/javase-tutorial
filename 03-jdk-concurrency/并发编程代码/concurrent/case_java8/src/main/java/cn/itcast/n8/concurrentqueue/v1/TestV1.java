@@ -6,10 +6,10 @@ import java.util.Queue;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * 并发队列测试v1
+ * 并发队列测试 v1
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2025/2/7 16:55
  */
 public class TestV1 {
 
@@ -148,9 +148,9 @@ class MyQueue<E> implements Queue<E> {
         while(true) {
             // 获取尾节点
             AtomicReference<Node<E>> next = last.next;
-            // S1: 真正尾节点的 next 是 null, cas 从 null 到新节点
+            // S1: 真正尾节点的 next 是 null， cas 从 null 到新节点
             if(next.compareAndSet(null, n)) {
-                // 这时的 last 已经是倒数第二, next 不为空了, 其它线程的 cas 肯定失败
+                // 这时的 last 已经是倒数第二， next 不为空了， 其它线程的 cas 肯定失败
                 // S2: 更新 last 为倒数第一的节点
                 last = n;
                 return true;

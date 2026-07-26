@@ -1,10 +1,10 @@
-package create.singleton.singleton_f;
+package org.bluebridge.create.singleton.singleton_f;
 
 /**
  * 单例模式测试
  *
  * @author lingwh
- * @date 2026/4/21 19:02
+ * @date 2026/7/22 14:08
  */
 public class SingletonTest {
 

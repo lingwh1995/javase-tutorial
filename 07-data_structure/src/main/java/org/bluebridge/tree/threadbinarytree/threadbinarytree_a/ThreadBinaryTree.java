@@ -4,7 +4,7 @@ package org.bluebridge.tree.threadbinarytree.threadbinarytree_a;
  * 线索二叉树
  *
  * @author lingwh
- * @date 2026/7/13 19:02
+ * @date 2026/7/22 17:35
  */
 public class ThreadBinaryTree {
 
@@ -25,7 +25,7 @@ public class ThreadBinaryTree {
      * 中序线索化
      */
     public void threadNodes(Node node) {
-        // node为空，不能线索化
+        // node 为空，不能线索化
         if (node == null) {
             return;
         }
@@ -59,12 +59,12 @@ class Node {
     private Node right;
 
     /**
-     * 0:表示指向左子节点 1:表示指向前驱节点
+     * 0：表示指向左子节点 1：表示指向前驱节点
      */
     private int rightType;
 
     /**
-     * 0:表示指向左子节点 1:表示指向后继节点
+     * 0：表示指向左子节点 1：表示指向后继节点
      */
     private int leftType;
 
