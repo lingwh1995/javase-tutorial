@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
+ * Math 测试类
  *
  * @author lingwh
  * @date 2026/7/29 14:22
