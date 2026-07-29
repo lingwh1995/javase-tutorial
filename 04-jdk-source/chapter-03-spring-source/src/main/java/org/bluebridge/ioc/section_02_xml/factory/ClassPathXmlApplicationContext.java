@@ -128,7 +128,7 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
                 /**
                  * 不使用 BeanUtils 封装数据，无法进行数据类型自动转换操作
                  */
-                // //根据传入属性名称获取该改属性的 set 方法
+                // // 根据传入属性名称获取该改属性的 set 方法
                 // Method method = IntrospectUtils.getWriteMethod(newInstance,name);
                 // Object param = null;
                 // if(StringUtils.isNotBlank(value)){
@@ -145,14 +145,14 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
                 // */
                 // Object isExist = context.get(ref);
                 // if(isExist == null) {
-                // //域中不存在该对象
+                // // 域中不存在该对象
                 // isExist = createBean(xmlInfomMap.get(ref));
-                // //放入容器中
+                // // 放入容器中
                 // if(xmlInfomMap.get(ref).getScope().equals("single_thread")){
                 // context.put(ref, isExist);
                 // }
                 // }
-                // //域中存在该对象，直接用
+                // // 域中存在该对象，直接用
                 // param = isExist;
                 // }
                 // try {

@@ -7,11 +7,11 @@ import sun.misc.Unsafe;
 /**
  * Unsafe 应用一 操作内存
  *
- * 1. public native long allocateMemory(long bytes);   // 分配新的本地空间
- * 2. public native long reallocateMemory(long address, long bytes);   //重新调整内存空间的大小
- * 3. public native void setMemory(Object o, long offset, long bytes, byte value);     //将内存设置为指定值
- * 4. public native void copyMemory(Object srcBase, long srcOffset,Object destBase, long destOffset,long bytes);   //内存拷贝
- * 5. public native void freeMemory(long address);     //清除内存
+ * 1. public native long allocateMemory(long bytes);  // 分配新的本地空间
+ * 2. public native long reallocateMemory(long address, long bytes);  // 重新调整内存空间的大小
+ * 3. public native void setMemory(Object o, long offset, long bytes, byte value);  // 将内存设置为指定值
+ * 4. public native void copyMemory(Object srcBase, long srcOffset,Object destBase, long destOffset,long bytes);  // 内存拷贝
+ * 5. public native void freeMemory(long address);  // 清除内存
  *
  * @author lingwh
  * @date 2026/7/13 10:45
