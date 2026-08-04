@@ -1,4 +1,4 @@
-package org.bluebridge.oo._01_this_and_super;
+package org.bluebridge.oo.demo_01_this_and_super;
 
 import lombok.extern.slf4j.Slf4j;
 

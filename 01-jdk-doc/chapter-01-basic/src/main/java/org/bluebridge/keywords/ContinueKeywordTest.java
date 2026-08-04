@@ -1,4 +1,4 @@
-package org.bluebridge.basic;
+package org.bluebridge.keywords;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import org.junit.Test;
  * @date 2019/4/10 13:39
  */
 @Slf4j
-public class TagContinueTest {
+public class ContinueKeywordTest {
 
     @Test
     public void testTagContinue() {

@@ -1,4 +1,4 @@
-package org.bluebridge.basic;
+package org.bluebridge.keywords;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

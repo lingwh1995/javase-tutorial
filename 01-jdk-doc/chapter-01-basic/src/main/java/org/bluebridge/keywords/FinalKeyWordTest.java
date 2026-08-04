@@ -1,4 +1,4 @@
-package org.bluebridge.basic;
+package org.bluebridge.keywords;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import org.junit.Test;
  * @date 2019/3/12 16:58
  */
 @Slf4j
-public class FinalTest {
+public class FinalKeyWordTest {
 
 	/**
 	 * final 修饰变量的初始化时机

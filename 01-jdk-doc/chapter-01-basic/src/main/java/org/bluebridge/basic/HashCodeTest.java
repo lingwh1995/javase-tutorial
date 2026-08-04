@@ -1,7 +1,11 @@
 package org.bluebridge.basic;
 
 /**
- * hashCode 和
+ * hashCode 和 System.identityHashCode()
+ *
+ * System.identityHashCode()
+ * 1. 返回对象默认哈希码，等同于对象没有重写 hashCode() 时，调用 obj.hashCode() 的结果。
+ * 2. 仅能作为对象唯一标识，不能当成内存地址使用
  *
  * @author lingwh
  * @date 2026/8/4 00:30
