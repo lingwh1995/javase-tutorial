@@ -10,7 +10,7 @@ import java.util.List;
  * Java9 钻石操作符测试
  *
  * @author lingwh
- * @date 2026/6/22 15:10
+ * @date 2025/1/24 13:20
  */
 public class DiamondTest {
 

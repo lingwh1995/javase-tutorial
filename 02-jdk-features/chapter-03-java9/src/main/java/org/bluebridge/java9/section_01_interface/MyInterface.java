@@ -4,7 +4,7 @@ package org.bluebridge.java9.section_01_interface;
  * Java9 接口方法示例
  *
  * @author lingwh
- * @date 2026/6/22 15:10
+ * @date 2025/1/24 15:10
  */
 public interface MyInterface {
 

@@ -4,7 +4,7 @@ package org.bluebridge.java9.section_01_interface;
  * MyInterface 的实现类
  *
  * @author lingwh
- * @date 2026/6/22 15:10
+ * @date 2025/1/24 15:18
  */
 public class MyInterfaceImpl implements MyInterface {
 

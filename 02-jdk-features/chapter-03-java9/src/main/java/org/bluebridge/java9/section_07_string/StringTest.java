@@ -9,7 +9,7 @@ package org.bluebridge.java9.section_07_string;
  *    组存储数据 private final byte[] value。StringBuffer 和 StringBuilder 也同样做了变更，将以往 char 数组改为 byte 数组。
  *
  * @author lingwh
- * @date 2026/6/22 15:10
+ * @date 2025/1/24 15:10
  */
 public class StringTest {
 
