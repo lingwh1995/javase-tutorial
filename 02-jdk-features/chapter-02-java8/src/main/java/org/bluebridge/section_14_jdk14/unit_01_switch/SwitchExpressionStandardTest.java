@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_14_jdk14.unit_01_switch;
+package org.bluebridge.section_14_jdk14.unit_01_switch;
 
 import org.junit.Test;
 

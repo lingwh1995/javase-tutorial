@@ -19,7 +19,7 @@ import java.util.List;
  * 3. 模式变量在 if 语句块、! 表达式之后的 else 分支中可见
  *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/06 09:18
  */
 public class InstanceofPatternTest {
 

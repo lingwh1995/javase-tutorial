@@ -19,7 +19,7 @@ import org.junit.Test;
  *   5. 枚举类型模式匹配: case Color.RED -> 匹配枚举常量
  *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/05 18:56
  */
 public class SwitchPatternTest {
 

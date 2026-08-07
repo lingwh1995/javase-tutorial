@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_01_interface;
+package org.bluebridge.section_09_jdk9.unit_01_interface;
 
 import org.junit.Test;
 
@@ -9,6 +9,8 @@ import org.junit.Test;
  * 1. 私有实例方法: 只能被接口内部的默认方法和其他私有方法调用
  * 2. 私有静态方法: 只能被接口内部的静态方法、默认方法和其他私有方法调用
  * 3. 私有方法不能被实现类、子接口直接访问, 主要目的是抽取公共逻辑, 提升代码复用性
+ *
+ * 演化历程: 接口私有方法 JDK 9 STANDARD（JEP 213），无预览历程
  *
  * @author lingwh
  * @date 2026/08/05 18:23

@@ -22,8 +22,10 @@ import java.util.stream.Stream;
  *
  * 本类演示 JDK 25 转正后的 Stream Gatherers 全部内置特性。
  *
+ * 演化历程: Stream Gatherer JDK 22(1st PREVIEW) → JDK 25(JEP 485, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 public class StreamGathererStandardTest {
 

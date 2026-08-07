@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_12_jdk12.unit_03_number;
+package org.bluebridge.section_12_jdk12.unit_03_number;
 
 import org.junit.Test;
 
@@ -9,6 +9,8 @@ import java.util.Locale;
  * JDK 12 CompactNumberFormat（STANDARD 特性）
  *      使用 NumberFormat.getCompactNumberInstance() 创建紧凑数字格式
  *      支持 SHORT 和 LONG 两种格式风格
+ *
+ * 演化历程: CompactNumberFormat JDK 12 STANDARD（JEP 333）
  *
  * @author lingwh
  * @date 2026/08/05 19:06

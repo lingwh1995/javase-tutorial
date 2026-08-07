@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_15_jdk15.unit_03_eddsa;
+package org.bluebridge.section_15_jdk15.unit_03_eddsa;
 
 import org.junit.Test;
 
@@ -11,6 +11,8 @@ import java.util.Base64;
  * JDK 15 EdDSA 签名算法（STANDARD 特性，JEP 339）
  * EdDSA（Edwards-Curve Digital Signature Algorithm）是一种基于 Edwards 曲线的数字签名算法
  * JDK 15 引入 EdDSA 实现，支持 Ed25519 和 Ed448 算法
+ *
+ * 演化历程: EdDSA 签名 JDK 15 STANDARD（JEP 339）
  *
  * @author lingwh
  * @date 2026/08/06 02:18

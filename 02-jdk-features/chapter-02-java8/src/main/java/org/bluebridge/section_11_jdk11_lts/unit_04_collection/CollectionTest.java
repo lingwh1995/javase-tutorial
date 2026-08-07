@@ -12,7 +12,7 @@ import java.util.function.IntFunction;
  * JDK 11 集合新方法测试
  *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/06 09:17
  */
 public class CollectionTest {
 

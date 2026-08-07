@@ -16,8 +16,10 @@ import org.junit.Test;
  * 注意: 本文件中的 import module 语法为 JDK 26 STANDARD 特性,
  *       但需要模块化环境的支持。
  *
+ * 演化历程: 模块导入 JDK 23(1st) → JDK 24(2nd) → JDK 25(3rd) → JDK 26(JEP 476, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 // 使用模块导入声明, 导入 java.base 模块导出的所有包
 // 这样可以直接使用 List, Map, Stream, Path 等类而无需逐个导入

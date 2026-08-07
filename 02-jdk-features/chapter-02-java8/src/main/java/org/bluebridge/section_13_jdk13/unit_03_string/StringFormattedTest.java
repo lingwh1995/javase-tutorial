@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_13_jdk13.unit_03_string;
+package org.bluebridge.section_13_jdk13.unit_03_string;
 
 import org.junit.Test;
 
@@ -11,6 +11,8 @@ import org.junit.Test;
  * 3. 说明: JDK 13 中 formatted() 是文本块(PREVIEW 特性, JEP 355)的一部分,
  *    需要 javac --enable-preview 编译, java --enable-preview 运行;
  *    JDK 15(JEP 378)文本块转正为标准特性时, formatted() 也随之成为标准 API
+ *
+ * 演化历程: String.formatted() JDK 13 STANDARD
  *
  * @author lingwh
  * @date 2026/08/05 18:29

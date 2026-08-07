@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_13_jdk13.unit_04_stream;
+package org.bluebridge.section_13_jdk13.unit_04_stream;
 
 import org.junit.Test;
 

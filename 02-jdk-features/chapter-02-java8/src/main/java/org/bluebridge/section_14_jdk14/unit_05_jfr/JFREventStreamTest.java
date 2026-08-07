@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_14_jdk14.unit_05_jfr;
+package org.bluebridge.section_14_jdk14.unit_05_jfr;
 
 import org.junit.Test;
 
@@ -7,25 +7,28 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * JDK 14 JFR 事件流（JEP 349，PREVIEW 特性）
- * <p>
+ * JDK 14 JFR 事件流（JEP 349，STANDARD 正式特性）
+ *
  * JFR（Java Flight Recorder）事件流允许开发者以编程方式实时订阅 JFR 事件，
  * 无需使用 JMC（Java Mission Control）工具即可消费 JFR 数据。
- * <p>
+ * JEP 349 在 JDK 14 中是 STANDARD 正式特性，无需 --enable-preview。
+ *
  * 主要 API:
  * - jdk.jfr.consumer.RecordingStream: 事件流的主要入口
  * - 支持 onEvent() 方法订阅特定事件
  * - 支持过滤器和时间窗口
- * <p>
+ *
  * 运行说明：
  * 运行此测试需要启用 JFR 参数，请在 VM options 中添加：
  * -XX:StartFlightRecording=duration=60s,filename=recording.jfr
- * <p>
+ *
  * 或者使用以下完整参数：
  * -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=recording.jfr
- * <p>
- * 注意：jdk.jfr.consumer.RecordingStream 在 JDK 14 中为 PREVIEW 特性，
- * 需要添加 --enable-preview 编译和运行参数。
+ *
+ * 注意：JFR 事件流是 JDK 14 的 STANDARD 正式特性，不需要 --enable-preview。
+ * 但需要开启 JFR 录制功能才能使用。
+ *
+ * 演化历程: JFR 事件流 JDK 14 STANDARD（JEP 349），无预览历程
  *
  * @author lingwh
  * @date 2026/08/06 14:08
@@ -36,10 +39,10 @@ public class JFREventStreamTest {
 
     /**
      * 测试使用 RecordingStream 订阅 JFR 事件
-     * <p>
+     *
      * 启动 RecordingStream 并订阅 jdk.GarbageCollection 事件，
      * 通过手动触发 GC 来验证事件流能够正常接收 JFR 事件。
-     * <p>
+     *
      * 运行前请确保在 VM options 中添加了 JFR 相关参数：
      * -XX:StartFlightRecording=duration=60s,filename=recording.jfr
      */
@@ -109,7 +112,7 @@ public class JFREventStreamTest {
 
     /**
      * 测试使用 RecordingStream 订阅 JVM 信息事件
-     * <p>
+     *
      * 订阅 jdk.InitialSystemProperty、jdk.JVMInformation 等事件，
      * 获取 JVM 启动时的系统属性和 JVM 信息。
      */
@@ -156,7 +159,7 @@ public class JFREventStreamTest {
 
     /**
      * 测试使用 RecordingStream 订阅线程分配事件
-     * <p>
+     *
      * 通过分配大量对象来触发 jdk.ThreadAllocationStatistics 事件，
      * 验证 JFR 事件流能够捕获和分析线程级别的内存分配情况。
      */
@@ -205,7 +208,7 @@ public class JFREventStreamTest {
 
     /**
      * 测试使用 RecordingStream 过滤特定事件类型
-     * <p>
+     *
      * 演示如何通过 onEvent 方法过滤特定名称的事件，
      * 以及使用 setMaxAge 和 setMaxSize 控制事件流的数据量。
      */
@@ -261,7 +264,7 @@ public class JFREventStreamTest {
 
     /**
      * 测试 JFR 事件流的基本配置和生命周期
-     * <p>
+     *
      * 演示 RecordingStream 的配置选项以及启用/关闭的基本操作。
      */
     @Test

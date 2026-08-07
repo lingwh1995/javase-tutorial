@@ -10,8 +10,11 @@ import java.nio.charset.StandardCharsets;
 /**
  * JDK 20 外部函数和内存 API 测试（PREVIEW 特性）
  * @see JEP 434: Foreign Function & Memory API (Second Preview)
+ *
+ * 演化历程: FFM API JDK 19(1st) → JDK 20(JEP 434, 2nd) → JDK 21(JEP 442, 3rd)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:19
  */
 public class FFMTest {
 

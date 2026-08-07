@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_12_jdk12.unit_02_stream;
+package org.bluebridge.section_12_jdk12.unit_02_stream;
 
 import org.junit.Test;
 
@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
 /**
  * JDK 12 Stream.teeing() 收集器（STANDARD 特性）
  *      Collectors.teeing() 将两个下游收集器合并，最终通过 merger 函数处理结果
+ *
+ * 演化历程: Stream.teeing() JDK 12 STANDARD（JEP 461 的前身）
  *
  * @author lingwh
  * @date 2026/08/05 19:06

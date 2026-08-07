@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_21_jdk21_lts.unit_01_switch_pattern;
+﻿package org.bluebridge.section_21_jdk21_lts.unit_01_switch_pattern;
 
 import org.junit.Test;
 

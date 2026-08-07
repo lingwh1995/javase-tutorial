@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_02_collection;
+package org.bluebridge.section_09_jdk9.unit_02_collection;
 
 import org.junit.Test;
 
@@ -16,6 +16,8 @@ import java.util.Set;
  * 3. 不可变集合不允许添加、删除、修改元素, 否则抛出 UnsupportedOperationException
  * 4. 不可变集合不允许包含 null 元素, 否则抛出 NullPointerException
  * 5. Set.of()/Map.of() 不允许存在重复元素/重复键, 否则抛出 IllegalArgumentException
+ *
+ * 演化历程: 集合工厂方法 JDK 9 STANDARD（JEP 269）
  *
  * @author lingwh
  * @date 2026/08/05 18:23

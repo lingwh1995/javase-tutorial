@@ -11,6 +11,8 @@ import java.util.stream.IntStream;
  * JDK 19 虚拟线程预览测试（JEP 425 - Virtual Threads）
  *     注意：JDK 19 PREVIEW 特性，需要 --enable-preview
  *
+ * 演化历程: 虚拟线程 JDK 19(JEP 425, 1st PREVIEW) → JDK 20(JEP 436, 2nd) → JDK 21(JEP 444, STANDARD)
+ *
  * @author lingwh
  * @date 2026/08/05 19:11
  */

@@ -22,8 +22,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 25 PrimitivePatternTest.java
  *       运行命令: java --enable-preview PrimitivePatternTest
  *
+ * 演化历程: 基本类型模式匹配 JDK 23(1st) → JDK 24(2nd) → JDK 25(3rd PREVIEW) → JDK 26(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:12
  */
 public class PrimitivePatternTest {
 

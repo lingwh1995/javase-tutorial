@@ -17,7 +17,7 @@ import org.junit.Test;
  * 6. 嵌套 record 隐式为 static
  *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/06 09:18
  */
 public class RecordTest {
 

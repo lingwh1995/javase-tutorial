@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_09_diamond;
+package org.bluebridge.section_09_jdk9.unit_09_diamond;
 
 import org.junit.Test;
 
@@ -13,6 +13,8 @@ import java.util.List;
  * 1. Java7 引入了钻石操作符, 但不能在匿名内部类中使用
  * 2. Java9 允许在匿名内部类中使用 <> 进行类型推断, 简化了代码
  * 3. 编译器会根据上下文自动推断类型参数
+ *
+ * 演化历程: 钻石操作符扩展 JDK 9 STANDARD（JEP 213），JDK 7 引入，JDK 9 扩展匿名类
  *
  * @author lingwh
  * @date 2026/08/06 14:07

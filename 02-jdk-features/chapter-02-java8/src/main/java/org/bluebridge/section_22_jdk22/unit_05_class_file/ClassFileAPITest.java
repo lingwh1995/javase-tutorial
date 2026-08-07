@@ -18,8 +18,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 22 ClassFileAPITest.java
  *       运行命令: java --enable-preview ClassFileAPITest
  *
+ * 演化历程: Class-File API JDK 22(JEP 466, 1st PREVIEW) → JDK 23(2nd) → JDK 24(3rd) → JDK 25(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class ClassFileAPITest {
 

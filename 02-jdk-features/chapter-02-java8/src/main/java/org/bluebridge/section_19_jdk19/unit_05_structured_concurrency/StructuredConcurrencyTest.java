@@ -13,8 +13,10 @@ import java.util.concurrent.TimeUnit;
  *     注意：JDK 19 PREVIEW 特性，需要 --enable-preview
  *     StructuredTaskScope 在 JDK 19 中为预览特性，需要 --enable-preview 编译和运行
  *
+ * 演化历程: 结构化并发 JDK 19(JEP 428, 1st PREVIEW) → JDK 20(JEP 437, 2nd) → JDK 21(3rd)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:19
  */
 public class StructuredConcurrencyTest {
 

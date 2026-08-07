@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_14_jdk14.unit_02_record;
+package org.bluebridge.section_14_jdk14.unit_02_record;
 
 import org.junit.Test;
 
@@ -15,6 +15,8 @@ import org.junit.Test;
  *
  * 注意: Record 在 JDK 14 中是 PREVIEW 特性, 需要 JDK 14 + --enable-preview 才能编译运行,
  *       本文件使用真实的 record 语法编写, record 作为嵌套类型定义在测试类中(嵌套 record 隐式 static)
+ *
+ * 演化历程: Record JDK 14(JEP 359, 1st PREVIEW) → JDK 15(JEP 384, 2nd PREVIEW) → JDK 16(JEP 395, STANDARD)
  *
  * @author lingwh
  * @date 2026/08/05 18:31

@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_11_jdk11.unit_07_lambda_var;
+﻿package org.bluebridge.section_11_jdk11.unit_07_lambda_var;
 
 import lombok.NonNull;
 import org.junit.Test;

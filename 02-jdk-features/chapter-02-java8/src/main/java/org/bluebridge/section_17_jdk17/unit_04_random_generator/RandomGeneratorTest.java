@@ -16,6 +16,8 @@ import java.util.random.RandomGeneratorFactory;
  *      L64X256MixRandom、L64X1024MixRandom、Xoshiro256PlusPlus、Xoroshiro128PlusPlus 等
  *      (原有 Random、SecureRandom、SplittableRandom 也统一实现了 RandomGenerator 接口)
  *
+ * 演化历程: 随机数生成器 JDK 17 STANDARD（JEP 356）
+ *
  * @author lingwh
  * @date 2026/08/05 18:46
  */

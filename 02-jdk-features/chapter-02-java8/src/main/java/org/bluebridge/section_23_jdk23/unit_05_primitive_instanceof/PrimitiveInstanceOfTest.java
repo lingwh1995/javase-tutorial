@@ -18,8 +18,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 23 PrimitiveInstanceOfTest.java
  *       运行命令: java --enable-preview PrimitiveInstanceOfTest
  *
+ * 演化历程: 基本类型模式匹配 JDK 23(JEP 455, 1st PREVIEW) → JDK 24(JEP 488, 2nd) → JDK 25(3rd) → JDK 26(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class PrimitiveInstanceOfTest {
 

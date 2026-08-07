@@ -19,8 +19,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 23 ModuleImportTest.java
  *       运行命令: java --enable-preview ModuleImportTest
  *
+ * 演化历程: 模块导入 JDK 23(JEP 476, 1st PREVIEW) → JDK 24(JEP 486, 2nd) → JDK 25(3rd) → JDK 26(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 
 // JDK 23 PREVIEW 特性，需要 --enable-preview

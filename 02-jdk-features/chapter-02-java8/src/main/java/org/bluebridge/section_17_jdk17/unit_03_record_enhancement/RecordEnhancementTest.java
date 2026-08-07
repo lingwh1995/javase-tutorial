@@ -11,6 +11,8 @@ import org.junit.Test;
  *   2. record 实现接口: record 可以实现一个或多个接口, 提供接口方法的实现
  *   3. 局部 record: 在方法体内定义 record(隐式 static), 适合方法内部临时数据载体
  *
+ * 演化历程: Record 增强 JDK 17 STANDARD
+ *
  * @author lingwh
  * @date 2026/08/05 18:46
  */

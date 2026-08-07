@@ -17,7 +17,7 @@ import org.junit.Test;
  * 本类在内部定义密封接口 Shape 及其实现, 演示 sealed 关键字的真实语法。
  *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/06 09:17
  */
 public class SealedClassTest {
 

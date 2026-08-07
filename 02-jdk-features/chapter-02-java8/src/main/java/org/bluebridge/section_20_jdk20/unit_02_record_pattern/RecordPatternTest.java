@@ -5,8 +5,11 @@ import org.junit.Test;
 /**
  * JDK 20 Record 模式测试（PREVIEW 特性）
  * @see JEP 432: Record Patterns (Second Preview)
+ *
+ * 演化历程: Record 模式 JDK 19(1st) → JDK 20(JEP 432, 2nd) → JDK 21(JEP 440, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:18
  */
 public class RecordPatternTest {
 

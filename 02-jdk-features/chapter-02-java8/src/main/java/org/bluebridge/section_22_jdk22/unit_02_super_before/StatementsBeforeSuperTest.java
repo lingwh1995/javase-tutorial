@@ -18,8 +18,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 22 StatementsBeforeSuperTest.java
  *       运行命令: java --enable-preview StatementsBeforeSuperTest
  *
+ * 演化历程: 构造器前置语句 JDK 22(JEP 447, 1st PREVIEW) → JDK 23(JEP 482, 2nd) → JDK 24(JEP 492, 3rd) → JDK 25(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 public class StatementsBeforeSuperTest {
 

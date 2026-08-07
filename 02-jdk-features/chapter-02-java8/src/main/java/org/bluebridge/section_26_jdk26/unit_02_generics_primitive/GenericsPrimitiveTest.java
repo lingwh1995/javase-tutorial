@@ -13,8 +13,10 @@ import org.junit.Test;
  * 注意: 该特性在 JDK 26 为 PREVIEW 预览特性,
  *       编译和运行都需要 --enable-preview 参数。
  *
+ * 演化历程: 基本类型泛型 JDK 26(1st PREVIEW)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class GenericsPrimitiveTest {
 

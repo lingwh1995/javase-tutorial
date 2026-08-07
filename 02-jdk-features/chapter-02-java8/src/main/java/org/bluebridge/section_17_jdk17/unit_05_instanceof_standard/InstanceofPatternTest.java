@@ -16,6 +16,8 @@ import org.junit.Test;
  * 2. 模式变量在 || 的右侧不可见(编译错误), 因为 || 右侧在 instanceof 判断为 false 时也会执行
  * 3. 模式变量在 if 语句块、! 表达式之后的 else 分支中可见
  *
+ * 演化历程: instanceof 模式匹配 JDK 14(1st PREVIEW) → JDK 15(2nd) → JDK 16(JEP 394, STANDARD)
+ *
  * @author lingwh
  * @date 2026/08/05 18:46
  */

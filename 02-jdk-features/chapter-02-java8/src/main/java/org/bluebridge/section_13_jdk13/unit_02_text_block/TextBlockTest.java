@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_13_jdk13.unit_02_text_block;
+package org.bluebridge.section_13_jdk13.unit_02_text_block;
 
 import org.junit.Test;
 
@@ -13,6 +13,8 @@ import org.junit.Test;
  *    - JDK 13(JEP 355, PREVIEW): 首次引入文本块
  *    - JDK 14(JEP 368, PREVIEW): 再次预览, 新增 \s 等转义序列
  *    - JDK 15(JEP 378): 文本块转正为标准特性
+ *
+ * 演化历程: 文本块 JDK 13(JEP 355, 1st PREVIEW) → JDK 14(JEP 368, 2nd PREVIEW) → JDK 15(JEP 378, STANDARD)
  *
  * @author lingwh
  * @date 2026/08/05 18:29

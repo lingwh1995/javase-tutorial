@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_21_jdk21_lts.unit_06_unnamed_pattern;
+﻿package org.bluebridge.section_21_jdk21_lts.unit_06_unnamed_pattern;
 
 import org.junit.Test;
 

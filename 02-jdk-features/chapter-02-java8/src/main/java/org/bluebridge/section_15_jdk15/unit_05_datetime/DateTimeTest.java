@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_15_jdk15.unit_05_datetime;
+package org.bluebridge.section_15_jdk15.unit_05_datetime;
 
 import org.junit.Test;
 
@@ -21,6 +21,8 @@ import java.time.temporal.TemporalAdjusters;
  * JDK 15 日期时间 API 测试
  * JDK 15 对 java.time 包进行了持续改进，Instant 支持纳秒级精度
  * 同时测试 YearMonth、Year、MonthDay 等日期时间类的使用
+ *
+ * 演化历程: 该文件测试的是 JDK 8 日期时间 API（java.time，JSR 310）
  *
  * @author lingwh
  * @date 2026/08/06 02:19

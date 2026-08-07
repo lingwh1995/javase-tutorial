@@ -8,9 +8,19 @@ import java.util.concurrent.Future;
 
 /**
  * JDK 20 作用域值测试（PREVIEW 特性）
- * @see JEP 429: Scoped Values (Incubator)
+ *
+ * Scoped Values（JEP 429）在 JDK 20 中为 PREVIEW 预览特性，不是孵化器。
+ * 通过 ScopedValue 可以在线程间安全地共享不可变数据，替代 ThreadLocal。
+ * 与 ThreadLocal 不同，ScopedValue 在虚拟线程中表现更好。
+ *
+ * 演化历程：
+ * - JDK 20(JEP 429, PREVIEW): 首次作为预览特性引入
+ * - JDK 21(JEP 429, 2nd PREVIEW): 第二次预览
+ * - JDK 22(JEP 464, 3rd PREVIEW): 第三次预览
+ *
+ * @see JEP 429: Scoped Values (Preview)
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:19
  */
 public class ScopedValueTest {
 

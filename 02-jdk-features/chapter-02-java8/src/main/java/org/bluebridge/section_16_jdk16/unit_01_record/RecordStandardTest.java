@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_16_jdk16.unit_01_record;
+package org.bluebridge.section_16_jdk16.unit_01_record;
 
 import org.junit.Test;
 
@@ -12,6 +12,8 @@ import org.junit.Test;
  * 本类直接使用真实 record 语法编写, 在测试类内部定义嵌套 record(隐式 static):
  *   1. Point(int x, int y): 演示紧凑构造器(compact constructor)参数校验
  *   2. Rectangle(Point topLeft, Point bottomRight): 演示 record 的嵌套组合
+ *
+ * 演化历程: Record JDK 14(1st PREVIEW) → JDK 15(2nd PREVIEW) → JDK 16(JEP 395, STANDARD)
  *
  * @author lingwh
  * @date 2026/08/05 18:38

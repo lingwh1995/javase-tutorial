@@ -6,8 +6,10 @@ import org.junit.Test;
  * JDK 19 Switch 模式匹配预览测试（JEP 427 - Pattern Matching for Switch）
  *     注意：JDK 19 PREVIEW 特性，需要 --enable-preview
  *
+ * 演化历程: Switch 模式匹配 JDK 17(1st) → JDK 18(2nd) → JDK 19(JEP 427, 3rd) → JDK 20(4th) → JDK 21(JEP 441, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:18
  */
 public class SwitchPatternMatchingTest {
 

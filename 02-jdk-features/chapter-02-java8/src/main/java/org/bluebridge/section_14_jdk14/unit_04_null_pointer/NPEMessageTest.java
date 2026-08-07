@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_14_jdk14.unit_04_null_pointer;
+package org.bluebridge.section_14_jdk14.unit_04_null_pointer;
 
 import org.junit.Test;
 
@@ -15,6 +15,8 @@ import org.junit.Test;
  * 1. 该帮助消息默认开启, 由 -XX:+ShowCodeDetailsInExceptionMessages 控制(JDK14 起默认开启)
  * 2. 可以通过 -XX:-ShowCodeDetailsInExceptionMessages 关闭, 关闭后异常消息仅显示 null
  * 3. 注意: JIT 编译过的方法可能不显示帮助消息, 这是该特性已知的限制
+ *
+ * 演化历程: NPE 精确消息 JDK 14 STANDARD（JEP 358）
  *
  * @author lingwh
  * @date 2026/08/05 18:31

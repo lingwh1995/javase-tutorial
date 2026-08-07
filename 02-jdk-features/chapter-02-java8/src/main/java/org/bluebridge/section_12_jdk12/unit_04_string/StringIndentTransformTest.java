@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_12_jdk12.unit_04_string;
+package org.bluebridge.section_12_jdk12.unit_04_string;
 
 import org.junit.Test;
 
@@ -9,6 +9,8 @@ import java.util.stream.Collectors;
  * JDK 12 String.indent() 和 String.transform() 方法（STANDARD 特性）
  *      indent(n): 调整字符串的缩进，正数增加缩进，负数减少缩进
  *      transform(): 对字符串应用一个函数，返回转换结果
+ *
+ * 演化历程: String.indent()/transform() JDK 12 STANDARD
  *
  * @author lingwh
  * @date 2026/08/05 19:06

@@ -16,6 +16,8 @@ import java.nio.file.Path;
  * JDK 18 Simple Web Server (JEP 408) 测试
  * 测试 SimpleFileServer 和 HttpServer 的基本用法
  *
+ * 演化历程: Simple Web Server JDK 18 STANDARD（JEP 408）
+ *
  * @author lingwh
  * @date 2026/08/05 19:11
  */

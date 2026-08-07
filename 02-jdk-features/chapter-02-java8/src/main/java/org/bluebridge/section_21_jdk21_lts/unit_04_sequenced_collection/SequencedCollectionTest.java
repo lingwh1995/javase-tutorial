@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_21_jdk21_lts.unit_04_sequenced_collection;
+﻿package org.bluebridge.section_21_jdk21_lts.unit_04_sequenced_collection;
 
 import org.junit.Test;
 

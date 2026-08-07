@@ -17,8 +17,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 22 ImplicitClassTest.java
  *       运行命令: java --enable-preview ImplicitClassTest
  *
+ * 演化历程: 隐式声明类 JDK 22(JEP 463, 1st PREVIEW) → JDK 23(JEP 477, 2nd) → JDK 25(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class ImplicitClassTest {
 

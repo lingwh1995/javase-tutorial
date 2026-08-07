@@ -16,6 +16,8 @@ import org.junit.Test;
  *   javac --enable-preview --release 17 SwitchPatternMatchingTest.java
  *   java --enable-preview SwitchPatternMatchingTest
  *
+ * 演化历程: Switch 模式匹配 JDK 17(JEP 406, 1st PREVIEW) → JDK 18(JEP 420, 2nd) → JDK 19(JEP 427, 3rd, when) → JDK 20(JEP 433, 4th) → JDK 21(JEP 441, STANDARD)
+ *
  * @author lingwh
  * @date 2026/08/05 18:46
  */

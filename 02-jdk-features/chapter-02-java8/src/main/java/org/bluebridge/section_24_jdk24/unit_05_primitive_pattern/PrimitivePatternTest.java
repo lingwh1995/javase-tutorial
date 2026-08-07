@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * JDK 24 基本类型模式匹配测试（PREVIEW 预览特性）
  *
- * 基本类型模式匹配(JEP 485) 是 JDK 24 的 PREVIEW 预览特性，第二次预览，
+ * 基本类型模式匹配(JEP 488) 是 JDK 24 的 PREVIEW 预览特性，第二次预览，
  * 编译和运行都需要 --enable-preview 参数。
  *
  * 在 JDK 24 之前，instanceof 和 switch 中的模式匹配只支持引用类型。
@@ -18,8 +18,10 @@ import org.junit.Test;
  *       编译命令：javac --enable-preview --release 24 PrimitivePatternTest.java
  *       运行命令：java --enable-preview PrimitivePatternTest
  *
+ * 演化历程: 基本类型模式匹配 JDK 23(1st) → JDK 24(JEP 488, 2nd PREVIEW) → JDK 25(3rd) → JDK 26(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:12
  */
 public class PrimitivePatternTest {
 

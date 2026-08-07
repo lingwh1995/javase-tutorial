@@ -17,8 +17,10 @@ import java.util.stream.Stream;
  *       编译命令: javac --enable-preview --release 22 StreamGathererTest.java
  *       运行命令: java --enable-preview StreamGathererTest
  *
+ * 演化历程: Stream Gatherer JDK 22(JEP 461, 1st PREVIEW) → JDK 23(JEP 473, 2nd) → JDK 24(JEP 485, 3rd) → JDK 25(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 public class StreamGathererTest {
 

@@ -21,8 +21,10 @@ import java.util.List;
  * SimpleFileServer 是 JDK 18 引入的轻量级静态文件服务器,
  * 适用于开发、测试和原型设计场景。
  *
+ * 演化历程: Simple Web Server JDK 18 STANDARD（JEP 408）
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:19
  */
 public class SimpleWebServerMoreTest {
 

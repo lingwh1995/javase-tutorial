@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_12_jdk12.unit_05_java_constant_description;
+package org.bluebridge.section_12_jdk12.unit_05_java_constant_description;
 
 import org.junit.Test;
 
@@ -11,15 +11,17 @@ import java.lang.constant.DynamicConstantDesc;
 
 /**
  * JDK 12 java.lang.constant.ConstantDesc API（JEP 334，PREVIEW 特性）
- * <p>
+ *
  * ConstantDesc 是常量描述符的顶级接口，用于描述可加载的常量值。
  * 该 API 提供了类型安全的常量描述方式，支持：
  * 1. ClassDesc - 类常量描述符
  * 2. MethodTypeDesc - 方法类型描述符
  * 3. MethodHandleDesc - 方法句柄描述符
  * 4. DynamicConstantDesc - 动态常量描述符
- * <p>
+ *
  * 注意：该 API 在 JDK 12 中为 PREVIEW 特性，需要启用预览选项。
+ *
+ * 演化历程: ConstantDesc API JDK 12 PREVIEW（JEP 334），JDK 13 保持 PREVIEW，JDK 14 移除
  *
  * @author lingwh
  * @date 2026/08/06 14:07

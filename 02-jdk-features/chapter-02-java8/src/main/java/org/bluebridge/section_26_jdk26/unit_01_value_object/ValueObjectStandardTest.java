@@ -17,8 +17,10 @@ import org.junit.Test;
  * 5. 不能有 extends 子句(隐式继承 ValueObject)
  * 6. 数组存储时 JVM 可扁平化布局, 提升缓存局部性
  *
+ * 演化历程: 值对象 JDK 25(1st PREVIEW) → JDK 26(JEP 468, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 public class ValueObjectStandardTest {
 

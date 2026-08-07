@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_07_completable_future;
+package org.bluebridge.section_09_jdk9.unit_07_completable_future;
 
 import org.junit.Test;
 
@@ -16,6 +16,8 @@ import java.util.concurrent.TimeUnit;
  * 3. CompletableFuture.orTimeout(long, TimeUnit): 超时则抛出 TimeoutException
  * 4. CompletableFuture.completeOnTimeout(value, long, TimeUnit): 超时则使用默认值完成
  * 5. CompletableFuture.delayedExecutor(long, TimeUnit): 创建延迟执行的线程池
+ *
+ * 演化历程: CompletableFuture 改进 JDK 9 STANDARD（JEP 266）
  *
  * @author lingwh
  * @date 2026/08/06 14:07

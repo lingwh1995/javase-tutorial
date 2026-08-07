@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  * Lambda 表达式中允许使用 var 声明参数，从而可以为参数添加注解
  *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/06 09:17
  */
 public class LambdaTest {
 

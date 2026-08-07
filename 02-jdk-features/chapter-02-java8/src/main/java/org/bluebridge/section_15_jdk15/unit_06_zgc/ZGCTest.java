@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_15_jdk15.unit_06_zgc;
+package org.bluebridge.section_15_jdk15.unit_06_zgc;
 
 import org.junit.Test;
 
@@ -8,21 +8,23 @@ import java.util.Random;
 
 /**
  * JDK 15 ZGC 测试（JEP 377，STANDARD 特性）
- * <p>
+ *
  * ZGC（Z Garbage Collector）是一个可伸缩的低延迟垃圾收集器，
  * 在 JDK 11 中作为预览特性引入，在 JDK 15 中成为标准特性。
- * <p>
+ *
+ * 演化历程: ZGC JDK 11 实验性 → JDK 15(JEP 377, STANDARD)
+ *
  * ZGC 主要特点：
  * 1. 暂停时间不超过 10ms
  * 2. 堆大小从几百 MB 到 TB 级别
  * 3. 吞吐量影响不超过 15%
  * 4. 支持并发处理（并发标记、并发重定位）
  * 5. 支持 NUMA 感知
- * <p>
+ *
  * 运行说明：
  * 在 VM options 中设置 ZGC 参数：
  * -XX:+UseZGC -Xms256m -Xmx256m -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xlog:gc*
- * <p>
+ *
  * 简化版参数：
  * -XX:+UseZGC -Xms256m -Xmx256m -Xlog:gc
  *
@@ -36,7 +38,7 @@ public class ZGCTest {
 
     /**
      * 测试 ZGC 基本内存分配
-     * <p>
+     *
      * 创建大量对象并触发 GC，验证 ZGC 能够正常处理内存分配和回收。
      * 运行前请设置 VM options: -XX:+UseZGC -Xms256m -Xmx256m -Xlog:gc
      */
@@ -96,7 +98,7 @@ public class ZGCTest {
 
     /**
      * 测试 ZGC 多线程环境下的内存分配
-     * <p>
+     *
      * 使用多个线程同时分配对象，测试 ZGC 在并发场景下的表现。
      */
     @Test
@@ -147,7 +149,7 @@ public class ZGCTest {
 
     /**
      * 测试 ZGC 大对象分配
-     * <p>
+     *
      * ZGC 对大对象的处理与普通对象不同，本测试验证 ZGC 能够正常处理大对象分配。
      */
     @Test
@@ -188,7 +190,7 @@ public class ZGCTest {
 
     /**
      * 测试 ZGC 内存分配和释放的性能
-     * <p>
+     *
      * 通过循环分配和释放对象来测试 ZGC 的性能表现。
      */
     @Test
@@ -232,7 +234,7 @@ public class ZGCTest {
 
     /**
      * 测试 ZGC 内存压力测试
-     * <p>
+     *
      * 模拟高内存压力场景，测试 ZGC 在接近堆上限时的表现。
      */
     @Test

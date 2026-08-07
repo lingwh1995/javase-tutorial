@@ -8,8 +8,10 @@ import org.junit.Test;
  *     FFM API 在 JDK 19 中为预览特性，需要 --enable-preview 编译和运行
  *     涉及的 API：java.lang.foreign.MemorySegment, java.lang.foreign.MemorySession 等
  *
+ * 演化历程: FFM API JDK 19(JEP 424, 1st PREVIEW) → JDK 20(JEP 434, 2nd) → JDK 21(JEP 442, 3rd) → JDK 22(JEP 454, 4th)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:19
  */
 public class FFMTest {
 

@@ -19,8 +19,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 23 MarkdownDocCommentTest.java
  *       运行命令: java --enable-preview MarkdownDocCommentTest
  *
+ * 演化历程: Markdown 文档注释 JDK 23(JEP 467, 1st PREVIEW)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 public class MarkdownDocCommentTest {
 

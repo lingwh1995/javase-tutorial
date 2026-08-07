@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_13_jdk13.unit_05_socket;
+package org.bluebridge.section_13_jdk13.unit_05_socket;
 
 import org.junit.Test;
 
@@ -13,15 +13,17 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * JDK 13 Socket API 重实现测试（JEP 353）
- * <p>
+ *
  * JDK 13 重新实现了 java.net.Socket 和 java.net.ServerSocket 的底层实现，
  * 使用 NioSocketImpl 替代了原有的 PlainSocketImpl。
  * 新实现基于 NIO 实现，具有更好的性能和可维护性。
- * <p>
+ *
  * 主要变化：
  * 1. 底层实现从 PlainSocketImpl 替换为 NioSocketImpl
  * 2. 保留了所有公开 API，对开发者透明
  * 3. 通过系统属性 jdk.net.usePlainSocketImpl 可回退到旧实现
+ *
+ * 演化历程: Socket API 重实现 JDK 13 STANDARD（JEP 353）
  *
  * @author lingwh
  * @date 2026/08/06 14:08
@@ -32,7 +34,7 @@ public class SocketReimplTest {
 
     /**
      * 测试基本的 Socket 通信：客户端发送消息，服务端接收并回复
-     * <p>
+     *
      * 启动一个服务端线程监听端口，客户端连接后发送消息，
      * 验证 JDK 13 新的 NioSocketImpl 能够正常工作。
      */

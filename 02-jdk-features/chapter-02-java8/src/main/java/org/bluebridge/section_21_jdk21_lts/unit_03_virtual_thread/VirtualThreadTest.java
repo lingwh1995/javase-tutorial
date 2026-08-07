@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_21_jdk21_lts.unit_03_virtual_thread;
+﻿package org.bluebridge.section_21_jdk21_lts.unit_03_virtual_thread;
 
 import org.junit.Test;
 

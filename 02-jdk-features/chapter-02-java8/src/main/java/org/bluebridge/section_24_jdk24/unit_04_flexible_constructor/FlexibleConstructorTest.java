@@ -22,8 +22,10 @@ import org.junit.Test;
  *       编译命令：javac --enable-preview --release 24 FlexibleConstructorTest.java
  *       运行命令：java --enable-preview FlexibleConstructorTest
  *
+ * 演化历程: 构造器前置语句 JDK 22(1st) → JDK 23(2nd) → JDK 24(JEP 492, 3rd PREVIEW) → JDK 25(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:12
  */
 public class FlexibleConstructorTest {
 

@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_14_jdk14.unit_03_pattern_match;
+package org.bluebridge.section_14_jdk14.unit_03_pattern_match;
 
 import org.junit.Test;
 
@@ -18,6 +18,8 @@ import org.junit.Test;
  *
  * 注意: instanceof 模式匹配在 JDK 14 中是 PREVIEW 特性, 需要 JDK 14 + --enable-preview 才能编译,
  *       本文件使用真实的模式匹配语法编写
+ *
+ * 演化历程: instanceof 模式匹配 JDK 14(JEP 305, 1st PREVIEW) → JDK 15(JEP 375, 2nd PREVIEW) → JDK 16(JEP 394, STANDARD)
  *
  * @author lingwh
  * @date 2026/08/05 18:31

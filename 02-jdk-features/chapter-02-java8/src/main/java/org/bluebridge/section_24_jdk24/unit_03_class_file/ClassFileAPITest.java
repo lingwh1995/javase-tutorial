@@ -30,8 +30,10 @@ import java.security.MessageDigest;
  *       编译命令：javac --enable-preview --release 24 ClassFileAPITest.java
  *       运行命令：java --enable-preview ClassFileAPITest
  *
+ * 演化历程: Class-File API JDK 22(1st) → JDK 23(2nd) → JDK 24(JEP 484, 3rd PREVIEW) → JDK 25(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class ClassFileAPITest {
 

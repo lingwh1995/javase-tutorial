@@ -11,8 +11,10 @@ import org.junit.Test;
  * 3. JEP 522: G1 GC: Improve Throughput by Reducing Synchronization - G1 GC 优化
  * 4. JEP 500: 字符串模板(String Templates) 转正使用
  *
+ * 演化历程: JDK 26 其他特性（final 字段完整性 JEP 500、HTTP/3 JEP 517 等）
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:12
  */
 public class OtherFeaturesTest {
 

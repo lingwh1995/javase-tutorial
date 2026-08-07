@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_11_jdk11.unit_04_collection;
+﻿package org.bluebridge.section_11_jdk11.unit_04_collection;
 
 import org.junit.Test;
 

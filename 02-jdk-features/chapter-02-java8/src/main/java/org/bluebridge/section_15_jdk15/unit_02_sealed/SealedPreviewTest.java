@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_15_jdk15.unit_02_sealed;
+package org.bluebridge.section_15_jdk15.unit_02_sealed;
 
 import org.junit.Test;
 
@@ -6,6 +6,8 @@ import org.junit.Test;
  * JDK 15 密封类（PREVIEW 特性，JEP 360）
  * 密封类允许一个类或接口指定哪些类可以实现或继承它，提供更精细的继承控制
  * 注意：该特性在 JDK 15 为预览特性，编译和运行需要 --enable-preview
+ *
+ * 演化历程: Sealed 类 JDK 15(JEP 360, 1st PREVIEW) → JDK 16(JEP 397, 2nd PREVIEW) → JDK 17(JEP 409, STANDARD)
  *
  * @author lingwh
  * @date 2026/08/06 02:18

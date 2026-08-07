@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_08_try_with_resources;
+package org.bluebridge.section_09_jdk9.unit_08_try_with_resources;
 
 import org.junit.Test;
 
@@ -15,6 +15,8 @@ import java.io.StringReader;
  * 1. Java7 中必须在 try 中声明资源变量, 资源类必须实现 AutoCloseable
  * 2. Java9 中可以直接使用 already declared 的 effectively final 变量
  * 3. 可以同时组合多个资源, 无论它们是新声明的还是早已声明的
+ *
+ * 演化历程: try-with-resources 增强 JDK 9 STANDARD（JEP 213），JDK 7 引入，JDK 9 增强
  *
  * @author lingwh
  * @date 2026/08/06 14:07

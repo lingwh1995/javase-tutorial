@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_06_optional;
+package org.bluebridge.section_09_jdk9.unit_06_optional;
 
 import org.junit.Test;
 
@@ -14,6 +14,8 @@ import java.util.stream.Stream;
  * 1. Optional.ifPresentOrElse(Consumer, Runnable): 有值则执行 Consumer, 无值则执行 Runnable
  * 2. Optional.stream(): 将 Optional 转换为 Stream, 方便与 Stream API 链式调用
  * 3. Optional.or(Supplier): 当 Optional 为空时, 通过 Supplier 提供替代的 Optional
+ *
+ * 演化历程: Optional 改进 JDK 9 STANDARD（JEP 213）
  *
  * @author lingwh
  * @date 2026/08/06 14:06

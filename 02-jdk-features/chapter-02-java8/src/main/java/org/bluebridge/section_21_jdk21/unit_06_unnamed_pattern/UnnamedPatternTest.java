@@ -17,8 +17,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 21 UnnamedPatternTest.java
  *       运行命令: java --enable-preview UnnamedPatternTest
  *
+ * 演化历程: 未命名模式 JDK 21(JEP 443, 1st PREVIEW) → JDK 22(JEP 456, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/05 18:58
  */
 public class UnnamedPatternTest {
 

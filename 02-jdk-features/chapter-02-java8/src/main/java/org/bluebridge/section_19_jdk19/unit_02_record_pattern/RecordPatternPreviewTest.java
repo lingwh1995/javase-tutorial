@@ -6,6 +6,8 @@ import org.junit.Test;
  * JDK 19 Record 模式预览测试（JEP 405 - Record Patterns）
  *     注意：JDK 19 PREVIEW 特性，需要 --enable-preview
  *
+ * 演化历程: Record 模式 JDK 19(JEP 405, 1st PREVIEW) → JDK 20(JEP 432, 2nd) → JDK 21(JEP 440, STANDARD)
+ *
  * @author lingwh
  * @date 2026/08/05 19:11
  */

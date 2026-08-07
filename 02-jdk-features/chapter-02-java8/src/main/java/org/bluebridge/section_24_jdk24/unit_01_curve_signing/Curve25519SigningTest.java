@@ -21,8 +21,10 @@ import java.util.Base64;
  *   2. ML-KEM 密钥封装机制（FIPS 203）
  *   3. ML-DSA 数字签名算法（FIPS 204）
  *
+ * 演化历程: ML-KEM/ML-DSA JDK 24 STANDARD（JEP 496/497/498）
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 public class Curve25519SigningTest {
 

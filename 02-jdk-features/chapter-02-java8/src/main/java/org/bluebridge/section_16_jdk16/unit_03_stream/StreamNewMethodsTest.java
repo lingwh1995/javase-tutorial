@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_16_jdk16.unit_03_stream;
+package org.bluebridge.section_16_jdk16.unit_03_stream;
 
 import org.junit.Test;
 
@@ -14,6 +14,8 @@ import java.util.stream.Stream;
  * 2. Stream.mapMulti(): 类似 flatMap 的中间操作, 支持通过 Consumer 向下游发射 0 个或多个元素
  *
  * 本类同时演示 Stream.toArray(IntFunction) 的数组收集用法(自 JDK 8 起可用)。
+ *
+ * 演化历程: Stream.toList()/mapMulti() JDK 16 STANDARD（Stream API 增强）
  *
  * @author lingwh
  * @date 2026/08/05 18:43

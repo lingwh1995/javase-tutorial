@@ -17,8 +17,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 21 StringTemplateTest.java
  *       运行命令: java --enable-preview StringTemplateTest
  *
+ * 演化历程: 字符串模板 JDK 21(JEP 430, 1st PREVIEW)，后续版本继续预览
+ *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/05 18:57
  */
 public class StringTemplateTest {
 

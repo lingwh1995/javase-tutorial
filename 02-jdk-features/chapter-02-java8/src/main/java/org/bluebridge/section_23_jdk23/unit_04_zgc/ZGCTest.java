@@ -20,8 +20,10 @@ import org.junit.Test;
  *
  * 本类通过 JVM 参数说明和运行时行为演示 ZGC 分代模式。
  *
+ * 演化历程: ZGC 分代模式 JDK 23 STANDARD（JEP 474）
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class ZGCTest {
 

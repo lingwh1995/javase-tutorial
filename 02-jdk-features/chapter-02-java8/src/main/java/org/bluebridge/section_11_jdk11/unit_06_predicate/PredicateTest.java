@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_11_jdk11.unit_06_predicate;
+﻿package org.bluebridge.section_11_jdk11.unit_06_predicate;
 
 import org.junit.Test;
 

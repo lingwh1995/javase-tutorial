@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_21_jdk21_lts.unit_05_string_template;
+﻿package org.bluebridge.section_21_jdk21_lts.unit_05_string_template;
 
 import org.junit.Test;
 

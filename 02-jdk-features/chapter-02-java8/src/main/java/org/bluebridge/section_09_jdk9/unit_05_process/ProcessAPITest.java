@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_05_process;
+package org.bluebridge.section_09_jdk9.unit_05_process;
 
 import org.junit.Test;
 
@@ -18,6 +18,8 @@ import java.util.stream.Collectors;
  * 3. ProcessHandle.onExit(): 注册进程退出时的回调, 返回 CompletableFuture
  * 4. ProcessHandle.allProcesses(): 列出当前系统中所有可见的进程
  * 5. ProcessHandle.of(pid): 按 PID 查找指定进程, 返回 Optional<ProcessHandle>
+ *
+ * 演化历程: Process API 更新 JDK 9 STANDARD（JEP 102）
  *
  * @author lingwh
  * @date 2026/08/06 14:06

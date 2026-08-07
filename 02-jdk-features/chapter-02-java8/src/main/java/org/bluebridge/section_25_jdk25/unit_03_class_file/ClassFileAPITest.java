@@ -28,8 +28,10 @@ import java.util.List;
  *   FieldModel          - 字段模型
  *   CodeAttribute       - Code 属性, 包含字节码指令
  *
+ * 演化历程: Class-File API JDK 22(1st PREVIEW) → JDK 25(JEP 484, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class ClassFileAPITest {
 

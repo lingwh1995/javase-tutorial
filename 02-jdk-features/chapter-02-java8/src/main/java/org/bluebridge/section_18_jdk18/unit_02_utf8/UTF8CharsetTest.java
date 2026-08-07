@@ -16,8 +16,10 @@ import java.nio.file.Path;
  * 导致跨平台行为不一致。JEP 400 统一了默认字符集,
  * 使得 Java 程序的行为在不同平台上更加可预测。
  *
+ * <p>演化历程: 默认 UTF-8 JDK 18 STANDARD（JEP 400）
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:19
  */
 public class UTF8CharsetTest {
 

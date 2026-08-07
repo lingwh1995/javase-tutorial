@@ -18,8 +18,10 @@ import java.util.Arrays;
  * 2. java.lang.reflect.AnnotatedType 的改进 - 对注解类型的反射支持增强
  * 3. java.lang.Deprecated 注解的改进 (forRemoval / since 属性增强)
  *
+ * 演化历程: JDK 18 其他特性
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:21
  */
 public class OtherFeaturesTest {
 

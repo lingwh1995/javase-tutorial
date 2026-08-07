@@ -29,8 +29,10 @@ import java.util.*;
  *   SequencedMap: firstEntry(), lastEntry(), putFirst(), putLast(),
  *                  pollFirstEntry(), pollLastEntry(), reversed()
  *
+ * 演化历程: 顺序集合 JDK 21 STANDARD（JEP 431）
+ *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/05 18:57
  */
 public class SequencedCollectionTest {
 

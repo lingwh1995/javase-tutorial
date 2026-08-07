@@ -16,8 +16,10 @@ import org.junit.Test;
  * 3. 嵌套模式匹配中基本类型可直接使用
  * 4. 编译器进行支配性检查, 避免不可达分支
  *
+ * 演化历程: 基本类型模式匹配 JDK 23(1st) → JDK 24(2nd) → JDK 25(3rd) → JDK 26(JEP 488, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class PrimitivePatternTest {
 

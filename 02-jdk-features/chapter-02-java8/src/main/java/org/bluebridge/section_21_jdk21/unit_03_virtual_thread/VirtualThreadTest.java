@@ -21,8 +21,10 @@ import java.util.stream.IntStream;
  *   2. 创建方式: Thread.ofVirtual(), Thread.startVirtualThread(), Executors.newVirtualThreadPerTaskExecutor()
  *   3. 阻塞不阻塞底层平台线程: 虚拟线程在阻塞操作(如 Thread.sleep)时会自动挂起
  *
+ * 演化历程: 虚拟线程 JDK 19(1st) → JDK 20(2nd) → JDK 21(JEP 444, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/05 18:57
  */
 public class VirtualThreadTest {
 

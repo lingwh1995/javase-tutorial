@@ -21,8 +21,10 @@ import java.util.function.BiFunction;
  *   4. 异常处理 catch 中使用 _ 表示不需要异常变量
  *   5. for 循环中使用 _ 表示不需要循环变量
  *
+ * 演化历程: 未命名变量 JDK 21(JEP 443, 1st PREVIEW) → JDK 22(JEP 456, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 public class UnnamedVariableTest {
 

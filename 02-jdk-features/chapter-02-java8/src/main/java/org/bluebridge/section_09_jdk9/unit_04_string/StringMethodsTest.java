@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_04_string;
+package org.bluebridge.section_09_jdk9.unit_04_string;
 
 import org.junit.Test;
 
@@ -15,6 +15,8 @@ import java.util.stream.Collectors;
  *    (支持增补字符, 可以正确处理 emoji 等需要 2 个 char 表示的字符)
  * 另外 Java9 在 JDK 内部引入了紧凑字符串(Compact Strings), 底层存储结构得到了优化,
  * 但对开发者是透明的, 无需修改任何代码即可获得内存上的收益
+ *
+ * 演化历程: String 改进 JDK 9 STANDARD（JEP 254）
  *
  * @author lingwh
  * @date 2026/08/05 18:23

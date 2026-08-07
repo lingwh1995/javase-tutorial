@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_12_jdk12.unit_01_switch;
+package org.bluebridge.section_12_jdk12.unit_01_switch;
 
 import org.junit.Test;
 
@@ -6,6 +6,8 @@ import org.junit.Test;
  * JDK 12 Switch 表达式（PREVIEW 特性，JEP 325）
  *      注意：JDK 12 的 switch 表达式使用 break 返回值，而不是 yield（yield 是 JDK 13 引入的）
  *      编译和执行需要 --enable-preview 参数
+ *
+ * 演化历程: Switch 表达式 JDK 12(JEP 325, 1st PREVIEW, break 返回) → JDK 13(JEP 354, 2nd PREVIEW, yield) → JDK 14(JEP 361, STANDARD)
  *
  * @author lingwh
  * @date 2026/08/05 19:05

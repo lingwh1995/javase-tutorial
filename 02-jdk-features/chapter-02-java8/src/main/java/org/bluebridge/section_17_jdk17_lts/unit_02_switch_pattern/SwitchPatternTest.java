@@ -15,7 +15,7 @@ import org.junit.Test;
  * 注意: 本文件中的 PREVIEW 特性方法均带有 _Preview 后缀以标识。
  *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/06 09:18
  */
 public class SwitchPatternTest {
 

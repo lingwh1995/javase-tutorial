@@ -5,8 +5,11 @@ import org.junit.Test;
 /**
  * JDK 20 Switch 模式匹配测试（PREVIEW 特性）
  * @see JEP 427: Pattern Matching for switch (Second Preview)
+ *
+ * 演化历程: Switch 模式匹配 JDK 17(1st) → JDK 18(2nd) → JDK 19(3rd) → JDK 20(JEP 433, 4th PREVIEW) → JDK 21(JEP 441, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:18
  */
 public class SwitchPatternTest {
 

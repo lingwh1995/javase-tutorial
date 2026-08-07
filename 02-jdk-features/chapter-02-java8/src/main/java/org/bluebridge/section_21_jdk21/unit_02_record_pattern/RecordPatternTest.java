@@ -14,8 +14,10 @@ import org.junit.Test;
  *   2. 嵌套 record 模式: 解构嵌套的 record 结构
  *   3. switch 中 record 模式: case Point(int x, int y) -> ...
  *
+ * 演化历程: Record 模式 JDK 19(1st) → JDK 20(2nd) → JDK 21(JEP 440, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:12
+ * @date 2026/08/05 18:56
  */
 public class RecordPatternTest {
 

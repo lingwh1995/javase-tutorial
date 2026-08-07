@@ -20,8 +20,10 @@ import java.util.Enumeration;
  * 替代默认的 InetAddress 解析行为。
  * 这对于需要自定义 DNS 解析逻辑的应用非常有用。
  *
+ * 演化历程: 网络地址 SPI JDK 18 STANDARD（JEP 418）
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 02:20
  */
 public class InternetAddressTest {
 

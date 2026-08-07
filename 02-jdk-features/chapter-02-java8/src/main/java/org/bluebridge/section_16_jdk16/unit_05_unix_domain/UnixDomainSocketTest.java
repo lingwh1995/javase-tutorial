@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_16_jdk16.unit_05_unix_domain;
+package org.bluebridge.section_16_jdk16.unit_05_unix_domain;
 
 import org.junit.Test;
 
@@ -19,23 +19,25 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * JDK 16 Unix-Domain Socket 测试（JEP 380，STANDARD 特性）
- * <p>
+ *
  * Unix-Domain Socket（也称为 IPC Socket）允许同一台主机上的进程之间
  * 通过本地套接字进行通信，比 TCP/IP 回环（localhost）通信更高效。
- * <p>
+ *
  * 主要 API：
  * - java.net.UnixDomainSocketAddress: Unix 域套接字地址
  * - java.net.StandardProtocolFamily.UNIX: Unix 协议族
  * - java.nio.channels.ServerSocketChannel: 服务端套接字通道
  * - java.nio.channels.SocketChannel: 客户端套接字通道
- * <p>
+ *
  * 注意：Windows 平台从 JDK 16 开始支持 Unix-Domain Socket，
  * 但使用的是 Windows 的 AF_UNIX 支持。
- * <p>
+ *
  * Unix-Domain Socket 特点：
  * 1. 比 TCP 回环更快（无需网络协议栈）
  * 2. 安全性更高（基于文件系统权限）
  * 3. 仅限本地通信
+ *
+ * 演化历程: Unix-Domain Socket JDK 16 STANDARD（JEP 380）
  *
  * @author lingwh
  * @date 2026/08/06 14:09
@@ -44,7 +46,7 @@ public class UnixDomainSocketTest {
 
     /**
      * 测试使用 Unix-Domain Socket 进行基本通信
-     * <p>
+     *
      * 通过 ServerSocketChannel 和 SocketChannel 使用 Unix 协议族
      * 建立本地套接字通信，验证基本的请求-响应模式。
      */

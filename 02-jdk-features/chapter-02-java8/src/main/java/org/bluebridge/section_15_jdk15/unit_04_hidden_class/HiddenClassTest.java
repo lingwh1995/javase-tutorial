@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_15_jdk15.unit_04_hidden_class;
+package org.bluebridge.section_15_jdk15.unit_04_hidden_class;
 
 import org.junit.Test;
 
@@ -13,6 +13,8 @@ import java.lang.reflect.Method;
  * 隐藏类是一种不能被其他类直接通过字节码名使用或发现的类
  * 隐藏类主要用于框架运行时生成类，如 Lambda 表达式、动态代理等
  * 隐藏类在加载完成后无法通过反射的 Class.forName() 查找，且可以指定卸载策略
+ *
+ * 演化历程: 隐藏类 JDK 15 STANDARD（JEP 371）
  *
  * @author lingwh
  * @date 2026/08/06 02:19

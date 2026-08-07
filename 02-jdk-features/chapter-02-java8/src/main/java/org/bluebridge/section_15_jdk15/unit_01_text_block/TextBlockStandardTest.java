@@ -1,10 +1,12 @@
-﻿﻿package org.bluebridge.section_15_jdk15.unit_01_text_block;
+package org.bluebridge.section_15_jdk15.unit_01_text_block;
 
 import org.junit.Test;
 
 /**
  * JDK 15 文本块（STANDARD 特性，JEP 378）
  * 文本块在 JDK 13 作为预览特性引入，JDK 14 再次预览，JDK 15 正式转正
+ *
+ * 演化历程: 文本块 JDK 13(1st PREVIEW) → JDK 14(2nd PREVIEW) → JDK 15(JEP 378, STANDARD)
  *
  * @author lingwh
  * @date 2026/08/05 19:11

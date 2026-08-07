@@ -23,8 +23,10 @@ import org.junit.Test;
  *   3. 可以引用构造器参数、局部变量、静态方法/字段
  *   4. super()/this() 之后的语句可以正常引用 this
  *
+ * 演化历程: 构造器前置语句 JDK 22(1st PREVIEW) → JDK 25(JEP 492, STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:11
  */
 public class FlexibleConstructorTest {
 

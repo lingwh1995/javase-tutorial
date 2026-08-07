@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_09_jdk9.unit_03_stream;
+package org.bluebridge.section_09_jdk9.unit_03_stream;
 
 import org.junit.Test;
 
@@ -17,6 +17,8 @@ import java.util.stream.Stream;
  * 3. Optional.stream(): 将 Optional 转换为 Stream, 方便与 Stream 链式调用
  * 4. Stream.takeWhile(): 从流头开始截取满足条件的元素, 遇到第一个不满足条件的元素即停止
  * 5. Stream.dropWhile(): 从流头开始丢弃满足条件的元素, 遇到第一个不满足条件的元素即停止
+ *
+ * 演化历程: Stream 改进 JDK 9 STANDARD（JEP 268）
  *
  * @author lingwh
  * @date 2026/08/05 18:23

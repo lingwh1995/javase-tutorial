@@ -1,4 +1,4 @@
-﻿﻿package org.bluebridge.section_16_jdk16.unit_04_collection;
+package org.bluebridge.section_16_jdk16.unit_04_collection;
 
 import org.junit.Test;
 
@@ -15,6 +15,8 @@ import java.util.stream.Stream;
  * 1. Stream.toList(): 新增的终止操作, 将流收集为不可修改的 List(JDK 16)
  * 2. Stream.toList() 与 Collectors.toList() 的区别: 前者返回不可变 List, 后者返回可变的 ArrayList
  * 3. 不可变 List 与可变 List 的对比: Stream.toList()、List.copyOf() 均返回不可变 List
+ *
+ * 演化历程: 集合新方法 JDK 16 STANDARD
  *
  * @author lingwh
  * @date 2026/08/05 18:43

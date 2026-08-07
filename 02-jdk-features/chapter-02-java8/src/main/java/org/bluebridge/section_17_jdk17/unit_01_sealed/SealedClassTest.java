@@ -22,6 +22,8 @@ import java.util.Arrays;
  *   └── sealed class Triangle        implements Shape permits EquilateralTriangle
  *       └── final class EquilateralTriangle extends Triangle
  *
+ * 演化历程: Sealed 类 JDK 15(1st PREVIEW) → JDK 16(2nd PREVIEW) → JDK 17(JEP 409, STANDARD)
+ *
  * @author lingwh
  * @date 2026/08/05 18:45
  */

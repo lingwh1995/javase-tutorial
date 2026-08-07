@@ -24,8 +24,10 @@ import org.junit.Test;
  *       编译命令: javac --enable-preview --release 25 ValueObjectTest.java
  *       运行命令: java --enable-preview ValueObjectTest
  *
+ * 演化历程: 值对象 JDK 25(JEP 468, 1st PREVIEW) → JDK 26(STANDARD)
+ *
  * @author lingwh
- * @date 2026/08/05 19:11
+ * @date 2026/08/06 09:10
  */
 public class ValueObjectTest {
 
