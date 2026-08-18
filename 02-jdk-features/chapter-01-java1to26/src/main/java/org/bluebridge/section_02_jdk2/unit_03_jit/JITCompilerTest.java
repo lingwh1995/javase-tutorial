@@ -155,6 +155,18 @@ public class JITCompilerTest {
     }
 
     /**
+     * 计算密集型方法(用于演示 JIT 预热效果)
+     * 对 1 到 n 的整数累加求和, 循环次数越多计算量越大
+     */
+    private long performCalculation(int n) {
+        long sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+
+    /**
      * 简单加法方法(用于演示方法内联)
      */
     private int addInline(int a, int b) {

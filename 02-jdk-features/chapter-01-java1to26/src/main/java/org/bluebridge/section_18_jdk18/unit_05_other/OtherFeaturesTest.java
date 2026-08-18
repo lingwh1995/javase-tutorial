@@ -83,7 +83,7 @@ public class OtherFeaturesTest {
         }
 
         // 获取方法返回值的 AnnotatedType
-        Method method = TypeAnnotatedClass.class.getMethod("annotatedMethod");
+        Method method = TypeAnnotatedClass.class.getMethod("annotatedMethod", String.class);
         AnnotatedType returnType = method.getAnnotatedReturnType();
         System.out.println("方法返回值的 AnnotatedType: " + returnType.getClass().getSimpleName());
         System.out.println("返回类型: " + returnType.getType());
@@ -244,7 +244,7 @@ class TypeAnnotatedClass {
     public String @TypeAnnotation("array-component") [] annotatedArray;
 
     @TypeAnnotation("return")
-    public @TypeAnnotation("method") String annotatedMethod(@TypeAnnotation("param") String param) {
+    public String annotatedMethod(@TypeAnnotation("param") String param) {
         return param;
     }
 }

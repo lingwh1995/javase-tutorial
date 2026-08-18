@@ -29,6 +29,10 @@ public class StreamNewMethodsTest {
     @Test
     public void testStreamToList() {
         List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+        // ===== 旧版实现方式(JDK 16 之前): 只能使用 collect(Collectors.toList()) 收集 =====
+        // List<String> list = names.stream().map(String::toUpperCase).collect(Collectors.toList());
+        // (旧版需要手动 import java.util.stream.Collectors)
+        // ===== 新版实现方式(JDK 16 起): Stream.toList() 直接收集为 List, 无需额外导入 =====
         // 真实调用 Stream.toList(): 直接收集为 List
         List<String> list = names.stream().map(String::toUpperCase).toList();
         System.out.println("Stream.toList() 结果: " + list);
@@ -47,9 +51,14 @@ public class StreamNewMethodsTest {
     @Test
     public void testStreamMapMulti() {
         List<String> words = Arrays.asList("java", "jdk");
+        // ===== 旧版实现方式(JDK 16 之前): 使用 flatMap 实现一对多映射 =====
+        // List<String> expanded = words.stream()
+        //         .flatMap(word -> Stream.of(word.toLowerCase(), word.toUpperCase()))
+        //         .collect(Collectors.toList());
+        // ===== 新版实现方式(JDK 16 起): mapMulti() 通过 Consumer 发射多个元素, 无需创建中间流对象 =====
         // 真实调用 Stream.mapMulti(): 每个单词发射 小写 和 大写 两个元素
         List<String> expanded = words.stream()
-                .mapMulti((word, consumer) -> {
+                .<String>mapMulti((word, consumer) -> {
                     consumer.accept(word.toLowerCase());
                     consumer.accept(word.toUpperCase());
                 })
@@ -71,7 +80,7 @@ public class StreamNewMethodsTest {
         System.out.println("flatMap 拆分结果: " + flatMapResult);
         // 使用 mapMulti: 等价实现
         List<String> mapMultiResult = sentences.stream()
-                .mapMulti((sentence, consumer) -> {
+                .<String>mapMulti((sentence, consumer) -> {
                     for (String word : sentence.split(" ")) {
                         consumer.accept(word);
                     }

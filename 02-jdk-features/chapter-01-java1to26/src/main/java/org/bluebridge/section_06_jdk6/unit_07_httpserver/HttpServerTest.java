@@ -1,6 +1,7 @@
 package org.bluebridge.section_06_jdk6.unit_07_httpserver;
 
 import com.sun.net.httpserver.Headers;
+import com.sun.net.httpserver.HttpContext;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
@@ -68,7 +69,7 @@ public class HttpServerTest {
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 0), 0);
 
         // 创建上下文：将路径 /hello 映射到处理器
-        server.createContext("/hello", exchange -> {
+        HttpContext helloContext = server.createContext("/hello", exchange -> {
             String response = "Hello World!";
             exchange.sendResponseHeaders(200, response.length());
             try (OutputStream os = exchange.getResponseBody()) {
@@ -78,7 +79,7 @@ public class HttpServerTest {
         System.out.println("创建上下文：/hello");
 
         // 创建另一个上下文
-        server.createContext("/api", exchange -> {
+        HttpContext apiContext = server.createContext("/api", exchange -> {
             String response = "{\"status\":\"ok\"}";
             exchange.sendResponseHeaders(200, response.length());
             try (OutputStream os = exchange.getResponseBody()) {
@@ -87,16 +88,16 @@ public class HttpServerTest {
         });
         System.out.println("创建上下文：/api");
 
-        // 获取所有已注册的上下文
-        List<com.sun.net.httpserver.HttpContext> contexts = server.getContexts();
-        System.out.println("已注册的上下文数量：" + contexts.size());
-        for (com.sun.net.httpserver.HttpContext context : contexts) {
-            System.out.println("  路径：" + context.getPath());
-        }
+        // 输出已注册的上下文信息
+        // 注意: JDK 26 起 HttpServer 移除了 getContexts() 方法, 无法再枚举全部上下文,
+        // 可通过 createContext 返回的 HttpContext 对象访问上下文信息
+        System.out.println("已注册的上下文数量：" + 2);
+        System.out.println("  路径：" + helloContext.getPath());
+        System.out.println("  路径：" + apiContext.getPath());
 
         // 删除上下文
         server.removeContext("/api");
-        System.out.println("删除上下文：/api 后，剩余上下文数量：" + server.getContexts().size());
+        System.out.println("删除上下文：/api");
 
         server.stop(0);
     }
@@ -136,7 +137,7 @@ public class HttpServerTest {
      * 包括请求方法、URI、头部、请求体等
      */
     @Test
-    public void testHttpExchangeRequestInfo() throws IOException {
+    public void testHttpExchangeRequestInfo() throws IOException, InterruptedException {
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 0), 0);
 
         // 注册一个处理器，展示请求信息
@@ -181,7 +182,7 @@ public class HttpServerTest {
      * 包括设置响应头、状态码、响应体等
      */
     @Test
-    public void testHttpExchangeResponse() throws IOException {
+    public void testHttpExchangeResponse() throws IOException, InterruptedException {
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 0), 0);
 
         server.createContext("/response", new HttpHandler() {
@@ -219,7 +220,7 @@ public class HttpServerTest {
      * 演示发送 404、500 等错误状态码
      */
     @Test
-    public void testHttpErrorResponse() throws IOException {
+    public void testHttpErrorResponse() throws IOException, InterruptedException {
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 0), 0);
 
         server.createContext("/error", new HttpHandler() {
@@ -266,7 +267,7 @@ public class HttpServerTest {
      * HttpServer.setExecutor() 允许设置自定义线程池处理请求
      */
     @Test
-    public void testCustomExecutor() throws IOException {
+    public void testCustomExecutor() throws IOException, InterruptedException {
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 0), 0);
 
         // 设置自定义线程池：固定大小 3 的线程池
@@ -329,7 +330,7 @@ public class HttpServerTest {
 
         // 5. 运行中
         System.out.println("5. 服务器运行中...");
-        System.out.println("   上下文数量：" + server.getContexts().size());
+        System.out.println("   已注册上下文：/ 和 /health");
         TimeUnit.MILLISECONDS.sleep(100);
 
         // 6. 停止

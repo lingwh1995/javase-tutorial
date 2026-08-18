@@ -2,12 +2,6 @@ package org.bluebridge.section_06_jdk6.unit_05_other;
 
 import org.junit.Test;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.sql.Connection;

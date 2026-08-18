@@ -67,9 +67,11 @@ public class JNDITest {
         environment.put(Context.SECURITY_PRINCIPAL, "admin");
         environment.put(Context.SECURITY_CREDENTIALS, "password");
 
-        // 使用 try-with-resources 创建 InitialContext
-        // InitialContext 实现了 AutoCloseable 接口, 可以自动释放资源
-        try (InitialContext context = new InitialContext(environment)) {
+        // 注意: InitialContext 未实现 AutoCloseable 接口, 不能使用 try-with-resources,
+        // 需要先声明为 null, 在 finally 块中手动调用 close() 释放资源
+        InitialContext context = null;
+        try {
+            context = new InitialContext(environment);
             System.out.println("InitialContext 创建成功: " + context.getClass().getName());
             System.out.println("环境属性: " + environment);
 
@@ -89,6 +91,15 @@ public class JNDITest {
             // 实际应用中应记录日志, 这里仅打印异常信息
             // 由于没有实际 JNDI 服务, 此处预期会抛出异常
             System.out.println("(预期: 由于没有实际 JNDI 服务, 会抛出异常)");
+        } finally {
+            // 在 finally 中手动关闭 InitialContext, 释放资源
+            if (context != null) {
+                try {
+                    context.close();
+                } catch (NamingException e) {
+                    System.err.println("关闭 InitialContext 失败: " + e.getMessage());
+                }
+            }
         }
     }
 
@@ -184,7 +195,10 @@ public class JNDITest {
                 "com.sun.jndi.fscontext.RefFSContextFactory");
         env.put(Context.PROVIDER_URL, "file:///tmp/jndi-test");
 
-        try (InitialContext context = new InitialContext(env)) {
+        // InitialContext 未实现 AutoCloseable 接口, 需在 finally 中手动关闭
+        InitialContext context = null;
+        try {
+            context = new InitialContext(env);
             // 1. bind: 将名称绑定到对象
             String name = "cn/test/hello";
             String value = "Hello, JNDI!";
@@ -213,6 +227,15 @@ public class JNDITest {
             System.err.println("JNDI 命名操作失败: " + e.getClass().getSimpleName());
             System.err.println("异常信息: " + e.getMessage());
             System.out.println("(预期: 由于没有实际 JNDI 服务, 会抛出异常)");
+        } finally {
+            // 在 finally 中手动关闭 InitialContext, 释放资源
+            if (context != null) {
+                try {
+                    context.close();
+                } catch (NamingException e) {
+                    System.err.println("关闭 InitialContext 失败: " + e.getMessage());
+                }
+            }
         }
     }
 
@@ -251,7 +274,8 @@ public class JNDITest {
         System.out.println("  - context.listBindings(String name): 列出指定上下文中的绑定(包含对象)");
 
         // 伪代码示例:
-        // try (InitialContext context = new InitialContext(env)) {
+        // InitialContext context = new InitialContext(env);
+        // try {
         //     // 创建子上下文
         //     Context subContext = context.createSubcontext("cn/test");
         //
@@ -270,6 +294,8 @@ public class JNDITest {
         //
         //     // 销毁子上下文
         //     context.destroySubcontext("cn/test");
+        // } finally {
+        //     context.close();  // 手动关闭 InitialContext(未实现 AutoCloseable)
         // }
     }
 
@@ -304,7 +330,7 @@ public class JNDITest {
         System.out.println();
         System.out.println("异常处理最佳实践: ");
         System.out.println("  1. 始终捕获 NamingException 而不是具体的子类");
-        System.out.println("  2. 在 finally 块中关闭 InitialContext 或使用 try-with-resources");
+        System.out.println("  2. 在 finally 块中手动调用 close() 关闭 InitialContext(未实现 AutoCloseable 接口)");
         System.out.println("  3. 记录详细的异常信息以便调试");
         System.out.println("  4. 对于非关键操作, 考虑优雅降级而不是直接失败");
     }

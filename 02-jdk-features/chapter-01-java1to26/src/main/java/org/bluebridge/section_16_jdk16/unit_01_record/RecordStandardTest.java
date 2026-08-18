@@ -26,7 +26,8 @@ public class RecordStandardTest {
      */
     public record Point(int x, int y) {
         // 紧凑构造器: 参数列表为空, 在字段赋值前执行校验逻辑
-        Point {
+        // 注意: 嵌套 record 的紧凑构造器必须显式声明 public
+        public Point {
             if (x < 0 || y < 0) {
                 throw new IllegalArgumentException("坐标不能为负数: x = " + x + ", y = " + y);
             }
@@ -45,6 +46,39 @@ public class RecordStandardTest {
             return width * height;
         }
     }
+
+    // ===== 旧版实现方式(JDK 16 之前): 传统 POJO 类, 需要手动编写大量样板代码 =====
+    // static final class PointOld {
+    //     private final int x;
+    //     private final int y;
+    //
+    //     public PointOld(int x, int y) {
+    //         if (x < 0 || y < 0) {
+    //             throw new IllegalArgumentException("坐标不能为负数: x = " + x + ", y = " + y);
+    //         }
+    //         this.x = x;
+    //         this.y = y;
+    //     }
+    //
+    //     public int getX() { return x; }
+    //     public int getY() { return y; }
+    //
+    //     @Override
+    //     public boolean equals(Object o) {
+    //         if (this == o) return true;
+    //         if (o == null || getClass() != o.getClass()) return false;
+    //         PointOld that = (PointOld) o;
+    //         return x == that.x && y == that.y;
+    //     }
+    //
+    //     @Override
+    //     public int hashCode() { return Objects.hash(x, y); }
+    //
+    //     @Override
+    //     public String toString() { return "PointOld[x=" + x + ", y=" + y + "]"; }
+    // }
+    // ===== 新版实现方式(JDK 16 起): record 一行声明, 编译器自动生成构造器/访问器/equals/hashCode/toString =====
+    // public record Point(int x, int y) { ... }
 
     /**
      * 测试 Record 的创建与 toString()(STANDARD)

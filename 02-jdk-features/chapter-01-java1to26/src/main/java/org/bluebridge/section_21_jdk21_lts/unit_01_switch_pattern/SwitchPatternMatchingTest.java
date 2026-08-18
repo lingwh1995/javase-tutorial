@@ -1,4 +1,4 @@
-﻿package org.bluebridge.section_21_jdk21_lts.unit_01_switch_pattern;
+package org.bluebridge.section_21_jdk21_lts.unit_01_switch_pattern;
 
 import org.junit.Test;
 
@@ -41,6 +41,18 @@ public class SwitchPatternMatchingTest {
     public void testTypePattern() {
         // 测试 String 类型匹配
         Object obj = "Hello JDK 21 LTS";
+        // ===== 旧版实现方式(JDK 21 之前): if-else 链 + instanceof + 强制类型转换 =====
+        // String result;
+        // if (obj instanceof Integer) {
+        //     result = "整数: " + (Integer) obj;
+        // } else if (obj instanceof String) {
+        //     result = "字符串: " + (String) obj;
+        // } else if (obj == null) {
+        //     result = "null 值";
+        // } else {
+        //     result = "其他类型";
+        // }
+        // ===== 新版实现方式(JDK 21 起): switch 类型模式, case 直接绑定类型变量 =====
         String result = switch (obj) {
             case Integer i -> "整数: " + i;
             case String s -> "字符串: " + s;
@@ -83,6 +95,21 @@ public class SwitchPatternMatchingTest {
     public void testGuardedPattern() {
         // 测试正数匹配
         Object positive = 100;
+        // ===== 旧版实现方式(JDK 21 之前): if-else 链 + 嵌套条件判断 =====
+        // String positiveResult;
+        // if (positive instanceof Integer) {
+        //     int i = (Integer) positive;
+        //     if (i > 0) {
+        //         positiveResult = "正整数: " + i;
+        //     } else {
+        //         positiveResult = "非正整数: " + i;
+        //     }
+        // } else if (positive == null) {
+        //     positiveResult = "null 值";
+        // } else {
+        //     positiveResult = "其他类型: " + positive;
+        // }
+        // ===== 新版实现方式(JDK 21 起): switch 守卫模式 when =====
         String positiveResult = switch (positive) {
             case Integer i when i > 0 -> "正整数: " + i;
             case Integer i -> "非正整数: " + i;

@@ -8,9 +8,8 @@ import javax.tools.JavaFileObject;
 import javax.tools.SimpleJavaFileObject;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
+import java.io.StringWriter;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -239,7 +238,7 @@ public class CompilerAPITest {
             }
         };
         // 使用自定义输出流捕获编译过程中的输出信息
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        StringWriter outputStream = new StringWriter();
         DiagnosticCollector<JavaFileObject> diagnosticCollector = new DiagnosticCollector<>();
         StandardJavaFileManager fileManager = compiler.getStandardFileManager(diagnosticCollector, null, null);
         try {

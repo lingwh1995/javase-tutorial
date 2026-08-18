@@ -49,6 +49,14 @@ public class PatternMatchStandardTest {
     @Test
     public void testInstanceofPatternMatchingWithAnd() {
         Object obj = "Hello";
+        // ===== 旧版实现方式(JDK 16 之前): instanceof 判断 + 强制类型转换, 嵌套 if =====
+        // if (obj instanceof String) {
+        //     String s = (String) obj;
+        //     if (s.length() > 3) {
+        //         System.out.println("传统写法 + &&: 长度大于 3 的字符串 = " + s.toUpperCase());
+        //     }
+        // }
+        // ===== 新版实现方式(JDK 16 起): 模式匹配 + &&, 无需强制类型转换 =====
         // 模式变量 s 在 && 右侧可见, 直接参与后续条件判断
         if (obj instanceof String s && s.length() > 3) {
             System.out.println("模式匹配 + &&: 长度大于 3 的字符串 = " + s.toUpperCase());
@@ -68,6 +76,14 @@ public class PatternMatchStandardTest {
     @Test
     public void testInstanceofPatternMatchingWithElse() {
         Object obj = 12345;
+        // ===== 旧版实现方式(JDK 16 之前): else 分支中仍需强制类型转换 =====
+        // if (!(obj instanceof String)) {
+        //     System.out.println("obj 不是字符串, 类型为: " + obj.getClass().getSimpleName());
+        // } else {
+        //     String s = (String) obj;
+        //     System.out.println("obj 是字符串, 长度为 " + s.length());
+        // }
+        // ===== 新版实现方式(JDK 16 起): 模式变量 s 在 else 分支中直接可用 =====
         // !(obj instanceof String s) 取反后, 模式变量 s 在 else 分支中可见
         if (!(obj instanceof String s)) {
             System.out.println("obj 不是字符串, 类型为: " + obj.getClass().getSimpleName());

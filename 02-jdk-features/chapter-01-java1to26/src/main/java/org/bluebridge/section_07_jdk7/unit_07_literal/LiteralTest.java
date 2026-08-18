@@ -43,8 +43,8 @@ public class LiteralTest {
 
         // 整型字面量
         int million = 1_000_000;
-        int creditCard = 1234_5678_9012_3456;
-        int phoneNumber = 138_1234_5678;
+        long creditCard = 1234_5678_9012_3456L;
+        long phoneNumber = 138_1234_5678L;
         int hexWithUnderscore = 0xFF_EC_DE_5E;
         int binaryWithUnderscore = 0b1101_0011_1010_0101;
 

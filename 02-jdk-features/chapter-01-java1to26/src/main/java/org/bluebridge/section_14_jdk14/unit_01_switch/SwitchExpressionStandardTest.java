@@ -30,6 +30,22 @@ public class SwitchExpressionStandardTest {
     @Test
     public void testSwitchExpressionArrowCase() {
         int day = 2;
+        // ===== 旧版实现方式(JDK 14 之前): switch 语句 + break, 容易发生穿透, 代码冗长 =====
+        // String arrowResult;
+        // switch (day) {
+        //     case 1:
+        //         arrowResult = "周一";
+        //         break;
+        //     case 2:
+        //         arrowResult = "周二";
+        //         break;
+        //     case 3:
+        //         arrowResult = "周三";
+        //         break;
+        //     default:
+        //         arrowResult = "未知";
+        // }
+        // ===== 新版实现方式(JDK 14 起): Switch 表达式箭头语法 =====
         // Switch 表达式(箭头语法): case 1 -> 自动 break, 不会发生穿透
         String arrowResult = switch (day) {
             case 1 -> "周一";
@@ -63,6 +79,23 @@ public class SwitchExpressionStandardTest {
     @Test
     public void testSwitchExpressionYield() {
         int month = 2;
+        // ===== 旧版实现方式(JDK 14 之前): 多个 case 并列 + break, 无法直接作为表达式 =====
+        // String yieldResult;
+        // switch (month) {
+        //     case 12:
+        //     case 1:
+        //     case 2:
+        //         yieldResult = "冬季";
+        //         break;
+        //     case 3:
+        //     case 4:
+        //     case 5:
+        //         yieldResult = "春季";
+        //         break;
+        //     default:
+        //         yieldResult = "非法月份";
+        // }
+        // ===== 新版实现方式(JDK 14 起): Switch 表达式 + yield =====
         // Switch 表达式(yield): 代码块中通过 yield 返回结果
         String yieldResult = switch (month) {
             case 12, 1, 2 -> "冬季";

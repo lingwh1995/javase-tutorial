@@ -1,4 +1,4 @@
-﻿package org.bluebridge.section_21_jdk21_lts.unit_02_record_pattern;
+package org.bluebridge.section_21_jdk21_lts.unit_02_record_pattern;
 
 import org.junit.Test;
 
@@ -49,6 +49,14 @@ public class RecordPatternTest {
     public void testInstanceofRecordPattern() {
         // 基本 record 解构
         Object obj = new Point(10, 20);
+        // ===== 旧版实现方式(JDK 21 之前): instanceof + 强制类型转换 + 手动调用访问器 =====
+        // if (obj instanceof Point) {
+        //     Point p = (Point) obj;
+        //     int x = p.x();
+        //     int y = p.y();
+        //     System.out.println("instanceof 解构 Point: x = " + x + ", y = " + y);
+        // }
+        // ===== 新版实现方式(JDK 21 起): instanceof + record 模式, 匹配时自动解构组件 =====
         if (obj instanceof Point(int x, int y)) {
             System.out.println("instanceof 解构 Point: x = " + x + ", y = " + y);
         }
@@ -79,6 +87,15 @@ public class RecordPatternTest {
     public void testNestedRecordPattern() {
         // 嵌套 record: Line 包含两个 Point 组件
         Object line = new Line(new Point(1, 2), new Point(3, 4));
+        // ===== 旧版实现方式(JDK 21 之前): 强制类型转换 + 逐层手动调用访问器 =====
+        // if (line instanceof Line) {
+        //     Line l = (Line) line;
+        //     Point start = l.start();
+        //     Point end = l.end();
+        //     int x1 = start.x(), y1 = start.y();
+        //     int x2 = end.x(), y2 = end.y();
+        // }
+        // ===== 新版实现方式(JDK 21 起): 嵌套 record 模式, 一层层解构到最内层 =====
         if (line instanceof Line(Point(int x1, int y1), Point(int x2, int y2))) {
             System.out.println("嵌套 record 解构 Line:");
             System.out.println("  起点: (" + x1 + ", " + y1 + ")");
@@ -121,6 +138,23 @@ public class RecordPatternTest {
             null
         };
         for (Object obj : objects) {
+            // ===== 旧版实现方式(JDK 21 之前): if-else 链 + instanceof + 强制类型转换 =====
+            // String result;
+            // if (obj == null) {
+            //     result = "null 值";
+            // } else if (obj instanceof Point) {
+            //     Point p = (Point) obj;
+            //     result = "Point 坐标: (" + p.x() + ", " + p.y() + ")";
+            // } else if (obj instanceof Line) {
+            //     Line l = (Line) obj;
+            //     Point s = l.start(), e = l.end();
+            //     result = "Line 从 (" + s.x() + ", " + s.y() + ") 到 (" + e.x() + ", " + e.y() + ")";
+            // } else if (obj instanceof String) {
+            //     result = "字符串: " + obj;
+            // } else {
+            //     result = "其他类型: " + obj.getClass().getSimpleName();
+            // }
+            // ===== 新版实现方式(JDK 21 起): switch 中 record 模式直接解构 =====
             String result = switch (obj) {
                 case null -> "null 值";
                 case Point(int x, int y) -> "Point 坐标: (" + x + ", " + y + ")";

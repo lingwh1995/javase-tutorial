@@ -34,6 +34,9 @@ public class UnnamedVariableTest {
      */
     @Test
     public void testUnnamedVariableAssignment() {
+        // ===== 旧版实现方式(JDK 22 之前): 即使不需要变量的值, 也必须给变量起名 =====
+        // int unused = 42;   // 变量名 unused 占用命名空间, 且 IDE 会提示未使用
+        // ===== 新版实现方式(JDK 22 起): 使用 _ 表示未命名变量, 无需起名 =====
         // 使用 _ 作为未命名变量, 忽略不需要的值
         int _ = 42;
         System.out.println("未命名变量 _ 已赋值, 但无法直接引用");
@@ -77,6 +80,9 @@ public class UnnamedVariableTest {
      */
     @Test
     public void testUnnamedVariableInLambda() {
+        // ===== 旧版实现方式(JDK 22 之前): 不使用的参数也必须起名, 例如 (a, b) -> a =====
+        // BiFunction<Integer, Integer, Integer> add = (a, b) -> a;
+        // ===== 新版实现方式(JDK 22 起): lambda 参数使用 _ 表示不需要该参数 =====
         // 使用 _ 作为未命名 lambda 参数
         BiFunction<Integer, Integer, Integer> add = (a, _) -> a;
         System.out.println("lambda 使用 _ 忽略第二个参数: " + add.apply(10, 20));
@@ -104,6 +110,11 @@ public class UnnamedVariableTest {
         try {
             int result = 10 / 0;
             System.out.println("计算结果: " + result);
+        // ===== 旧版实现方式(JDK 22 之前): catch 中即使不用异常也要给异常变量起名 =====
+        // } catch (ArithmeticException e) {
+        //     System.out.println("捕获到算术异常");
+        // }
+        // ===== 新版实现方式(JDK 22 起): catch 中使用 _ 省略异常变量 =====
         } catch (ArithmeticException _) {
             // 不需要使用异常变量, 使用 _ 替代
             System.out.println("捕获到算术异常, 使用 _ 忽略异常变量");
@@ -126,14 +137,11 @@ public class UnnamedVariableTest {
      */
     @Test
     public void testUnnamedVariableInLoop() {
-        // 使用 _ 作为未命名循环变量
-        int count = 5;
-        for (int _ = 0; _ < count; _++) {
-            System.out.println("执行循环, 使用 _ 作为未命名变量");
-        }
-
-        System.out.println("--------------------------------------");
-
+        // ===== 旧版实现方式(JDK 22 之前): 循环变量必须命名, 即使不使用 =====
+        // for (String item : list) { ... }
+        // ===== 新版实现方式(JDK 22 起): 增强 for 循环使用 _ 忽略元素 =====
+        // 注意: 传统 for (int i = 0; i < n; i++) 循环中不能使用 _,
+        // 因为 _ 是未命名变量, 无法在自增/比较表达式中被引用
         // 增强 for 循环中使用 _
         List<String> list = List.of("A", "B", "C");
         for (String _ : list) {
@@ -149,6 +157,9 @@ public class UnnamedVariableTest {
     public void testUnnamedVariableInSwitch() {
         Object obj = "Hello, JDK 22!";
 
+        // ===== 旧版实现方式(JDK 22 之前): 类型模式必须绑定变量名, 即使不使用 =====
+        // case Integer i -> "这是一个整数, 忽略具体值";
+        // ===== 新版实现方式(JDK 22 起): 未命名模式使用 _ 表示不需要绑定 =====
         // 使用 switch 模式匹配, 用 _ 忽略不需要的绑定
         String result = switch (obj) {
             case Integer _ -> "这是一个整数, 忽略具体值";

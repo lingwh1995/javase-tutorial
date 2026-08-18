@@ -74,6 +74,15 @@ public class SealedClassTest {
         }
     }
 
+    // ===== 旧版实现方式(JDK 17 之前): 没有 sealed, 只能靠 final + 包内约定 + 文档注释控制继承 =====
+    // public interface Shape { double area(); }               // 普通接口, 任何类都可以实现, 无法限制
+    // public static final class Circle implements Shape { ... }    // 只能将子类声明为 final 防止再被继承
+    // public static final class Rectangle implements Shape { ... }
+    // // 缺点: 编译期无法限制实现类的范围, 也无法通过反射拿到"允许的子类列表"
+    // ===== 新版实现方式(JDK 17 起): sealed + permits 在编译期明确限制继承范围 =====
+    // public sealed interface Shape permits Circle, Rectangle { ... }
+    // public static final class Circle implements Shape { ... }
+
     /**
      * 测试 Sealed 密封类的基本用法: 创建密封类的子类实例并调用方法
      */

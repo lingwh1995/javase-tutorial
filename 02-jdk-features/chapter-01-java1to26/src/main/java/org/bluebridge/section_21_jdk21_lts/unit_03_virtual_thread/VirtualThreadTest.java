@@ -1,4 +1,4 @@
-﻿package org.bluebridge.section_21_jdk21_lts.unit_03_virtual_thread;
+package org.bluebridge.section_21_jdk21_lts.unit_03_virtual_thread;
 
 import org.junit.Test;
 
@@ -34,6 +34,12 @@ public class VirtualThreadTest {
      */
     @Test
     public void testOfVirtualStart() throws InterruptedException {
+        // ===== 旧版实现方式(JDK 21 之前): new Thread(runnable) 创建的是平台线程 =====
+        // Thread vt = new Thread(() -> {
+        //     System.out.println("平台线程执行中...");
+        //     System.out.println("  是否是虚拟线程: " + Thread.currentThread().isVirtual());  // false
+        // });
+        // ===== 新版实现方式(JDK 21 起): Thread.ofVirtual().start() 创建虚拟线程 =====
         // 基本虚拟线程
         Thread vt = Thread.ofVirtual().start(() -> {
             System.out.println("虚拟线程执行中...");
@@ -113,6 +119,10 @@ public class VirtualThreadTest {
      */
     @Test
     public void testVirtualThreadPerTaskExecutor() {
+        // ===== 旧版实现方式(JDK 21 之前): newFixedThreadPool(n) 创建固定大小的平台线程池 =====
+        // 线程池大小固定, 高并发阻塞时会占满平台线程, 难以支撑大量并发任务
+        // try (ExecutorService executor = Executors.newFixedThreadPool(5)) { ... }
+        // ===== 新版实现方式(JDK 21 起): newVirtualThreadPerTaskExecutor() 每个任务一个虚拟线程 =====
         // 基本使用
         try (ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor()) {
             IntStream.range(0, 5).forEach(i -> {

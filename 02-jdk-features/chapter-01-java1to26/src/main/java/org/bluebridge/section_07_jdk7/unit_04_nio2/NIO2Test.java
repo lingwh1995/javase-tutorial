@@ -119,7 +119,7 @@ public class NIO2Test {
         Files.createDirectories(subDir);
         Files.createFile(Paths.get(TEST_DIR, "file1.txt"));
         Files.createFile(Paths.get(TEST_DIR, "file2.txt"));
-        Files.createFile(Paths.get(subDir, "subfile1.txt"));
+        Files.createFile(subDir.resolve("subfile1.txt"));
 
         // 使用 FileVisitor 遍历目录
         System.out.println("遍历目录结构:");

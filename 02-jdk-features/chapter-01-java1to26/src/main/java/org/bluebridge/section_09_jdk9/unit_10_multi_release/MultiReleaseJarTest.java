@@ -116,7 +116,7 @@ public class MultiReleaseJarTest {
         System.out.println("  update：" + parsedVersion.update());
         System.out.println("  patch：" + parsedVersion.patch());
         System.out.println("  pre/build 信息：" + parsedVersion.pre().orElse("无") + "/"
-                + parsedVersion.build().orElse("无"));
+                + parsedVersion.build().map(String::valueOf).orElse("无"));
     }
 
     /**

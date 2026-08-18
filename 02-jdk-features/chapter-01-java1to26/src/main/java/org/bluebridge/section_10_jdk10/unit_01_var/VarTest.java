@@ -28,6 +28,12 @@ public class VarTest {
      */
     @Test
     public void testVarWithLocalVariable() {
+        // ===== 旧版实现方式(JDK 10 之前): 必须显式写出完整类型 =====
+        // int age = 18;
+        // String name = "张三";
+        // ArrayList<String> list = new ArrayList<>();
+        // HashMap<String, Integer> map = new HashMap<>();
+        // ===== 新版实现方式(JDK 10 起): 使用 var 由编译器自动推断类型 =====
         // 基本类型推断
         var age = 18;
         // 引用类型推断
@@ -58,6 +64,10 @@ public class VarTest {
         list.add("Java");
         list.add("Python");
         list.add("Go");
+        // ===== 旧版实现方式(JDK 10 之前): 必须显式写出循环变量类型 =====
+        // for (String item : list) { System.out.println(item); }
+        // for (int i = 0; i < list.size(); i++) { System.out.println(i + ": " + list.get(i)); }
+        // ===== 新版实现方式(JDK 10 起): 使用 var 声明循环变量 =====
         // 增强 for 循环中使用 var 声明循环变量
         System.out.println("增强 for 循环: ");
         for (var item : list) {
@@ -133,6 +143,12 @@ public class VarTest {
      */
     @Test
     public void testVarApplication() {
+        // ===== 旧版实现方式(JDK 10 之前): 冗长的泛型类型声明 =====
+        // HashMap<String, List<String>> map = new HashMap<>();
+        // for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+        //     System.out.println("key: " + entry.getKey() + ", value: " + entry.getValue());
+        // }
+        // ===== 新版实现方式(JDK 10 起): 使用 var 简化冗长的集合类型声明 =====
         // 使用 var 简化冗长的集合类型声明
         var map = new HashMap<String, List<String>>();
         map.put("Java", List.of("JDK8", "JDK11", "JDK17"));

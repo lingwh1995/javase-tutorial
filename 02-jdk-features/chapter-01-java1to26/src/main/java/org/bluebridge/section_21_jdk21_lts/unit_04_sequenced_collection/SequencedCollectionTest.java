@@ -1,4 +1,4 @@
-﻿package org.bluebridge.section_21_jdk21_lts.unit_04_sequenced_collection;
+package org.bluebridge.section_21_jdk21_lts.unit_04_sequenced_collection;
 
 import org.junit.Test;
 
@@ -85,6 +85,10 @@ public class SequencedCollectionTest {
         list.add("C");
         list.add("D");
         System.out.println("初始: " + list);
+        // ===== 旧版实现方式(JDK 21 之前): List 需要 add(0, x) / add(x) 实现 =====
+        // list.add(0, "A");
+        // list.add("E");
+        // ===== 新版实现方式(JDK 21 起): 统一使用 addFirst()/addLast() =====
         list.addFirst("A");
         System.out.println("addFirst(A): " + list);
         list.addLast("E");
@@ -124,6 +128,10 @@ public class SequencedCollectionTest {
         list.add("D");
         list.add("E");
         System.out.println("初始: " + list);
+        // ===== 旧版实现方式(JDK 21 之前): List 需要 remove(0) / remove(size-1) =====
+        // String first = list.remove(0);
+        // String last = list.remove(list.size() - 1);
+        // ===== 新版实现方式(JDK 21 起): 统一使用 removeFirst()/removeLast() =====
         String first = list.removeFirst();
         System.out.println("removeFirst() 移除: " + first + ", 剩余: " + list);
         String last = list.removeLast();
@@ -148,6 +156,10 @@ public class SequencedCollectionTest {
         list.add("B");
         list.add("C");
         list.add("D");
+        // ===== 旧版实现方式(JDK 21 之前): Collections.reverse() 原地逆序或手动逆序遍历 =====
+        // Collections.reverse(list);  // 原地逆序, 会直接修改原集合
+        // 若想保留原集合, 需要 new ArrayList<>(list) 副本再 reverse, 或用 ListIterator 逆序遍历
+        // ===== 新版实现方式(JDK 21 起): reversed() 返回逆序视图, 原集合不受影响 =====
         System.out.println("原集合: " + list);
         SequencedCollection<String> reversed = list.reversed();
         System.out.println("逆序视图: " + reversed);
@@ -178,6 +190,11 @@ public class SequencedCollectionTest {
         set.add("C");
         set.add("A");
         set.add("D");
+        // ===== 旧版实现方式(JDK 21 之前): Set 无索引, 只能通过迭代器取首尾元素 =====
+        // String first = set.iterator().next();
+        // String last = null;
+        // for (String s : set) { last = s; }
+        // ===== 新版实现方式(JDK 21 起): SequencedSet 继承 SequencedCollection, 直接 getFirst()/getLast() =====
         System.out.println("LinkedHashSet: " + set);
         System.out.println("  getFirst(): " + set.getFirst());
         System.out.println("  getLast(): " + set.getLast());
@@ -217,6 +234,12 @@ public class SequencedCollectionTest {
         map.put("C", 3);
         map.put("A", 1);
         map.put("D", 4);
+        // ===== 旧版实现方式(JDK 21 之前): 只能通过迭代器手动取首尾 Entry =====
+        // Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
+        // Map.Entry<String, Integer> first = it.next();
+        // Map.Entry<String, Integer> last = null;
+        // while (it.hasNext()) { last = it.next(); }
+        // ===== 新版实现方式(JDK 21 起): firstEntry()/lastEntry() 直接获取 =====
         System.out.println("LinkedHashMap: " + map);
         System.out.println("  firstEntry(): " + map.firstEntry());
         System.out.println("  lastEntry(): " + map.lastEntry());

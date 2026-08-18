@@ -47,6 +47,9 @@ public class CollectionNewMethodsTest {
     @Test
     public void testStreamToListVsCollectorsToList() {
         Stream<String> stream1 = Stream.of("a", "b", "c");
+        // ===== 旧版实现方式(JDK 16 之前): 只有 Collectors.toList(), 返回可变 List =====
+        // List<String> list = stream1.collect(Collectors.toList());
+        // ===== 新版实现方式(JDK 16 起): Stream.toList() 新增, 返回不可修改的 List =====
         // Stream.toList(): 返回不可修改的 List
         List<String> immutableList = stream1.toList();
         System.out.println("toList() 结果: " + immutableList + ", 类型: " + immutableList.getClass().getSimpleName());

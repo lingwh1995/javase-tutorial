@@ -7,8 +7,8 @@ pom.xml 依赖如下：
 ```xml
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.compiler.source>1.8</maven.compiler.source>
-      <maven.compiler.target>1.8</maven.compiler.target>
+      <maven.compiler.source>8</maven.compiler.source>
+      <maven.compiler.target>8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -22,7 +22,7 @@ pom.xml 依赖如下：
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.22</version>
+      <version>1.18.34</version>
       <scope>provided</scope>
     </dependency>
     <dependency>

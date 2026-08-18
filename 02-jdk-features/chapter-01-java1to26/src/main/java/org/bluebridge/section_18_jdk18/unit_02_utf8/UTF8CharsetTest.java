@@ -7,6 +7,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Scanner;
 
 /**
  * JDK 18 默认 UTF-8 字符集 (JEP 400) 测试
