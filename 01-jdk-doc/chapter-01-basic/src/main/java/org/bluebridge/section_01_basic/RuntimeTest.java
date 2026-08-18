@@ -1,0 +1,17 @@
+package org.bluebridge.section_01_basic;
+
+/**
+ * 退出时增加钩子程序
+ *
+ * @author lingwh
+ * @date 2026/4/23 16:29
+ */
+public class RuntimeTest {
+
+    public static void main(String[] args) {
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            System.out.println("程序执行完成......");
+        }));
+        System.out.println("程序执行中......");
+    }
+}
