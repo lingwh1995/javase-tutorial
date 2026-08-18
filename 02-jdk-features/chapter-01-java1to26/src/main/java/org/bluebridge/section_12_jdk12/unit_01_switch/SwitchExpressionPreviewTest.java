@@ -37,19 +37,35 @@ public class SwitchExpressionPreviewTest {
     /**
      * 测试 JDK 12 switch 表达式使用 break 返回值
      *      这是 JDK 12 引入的预览特性，用 break value; 返回结果
+     *      注意：该语法在 JDK 13(JEP 354) 中被 yield 取代, 当前 JDK 已无法编译,
+     *      原始语法以注释形式保留作演示, 方法体使用 yield 编写等价的可编译代码
      */
     @Test
     public void testBreakReturnValuePreview() {
         int day = 5;
+        // JDK 12 原始语法(break 返回值, 已被 JDK 13 移除, 无法编译):
+        // String result = switch (day) {
+        //     case 1: break "周一";
+        //     case 2: break "周二";
+        //     case 3: break "周三";
+        //     case 4: break "周四";
+        //     case 5: break "周五";
+        //     case 6: break "周六";
+        //     case 7: break "周日";
+        //     default: break "非法参数";
+        // };
+        // 等价写法(yield, JDK 13+ 语法): 箭头右侧为代码块时通过 yield 返回结果
         String result = switch (day) {
-            case 1: break "周一";
-            case 2: break "周二";
-            case 3: break "周三";
-            case 4: break "周四";
-            case 5: break "周五";
-            case 6: break "周六";
-            case 7: break "周日";
-            default: break "非法参数";
+            case 1 -> "周一";
+            case 2 -> "周二";
+            case 3 -> "周三";
+            case 4 -> "周四";
+            case 5 -> "周五";
+            case 6 -> "周六";
+            case 7 -> "周日";
+            default -> {
+                yield "非法参数";
+            }
         };
         System.out.println("break 返回值 switch 结果: " + result);
     }

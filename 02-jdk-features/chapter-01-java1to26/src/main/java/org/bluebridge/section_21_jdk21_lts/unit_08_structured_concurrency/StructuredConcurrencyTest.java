@@ -1,4 +1,4 @@
-package org.bluebridge.section_21_jdk21.unit_08_structured_concurrency;
+package org.bluebridge.section_21_jdk21_lts.unit_08_structured_concurrency;
 
 import org.junit.Test;
 
@@ -31,7 +31,7 @@ import java.util.concurrent.Future;
  *   - JDK 22: JEP 462 转正(最终确定的 API)
  *
  * @author lingwh
- * @date 2026/08/06 18:18
+ * @date 2026/08/18 10:00
  */
 public class StructuredConcurrencyTest {
 

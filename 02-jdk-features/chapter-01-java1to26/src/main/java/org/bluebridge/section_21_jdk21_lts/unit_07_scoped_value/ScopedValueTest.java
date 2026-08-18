@@ -1,4 +1,4 @@
-package org.bluebridge.section_21_jdk21.unit_07_scoped_value;
+package org.bluebridge.section_21_jdk21_lts.unit_07_scoped_value;
 
 import org.junit.Test;
 
@@ -22,7 +22,7 @@ import org.junit.Test;
  *   - 待定: 最终转正
  *
  * @author lingwh
- * @date 2026/08/06 18:18
+ * @date 2026/08/18 10:00
  */
 public class ScopedValueTest {
 

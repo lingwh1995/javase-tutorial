@@ -1,4 +1,4 @@
-package org.bluebridge.section_17_jdk17.unit_06_floating_point;
+package org.bluebridge.section_17_jdk17_lts.unit_06_floating_point;
 
 import org.junit.Test;
 

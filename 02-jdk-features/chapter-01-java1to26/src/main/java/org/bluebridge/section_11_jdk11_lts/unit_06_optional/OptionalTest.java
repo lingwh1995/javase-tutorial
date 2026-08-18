@@ -1,19 +1,19 @@
-﻿package org.bluebridge.section_11_jdk11.unit_05_optional;
+package org.bluebridge.section_11_jdk11_lts.unit_06_optional;
 
 import org.junit.Test;
 
 import java.util.Optional;
 
 /**
- * Java11 Optional 新增方法测试
+ * JDK 11 Optional 新增方法测试
  *
- * Java11 为 Optional 新增了 isEmpty() 方法, 用于判断 Optional 中是否不含值,
+ * JDK 11 为 Optional 新增了 isEmpty() 方法, 用于判断 Optional 中是否不含值,
  * 与 isPresent() 方法互为补充, 配合使用可以使代码语义更加清晰:
- * 1. isEmpty(): Java11 新增, 判断 Optional 中是否不含值
+ * 1. isEmpty(): JDK 11 新增, 判断 Optional 中是否不含值
  * 2. isPresent(): 判断 Optional 中是否包含值
  *
  * @author lingwh
- * @date 2026/08/06 14:06
+ * @date 2026/08/18 11:45
  */
 public class OptionalTest {
 

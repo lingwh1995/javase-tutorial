@@ -31,7 +31,7 @@ public class OtherFeaturesTest {
 
     /**
      * 测试 SoftReference 软引用: 内存不足时才会被回收
-     *
+     * <p>
      * 软引用通常用于实现内存敏感的高速缓存, 例如图片缓存。
      * 当 JVM 内存充足时, 软引用对象不会被回收; 当内存不足时, GC 会回收软引用对象。
      */
@@ -64,7 +64,7 @@ public class OtherFeaturesTest {
 
     /**
      * 测试 WeakReference 弱引用: 下次 GC 时就会被回收
-     *
+     * <p>
      * 弱引用比软引用生命周期更短, 只要垃圾回收器扫描到只有弱引用指向的对象,
      * 无论当前内存是否充足, 都会回收该对象。
      */
@@ -97,7 +97,7 @@ public class OtherFeaturesTest {
 
     /**
      * 测试 ReferenceQueue 引用队列: 与引用对象关联使用
-     *
+     * <p>
      * 当引用对象(软引用、弱引用、虚引用)所引用的对象被 GC 回收时,
      * 引用对象本身会被加入到关联的引用队列中, 以便程序进行后续处理。
      */
@@ -132,7 +132,7 @@ public class OtherFeaturesTest {
 
     /**
      * 测试 BitSet: 位集合, 高效存储和操作位数据
-     *
+     * <p>
      * BitSet 是一个按需增长的位向量, 每个位可以独立设置或清除。
      * 它内部使用 long 数组实现, 非常适合进行位运算和大规模标志位的存储。
      */
@@ -235,7 +235,7 @@ public class OtherFeaturesTest {
 
     /**
      * 测试 Calendar 和 GregorianCalendar: 日历类
-     *
+     * <p>
      * Calendar 是一个抽象类, 提供了日期和时间字段的转换和操作方法。
      * GregorianCalendar 是 Calendar 的子类, 实现了公历(格里高利历)日历系统。
      */
@@ -456,3 +456,4 @@ public class OtherFeaturesTest {
         System.gc();
         System.out.println("虚引用回收后, 引用会被加入 ReferenceQueue");
     }
+}

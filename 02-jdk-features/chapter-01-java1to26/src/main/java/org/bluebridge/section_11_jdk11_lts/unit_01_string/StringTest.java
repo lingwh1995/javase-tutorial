@@ -5,7 +5,14 @@ import org.junit.Test;
 import java.util.stream.Stream;
 
 /**
- * JDK 11 String 新方法测试
+ * JDK 11 String 新增方法测试
+ *
+ * 1. isBlank(): 判断字符串是否为空或只包含空白字符
+ * 2. lines(): 将字符串按行拆分, 返回 Stream<String>
+ * 3. strip(): 去除字符串首尾的空白字符(基于 Unicode, 比 trim() 更强大)
+ * 4. stripLeading(): 只去除字符串首部的空白字符
+ * 5. stripTrailing(): 只去除字符串尾部的空白字符
+ * 6. repeat(int): 将字符串重复拼接指定次数
  *
  * @author lingwh
  * @date 2026/08/06 09:15
@@ -13,77 +20,84 @@ import java.util.stream.Stream;
 public class StringTest {
 
     /**
-     * 测试 String.isBlank() 方法
-     * 判断字符串是否为空白（空字符串或仅包含空白字符）
+     * 测试 isBlank() 方法: 判断字符串是否为空或只包含空白字符
      */
     @Test
     public void testIsBlank() {
-        // 空白字符串
-        String str1 = "";
-        System.out.println("空字符串 isBlank: " + str1.isBlank());
-
-        // 仅包含空格
-        String str2 = "   ";
-        System.out.println("空格字符串 isBlank: " + str2.isBlank());
-
-        // 包含制表符
-        String str3 = "\t";
-        System.out.println("制表符字符串 isBlank: " + str3.isBlank());
-
-        // 包含换行符
-        String str4 = "\n";
-        System.out.println("换行符字符串 isBlank: " + str4.isBlank());
-
-        // 非空白字符串
-        String str5 = "hello";
-        System.out.println("非空白字符串 isBlank: " + str5.isBlank());
+        // 空字符串
+        System.out.println("'': " + "".isBlank());
+        // 只包含空格
+        System.out.println("'   ': " + "   ".isBlank());
+        // 只包含制表符
+        System.out.println("'\t\t': " + "\t\t".isBlank());
+        // 只包含换行符
+        System.out.println("'\n': " + "\n".isBlank());
+        // 包含非空白字符
+        System.out.println("'hello': " + "hello".isBlank());
     }
 
     /**
-     * 测试 String.lines() 方法
-     * 将字符串按行分割，返回 Stream<String>
+     * 测试 lines() 方法: 将字符串按行拆分成 Stream<String>
      */
     @Test
     public void testLines() {
-        String multiline = "第一行\n第二行\n第三行";
-        Stream<String> lines = multiline.lines();
+        String multilineString = "Java\nPython\r\nGo\rC++";
+        System.out.println("按行拆分的每一行:");
+        // 使用 lines() 将多行文本拆分为多行
+        Stream<String> lines = multilineString.lines();
         lines.forEach(System.out::println);
+        System.out.println("--------------------------------------");
+        // 统计字符串的行数
+        System.out.println("行数: " + "abc\ncde\nefg".lines().count());
     }
 
     /**
-     * 测试 String.strip() 方法
-     * 去除字符串首尾的空白字符（支持 Unicode 空白，比 trim() 更强大）
+     * 测试 strip() 方法: 去除字符串首尾的空白字符
      */
     @Test
     public void testStrip() {
-        // 前后有空格
-        String str1 = "  hello world  ";
-        System.out.println("strip 前: '" + str1 + "'");
-        System.out.println("strip 后: '" + str1.strip() + "'");
-
-        // 包含 Unicode 空白字符
-        String str2 = "\u2000hello\u2000";
-        System.out.println("strip 前: '" + str2 + "'");
-        System.out.println("strip 后: '" + str2.strip() + "'");
-
-        // 对比 trim() 与 strip() 处理 Unicode 空白
-        System.out.println("trim 结果: '" + str2.trim() + "'");
-        System.out.println("strip 结果: '" + str2.strip() + "'");
+        String str = "   hello world   ";
+        // strip() 去除首尾空白字符
+        System.out.println("strip(): '" + str.strip() + "'");
+        // 对比 trim(): trim() 只能去除码点小于等于 U+0020 的空白字符
+        System.out.println("trim(): '" + str.trim() + "'");
+        System.out.println("--------------------------------------");
+        // 使用全角空格(Unicode 空白字符)时 strip() 与 trim() 的差异
+        String fullWidthBlank = "\u3000hello\u3000";
+        System.out.println("strip(): '" + fullWidthBlank.strip() + "'");
+        System.out.println("trim(): '" + fullWidthBlank.trim() + "'");
     }
 
     /**
-     * 测试 String.repeat(int) 方法
-     * 将字符串重复指定次数后拼接返回
+     * 测试 stripLeading() 方法: 只去除字符串首部的空白字符
+     */
+    @Test
+    public void testStripLeading() {
+        String str = "   hello world   ";
+        System.out.println("stripLeading(): '" + str.stripLeading() + "'");
+    }
+
+    /**
+     * 测试 stripTrailing() 方法: 只去除字符串尾部的空白字符
+     */
+    @Test
+    public void testStripTrailing() {
+        String str = "   hello world   ";
+        System.out.println("stripTrailing(): '" + str.stripTrailing() + "'");
+    }
+
+    /**
+     * 测试 repeat(int) 方法: 将字符串重复拼接指定次数
      */
     @Test
     public void testRepeat() {
-        String str = "Hello ";
-        System.out.println("重复 0 次: '" + str.repeat(0) + "'");
-        System.out.println("重复 1 次: '" + str.repeat(1) + "'");
-        System.out.println("重复 3 次: '" + str.repeat(3) + "'");
-
-        // 实用场景：生成分隔线
-        String separator = "-".repeat(50);
-        System.out.println("分隔线: " + separator);
+        // 重复 3 次
+        System.out.println("'abc'.repeat(3): " + "abc".repeat(3));
+        // 重复 0 次, 返回空串
+        System.out.println("'abc'.repeat(0): '" + "abc".repeat(0) + "'");
+        // 动态生成分隔线
+        System.out.println("-".repeat(30));
+        // 生成固定长度的字符串
+        System.out.println("0".repeat(6));
     }
 }

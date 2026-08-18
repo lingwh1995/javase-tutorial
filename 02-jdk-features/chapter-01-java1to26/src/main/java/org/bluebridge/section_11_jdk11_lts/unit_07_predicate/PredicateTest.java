@@ -1,4 +1,4 @@
-﻿package org.bluebridge.section_11_jdk11.unit_06_predicate;
+package org.bluebridge.section_11_jdk11_lts.unit_07_predicate;
 
 import org.junit.Test;
 
@@ -9,15 +9,15 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
- * Java11 Predicate 新增方法测试
+ * JDK 11 Predicate 新增方法测试
  *
- * Java11 为 Predicate 新增了 not() 静态方法, 用于对 Predicate 取反,
+ * JDK 11 为 Predicate 新增了 not() 静态方法, 用于对 Predicate 取反,
  * 常与 filter() 方法结合使用, 使代码更加简洁易读:
  * 1. Predicate.not(): 返回一个对指定 Predicate 取反的 Predicate
  * 2. 结合 Stream.filter() 使用, 替代繁琐的 lambda 取反写法
  *
  * @author lingwh
- * @date 2026/08/06 14:07
+ * @date 2026/08/18 11:45
  */
 public class PredicateTest {
 
@@ -44,17 +44,17 @@ public class PredicateTest {
     public void testPredicateNotWithFilter() {
         List<String> list = Arrays.asList("java", "", "python", "", "go", "  ");
 
-        // Java11 之前: 使用 lambda 取反, 需要显式写 !
-        List<String> beforeJava11 = list.stream()
+        // JDK 11 之前: 使用 lambda 取反, 需要显式写 !
+        List<String> beforeJdk11 = list.stream()
                 .filter(s -> !s.isEmpty())
                 .collect(Collectors.toList());
-        System.out.println("Java11 之前过滤空白字符串: " + beforeJava11);
+        System.out.println("JDK 11 之前过滤空白字符串: " + beforeJdk11);
 
-        // Java11 之后: 使用 Predicate.not() 取反, 语义更清晰
-        List<String> afterJava11 = list.stream()
+        // JDK 11 之后: 使用 Predicate.not() 取反, 语义更清晰
+        List<String> afterJdk11 = list.stream()
                 .filter(Predicate.not(String::isEmpty))
                 .collect(Collectors.toList());
-        System.out.println("Java11 之后过滤空白字符串: " + afterJava11);
+        System.out.println("JDK 11 之后过滤空白字符串: " + afterJdk11);
     }
 
     /**

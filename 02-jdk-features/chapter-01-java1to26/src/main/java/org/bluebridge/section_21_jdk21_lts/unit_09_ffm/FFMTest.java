@@ -1,4 +1,4 @@
-package org.bluebridge.section_21_jdk21.unit_09_ffm;
+package org.bluebridge.section_21_jdk21_lts.unit_09_ffm;
 
 import org.junit.Test;
 
@@ -27,7 +27,7 @@ import java.nio.charset.StandardCharsets;
  *   - JDK 22: JEP 454 转正(最终确定的 API)
  *
  * @author lingwh
- * @date 2026/08/06 18:18
+ * @date 2026/08/18 10:00
  */
 public class FFMTest {
 
