@@ -17,6 +17,28 @@ public class CommandUtilTest {
      * @throws Exception
      */
     @Test
+    public void testBuildFinalDataArea1() throws Exception {
+        // 主密钥
+        String mainSecret = "312131415161718112223242526272821323334353637383";
+        // 随机通信码
+        String randomCode = "782e2a2a2e78782e58a2a6a6a258861a";
+        // 数据区
+        String dataAreaHex = "260812182652000400040c3230323630373132313130300000000000000000000000000000000000000000014543383030472d434e0000010075610001782e2a2a2e78782e58a2a6a6a258861affbd001c0000012679917598263836303036313036323237323738370000";
+        // 是否加密数据区
+        boolean isEncryp = false;
+        // 是否计算 mac 并添加 mac 到数据区尾部
+        boolean withMac = true;
+        CommandUtil commandUtil = new CommandUtil(mainSecret, randomCode, dataAreaHex, isEncryp, withMac);
+        String finalDataAreaHex = commandUtil.buildFinalDataArea();
+        System.out.println("finalDataAreaHex = " + finalDataAreaHex);
+    }
+
+    /**
+     * 测试构建报文数据区
+     *
+     * @throws Exception
+     */
+    @Test
     public void testBuildFinalDataArea() throws Exception {
         // 主密钥
         String mainSecret = "7A89EF7C62C83D154F25E31E121250CC";

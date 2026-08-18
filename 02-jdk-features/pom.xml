@@ -13,18 +13,9 @@
 	<packaging>pom</packaging>
 
     <modules>
-        <module>chapter-01-java7</module>
-        <module>chapter-02-java8</module>
-        <module>chapter-03-java9</module>
-        <module>chapter-03-java9-module01</module>
-        <module>chapter-03-java9-module02</module>
-        <module>chapter-04-java10</module>
-        <module>chapter-05-java11</module>
-        <module>chapter-06-java13</module>
-        <module>chapter-08-java16</module>
-        <module>chapter-07-java14</module>
-        <module>chapter-09-java17</module>
-        <module>chapter-10-java21</module>
+        <module>chapter-01-java1to26</module>
+        <module>chapter-02-java9-module01</module>
+        <module>chapter-02-java9-module02</module>
     </modules>
 
     <properties>
@@ -32,7 +23,7 @@
         <maven.compiler.target>26</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.12</junit.version>
-        <lombok.version>1.18.30</lombok.version>
+        <lombok.version>1.18.34</lombok.version>
         <logback.version>1.2.3</logback.version>
         <jackson.version>2.15.2</jackson.version>
     </properties>
