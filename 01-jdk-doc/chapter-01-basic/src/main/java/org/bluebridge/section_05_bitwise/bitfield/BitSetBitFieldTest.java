@@ -9,22 +9,24 @@ package org.bluebridge.section_05_bitwise.bitfield;
 public class BitSetBitFieldTest {
 
     public static void main(String[] args) {
-        BitSetBitField bitField = new BitSetBitField();
+        BitSetBitField permissions = new BitSetBitField();
 
         // 设置权限: 可读、可写、不可执行、不可删除
-        bitField.setReadable(true);
-        bitField.setWritable(true);
-        bitField.setExecutable(false);
-        bitField.setDeletable(false);
+        permissions.setReadable(true);
+        permissions.setWritable(true);
+        permissions.setExecutable(false);
+        permissions.setDeletable(true);
 
-        System.out.println("--- 使用 BitSet 模拟 C 位域(标志位) ---");
-        System.out.println("readable    = " + bitField.isReadable());     // true
-        System.out.println("writable    = " + bitField.isWritable());     // true
-        System.out.println("executable  = " + bitField.isExecutable());   // false
-        System.out.println("deletable   = " + bitField.isDeletable());    // false
+        // 打印内存布局
+        permissions.showMemoryLayout();
 
-        // 动态扩展: BitSet 不限于固定长度, 可随时增加新的标志位
-        System.out.println();
-        System.out.println("BitSet 的长度可动态扩展, 适合标志数量不固定的场景");
+        System.out.println("\n--- 使用 BitSet 模拟 C 位域(标志位) ---");
+        System.out.println("readable    = " + permissions.isReadable());     // true
+        System.out.println("writable    = " + permissions.isWritable());     // true
+        System.out.println("executable  = " + permissions.isExecutable());   // false
+        System.out.println("deletable   = " + permissions.isDeletable());    // false
+
+        // 动态扩展: BitSet 不限于固定长度，可随时增加新的标志位
+        System.out.println("\nBitSet 的长度可动态扩展, 适合标志数量不固定的场景");
     }
 }

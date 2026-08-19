@@ -1,7 +1,7 @@
 package org.bluebridge.section_05_bitwise.bitfield;
 
 /**
- * 位域测试
+ * 位域测试 - 以 ARGB 颜色打包为例
  *
  * @author lingwh
  * @date 2026/08/19 11:20
@@ -9,32 +9,32 @@ package org.bluebridge.section_05_bitwise.bitfield;
 public class BitwiseBitFieldTest {
 
     public static void main(String[] args) {
-        BitwiseBitField bitField = new BitwiseBitField();
+        BitwiseBitField color = new BitwiseBitField();
 
-        // 打包写入: type=5, level=20, code=200, reserved=10000
-        bitField.setType(5);
-        bitField.setLevel(20);
-        bitField.setCode(200);
-        bitField.setReserved(10000);
+        // 打包写入: alpha=255, red=200, green=100, blue=50 (橙色)
+        color.setAlpha(255);
+        color.setRed(200);
+        color.setGreen(100);
+        color.setBlue(50);
 
-        System.out.println("--- C 语言位域模拟 ---");
-        System.out.println("打包后的 int 值: " + bitField.getPacked());
-        System.out.println("type     = " + bitField.getType());     // 5
-        System.out.println("level    = " + bitField.getLevel());    // 20
-        System.out.println("code     = " + bitField.getCode());     // 200
-        System.out.println("reserved = " + bitField.getReserved()); // 10000
-        System.out.println("二进制: " + Integer.toBinaryString(bitField.getPacked()));
+        System.out.println("--- ARGB 颜色位域模拟 ---");
+        System.out.println("打包后的 int 值: " + color.getArgb());
+        System.out.println("  alpha = " + color.getAlpha()); // 255
+        System.out.println("  red   = " + color.getRed());   // 200
+        System.out.println("  green = " + color.getGreen()); // 100
+        System.out.println("  blue  = " + color.getBlue());  // 50
+        System.out.println("  十六进制: " + String.format("%08X", color.getArgb()));
 
-        // 演示溢出截断: type 只有 3 位, 写入 9 会被截断为 1
-        bitField.setType(9); // 9 = 0b1001, 截断后 = 0b001 = 1
+        // 演示溢出截断: red 只有 8 位, 写入 300 会被截断为 44
+        color.setRed(300); // 300 = 0b100101100, 截断后 = 0b00101100 = 44
         System.out.println();
-        System.out.println("写入 type=9 (3位最大值7), 截断后: " + bitField.getType()); // 1
+        System.out.println("写入 red=300 (8位最大值255), 截断后: " + color.getRed()); // 44
 
-        // 演示内存占用: 4 个字段共 32 位 = 4 字节, 而非 4 个 int = 16 字节
+        // 内存占用对比
         System.out.println();
         System.out.println("内存占用对比:");
-        System.out.println("位域方式: 1 个 int = 4 字节");
-        System.out.println("普通方式: 4 个 int = 16 字节");
-        System.out.println("节省: 75%");
+        System.out.println("  位域方式: 1 个 int = 4 字节, 存 4 个分量");
+        System.out.println("  普通方式: 4 个 int = 16 字节, 存 4 个分量");
+        System.out.println("  节省: 75%");
     }
 }

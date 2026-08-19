@@ -11,19 +11,19 @@ public class ByteBufferStructTest {
     public static void main(String[] args) {
         System.out.println("--- 使用 ByteBuffer 模拟 C 结构体内存布局 ---");
 
-        ByteBufferStruct struct = new ByteBufferStruct();
-        struct.setId(1);
-        struct.setName("张三");
-        struct.setAge(20);
-        struct.setScore(89.5f);
+        ByteBufferStruct student = new ByteBufferStruct();
+        student.setId(1);
+        student.setName("张三");
+        student.setAge(20);
+        student.setScore(89.5f);
 
-        System.out.println("id    = " + struct.getId());
-        System.out.println("name  = " + struct.getName());
-        System.out.println("age   = " + struct.getAge());
-        System.out.println("score = " + struct.getScore());
+        System.out.println("id    = " + student.getId());
+        System.out.println("name  = " + student.getName());
+        System.out.println("age   = " + student.getAge());
+        System.out.println("score = " + student.getScore());
 
         // 打印内存布局
-        byte[] data = struct.toByteArray();
+        byte[] data = student.toByteArray();
         System.out.println();
         System.out.println("--- 内存布局 (" + data.length + " 字节): ---");
         System.out.println("偏移 0-3   (id):    " + toHex(data, 0, 4));

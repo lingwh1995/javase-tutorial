@@ -12,27 +12,27 @@ public class EnumSetBitFieldTest {
 
     public static void main(String[] args) {
         // 创建权限集合: 可读 + 可写
-        EnumSet<EnumSetBitField> perms = EnumSet.of(EnumSetBitField.READ, EnumSetBitField.WRITE);
+        EnumSet<EnumSetBitField> permissions = EnumSet.of(EnumSetBitField.READ, EnumSetBitField.WRITE);
 
         System.out.println("--- 使用 EnumSet 模拟 C 位域(标志位) ---");
-        System.out.println("权限集合: " + perms);
-        System.out.println("可读: " + perms.contains(EnumSetBitField.READ));     // true
-        System.out.println("可写: " + perms.contains(EnumSetBitField.WRITE));    // true
-        System.out.println("可执行: " + perms.contains(EnumSetBitField.EXECUTE)); // false
-        System.out.println("可删除: " + perms.contains(EnumSetBitField.DELETE));  // false
+        System.out.println("权限集合: " + permissions);
+        System.out.println("可读: " + permissions.contains(EnumSetBitField.READ));     // true
+        System.out.println("可写: " + permissions.contains(EnumSetBitField.WRITE));    // true
+        System.out.println("可执行: " + permissions.contains(EnumSetBitField.EXECUTE)); // false
+        System.out.println("可删除: " + permissions.contains(EnumSetBitField.DELETE));  // false
 
         // 添加权限
-        perms.add(EnumSetBitField.EXECUTE);
+        permissions.add(EnumSetBitField.EXECUTE);
         System.out.println();
-        System.out.println("添加 EXECUTE 后: " + perms);
+        System.out.println("添加 EXECUTE 后: " + permissions);
 
         // 批量操作: 添加所有权限
-        perms.addAll(EnumSet.allOf(EnumSetBitField.class));
-        System.out.println("添加全部权限后: " + perms);
+        permissions.addAll(EnumSet.allOf(EnumSetBitField.class));
+        System.out.println("添加全部权限后: " + permissions);
 
         // 取差集: 移除只读权限
-        perms.removeAll(EnumSet.of(EnumSetBitField.READ));
-        System.out.println("移除只读后: " + perms);
+        permissions.removeAll(EnumSet.of(EnumSetBitField.READ));
+        System.out.println("移除只读后: " + permissions);
 
         System.out.println();
         System.out.println("三种方式对比:");

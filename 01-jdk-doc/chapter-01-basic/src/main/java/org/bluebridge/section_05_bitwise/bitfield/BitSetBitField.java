@@ -28,37 +28,45 @@ public class BitSetBitField {
     private static final int EXECUTABLE = 2;
     private static final int DELETABLE = 3;
 
-    private final BitSet flags = new BitSet(4);
+    private final BitSet permissionFlags = new BitSet(4);
 
-    public void setReadable(boolean v) {
-        flags.set(READABLE, v);
+    public void setReadable(boolean readable) {
+        permissionFlags.set(READABLE, readable);
     }
 
-    public void setWritable(boolean v) {
-        flags.set(WRITABLE, v);
+    public void setWritable(boolean writable) {
+        permissionFlags.set(WRITABLE, writable);
     }
 
-    public void setExecutable(boolean v) {
-        flags.set(EXECUTABLE, v);
+    public void setExecutable(boolean executable) {
+        permissionFlags.set(EXECUTABLE, executable);
     }
 
-    public void setDeletable(boolean v) {
-        flags.set(DELETABLE, v);
+    public void setDeletable(boolean deletable) {
+        permissionFlags.set(DELETABLE, deletable);
     }
 
     public boolean isReadable() {
-        return flags.get(READABLE);
+        return permissionFlags.get(READABLE);
     }
 
     public boolean isWritable() {
-        return flags.get(WRITABLE);
+        return permissionFlags.get(WRITABLE);
     }
 
     public boolean isExecutable() {
-        return flags.get(EXECUTABLE);
+        return permissionFlags.get(EXECUTABLE);
     }
 
     public boolean isDeletable() {
-        return flags.get(DELETABLE);
+        return permissionFlags.get(DELETABLE);
+    }
+
+    public void showMemoryLayout() {
+        long[] words = permissionFlags.toLongArray();
+        System.out.println("long 数组长度: " + words.length);
+        for (int i = 0; i < words.length; i++) {
+            System.out.println("words[" + i + "] (第" + (i * 64) + "~" + (i * 64 + 63) + "位) = " + Long.toBinaryString(words[i]));
+        }
     }
 }

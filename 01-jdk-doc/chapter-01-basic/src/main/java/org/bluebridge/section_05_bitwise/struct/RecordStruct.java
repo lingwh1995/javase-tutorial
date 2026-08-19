@@ -1,7 +1,7 @@
 package org.bluebridge.section_05_bitwise.struct;
 
 /**
- * 使用 record 模拟 C 语言结构体(Struct)，相比普通类， 代码更简洁， 且天然不可
+ * 使用 record 模拟 C 语言结构体(Struct), 相比普通类, 代码更简洁, 且天然不可变
  *
  * Java 16 起支持 record, 天生适合模拟 C 结构体:
  *   - 不可变(字段 final, 无 setter)
