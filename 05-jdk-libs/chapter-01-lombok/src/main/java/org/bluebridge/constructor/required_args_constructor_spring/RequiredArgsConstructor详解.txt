@@ -1,18 +1,17 @@
-一、@RequiredArgsConstructor 用法
-    1.为类创建基于指定字段的构造函数
-    2.简化Spring依赖注入
-         Spring环境下在写Controller层或者Service层的时候，总是需要注入很多mapper接口或者service接口，如果每个接口都写上@Autowired，这样会很
-         繁琐，@RequiredArgsConstructor注解可以代替@Autowired注解
-二、@RequiredArgsConstructor 使用注意事项
-    1.字段必须加上final修饰
-    2.基于构造方法为属性赋值，容器通过调用类的构造方法将其进行依赖注入
+1. @RequiredArgsConstructor 用法
+   - 为类创建基于指定字段的构造函数
+   - 简化 Spring 依赖注入
+        Spring 环境下在写 Controller 层或者 Service 层的时候，总是需要注入很多 mapper 接口或者 service 接口，如果每个接口都写上 @Autowired，这样会很
+        繁琐，@RequiredArgsConstructor 注解可以代替 @Autowired 注解
+2. @RequiredArgsConstructor 使用注意事项
+   - 字段必须加上 final 修饰
+   - 基于构造方法为属性赋值，容器通过调用类的构造方法将其进行依赖注入
+3. @AllArgsConstructor 和 @RequiredArgsConstructor 区别
+   - @AllArgsConstructor 生成一个包含所有字段的构造方法，如果使用了 @Value 注入，@Value 注入会失效，原因时因为 @Value 注解是通过对象的 set 方法
+     赋值的，构造方法的执行还在 set 方法之前，所以在构造方法中使用变量会变量为 null。
+   - @RequiredArgsConstructor 会将类的每一个 final 字段或者 non-null 字段生成一个构造方法
 
-三、@AllArgsConstructor和@RequiredArgsConstructor区别
-    1.@AllArgsConstructor 生成一个包含所有字段的构造方法，如果使用了@Value注入，@Value注入会失效，原因时因为@Value注解是通过对象的set方法
-      赋值的，构造方法的执行还在set方法之前，所以在构造方法中使用变量会变量为null。
-    2.@RequiredArgsConstructor会将类的每一个final字段或者non-null字段生成一个构造方法
-
-    总结:@AllArgsConstructor和@RequiredArgsConstructor都可以用来替代@Autowired写法，区别在于@RequiredArgsConstructor必须要有
-        final修饰，如果有@Value注解，@RequiredArgsConstructor修饰可以成功注入，@AllArgsConstructor修饰会注入失败
+   总结:@AllArgsConstructor 和 @RequiredArgsConstructor 都可以用来替代 @Autowired 写法，区别在于 @RequiredArgsConstructor 必须要有
+        final 修饰，如果有 @Value 注解，@RequiredArgsConstructor 修饰可以成功注入，@AllArgsConstructor 修饰会注入失败
 
 

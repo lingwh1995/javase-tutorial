@@ -9,8 +9,8 @@ import org.openjdk.jol.info.ClassLayout;
  *    在锁对象的对象头中记录一下当前获取到该锁的线程ID，该线程下次如果又来获取该锁就可以直接获取到了，也就是支持锁重入。偏
  *    向锁作用，主要是解决可重入问题，当线程重复获取锁的时候，就判断该锁是否有线程ID，偏向锁会偏向第一个获取锁对象的线程。
  * 2. 测试偏向锁准备工作
- *    1. JDK版本设置为1.8
- *    2. VM配置参数设置为 -XX:+UseBiasedLocking -XX:BiasedLockingStartupDelay=0
+ *    - JDK版本设置为1.8
+ *    - VM配置参数设置为 -XX:+UseBiasedLocking -XX:BiasedLockingStartupDelay=0
  *
  * @author lingwh
  * @date 2026/7/9 09:30

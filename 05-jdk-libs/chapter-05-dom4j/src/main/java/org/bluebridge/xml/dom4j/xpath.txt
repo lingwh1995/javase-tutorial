@@ -1,5 +1,5 @@
-1.使用dom4j支持xpath的操作
-	* 可以直接获取到某个元素 
+1. 使用dom4j支持xpath的操作
+	* 可以直接获取到某个元素
 
 	* 第一种形式
 		/AAA/DDD/BBB： 表示一层一层的，AAA下面 DDD下面的BBB
@@ -15,7 +15,7 @@
 	* 第六种形式
 		** //BBB[@id='b1'] 表示元素名称是BBB,在BBB上面有id属性，并且id的属性值是b1
 
-2.使用dom4j支持xpath具体操作
+2. 使用dom4j支持xpath具体操作
 	** 默认的情况下，dom4j不支持xpath
 	** 如果想要在dom4j里面是有xpath
 		* 第一步需要，引入支持xpath的jar包，使用 jaxen-1.1-beta-6.jar
@@ -34,7 +34,7 @@
 		/*
 		 * 1、得到document
 		 * 2、直接使用selectNodes("//name")方法得到所有的name元素
-		 * 
+		 *
 		 * */
 			//得到document
 			Document document = Dom4jUtils.getDocument(Dom4jUtils.PATH);
@@ -47,7 +47,7 @@
 				String s = node.getText();
 				System.out.println(s);
 			}
-	
+
 	** 使用xpath实现：获取第一个p1下面的name的值
 		* //p1[@id1='aaaa']/name
 		* 使用到 selectSingleNode("//p1[@id1='aaaa']/name")
