@@ -1,5 +1,4 @@
 1.方法引用
-	
     可以将方法引用可以看成是一个函数指针 functioninterface pointer
     特殊情况下lambda表达式可以使用方法引用代替,仅是特殊情况下
     List<Person> personList = Arrays.asList(new Person[]{new Person("zs",18),new Person("ls",28),new Person("ww",38)});

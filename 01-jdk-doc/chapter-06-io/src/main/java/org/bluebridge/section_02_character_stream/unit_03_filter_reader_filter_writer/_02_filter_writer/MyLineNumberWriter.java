@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.Writer;
 
 /**
- * 自定义FilterWriter的子类LineNumberWriter，用于在写入文本时添加行号
+ * 自定义 FilterWriter 的子类 LineNumberWriter，用于在写入文本时添加行号
  *
  * @author lingwh
  * @date 2025/8/29 13:57
