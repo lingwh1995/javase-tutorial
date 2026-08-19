@@ -10,7 +10,7 @@ package org.bluebridge.section_01_basic;
  * @author lingwh
  * @date 2026/8/4 00:30
  */
-public class HashCodeTest {
+public class HashCodeAndIdentityHashCodeTest {
 
     public static void main(String[] args) {
         String s1 = new String("abc");

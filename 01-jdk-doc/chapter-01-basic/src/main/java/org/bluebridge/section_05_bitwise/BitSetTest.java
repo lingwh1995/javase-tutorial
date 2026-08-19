@@ -1,9 +1,9 @@
-package org.bluebridge.section_01_basic;
+package org.bluebridge.section_05_bitwise;
 
 import java.util.BitSet;
 
 /**
- * jdk自带的位图
+ * jdk 中的位集合(BitSet)
  *
  * @author lingwh
  * @date 2026/3/14 15:07

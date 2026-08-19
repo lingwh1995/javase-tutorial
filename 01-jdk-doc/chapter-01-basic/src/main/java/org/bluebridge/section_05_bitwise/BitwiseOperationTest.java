@@ -1,4 +1,4 @@
-package org.bluebridge.section_01_basic;
+package org.bluebridge.section_05_bitwise;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

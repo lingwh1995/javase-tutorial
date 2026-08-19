@@ -17,7 +17,7 @@ import java.nio.charset.StandardCharsets;
  * JDK 22 外部函数与内存 API 测试(STANDARD 正式特性)
  *
  * 外部函数与内存 API(Foreign Function &amp; Memory API, JEP 454) 是 JDK 22 转正的
- * STANDARD 正式特性, 位于 java.lang.foreign 包下, 提供了安全、可预测地访问堆外内存
+ * STANDARD 正式特性，位于 java.lang.foreign 包下, 提供了安全、可预测地访问堆外内存
  * 和调用外部函数(C 库)的能力, 用于替代 JDK 中不安全、易出错的 sun.misc.Unsafe。
  *
  * 核心 API:

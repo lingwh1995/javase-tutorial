@@ -1,4 +1,4 @@
-package org.bluebridge.section_01_basic;
+package org.bluebridge.section_05_bitwise;
 
 /**
  * @author lingwh

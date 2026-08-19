@@ -1,5 +1,6 @@
-package org.bluebridge.section_04_comparator;
+package org.bluebridge.section_01_basic;
 
+import org.bluebridge.section_04_comparator.Person;
 import org.junit.Test;
 
 /**
