@@ -22,43 +22,46 @@
         javac .\MonitorSynchronizedCodeBlockTest.java -> javap -c .\MonitorSynchronizedCodeBlockTest.class -> 可以查看到编译结果中多了ACC_SYNCHRONIZED这个标识符
 4. ObjectMonitor 底层 C++ 源码
      class ObjectMonitor {
-        public:
-        enum {
-        OM_OK,                    // no error
-        OM_SYSTEM_ERROR,          // operating system error
-        OM_ILLEGAL_MONITOR_STATE, // IllegalMonitorStateException
-        OM_INTERRUPTED,           // Thread.interrupt()
-        OM_TIMED_OUT              // Object.wait() timed out
-        };
-        ...
-        ObjectMonitor() {
-        _header       = NULL; // 对象头
-        _count        = 0; // 记录该线程获取锁的次数
-        _waiters      = 0, // 当前有多少处于wait状态的thread
-        _recursions   = 0; // 锁的重入次数
-        _object       = NULL;
-        _owner        = NULL; // 指向持有ObjectMonitor对象的线程
-        _WaitSet      = NULL; // 存放处于wait状态的线程队列
-        _WaitSetLock  = 0 ;
-        _Responsible  = NULL ;
-        _succ         = NULL ;
-        _cxq          = NULL ;
-        FreeNext      = NULL ;
-        _EntryList    = NULL ; // 存放处于block锁阻塞状态的线程队列
-        _SpinFreq     = 0 ;
-        _SpinClock    = 0 ;
-        OwnerIsThread = 0 ;
-        _previous_owner_tid = 0;
-    }
-    关键属性：
-        _count，记录该线程获取锁的次数（就是前前后后，这个线程一共获取了多少次锁）；
-        _recursions ，锁的重入次数（道格李 Lock下 的 state）；
-        _owner 对应 The Owner，含义是持有 ObjectMonitor 对象的线程；
-        _EntryList 对应 Entry List，含义是存放处于 block 锁阻塞状态的线程队列（多线程下，竞争锁失败的线程会进入 EntryList 队列）；
-        _WaitSet 对应 Wait Set，含义是存放处于wait状态的线程队列（正在执行代码的线程遇到 wait()，会进行 WaitSet 队列）。
+         public:
+         enum {
+             OM_OK,                    // no error
+             OM_SYSTEM_ERROR,          // operating system error
+             OM_ILLEGAL_MONITOR_STATE, // IllegalMonitorStateException
+             OM_INTERRUPTED,           // Thread.interrupt()
+             OM_TIMED_OUT              // Object.wait() timed out
+         };
+         ...
+         ObjectMonitor() {
+             _header       = NULL; // 对象头
+             _count        = 0; // 记录该线程获取锁的次数
+             _waiters      = 0; // 当前有多少处于 wait 状态的 thread
+             _recursions   = 0; // 锁的重入次数
+             _object       = NULL;
+             _owner        = NULL; // 指向持有 ObjectMonitor 对象的线程
+             _WaitSet      = NULL; // 存放处于 wait 状态的线程队列
+             _WaitSetLock  = 0;
+             _Responsible  = NULL;
+             _succ         = NULL;
+             _cxq          = NULL;
+             FreeNext      = NULL;
+             _EntryList    = NULL; // 存放处于 block 锁阻塞状态的线程队列
+             _SpinFreq     = 0;
+             _SpinClock    = 0;
+             OwnerIsThread = 0;
+             _previous_owner_tid = 0;
+         }
+     }
+   - 关键属性
+     - _count：记录该线程获取锁的次数。
+     - _recursions：锁的重入次数。
+     - _owner：持有 ObjectMonitor 对象的线程。
+     - _EntryList：存放处于 block 锁阻塞状态的线程队列(多线程下，竞争锁失败的线程会进入 EntryList 队列)。
+     - _WaitSet：存放处于 wait 状态的线程队列(正在执行代码的线程遇到 wait()，会进入 WaitSet 队列)。
 5. ObjectMonitor 中的队列
-    ObjectMonitor 中有两个队列，_EntryList 和_WaitSet ，用来保存 ObjectWaiter 对象列表（ 每个等待锁的线程都会被封装成 ObjectWaiter 对象 ），_owner 指向持有 ObjectMonitor对象的线程，当多个线程同时访问一段同步代码时：
-        首先会进入 _EntryList 集合，当线程获取到对象的 monitor后，进入 _Owner 区域并把 monitor 中的 owner 变量设置为当前线程，同时 monitor 中的计数器 count 加 1；
-        若线程调用 wait() 方法，将释放当前持有的 monitor，owner变量恢复为null，count自减1，同时该线程进入 WaitSet集合中等待被唤醒；
-        若当前线程执行完毕，也将释放 monitor（锁）并复位 count 的值，以便其他线程进入获取 monitor(锁)；
-        同时，Monitor 对象存在于每个 Java 对象的对象头 Mark Word 中（存储的指针的指向），Synchronized 锁便是通过这种方式获取锁的，也是为什么Java中任意对象可以作为锁的原因，同时 notify/notifyAll/wait 等方法会使用到 Monitor 锁对象，所以必须在同步代码块中使用。监视器 Monitor 有两种同步方式：互斥与协作。多线程环境下线程之间如果需要共享数据，需要解决互斥访问数据的问题，监视器可以确保监视器上的数据在同一时刻只会有一个线程在访问。
+   - ObjectMonitor 中有两个队列，_EntryList 和 _WaitSet，用来保存 ObjectWaiter 对象列表(每个等待锁的线程都会被封装成 ObjectWaiter 对象)，_owner 指向持有 ObjectMonitor 对象的线程。当多个线程同时访问一段同步代码时：
+     - 首先会进入 _EntryList 集合，当线程获取到对象的 monitor 后，进入 _Owner 区域并把 monitor 中的 owner 变量设置为当前线程，同时 monitor 中的计数器 count 加 1。
+     - 若线程调用 wait() 方法，将释放当前持有的 monitor，owner 变量恢复为 null，count 自减 1，同时该线程进入 WaitSet 集合中等待被唤醒。
+     - 若当前线程执行完毕，也将释放 monitor(锁)并复位 count 的值，以便其他线程进入获取 monitor(锁)。
+   - Monitor 对象存在于每个 Java 对象的对象头 Mark Word 中(存储的指针的指向)，Synchronized 锁便是通过这种方式获取锁的，也是为什么 Java 中任意对象可以作为锁的原因。
+   - notify/notifyAll/wait 等方法会使用到 Monitor 锁对象，所以必须在同步代码块中使用。
+   - 监视器 Monitor 有两种同步方式：互斥与协作。多线程环境下线程之间如果需要共享数据，需要解决互斥访问数据的问题，监视器可以确保监视器上的数据在同一时刻只会有一个线程在访问。

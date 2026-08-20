@@ -1,4 +1,7 @@
-现在public void execute(Context context)这个方法里面,Context是传递过来的,可以通过ThreadLocal来改善,把
-Context和当前线程绑定,存放在ThreadLocal中
-
+不使用 ThreadLocal(保险箱)设计模式
+1. 问题描述
+   - 现在 public void execute(Context context) 这个方法里面，Context 是传递过来的，只能通过方法参数层层传递。
+   - 缺点：参数传递链路过长，每个需要用到 Context 的方法都必须显式声明参数，导致代码耦合度高、可读性差。
+2. 改进方案
+   - 可以通过 ThreadLocal 来改善，把 Context 和当前线程绑定，存放在 ThreadLocal 中，任何方法都可以直接获取，无需层层传递参数。
 

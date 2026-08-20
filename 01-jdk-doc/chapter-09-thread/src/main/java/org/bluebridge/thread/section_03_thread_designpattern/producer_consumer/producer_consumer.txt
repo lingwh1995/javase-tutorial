@@ -1,6 +1,10 @@
-生产者消费者模式的角色:
-    1.Data:Data由Producer角色生成,供Consumer使用
-    2.Producer:生成Data,并将其传递给Channel
-    3.Consumer:从Channel中获取Data并使用
-    4.Channel:位于Producer和Consumer之间,承担用于传递Data的中转站、通道的任务
-           Channel角色执行线程间的互斥处理,确保Producer正确地将Data传递给Consumer
+生产者消费者模式(Producer-Consumer)的角色
+1. Data
+   - Data 由 Producer 角色生成，供 Consumer 使用。
+2. Producer
+   - 生成 Data，并将其传递给 Channel。
+3. Consumer
+   - 从 Channel 中获取 Data 并使用。
+4. Channel
+   - 位于 Producer 和 Consumer 之间，承担用于传递 Data 的中转站、通道的任务。
+   - Channel 角色执行线程间的互斥处理，确保 Producer 正确地将 Data 传递给 Consumer。

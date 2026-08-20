@@ -1,15 +1,17 @@
-1.方法引用
-    可以将方法引用可以看成是一个函数指针 functioninterface pointer
-    特殊情况下lambda表达式可以使用方法引用代替,仅是特殊情况下
-    List<Person> personList = Arrays.asList(new Person[]{new Person("zs",18),new Person("ls",28),new Person("ww",38)});
-    //可以使用方法引用
-    personList.forEach(System.out::println);
-    //只能使用lambda表达式
-    personList.forEach(p -> System.out.println(p.getUsername()));
-四种方法引用:
-    1.类名::方法名
-    2.应用名/对象名::实例方法名
-        需要新建一个类，在新的类里面完成方法的实现
-    3.类名::实例方法名
-        lambda表达式第一个参数作为实例参数的调用者,其他参数作为方法参数
-    4.构造::new
+方法引用
+1. 概述
+   - 方法引用可以看成是一个函数指针(function interface pointer)。
+   - 特殊情况下，lambda 表达式可以使用方法引用代替(仅是特殊情况下)。
+2. 示例代码
+     List<Person> personList = Arrays.asList(new Person[]{new Person("zs", 18), new Person("ls", 28), new Person("ww", 38)});
+     // 可以使用方法引用
+     personList.forEach(System.out::println);
+     // 只能使用 lambda 表达式
+     personList.forEach(p -> System.out.println(p.getUsername()));
+3. 四种方法引用
+   a. 类名::静态方法名
+   b. 实例对象名::实例方法名
+       需要新建一个类，在新的类里面完成方法的实现
+   c. 类名::实例方法名
+       lambda 表达式第一个参数作为实例参数的调用者，其他参数作为方法参数
+   d. 构造方法引用(类名::new)

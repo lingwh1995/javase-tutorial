@@ -1,1 +1,7 @@
-考察 synchronized 锁住的是哪个对象
+线程八锁
+1. 核心考察点
+   - 考察 synchronized 锁住的是哪个对象。
+2. 判断要点
+   - 普通 synchronized 方法锁的是调用它的实例对象(this)。
+   - 静态 synchronized 方法锁的是类对象(Class 对象)。
+   - 锁对象相同时，多个线程互斥执行；锁对象不同时，多个线程可以并行执行。

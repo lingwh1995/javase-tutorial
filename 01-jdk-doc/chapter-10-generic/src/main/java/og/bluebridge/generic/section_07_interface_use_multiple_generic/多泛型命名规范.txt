@@ -1,61 +1,47 @@
-1. T — Type（通用类型）
-    最基础、最常用的泛型字母，泛指「任意一个引用类型」，没有特殊业务语义时优先使用 T。
-
-    // 通用的对象包装类
-    public class Box<T> {
-        private T content;
-        public T getContent() { return content; }
-        public void setContent(T content) { this.content = content; }
-    }
-
-2. E — Element（元素）
-    特指「容器 / 集合中的元素类型」，语义上强调是集合里的单个成员。JDK 集合框架几乎都使用 E 作为泛型标识。
-
-    典型场景：Collection<E>、List<E>、Set<E>、Iterator<E>
-
-    public interface List<E> extends Collection<E> {
-        boolean add(E e);
-        E get(int index);
-    }
-
-3. K — Key（键）
-    键值对结构中的「键」类型，固定与 V 配对使用，专门表示映射关系中的 key。
-
-4. V — Value（值）
-    键值对结构中的「值」类型，与 K 成对出现，表示映射关系中的 value。
-
-    典型场景：Map<K,V>、Map.Entry<K,V>
-
-    public interface Map<K, V> {
-        V get(Object key);
-        V put(K key, V value);
-    }
-
-5. R — Result（返回结果）
-    专门表示「方法的返回值类型」，常见于函数式接口、类型转换、计算逻辑等场景。
-
-    典型场景：Function<T,R>、Supplier<R>、Callable<V>
-
-    // T 是入参类型，R 是返回结果类型
-    @FunctionalInterface
-    public interface Function<T, R> {
-        R apply(T t);
-    }
-
-6. N — Number（数值类型）
-    特指数字类型，通常配合上界限定 extends Number 使用，约束泛型只能是数值家族（Integer、Long、Double、BigDecimal 等）。
-
-    // 仅接收 Number 的子类
-    public class NumCalculator<N extends Number> {
-        private N value;
-        public double doubleValue() { return value.doubleValue(); }
-    }
-
+多泛型命名规范
+1. T — Type(通用类型)
+   - 最基础、最常用的泛型字母，泛指「任意一个引用类型」，没有特殊业务语义时优先使用 T。
+     // 通用的对象包装类
+     public class Box<T> {
+         private T content;
+         public T getContent() { return content; }
+         public void setContent(T content) { this.content = content; }
+     }
+2. E — Element(元素)
+   - 特指「容器 / 集合中的元素类型」，语义上强调是集合里的单个成员。JDK 集合框架几乎都使用 E 作为泛型标识。
+   - 典型场景：Collection<E>、List<E>、Set<E>、Iterator<E>
+     public interface List<E> extends Collection<E> {
+         boolean add(E e);
+         E get(int index);
+     }
+3. K — Key(键)
+   - 键值对结构中的「键」类型，固定与 V 配对使用，专门表示映射关系中的 key。
+4. V — Value(值)
+   - 键值对结构中的「值」类型，与 K 成对出现，表示映射关系中的 value。
+   - 典型场景：Map<K,V>、Map.Entry<K,V>
+     public interface Map<K, V> {
+         V get(Object key);
+         V put(K key, V value);
+     }
+5. R — Result(返回结果)
+   - 专门表示「方法的返回值类型」，常见于函数式接口、类型转换、计算逻辑等场景。
+   - 典型场景：Function<T,R>、Supplier<R>、Callable<V>
+     // T 是入参类型，R 是返回结果类型
+     @FunctionalInterface
+     public interface Function<T, R> {
+         R apply(T t);
+     }
+6. N — Number(数值类型)
+   - 特指数字类型，通常配合上界限定 extends Number 使用，约束泛型只能是数值家族(Integer、Long、Double、BigDecimal 等)。
+     // 仅接收 Number 的子类
+     public class NumCalculator<N extends Number> {
+         private N value;
+         public double doubleValue() { return value.doubleValue(); }
+     }
 7. S / U / V — 第 2、3、4 个通用类型
-    当一个类 / 方法有多个泛型参数，且没有明确的键值、元素等业务语义时，按字母表顺序，在 T 之后依次使用 S、U、V 表示第 2、3、4 个类型。
-
-    // 包含两个无特殊语义的泛型参数
-    public class Pair<T, U> {
-        private T first;
-        private U second;
-    }
+   - 当一个类 / 方法有多个泛型参数，且没有明确的键值、元素等业务语义时，按字母表顺序，在 T 之后依次使用 S、U、V 表示第 2、3、4 个类型。
+     // 包含两个无特殊语义的泛型参数
+     public class Pair<T, U> {
+         private T first;
+         private U second;
+     }

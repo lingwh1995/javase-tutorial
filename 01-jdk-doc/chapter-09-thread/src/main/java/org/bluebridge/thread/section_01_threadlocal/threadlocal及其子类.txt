@@ -1,14 +1,17 @@
-ThreadLocal:
-    相当于是当前线程的一个局部静态对象，它的值的作用域是当前整个线程，别的线程是无法获取到的它的值。
-InheritableThreadLocal:
-    InheritableThreadLocal的作用就是为了解决子线程想获取到父线程的ThreadLocal的值。
-使用InheritableThreadLocal注意事项:
-    InheritableThreadLocal 的实现原理是在子线程创建的时候把主线程的 InheritableThreadLocal 值的内容的引
-    用 copy 了一份给自己用，因为是 copy 出来的，所以创建子线程之后，子线程和主线程的 InheritableThreadLocal
-    是相互独立的了，它们之间怎么改 InheritableThreadLocal 的值也不会同步到对方的 InheritableThreadLocal 。
-子线程和父线程:
-    子线程:当前线程
-    父线程:创建当前线程的线程
-InheritableThreadLocal是线程安全的，ThreadLocal是线程不安全的
-使用方式:在类中创建InheritableThreadLocal对象，在主线程中
-        使用inheritableThreadLocal.set()设置值，在子线程中使用inheritableThreadLocal.get()获取值
+ThreadLocal 及其子类
+1. ThreadLocal 是什么
+   - 相当于是当前线程的一个局部静态对象，它的值的作用域是当前整个线程，别的线程是无法获取到它的值的。
+   - 每个线程都持有自己独立的 ThreadLocal 副本，线程之间互不影响。
+2. InheritableThreadLocal 是什么
+   - InheritableThreadLocal 的作用就是为了解决子线程想获取到父线程的 ThreadLocal 的值的问题。
+3. 使用 InheritableThreadLocal 注意事项
+   - 实现原理是在子线程创建的时候，把父线程的 InheritableThreadLocal 值的内容的引用 copy 了一份给子线程用。
+   - 因为是 copy 出来的，所以创建子线程之后，子线程和父线程的 InheritableThreadLocal 是相互独立的了，它们之间怎么改 InheritableThreadLocal 的值也不会同步到对方的 InheritableThreadLocal。
+4. 子线程和父线程
+   - 子线程：当前线程
+   - 父线程：创建当前线程的线程
+5. 线程安全
+   - 注意：ThreadLocal / InheritableThreadLocal 本身都是线程安全的，它们将数据绑定到各自的线程，每个线程操作的是自己的副本，不存在多线程竞争同一份数据的问题。
+   - 真正要关注的是：存入 ThreadLocal 的对象自身是否线程安全(若多个线程共享同一个可变对象，仍需自行同步)。
+6. 使用方式
+   - 在类中创建 InheritableThreadLocal 对象，在主线程中使用 inheritableThreadLocal.set() 设置值，在子线程中使用 inheritableThreadLocal.get() 获取值。

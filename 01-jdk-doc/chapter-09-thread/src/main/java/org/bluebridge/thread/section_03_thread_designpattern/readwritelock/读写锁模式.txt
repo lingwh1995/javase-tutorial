@@ -1,19 +1,15 @@
-读写锁模式:
-    概述:
-        Read-Writer Lock模式的优点是Reader角色之间不会发生冲突。但是如果写入处理的
-        频率很高，Writer角色变回频繁停止Reader角色的处理,这样就无法体现出Read-Write
-        Lock模式的优点了
-    适用场景:
-        1.适合读取操作繁重时
-        2.适合读取频率比写入频率高时
-Read-Write Lock模式如何去掉角色之间的互斥处理:
-    通过不执行Reader角色之间的互斥处理来提高程序性能的.之所以能够去掉Reader角色
-    之间的互斥处理,是因为SharedResource角色的内部状态仅仅是在执行写入操作时才会
-    发生改变。Read-Write Lock模式的SharedResource角色是只要不执行写入操作就是
-    保持immutable
-Read-Write Lock使用到的模式:
-    Guarded Suspension:
-        创建ReaderWriterLock角色时使用了Guarded Suspension模式
-    Before/After:
-        为了防止释放锁,Read-Write Lock模式还是用了Before/After模式
-    Strategized Locking
+读写锁模式(Read-Write Lock)
+1. 概述
+   - Read-Write Lock 模式的优点是 Reader 角色之间不会发生冲突。但是如果写入处理的频率很高，Writer 角色会频繁停止 Reader 角色的处理，这样就无法体现出 Read-Write Lock 模式的优点了。
+2. 适用场景
+   - 适合读取操作繁重时。
+   - 适合读取频率比写入频率高时。
+3. Read-Write Lock 模式如何去掉角色之间的互斥处理
+   - 通过不执行 Reader 角色之间的互斥处理来提高程序性能。之所以能够去掉 Reader 角色之间的互斥处理，是因为 SharedResource 角色的内部状态仅仅是在执行写入操作时才会发生改变。
+   - Read-Write Lock 模式的 SharedResource 角色只要不执行写入操作，就保持 immutable。
+4. Read-Write Lock 使用到的模式
+   - Guarded Suspension：
+     创建 ReaderWriterLock 角色时使用了 Guarded Suspension 模式。
+   - Before/After：
+     为了防止忘记释放锁，Read-Write Lock 模式还使用了 Before/After 模式。
+   - Strategized Locking。

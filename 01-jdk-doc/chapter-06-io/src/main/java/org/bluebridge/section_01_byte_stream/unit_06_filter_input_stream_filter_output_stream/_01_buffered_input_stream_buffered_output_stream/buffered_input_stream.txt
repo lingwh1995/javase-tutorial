@@ -1,30 +1,19 @@
-概述:
-    BufferedInputStream继承于FilterInputStream，提供缓冲输入流功能。
-缓冲输入流相对于普通输入流的优势:
-    它提供了一个缓冲数组，每次调用read方法的时候，它首先尝试从缓冲区里读取数据，若读取失败（缓冲区无可读数据），则
-    选择从物理数据源（譬如文件）读取新数据（这里会尝试尽可能读取多的字节）放入到缓冲区中，最后再将缓冲区中的内容部分
-    或全部返回给用户.由于从缓冲区里读取数据远比直接从物理数据源（譬如文件）读取速度快。
-API:
-    //构造方法
-    BufferedInputStream(InputStream in)
-    /**
-     * @param int size:缓冲区大小,默认是8M(单位默认是kb)
-     */
-    BufferedInputStream(InputStream in, int size)
-
-    //下一字节是否可读
-    synchronized int     available()
-    //关闭
-    void     close()
-    //标记, readlimit为mark后最多可读取的字节数
-    synchronized void     mark(int readlimit)
-    //是否支持mark, true
-    boolean     markSupported()
-    //读取一个字节
-    synchronized int     read()
-    //读取多个字节到b
-    synchronized int     read(byte[] b, int off, int len)
-    //重置会mark位置
-    synchronized void     reset()
-    //跳过n个字节
-    synchronized long     skip(long n)
+BufferedInputStream(缓冲输入流)
+1. 概述
+   - BufferedInputStream 继承于 FilterInputStream，提供缓冲输入流功能。
+2. 缓冲输入流相对于普通输入流的优势
+   - 它提供了一个缓冲数组，每次调用 read 方法的时候，它首先尝试从缓冲区里读取数据，若读取失败(缓冲区无可读数据)，则选择从物理数据源(譬如文件)读取新数据(这里会尝试尽可能读取多的字节)放入到缓冲区中，最后再将缓冲区中的内容部分或全部返回给用户。
+   - 由于从缓冲区里读取数据远比直接从物理数据源(譬如文件)读取速度快。
+3. API
+   - 构造方法
+     BufferedInputStream(InputStream in)
+     BufferedInputStream(InputStream in, int size)   // size：缓冲区大小，默认是 8M(单位默认是 kb)
+   - 常用方法
+     synchronized int     available()                       // 下一字节是否可读
+     void                 close()                           // 关闭
+     synchronized void    mark(int readlimit)               // 标记，readlimit 为 mark 后最多可读取的字节数
+     boolean              markSupported()                   // 是否支持 mark，true
+     synchronized int     read()                            // 读取一个字节
+     synchronized int     read(byte[] b, int off, int len)  // 读取多个字节到 b
+     synchronized void    reset()                           // 重置到 mark 位置
+     synchronized long    skip(long n)                      // 跳过 n 个字节

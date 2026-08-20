@@ -1,14 +1,13 @@
-1.sleep()和wait()方法的区别?
-    sleep()是Thread的方法,wait()是Object的方法
-    sleep()不会释放锁，wait()会释放锁,并且把当前线程加入到等待队列(线程休息室)中
-    使用wait()必须定义synchronized,使用sleep()不需要定义synchronized
-    sleep()不是必须被唤醒的,wait()必须被唤醒
-2.关于wait()方法
-    Object obj = new Object();
-    obj.wait();
-    上面的代码可以描述为:线程正在obj上wait()
-    wait()等价于this.wait()
-    所以上面的代码可以描述为:线程正在this上wait()
-
-    wait()方法和锁
-    如果要执行wait()方法,则必须有锁(这是原则)。但是如果线程进入等待队列，便会释放其实例的锁
+线程面试题
+1. sleep() 和 wait() 方法的区别?
+   - sleep() 是 Thread 的方法，wait() 是 Object 的方法。
+   - sleep() 不会释放锁，wait() 会释放锁，并且把当前线程加入到等待队列(线程休息室)中。
+   - 使用 wait() 必须在 synchronized 同步块/方法中，使用 sleep() 不需要。
+   - sleep() 到时间自动醒来，不必须被唤醒；wait() 必须由其他线程通过 notify()/notifyAll() 唤醒。
+2. 关于 wait() 方法
+     Object obj = new Object();
+     obj.wait();
+     上面的代码可以描述为：线程正在 obj 上 wait()。
+     wait() 等价于 this.wait()。
+3. wait() 方法和锁
+   - 如果要执行 wait() 方法，则必须有锁(这是前提)。但是线程一旦进入等待队列，便会释放其实例的锁，以便其他线程可以进入同步块执行 notify() 唤醒它。
