@@ -38,14 +38,4 @@ public class MyBitMap {
         int bitOffset = num % UNIT;
         bits[arrayIndex] &= ~(1 << bitOffset);
     }
-
-    // 测试
-    public static void main(String[] args) {
-        MyBitMap bitMap = new MyBitMap(100);
-        bitMap.set(35);
-        System.out.println(bitMap.get(35)); // true
-        System.out.println(bitMap.get(36)); // false
-        bitMap.clear(35);
-        System.out.println(bitMap.get(35)); // false
-    }
 }

@@ -34,3 +34,4 @@ bin
 dependency-reduced-pom.xml
 
 .editorconfig
+.settings.json
