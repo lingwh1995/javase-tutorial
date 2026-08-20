@@ -12,6 +12,6 @@ public class AppLauncher {
 
     public static void main(String[] args) {
         // 这里的 HelloWorld 是你原本继承了 Application 的启动类
-        Case_04_ComponentsTest.main(args);
+        Demo_04_ComponentsTest.main(args);
     }
 }
