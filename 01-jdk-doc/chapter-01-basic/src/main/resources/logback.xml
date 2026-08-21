@@ -10,6 +10,9 @@
         </encoder>
     </appender>
 
+    <!-- Netty 初始化时的平台检测日志(Unsafe 可用性探测等)为 debug 级别, 过于刷屏, 单独调高为 WARN, 仅保留告警及以上 -->
+    <logger name="io.netty" level="WARN"/>
+
     <!-- 日志输出级别,logback日志级别包括五个：TRACE < DEBUG < INFO < WARN < ERROR -->
     <root level="debug">
         <appender-ref ref="STDOUT"/>

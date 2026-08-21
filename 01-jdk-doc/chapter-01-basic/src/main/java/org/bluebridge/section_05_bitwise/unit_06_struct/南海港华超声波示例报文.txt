@@ -1,0 +1,18 @@
+1. 报文结构
+   [
+      {"fieldCode":"startFlag","fieldName":"帧头","fieldLength":"1"},
+      {"fieldCode":"protocolType","fieldName":"协议类型","fieldLength":"1"},
+      {"fieldCode":"protocolVersion","fieldName":"协议框架版本","fieldLength":"1"},
+      {"fieldCode":"frameLength","fieldName":"帧长度","fieldLength":"2"},
+      {"fieldCode":"messageSequence","fieldName":"消息序号","fieldLength":"1"},
+      {"fieldCode":"controlField","fieldName":"控制域","fieldLength":"1","children":[{"fieldCode":"direction","fieldName":"方向","fieldLength":null,"startPosition":7,"endPosition":8},{"fieldCode":"follow","fieldName":"后续帧标识","fieldLength":null,"startPosition":6,"endPosition":7},{"fieldCode":"reserved","fieldName":"保留","fieldLength":null,"startPosition":5,"endPosition":6},{"fieldCode":"functionCode","fieldName":"功能码","fieldLength":null,"startPosition":0,"endPosition":5}]},
+      {"fieldCode":"commandCode","fieldName":"命令码","fieldLength":"2"},
+      {"fieldCode":"dataArea","fieldName":"数据域","fieldLength":"#frameLength-12"},
+      {"fieldCode":"crc","fieldName":"校验域","fieldLength":"2"},
+      {"fieldCode":"endFlag","fieldName":"帧尾","fieldLength":"1"}
+   ]
+2. 注册请求报文
+   680008009705013001260820165326000400040C3939393939393939393939390000000000000000000000000000000000000000014543383030472D434E00000100756100014C5B36365B4C0E79AF44A7A744AF0A90FFB9001A00000126799175982638363030363130363139303430373500006D2C19BE87EC151735B7B4C4FDAE01C21A9FFF73106784F18A5AC4AD0845D66CE3FC16
+3. 需求描述
+   - 使用 java 语言模拟结构体和位域，把报文的中的所有字段解析为 hex 格式即可
+   - 把帧结构中的控制域部分解析出来

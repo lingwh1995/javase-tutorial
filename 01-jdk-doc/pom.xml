@@ -23,6 +23,9 @@
         <hessian.version>4.0.7</hessian.version>
         <commons-lang3.version>3.6</commons-lang3.version>
         <commons-text.version>1.10.0</commons-text.version>
+        <netty.version>4.2.5.Final</netty.version>
+        <javolution.version>6.0.0</javolution.version>
+        <hutool.version>5.8.0</hutool.version>
     </properties>
 
     <modules>
@@ -78,6 +81,23 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-text</artifactId>
                 <version>${commons-text.version}</version>
+            </dependency>
+            <!-- Netty ByteBuf：方式二解析报文依赖 -->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-buffer</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <!-- Javolution：方式四解析报文依赖 -->
+            <dependency>
+                <groupId>org.javolution</groupId>
+                <artifactId>javolution-core-java</artifactId>
+                <version>${javolution.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
