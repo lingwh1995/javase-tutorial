@@ -1,4 +1,4 @@
-package org.bluebridge.section_05_bitwise.unit_06_bitfield;
+package org.bluebridge.section_05_bitwise.unit_07_bitfield;
 
 /**
  * 位运算模拟 c 语言中的真实的位域

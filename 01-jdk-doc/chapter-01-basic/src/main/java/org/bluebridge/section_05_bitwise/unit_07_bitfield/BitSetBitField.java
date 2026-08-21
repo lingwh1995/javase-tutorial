@@ -1,4 +1,4 @@
-package org.bluebridge.section_05_bitwise.unit_06_bitfield;
+package org.bluebridge.section_05_bitwise.unit_07_bitfield;
 
 import java.util.BitSet;
 

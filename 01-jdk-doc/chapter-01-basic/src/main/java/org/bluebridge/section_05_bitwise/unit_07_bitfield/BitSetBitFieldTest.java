@@ -1,4 +1,4 @@
-package org.bluebridge.section_05_bitwise.unit_06_bitfield;
+package org.bluebridge.section_05_bitwise.unit_07_bitfield;
 
 /**
  * 使用 BitSet 模拟 C 语言位域(Bit Field) 测试

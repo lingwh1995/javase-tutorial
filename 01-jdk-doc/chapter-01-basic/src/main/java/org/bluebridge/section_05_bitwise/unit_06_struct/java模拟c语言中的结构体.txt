@@ -1,0 +1,8 @@
+java 模拟 c 语言中的结构体常用方案
+1. jdk 提供的 ByteBuffer（手动模拟）
+2. netty 提供的 ByteBuf（手动模拟）
+3. 使用 Javolution 库类直接将 java 类映射成 c 结构体（自动模拟）
+   - Javolution 是面向实时、嵌入式、二进制报文解析的高性能 Java 库
+   - Struct 模拟 C 语言结构体，自动处理大小端、内存对齐，无 GC 抖动，非常适合二进制上行 / 下行报文解析（串口、UDP、TCP 二进制协议）。
+4. Unsafe 裸操作（手动模拟，底层方案，不推荐业务使用）
+5. Java21 正式发布 Foreign Function & Memory API，用于替代 Unsafe。
