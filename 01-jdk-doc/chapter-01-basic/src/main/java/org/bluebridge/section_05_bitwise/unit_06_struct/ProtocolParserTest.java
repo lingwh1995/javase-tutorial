@@ -1,7 +1,5 @@
 package org.bluebridge.section_05_bitwise.unit_06_struct;
 
-import java.util.Arrays;
-
 /**
  * 超声波燃气表报文四种解析方式对比测试
  *

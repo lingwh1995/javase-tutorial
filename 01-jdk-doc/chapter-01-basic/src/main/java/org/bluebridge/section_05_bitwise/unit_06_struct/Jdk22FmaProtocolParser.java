@@ -16,7 +16,7 @@ import java.lang.foreign.ValueLayout;
  * 数据域变长，用 asSlice 截取；Arena 自动释放内存。
  *
  * <p>固定头结构体布局(9 字节, 大端序):
- * <pre>
+ *
  * 偏移   大小   字段
  * 0      1      startFlag        帧头
  * 1      1      protocolType     协议类型
@@ -25,7 +25,6 @@ import java.lang.foreign.ValueLayout;
  * 5      1      messageSequence  消息序号
  * 6      1      controlField     控制域
  * 7      2      commandCode      命令码
- * </pre>
  *
  * @author lingwh
  * @date 2026/8/21 14:17

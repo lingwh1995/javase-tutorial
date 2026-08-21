@@ -23,7 +23,7 @@ public class JavolutionProtocolParser {
 
     /**
      * 固定头 9 字节对应的 C 结构体:
-     * <pre>
+     *
      * struct FrameHead {
      *     unsigned char  startFlag;       // 帧头
      *     unsigned char  protocolType;    // 协议类型
@@ -33,7 +33,7 @@ public class JavolutionProtocolParser {
      *     unsigned char  controlField;    // 控制域
      *     unsigned short commandCode;     // 命令码
      * };
-     * </pre>
+     *
      * 说明: Unsigned16 成员按 C 结构体规则会按 2 字节对齐, 导致紧凑报文(帧长度起始于奇数偏移 3)
      * 解析错位, 因此双字节字段改用两个 Unsigned8 按大端组合表示, 与报文紧凑布局严格一致。
      */
