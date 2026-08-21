@@ -1,16 +1,16 @@
-package org.bluebridge.section_05_bitwise.unit_05_bitfield;
+package org.bluebridge.section_05_bitwise.unit_06_bitfield;
 
 /**
- * 使用 EnumSet 模拟 C 语言位域(Bit Field)
+ * 使用 EnumSet 实现语言位域(Bit Field)
  *
  * C 语言中常用枚举常量 + 位运算模拟标志位域:
- *   enum EnumSetBitField {
- *       READ    = 1 << 0(ordinal=0),   // 0x01
- *       WRITE   = 1 << 1(ordinal=1),   // 0x02
- *       EXECUTE = 1 << 2(ordinal=2),   // 0x04
- *       DELETE  = 1 << 3(ordinal=3),   // 0x08
- *   };
- *   // 使用: int flags = READ | WRITE;
+ * typedef enum EnumSetBitField {
+ *    READ    = 1U << 0,   // ordinal=0, 0x01
+ *    WRITE   = 1U << 1,   // ordinal=1, 0x02
+ *    EXECUTE = 1U << 2,   // ordinal=2, 0x04
+ *    DELETE  = 1U << 3,   // ordinal=3, 0x08
+ * } EnumSetBitField;
+ * // 使用: int flags = READ | WRITE;
  *
  * Java 中 enum + EnumSet 是最地道的标志位域替代方案。
  * enum 定义标志常量，EnumSet 提供位向量存储，无需手动指定位偏移。

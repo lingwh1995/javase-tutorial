@@ -1,12 +1,10 @@
-package org.bluebridge.section_05_bitwise.unit_05_bitfield;
-
-import org.bluebridge.section_05_bitwise.unit_06_bitfield.BitSetBitField;
+package org.bluebridge.section_05_bitwise.unit_06_bitfield;
 
 /**
- * 测试 BitSet 模拟 C 位域(标志位)
+ * 使用 BitSet 模拟 C 语言位域(Bit Field) 测试
  *
  * @author lingwh
- * @date 2026/8/19 13:43
+ * @date 2026/08/19 11:43
  */
 public class BitSetBitFieldTest {
 

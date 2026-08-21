@@ -1,0 +1,113 @@
+package org.bluebridge.section_05_bitwise.unit_06_bitfield;
+
+/**
+ * 位运算模拟 c 语言中的真实的位域
+ *
+ * @author lingwh
+ * @date 2026/8/21 9:14
+ */
+public class BitWiseRealBitField {
+
+    /**
+     * 模拟 c 语言位域读取任意范围内的位
+     *
+     * @param value 原始整数
+     * @param bitOffset 起始bit偏移(从0开始)
+     * @param bitCount 要取多少bit
+     * @return 提取出来的值
+     */
+    public static int getBitField(int value, int bitOffset, int bitCount) {
+        /**
+         * 获取掩码过程，以 bitCount = 3 为例
+         * mask = 1                 ->  0000 0001
+         * mask =  mask << bitCount ->  0000 1000
+         * mask =  mask - 1         ->  0000 0111
+         */
+        int mask = (1 << bitCount) - 1;
+
+        /**
+         * 计算过程，以 val = 0b00001010 且 bitOffset = 1 为例
+         * val = val >> bitOffset    ->  0000 0101
+         * val = val & mask          ->  0000 0101 &  0000 0111 -> 0000 0101
+         */
+        return (value >> bitOffset) & mask;
+    }
+
+    /**
+     * 模拟 c 语言位域读取某一位
+     *
+     * @param value 原始整数
+     * @param bitOffset 起始bit偏移(从0开始)
+     * @return 提取出来的值
+     */
+    public static int getBitField(int value, int bitOffset) {
+        return getBitField(value, bitOffset, 1);
+    }
+
+    /**
+     * 模拟 c 语言位域设置某一范围内的位
+     *
+     * @param value 原始数据
+     * @param bitOffset 起始偏移
+     * @param bitCount 位数
+     * @param value 要写入的值
+     * @return 修改后新数值
+     */
+    public static int setBitField(int val, int bitOffset, int bitCount, int value) {
+        /**
+         * 获取掩码过程，以 bitCount = 3 为例
+         * mask = 1                     -> 0000 0001
+         * mask = mask << bitCount      -> 0000 1000
+         * mask = mask - 1              -> 0000 0111
+         */
+        int mask = (1 << bitCount) -1;
+
+        /**
+         * 清空目标bit段，示例：mask=0b00000111，bitOffset=1
+         * mask << bitOffset            -> 0000 1110
+         * ~(mask << bitOffset)         -> 1111 0001  按位取反
+         * val = val & ~(mask << bitOffset)  将目标3个bit全部置0，其余bit保持不变
+         */
+        val = val & ~(mask << bitOffset);
+
+        /**
+         * 将写入值截断后移位，再或运算写入目标bit位
+         * value & mask：截断value，只保留bitCount位，防止高位污染其他bit
+         * (value & mask) << bitOffset：把数值移动到目标bit偏移位置
+         * val = val | (...)：把新bit值合并到原始数据中
+         * 示例：value=0b101，bitOffset=1，bitCount=3
+         * value & mask                 -> 0000 0101
+         * (value & mask) << bitOffset  -> 0000 1010
+         * val = val | 00001010         -> 将101写入bit1~bit3
+         */
+        val = val | ((value & mask) << bitOffset);
+        return val;
+    }
+
+    /**
+     * 模拟 c 语言位域设置某一位位
+     *
+     * @param val 原始数据
+     * @param bitOffset 起始偏移
+     * @param value 要写入的值
+     * @return 修改后新数值
+     */
+    public static int setBitField(int val, int bitOffset, int value) {
+        if(value != 0 && value != 1) {
+            throw new IllegalArgumentException("value 的值只能是 0 或 1，实际传入的值是 " + value);
+        }
+        return setBitField(val, bitOffset, 1, value);
+    }
+
+    /**
+     * 补全到8位二进制，左侧补0
+     *
+     * @param val
+     * @return
+     */
+    public static String showMemoryLayout(int val) {
+        String bin = Integer.toBinaryString(val);
+        // 截取后8位，不足8位前面补0
+        return String.format("%8s", bin).replace(' ', '0');
+    }
+}

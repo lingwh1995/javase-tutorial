@@ -1,4 +1,4 @@
-package org.bluebridge.section_05_bitwise.unit_06_bitmask;
+package org.bluebridge.section_05_bitwise.unit_05_bitmask;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,6 @@ import java.util.List;
  * 4. 数据压缩/序列化: 多个布尔值/小整数打包进一个 int 或 long
  * 5. 位操作: 用位操作实现快速的位级计算，例如位移、按位与/或/异或等
  * 6. 物联网行业: 使用运算来快速获取第 n 位的值是0还是1，如 0 代表有后续帧，1 代表没有后续帧
- * 7. 数据掩码/数据脱敏: 隐藏敏感信息，如手机号 138****1234
  *
  * @author lingwh
  * @date 2026/8/20 20:49
@@ -63,16 +62,16 @@ public class BitMaskTest {
 
     public static void main(String[] args) {
         System.out.println("---------- 1. 生成掩码: 左移 << ----------");
-        System.out.println("1 << 0 = " + to8Bit(1 << 0)); // 00000001
-        System.out.println("1 << 1 = " + to8Bit(1 << 1)); // 00000010
-        System.out.println("1 << 2 = " + to8Bit(1 << 2)); // 00000100
-        System.out.println("1 << 3 = " + to8Bit(1 << 3)); // 00001000
+        System.out.println("1 << 0 = " + showMemoryLayout(1 << 0)); // 00000001
+        System.out.println("1 << 1 = " + showMemoryLayout(1 << 1)); // 00000010
+        System.out.println("1 << 2 = " + showMemoryLayout(1 << 2)); // 00000100
+        System.out.println("1 << 3 = " + showMemoryLayout(1 << 3)); // 00001000
 
         System.out.println("\n---------- 2. 按位与 & : 提取/判断指定位 ----------");
         int value = 0b1011;
         // 提取第 2 位: 用掩码 1 << 2 = 0b0100 做按位与, 非 0 说明该位为 1
         boolean isBit2Set = (value & (1 << 2)) != 0;
-        System.out.println("value = " + to8Bit(value) + ", 第 2 位是否为 1: " + isBit2Set); // true
+        System.out.println("value = " + showMemoryLayout(value) + ", 第 2 位是否为 1: " + isBit2Set); // true
 
         // 提取低 8 位(用于颜色等): 与掩码 0xFF 做按位与
         // 颜色格式 #AARRGGBB
@@ -89,7 +88,7 @@ public class BitMaskTest {
         int permission = 0; // 0b000, 初始无任何权限
         permission |= PERMISSION_READ; // 增加读权限 -> 0b100
         permission |= PERMISSION_EXECUTE; // 增加执行权限 -> 0b101
-        System.out.println("permission = " + to8Bit(permission));
+        System.out.println("permission = " + showMemoryLayout(permission));
         System.out.println("是否可读: " + ((permission & PERMISSION_READ) != 0)); // true
         System.out.println("是否可写: " + ((permission & PERMISSION_WRITE) != 0)); // false
         System.out.println("是否可执行: " + ((permission & PERMISSION_EXECUTE) != 0)); // true
@@ -99,22 +98,22 @@ public class BitMaskTest {
         permission |= PERMISSION_WRITE; // 0b101 | 0b010 = 0b111
         // 去掉读权限
         permission &= ~PERMISSION_READ; // 0b111 & ~0b100 = 0b011, 去掉读权限
-        System.out.println("permission = " + to8Bit(permission));
+        System.out.println("permission = " + showMemoryLayout(permission));
         System.out.println("去掉读权限后是否可读: " + ((permission & PERMISSION_READ) != 0)); // false
 
         System.out.println("\n---------- 5. 按位异或 ^ : 翻转指定位 ----------");
         int flags = 0b0000;
         flags ^= 1 << 1; // 翻转第 1 位: 0 -> 1
-        System.out.println("一次异或翻转后 flags = " + to8Bit(flags)); // 2
+        System.out.println("一次异或翻转后 flags = " + showMemoryLayout(flags)); // 2
         flags ^= 1 << 1; // 再翻转第 1 位: 1 -> 0, 实现开关切换
-        System.out.println("两次异或翻转后 flags = " + to8Bit(flags)); // 0
+        System.out.println("两次异或翻转后 flags = " + showMemoryLayout(flags)); // 0
 
         System.out.println("\n---------- 6. 掩码的其他经典用法 ----------");
         // 判断奇偶: 与掩码 1 做按位与
         System.out.println("7 & 1 = " + (7 & 1) + " (奇数), 8 & 1 = " + (8 & 1) + " (偶数)");
         // 掩码常量: 0xFF 取低 8 位, 0xF0 取高 4 位等
-        System.out.println("0x3C & 0xF0 = " + to8Bit(0x3C & 0xF0)); // 取高 4 位 -> 0x30
-        System.out.println("0x3C & 0x0F = " + to8Bit(0x3C & 0x0F)); // 取低 4 位 -> 0xc
+        System.out.println("0x3C & 0xF0 = " + showMemoryLayout(0x3C & 0xF0)); // 取高 4 位 -> 0x30
+        System.out.println("0x3C & 0x0F = " + showMemoryLayout(0x3C & 0x0F)); // 取低 4 位 -> 0xc
         // 大小写转换: 字母 ASCII 码第 5 位(0x20)为 0 是大写, 为 1 是小写
         System.out.println("'a' & ~0x20 = " + (char) ('a' & ~0x20)); // A
         System.out.println("'A' | 0x20  = " + (char) ('A' | 0x20)); // a
@@ -162,11 +161,11 @@ public class BitMaskTest {
     /**
      * 补全到8位二进制，左侧补0
      *
-     * @param num
+     * @param val
      * @return
      */
-    public static String to8Bit(int num) {
-        String bin = Integer.toBinaryString(num);
+    public static String showMemoryLayout(int val) {
+        String bin = Integer.toBinaryString(val);
         // 截取后8位，不足8位前面补0
         return String.format("%8s", bin).replace(' ', '0');
     }
