@@ -9,13 +9,13 @@ import java.lang.foreign.ValueLayout;
 /**
  * 方式三: 使用 JDK 22 提供的 Foreign Function &amp; Memory API(FFM API) 模拟 C 语言结构体解析报文
  *
- * <p>实现思路: FFM API 是 JDK 22 的正式特性(JEP 454)，用于替代 Unsafe 的裸内存操作。
+ * 实现思路: FFM API 是 JDK 22 的正式特性(JEP 454)，用于替代 Unsafe 的裸内存操作。
  * 先将报文字节拷贝到 Arena 管理的堆外内存，再按字段偏移用
  * {@link MemorySegment#get(ValueLayout, long)} 绝对读取各字段；
  * 双字节字段位于奇数偏移，用单字节组合读取以避免对齐检查；
  * 数据域变长，用 asSlice 截取；Arena 自动释放内存。
  *
- * <p>固定头结构体布局(9 字节, 大端序):
+ * 固定头结构体布局(9 字节, 大端序):
  *
  * 偏移   大小   字段
  * 0      1      startFlag        帧头
@@ -44,10 +44,11 @@ public class Jdk22FmaProtocolParser {
     public static Frame parse(String hex) {
         byte[] bytes = HexUtil.decodeHex(hex);
 
-        // Arena 管理堆外内存的生命周期, try-with-resources 自动释放
+        // Arena 管理堆外内存的生命周期，try-with-resources 自动释放
         try (Arena arena = Arena.ofConfined()) {
-            // 分配堆外内存并把报文字节拷贝进去
+            // 在堆外（off‑heap）分配一块 native 内存，大小等于字节数组的长度
             MemorySegment segment = arena.allocate(bytes.length);
+            // 把 Java 堆里面的 byte 数组的数据，完整拷贝到刚刚分配的堆外内存 segment 里面
             MemorySegment.copy(MemorySegment.ofArray(bytes), 0, segment, 0, bytes.length);
 
             // 按结构体偏移绝对读取固定头各字段(与方法一/二读取顺序一致)
@@ -57,7 +58,8 @@ public class Jdk22FmaProtocolParser {
             int frameLength = readUnsignedShortBigEndian(segment, 3);
             int messageSequence = segment.get(ValueLayout.JAVA_BYTE, 5) & 0xFF;
             int controlField = segment.get(ValueLayout.JAVA_BYTE, 6) & 0xFF;
-            int commandCode = readUnsignedShortBigEndian(segment, 7);
+            // 命令码 2 字节按 hex 字符串解析(如 "3001"), 而非数值
+            String commandCode = HexUtil.encodeHexStr(segment.asSlice(7, 2).toArray(ValueLayout.JAVA_BYTE));
 
             // 帧头帧尾校验
             checkFrameHead(startFlag);
@@ -85,11 +87,11 @@ public class Jdk22FmaProtocolParser {
             frame.setCrc(crc);
             frame.setEndFlag(endFlag);
 
-            // 控制域位域拆分: direction(bit7) follow(bit6) reserved(bit5) functionCode(bit0-5)
+            // 控制域位域拆分: direction(bit7) follow(bit6) reserved(bit5) functionCode(bit0-4)
             frame.setDirection((controlField >> 7) & 0x1);
             frame.setFollow((controlField >> 6) & 0x1);
             frame.setReserved((controlField >> 5) & 0x1);
-            frame.setFunctionCode(controlField & 0x3F);
+            frame.setFunctionCode(controlField & 0x1F);
             return frame;
         }
     }

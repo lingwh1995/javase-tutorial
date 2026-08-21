@@ -39,7 +39,10 @@ public class NettyByteBufProtocolParser {
             int frameLength = buffer.readUnsignedShort();
             int messageSequence = buffer.readUnsignedByte();
             int controlField = buffer.readUnsignedByte();
-            int commandCode = buffer.readUnsignedShort();
+            // 命令码 2 字节按 hex 字符串解析(如 "3001"), 而非数值
+            byte[] commandCodeBytes = new byte[2];
+            buffer.readBytes(commandCodeBytes);
+            String commandCode = HexUtil.encodeHexStr(commandCodeBytes);
 
             // 帧头帧尾校验
             checkFrameHead(startFlag);
@@ -67,11 +70,11 @@ public class NettyByteBufProtocolParser {
             frame.setCrc(crc);
             frame.setEndFlag(endFlag);
 
-            // 控制域位域拆分: direction(bit7) follow(bit6) reserved(bit5) functionCode(bit0-5)
+            // 控制域位域拆分: direction(bit7) follow(bit6) reserved(bit5) functionCode(bit0-4)
             frame.setDirection((controlField >> 7) & 0x1);
             frame.setFollow((controlField >> 6) & 0x1);
             frame.setReserved((controlField >> 5) & 0x1);
-            frame.setFunctionCode(controlField & 0x3F);
+            frame.setFunctionCode(controlField & 0x1F);
             return frame;
         } finally {
             // 释放引用计数, 避免堆外/池化内存泄漏

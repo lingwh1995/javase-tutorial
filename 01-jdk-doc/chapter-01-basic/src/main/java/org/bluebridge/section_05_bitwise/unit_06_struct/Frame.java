@@ -6,8 +6,8 @@ import lombok.Data;
 /**
  * 南海港华超声波燃气表报文解析结果模型
  *
- * <p>帧结构（大端序）：
- * <pre>
+ * 帧结构（大端序）：
+ *
  * 偏移   大小   字段              说明
  * 0      1      startFlag        帧头
  * 1      1      protocolType     协议类型
@@ -19,15 +19,14 @@ import lombok.Data;
  * 9      N      dataArea         数据域, N = frameLength - 12
  * 9+N    2      crc              校验域
  * 11+N   1      endFlag          帧尾
- * </pre>
+ *
  * 控制域(1 字节)按位拆分：
- * <pre>
+ *
  * 位序号  位长   名称          说明
  * 7       1      direction     方向
  * 6       1      follow        后续帧标识
  * 5       1      reserved      保留
  * 0-5     6      functionCode  功能码
- * </pre>
  *
  * @author lingwh
  * @date 2026/8/21 14:16
@@ -86,9 +85,9 @@ public class Frame {
     private int controlField;
 
     /**
-     * 命令码
+     * 命令码(hex 字符串)
      */
-    private int commandCode;
+    private String commandCode;
 
     /**
      * 数据域
@@ -121,7 +120,7 @@ public class Frame {
     private int reserved;
 
     /**
-     * 功能码(控制域 bit0-5，6 位)
+     * 功能码(控制域 bit0-4，5 位)
      */
     private int functionCode;
 
@@ -138,7 +137,7 @@ public class Frame {
         sb.append("|- follow(bit6)          = ").append(follow).append("\n");
         sb.append("|- reserved(bit5)        = ").append(reserved).append("\n");
         sb.append("|- functionCode(bit0-5)  = ").append(functionCode).append("\n");
-        sb.append("commandCode            = ").append(String.format("0x%04X (%d)", commandCode, commandCode)).append("\n");
+        sb.append("commandCode            = ").append("0x").append(commandCode).append("\n");
         sb.append("dataArea               = ").append(dataArea != null ? HexUtil.encodeHexStr(dataArea) : "null").append("\n");
         sb.append("crc                    = ").append(String.format("0x%04X (%d)", crc, crc)).append("\n");
         sb.append("endFlag                = ").append(String.format("0x%02X (%d)", endFlag, endFlag)).append("\n");

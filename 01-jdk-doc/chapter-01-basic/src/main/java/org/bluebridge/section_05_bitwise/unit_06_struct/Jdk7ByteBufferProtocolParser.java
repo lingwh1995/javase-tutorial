@@ -40,7 +40,8 @@ public class Jdk7ByteBufferProtocolParser {
         int frameLength = buffer.getShort() & 0xFFFF;
         int messageSequence = buffer.get() & 0xFF;
         int controlField = buffer.get() & 0xFF;
-        int commandCode = buffer.getShort() & 0xFFFF;
+        // 命令码 2 字节按 hex 字符串解析(如 "3001"), 而非数值
+        String commandCode = HexUtil.encodeHexStr(new byte[]{buffer.get(), buffer.get()});
 
         // 帧头帧尾校验
         checkFrameHead(startFlag);
@@ -68,11 +69,11 @@ public class Jdk7ByteBufferProtocolParser {
         frame.setCrc(crc);
         frame.setEndFlag(endFlag);
 
-        // 控制域位域拆分: direction(bit7) follow(bit6) reserved(bit5) functionCode(bit0-5)
+        // 控制域位域拆分: direction(bit7) follow(bit6) reserved(bit5) functionCode(bit0-4)
         frame.setDirection((controlField >> 7) & 0x1);
         frame.setFollow((controlField >> 6) & 0x1);
         frame.setReserved((controlField >> 5) & 0x1);
-        frame.setFunctionCode(controlField & 0x3F);
+        frame.setFunctionCode(controlField & 0x1F);
         return frame;
     }
 
