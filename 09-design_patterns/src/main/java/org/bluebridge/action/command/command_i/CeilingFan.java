@@ -8,10 +8,10 @@ package org.bluebridge.action.command.command_i;
  */
 public class CeilingFan {
 
-    protected static final int HIGH = 3;
-    protected static final int MEDIUM = 2;
-    protected static final int LOW = 1;
-    protected static final int OFF = 0;
+    public static final int HIGH = 3;
+    public static final int MEDIUM = 2;
+    public static final int LOW = 1;
+    public static final int OFF = 0;
     String location;
     int speed;
 

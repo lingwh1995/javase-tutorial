@@ -1,12 +1,12 @@
 package org.bluebridge.create.abstractfactory.abstractfactory_c.client;
 
-import create.abstractfactory.abstractfactory_c.domain.User;
-import create.abstractfactory.abstractfactory_c.factory.MysqlFactory;
-import create.abstractfactory.abstractfactory_c.factory.OracelFactory;
-import create.abstractfactory.abstractfactory_c.service.ICustomerService;
-import create.abstractfactory.abstractfactory_c.service.IUserService;
-import create.abstractfactory.abstractfactory_c.service.UserServiceMysql;
-import create.abstractfactory.abstractfactory_c.service.UserServiceOracle;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.domain.User;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.factory.MysqlFactory;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.factory.OracelFactory;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.ICustomerService;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.IUserService;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.UserServiceMysql;
+import org.bluebridge.create.abstractfactory.abstractfactory_c.service.UserServiceOracle;
 
 /**
  * 测试抽象工厂模式

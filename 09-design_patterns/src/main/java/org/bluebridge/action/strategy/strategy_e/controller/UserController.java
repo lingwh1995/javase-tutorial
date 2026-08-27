@@ -1,7 +1,8 @@
 package org.bluebridge.action.strategy.strategy_e.controller;
 
-import action.strategy.strategy_e.service.IUserService;
-import action.strategy.strategy_e.service.UserService;
+
+import org.bluebridge.action.strategy.strategy_e.service.IUserService;
+import org.bluebridge.action.strategy.strategy_e.service.UserService;
 
 /**
  * 用户控制器

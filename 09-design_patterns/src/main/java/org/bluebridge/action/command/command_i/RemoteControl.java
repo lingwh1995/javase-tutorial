@@ -1,8 +1,5 @@
 package org.bluebridge.action.command.command_i;
 
-import org.bluebridge.action.command.command_h.Command;
-import org.bluebridge.action.command.command_h.NoCommand;
-
 /**
  * 遥控器
  *

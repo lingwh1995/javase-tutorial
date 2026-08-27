@@ -1,6 +1,4 @@
-package action.command.command_i;
-
-import org.bluebridge.action.command.command_h.Command;
+package org.bluebridge.action.command.command_i;
 
 /**
  * 吊扇低档命令

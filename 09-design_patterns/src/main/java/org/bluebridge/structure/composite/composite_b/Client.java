@@ -1,4 +1,4 @@
-package structure.composite.composite_b;
+package org.bluebridge.structure.composite.composite_b;
 
 /**
  * 客户端

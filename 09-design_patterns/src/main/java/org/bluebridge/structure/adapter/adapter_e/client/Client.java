@@ -1,7 +1,7 @@
 package org.bluebridge.structure.adapter.adapter_e.client;
 
-import structure.adapter.adapter_e.controller.XxjlController;
-import structure.adapter.adapter_e.domain.Xxjl;
+import org.bluebridge.structure.adapter.adapter_e.controller.XxjlController;
+import org.bluebridge.structure.adapter.adapter_e.domain.Xxjl;
 
 /**
  * 客户端 - 适配器模式

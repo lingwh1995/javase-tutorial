@@ -35,7 +35,7 @@ public class JavolutionProtocolParser {
      * };
      *
      * 说明: Unsigned16 成员按 C 结构体规则会按 2 字节对齐, 导致紧凑报文(帧长度起始于奇数偏移 3)
-     * 解析错位, 因此双字节字段改用两个 Unsigned8 按大端组合表示, 与报文紧凑布局严格一致。
+     * 解析错位，因此双字节字段改用两个 Unsigned8 按大端组合表示，与报文紧凑布局严格一致。
      */
     private static class FrameHead extends Struct {
         private final Unsigned8 startFlag = new Unsigned8();
@@ -55,7 +55,7 @@ public class JavolutionProtocolParser {
     /**
      * 使用 Javolution Struct 解析报文
      *
-     * @param hex 十六进制报文, 如 "68000800970501300126..."
+     * @param hex 十六进制报文，如 "68000800970501300126..."
      * @return 解析结果模型
      * @throws IllegalArgumentException 报文格式不合法时抛出
      */

@@ -1,7 +1,5 @@
 package org.bluebridge.action.command.command_i;
 
-import org.bluebridge.action.command.command_h.Command;
-
 /**
  * 吊扇关闭命令
  *
