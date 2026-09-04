@@ -15,8 +15,8 @@ public class BitUtilsTest {
         System.out.printf("reverse8: %02X\n", BitUtils.reverse8(a));
 
         int state = 0;
-        state = BitUtils.setBit(state, 2);
-        state = BitUtils.setBit(state, 5);
+        state = BitUtils.setBit(state, 2, 1);
+        state = BitUtils.setBit(state, 5, 1);
         System.out.println("bit2 =" + BitUtils.getBit(state,2));
         System.out.println("bit5 =" + BitUtils.getBit(state,5));
     }
